@@ -1,0 +1,19 @@
+//- Mixin - Alerts
+
+
+mixin alerts(aClass, isDismissable)
+
+  if isDismissable === "true"
+    - var dismissableClass = "alert-dismissable"
+  else
+    - var dismissableClass = ""
+
+  div(class="alert #{aClass} #{dismissableClass}" role="alert")&attributes(attributes)
+
+    if isDismissable === "true"
+      button(type="button" class="close" data-dismiss="alert")
+        span(aria-hidden="true") &times;
+        span.sr-only Close
+
+    if block
+      block

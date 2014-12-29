@@ -1,0 +1,143 @@
+//- UI Elements - General - Input Groups
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+
+  div.col-lg-4
+
+    //Input Group
+    h3 Input Group
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group
+          span.input-group-addon @
+          input.form-control(type="text" placeholder="Username")
+
+      div.demo-box
+        div.input-group
+          input.form-control(type="text")
+          span.input-group-addon .00
+
+      div.demo-box
+        div.input-group
+          span.input-group-addon $
+          input.form-control(type="text")
+          span.input-group-addon .00
+
+    //Checkboxes & Radio Addons
+    h3 Checkboxes &amp; Radio Addons
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group
+          span.input-group-addon: input.icheck(type="checkbox")
+          input.form-control(type="text")
+
+      div.demo-box
+        div.input-group
+          span.input-group-addon: input.icheck(type="radio")
+          input.form-control(type="text")
+
+  div.col-lg-4
+
+    //Input Group Size
+    h3 Input Group Size
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group.input-group-lg
+          span.input-group-addon @
+          input.form-control(type="text" placeholder="Username")
+
+      div.demo-box
+        div.input-group
+          span.input-group-addon @
+          input.form-control(type="text" placeholder="Username")
+
+      div.demo-box
+        div.input-group.input-group-sm
+          span.input-group-addon @
+          input.form-control(type="text" placeholder="Username")
+
+    //Button Addons
+    h3 Button Addons
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group
+          span.input-group-btn
+            +buttons('btn-default', 'Go!')
+          input.form-control(type="text")
+
+      div.demo-box
+        div.input-group
+          input.form-control(type="text")
+          span.input-group-btn
+            +buttons('btn-primary', 'Go!')
+
+  div.col-lg-4
+
+    //Buttons with dropdowns
+    h3 Buttons with dropdowns
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group
+          div.input-group-btn
+            +buttons('btn-success', 'Action', '', 'caret', 'true')
+            +dropdown-menu('','')
+              +dropdown-menu-item-normal('', '#', 'Action')
+              +dropdown-menu-item-normal('', '#', 'Another action')
+              +dropdown-menu-item-normal('divider')
+              +dropdown-menu-item-normal('', '#', 'Separated link')
+          input.form-control(type="text")
+
+      div.demo-box
+        div.input-group
+          input.form-control(type="text")
+          div.input-group-btn
+            +buttons('btn-info', 'Action', '', 'caret', 'true')
+            +dropdown-menu('','dropdown-menu-right')
+              +dropdown-menu-item-normal('', '#', 'Action')
+              +dropdown-menu-item-normal('', '#', 'Another action')
+              +dropdown-menu-item-normal('divider')
+              +dropdown-menu-item-normal('', '#', 'Separated link')
+
+    //Segmented Buttons
+    h3 Segmented Buttons
+
+    div.demo-input-group
+
+      div.demo-box
+        div.input-group
+          div.input-group-btn
+            +buttons('btn-warning', 'Action')
+            +buttons('btn-warning', '', '', 'caret', 'true')
+              +dropdown-menu('','')
+                +dropdown-menu-item-normal('', '#', 'Action')
+                +dropdown-menu-item-normal('', '#', 'Another action')
+                +dropdown-menu-item-normal('divider')
+                +dropdown-menu-item-normal('', '#', 'Separated link')
+          input.form-control(type="text")
+
+      div.demo-box
+        div.input-group
+          input.form-control(type="text")
+          div.input-group-btn
+            +buttons('btn-danger', 'Action')
+            +buttons('btn-danger', '', '', 'caret', 'true')
+              +dropdown-menu('','dropdown-menu-right')
+                +dropdown-menu-item-normal('', '#', 'Action')
+                +dropdown-menu-item-normal('', '#', 'Another action')
+                +dropdown-menu-item-normal('divider')
+                +dropdown-menu-item-normal('', '#', 'Separated link')
+

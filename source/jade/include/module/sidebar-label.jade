@@ -1,0 +1,28 @@
+//- Sidebar - Menu
+
+include ../../common/variables
+
+
+//Labels
+h4.side-menu-title LABELS
+
+ul.nav.side-menu
+
+  //- Loop labels items
+  each labels, index in label_list
+
+    li
+
+      //- Check labels items status
+      if labels.name === page_name
+        - var labels_class = "active";
+      else
+        - var labels_class = "";
+
+      //- Output:
+      a(class=labels_class href=labels.url)
+        i(class=labels.iconclass)
+        span.menu-title #{labels.name}
+
+        if labels.labeltext != "" && labels.labelclass != ""
+          span(class="label #{labels.labelclass}") #{labels.labeltext}

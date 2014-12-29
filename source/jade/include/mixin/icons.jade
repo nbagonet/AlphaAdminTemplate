@@ -1,0 +1,33 @@
+//- Mixin - Icons
+
+
+mixin font-awesome(className, isAlias)
+  div.col-sm-4
+    a(href="javascript:void(0)")
+      i(class="fa #{className}")
+      span
+        |#{className}
+        if isAlias
+          |&nbsp;(alias)
+
+
+mixin glyphicons(className)
+  div.col-sm-4
+    a(href="javascript:void(0)")
+      i(class="glyphicon #{className}")
+      span
+        |#{className}
+
+mixin themify(className)
+  div.col-sm-4
+    a(href="javascript:void(0)")
+      i(class="#{className}")
+      span
+        |#{className}
+
+mixin entypo(className)
+  div.col-sm-4
+    a(href="javascript:void(0)")
+      i(class="#{className}")
+      span
+        |#{className}

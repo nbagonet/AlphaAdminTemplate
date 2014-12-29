@@ -1,0 +1,51 @@
+//- UI Elements - Widgets - Profile Card #2
+
+include ../../common/variables
+include ../mixins
+
+
+//Profile Card #2
+div.widget.panel.panel-white.no-b
+  div.panel-body.no-p
+    div.row.ptop15.pleft15.pright15.pbottom25.no-m.text-white(style="background:url(#{base_img}profile-bg.jpg) no-repeat; background-size:cover;")
+      div.col-xs-12.col-lg-4.ptop10.h6
+        div.text-center
+          img.img-circle.avatar.avatar-m(src="#{base_img}user-head-5.jpg" alt="Gem Tang")
+        div.mtop15.text-center.text-yellow
+          i.fa.fa-star
+          i.fa.fa-star
+          i.fa.fa-star
+          i.fa.fa-star-o
+          i.fa.fa-star-o
+      div.col-xs-12.col-lg-8.ptop10
+        div.h3.mtop10
+          |Gem Tang
+        p.mbottom5
+          i.fa.fa-briefcase.mright10
+          |Engineer
+        p.mbottom5
+          i.fa.fa-building.mright10
+          |Faceback Inc.
+        p.mbottom5
+          i.fa.fa-phone.mright10
+          |325-370-5463
+  div.panel-footer.no-p
+    div.row.no-m
+      div.col-xs-4.text-center.no-p
+        div.bgc-white.show.ptop15.pbottom15.pleft10.pright10
+          span.show.no-m.h3.text-red
+            |1,286
+          span.show.mtop5.no-mb.h6.text-grey
+            |Followers
+      div.col-xs-4.text-center.no-p
+        div.bgc-white.show.ptop15.pbottom15.pleft10.pright10
+          span.show.no-m.h3.text-red
+            |27
+          span.show.mtop5.no-mb.h6.text-grey
+            |Snippets
+      div.col-xs-4.text-center.no-p
+        div.bgc-white.show.ptop15.pbottom15.pleft10.pright10
+          span.show.no-m.h3.text-red
+            |854
+          span.show.mtop5.no-mb.h6.text-grey
+            |Following

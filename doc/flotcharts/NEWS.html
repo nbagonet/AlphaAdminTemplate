@@ -1,0 +1,2049 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAzUABAAAAAAFNgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABbAAAABwAAAAcZMzaOEdERUYAAAGIAAAAHQAAACAAOQAET1MvMgAAAagAAAA+AAAAYHqhde9jbWFwAAAB6AAAAFIAAAFa4azkLWN2dCAAAAI8AAAAKAAAACgFgwioZnBnbQAAAmQAAAGxAAACZVO0L6dnYXNwAAAEGAAAAAgAAAAIAAAAEGdseWYAAAQgAAAFDgAACMz7eroHaGVhZAAACTAAAAAwAAAANgWEOEloaGVhAAAJYAAAAB0AAAAkDGEGa2htdHgAAAmAAAAAEwAAADBEgAAQbG9jYQAACZQAAAAaAAAAGgsICJBtYXhwAAAJsAAAACAAAAAgASgBD25hbWUAAAnQAAACZwAABOD4no+3cG9zdAAADDgAAABsAAAAmF+yXM9wcmVwAAAMpAAAAC4AAAAusPIrFAAAAAEAAAAAyYlvMQAAAADLVHQgAAAAAM/u9uZ4nGNgZGBg4ANiCQYQYGJgBEJuIGYB8xgABMMAPgAAAHicY2Bm42OcwMDKwMLSw2LMwMDQBqGZihmiwHycoKCyqJjB4YPDh4NsDP+BfNb3DIuAFCOSEgUGRgAKDgt4AAB4nGNgYGBmgGAZBkYGEAgB8hjBfBYGCyDNxcDBwMTA9MHhQ9SHrA8H//9nYACyQyFs/sP86/kX8HtB9UIBIxsDXICRCUgwMaACRoZhDwA3fxKSAAAAAAHyAHABJQB/AIEAdAFGAOsBIwC/ALgAxACGAGYAugBNACcA/wCIeJxdUbtOW0EQ3Q0PA4HE2CA52hSzmZDGe6EFCcTVjWJkO4XlCGk3cpGLcQEfQIFEDdqvGaChpEibBiEXSHxCPiESM2uIojQ7O7NzzpkzS8qRqnfpa89T5ySQwt0GzTb9Tki1swD3pOvrjYy0gwdabGb0ynX7/gsGm9GUO2oA5T1vKQ8ZTTuBWrSn/tH8Cob7/B/zOxi0NNP01DoJ6SEE5ptxS4PvGc26yw/6gtXhYjAwpJim4i4/plL+tzTnasuwtZHRvIMzEfnJNEBTa20Emv7UIdXzcRRLkMumsTaYmLL+JBPBhcl0VVO1zPjawV2ys+hggyrNgQfYw1Z5DB4ODyYU0rckyiwNEfZiq8QIEZMcCjnl3Mn+pED5SBLGvElKO+OGtQbGkdfAoDZPs/88m01tbx3C+FkcwXe/GUs6+MiG2hgRYjtiKYAJREJGVfmGGs+9LAbkUvvPQJSA5fGPf50ItO7YRDyXtXUOMVYIen7b3PLLirtWuc6LQndvqmqo0inN+17OvscDnh4Lw0FjwZvP+/5Kgfo8LK40aA4EQ3o3ev+iteqIq7wXPrIn07+xWgAAAAABAAH//wAPeJyFlctvG1UUh+/12DPN1B7P3JnYjj2Ox4/MuDHxJH5N3UdaEUQLqBIkfQQioJWQ6AMEQkIqsPGCPwA1otuWSmTBhjtps2ADWbJg3EpIXbGouqSbCraJw7kzNo2dRN1cnXN1ZvT7zuuiMEI7ncizyA0URofRBJpCdbQuIFShYY+GZRrxMDVtih5TwQPHtXDFFSIKoWIbuREBjLH27Ny4MsbVx+uOJThavebgVrNRLAiYx06rXsvhxLgWx9xpfHdrs/ekc2Pl2cpPCVEITQpwbj8VQhfXSq2m+Wxqaq2D73Kne5e3NjHqQNj3CRYlJlgUl/jRNP+2Gs2pNYRQiOnmUaQDqm30KqKiTTWPWjboxnTWpvgxjXo0KrtZXAHt7hwIz0YVcj88JnKlJKi3NPAwLyDwZudSmJSMMJFDYaOkaol6XtESx3Gt1VTytdZJ3DCLeaVhVnCBH1fycHTxFXwPX+l2e3d6H/TufGGmMTLTnbSJUdo00zuBswMO/nl3YLeL/wnu9/limCuD3vC54h5NBVz6Li414AI8Vx3iiosKcQXUbrvhFFiYb++HN4DaF4XzFW0fIN4XDWJ3a3XQoq9V8WiyRmdsatV9xUcHims1JloH0YUa090G3Tro3mC6c01f+YwCPquINr1PTaCP6rVTOOmf0GE2dBc7zWIhji3/5MchSuBHgDbU99RMWt3YUNMZMJmx92YP6NsHx/5/M1yvInpnkIOM3Z8fA3JQ2lW1RFC1KaBPDFXNAHYYvGy73aYZZZ3HifbeuiVZCpwA3oQBs0wGPYJbJfg60xrKEbKiNtTe1adwrpBRwlAuQ3q3VRaX0QmQ9a49BTSCuF1MLfQ6+tinOubRBZuWPNoMevGMT+V41KitO1is3D/tpMcq1JHZqDHGs8DoYGDkxJgKjHROeTCmhZvzPm9pod+ltKm4PN7Dyvvldlpsg8D+4AUJZ3F/JBstZz7cbFRxsaAGV6yX/dkcycWf8eS3QlQea+YLjdm3yrOnrhFpUyKVvFE4lpv4bO3Svx/6F/4xmiDu/RT5iI++lko18mY1oX+5UGKR6kmVjM/Zb76yfHtxy+h/SyQ0lLdpdKy/lWB6szatetQJ8nZ80A2Qt6ift6gJeavU3BO4gtxs/KCtNPVibCtYCWY3SIlSBPKXZALXiIR9oZeJ1AuMyxLpHIy/yO7vSiSE+kZvk0ihJ30HgHfzZtEMmvV58x6dtqns0XTAW7Vdm4HJ04OCp/crOO7rd9SGxQAE/mVA9xRN+kVSMRFF6S9JFGUtthkjBA5tFCWc2l4V43Ex9GmUP3SI37Jjmir9KqlaDJ4S4JB3vuM/jzyH1+8MuoZ+QGzfnvPoJb96cZlWjMcKLfgDwB7E634JTY+asjsPzS5CiVnEWY+KsrsIN5rn3mAPjqmQBxGjcGKB9f9ZxY3mYC2L85CJ2FXIxKKyHk+dg0FHbuEc7D5NzWUX32WxFcWNGRAbvwSx0RmIXVDuYySafluQBmzA/ssqJAMLnli+WIC90Gw4lm85wcp0qjArEDPJJV/sSx4P9ungTpgMw5gVC1XO4uULq0s3v1rqLi0vX/z65vlH50f8T/RHmSPTk5xxWBWOluMT6WiOy+tdvWxlV/XQb3o3c6Ssr+r6I708GsX9/nzp1tKFh0s3v7m4vAy/Hnb/KMOvc1wump6Il48K6mGDy02X9Yd65pa+nQIjk76lWxCkG8NBCP0HQS9IpAAAeJxjYGRgYGBhcCrq214Qz2/zlUGenQEEzr/77oug/zewFbB+AHI5GJhAogBwKQ0qeJxjYGRgYH3/P46BgZ0BBNgKGBgZUAEPAE/7At0AAAB4nGNngAB2IGYjhBsYBAAIYADVAAAAAAAAAAAAAFwAyAEeAaACCgKmAx4DggRmAAAAAQAAAAwAagAEAAAAAAACAAEAAgAWAAABAAChAAAAAHiclZI7bxQxFIWPd/JkUYQChEhIyAVKgdBMskm1QkKrRETpQiLRUczueB/K7HhlOxttg8LvoKPgP9DxFxANDR0tHRWi4NjrPIBEgh1p/dm+vufcawNYFWsQmP6e4jSyQB2fI9cwj++RE9wTjyPP4LYoI89iWbyLPIe6+Bh5Hs9rryMv4GbtW+RF3EhuRa7jbrIbeQkPkjdUETOLnL0Kip4FVvAhco1RXyMnSPEz8gzWxE7kWTwUp5HnsCLeR57HW/El8gJWa58iL+JO7UfkOh4l9yMv4UnyEtvQGGECgwF66MNBooF1bGCL1ELB/TYU+ZBRlvsKQ44Se6jQ4a7hef+fh72Crv25kp+8lNWGmeKoOI5jJLb1aGIGvb6TjfWNLdkqdFvJw4l1amjlXtXRZqRN7lSRylZZyhBqpVFWmTEXgWfUrpi/hZOQXdOd4rKuXOtEWT3k5IArPRzTUU5tHKjecZkTpnVbNOnt6jzN8240GD4xtikvZW56043rPMg/dS+dlOceXoR+WPbJ55Dsekq1lJpnypsMUsYOdCW30o103Ytu/lvh+5RWFLfBjm9/N8hJntPhvx92rnoE/kyHdGasGy754kw36vsVf/lFeBi+0COu+cfgQr42G3CRpeLoZ53gmfe3X6rcKt5oVxnptHR9JS8ehVUd5wvvahN2uqxOOpMXapibI5k7Zwbt4xBSaTfoKBufhAnO/uqNcfK8OTs0OQ6l7JIqFjDhYj5WcjevCnI/1DDiI8j4ndWb/5YzDZWh79yomWXeXj7Nnw70/2TIeFPTrlSh89k1ObOSRVZWZfgF0r/zJQB4nG2JUQuCQBCEd07TTg36fb2IyBaLd3vWaUh/vmSJnvpgmG8YcmS8X3Shf3R7QA4OBUocUKHGER5NNbOOEvwc1txnuWkTRb/aPjimJ5vXabI+3VfOiyS15UWvyezM2xiGOPyuMohOH8O8JiO4Af+FsAGNAEuwCFBYsQEBjlmxRgYrWCGwEFlLsBRSWCGwgFkdsAYrXFhZsBQrAAA=) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>NEWS</title></head><body><article class="markdown-body"><h2 id="flot-081"><a name="user-content-flot-081" href="#flot-081" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.8.1</h2>
+<h3 id="bug-fixes"><a name="user-content-bug-fixes" href="#bug-fixes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h3>
+<ul>
+<li>
+<p>Fixed a regression in the time plugin, introduced in 0.8, that caused dates<br />
+   to align to the minute rather than to the highest appropriate unit. This<br />
+   caused many x-axes in 0.8 to have different ticks than they did in 0.7.<br />
+   (reported by Tom Sheppard, patch by Daniel Shapiro, issue #1017, pull<br />
+   request #1023)</p>
+</li>
+<li>
+<p>Fixed a regression in text rendering, introduced in 0.8, that caused axis<br />
+   labels with the same text as another label on the same axis to disappear.<br />
+   More generally, it&rsquo;s again possible to have the same text in two locations.<br />
+   (issue #1032)</p>
+</li>
+<li>
+<p>Fixed a regression in text rendering, introduced in 0.8, where axis labels<br />
+   were no longer assigned an explicit width, and their text could not wrap.<br />
+   (reported by sabregreen, issue #1019)</p>
+</li>
+<li>
+<p>Fixed a regression in the pie plugin, introduced in 0.8, that prevented it<br />
+   from accepting data in the format &lsquo;[[x, y]]&rsquo;.<br />
+   (patch by Nicolas Morel, pull request #1024)</p>
+</li>
+<li>
+<p>The &lsquo;zero&rsquo; series option and &lsquo;autoscale&rsquo; format option are no longer<br />
+   ignored when the series contains a null value.<br />
+   (reported by Daniel Shapiro, issue #1033)</p>
+</li>
+<li>
+<p>Avoid triggering the time-mode plugin exception when there are zero series.<br />
+   (reported by Daniel Rothig, patch by Mark Raymond, issue #1016)</p>
+</li>
+<li>
+<p>When a custom color palette has fewer colors than the default palette, Flot<br />
+   no longer fills out the colors with the remainder of the default.<br />
+   (patch by goorpy, issue #1031, pull request #1034)</p>
+</li>
+<li>
+<p>Fixed missing update for bar highlights after a zoom or other redraw.<br />
+   (reported by Paolo Valleri, issue #1030)</p>
+</li>
+<li>
+<p>Fixed compatibility with jQuery versions earlier than 1.7.<br />
+   (patch by Lee Willis, issue #1027, pull request #1027)</p>
+</li>
+<li>
+<p>The mouse wheel no longer scrolls the page when using the navigate plugin.<br />
+   (patch by vird, pull request #1020)</p>
+</li>
+<li>
+<p>Fixed missing semicolons in the core library.<br />
+   (reported by Michal Zglinski)</p>
+</li>
+</ul>
+<h2 id="flot-080"><a name="user-content-flot-080" href="#flot-080" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.8.0</h2>
+<h3 id="api-changes"><a name="user-content-api-changes" href="#api-changes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Support for time series has been moved into a plugin, jquery.flot.time.js.<br />
+This results in less code if time series are not used. The functionality<br />
+remains the same (plus timezone support, as described below); however, the<br />
+plugin must be included if axis.mode is set to &ldquo;time&rdquo;.</p>
+<p>When the axis mode is &ldquo;time&rdquo;, the axis option &ldquo;timezone&rdquo; can be set to null,<br />
+&ldquo;browser&rdquo;, or a particular timezone (e.g. &ldquo;America/New_York&rdquo;) to control how<br />
+the dates are displayed. If null, the dates are displayed as UTC. If<br />
+&ldquo;browser&rdquo;, the dates are displayed in the time zone of the user&rsquo;s browser.</p>
+<p>Date/time formatting has changed and now follows a proper subset of the<br />
+standard strftime specifiers, plus one nonstandard specifier for quarters.<br />
+Additionally, if a strftime function is found in the Date object&rsquo;s prototype,<br />
+it will be used instead of the built-in formatter.</p>
+<p>Axis tick labels now use the class &lsquo;flot-tick-label&rsquo; instead of &lsquo;tickLabel&rsquo;.<br />
+The text containers  for each axis now use the classes &lsquo;flot-[x|y]-axis&rsquo; and<br />
+&lsquo;flot-[x|y]#-axis&rsquo; instead of &lsquo;[x|y]Axis&rsquo; and &lsquo;[x|y]#Axis&rsquo;. For compatibility<br />
+with Flot 0.7 and earlier text will continue to use the old classes as well,<br />
+but they are considered deprecated and will be removed in a future version.</p>
+<p>In previous versions the axis &lsquo;color&rsquo; option was used to set the color of tick<br />
+marks and their label text. It now controls the color of the axis line, which<br />
+previously could not be changed separately, and continues to act as a default<br />
+for the tick-mark color.  The color of tick label text is now set either by<br />
+overriding the &lsquo;flot-tick-label&rsquo; CSS rule or via the axis &lsquo;font&rsquo; option.</p>
+<p>A new plugin, jquery.flot.canvas.js, allows axis tick labels to be rendered<br />
+directly to the canvas, rather than using HTML elements. This feature can be<br />
+toggled with a simple option, making it easy to create interactive plots in the<br />
+browser using HTML, then re-render them to canvas for export as an image.</p>
+<p>The plugin tries to remain as faithful as possible to the original HTML render,<br />
+and goes so far as to automatically extract styles from CSS, to avoid having to<br />
+provide a separate set of styles when rendering to canvas. Due to limitations<br />
+of the canvas text API, the plugin cannot reproduce certain features, including<br />
+HTML markup embedded in labels, and advanced text styles such as &lsquo;em&rsquo; units.</p>
+<p>The plugin requires support for canvas text, which may not be present in some<br />
+older browsers, even if they support the canvas tag itself. To use the plugin<br />
+with these browsers try using a shim such as canvas-text or FlashCanvas.</p>
+<p>The base and overlay canvas are now using the CSS classes &ldquo;flot-base&rdquo; and<br />
+&ldquo;flot-overlay&rdquo; to prevent accidental clashes (issue 540).</p>
+<h3 id="changes"><a name="user-content-changes" href="#changes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h3>
+<ul>
+<li>
+<p>Addition of nonstandard %q specifier to date/time formatting. (patch<br />
+   by risicle, issue 49)</p>
+</li>
+<li>
+<p>Date/time formatting follows proper subset of strftime specifiers, and<br />
+   support added for Date.prototype.strftime, if found. (patch by Mark Cote,<br />
+   issues 419 and 558)</p>
+</li>
+<li>
+<p>Fixed display of year ticks. (patch by Mark Cote, issue 195)</p>
+</li>
+<li>
+<p>Support for time series moved to plugin. (patch by Mark Cote)</p>
+</li>
+<li>
+<p>Display time series in different time zones. (patch by Knut Forkalsrud,<br />
+   issue 141)</p>
+</li>
+<li>
+<p>Added a canvas plugin to enable rendering axis tick labels to the canvas.<br />
+   (sponsored by YCharts.com, implementation by Ole Laursen and David Schnur)</p>
+</li>
+<li>
+<p>Support for setting the interval between redraws of the overlay canvas with<br />
+   redrawOverlayInterval. (suggested in issue 185)</p>
+</li>
+<li>
+<p>Support for multiple thresholds in thresholds plugin. (patch by Arnaud<br />
+   Bellec, issue 523)</p>
+</li>
+<li>
+<p>Support for plotting categories/textual data directly with new categories<br />
+   plugin.</p>
+</li>
+<li>
+<p>Tick generators now get the whole axis rather than just min/max.</p>
+</li>
+<li>
+<p>Added processOffset and drawBackground hooks. (suggested in issue 639)</p>
+</li>
+<li>
+<p>Added a grid &ldquo;margin&rdquo; option to set the space between the canvas edge and<br />
+   the grid.</p>
+</li>
+<li>
+<p>Prevent the pie example page from generating single-slice pies. (patch by<br />
+   Shane Reustle)</p>
+</li>
+<li>
+<p>In addition to &ldquo;left&rdquo; and &ldquo;center&rdquo;, bars now recognize &ldquo;right&rdquo; as an<br />
+   alignment option. (patch by Michael Mayer, issue 520)</p>
+</li>
+<li>
+<p>Switched from toFixed to a much faster default tickFormatter. (patch by<br />
+   Clemens Stolle)</p>
+</li>
+<li>
+<p>Added to a more helpful error when using a time-mode axis without including<br />
+   the flot.time plugin. (patch by Yael Elmatad)</p>
+</li>
+<li>
+<p>Added a legend &ldquo;sorted&rdquo; option to control sorting of legend entries<br />
+   independent of their series order. (patch by Tom Cleaveland)</p>
+</li>
+<li>
+<p>Added a series &ldquo;highlightColor&rdquo; option to control the color of the<br />
+   translucent overlay that identifies the dataset when the mouse hovers over<br />
+   it. (patch by Eric Wendelin and Nate Abele, issues 168 and 299)</p>
+</li>
+<li>
+<p>Added a plugin jquery.flot.errorbars, with an accompanying example, that<br />
+   adds the ability to plot error bars, commonly used in many kinds of<br />
+   statistical data visualizations. (patch by Rui Pereira, issue 215)</p>
+</li>
+<li>
+<p>The legend now omits entries whose labelFormatter returns null.  (patch by<br />
+   Tom Cleaveland, Christopher Lambert, and Simon Strandgaard)</p>
+</li>
+<li>
+<p>Added support for high pixel density (retina) displays, resulting in much<br />
+   crisper charts on such devices. (patch by Olivier Guerriat, additional<br />
+   fixes by Julien Thomas, maimairel, and Lau Bech Lauritzen)</p>
+</li>
+<li>
+<p>Added the ability to control pie shadow position and alpha via a new pie<br />
+   &lsquo;shadow&rsquo; option. (patch by Julien Thomas, pull request #78)</p>
+</li>
+<li>
+<p>Added the ability to set width and color for individual sides of the grid.<br />
+   (patch by Ara Anjargolian, additional fixes by Karl Swedberg, pull requests #855<br />
+   and #880)</p>
+</li>
+<li>
+<p>The selection plugin&rsquo;s getSelection now returns null when the selection<br />
+   has been cleared. (patch by Nick Campbell, pull request #852)</p>
+</li>
+<li>
+<p>Added a new option called &lsquo;zero&rsquo; to bars and filled lines series, to control<br />
+   whether the y-axis minimum is scaled to fit the data or set to zero.<br />
+   (patch by David Schnur, issues #316, #529, and #856, pull request #911)</p>
+</li>
+<li>
+<p>The plot function is now also a jQuery chainable property.<br />
+   (patch by David Schnur, issues #734 and #816, pull request #953)</p>
+</li>
+<li>
+<p>When only a single pie slice is beneath the combine threshold it is no longer<br />
+   replaced by an &lsquo;other&rsquo; slice. (suggested by Devin Bayer, issue #638)</p>
+</li>
+<li>
+<p>Added lineJoin and minSize options to the selection plugin to control the<br />
+   corner style and minimum size of the selection, respectively.<br />
+   (patch by Ruth Linehan, pull request #963)</p>
+</li>
+</ul>
+<h3 id="bug-fixes_1"><a name="user-content-bug-fixes_1" href="#bug-fixes_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h3>
+<ul>
+<li>
+<p>Fix problem with null values and pie plugin. (patch by gcruxifix,<br />
+   issue 500)</p>
+</li>
+<li>
+<p>Fix problem with threshold plugin and bars. (based on patch by<br />
+   kaarlenkaski, issue 348)</p>
+</li>
+<li>
+<p>Fix axis box calculations so the boxes include the outermost part of the<br />
+   labels too.</p>
+</li>
+<li>
+<p>Fix problem with event clicking and hovering in IE 8 by updating Excanvas<br />
+   and removing previous work-around. (test case by Ara Anjargolian)</p>
+</li>
+<li>
+<p>Fix issues with blurry 1px border when some measures aren&rsquo;t integer.<br />
+   (reported by Ara Anjargolian)</p>
+</li>
+<li>
+<p>Fix bug with formats in the data processor. (reported by Peter Hull,<br />
+   issue 534)</p>
+</li>
+<li>
+<p>Prevent i from being declared global in extractRange. (reported by<br />
+   Alexander Obukhov, issue 627)</p>
+</li>
+<li>
+<p>Throw errors in a more cross-browser-compatible manner. (patch by<br />
+   Eddie Kay)</p>
+</li>
+<li>
+<p>Prevent pie slice outlines from being drawn when the stroke width is zero.<br />
+   (reported by Chris Minett, issue 585)</p>
+</li>
+<li>
+<p>Updated the navigate plugin&rsquo;s inline copy of jquery.mousewheel to fix<br />
+   Webkit zoom problems. (reported by Hau Nguyen, issue 685)</p>
+</li>
+<li>
+<p>Axis labels no longer appear as decimals rather than integers in certain<br />
+   cases. (patch by Clemens Stolle, issue 541)</p>
+</li>
+<li>
+<p>Automatic color generation no longer produces only whites and blacks when<br />
+   there are many series. (patch by David Schnur and Tom Cleaveland)</p>
+</li>
+<li>
+<p>Fixed an error when custom tick labels weren&rsquo;t provided as strings. (patch<br />
+   by Shad Downey)</p>
+</li>
+<li>
+<p>Prevented the local insertSteps and fmt variables from becoming global.<br />
+   (first reported by Marc Bennewitz and Szymon Barglowski, patch by Nick<br />
+   Campbell, issues #825 and #831, pull request #851)</p>
+</li>
+<li>
+<p>Prevented several threshold plugin variables from becoming global. (patch<br />
+   by Lasse Dahl Ebert)</p>
+</li>
+<li>
+<p>Fixed various jQuery 1.8 compatibility issues. (issues #814 and #819,<br />
+   pull request #877)</p>
+</li>
+<li>
+<p>Pie charts with a slice equal to or approaching 100% of the pie no longer<br />
+   appear invisible. (patch by David Schnur, issues #444, #658, #726, #824<br />
+   and #850, pull request #879)</p>
+</li>
+<li>
+<p>Prevented several local variables from becoming global. (patch by aaa707)</p>
+</li>
+<li>
+<p>Ensure that the overlay and primary canvases remain aligned. (issue #670,<br />
+   pull request #901)</p>
+</li>
+<li>
+<p>Added support for jQuery 1.9 by removing and replacing uses of $.browser.<br />
+   (analysis and patch by Anthony Ryan, pull request #905)</p>
+</li>
+<li>
+<p>Pie charts no longer disappear when redrawn during a resize or update.<br />
+   (reported by Julien Bec, issue #656, pull request #910)</p>
+</li>
+<li>
+<p>Avoided floating-point precision errors when calculating pie percentages.<br />
+   (patch by James Ward, pull request #918)</p>
+</li>
+<li>
+<p>Fixed compatibility with jQuery 1.2.6, which has no &lsquo;mouseleave&rsquo; shortcut.<br />
+   (reported by Bevan, original pull request #920, replaced by direct patch)</p>
+</li>
+<li>
+<p>Fixed sub-pixel rendering issues with crosshair and selection lines.<br />
+   (patches by alanayoub and Daniel Shapiro, pull requests #17 and #925)</p>
+</li>
+<li>
+<p>Fixed rendering issues when using the threshold plugin with several series.<br />
+   (patch by Ivan Novikov, pull request #934)</p>
+</li>
+<li>
+<p>Pie charts no longer disappear when redrawn after calling setData().<br />
+   (reported by zengge1984 and pareeohnos, issues #810 and #945)</p>
+</li>
+<li>
+<p>Added a work-around for the problem where points with a lineWidth of zero<br />
+   still showed up with a visible line. (reported by SalvoSav, issue #842,<br />
+   patch by Jamie Hamel-Smith, pull request #937)</p>
+</li>
+<li>
+<p>Pie charts now accept values in string form, like other plot types.<br />
+   (reported by laerdal.no, issue #534)</p>
+</li>
+<li>
+<p>Avoid rounding errors in the threshold plugin.<br />
+   (reported by jerikojerk, issue #895)</p>
+</li>
+<li>
+<p>Fixed an error when using the navigate plugin with jQuery 1.9.x or later.<br />
+   (reported by Paolo Valleri, issue #964)</p>
+</li>
+<li>
+<p>Fixed inconsistencies between the highlight and unhighlight functions.<br />
+   (reported by djamshed, issue #987)</p>
+</li>
+<li>
+<p>Fixed recalculation of tickSize and tickDecimals on calls to setupGrid.<br />
+   (patch by thecountofzero, pull request #861, issues #860, #1000)</p>
+</li>
+</ul>
+<h2 id="flot-07"><a name="user-content-flot-07" href="#flot-07" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.7</h2>
+<h3 id="api-changes_1"><a name="user-content-api-changes_1" href="#api-changes_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Multiple axes support. Code using dual axes should be changed from using<br />
+x2axis/y2axis in the options to using an array (although backwards-<br />
+compatibility hooks are in place). For instance,</p>
+<pre><code class="js">{
+    xaxis: { ... }, x2axis: { ... },
+    yaxis: { ... }, y2axis: { ... }
+}
+</code></pre>
+
+<p>becomes</p>
+<pre><code class="js">{
+    xaxes: [ { ... }, { ... } ],
+    yaxes: [ { ... }, { ... } ]
+}
+</code></pre>
+
+<p>Note that if you&rsquo;re just using one axis, continue to use the xaxis/yaxis<br />
+directly (it now sets the default settings for the arrays). Plugins touching<br />
+the axes must be ported to take the extra axes into account, check the source<br />
+to see some examples.</p>
+<p>A related change is that the visibility of axes is now auto-detected. So if<br />
+you were relying on an axis to show up even without any data in the chart, you<br />
+now need to set the axis &ldquo;show&rdquo; option explicitly.</p>
+<p>&ldquo;tickColor&rdquo; on the grid options is now deprecated in favour of a corresponding<br />
+option on the axes, so:</p>
+<pre><code class="js">{ grid: { tickColor: &quot;#000&quot; }}
+</code></pre>
+
+<p>becomes</p>
+<pre><code class="js">{ xaxis: { tickColor: &quot;#000&quot;}, yaxis: { tickColor: &quot;#000&quot;} }
+</code></pre>
+
+<p>But if you just configure a base color Flot will now autogenerate a tick color<br />
+by adding transparency. Backwards-compatibility hooks are in place.</p>
+<p>Final note: now that IE 9 is coming out with canvas support, you may want to<br />
+adapt the excanvas include to skip loading it in IE 9 (the examples have been<br />
+adapted thanks to Ryley Breiddal). An alternative to excanvas using Flash has<br />
+also surfaced, if your graphs are slow in IE, you may want to give it a spin:</p>
+<pre><code>http://code.google.com/p/flashcanvas/
+</code></pre>
+<h3 id="changes_1"><a name="user-content-changes_1" href="#changes_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h3>
+<ul>
+<li>
+<p>Support for specifying a bottom for each point for line charts when filling<br />
+   them, this means that an arbitrary bottom can be used instead of just the x<br />
+   axis. (based on patches patiently provided by Roman V. Prikhodchenko)</p>
+</li>
+<li>
+<p>New fillbetween plugin that can compute a bottom for a series from another<br />
+   series, useful for filling areas between lines.</p>
+</li>
+</ul>
+<p>See new example percentiles.html for a use case.</p>
+<ul>
+<li>
+<p>More predictable handling of gaps for the stacking plugin, now all<br />
+   undefined ranges are skipped.</p>
+</li>
+<li>
+<p>Stacking plugin can stack horizontal bar charts.</p>
+</li>
+<li>
+<p>Navigate plugin now redraws the plot while panning instead of only after<br />
+   the fact. (raised by lastthemy, issue 235)</p>
+</li>
+</ul>
+<p>Can be disabled by setting the pan.frameRate option to null.</p>
+<ul>
+<li>
+<p>Date formatter now accepts %0m and %0d to get a zero-padded month or day.<br />
+   (issue raised by Maximillian Dornseif)</p>
+</li>
+<li>
+<p>Revamped internals to support an unlimited number of axes, not just dual.<br />
+   (sponsored by Flight Data Services, <a href="http://www.flightdataservices.com">www.flightdataservices.com</a>)</p>
+</li>
+<li>
+<p>New setting on axes, &ldquo;tickLength&rdquo;, to control the size of ticks or turn<br />
+   them off without turning off the labels.</p>
+</li>
+<li>
+<p>Axis labels are now put in container divs with classes, for instance labels<br />
+   in the x axes can be reached via &ldquo;.xAxis .tickLabel&rdquo;.</p>
+</li>
+<li>
+<p>Support for setting the color of an axis. (sponsored by Flight Data<br />
+   Services, <a href="http://www.flightdataservices.com">www.flightdataservices.com</a>)</p>
+</li>
+<li>
+<p>Tick color is now auto-generated as the base color with some transparency,<br />
+   unless you override it.</p>
+</li>
+<li>
+<p>Support for aligning ticks in the axes with &ldquo;alignTicksWithAxis&rdquo; to ensure<br />
+   that they appear next to each other rather than in between, at the expense<br />
+   of possibly awkward tick steps. (sponsored by Flight Data Services,<br />
+<a href="http://www.flightdataservices.com">www.flightdataservices.com</a>)</p>
+</li>
+<li>
+<p>Support for customizing the point type through a callback when plotting<br />
+   points and new symbol plugin with some predefined point types. (sponsored<br />
+   by Utility Data Corporation)</p>
+</li>
+<li>
+<p>Resize plugin for automatically redrawing when the placeholder changes<br />
+   size, e.g. on window resizes. (sponsored by Novus Partners)</p>
+</li>
+</ul>
+<p>A resize() method has been added to plot object facilitate this.</p>
+<ul>
+<li>
+<p>Support Infinity/-Infinity for plotting asymptotes by hacking it into<br />
+   +/-Number.MAX_VALUE. (reported by rabaea.mircea)</p>
+</li>
+<li>
+<p>Support for restricting navigate plugin to not pan/zoom an axis. (based on<br />
+   patch by kkaefer)</p>
+</li>
+<li>
+<p>Support for providing the drag cursor for the navigate plugin as an option.<br />
+   (based on patch by Kelly T. Moore)</p>
+</li>
+<li>
+<p>Options for controlling whether an axis is shown or not (suggestion by Timo<br />
+   Tuominen) and whether to reserve space for it even if it isn&rsquo;t shown.</p>
+</li>
+<li>
+<p>New attribute $.plot.version with the Flot version as a string.</p>
+</li>
+<li>
+<p>The version comment is now included in the minified jquery.flot.min.js.</p>
+</li>
+<li>
+<p>New options.grid.minBorderMargin for adjusting the minimum margin provided<br />
+   around the border (based on patch by corani, issue 188).</p>
+</li>
+<li>
+<p>Refactor replot behaviour so Flot tries to reuse the existing canvas,<br />
+   adding shutdown() methods to the plot. (based on patch by Ryley Breiddal,<br />
+   issue 269)</p>
+</li>
+</ul>
+<p>This prevents a memory leak in Chrome and hopefully makes replotting faster<br />
+   for those who are using $.plot instead of .setData()/.draw(). Also update<br />
+   jQuery to 1.5.1 to prevent IE leaks fixed in jQuery.</p>
+<ul>
+<li>
+<p>New real-time line chart example.</p>
+</li>
+<li>
+<p>New hooks: drawSeries, shutdown.</p>
+</li>
+</ul>
+<h3 id="bug-fixes_2"><a name="user-content-bug-fixes_2" href="#bug-fixes_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h3>
+<ul>
+<li>
+<p>Fixed problem with findNearbyItem and bars on top of each other. (reported<br />
+   by ragingchikn, issue 242)</p>
+</li>
+<li>
+<p>Fixed problem with ticks and the border. (based on patch from<br />
+   ultimatehustler69, issue 236)</p>
+</li>
+<li>
+<p>Fixed problem with plugins adding options to the series objects.</p>
+</li>
+<li>
+<p>Fixed a problem introduced in 0.6 with specifying a gradient with:</p>
+</li>
+</ul>
+<p><code>{brightness: x, opacity: y }</code></p>
+<ul>
+<li>Don&rsquo;t use $.browser.msie, check for getContext on the created canvas element<br />
+   instead and try to use excanvas if it&rsquo;s not found.</li>
+</ul>
+<p>Fixes IE 9 compatibility.</p>
+<ul>
+<li>
+<p>highlight(s, index) was looking up the point in the original s.data instead<br />
+   of in the computed datapoints array, which breaks with plugins that modify<br />
+   the datapoints, such as the stacking plugin. (reported by curlypaul924,<br />
+   issue 316)</p>
+</li>
+<li>
+<p>More robust handling of axis from data passed in from getData(). (reported)<br />
+   by Morgan)</p>
+</li>
+<li>
+<p>Fixed problem with turning off bar outline. (fix by Jordi Castells,<br />
+   issue 253)</p>
+</li>
+<li>
+<p>Check the selection passed into setSelection in the selection<br />
+   plugin, to guard against errors when synchronizing plots (fix by Lau<br />
+   Bech Lauritzen).</p>
+</li>
+<li>
+<p>Fix bug in crosshair code with mouseout resetting the crosshair even<br />
+   if it is locked (fix by Lau Bech Lauritzen and Banko Adam).</p>
+</li>
+<li>
+<p>Fix bug with points plotting using line width from lines rather than<br />
+   points.</p>
+</li>
+<li>
+<p>Fix bug with passing non-array 0 data (for plugins that don&rsquo;t expect<br />
+   arrays, patch by vpapp1).</p>
+</li>
+<li>
+<p>Fix errors in JSON in examples so they work with jQuery 1.4.2<br />
+   (fix reported by honestbleeps, issue 357).</p>
+</li>
+<li>
+<p>Fix bug with tooltip in interacting.html, this makes the tooltip<br />
+   much smoother (fix by bdkahn). Fix related bug inside highlighting<br />
+   handler in Flot.</p>
+</li>
+<li>
+<p>Use closure trick to make inline colorhelpers plugin respect<br />
+   jQuery.noConflict(true), renaming the global jQuery object (reported<br />
+   by Nick Stielau).</p>
+</li>
+<li>
+<p>Listen for mouseleave events and fire a plothover event with empty<br />
+   item when it occurs to drop highlights when the mouse leaves the<br />
+   plot (reported by by outspirit).</p>
+</li>
+<li>
+<p>Fix bug with using aboveData with a background (reported by<br />
+   amitayd).</p>
+</li>
+<li>
+<p>Fix possible excanvas leak (report and suggested fix by tom9729).</p>
+</li>
+<li>
+<p>Fix bug with backwards compatibility for shadowSize = 0 (report and<br />
+   suggested fix by aspinak).</p>
+</li>
+<li>
+<p>Adapt examples to skip loading excanvas (fix by Ryley Breiddal).</p>
+</li>
+<li>
+<p>Fix bug that prevent a simple f(x) = -x transform from working<br />
+   correctly (fix by Mike, issue 263).</p>
+</li>
+<li>
+<p>Fix bug in restoring cursor in navigate plugin (reported by Matteo<br />
+   Gattanini, issue 395).</p>
+</li>
+<li>
+<p>Fix bug in picking items when transform/inverseTransform is in use<br />
+   (reported by Ofri Raviv, and patches and analysis by Jan and Tom<br />
+   Paton, issue 334 and 467).</p>
+</li>
+<li>
+<p>Fix problem with unaligned ticks and hover/click events caused by<br />
+   padding on the placeholder by hardcoding the placeholder padding to<br />
+   0 (reported by adityadineshsaxena, Matt Sommer, Daniel Atos and some<br />
+   other people, issue 301).</p>
+</li>
+<li>
+<p>Update colorhelpers plugin to avoid dying when trying to parse an<br />
+   invalid string (reported by cadavor, issue 483).</p>
+</li>
+</ul>
+<h2 id="flot-06"><a name="user-content-flot-06" href="#flot-06" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.6</h2>
+<h3 id="api-changes_2"><a name="user-content-api-changes_2" href="#api-changes_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Selection support has been moved to a plugin. Thus if you&rsquo;re passing<br />
+selection: { mode: something }, you MUST include the file<br />
+jquery.flot.selection.js after jquery.flot.js. This reduces the size of<br />
+base Flot and makes it easier to customize the selection as well as<br />
+improving code clarity. The change is based on a patch from andershol.</p>
+<p>In the global options specified in the $.plot command, &ldquo;lines&rdquo;, &ldquo;points&rdquo;,<br />
+&ldquo;bars&rdquo; and &ldquo;shadowSize&rdquo; have been moved to a sub-object called &ldquo;series&rdquo;:</p>
+<pre><code class="js">$.plot(placeholder, data, { lines: { show: true }})
+</code></pre>
+
+<p>should be changed to</p>
+<pre><code class="js">  $.plot(placeholder, data, { series: { lines: { show: true }}})
+</code></pre>
+
+<p>All future series-specific options will go into this sub-object to<br />
+simplify plugin writing. Backward-compatibility code is in place, so<br />
+old code should not break.</p>
+<p>&ldquo;plothover&rdquo; no longer provides the original data point, but instead a<br />
+normalized one, since there may be no corresponding original point.</p>
+<p>Due to a bug in previous versions of jQuery, you now need at least<br />
+jQuery 1.2.6. But if you can, try jQuery 1.3.2 as it got some improvements<br />
+in event handling speed.</p>
+<h2 id="changes_2"><a name="user-content-changes_2" href="#changes_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h2>
+<ul>
+<li>
+<p>Added support for disabling interactivity for specific data series.<br />
+   (request from Ronald Schouten and Steve Upton)</p>
+</li>
+<li>
+<p>Flot now calls $() on the placeholder and optional legend container passed<br />
+   in so you can specify DOM elements or CSS expressions to make it easier to<br />
+   use Flot with libraries like Prototype or Mootools or through raw JSON from<br />
+   Ajax responses.</p>
+</li>
+<li>
+<p>A new &ldquo;plotselecting&rdquo; event is now emitted while the user is making a<br />
+   selection.</p>
+</li>
+<li>
+<p>The &ldquo;plothover&rdquo; event is now emitted immediately instead of at most 10<br />
+   times per second, you&rsquo;ll have to put in a setTimeout yourself if you&rsquo;re<br />
+   doing something really expensive on this event.</p>
+</li>
+<li>
+<p>The built-in date formatter can now be accessed as $.plot.formatDate(&hellip;)<br />
+   (suggestion by Matt Manela) and even replaced.</p>
+</li>
+<li>
+<p>Added &ldquo;borderColor&rdquo; option to the grid. (patches from Amaury Chamayou and<br />
+   Mike R. Williamson)</p>
+</li>
+<li>
+<p>Added support for gradient backgrounds for the grid. (based on patch from<br />
+   Amaury Chamayou, issue 90)</p>
+</li>
+</ul>
+<p>The &ldquo;setting options&rdquo; example provides a demonstration.</p>
+<ul>
+<li>
+<p>Gradient bars. (suggestion by stefpet)</p>
+</li>
+<li>
+<p>Added a &ldquo;plotunselected&rdquo; event which is triggered when the selection is<br />
+   removed, see &ldquo;selection&rdquo; example. (suggestion by Meda Ugo)</p>
+</li>
+<li>
+<p>The option legend.margin can now specify horizontal and vertical margins<br />
+   independently. (suggestion by someone who&rsquo;s annoyed)</p>
+</li>
+<li>
+<p>Data passed into Flot is now copied to a new canonical format to enable<br />
+   further processing before it hits the drawing routines. As a side-effect,<br />
+   this should make Flot more robust in the face of bad data. (issue 112)</p>
+</li>
+<li>
+<p>Step-wise charting: line charts have a new option &ldquo;steps&rdquo; that when set to<br />
+   true connects the points with horizontal/vertical steps instead of diagonal<br />
+   lines.</p>
+</li>
+<li>
+<p>The legend labelFormatter now passes the series in addition to just the<br />
+   label. (suggestion by Vincent Lemeltier)</p>
+</li>
+<li>
+<p>Horizontal bars (based on patch by Jason LeBrun).</p>
+</li>
+<li>
+<p>Support for partial bars by specifying a third coordinate, i.e. they don&rsquo;t<br />
+   have to start from the axis. This can be used to make stacked bars.</p>
+</li>
+<li>
+<p>New option to disable the (grid.show).</p>
+</li>
+<li>
+<p>Added pointOffset method for converting a point in data space to an offset<br />
+   within the placeholder.</p>
+</li>
+<li>
+<p>Plugin system: register an init method in the $.flot.plugins array to get<br />
+   started, see PLUGINS.txt for details on how to write plugins (it&rsquo;s easy).<br />
+   There are also some extra methods to enable access to internal state.</p>
+</li>
+<li>
+<p>Hooks: you can register functions that are called while Flot is crunching<br />
+   the data and doing the plot. This can be used to modify Flot without<br />
+   changing the source, useful for writing plugins. Some hooks are defined,<br />
+   more are likely to come.</p>
+</li>
+<li>
+<p>Threshold plugin: you can set a threshold and a color, and the data points<br />
+   below that threshold will then get the color. Useful for marking data<br />
+   below 0, for instance.</p>
+</li>
+<li>
+<p>Stack plugin: you can specify a stack key for each series to have them<br />
+   summed. This is useful for drawing additive/cumulative graphs with bars and<br />
+   (currently unfilled) lines.</p>
+</li>
+<li>
+<p>Crosshairs plugin: trace the mouse position on the axes, enable with<br />
+   crosshair: { mode: &ldquo;x&rdquo;} (see the new tracking example for a use).</p>
+</li>
+<li>
+<p>Image plugin: plot prerendered images.</p>
+</li>
+<li>
+<p>Navigation plugin for panning and zooming a plot.</p>
+</li>
+<li>
+<p>More configurable grid.</p>
+</li>
+<li>
+<p>Axis transformation support, useful for non-linear plots, e.g. log axes and<br />
+   compressed time axes (like omitting weekends).</p>
+</li>
+<li>
+<p>Support for twelve-hour date formatting (patch by Forrest Aldridge).</p>
+</li>
+<li>
+<p>The color parsing code in Flot has been cleaned up and split out so it&rsquo;s<br />
+   now available as a separate jQuery plugin. It&rsquo;s included inline in the Flot<br />
+   source to make dependency managing easier. This also makes it really easy<br />
+   to use the color helpers in Flot plugins.</p>
+</li>
+</ul>
+<h2 id="bug-fixes_3"><a name="user-content-bug-fixes_3" href="#bug-fixes_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h2>
+<ul>
+<li>
+<p>Fixed two corner-case bugs when drawing filled curves. (report and analysis<br />
+   by Joshua Varner)</p>
+</li>
+<li>
+<p>Fix auto-adjustment code when setting min to 0 for an axis where the<br />
+   dataset is completely flat on that axis. (report by chovy)</p>
+</li>
+<li>
+<p>Fixed a bug with passing in data from getData to setData when the secondary<br />
+   axes are used. (reported by nperelman, issue 65)</p>
+</li>
+<li>
+<p>Fixed so that it is possible to turn lines off when no other chart type is<br />
+   shown (based on problem reported by Glenn Vanderburg), and fixed so that<br />
+   setting lineWidth to 0 also hides the shadow. (based on problem reported by<br />
+   Sergio Nunes)</p>
+</li>
+<li>
+<p>Updated mousemove position expression to the latest from jQuery. (reported<br />
+   by meyuchas)</p>
+</li>
+<li>
+<p>Use CSS borders instead of background in legend. (issues 25 and 45)</p>
+</li>
+<li>
+<p>Explicitly convert axis min/max to numbers.</p>
+</li>
+<li>
+<p>Fixed a bug with drawing marking lines with different colors. (reported by<br />
+   Khurram)</p>
+</li>
+<li>
+<p>Fixed a bug with returning y2 values in the selection event. (fix by<br />
+   exists, issue 75)</p>
+</li>
+<li>
+<p>Only set position relative on placeholder if it hasn&rsquo;t already a position<br />
+   different from static. (reported by kyberneticist, issue 95)</p>
+</li>
+<li>
+<p>Don&rsquo;t round markings to prevent sub-pixel problems. (reported by<br />
+   Dan Lipsitt)</p>
+</li>
+<li>
+<p>Make the grid border act similarly to a regular CSS border, i.e. prevent<br />
+   it from overlapping the plot itself. This also fixes a problem with anti-<br />
+   aliasing when the width is 1 pixel. (reported by Anthony Ettinger)</p>
+</li>
+<li>
+<p>Imported version 3 of excanvas and fixed two issues with the newer version.<br />
+   Hopefully, this will make Flot work with IE8. (nudge by Fabien Menager,<br />
+   further analysis by Booink, issue 133)</p>
+</li>
+<li>
+<p>Changed the shadow code for lines to hopefully look a bit better with<br />
+   vertical lines.</p>
+</li>
+<li>
+<p>Round tick positions to avoid possible problems with fractions. (suggestion<br />
+   by Fred, issue 130)</p>
+</li>
+<li>
+<p>Made the heuristic for determining how many ticks to aim for a bit smarter.</p>
+</li>
+<li>
+<p>Fix for uneven axis margins (report and patch by Paul Kienzle) and snapping<br />
+   to ticks. (report and patch by lifthrasiir)</p>
+</li>
+<li>
+<p>Fixed bug with slicing in findNearbyItems. (patch by zollman)</p>
+</li>
+<li>
+<p>Make heuristic for x axis label widths more dynamic. (patch by<br />
+   rickinhethuis)</p>
+</li>
+<li>
+<p>Make sure points on top take precedence when finding nearby points when<br />
+   hovering. (reported by didroe, issue 224)</p>
+</li>
+</ul>
+<h2 id="flot-05"><a name="user-content-flot-05" href="#flot-05" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.5</h2>
+<p>Timestamps are now in UTC. Also &ldquo;selected&rdquo; event -&gt; becomes &ldquo;plotselected&rdquo;<br />
+with new data, the parameters for setSelection are now different (but<br />
+backwards compatibility hooks are in place), coloredAreas becomes markings<br />
+with a new interface (but backwards compatibility hooks are in place).</p>
+<h3 id="api-changes_3"><a name="user-content-api-changes_3" href="#api-changes_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Timestamps in time mode are now displayed according to UTC instead of the time<br />
+zone of the visitor. This affects the way the timestamps should be input;<br />
+you&rsquo;ll probably have to offset the timestamps according to your local time<br />
+zone. It also affects any custom date handling code (which basically now<br />
+should use the equivalent UTC date mehods, e.g. .setUTCMonth() instead of<br />
+.setMonth().</p>
+<p>Markings, previously coloredAreas, are now specified as ranges on the axes,<br />
+like <code>{ xaxis: { from: 0, to: 10 }}</code>. Furthermore with markings you can<br />
+now draw horizontal/vertical lines by setting from and to to the same<br />
+coordinate. (idea from line support patch by by Ryan Funduk)</p>
+<p>Interactivity: added a new &ldquo;plothover&rdquo; event and this and the &ldquo;plotclick&rdquo;<br />
+event now returns the closest data item (based on patch by /david, patch by<br />
+Mark Byers for bar support). See the revamped &ldquo;interacting with the data&rdquo;<br />
+example for some hints on what you can do.</p>
+<p>Highlighting: you can now highlight points and datapoints are autohighlighted<br />
+when you hover over them (if hovering is turned on).</p>
+<p>Support for dual axis has been added (based on patch by someone who&rsquo;s annoyed<br />
+and /david). For each data series you can specify which axes it belongs to,<br />
+and there are two more axes, x2axis and y2axis, to customize. This affects the<br />
+&ldquo;selected&rdquo; event which has been renamed to &ldquo;plotselected&rdquo; and spews out<br />
+<code>{ xaxis: { from: -10, to: 20 } ... },</code> setSelection in which the<br />
+parameters are on a new form (backwards compatible hooks are in place so old<br />
+code shouldn&rsquo;t break) and markings (formerly coloredAreas).</p>
+<h2 id="changes_3"><a name="user-content-changes_3" href="#changes_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h2>
+<ul>
+<li>
+<p>Added support for specifying the size of tick labels (axis.labelWidth,<br />
+   axis.labelHeight). Useful for specifying a max label size to keep multiple<br />
+   plots aligned.</p>
+</li>
+<li>
+<p>The &ldquo;fill&rdquo; option can now be a number that specifies the opacity of the<br />
+   fill.</p>
+</li>
+<li>
+<p>You can now specify a coordinate as null (like [2, null]) and Flot will<br />
+   take the other coordinate into account when scaling the axes. (based on<br />
+   patch by joebno)</p>
+</li>
+<li>
+<p>New option for bars &ldquo;align&rdquo;. Set it to &ldquo;center&rdquo; to center the bars on the<br />
+   value they represent.</p>
+</li>
+<li>
+<p>setSelection now takes a second parameter which you can use to prevent the<br />
+   method from firing the &ldquo;plotselected&rdquo; handler. </p>
+</li>
+<li>
+<p>Improved the handling of axis auto-scaling with bars. </p>
+</li>
+</ul>
+<h2 id="bug-fixes_4"><a name="user-content-bug-fixes_4" href="#bug-fixes_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h2>
+<ul>
+<li>
+<p>Fixed a bug in calculating spacing around the plot. (reported by<br />
+   timothytoe)</p>
+</li>
+<li>
+<p>Fixed a bug in finding max values for all-negative data sets.</p>
+</li>
+<li>
+<p>Prevent the possibility of eternal looping in tick calculations.</p>
+</li>
+<li>
+<p>Fixed a bug when borderWidth is set to 0. (reported by Rob/sanchothefat)</p>
+</li>
+<li>
+<p>Fixed a bug with drawing bars extending below 0. (reported by James Hewitt,<br />
+   patch by Ryan Funduk).</p>
+</li>
+<li>
+<p>Fixed a bug with line widths of bars. (reported by MikeM)</p>
+</li>
+<li>
+<p>Fixed a bug with &lsquo;nw&rsquo; and &lsquo;sw&rsquo; legend positions.</p>
+</li>
+<li>
+<p>Fixed a bug with multi-line x-axis tick labels. (reported by Luca Ciano,<br />
+   IE-fix help by Savage Zhang)</p>
+</li>
+<li>
+<p>Using the &ldquo;container&rdquo; option in legend now overwrites the container element<br />
+   instead of just appending to it, fixing the infinite legend bug. (reported<br />
+   by several people, fix by Brad Dewey)</p>
+</li>
+</ul>
+<h2 id="flot-04"><a name="user-content-flot-04" href="#flot-04" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.4</h2>
+<h3 id="api-changes_4"><a name="user-content-api-changes_4" href="#api-changes_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Deprecated axis.noTicks in favor of just specifying the number as axis.ticks.<br />
+So <code>xaxis: { noTicks: 10 }</code> becomes <code>xaxis: { ticks: 10 }</code>.</p>
+<p>Time series support. Specify axis.mode: &ldquo;time&rdquo;, put in Javascript timestamps<br />
+as data, and Flot will automatically spit out sensible ticks. Take a look at<br />
+the two new examples. The format can be customized with axis.timeformat and<br />
+axis.monthNames, or if that fails with axis.tickFormatter.</p>
+<p>Support for colored background areas via grid.coloredAreas. Specify an array<br />
+of { x1, y1, x2, y2 } objects or a function that returns these given<br />
+{ xmin, xmax, ymin, ymax }.</p>
+<p>More members on the plot object (report by Chris Davies and others).<br />
+&ldquo;getData&rdquo; for inspecting the assigned settings on data series (e.g. color) and<br />
+&ldquo;setData&rdquo;, &ldquo;setupGrid&rdquo; and &ldquo;draw&rdquo; for updating the contents without a total<br />
+replot.</p>
+<p>The default number of ticks to aim for is now dependent on the size of the<br />
+plot in pixels. Support for customizing tick interval sizes directly with<br />
+axis.minTickSize and axis.tickSize.</p>
+<p>Cleaned up the automatic axis scaling algorithm and fixed how it interacts<br />
+with ticks. Also fixed a couple of tick-related corner case bugs (one reported<br />
+by mainstreetmark, another reported by timothytoe).</p>
+<p>The option axis.tickFormatter now takes a function with two parameters, the<br />
+second parameter is an optional object with information about the axis. It has<br />
+min, max, tickDecimals, tickSize.</p>
+<h2 id="changes_4"><a name="user-content-changes_4" href="#changes_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h2>
+<ul>
+<li>
+<p>Added support for segmented lines. (based on patch from Michael MacDonald)</p>
+</li>
+<li>
+<p>Added support for ignoring null and bad values. (suggestion from Nick<br />
+   Konidaris and joshwaihi)</p>
+</li>
+<li>
+<p>Added support for changing the border width. (thanks to joebno and safoo)</p>
+</li>
+<li>
+<p>Label colors can be changed via CSS by selecting the tickLabel class.</p>
+</li>
+</ul>
+<h2 id="bug-fixes_5"><a name="user-content-bug-fixes_5" href="#bug-fixes_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h2>
+<ul>
+<li>
+<p>Fixed a bug in handling single-item bar series. (reported by Emil Filipov)</p>
+</li>
+<li>
+<p>Fixed erratic behaviour when interacting with the plot with IE 7. (reported<br />
+   by Lau Bech Lauritzen).</p>
+</li>
+<li>
+<p>Prevent IE/Safari text selection when selecting stuff on the canvas.</p>
+</li>
+</ul>
+<h2 id="flot-03"><a name="user-content-flot-03" href="#flot-03" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.3</h2>
+<p>This is mostly a quick-fix release because jquery.js wasn&rsquo;t included in the<br />
+previous zip/tarball.</p>
+<h2 id="changes_5"><a name="user-content-changes_5" href="#changes_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h2>
+<ul>
+<li>
+<p>Include jquery.js in the zip/tarball.</p>
+</li>
+<li>
+<p>Support clicking on the plot. Turn it on with grid: { clickable: true },<br />
+   then you get a &ldquo;plotclick&rdquo; event on the graph placeholder with the position<br />
+   in units of the plot.</p>
+</li>
+</ul>
+<h2 id="bug-fixes_6"><a name="user-content-bug-fixes_6" href="#bug-fixes_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bug fixes</h2>
+<ul>
+<li>Fixed a bug in dealing with data where min = max. (thanks to Michael<br />
+   Messinides)</li>
+</ul>
+<h2 id="flot-02"><a name="user-content-flot-02" href="#flot-02" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.2</h2>
+<p>The API should now be fully documented.</p>
+<h3 id="api-changes_5"><a name="user-content-api-changes_5" href="#api-changes_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>API changes</h3>
+<p>Moved labelMargin option to grid from x/yaxis.</p>
+<h2 id="changes_6"><a name="user-content-changes_6" href="#changes_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Changes</h2>
+<ul>
+<li>
+<p>Added support for putting a background behind the default legend. The<br />
+   default is the partly transparent background color. Added backgroundColor<br />
+   and backgroundOpacity to the legend options to control this.</p>
+</li>
+<li>
+<p>The ticks options can now be a callback function that takes one parameter,<br />
+   an object with the attributes min and max. The function should return a<br />
+   ticks array.</p>
+</li>
+<li>
+<p>Added labelFormatter option in legend, useful for turning the legend<br />
+   labels into links.</p>
+</li>
+<li>
+<p>Reduced the size of the code. (patch by Guy Fraser)</p>
+</li>
+</ul>
+<h2 id="flot-01"><a name="user-content-flot-01" href="#flot-01" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot 0.1</h2>
+<p>First public release.</p></article></body></html>

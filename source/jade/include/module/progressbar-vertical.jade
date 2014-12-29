@@ -1,0 +1,388 @@
+//- UI Elements - Progress Bars - Vertical
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+  div.col-lg-4
+
+    //Vertical
+    div.panel.panel-white
+      div.panel-heading Vertical
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical: div.progress-bar(role="progressbar" data-transitiongoal="20")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")
+
+    //Center Text
+    div.panel.panel-white
+      div.panel-heading Center Text
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text: div.progress-bar(role="progressbar" data-transitiongoal="75")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-center-text: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-center-text: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-center-text: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-center-text.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-center-text.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-center-text.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-center-text.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-center-text.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-center-text.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-center-text.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-center-text: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-center-text.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")
+
+
+  div.col-lg-4
+
+    //Filled Text
+    div.panel.panel-white
+      div.panel-heading Filled Text
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text: div.progress-bar(role="progressbar" data-transitiongoal="20")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")
+
+
+    //Filled Text (nonpercentage)
+    div.panel.panel-white
+      div.panel-heading Filled Text (nonpercentage)
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar(role="progressbar" data-transitiongoal="20")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-fill-text-nonpercentage: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-fill-text-nonpercentage.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")
+
+
+  div.col-lg-4
+
+    //Horizontal(Right)
+    div.panel.panel-white
+      div.panel-heading Horizontal(Bottom)
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom: div.progress-bar(role="progressbar" data-transitiongoal="20")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.bottom: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.bottom: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.bottom: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.bottom.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.bottom.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.bottom.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.bottom.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.bottom.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.bottom.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.bottom.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.bottom: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.bottom.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")
+
+    //Center Text (nonpercentage)
+    div.panel.panel-white
+      div.panel-heading Center Text (nonpercentage)
+      div.panel-body
+
+        //Basic
+        h4 Basic
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar(role="progressbar" data-transitiongoal="75")
+
+        //Themed
+        h4 Themed
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Striped
+        h4 Striped
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Animated
+        h4 Animated
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped.active: div.progress-bar(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped.active: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom aria range
+        h4 Custom aria range
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar(role="progressbar" data-transitiongoal="2" aria-valuemin="1" aria-valuemax="6" aria-valuenow="2")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="40" aria-valuemin="-40" aria-valuemax="200")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="60" aria-valuemax="120")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning(data-transitiongoal="80" aria-valuemin="30")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="100")
+
+        //Custom Animations
+        h4 Custom Animations
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.six-sec-ease-in-out(role="progressbar" data-transitiongoal="20")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-success.six-sec-ease-in-out(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-info.six-sec-ease-in-out(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-warning.six-sec-ease-in-out(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-striped: div.progress-bar.progress-bar-danger.six-sec-ease-in-out(role="progressbar" data-transitiongoal="100")
+
+        //Custom Size
+        h4 Custom Size
+        div.demo-progress-bar.fixed-height-150.clearfix
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-xs: div.progress-bar(role="progressbar" data-transitiongoal="40")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="60")
+          div.progress.vertical.progress-centered-text-nonpercentage: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="80")
+          div.progress.vertical.progress-centered-text-nonpercentage.progress-lg: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="100")

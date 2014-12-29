@@ -1,0 +1,61 @@
+//- Public Header - Message
+
+include ../../common/variables
+include ../mixins
+
+if topbar_message
+
+  //Message
+  li(class="dropdown")
+
+    a(class="dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown")
+      i(class="fa fa-fw fa-envelope-o")
+      span(class="badge badge-red") 5
+
+    +dropdown-menu('', 'dropdown-messages', 'You have 5 new messages', '300|256', 'Read all messages', page_email_inbox.url)
+      ul(class="list-unstyled link-black")
+
+        li: a(href="email-view_mail.html")
+          dl(class="media")
+            dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{base_img}user-head-1.jpg" alt="Gem Tang")
+            dd(class="media-body")
+              h6(class="media-heading")
+                |Gem Tang
+                span(class="badge badge-blue") New
+              p: small(title="Thanks to my two babes, Laurinda & Renee:)") Thanks to my two babes, Laurinda &amp; Renee:)
+
+        li: a(href="email-view_mail.html")
+          dl(class="media")
+            dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{base_img}user-head-2.jpg" alt="Julien Gong Min")
+            dd(class="media-body")
+              h6(class="media-heading")
+                |Julien Gong Min
+                span(class="badge badge-orange") Trash
+              p: small(title="I typed two articles with Hanx Writer app. Gee. It really helps me to write more") I typed two articles with Hanx Writer app. Gee. It really helps me to write more
+
+        li: a(href="email-view_mail.html")
+          dl(class="media")
+            dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{base_img}user-head-3.jpg" alt="Mophy Mo")
+            dd(class="media-body")
+              h6(class="media-heading")
+                |Mophy Mo
+                span(class="badge badge-red") Social
+              p: small(title="Flat Interaction Design") Flat Interaction Design
+
+        li: a(href="email-view_mail.html")
+          dl(class="media")
+            dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{base_img}user-head-4.jpg" alt="Michael Wynn Ma")
+            dd(class="media-body")
+              h6(class="media-heading")
+                |Michael Ma
+                span(class="badge badge-blue") Promotions
+              p: small(title="there is no noise about Smartisan ? let me show it. thats pretty good") there is no noise about Smartisan ? let me show it. thats pretty good
+
+        li: a(href="email-view_mail.html")
+          dl(class="media")
+            dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{base_img}user-head-5.jpg" alt="Mag Fay")
+            dd(class="media-body")
+              h6(class="media-heading")
+                |Mag Fay
+                span(class="badge badge-green") Updates
+              p: small(title="Skandinavien ! Köstliche Lachs, kalten Sommer , eine schöne Meerjungfrau Legenden, die kritischste ist meinen Vater mit mir") Skandinavien ! Köstliche Lachs, kalten Sommer , eine schöne Meerjungfrau Legenden, die kritischste ist meinen Vater mit mir

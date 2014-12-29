@@ -1,0 +1,59 @@
+//
+// Progress Bar
+// --------------------------------------------------
+
+
+/* Progress Bar */
+.demo-progress-bar{
+  padding-bottom: 20px;
+}
+
+.six-sec-ease-in-out
+{
+    .transition(all 6s ease)!important;
+}
+
+.progress
+{
+    font-weight: @font-weight-base;
+
+    border-radius: @border-radius-base;
+    &.vertical
+    {
+        width: @progressbar-vertical-width;
+    }
+}
+.progress-bar
+{
+    .box-shadow(none);
+}
+.progress-xs
+{
+    .progressbar-size(@progressbar-xs-height);
+    &.vertical{
+      .progressbar-vertical-size(@progressbar-vertical-xs-width);
+    }
+}
+.progress-sm
+{
+    .progressbar-size(@progressbar-sm-height);
+    &.vertical{
+      .progressbar-vertical-size(@progressbar-vertical-sm-width);
+    }
+}
+.progress-lg
+{
+    .progressbar-size(@progressbar-lg-height);
+    &.vertical{
+      .progressbar-vertical-size(@progressbar-vertical-lg-width);
+    }
+}
+
+.fixed-height-150 .progress.vertical,
+.fixed-height-150 .progress.vertical.progress-center-text .progressbar-back-text,
+.fixed-height-150 .progress.vertical.progress-center-text .progressbar-front-text
+{
+    line-height: 150px;
+
+    height: 150px;
+}

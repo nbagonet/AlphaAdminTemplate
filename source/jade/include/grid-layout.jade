@@ -1,0 +1,56 @@
+//- UI Elements - Gird Layout
+
+
+include ../common/variables
+include ./mixins
+
+
+div.wrapper
+
+  div.row
+    div.col-lg-12: div.panel: div.panel-body col-lg-12
+
+  div.row
+    - for (var i = 0; i < 2; i++)
+      div.col-lg-6: div.panel: div.panel-body col-lg-6
+
+  div.row
+    - for (var i = 0; i < 3; i++)
+      div.col-lg-4: div.panel: div.panel-body col-lg-4
+
+  div.row
+    - for (var i = 0; i < 4; i++)
+      div.col-lg-3: div.panel: div.panel-body col-lg-3
+
+  div.row
+    - for (var i = 0; i < 6; i++)
+      div.col-lg-2: div.panel: div.panel-body col-lg-2
+
+  div.row
+    - for (var i = 0; i < 12; i++)
+      div.col-lg-1: div.panel: div.panel-body col-lg-1
+
+  div.row
+    div.col-lg-4
+      div.row
+        div.col-xs-6: div.panel: div.panel-body col-xs-6
+        div.col-xs-6: div.panel: div.panel-body col-xs-6
+    div.col-lg-8: div.panel: div.panel-body col-lg-8
+
+  div.row
+    div.col-lg-6
+      div.row
+        div.col-sm-6: div.panel: div.panel-body col-sm-6
+        div.col-sm-6: div.panel: div.panel-body col-sm-6
+    div.col-lg-6: div.panel: div.panel-body col-lg-6
+
+  div.row
+    div.col-lg-8
+      div.row
+        div.col-md-6: div.panel: div.panel-body col-md-6
+        div.col-md-6: div.panel: div.panel-body col-md-6
+    div.col-lg-4: div.panel: div.panel-body col-lg-4
+
+  div.row
+    - for (var i = 0; i < 2; i++)
+      div.col-sm-6: div.panel: div.panel-body col-sm-6

@@ -1,0 +1,19 @@
+.gen-bg(@bgcolor; @linkcolor)
+{
+    background-color: @bgcolor;
+    color: @linkcolor;
+    .transition(ease-in-out .2s);
+    &:hover,
+    a:hover,
+    &:focus,
+    a:focus
+    {
+        color: lighten(@bgcolor, 30%);
+        background-color: darken(@bgcolor, 10%);
+        .transition(ease-in-out .2s);
+    }
+    a
+    {
+        color: @linkcolor;
+    }
+}

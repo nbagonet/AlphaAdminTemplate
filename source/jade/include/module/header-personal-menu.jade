@@ -1,0 +1,27 @@
+//- Public Header - Personal Menu
+
+include ../../common/variables
+include ../mixins
+
+if topbar_personal_menu
+
+  //Personal Menu
+  li(class="dropdown topbar-user")
+
+    a(class="dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown")
+      img(src="#{base_img}user-head-6.jpg" class="img-circle" alt="Ryan Hsu" title="Ryan Hsu")
+      | Ryan Hsu
+      span(class="caret")
+
+    +dropdown-menu('', 'dropdown-personal')
+      +dropdown-menu-item-normal('', page_pages_profile.url, 'My Profile', 'fa fa-user')
+      +dropdown-menu-item-normal('', page_pages_calendar.url, 'My Calendar', 'fa fa-calendar')
+      +dropdown-menu-item-normal('', page_email_inbox.url, 'My Inbox', 'fa fa-envelope', '', 'badge badge-orange', '5')
+      +dropdown-menu-item-normal('', '#', 'My Tasks', 'fa fa-tasks', '', 'badge badge-red', '6')
+      +dropdown-menu-item-normal('divider')
+      +dropdown-menu-item-normal('', '#', 'Settings', 'fa fa-cog')
+      +dropdown-menu-item-normal('', '#', 'Upgrade', 'fa fa-cloud-download')
+      +dropdown-menu-item-normal('', '#', 'Help', 'fa fa-question-circle')
+      +dropdown-menu-item-normal('divider')
+      +dropdown-menu-item-normal('', page_pages_lock_screen.url, 'Lock Screen', 'fa fa-lock')
+      +dropdown-menu-item-normal('', page_pages_lock_screen.url, 'Sign Out', 'fa fa-sign-out')

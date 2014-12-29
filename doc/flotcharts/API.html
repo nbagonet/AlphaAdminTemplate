@@ -1,0 +1,2244 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>API</title></head><body><article class="markdown-body"><h1 id="flot-reference"><a name="user-content-flot-reference" href="#flot-reference" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flot Reference</h1>
+<p>Consider a call to the plot function:</p>
+<pre><code class="js">var plot = $.plot(placeholder, data, options)
+</code></pre>
+
+<p>The placeholder is a jQuery object or DOM element or jQuery expression<br />
+that the plot will be put into. This placeholder needs to have its<br />
+width and height set as explained in the <a href="/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/doc/flotcharts/README.md">README</a> (go read that now if<br />
+you haven&rsquo;t, it&rsquo;s short). The plot will modify some properties of the<br />
+placeholder so it&rsquo;s recommended you simply pass in a div that you<br />
+don&rsquo;t use for anything else. Make sure you check any fancy styling<br />
+you apply to the div, e.g. background images have been reported to be a<br />
+problem on IE 7.</p>
+<p>The plot function can also be used as a jQuery chainable property.  This form<br />
+naturally can&rsquo;t return the plot object directly, but you can still access it<br />
+via the &lsquo;plot&rsquo; data key, like this:</p>
+<pre><code class="js">var plot = $(&quot;#placeholder&quot;).plot(data, options).data(&quot;plot&quot;);
+</code></pre>
+
+<p>The format of the data is documented below, as is the available<br />
+options. The plot object returned from the call has some methods you<br />
+can call. These are documented separately below.</p>
+<p>Note that in general Flot gives no guarantees if you change any of the<br />
+objects you pass in to the plot function or get out of it since<br />
+they&rsquo;re not necessarily deep-copied.</p>
+<h2 id="data-format"><a name="user-content-data-format" href="#data-format" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Data Format</h2>
+<p>The data is an array of data series:</p>
+<pre><code class="js">[ series1, series2, ... ]
+</code></pre>
+
+<p>A series can either be raw data or an object with properties. The raw<br />
+data format is an array of points:</p>
+<pre><code class="js">[ [x1, y1], [x2, y2], ... ]
+</code></pre>
+
+<p>E.g.</p>
+<pre><code class="js">[ [1, 3], [2, 14.01], [3.5, 3.14] ]
+</code></pre>
+
+<p>Note that to simplify the internal logic in Flot both the x and y<br />
+values must be numbers (even if specifying time series, see below for<br />
+how to do this). This is a common problem because you might retrieve<br />
+data from the database and serialize them directly to JSON without<br />
+noticing the wrong type. If you&rsquo;re getting mysterious errors, double<br />
+check that you&rsquo;re inputting numbers and not strings.</p>
+<p>If a null is specified as a point or if one of the coordinates is null<br />
+or couldn&rsquo;t be converted to a number, the point is ignored when<br />
+drawing. As a special case, a null value for lines is interpreted as a<br />
+line segment end, i.e. the points before and after the null value are<br />
+not connected.</p>
+<p>Lines and points take two coordinates. For filled lines and bars, you<br />
+can specify a third coordinate which is the bottom of the filled<br />
+area/bar (defaults to 0).</p>
+<p>The format of a single series object is as follows:</p>
+<pre><code class="js">{
+    color: color or number
+    data: rawdata
+    label: string
+    lines: specific lines options
+    bars: specific bars options
+    points: specific points options
+    xaxis: number
+    yaxis: number
+    clickable: boolean
+    hoverable: boolean
+    shadowSize: number
+    highlightColor: color or number
+}
+</code></pre>
+
+<p>You don&rsquo;t have to specify any of them except the data, the rest are<br />
+options that will get default values. Typically you&rsquo;d only specify<br />
+label and data, like this:</p>
+<pre><code class="js">{
+    label: &quot;y = 3&quot;,
+    data: [[0, 3], [10, 3]]
+}
+</code></pre>
+
+<p>The label is used for the legend, if you don&rsquo;t specify one, the series<br />
+will not show up in the legend.</p>
+<p>If you don&rsquo;t specify color, the series will get a color from the<br />
+auto-generated colors. The color is either a CSS color specification<br />
+(like &ldquo;rgb(255, 100, 123)&rdquo;) or an integer that specifies which of<br />
+auto-generated colors to select, e.g. 0 will get color no. 0, etc.</p>
+<p>The latter is mostly useful if you let the user add and remove series,<br />
+in which case you can hard-code the color index to prevent the colors<br />
+from jumping around between the series.</p>
+<p>The &ldquo;xaxis&rdquo; and &ldquo;yaxis&rdquo; options specify which axis to use. The axes<br />
+are numbered from 1 (default), so { yaxis: 2} means that the series<br />
+should be plotted against the second y axis.</p>
+<p>&ldquo;clickable&rdquo; and &ldquo;hoverable&rdquo; can be set to false to disable<br />
+interactivity for specific series if interactivity is turned on in<br />
+the plot, see below.</p>
+<p>The rest of the options are all documented below as they are the same<br />
+as the default options passed in via the options parameter in the plot<br />
+commmand. When you specify them for a specific data series, they will<br />
+override the default options for the plot for that data series.</p>
+<p>Here&rsquo;s a complete example of a simple data specification:</p>
+<pre><code class="js">[ { label: &quot;Foo&quot;, data: [ [10, 1], [17, -14], [30, 5] ] },
+  { label: &quot;Bar&quot;, data: [ [11, 13], [19, 11], [30, -7] ] }
+]
+</code></pre>
+
+<h2 id="plot-options"><a name="user-content-plot-options" href="#plot-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Plot Options</h2>
+<p>All options are completely optional. They are documented individually<br />
+below, to change them you just specify them in an object, e.g.</p>
+<pre><code class="js">var options = {
+    series: {
+        lines: { show: true },
+        points: { show: true }
+    }
+};
+
+$.plot(placeholder, data, options);
+</code></pre>
+
+<h2 id="customizing-the-legend"><a name="user-content-customizing-the-legend" href="#customizing-the-legend" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Customizing the legend</h2>
+<pre><code class="js">legend: {
+    show: boolean
+    labelFormatter: null or (fn: string, series object -&gt; string)
+    labelBoxBorderColor: color
+    noColumns: number
+    position: &quot;ne&quot; or &quot;nw&quot; or &quot;se&quot; or &quot;sw&quot;
+    margin: number of pixels or [x margin, y margin]
+    backgroundColor: null or color
+    backgroundOpacity: number between 0 and 1
+    container: null or jQuery object/DOM element/jQuery expression
+    sorted: null/false, true, &quot;ascending&quot;, &quot;descending&quot;, &quot;reverse&quot;, or a comparator
+}
+</code></pre>
+
+<p>The legend is generated as a table with the data series labels and<br />
+small label boxes with the color of the series. If you want to format<br />
+the labels in some way, e.g. make them to links, you can pass in a<br />
+function for &ldquo;labelFormatter&rdquo;. Here&rsquo;s an example that makes them<br />
+clickable:</p>
+<pre><code class="js">labelFormatter: function(label, series) {
+    // series is the series object for the label
+    return '&lt;a href=&quot;#' + label + '&quot;&gt;' + label + '&lt;/a&gt;';
+}
+</code></pre>
+
+<p>To prevent a series from showing up in the legend, simply have the function<br />
+return null.</p>
+<p>&ldquo;noColumns&rdquo; is the number of columns to divide the legend table into.<br />
+&ldquo;position&rdquo; specifies the overall placement of the legend within the<br />
+plot (top-right, top-left, etc.) and margin the distance to the plot<br />
+edge (this can be either a number or an array of two numbers like [x,<br />
+y]). &ldquo;backgroundColor&rdquo; and &ldquo;backgroundOpacity&rdquo; specifies the<br />
+background. The default is a partly transparent auto-detected<br />
+background.</p>
+<p>If you want the legend to appear somewhere else in the DOM, you can<br />
+specify &ldquo;container&rdquo; as a jQuery object/expression to put the legend<br />
+table into. The &ldquo;position&rdquo; and &ldquo;margin&rdquo; etc. options will then be<br />
+ignored. Note that Flot will overwrite the contents of the container.</p>
+<p>Legend entries appear in the same order as their series by default. If &ldquo;sorted&rdquo;<br />
+is &ldquo;reverse&rdquo; then they appear in the opposite order from their series. To sort<br />
+them alphabetically, you can specify true, &ldquo;ascending&rdquo; or &ldquo;descending&rdquo;, where<br />
+true and &ldquo;ascending&rdquo; are equivalent.</p>
+<p>You can also provide your own comparator function that accepts two<br />
+objects with &ldquo;label&rdquo; and &ldquo;color&rdquo; properties, and returns zero if they<br />
+are equal, a positive value if the first is greater than the second,<br />
+and a negative value if the first is less than the second.</p>
+<pre><code class="js">sorted: function(a, b) {
+    // sort alphabetically in ascending order
+    return a.label == b.label ? 0 : (
+        a.label &gt; b.label ? 1 : -1
+    )
+}
+</code></pre>
+
+<h2 id="customizing-the-axes"><a name="user-content-customizing-the-axes" href="#customizing-the-axes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Customizing the axes</h2>
+<pre><code class="js">xaxis, yaxis: {
+    show: null or true/false
+    position: &quot;bottom&quot; or &quot;top&quot; or &quot;left&quot; or &quot;right&quot;
+    mode: null or &quot;time&quot; (&quot;time&quot; requires jquery.flot.time.js plugin)
+    timezone: null, &quot;browser&quot; or timezone (only makes sense for mode: &quot;time&quot;)
+
+    color: null or color spec
+    tickColor: null or color spec
+    font: null or font spec object
+
+    min: null or number
+    max: null or number
+    autoscaleMargin: null or number
+
+    transform: null or fn: number -&gt; number
+    inverseTransform: null or fn: number -&gt; number
+
+    ticks: null or number or ticks array or (fn: axis -&gt; ticks array)
+    tickSize: number or array
+    minTickSize: number or array
+    tickFormatter: (fn: number, object -&gt; string) or string
+    tickDecimals: null or number
+
+    labelWidth: null or number
+    labelHeight: null or number
+    reserveSpace: null or true
+
+    tickLength: null or number
+
+    alignTicksWithAxis: null or number
+}
+</code></pre>
+
+<p>All axes have the same kind of options. The following describes how to<br />
+configure one axis, see below for what to do if you&rsquo;ve got more than<br />
+one x axis or y axis.</p>
+<p>If you don&rsquo;t set the &ldquo;show&rdquo; option (i.e. it is null), visibility is<br />
+auto-detected, i.e. the axis will show up if there&rsquo;s data associated<br />
+with it. You can override this by setting the &ldquo;show&rdquo; option to true or<br />
+false.</p>
+<p>The &ldquo;position&rdquo; option specifies where the axis is placed, bottom or<br />
+top for x axes, left or right for y axes. The &ldquo;mode&rdquo; option determines<br />
+how the data is interpreted, the default of null means as decimal<br />
+numbers. Use &ldquo;time&rdquo; for time series data; see the time series data<br />
+section. The time plugin (jquery.flot.time.js) is required for time<br />
+series support.</p>
+<p>The &ldquo;color&rdquo; option determines the color of the line and ticks for the axis, and<br />
+defaults to the grid color with transparency. For more fine-grained control you<br />
+can also set the color of the ticks separately with &ldquo;tickColor&rdquo;.</p>
+<p>You can customize the font and color used to draw the axis tick labels with CSS<br />
+or directly via the &ldquo;font&rdquo; option. When &ldquo;font&rdquo; is null - the default - each<br />
+tick label is given the &lsquo;flot-tick-label&rsquo; class. For compatibility with Flot<br />
+0.7 and earlier the labels are also given the &lsquo;tickLabel&rsquo; class, but this is<br />
+deprecated and scheduled to be removed with the release of version 1.0.0.</p>
+<p>To enable more granular control over styles, labels are divided between a set<br />
+of text containers, with each holding the labels for one axis. These containers<br />
+are given the classes &lsquo;flot-[x|y]-axis&rsquo;, and &lsquo;flot-[x|y]#-axis&rsquo;, where &lsquo;#&rsquo; is<br />
+the number of the axis when there are multiple axes.  For example, the x-axis<br />
+labels for a simple plot with only a single x-axis might look like this:</p>
+<pre><code class="html">&lt;div class='flot-x-axis flot-x1-axis'&gt;
+    &lt;div class='flot-tick-label'&gt;January 2013&lt;/div&gt;
+    ...
+&lt;/div&gt;
+</code></pre>
+
+<p>For direct control over label styles you can also provide &ldquo;font&rdquo; as an object<br />
+with this format:</p>
+<pre><code class="js">{
+    size: 11,
+    lineHeight: 13,
+    style: &quot;italic&quot;,
+    weight: &quot;bold&quot;,
+    family: &quot;sans-serif&quot;,
+    variant: &quot;small-caps&quot;,
+    color: &quot;#545454&quot;
+}
+</code></pre>
+
+<p>The size and lineHeight must be expressed in pixels; CSS units such as &lsquo;em&rsquo;<br />
+or &lsquo;smaller&rsquo; are not allowed.</p>
+<p>The options &ldquo;min&rdquo;/&rdquo;max&rdquo; are the precise minimum/maximum value on the<br />
+scale. If you don&rsquo;t specify either of them, a value will automatically<br />
+be chosen based on the minimum/maximum data values. Note that Flot<br />
+always examines all the data values you feed to it, even if a<br />
+restriction on another axis may make some of them invisible (this<br />
+makes interactive use more stable).</p>
+<p>The &ldquo;autoscaleMargin&rdquo; is a bit esoteric: it&rsquo;s the fraction of margin<br />
+that the scaling algorithm will add to avoid that the outermost points<br />
+ends up on the grid border. Note that this margin is only applied when<br />
+a min or max value is not explicitly set. If a margin is specified,<br />
+the plot will furthermore extend the axis end-point to the nearest<br />
+whole tick. The default value is &ldquo;null&rdquo; for the x axes and 0.02 for y<br />
+axes which seems appropriate for most cases.</p>
+<p>&ldquo;transform&rdquo; and &ldquo;inverseTransform&rdquo; are callbacks you can put in to<br />
+change the way the data is drawn. You can design a function to<br />
+compress or expand certain parts of the axis non-linearly, e.g.<br />
+suppress weekends or compress far away points with a logarithm or some<br />
+other means. When Flot draws the plot, each value is first put through<br />
+the transform function. Here&rsquo;s an example, the x axis can be turned<br />
+into a natural logarithm axis with the following code:</p>
+<pre><code class="js">xaxis: {
+    transform: function (v) { return Math.log(v); },
+    inverseTransform: function (v) { return Math.exp(v); }
+}
+</code></pre>
+
+<p>Similarly, for reversing the y axis so the values appear in inverse<br />
+order:</p>
+<pre><code class="js">yaxis: {
+    transform: function (v) { return -v; },
+    inverseTransform: function (v) { return -v; }
+}
+</code></pre>
+
+<p>Note that for finding extrema, Flot assumes that the transform<br />
+function does not reorder values (it should be monotone).</p>
+<p>The inverseTransform is simply the inverse of the transform function<br />
+(so v == inverseTransform(transform(v)) for all relevant v). It is<br />
+required for converting from canvas coordinates to data coordinates,<br />
+e.g. for a mouse interaction where a certain pixel is clicked. If you<br />
+don&rsquo;t use any interactive features of Flot, you may not need it.</p>
+<p>The rest of the options deal with the ticks.</p>
+<p>If you don&rsquo;t specify any ticks, a tick generator algorithm will make<br />
+some for you. The algorithm has two passes. It first estimates how<br />
+many ticks would be reasonable and uses this number to compute a nice<br />
+round tick interval size. Then it generates the ticks.</p>
+<p>You can specify how many ticks the algorithm aims for by setting<br />
+&ldquo;ticks&rdquo; to a number. The algorithm always tries to generate reasonably<br />
+round tick values so even if you ask for three ticks, you might get<br />
+five if that fits better with the rounding. If you don&rsquo;t want any<br />
+ticks at all, set &ldquo;ticks&rdquo; to 0 or an empty array.</p>
+<p>Another option is to skip the rounding part and directly set the tick<br />
+interval size with &ldquo;tickSize&rdquo;. If you set it to 2, you&rsquo;ll get ticks at<br />
+2, 4, 6, etc. Alternatively, you can specify that you just don&rsquo;t want<br />
+ticks at a size less than a specific tick size with &ldquo;minTickSize&rdquo;.<br />
+Note that for time series, the format is an array like [2, &ldquo;month&rdquo;],<br />
+see the next section.</p>
+<p>If you want to completely override the tick algorithm, you can specify<br />
+an array for &ldquo;ticks&rdquo;, either like this:</p>
+<pre><code class="js">ticks: [0, 1.2, 2.4]
+</code></pre>
+
+<p>Or like this where the labels are also customized:</p>
+<pre><code class="js">ticks: [[0, &quot;zero&quot;], [1.2, &quot;one mark&quot;], [2.4, &quot;two marks&quot;]]
+</code></pre>
+
+<p>You can mix the two if you like.</p>
+<p>For extra flexibility you can specify a function as the &ldquo;ticks&rdquo;<br />
+parameter. The function will be called with an object with the axis<br />
+min and max and should return a ticks array. Here&rsquo;s a simplistic tick<br />
+generator that spits out intervals of pi, suitable for use on the x<br />
+axis for trigonometric functions:</p>
+<pre><code class="js">function piTickGenerator(axis) {
+    var res = [], i = Math.floor(axis.min / Math.PI);
+    do {
+        var v = i * Math.PI;
+        res.push([v, i + &quot;\u03c0&quot;]);
+        ++i;
+    } while (v &lt; axis.max);
+    return res;
+}
+</code></pre>
+
+<p>You can control how the ticks look like with &ldquo;tickDecimals&rdquo;, the<br />
+number of decimals to display (default is auto-detected).</p>
+<p>Alternatively, for ultimate control over how ticks are formatted you can<br />
+provide a function to &ldquo;tickFormatter&rdquo;. The function is passed two<br />
+parameters, the tick value and an axis object with information, and<br />
+should return a string. The default formatter looks like this:</p>
+<pre><code class="js">function formatter(val, axis) {
+    return val.toFixed(axis.tickDecimals);
+}
+</code></pre>
+
+<p>The axis object has &ldquo;min&rdquo; and &ldquo;max&rdquo; with the range of the axis,<br />
+&ldquo;tickDecimals&rdquo; with the number of decimals to round the value to and<br />
+&ldquo;tickSize&rdquo; with the size of the interval between ticks as calculated<br />
+by the automatic axis scaling algorithm (or specified by you). Here&rsquo;s<br />
+an example of a custom formatter:</p>
+<pre><code class="js">function suffixFormatter(val, axis) {
+    if (val &gt; 1000000)
+        return (val / 1000000).toFixed(axis.tickDecimals) + &quot; MB&quot;;
+    else if (val &gt; 1000)
+        return (val / 1000).toFixed(axis.tickDecimals) + &quot; kB&quot;;
+    else
+        return val.toFixed(axis.tickDecimals) + &quot; B&quot;;
+}
+</code></pre>
+
+<p>&ldquo;labelWidth&rdquo; and &ldquo;labelHeight&rdquo; specifies a fixed size of the tick<br />
+labels in pixels. They&rsquo;re useful in case you need to align several<br />
+plots. &ldquo;reserveSpace&rdquo; means that even if an axis isn&rsquo;t shown, Flot<br />
+should reserve space for it - it is useful in combination with<br />
+labelWidth and labelHeight for aligning multi-axis charts.</p>
+<p>&ldquo;tickLength&rdquo; is the length of the tick lines in pixels. By default, the<br />
+innermost axes will have ticks that extend all across the plot, while<br />
+any extra axes use small ticks. A value of null means use the default,<br />
+while a number means small ticks of that length - set it to 0 to hide<br />
+the lines completely.</p>
+<p>If you set &ldquo;alignTicksWithAxis&rdquo; to the number of another axis, e.g.<br />
+alignTicksWithAxis: 1, Flot will ensure that the autogenerated ticks<br />
+of this axis are aligned with the ticks of the other axis. This may<br />
+improve the looks, e.g. if you have one y axis to the left and one to<br />
+the right, because the grid lines will then match the ticks in both<br />
+ends. The trade-off is that the forced ticks won&rsquo;t necessarily be at<br />
+natural places.</p>
+<h2 id="multiple-axes"><a name="user-content-multiple-axes" href="#multiple-axes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Multiple axes</h2>
+<p>If you need more than one x axis or y axis, you need to specify for<br />
+each data series which axis they are to use, as described under the<br />
+format of the data series, e.g. { data: [&hellip;], yaxis: 2 } specifies<br />
+that a series should be plotted against the second y axis.</p>
+<p>To actually configure that axis, you can&rsquo;t use the xaxis/yaxis options<br />
+directly - instead there are two arrays in the options:</p>
+<pre><code class="js">xaxes: []
+yaxes: []
+</code></pre>
+
+<p>Here&rsquo;s an example of configuring a single x axis and two y axes (we<br />
+can leave options of the first y axis empty as the defaults are fine):</p>
+<pre><code class="js">{
+    xaxes: [ { position: &quot;top&quot; } ],
+    yaxes: [ { }, { position: &quot;right&quot;, min: 20 } ]
+}
+</code></pre>
+
+<p>The arrays get their default values from the xaxis/yaxis settings, so<br />
+say you want to have all y axes start at zero, you can simply specify<br />
+yaxis: { min: 0 } instead of adding a min parameter to all the axes.</p>
+<p>Generally, the various interfaces in Flot dealing with data points<br />
+either accept an xaxis/yaxis parameter to specify which axis number to<br />
+use (starting from 1), or lets you specify the coordinate directly as<br />
+x2/x3/&hellip; or x2axis/x3axis/&hellip; instead of &ldquo;x&rdquo; or &ldquo;xaxis&rdquo;.</p>
+<h2 id="time-series-data"><a name="user-content-time-series-data" href="#time-series-data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Time series data</h2>
+<p>Please note that it is now required to include the time plugin,<br />
+jquery.flot.time.js, for time series support.</p>
+<p>Time series are a bit more difficult than scalar data because<br />
+calendars don&rsquo;t follow a simple base 10 system. For many cases, Flot<br />
+abstracts most of this away, but it can still be a bit difficult to<br />
+get the data into Flot. So we&rsquo;ll first discuss the data format.</p>
+<p>The time series support in Flot is based on Javascript timestamps,<br />
+i.e. everywhere a time value is expected or handed over, a Javascript<br />
+timestamp number is used. This is a number, not a Date object. A<br />
+Javascript timestamp is the number of milliseconds since January 1,<br />
+1970 00:00:00 UTC. This is almost the same as Unix timestamps, except it&rsquo;s<br />
+in milliseconds, so remember to multiply by 1000!</p>
+<p>You can see a timestamp like this</p>
+<pre><code class="js">alert((new Date()).getTime())
+</code></pre>
+
+<p>There are different schools of thought when it comes to diplay of<br />
+timestamps. Many will want the timestamps to be displayed according to<br />
+a certain time zone, usually the time zone in which the data has been<br />
+produced. Some want the localized experience, where the timestamps are<br />
+displayed according to the local time of the visitor. Flot supports<br />
+both. Optionally you can include a third-party library to get<br />
+additional timezone support.</p>
+<p>Default behavior is that Flot always displays timestamps according to<br />
+UTC. The reason being that the core Javascript Date object does not<br />
+support other fixed time zones. Often your data is at another time<br />
+zone, so it may take a little bit of tweaking to work around this<br />
+limitation.</p>
+<p>The easiest way to think about it is to pretend that the data<br />
+production time zone is UTC, even if it isn&rsquo;t. So if you have a<br />
+datapoint at 2002-02-20 08:00, you can generate a timestamp for eight<br />
+o&rsquo;clock UTC even if it really happened eight o&rsquo;clock UTC+0200.</p>
+<p>In PHP you can get an appropriate timestamp with:</p>
+<pre><code class="php">strtotime(&quot;2002-02-20 UTC&quot;) * 1000
+</code></pre>
+
+<p>In Python you can get it with something like:</p>
+<pre><code class="python">calendar.timegm(datetime_object.timetuple()) * 1000
+</code></pre>
+
+<p>In .NET you can get it with something like:</p>
+<pre><code class="aspx">public static int GetJavascriptTimestamp(System.DateTime input)
+{
+    System.TimeSpan span = new System.TimeSpan(System.DateTime.Parse(&quot;1/1/1970&quot;).Ticks);
+    System.DateTime time = input.Subtract(span);
+    return (long)(time.Ticks / 10000);
+}
+</code></pre>
+
+<p>Javascript also has some support for parsing date strings, so it is<br />
+possible to generate the timestamps manually client-side.</p>
+<p>If you&rsquo;ve already got the real UTC timestamp, it&rsquo;s too late to use the<br />
+pretend trick described above. But you can fix up the timestamps by<br />
+adding the time zone offset, e.g. for UTC+0200 you would add 2 hours<br />
+to the UTC timestamp you got. Then it&rsquo;ll look right on the plot. Most<br />
+programming environments have some means of getting the timezone<br />
+offset for a specific date (note that you need to get the offset for<br />
+each individual timestamp to account for daylight savings).</p>
+<p>The alternative with core Javascript is to interpret the timestamps<br />
+according to the time zone that the visitor is in, which means that<br />
+the ticks will shift with the time zone and daylight savings of each<br />
+visitor. This behavior is enabled by setting the axis option<br />
+&ldquo;timezone&rdquo; to the value &ldquo;browser&rdquo;.</p>
+<p>If you need more time zone functionality than this, there is still<br />
+another option. If you include the &ldquo;timezone-js&rdquo; library<br />
+<a href="https://github.com/mde/timezone-js">https://github.com/mde/timezone-js</a> in the page and set axis.timezone<br />
+to a value recognized by said library, Flot will use timezone-js to<br />
+interpret the timestamps according to that time zone.</p>
+<p>Once you&rsquo;ve gotten the timestamps into the data and specified &ldquo;time&rdquo;<br />
+as the axis mode, Flot will automatically generate relevant ticks and<br />
+format them. As always, you can tweak the ticks via the &ldquo;ticks&rdquo; option<br />
+- just remember that the values should be timestamps (numbers), not<br />
+Date objects.</p>
+<p>Tick generation and formatting can also be controlled separately<br />
+through the following axis options:</p>
+<pre><code class="js">minTickSize: array
+timeformat: null or format string
+monthNames: null or array of size 12 of strings
+dayNames: null or array of size 7 of strings
+twelveHourClock: boolean
+</code></pre>
+
+<p>Here &ldquo;timeformat&rdquo; is a format string to use. You might use it like<br />
+this:</p>
+<pre><code class="js">xaxis: {
+    mode: &quot;time&quot;,
+    timeformat: &quot;%Y/%m/%d&quot;
+}
+</code></pre>
+
+<p>This will result in tick labels like &ldquo;2000/12/24&rdquo;. A subset of the<br />
+standard strftime specifiers are supported (plus the nonstandard %q):</p>
+<pre><code class="js">%a: weekday name (customizable)
+%b: month name (customizable)
+%d: day of month, zero-padded (01-31)
+%e: day of month, space-padded ( 1-31)
+%H: hours, 24-hour time, zero-padded (00-23)
+%I: hours, 12-hour time, zero-padded (01-12)
+%m: month, zero-padded (01-12)
+%M: minutes, zero-padded (00-59)
+%q: quarter (1-4)
+%S: seconds, zero-padded (00-59)
+%y: year (two digits)
+%Y: year (four digits)
+%p: am/pm
+%P: AM/PM (uppercase version of %p)
+%w: weekday as number (0-6, 0 being Sunday)
+</code></pre>
+
+<p>Flot 0.8 switched from %h to the standard %H hours specifier. The %h specifier<br />
+is still available, for backwards-compatibility, but is deprecated and<br />
+scheduled to be removed permanently with the release of version 1.0.</p>
+<p>You can customize the month names with the &ldquo;monthNames&rdquo; option. For<br />
+instance, for Danish you might specify:</p>
+<pre><code class="js">monthNames: [&quot;jan&quot;, &quot;feb&quot;, &quot;mar&quot;, &quot;apr&quot;, &quot;maj&quot;, &quot;jun&quot;, &quot;jul&quot;, &quot;aug&quot;, &quot;sep&quot;, &quot;okt&quot;, &quot;nov&quot;, &quot;dec&quot;]
+</code></pre>
+
+<p>Similarly you can customize the weekday names with the &ldquo;dayNames&rdquo;<br />
+option. An example in French:</p>
+<pre><code class="js">dayNames: [&quot;dim&quot;, &quot;lun&quot;, &quot;mar&quot;, &quot;mer&quot;, &quot;jeu&quot;, &quot;ven&quot;, &quot;sam&quot;]
+</code></pre>
+
+<p>If you set &ldquo;twelveHourClock&rdquo; to true, the autogenerated timestamps<br />
+will use 12 hour AM/PM timestamps instead of 24 hour. This only<br />
+applies if you have not set &ldquo;timeformat&rdquo;. Use the &ldquo;%I&rdquo; and &ldquo;%p&rdquo; or<br />
+&ldquo;%P&rdquo; options if you want to build your own format string with 12-hour<br />
+times.</p>
+<p>If the Date object has a strftime property (and it is a function), it<br />
+will be used instead of the built-in formatter. Thus you can include<br />
+a strftime library such as <a href="http://hacks.bluesmoon.info/strftime/">http://hacks.bluesmoon.info/strftime/</a> for<br />
+more powerful date/time formatting.</p>
+<p>If everything else fails, you can control the formatting by specifying<br />
+a custom tick formatter function as usual. Here&rsquo;s a simple example<br />
+which will format December 24 as 24/12:</p>
+<pre><code class="js">tickFormatter: function (val, axis) {
+    var d = new Date(val);
+    return d.getUTCDate() + &quot;/&quot; + (d.getUTCMonth() + 1);
+}
+</code></pre>
+
+<p>Note that for the time mode &ldquo;tickSize&rdquo; and &ldquo;minTickSize&rdquo; are a bit<br />
+special in that they are arrays on the form &ldquo;[value, unit]&rdquo; where unit<br />
+is one of &ldquo;second&rdquo;, &ldquo;minute&rdquo;, &ldquo;hour&rdquo;, &ldquo;day&rdquo;, &ldquo;month&rdquo; and &ldquo;year&rdquo;. So<br />
+you can specify</p>
+<pre><code class="js">minTickSize: [1, &quot;month&quot;]
+</code></pre>
+
+<p>to get a tick interval size of at least 1 month and correspondingly,<br />
+if axis.tickSize is [2, &ldquo;day&rdquo;] in the tick formatter, the ticks have<br />
+been produced with two days in-between.</p>
+<h2 id="customizing-the-data-series"><a name="user-content-customizing-the-data-series" href="#customizing-the-data-series" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Customizing the data series</h2>
+<pre><code class="js">series: {
+    lines, points, bars: {
+        show: boolean
+        lineWidth: number
+        fill: boolean or number
+        fillColor: null or color/gradient
+    }
+
+    lines, bars: {
+        zero: boolean
+    }
+
+    points: {
+        radius: number
+        symbol: &quot;circle&quot; or function
+    }
+
+    bars: {
+        barWidth: number
+        align: &quot;left&quot;, &quot;right&quot; or &quot;center&quot;
+        horizontal: boolean
+    }
+
+    lines: {
+        steps: boolean
+    }
+
+    shadowSize: number
+    highlightColor: color or number
+}
+
+colors: [ color1, color2, ... ]
+</code></pre>
+
+<p>The options inside &ldquo;series: {}&rdquo; are copied to each of the series. So<br />
+you can specify that all series should have bars by putting it in the<br />
+global options, or override it for individual series by specifying<br />
+bars in a particular the series object in the array of data.</p>
+<p>The most important options are &ldquo;lines&rdquo;, &ldquo;points&rdquo; and &ldquo;bars&rdquo; that<br />
+specify whether and how lines, points and bars should be shown for<br />
+each data series. In case you don&rsquo;t specify anything at all, Flot will<br />
+default to showing lines (you can turn this off with<br />
+lines: { show: false }). You can specify the various types<br />
+independently of each other, and Flot will happily draw each of them<br />
+in turn (this is probably only useful for lines and points), e.g.</p>
+<pre><code class="js">var options = {
+    series: {
+        lines: { show: true, fill: true, fillColor: &quot;rgba(255, 255, 255, 0.8)&quot; },
+        points: { show: true, fill: false }
+    }
+};
+</code></pre>
+
+<p>&ldquo;lineWidth&rdquo; is the thickness of the line or outline in pixels. You can<br />
+set it to 0 to prevent a line or outline from being drawn; this will<br />
+also hide the shadow.</p>
+<p>&ldquo;fill&rdquo; is whether the shape should be filled. For lines, this produces<br />
+area graphs. You can use &ldquo;fillColor&rdquo; to specify the color of the fill.<br />
+If &ldquo;fillColor&rdquo; evaluates to false (default for everything except<br />
+points which are filled with white), the fill color is auto-set to the<br />
+color of the data series. You can adjust the opacity of the fill by<br />
+setting fill to a number between 0 (fully transparent) and 1 (fully<br />
+opaque).</p>
+<p>For bars, fillColor can be a gradient, see the gradient documentation<br />
+below. &ldquo;barWidth&rdquo; is the width of the bars in units of the x axis (or<br />
+the y axis if &ldquo;horizontal&rdquo; is true), contrary to most other measures<br />
+that are specified in pixels. For instance, for time series the unit<br />
+is milliseconds so 24 * 60 * 60 * 1000 produces bars with the width of<br />
+a day. &ldquo;align&rdquo; specifies whether a bar should be left-aligned<br />
+(default), right-aligned or centered on top of the value it represents. <br />
+When &ldquo;horizontal&rdquo; is on, the bars are drawn horizontally, i.e. from the <br />
+y axis instead of the x axis; note that the bar end points are still<br />
+defined in the same way so you&rsquo;ll probably want to swap the<br />
+coordinates if you&rsquo;ve been plotting vertical bars first.</p>
+<p>Area and bar charts normally start from zero, regardless of the data&rsquo;s range.<br />
+This is because they convey information through size, and starting from a<br />
+different value would distort their meaning. In cases where the fill is purely<br />
+for decorative purposes, however, &ldquo;zero&rdquo; allows you to override this behavior.<br />
+It defaults to true for filled lines and bars; setting it to false tells the<br />
+series to use the same automatic scaling as an un-filled line.</p>
+<p>For lines, &ldquo;steps&rdquo; specifies whether two adjacent data points are<br />
+connected with a straight (possibly diagonal) line or with first a<br />
+horizontal and then a vertical line. Note that this transforms the<br />
+data by adding extra points.</p>
+<p>For points, you can specify the radius and the symbol. The only<br />
+built-in symbol type is circles, for other types you can use a plugin<br />
+or define them yourself by specifying a callback:</p>
+<pre><code class="js">function cross(ctx, x, y, radius, shadow) {
+    var size = radius * Math.sqrt(Math.PI) / 2;
+    ctx.moveTo(x - size, y - size);
+    ctx.lineTo(x + size, y + size);
+    ctx.moveTo(x - size, y + size);
+    ctx.lineTo(x + size, y - size);
+}
+</code></pre>
+
+<p>The parameters are the drawing context, x and y coordinates of the<br />
+center of the point, a radius which corresponds to what the circle<br />
+would have used and whether the call is to draw a shadow (due to<br />
+limited canvas support, shadows are currently faked through extra<br />
+draws). It&rsquo;s good practice to ensure that the area covered by the<br />
+symbol is the same as for the circle with the given radius, this<br />
+ensures that all symbols have approximately the same visual weight.</p>
+<p>&ldquo;shadowSize&rdquo; is the default size of shadows in pixels. Set it to 0 to<br />
+remove shadows.</p>
+<p>&ldquo;highlightColor&rdquo; is the default color of the translucent overlay used<br />
+to highlight the series when the mouse hovers over it.</p>
+<p>The &ldquo;colors&rdquo; array specifies a default color theme to get colors for<br />
+the data series from. You can specify as many colors as you like, like<br />
+this:</p>
+<pre><code class="js">colors: [&quot;#d18b2c&quot;, &quot;#dba255&quot;, &quot;#919733&quot;]
+</code></pre>
+
+<p>If there are more data series than colors, Flot will try to generate<br />
+extra colors by lightening and darkening colors in the theme.</p>
+<h2 id="customizing-the-grid"><a name="user-content-customizing-the-grid" href="#customizing-the-grid" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Customizing the grid</h2>
+<pre><code class="js">grid: {
+    show: boolean
+    aboveData: boolean
+    color: color
+    backgroundColor: color/gradient or null
+    margin: number or margin object
+    labelMargin: number
+    axisMargin: number
+    markings: array of markings or (fn: axes -&gt; array of markings)
+    borderWidth: number or object with &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot; and &quot;left&quot; properties with different widths
+    borderColor: color or null or object with &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot; and &quot;left&quot; properties with different colors
+    minBorderMargin: number or null
+    clickable: boolean
+    hoverable: boolean
+    autoHighlight: boolean
+    mouseActiveRadius: number
+}
+
+interaction: {
+    redrawOverlayInterval: number or -1
+}
+</code></pre>
+
+<p>The grid is the thing with the axes and a number of ticks. Many of the<br />
+things in the grid are configured under the individual axes, but not<br />
+all. &ldquo;color&rdquo; is the color of the grid itself whereas &ldquo;backgroundColor&rdquo;<br />
+specifies the background color inside the grid area, here null means<br />
+that the background is transparent. You can also set a gradient, see<br />
+the gradient documentation below.</p>
+<p>You can turn off the whole grid including tick labels by setting<br />
+&ldquo;show&rdquo; to false. &ldquo;aboveData&rdquo; determines whether the grid is drawn<br />
+above the data or below (below is default).</p>
+<p>&ldquo;margin&rdquo; is the space in pixels between the canvas edge and the grid,<br />
+which can be either a number or an object with individual margins for<br />
+each side, in the form:</p>
+<pre><code class="js">margin: {
+    top: top margin in pixels
+    left: left margin in pixels
+    bottom: bottom margin in pixels
+    right: right margin in pixels
+}
+</code></pre>
+
+<p>&ldquo;labelMargin&rdquo; is the space in pixels between tick labels and axis<br />
+line, and &ldquo;axisMargin&rdquo; is the space in pixels between axes when there<br />
+are two next to each other.</p>
+<p>&ldquo;borderWidth&rdquo; is the width of the border around the plot. Set it to 0<br />
+to disable the border. Set it to an object with &ldquo;top&rdquo;, &ldquo;right&rdquo;,<br />
+&ldquo;bottom&rdquo; and &ldquo;left&rdquo; properties to use different widths. You can<br />
+also set &ldquo;borderColor&rdquo; if you want the border to have a different color<br />
+than the grid lines. Set it to an object with &ldquo;top&rdquo;, &ldquo;right&rdquo;, &ldquo;bottom&rdquo;<br />
+and &ldquo;left&rdquo; properties to use different colors. &ldquo;minBorderMargin&rdquo; controls<br />
+the default minimum margin around the border - it&rsquo;s used to make sure<br />
+that points aren&rsquo;t accidentally clipped by the canvas edge so by default<br />
+the value is computed from the point radius.</p>
+<p>&ldquo;markings&rdquo; is used to draw simple lines and rectangular areas in the<br />
+background of the plot. You can either specify an array of ranges on<br />
+the form { xaxis: { from, to }, yaxis: { from, to } } (with multiple<br />
+axes, you can specify coordinates for other axes instead, e.g. as<br />
+x2axis/x3axis/&hellip;) or with a function that returns such an array given<br />
+the axes for the plot in an object as the first parameter.</p>
+<p>You can set the color of markings by specifying &ldquo;color&rdquo; in the ranges<br />
+object. Here&rsquo;s an example array:</p>
+<pre><code class="js">markings: [ { xaxis: { from: 0, to: 2 }, yaxis: { from: 10, to: 10 }, color: &quot;#bb0000&quot; }, ... ]
+</code></pre>
+
+<p>If you leave out one of the values, that value is assumed to go to the<br />
+border of the plot. So for example if you only specify { xaxis: {<br />
+from: 0, to: 2 } } it means an area that extends from the top to the<br />
+bottom of the plot in the x range 0-2.</p>
+<p>A line is drawn if from and to are the same, e.g.</p>
+<pre><code class="js">markings: [ { yaxis: { from: 1, to: 1 } }, ... ]
+</code></pre>
+
+<p>would draw a line parallel to the x axis at y = 1. You can control the<br />
+line width with &ldquo;lineWidth&rdquo; in the range object.</p>
+<p>An example function that makes vertical stripes might look like this:</p>
+<pre><code class="js">markings: function (axes) {
+    var markings = [];
+    for (var x = Math.floor(axes.xaxis.min); x &lt; axes.xaxis.max; x += 2)
+        markings.push({ xaxis: { from: x, to: x + 1 } });
+    return markings;
+}
+</code></pre>
+
+<p>If you set &ldquo;clickable&rdquo; to true, the plot will listen for click events<br />
+on the plot area and fire a &ldquo;plotclick&rdquo; event on the placeholder with<br />
+a position and a nearby data item object as parameters. The coordinates<br />
+are available both in the unit of the axes (not in pixels) and in<br />
+global screen coordinates.</p>
+<p>Likewise, if you set &ldquo;hoverable&rdquo; to true, the plot will listen for<br />
+mouse move events on the plot area and fire a &ldquo;plothover&rdquo; event with<br />
+the same parameters as the &ldquo;plotclick&rdquo; event. If &ldquo;autoHighlight&rdquo; is<br />
+true (the default), nearby data items are highlighted automatically.<br />
+If needed, you can disable highlighting and control it yourself with<br />
+the highlight/unhighlight plot methods described elsewhere.</p>
+<p>You can use &ldquo;plotclick&rdquo; and &ldquo;plothover&rdquo; events like this:</p>
+<pre><code class="js">$.plot($(&quot;#placeholder&quot;), [ d ], { grid: { clickable: true } });
+
+$(&quot;#placeholder&quot;).bind(&quot;plotclick&quot;, function (event, pos, item) {
+    alert(&quot;You clicked at &quot; + pos.x + &quot;, &quot; + pos.y);
+    // axis coordinates for other axes, if present, are in pos.x2, pos.x3, ...
+    // if you need global screen coordinates, they are pos.pageX, pos.pageY
+
+    if (item) {
+        highlight(item.series, item.datapoint);
+        alert(&quot;You clicked a point!&quot;);
+    }
+});
+</code></pre>
+
+<p>The item object in this example is either null or a nearby object on the form:</p>
+<pre><code class="js">item: {
+    datapoint: the point, e.g. [0, 2]
+    dataIndex: the index of the point in the data array
+    series: the series object
+    seriesIndex: the index of the series
+    pageX, pageY: the global screen coordinates of the point
+}
+</code></pre>
+
+<p>For instance, if you have specified the data like this </p>
+<pre><code class="js">$.plot($(&quot;#placeholder&quot;), [ { label: &quot;Foo&quot;, data: [[0, 10], [7, 3]] } ], ...);
+</code></pre>
+
+<p>and the mouse is near the point (7, 3), &ldquo;datapoint&rdquo; is [7, 3],<br />
+&ldquo;dataIndex&rdquo; will be 1, &ldquo;series&rdquo; is a normalized series object with<br />
+among other things the &ldquo;Foo&rdquo; label in series.label and the color in<br />
+series.color, and &ldquo;seriesIndex&rdquo; is 0. Note that plugins and options<br />
+that transform the data can shift the indexes from what you specified<br />
+in the original data array.</p>
+<p>If you use the above events to update some other information and want<br />
+to clear out that info in case the mouse goes away, you&rsquo;ll probably<br />
+also need to listen to &ldquo;mouseout&rdquo; events on the placeholder div.</p>
+<p>&ldquo;mouseActiveRadius&rdquo; specifies how far the mouse can be from an item<br />
+and still activate it. If there are two or more points within this<br />
+radius, Flot chooses the closest item. For bars, the top-most bar<br />
+(from the latest specified data series) is chosen.</p>
+<p>If you want to disable interactivity for a specific data series, you<br />
+can set &ldquo;hoverable&rdquo; and &ldquo;clickable&rdquo; to false in the options for that<br />
+series, like this:</p>
+<pre><code class="js">{ data: [...], label: &quot;Foo&quot;, clickable: false }
+</code></pre>
+
+<p>&ldquo;redrawOverlayInterval&rdquo; specifies the maximum time to delay a redraw<br />
+of interactive things (this works as a rate limiting device). The<br />
+default is capped to 60 frames per second. You can set it to -1 to<br />
+disable the rate limiting.</p>
+<h2 id="specifying-gradients"><a name="user-content-specifying-gradients" href="#specifying-gradients" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Specifying gradients</h2>
+<p>A gradient is specified like this:</p>
+<pre><code class="js">{ colors: [ color1, color2, ... ] }
+</code></pre>
+
+<p>For instance, you might specify a background on the grid going from<br />
+black to gray like this:</p>
+<pre><code class="js">grid: {
+    backgroundColor: { colors: [&quot;#000&quot;, &quot;#999&quot;] }
+}
+</code></pre>
+
+<p>For the series you can specify the gradient as an object that<br />
+specifies the scaling of the brightness and the opacity of the series<br />
+color, e.g.</p>
+<pre><code class="js">{ colors: [{ opacity: 0.8 }, { brightness: 0.6, opacity: 0.8 } ] }
+</code></pre>
+
+<p>where the first color simply has its alpha scaled, whereas the second<br />
+is also darkened. For instance, for bars the following makes the bars<br />
+gradually disappear, without outline:</p>
+<pre><code class="js">bars: {
+    show: true,
+    lineWidth: 0,
+    fill: true,
+    fillColor: { colors: [ { opacity: 0.8 }, { opacity: 0.1 } ] }
+}
+</code></pre>
+
+<p>Flot currently only supports vertical gradients drawn from top to<br />
+bottom because that&rsquo;s what works with IE.</p>
+<h2 id="plot-methods"><a name="user-content-plot-methods" href="#plot-methods" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Plot Methods</h2>
+<p>The Plot object returned from the plot function has some methods you<br />
+can call:</p>
+<ul>
+<li>
+<p>highlight(series, datapoint)</p>
+<p>Highlight a specific datapoint in the data series. You can either<br />
+specify the actual objects, e.g. if you got them from a<br />
+&ldquo;plotclick&rdquo; event, or you can specify the indices, e.g.<br />
+highlight(1, 3) to highlight the fourth point in the second series<br />
+(remember, zero-based indexing).</p>
+</li>
+<li>
+<p>unhighlight(series, datapoint) or unhighlight()</p>
+<p>Remove the highlighting of the point, same parameters as<br />
+highlight.</p>
+<p>If you call unhighlight with no parameters, e.g. as<br />
+plot.unhighlight(), all current highlights are removed.</p>
+</li>
+<li>
+<p>setData(data)</p>
+<p>You can use this to reset the data used. Note that axis scaling,<br />
+ticks, legend etc. will not be recomputed (use setupGrid() to do<br />
+that). You&rsquo;ll probably want to call draw() afterwards.</p>
+<p>You can use this function to speed up redrawing a small plot if<br />
+you know that the axes won&rsquo;t change. Put in the new data with<br />
+setData(newdata), call draw(), and you&rsquo;re good to go. Note that<br />
+for large datasets, almost all the time is consumed in draw()<br />
+plotting the data so in this case don&rsquo;t bother.</p>
+</li>
+<li>
+<p>setupGrid()</p>
+<p>Recalculate and set axis scaling, ticks, legend etc.</p>
+<p>Note that because of the drawing model of the canvas, this<br />
+function will immediately redraw (actually reinsert in the DOM)<br />
+the labels and the legend, but not the actual tick lines because<br />
+they&rsquo;re drawn on the canvas. You need to call draw() to get the<br />
+canvas redrawn.</p>
+</li>
+<li>
+<p>draw()</p>
+<p>Redraws the plot canvas.</p>
+</li>
+<li>
+<p>triggerRedrawOverlay()</p>
+<p>Schedules an update of an overlay canvas used for drawing<br />
+interactive things like a selection and point highlights. This<br />
+is mostly useful for writing plugins. The redraw doesn&rsquo;t happen<br />
+immediately, instead a timer is set to catch multiple successive<br />
+redraws (e.g. from a mousemove). You can get to the overlay by<br />
+setting up a drawOverlay hook.</p>
+</li>
+<li>
+<p>width()/height()</p>
+<p>Gets the width and height of the plotting area inside the grid.<br />
+This is smaller than the canvas or placeholder dimensions as some<br />
+extra space is needed (e.g. for labels).</p>
+</li>
+<li>
+<p>offset()</p>
+<p>Returns the offset of the plotting area inside the grid relative<br />
+to the document, useful for instance for calculating mouse<br />
+positions (event.pageX/Y minus this offset is the pixel position<br />
+inside the plot).</p>
+</li>
+<li>
+<p>pointOffset({ x: xpos, y: ypos })</p>
+<p>Returns the calculated offset of the data point at (x, y) in data<br />
+space within the placeholder div. If you are working with multiple<br />
+axes, you can specify the x and y axis references, e.g. </p>
+<p>```js<br />
+  o = pointOffset({ x: xpos, y: ypos, xaxis: 2, yaxis: 3 })<br />
+  // o.left and o.top now contains the offset within the div<br />
+````</p>
+</li>
+<li>
+<p>resize()</p>
+<p>Tells Flot to resize the drawing canvas to the size of the<br />
+placeholder. You need to run setupGrid() and draw() afterwards as<br />
+canvas resizing is a destructive operation. This is used<br />
+internally by the resize plugin.</p>
+</li>
+<li>
+<p>shutdown()</p>
+<p>Cleans up any event handlers Flot has currently registered. This<br />
+is used internally.</p>
+</li>
+</ul>
+<p>There are also some members that let you peek inside the internal<br />
+workings of Flot which is useful in some cases. Note that if you change<br />
+something in the objects returned, you&rsquo;re changing the objects used by<br />
+Flot to keep track of its state, so be careful.</p>
+<ul>
+<li>
+<p>getData()</p>
+<p>Returns an array of the data series currently used in normalized<br />
+form with missing settings filled in according to the global<br />
+options. So for instance to find out what color Flot has assigned<br />
+to the data series, you could do this:</p>
+<pre><code class="js">var series = plot.getData();
+for (var i = 0; i &lt; series.length; ++i)
+    alert(series[i].color);
+</code></pre>
+
+<p>A notable other interesting field besides color is datapoints<br />
+which has a field &ldquo;points&rdquo; with the normalized data points in a<br />
+flat array (the field &ldquo;pointsize&rdquo; is the increment in the flat<br />
+array to get to the next point so for a dataset consisting only of<br />
+(x,y) pairs it would be 2).</p>
+</li>
+<li>
+<p>getAxes()</p>
+<p>Gets an object with the axes. The axes are returned as the<br />
+attributes of the object, so for instance getAxes().xaxis is the<br />
+x axis.</p>
+<p>Various things are stuffed inside an axis object, e.g. you could<br />
+use getAxes().xaxis.ticks to find out what the ticks are for the<br />
+xaxis. Two other useful attributes are p2c and c2p, functions for<br />
+transforming from data point space to the canvas plot space and<br />
+back. Both returns values that are offset with the plot offset.<br />
+Check the Flot source code for the complete set of attributes (or<br />
+output an axis with console.log() and inspect it).</p>
+<p>With multiple axes, the extra axes are returned as x2axis, x3axis,<br />
+etc., e.g. getAxes().y2axis is the second y axis. You can check<br />
+y2axis.used to see whether the axis is associated with any data<br />
+points and y2axis.show to see if it is currently shown. </p>
+</li>
+<li>
+<p>getPlaceholder()</p>
+<p>Returns placeholder that the plot was put into. This can be useful<br />
+for plugins for adding DOM elements or firing events.</p>
+</li>
+<li>
+<p>getCanvas()</p>
+<p>Returns the canvas used for drawing in case you need to hack on it<br />
+yourself. You&rsquo;ll probably need to get the plot offset too.</p>
+</li>
+<li>
+<p>getPlotOffset()</p>
+<p>Gets the offset that the grid has within the canvas as an object<br />
+with distances from the canvas edges as &ldquo;left&rdquo;, &ldquo;right&rdquo;, &ldquo;top&rdquo;,<br />
+&ldquo;bottom&rdquo;. I.e., if you draw a circle on the canvas with the center<br />
+placed at (left, top), its center will be at the top-most, left<br />
+corner of the grid.</p>
+</li>
+<li>
+<p>getOptions()</p>
+<p>Gets the options for the plot, normalized, with default values<br />
+filled in. You get a reference to actual values used by Flot, so<br />
+if you modify the values in here, Flot will use the new values.<br />
+If you change something, you probably have to call draw() or<br />
+setupGrid() or triggerRedrawOverlay() to see the change.</p>
+</li>
+</ul>
+<h2 id="hooks"><a name="user-content-hooks" href="#hooks" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hooks</h2>
+<p>In addition to the public methods, the Plot object also has some hooks<br />
+that can be used to modify the plotting process. You can install a<br />
+callback function at various points in the process, the function then<br />
+gets access to the internal data structures in Flot.</p>
+<p>Here&rsquo;s an overview of the phases Flot goes through:</p>
+<ol>
+<li>
+<p>Plugin initialization, parsing options</p>
+</li>
+<li>
+<p>Constructing the canvases used for drawing</p>
+</li>
+<li>
+<p>Set data: parsing data specification, calculating colors,<br />
+     copying raw data points into internal format,<br />
+     normalizing them, finding max/min for axis auto-scaling</p>
+</li>
+<li>
+<p>Grid setup: calculating axis spacing, ticks, inserting tick<br />
+     labels, the legend</p>
+</li>
+<li>
+<p>Draw: drawing the grid, drawing each of the series in turn</p>
+</li>
+<li>
+<p>Setting up event handling for interactive features</p>
+</li>
+<li>
+<p>Responding to events, if any</p>
+</li>
+<li>
+<p>Shutdown: this mostly happens in case a plot is overwritten </p>
+</li>
+</ol>
+<p>Each hook is simply a function which is put in the appropriate array.<br />
+You can add them through the &ldquo;hooks&rdquo; option, and they are also available<br />
+after the plot is constructed as the &ldquo;hooks&rdquo; attribute on the returned<br />
+plot object, e.g.</p>
+<pre><code class="js">  // define a simple draw hook
+  function hellohook(plot, canvascontext) { alert(&quot;hello!&quot;); };
+
+  // pass it in, in an array since we might want to specify several
+  var plot = $.plot(placeholder, data, { hooks: { draw: [hellohook] } });
+
+  // we can now find it again in plot.hooks.draw[0] unless a plugin
+  // has added other hooks
+</code></pre>
+
+<p>The available hooks are described below. All hook callbacks get the<br />
+plot object as first parameter. You can find some examples of defined<br />
+hooks in the plugins bundled with Flot.</p>
+<ul>
+<li>
+<p>processOptions  [phase 1]</p>
+<p><code>function(plot, options)</code></p>
+<p>Called after Flot has parsed and merged options. Useful in the<br />
+instance where customizations beyond simple merging of default<br />
+values is needed. A plugin might use it to detect that it has been<br />
+enabled and then turn on or off other options.</p>
+</li>
+<li>
+<p>processRawData  [phase 3]</p>
+<p><code>function(plot, series, data, datapoints)</code></p>
+<p>Called before Flot copies and normalizes the raw data for the given<br />
+series. If the function fills in datapoints.points with normalized<br />
+points and sets datapoints.pointsize to the size of the points,<br />
+Flot will skip the copying/normalization step for this series.</p>
+<p>In any case, you might be interested in setting datapoints.format,<br />
+an array of objects for specifying how a point is normalized and<br />
+how it interferes with axis scaling. It accepts the following options:</p>
+<pre><code class="js">{
+    x, y: boolean,
+    number: boolean,
+    required: boolean,
+    defaultValue: value,
+    autoscale: boolean
+}
+</code></pre>
+
+<p>&ldquo;x&rdquo; and &ldquo;y&rdquo; specify whether the value is plotted against the x or y axis,<br />
+and is currently used only to calculate axis min-max ranges. The default<br />
+format array, for example, looks like this:</p>
+<pre><code class="js">[
+    { x: true, number: true, required: true },
+    { y: true, number: true, required: true }
+]
+</code></pre>
+
+<p>This indicates that a point, i.e. [0, 25], consists of two values, with the<br />
+first being plotted on the x axis and the second on the y axis.</p>
+<p>If &ldquo;number&rdquo; is true, then the value must be numeric, and is set to null if<br />
+it cannot be converted to a number.</p>
+<p>&ldquo;defaultValue&rdquo; provides a fallback in case the original value is null. This<br />
+is for instance handy for bars, where one can omit the third coordinate<br />
+(the bottom of the bar), which then defaults to zero.</p>
+<p>If &ldquo;required&rdquo; is true, then the value must exist (be non-null) for the<br />
+point as a whole to be valid. If no value is provided, then the entire<br />
+point is cleared out with nulls, turning it into a gap in the series.</p>
+<p>&ldquo;autoscale&rdquo; determines whether the value is considered when calculating an<br />
+automatic min-max range for the axes that the value is plotted against.</p>
+</li>
+<li>
+<p>processDatapoints  [phase 3]</p>
+<p><code>function(plot, series, datapoints)</code></p>
+<p>Called after normalization of the given series but before finding<br />
+min/max of the data points. This hook is useful for implementing data<br />
+transformations. &ldquo;datapoints&rdquo; contains the normalized data points in<br />
+a flat array as datapoints.points with the size of a single point<br />
+given in datapoints.pointsize. Here&rsquo;s a simple transform that<br />
+multiplies all y coordinates by 2:</p>
+<pre><code class="js">function multiply(plot, series, datapoints) {
+    var points = datapoints.points, ps = datapoints.pointsize;
+    for (var i = 0; i &lt; points.length; i += ps)
+        points[i + 1] *= 2;
+}
+</code></pre>
+
+<p>Note that you must leave datapoints in a good condition as Flot<br />
+doesn&rsquo;t check it or do any normalization on it afterwards.</p>
+</li>
+<li>
+<p>processOffset  [phase 4]</p>
+<p><code>function(plot, offset)</code></p>
+<p>Called after Flot has initialized the plot&rsquo;s offset, but before it<br />
+draws any axes or plot elements. This hook is useful for customizing<br />
+the margins between the grid and the edge of the canvas. &ldquo;offset&rdquo; is<br />
+an object with attributes &ldquo;top&rdquo;, &ldquo;bottom&rdquo;, &ldquo;left&rdquo; and &ldquo;right&rdquo;,<br />
+corresponding to the margins on the four sides of the plot.</p>
+</li>
+<li>
+<p>drawBackground [phase 5]</p>
+<p><code>function(plot, canvascontext)</code></p>
+<p>Called before all other drawing operations. Used to draw backgrounds<br />
+or other custom elements before the plot or axes have been drawn.</p>
+</li>
+<li>
+<p>drawSeries  [phase 5]</p>
+<p><code>function(plot, canvascontext, series)</code></p>
+<p>Hook for custom drawing of a single series. Called just before the<br />
+standard drawing routine has been called in the loop that draws<br />
+each series.</p>
+</li>
+<li>
+<p>draw  [phase 5]</p>
+<p><code>function(plot, canvascontext)</code></p>
+<p>Hook for drawing on the canvas. Called after the grid is drawn<br />
+(unless it&rsquo;s disabled or grid.aboveData is set) and the series have<br />
+been plotted (in case any points, lines or bars have been turned<br />
+on). For examples of how to draw things, look at the source code.</p>
+</li>
+<li>
+<p>bindEvents  [phase 6]</p>
+<p><code>function(plot, eventHolder)</code></p>
+<p>Called after Flot has setup its event handlers. Should set any<br />
+necessary event handlers on eventHolder, a jQuery object with the<br />
+canvas, e.g.</p>
+<pre><code class="js">function (plot, eventHolder) {
+    eventHolder.mousedown(function (e) {
+        alert(&quot;You pressed the mouse at &quot; + e.pageX + &quot; &quot; + e.pageY);
+    });
+}
+</code></pre>
+
+<p>Interesting events include click, mousemove, mouseup/down. You can<br />
+use all jQuery events. Usually, the event handlers will update the<br />
+state by drawing something (add a drawOverlay hook and call<br />
+triggerRedrawOverlay) or firing an externally visible event for<br />
+user code. See the crosshair plugin for an example.</p>
+<p>Currently, eventHolder actually contains both the static canvas<br />
+used for the plot itself and the overlay canvas used for<br />
+interactive features because some versions of IE get the stacking<br />
+order wrong. The hook only gets one event, though (either for the<br />
+overlay or for the static canvas).</p>
+<p>Note that custom plot events generated by Flot are not generated on<br />
+eventHolder, but on the div placeholder supplied as the first<br />
+argument to the plot call. You can get that with<br />
+plot.getPlaceholder() - that&rsquo;s probably also the one you should use<br />
+if you need to fire a custom event.</p>
+</li>
+<li>
+<p>drawOverlay  [phase 7]</p>
+<p><code>function (plot, canvascontext)</code></p>
+<p>The drawOverlay hook is used for interactive things that need a<br />
+canvas to draw on. The model currently used by Flot works the way<br />
+that an extra overlay canvas is positioned on top of the static<br />
+canvas. This overlay is cleared and then completely redrawn<br />
+whenever something interesting happens. This hook is called when<br />
+the overlay canvas is to be redrawn.</p>
+<p>&ldquo;canvascontext&rdquo; is the 2D context of the overlay canvas. You can<br />
+use this to draw things. You&rsquo;ll most likely need some of the<br />
+metrics computed by Flot, e.g. plot.width()/plot.height(). See the<br />
+crosshair plugin for an example.</p>
+</li>
+<li>
+<p>shutdown  [phase 8]</p>
+<p><code>function (plot, eventHolder)</code></p>
+<p>Run when plot.shutdown() is called, which usually only happens in<br />
+case a plot is overwritten by a new plot. If you&rsquo;re writing a<br />
+plugin that adds extra DOM elements or event handlers, you should<br />
+add a callback to clean up after you. Take a look at the section in<br />
+PLUGINS.txt for more info.</p>
+</li>
+</ul>
+<h2 id="plugins"><a name="user-content-plugins" href="#plugins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Plugins</h2>
+<p>Plugins extend the functionality of Flot. To use a plugin, simply<br />
+include its Javascript file after Flot in the HTML page.</p>
+<p>If you&rsquo;re worried about download size/latency, you can concatenate all<br />
+the plugins you use, and Flot itself for that matter, into one big file<br />
+(make sure you get the order right), then optionally run it through a<br />
+Javascript minifier such as YUI Compressor.</p>
+<p>Here&rsquo;s a brief explanation of how the plugin plumbings work:</p>
+<p>Each plugin registers itself in the global array $.plot.plugins. When<br />
+you make a new plot object with $.plot, Flot goes through this array<br />
+calling the &ldquo;init&rdquo; function of each plugin and merging default options<br />
+from the &ldquo;option&rdquo; attribute of the plugin. The init function gets a<br />
+reference to the plot object created and uses this to register hooks<br />
+and add new public methods if needed.</p>
+<p>See the PLUGINS.txt file for details on how to write a plugin. As the<br />
+above description hints, it&rsquo;s actually pretty easy.</p>
+<h2 id="version-number"><a name="user-content-version-number" href="#version-number" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Version number</h2>
+<p>The version number of Flot is available in <code>$.plot.version</code>.</p></article></body></html>

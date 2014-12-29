@@ -1,0 +1,26 @@
+// Progress Bar
+
+.progressbar-size(@size)
+{
+    height: @size;
+    .progress-bar,
+    .progressbar-back-text,
+    .progressbar-front-text
+    {
+        line-height: @size;
+
+        height: @size;
+    }
+}
+.progressbar-vertical-size(@size)
+{
+  width:@size;
+  .progress-bar,
+  .progressbar-back-text,
+  .progressbar-front-text
+  {
+      line-height: 20px;
+
+      width: @size;
+  }
+}
