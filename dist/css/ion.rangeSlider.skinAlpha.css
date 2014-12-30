@@ -1,0 +1,150 @@
+/* Ion.RangeSlider, Alpna Admin Skin
+// css version 1.0.0
+// © WangShuo, 2014
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge,
+.irs-slider
+{
+    background: url(../img/sprite-skin-alpha.png) repeat-x;
+}
+
+.irs
+{
+    height: 40px;
+}
+.irs-with-grid
+{
+    height: 60px;
+}
+.irs-line
+{
+    top: 25px;
+
+    height: 8px;
+}
+.irs-line-left
+{
+    height: 8px;
+
+    background-position: 0 -30px;
+}
+.irs-line-mid
+{
+    height: 8px;
+
+    background-position: 0 0;
+}
+.irs-line-right
+{
+    height: 8px;
+
+    background-position: 100% -30px;
+}
+
+.irs-bar
+{
+    top: 25px;
+
+    height: 8px;
+
+    background-position: 0 -60px;
+}
+.irs-bar-edge
+{
+    top: 25px;
+
+    width: 11px;
+    height: 8px;
+
+    background-position: 0 -90px;
+}
+
+.irs-shadow
+{
+    top: 34px;
+
+    height: 1px;
+
+    opacity: .15;
+    background: #000;
+}
+.lt-ie9 .irs-shadow
+{
+    filter: alpha(opacity=15);
+}
+
+.irs-slider
+{
+    top: 17px;
+
+    width: 22px;
+    height: 22px;
+
+    background-position: 0 -120px;
+}
+#irs-active-slider,
+.irs-slider:hover
+{
+    background-position: 0 -150px;
+}
+
+.irs-min,
+.irs-max
+{
+    font-size: 10px;
+    line-height: 1.333;
+
+    top: 0;
+
+    padding: 1px 3px;
+
+    color: #999;
+    -moz-border-radius: 0;
+         border-radius: 0;
+    background: rgba(0,0,0,.1);
+    text-shadow: none;
+}
+.lt-ie9 .irs-min,
+.lt-ie9 .irs-max
+{
+    background: #ccc;
+}
+
+.irs-from,
+.irs-to,
+.irs-single
+{
+    font-size: 10px;
+    line-height: 1.333;
+
+    padding: 1px 5px;
+
+    color: #fff;
+    -moz-border-radius: 0;
+         border-radius: 0;
+    background: rgba(0,0,0,.3);
+    text-shadow: none;
+}
+.lt-ie9 .irs-from,
+.lt-ie9 .irs-to,
+.lt-ie9 .irs-single
+{
+    background: #999;
+}
+
+.irs-grid-pol
+{
+    background: #99a4ac;
+}
+.irs-grid-text
+{
+    color: #99a4ac;
+}

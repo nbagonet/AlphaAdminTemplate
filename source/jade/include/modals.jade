@@ -1,0 +1,188 @@
+//- UI Elements - Modals
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.panel.panel-white
+    div.panel-body
+
+      div.demo-modals
+
+        //Default
+        +buttons('btn-red', 'Default Demo')(data-toggle="modal" data-target="#modal-default")
+        div#modal-default.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-default-label" aria-hidden="true")
+          div.modal-dialog
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-default-label.modal-title Modal Default
+              div.modal-body
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-red', 'Save Changes')
+
+        //Responsive
+        +buttons('btn-yellow', 'Responsive Demo')(data-toggle="modal" data-target="#modal-responsive")
+        div#modal-responsive.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-responsive-label" aria-hidden="true")
+          div.modal-dialog
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-default-label.modal-title Modal Responsive
+              div.modal-body
+                div.row
+                  div.col-md-6
+                    table.table.table-bordered
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                  div.col-md-6
+                    table.table.table-bordered
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+                      tr: td Alpha
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-yellow', 'Save Changes')
+
+        //Full Width
+        +buttons('btn-orange', 'Full Width Demo')(data-toggle="modal" data-target="#modal-fullwidth")
+        div#modal-fullwidth.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-fullwidth-label" aria-hidden="true")
+          div.modal-dialog.modal-fullwidth
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-fullwidth-label.modal-title Modal Full Width
+              div.modal-body
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-orange', 'Save Changes')
+
+        //Wide Width
+        +buttons('btn-green', 'Wide Width Demo')(data-toggle="modal" data-target="#modal-widewidth")
+        div#modal-widewidth.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-widewidth-label" aria-hidden="true")
+          div.modal-dialog.modal-widewidth
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-widewidth-label.modal-title Modal Wide Width
+              div.modal-body
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-green', 'Save Changes')
+
+        //Static Background
+        +buttons('btn-black', 'Static Background Demo')(data-toggle="modal" data-target="#modal-static-background")
+        div#modal-static-background.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-static-background-label" aria-hidden="true" data-backdrop="static")
+          div.modal-dialog
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-static-background-label.modal-title Modal Static Background
+              div.modal-body
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-green', 'Save Changes')
+
+        //Left Footer
+        +buttons('btn-blue', 'Left Footer Demo')(data-toggle="modal" data-target="#modal-left-footer")
+        div#modal-left-footer.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-left-footer-label" aria-hidden="true")
+          div.modal-dialog.modal-left-footer
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-left-footer-label.modal-title Modal Left Footer
+              div.modal-body
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-green', 'Save Changes')
+
+        //Header Themes
+        +buttons('btn-violet', 'Header Themes Demo')(data-toggle="modal" data-target="#modal-header-themes")
+        div#modal-header-themes.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-header-themes-label" aria-hidden="true")
+          div.modal-dialog.modal-primary
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-header-themes-label.modal-title Modal Header Themes
+              div.modal-body
+                p!= 'You can insert className on the ".modal-dialog" container, for example: <br><code>&lt;div class="modal-dialog modal-primary"&gt;...&lt;/div&gt;</code>'
+                p
+                  |Available className:
+                  = '\n'
+                  code modal-primary
+                  = '\n'
+                  code modal-success
+                  = '\n'
+                  code modal-info
+                  = '\n'
+                  code modal-warning
+                  = '\n'
+                  code modal-danger
+                  = '\n'
+                  code modal-red
+                  = '\n'
+                  code modal-orange
+                  = '\n'
+                  code modal-yellow
+                  = '\n'
+                  code modal-green
+                  = '\n'
+                  code modal-black
+                  = '\n'
+                  code modal-blue
+                  = '\n'
+                  code modal-violet
+                  = '\n'
+                  code modal-pink
+                  = '\n'
+                  code modal-grey
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-primary', 'Save Changes')
+
+        //Long Modals
+        +buttons('btn-primary', 'Long Modal Demo')(data-toggle="modal" data-target="#modal-long")
+        div#modal-long.modal.fade(tabindex="-1" role="dialog" aria-labelledby="modal-long-label" aria-hidden="true")
+          div.modal-dialog
+            div.modal-content
+              div.modal-header
+                button.close(type="button" data-dismiss="modal")
+                  span(aria-hidden="true") &times;
+                  span.sr-only Close
+                h4#modal-long-label.modal-title A Long Modal
+              div.modal-body
+                img.img-responsive(src="http://i.imgur.com/wAe9uZy.png" alt="")
+                img.img-responsive(src="http://i.imgur.com/VXJT5BG.png" alt="")
+              div.modal-footer
+                +buttons('btn-default', 'Close')(data-dismiss="modal")
+                +buttons('btn-primary', 'Save Changes')

@@ -1,0 +1,33 @@
+//- UI Advanced - Editor - Bootstrap Markdown
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-white
+  div.panel-heading
+    |Bootstrap Markdown
+  div.panel-body
+    div.p15
+
+      //Default
+      h4 Default
+      div.mbottom30
+        textarea(name="content" data-provide="markdown" rows="15")= '### Hello there\nHow are you?\n\nI have bellow task for you :\n\nSelect from this text...\nClick the bold on THIS WORD and make THESE ONE italic\nLink GOOGLE to google.com\nTest to insert image (and try to tab after write the image description)\nTest Preview\nAnd ending here... Click "List"\n\nEnjoy!'
+
+      //Inline Editor
+      h4 Inline Editor
+      div.mbottom30
+        div.well.well-sm(data-provide="markdown-editable")
+          h3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+      //Fixed width
+      h4 Fixed width
+      div.mbottom30
+        textarea(data-provide="markdown" data-width="500")
+
+      //Font Awesome icons
+      h4 Font Awesome icons
+      div.mbottom30
+        textarea(data-provide="markdown" data-iconlibrary="fa")

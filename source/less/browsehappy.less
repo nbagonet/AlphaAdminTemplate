@@ -1,0 +1,58 @@
+//
+// Browsehappy
+// --------------------------------------------------
+
+
+/* Browsehappy */
+.browsehappy
+{
+    display: none;
+}
+
+.lt-ie9
+{
+    overflow: hidden;
+    body
+    {
+        overflow: hidden;
+
+        height: 100%;
+    }
+    .browsehappy
+    {
+        font-size: 20px;
+
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-top: 200px;
+
+        text-align: center;
+
+                opacity: .85;
+        color: #fff;
+        background: #000;
+
+        -webkit-opacity: .85;
+           -moz-opacity: .85;
+        -khtml-opacity: .85;
+            filter: alpha(opacity=85);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=85)';
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+        a
+        {
+            color: @link-color!important;
+        }
+        strong
+        {
+            color: #f00;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+//- Public Page Foot
+
+include ../common/variables
+
+
+include ./scroll-to-top
+
+//Load jQuery
+<!--[if IE]>
+script(src=js_jquery_1x_cdn)
+script window.jQuery || document.write('<script src="#{js_jquery_1x}"><\/script>')
+<![endif]-->
+<!--[if !IE]>-->
+script(src=js_jquery_2x_cdn)
+script window.jQuery || document.write('<script src="#{js_jquery_2x}"><\/script>')
+<!-- <![endif]-->
+
+//Load Vendor
+each url in js_vendor
+  script(src=url)
+
+//Load Plugins
+script(src=js_plugins)
+
+//Load Main
+script(src=js_main)
+
+unless js_demo == ""
+  //Javascript for template demo, don't use it online
+  script(src=js_demo)
+
+unless google_analytics_site_id == ""
+  //Google Analytics
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '#{google_analytics_site_id}', 'auto');
+    ga('send', 'pageview');

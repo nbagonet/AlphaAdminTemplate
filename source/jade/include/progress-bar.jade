@@ -1,0 +1,32 @@
+//- UI Elements - Progress Bars
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Nav Tabs
+  ul.nav.nav-tabs.nav-tabs-orange(role="tablist")
+    li.active
+      a(href="#horizontal" role="tab" data-toggle="tab") Horizontal
+    li
+      a(href="#vertical" role="tab" data-toggle="tab") Vertical
+    li
+      a(href="#misc" role="tab" data-toggle="tab") Misc
+
+  //Tab Panes
+  div.tab-content
+
+    //Horizontal
+    div#horizontal.tab-pane.fade.in.active
+      include ./module/progressbar-horizontal
+
+    //Vertical
+    div#vertical.tab-pane.fade
+      include ./module/progressbar-vertical
+
+    //Misc
+    div#misc.tab-pane.fade
+      include ./module/progressbar-misc

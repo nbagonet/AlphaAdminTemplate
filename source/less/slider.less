@@ -1,0 +1,152 @@
+//
+// Slider
+// --------------------------------------------------
+
+
+/* Slider Demo */
+.demo-sliders
+{
+    padding: 10px;
+}
+
+/* jQuery UI Sliders Style */
+.ui-slider
+{
+    border-width: @jqui-slider-horizontal-border-size;
+    border-color: @jqui-slider-horizontal-border-color;
+    border-radius: @border-radius-base;
+    background-color: @jqui-slider-horizontal-bg;
+    background-image: none;
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
+    .ui-slider-handle
+    {
+        width: @jqui-slider-handle-width;
+        height: @jqui-slider-handle-height;
+
+        border-radius: @jqui-slider-handle-border-radius;
+        border-width: @jqui-slider-handle-border-size;
+        border-color: @jqui-slider-handle-border-color;
+        background-color: @jqui-slider-handle-bg;
+        background-image: none;
+
+        .transition(background ease-in-out .15s);
+        .box-shadow(0 0 2px rgba(0,0,0,.5));
+        &:hover,
+        &:active,
+        &:focus
+        {
+            outline: none!important;
+            border-color: @jqui-slider-handle-hover-border-color;
+            background-image: none;
+            background-color: @jqui-slider-handle-hover-bg;
+
+            .transition(background ease-in-out .15s);
+            cursor: pointer;
+        }
+    }
+    &.ui-slider-horizontal
+    {
+        height: @jqui-slider-horizontal-size;
+        .ui-slider-handle
+        {
+            top: floor((@jqui-slider-horizontal-size - @jqui-slider-handle-height)/2 - @jqui-slider-horizontal-border-size);
+            left: 0;
+            margin-left: floor(-(@jqui-slider-handle-width/2));
+        }
+    }
+    &.ui-slider-vertical
+    {
+        display: inline-block;
+
+        width: @jqui-slider-horizontal-size;
+        height: 100%;
+        margin-right: 15px;
+        .ui-slider-handle
+        {
+            left: floor((@jqui-slider-horizontal-size - @jqui-slider-handle-width)/2 - @jqui-slider-horizontal-border-size);
+        }
+    }
+    .ui-slider-range
+    {
+        border-radius: @border-radius-base;
+        width: (@jqui-slider-horizontal-size - @jqui-slider-horizontal-border-size);
+        background-color: @jqui-slider-range-bg;
+        background-image: none;
+    }
+}
+
+
+/* NoUI Sliders */
+.noUi-connect
+{
+    background-color: @noui-slider-connect-bg;
+}
+.noui-tooltip
+{
+    font-size: @font-size-smaller;
+    line-height: @font-size-smaller;
+
+    position: absolute;
+    top: -43px;
+    left: -9px;
+
+    display: block;
+
+    padding: 5px;
+
+    text-align: center;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background: #fff;
+}
+.noui-tooltip strong
+{
+    display: block;
+
+    padding: 2px;
+}
+#noui-red,
+#noui-green,
+#noui-blue
+{
+    display: inline-block;
+
+    height: 200px;
+    margin: 10px;
+}
+#colorpicker
+{
+    height: 240px;
+    padding: 10px;
+    .result
+    {
+        display: inline-block;
+
+        width: 100px;
+        height: 100px;
+        margin: 60px 26px;
+
+        vertical-align: top;
+
+        color: rgb(127, 127, 127);
+        border: 1px solid #fff;
+        background: rgb(127, 127, 127);
+        -webkit-box-shadow: 0 0 10px;
+                box-shadow: 0 0 10px;
+    }
+}
+#noui-red
+{
+    background: #c0392b;
+}
+#noui-green
+{
+    background: #27ae60;
+}
+#noui-blue
+{
+    background: #2980b9;
+}
+
+

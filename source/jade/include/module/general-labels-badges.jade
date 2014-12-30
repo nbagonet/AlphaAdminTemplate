@@ -1,0 +1,207 @@
+//- UI Elements - General - Labels & Badges
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+  div.col-lg-6
+
+    //Labels
+    h3 Labels
+
+    div.demo-label
+      = '\n'
+      span.label.label-default Default
+      = '\n'
+      span.label.label-primary Primary
+      = '\n'
+      span.label.label-success Success
+      = '\n'
+      span.label.label-info Info
+      = '\n'
+      span.label.label-warning Warning
+      = '\n'
+      span.label.label-danger Danger
+      = '\n'
+      br/
+      span.label.label-red Red
+      = '\n'
+      span.label.label-orange Orange
+      = '\n'
+      span.label.label-yellow Yellow
+      = '\n'
+      span.label.label-green Green
+      = '\n'
+      span.label.label-black Black
+      = '\n'
+      span.label.label-blue Blue
+      = '\n'
+      span.label.label-violet Violet
+      = '\n'
+      span.label.label-pink Pink
+      = '\n'
+      span.label.label-grey Grey
+      = '\n'
+      br/
+      = '\n'
+      span.label.label-outlined.label-default Default
+      = '\n'
+      span.label.label-outlined.label-primary Primary
+      = '\n'
+      span.label.label-outlined.label-success Success
+      = '\n'
+      span.label.label-outlined.label-info Info
+      = '\n'
+      span.label.label-outlined.label-warning Warning
+      = '\n'
+      span.label.label-outlined.label-danger Danger
+      = '\n'
+      br/
+      = '\n'
+      span.label.label-outlined.label-red Red
+      = '\n'
+      span.label.label-outlined.label-orange Orange
+      = '\n'
+      span.label.label-outlined.label-yellow Yellow
+      = '\n'
+      span.label.label-outlined.label-green Green
+      = '\n'
+      span.label.label-outlined.label-black Black
+      = '\n'
+      span.label.label-outlined.label-blue Blue
+      = '\n'
+      span.label.label-outlined.label-violet Violet
+      = '\n'
+      span.label.label-outlined.label-pink Pink
+      = '\n'
+      span.label.label-outlined.label-grey Grey
+      = '\n'
+
+  div.col-lg-6
+
+    //Badges
+    h3 Badges
+
+    div.demo-badges
+      span.badge.badge-default Default
+      span.badge.badge-primary Primary
+      span.badge.badge-success Success
+      span.badge.badge-info Info
+      span.badge.badge-warning Warning
+      span.badge.badge-danger Danger
+      br/
+      span.badge.badge-red Red
+      span.badge.badge-orange Orange
+      span.badge.badge-yellow Yellow
+      span.badge.badge-green Green
+      span.badge.badge-black Black
+      span.badge.badge-blue Blue
+      span.badge.badge-violet Violet
+      span.badge.badge-pink Pink
+      span.badge.badge-grey Grey
+      br/
+      span.badge.badge-outlined.badge-default Default
+      span.badge.badge-outlined.badge-primary Primary
+      span.badge.badge-outlined.badge-success Success
+      span.badge.badge-outlined.badge-info Info
+      span.badge.badge-outlined.badge-warning Warning
+      span.badge.badge-outlined.badge-danger Danger
+      br/
+      span.badge.badge-outlined.badge-red Red
+      span.badge.badge-outlined.badge-orange Orange
+      span.badge.badge-outlined.badge-yellow Yellow
+      span.badge.badge-outlined.badge-green Green
+      span.badge.badge-outlined.badge-black Black
+      span.badge.badge-outlined.badge-blue Blue
+      span.badge.badge-outlined.badge-violet Violet
+      span.badge.badge-outlined.badge-pink Pink
+      span.badge.badge-outlined.badge-grey Grey
+
+div.row
+  div.col-lg-6
+
+    //Label in headings
+    h3 Label in headings
+
+    div.demo-label
+      h1
+        |Example heading&nbsp;
+        span.label.label-primary New
+      h2
+        |Example heading&nbsp;
+        span.label.label-success New
+      h3
+        |Example heading&nbsp;
+        span.label.label-info New
+      h4
+        |Example heading&nbsp;
+        span.label.label-warning New
+      h5
+        |Example heading&nbsp;
+        span.label.label-danger New
+      h6
+        |Example heading&nbsp;
+        span.label.label-success New
+
+  div.col-lg-6
+
+    //Badges List Navigations
+    h3 Badges List Navigations
+
+    div.demo-badges
+      ul.nav.nav-pills.nav-stacked(role="tablist" style="max-width:260px;")
+        li.active(role="presentation")
+          a(href="#")
+            span.badge.badge-red.pull-right 42
+            |Home
+        li(role="presentation")
+          a(href="#")
+            |Profile
+        li(role="presentation")
+          a(href="#")
+            span.badge.badge-red.pull-right 3
+            |Message
+
+
+div.row
+  div.col-lg-6
+
+    //Badge With Button Dropdown
+    h3 Badge With Button Dropdown
+
+    div.demo-badges
+      div.btn-group
+        +buttons('btn-info', 'Info', '', 'caret', 'true')
+        +dropdown-menu('','')
+          +dropdown-menu-item-normal('', '#', 'Action', '', '', 'badge badge-red pull-right', '4')
+          +dropdown-menu-item-normal('', '#', 'Another action', '', '', 'badge badge-yellow pull-right', '4')
+          +dropdown-menu-item-normal('divider')
+          +dropdown-menu-item-normal('', '#', 'Separated link', '', '', 'badge badge-green pull-right', '4')
+
+    //Badge In Button
+    h3 Badge In Button
+
+    div.demo-badges
+      button.btn.btn-success(type="button")
+        |Messages&nbsp;
+        span.badge 4
+
+  div.col-lg-6
+
+    //Badge In Pill
+    h3 Badge In Pill
+
+    div.demo-badges
+      ul.nav.nav-pills(role="tablist")
+        li.active(role="presentation")
+          a(href="#")
+            span.badge.badge-red.pull-right 42
+            |Home
+        li(role="presentation")
+          a(href="#")
+            |Profile
+        li(role="presentation")
+          a(href="#")
+            span.badge.badge-red.pull-right 3
+            |Message

@@ -1,0 +1,9 @@
+.link-color(@color)
+{
+    color: @color;
+    &:hover,
+    &:focus
+    {
+        color: darken(@color, 15%);
+    }
+}

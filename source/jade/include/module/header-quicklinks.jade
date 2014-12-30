@@ -1,0 +1,19 @@
+//- Public header - Quick Links
+
+include ../../common/variables
+include ../mixins
+
+
+if topbar_quicklinks
+  //Quick Links
+  li(class="dropdown")
+
+    a(class="dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown")
+      i(class="fa fa-fw fa-ellipsis-h")
+
+    +dropdown-menu('', 'dropdown-quick-links', 'Quick Links')
+      +dropdown-menu-item-normal('', '#', 'Action')
+      +dropdown-menu-item-normal('', '#', 'Another action')
+      +dropdown-menu-item-normal('', '#', 'Something else here')
+      +dropdown-menu-item-normal('divider')
+      +dropdown-menu-item-normal('disabled', 'javascript:void(0)', 'Disabled link')

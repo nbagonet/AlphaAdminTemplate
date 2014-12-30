@@ -1,0 +1,45 @@
+//- Public header - Notifications
+
+include ../../common/variables
+include ../mixins
+
+//Notifications
+li.dropdown
+
+  a(class="dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown")
+    i(class="fa fa-fw fa-bell-o")
+    span(class="badge badge-blue") 9
+
+  +dropdown-menu('', 'dropdown-notifications', 'You have 9 new notifications', '350|200', 'See all alerts', '###')
+
+    ul(class="list-unstyled")
+
+      li: a(href="#")
+        span(class="label label-primary"): i(class="fa fa-facebook")
+        span(class="dropdown-notifications-info") Will Smith accepted your friend request
+        span(class="small dropdown-notifications-time") 5 mins ago
+      li: a(href="#")
+        span(class="label label-info"): i(class="fa fa-twitter")
+        span(class="dropdown-notifications-info") 7 New Followers
+        span(class="small dropdown-notifications-time") 7 mins ago
+      li: a(href="#")
+        span(class="label label-warning"): i(class="fa fa-weibo")
+        span(class="dropdown-notifications-info") 3 Friends Circle Weibos
+        span(class="small dropdown-notifications-time") 10 mins ago
+      li: a(href="#")
+        span(class="label label-default"): i(class="fa fa-comment")
+        span(class="dropdown-notifications-info") New Comment
+        span(class="small dropdown-notifications-time") 11 mins ago
+      li: a(href="#")
+        span(class="label label-success"): i(class="fa fa-envelope")
+        span(class="dropdown-notifications-info") New Message
+        span(class="small dropdown-notifications-time") 11 mins ago
+      li: a(href="#")
+        span(class="label label-danger"): i(class="fa fa-warning")
+        span(class="dropdown-notifications-info") Server Rebooted
+        span(class="small dropdown-notifications-time") 37 mins ago
+      li: a(href="#")
+        span(class="label label-success"): i(class="fa fa-upload")
+        span(class="dropdown-notifications-info") Upload Progress
+        span(class="small dropdown-notifications-time") 39 mins ago
+        div(class="progress"): div(class="progress-bar progress-bar-striped active" role="progressbar" data-transitiongoal="60" aria-valuemin="0" aria-valuemax="100")

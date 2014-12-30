@@ -1,0 +1,45 @@
+//- Mixin - Dropdown menu
+
+include ./dropdown-menu-item
+
+//- dropdown-menu:
+//- ## id:
+//- **** String
+//- **** <ul id="#{id}">...</ul>
+//- ## mClass:
+//- **** String
+//- **** <ul class="dropdown-menu #{mClass}" role="menu">...</ul>
+//- ## mHeader:
+//- **** String
+//- **** <li class="dropdown-header">#{mHeader}</li>
+//- ## isScroll:
+//- **** String
+//- **** '300|200': Use SlimScroll, format: $width|$height
+//- **** '': Default menu items
+//- ## mFooterText:
+//- **** String
+//- ## mFooterLink:
+//- **** String
+mixin dropdown-menu(id, mClass, mHeader, isScroll, mFooterText, mFooterLink)
+  ul(id="#{id}" class="dropdown-menu #{mClass}" role="menu")
+
+    //- Check dropdown menu header
+    if mHeader && mHeader != ''
+      li(class="dropdown-header") #{mHeader}
+
+    //- Use SlimScroll?
+    if isScroll != ''
+      li(data-scroll="slimscroll" data-scroll-size="#{isScroll}")
+        if block
+          block
+    else if !isScroll || isScroll == ''
+      if block
+        block
+
+    //- Check dropdown menu footer
+    if mFooterText && mFooterText != ''
+      li(class="dropdown-footer text-right")
+        if mFooterLink && mFooterLink != ''
+          a(href="#{mFooterLink}") #{mFooterText}
+        else
+          |#{mFooterText}

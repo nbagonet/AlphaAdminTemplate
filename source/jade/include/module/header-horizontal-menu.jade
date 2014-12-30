@@ -1,0 +1,58 @@
+div(class="collapse navbar-collapse navbar-left")
+  ul(class="nav navbar-nav horizontal-menu")
+
+    //Horizontal menu
+    li.active
+      a(href="#") Link
+
+    li.dropdown
+      a(href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle")
+        |Dropdown
+        span.caret
+
+      ul.dropdown-menu(role="menu")
+
+        each val in [1, 2, 3, 4]
+          li
+            a(href="#")
+              span.menu-title Options #{val}
+
+        li
+          a.multi-level-menu-toggle(href="#" data-toggle="multi-level-menu")
+            span.menu-title More Options
+            span.fa.fa-angle-right.arrow
+
+          ul.list-unstyled.multi-level-menu(role="menu")
+
+            each val in [1, 2, 3, 4]
+              li
+                a(href="#")
+                  span.menu-title Second Level Link #{val}
+
+            li
+              a.multi-level-menu-toggle(href="#" data-toggle="multi-level-menu")
+                span.menu-title More Options
+                span.fa.fa-angle-right.arrow
+
+              ul.list-unstyled.multi-level-menu(role="menu")
+
+                each val in [1, 2, 3, 4]
+                  li
+                    a(href="#")
+                      span.menu-title Third Level Link #{val}
+
+    li.dropdown.mega-menu-dropdown
+      a.dropdown-toggle(href="javascript:void(0)" data-toggle="dropdown" data-hover="dropdown")
+        |Extras
+        span.caret
+
+      ul.dropdown-menu(role="menu")
+        li
+          div.mega-menu-content
+            div.row
+
+              each val in [1, 2, 3]
+                ul.col-md-4.list-unstyled.mega-menu-submenu
+                  li: h3 Unwilling sportsmen #{val}
+                  each val in [1, 2, 3, 4]
+                    li: a(href="#") Quick six blind smart #{val}

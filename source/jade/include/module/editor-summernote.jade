@@ -1,0 +1,21 @@
+//- UI Advanced - Editor - Summernote
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-white
+  div.panel-heading
+    |Summernote
+  div.panel-body
+    div.p15
+      h4 Default
+      div.mbottom30
+        div#summernote-demo-default.summernote-demo
+
+      h4 Click to Edit
+      div.mbottom20
+        div#summernote-demo-edit-con.well.well-sm.no-mb
+          |Click button to edit me.
+        +buttons('btn-danger mtop10 mright5', 'Edit')(id="summernote-demo-edit")
+        +buttons('btn-danger mtop10', 'Save')(id="summernote-demo-save")

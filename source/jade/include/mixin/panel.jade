@@ -1,0 +1,10 @@
+//- Mixin - Panel
+
+
+mixin panel(pClass, pTitle)
+  div(class='panel #{pClass}')
+    div.panel-heading
+      |#{pTitle}
+    div.panel-body
+      if block
+        block

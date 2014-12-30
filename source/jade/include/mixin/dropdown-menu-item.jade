@@ -1,0 +1,21 @@
+//- Mixin - Dropdown menu - normal item
+
+
+mixin dropdown-menu-item-normal(itemClass, link, title, icoBefore, icoBeforeText, icoAfter, icoAfterText)
+
+  li(class='#{itemClass}')
+
+    if link && link != ''
+      a(href='#{link}')
+
+        if icoBefore && icoBefore != ''
+          span(class='#{icoBefore}')
+            if icoBeforeText && icoBeforeText != ''
+              |#{icoBeforeText}
+
+        |#{title}
+
+        if icoAfter && icoAfter != ''
+          span(class='#{icoAfter}')
+            if icoAfterText && icoAfterText != ''
+              |#{icoAfterText}

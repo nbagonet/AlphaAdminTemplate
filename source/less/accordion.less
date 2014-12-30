@@ -1,0 +1,35 @@
+//
+// Accordion
+// --------------------------------------------------
+
+
+/* Accordion */
+.panel-group
+{
+    .panel
+    {
+        border-radius: @border-radius-base;
+    }
+}
+.panel-group
+{
+    .panel-title
+    {
+        > a
+        {
+            > i
+            {
+                float: right;
+
+                .rotate(-90deg);
+            }
+            &.collapsed
+            {
+                > i
+                {
+                    .rotate(0deg);
+                }
+            }
+        }
+    }
+}

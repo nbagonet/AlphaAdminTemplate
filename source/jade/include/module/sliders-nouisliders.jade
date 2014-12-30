@@ -1,0 +1,461 @@
+//- UI Elements - Sliders - NoUI Sliders
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+
+  div.col-lg-6
+
+    //Slider values
+    div.panel.panel-white
+      div.panel-heading Slider values
+      div.panel-body
+
+        //Handles
+        div.demo-sliders
+          h4 Handles
+          p!= 'The number of handles can be set using the <code>start</code> option. This option accepts an array of initial handle positions. Set one value for one handle, two values for two handles.'
+          div#noui-slider-handles
+
+        //Range
+        div.demo-sliders
+          h4 Range
+          p!= 'All values on the slider are part of a range. The range has a minimum and maximum value.'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-range-value
+          div#noui-slider-range
+
+        //Stepping and snapping to values
+        div.demo-sliders
+          h4 Stepping and snapping to values
+          p!= 'The amount the slider changes on movement can be set using the <code>step</code> option.'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-step-value
+          div#noui-slider-step
+
+        //Non-linear sliders
+        div.demo-sliders
+          h4 Non-linear sliders
+          h5 Advanced Feature
+          p!= 'he slider at certain intervals. Note how the handle in the example below starts at 30% of the slider width, even though <code>4000</code> is not 30% of the span between <code>2000</code> and <code>10000</code>.'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-non-linear-value
+          div#noui-slider-non-linear
+
+        //Stepping in non-linear sliders
+        div.demo-sliders
+          h4 Stepping in non-linear sliders
+          p!= 'For every subrange in a non-linear slider, stepping can be set. Note how in the example below the slider doesn\'t step until it reaches <code>500</code> . From there on, it changes in increments of <code>500</code> , until it reaches <code>4000</code> , where increments now span <code>1000</code> .'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-non-linear-step-value
+          div#noui-slider-non-linear-step
+
+        //Snapping between steps
+        div.demo-sliders
+          h4 Snapping between steps
+          p!= 'When a non-linear slider has been configured, the <code>snap</code> option can be set to <code>true</code> to force the slider to jump between the specified values.'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-snap-value-lower
+          p
+            strong Value:&nbsp;
+            span#noui-slider-snap-value-upper
+          div#noui-slider-snap
+
+    //Creating a toggle
+    div.panel.panel-white
+      div.panel-heading Creating a toggle
+      div.panel-body
+        div.demo-sliders
+          p!= 'Many application interfaces have options that can be turned on or off using switches. noUiSlider is well suited for this, especially because of the wide touch support.'
+          p!= 'The serialization option can be used to keep track of changes to the handle. We\'ll set the range to <code>[0, 1]</code> , which leaves one step of <code>1</code> .'
+          div#noui-slider-toggle(style="height:50px;")
+
+    //Events
+    div.panel.panel-white
+      div.panel-heading Events
+      div.panel-body
+        div.demo-sliders
+          p!= 'noUiSlider offers several ways to listen to interaction: <code>\'change\'</code> , <code>\'set\'</code> and <code>\'slide\'</code> . You can use these events all at the same time.'
+          div#noui-slider-events
+          div.text-center
+            br/
+            span#noui-slider-l-slide.label.label-default Slide
+            = '\n'
+            span#noui-slider-l-set.label.label-default Set
+            = '\n'
+            span#noui-slider-l-change.label.label-default Change
+          br/
+          div.input-group
+            input#noui-slider-input-log.form-control(type="text")
+            span.input-group-btn
+              +buttons('btn-success', '.val([ 5, 15 ])')(id="noui-slider-setter1")
+
+    //Colorpicker
+    div.panel.panel-white
+      div.panel-heading Colorpicker
+      div.panel-body
+        div.demo-sliders
+          p!= 'We\'ll initialize all sliders with the same options, and use the slide callback to keep to color in sync with the slider values. This callback fires when the slider is moved by sliding, or when it is clicked or tapped.'
+          div#colorpicker
+            div#noui-red.sliders
+            div#noui-green.sliders
+            div#noui-blue.sliders
+            div.result
+
+    //Using HTML5 input elements
+    div.panel.panel-white
+      div.panel-heading Using HTML5 input elements
+      div.panel-body
+        div.demo-sliders
+          p!= 'noUiSlider is perfectly fine serializing values to any element with a <code>.val()</code> method, so lets try using <code>type="number"</code> and <code>&lt;select&gt;</code> .'
+          p!= 'Note that if your browser doesn\'t support an input type, it will just assume <code>"text"</code> . If you\'d like to know more, consider reading <a href="http://html5doctor.com/html5-forms-input-types/" target="_blank">this article</a> .'
+          p!= 'We\'ll append <code>&lt;option&gt;</code> elements to the <code>&lt;select&gt;</code> dynamically.'
+          div#noui-slider-html5
+          br/
+          div.form-group
+            select#noui-slider-input-select.form-control
+          div.form-group
+            input#noui-slider-input-number.form-control(type="number" min="-20" max="40" step="1")
+
+    //Non linear slider
+    div.panel.panel-white
+      div.panel-heading Non linear slider
+      div.panel-body
+        div.demo-sliders
+          p!= 'One of noUiSlider\'s core features is the ability to divide the range in a non-linear fashion. Stepping can be applied, too! The example on the right shows where the handles are on the slider range in values and percentages.'
+          div#noui-slider-nonlinear
+          br/
+          p
+            strong Lower Value:&nbsp;
+            span#noui-slider-lower-value
+          p
+            strong Lower Offset:&nbsp;
+            span#noui-slider-lower-offset
+          p
+            strong Upper Value:&nbsp;
+            span#noui-slider-upper-value
+          p
+            strong Upper Offset:&nbsp;
+            span#noui-slider-upper-offset
+
+    //Locking sliders together
+    div.panel.panel-white
+      div.panel-heading Locking sliders together
+      div.panel-body
+        div.demo-sliders
+          p!= 'Using <code>serialization</code> , cross-updating values will results in an infinite loop of updates. To prevent this, each <code>Link</code> has the option to disable synchronisation.'
+          div#noui-slider-lock-1
+          br/
+          p
+            strong Value:&nbsp;
+            span#noui-slider-lock-1-p
+          div#noui-slider-lock-2
+          br/
+          p
+            strong Value:&nbsp;
+            span#noui-slider-lock-2-p
+          +buttons('btn-success', 'Lock')(id="noui-slider-lock-btn")
+
+
+  div.col-lg-6
+
+    //Getting and setting slider values
+    div.panel.panel-white
+      div.panel-heading Getting and setting slider values
+      div.panel-body
+
+        //Example
+        div.demo-sliders
+          h4 Example
+          p!= 'Clicking the button below sets the slider, which uses a range from <code>0</code> to <code>100</code> , to <code>20</code> .'
+          div#noui-slider-set-and-read
+          div.text-center
+            br/
+            +buttons('btn-success mright5', 'Set to 20')(id="noui-slider-set-and-read-write-button")
+            +buttons('btn-danger', 'Read Slider Value')(id="noui-slider-set-and-read-read-button")
+
+    //Slider behaviour
+    div.panel.panel-white
+      div.panel-heading Slider behaviour
+      div.panel-body
+
+        //Tap
+        div.demo-sliders
+          h4 Tap
+          p!= 'A handle snaps to a clicked location. A smooth transition is used. This option is <strong>default</strong>.'
+          div#noui-slider-tap
+
+        //Drag
+        div.demo-sliders
+          h4 Drag
+          p!= 'Makes the range dragable. Requires two handles.'
+          div#noui-slider-drag
+
+        //Fixed dragging
+        div.demo-sliders
+          h4 Fixed dragging
+          p!= 'Keeps the distance between handles fixed when the <code>\'drag\'</code> flag is set.'
+          div#noui-slider-drag-fixed
+
+        //Snap
+        div.demo-sliders
+          h4 Snap
+          p!= 'A handle snaps to a clicked location. It can immediatly be moved, without a <code>mouseup</code> + <code>mousedown</code> .'
+          div#noui-slider-snap-2
+
+        //Combined options
+        div.demo-sliders
+          h4 Combined options
+          p!= 'Most <code>\'behaviour\'</code> flags can be combined.'
+          div#noui-slider-combined
+
+    //Skipping steps
+    div.panel.panel-white
+      div.panel-heading Skipping steps
+      div.panel-body
+        div.demo-sliders
+          p!= 'When using a stepped slider, your configuration may require that certain steps aren\'t available. Using the <code>snap</code> feature, this effect can be created.'
+          p!= 'Notice how <code>40</code> and <code>80</code> can\'t be selected on the slider.'
+          p
+            strong Value:&nbsp;
+            span#noui-slider-skip-value-lower
+          p
+            strong Value:&nbsp;
+            span#noui-slider-skip-value-upper
+          div#noui-slider-skipstep
+
+    //Slider with Tooltips
+    div.panel.panel-white
+      div.panel-heading Slider with Tooltips
+      div.panel-body
+        div.demo-sliders
+          p!= 'Using the libLink feature, noUiSlider can provided handles with tooltips. These tooltips can be styled and modified on the fly, as demonstrated in this example.'
+          p!= 'A basic tooltip implementation is part of the <a href="http://refreshless.com/nouislider/examples/liblink/" target="_blank" class="text-primary">libLink</a> implementation.'
+          p!= 'The noUiSlider theme includes no tooltip styling. The following styles are used in this example:'
+          div#noui-slider-tooltip
+
+    //Linking input fields
+    div.panel.panel-white
+      div.panel-heading Linking input fields
+      div.panel-body
+
+        //libLink support
+        div.demo-sliders
+          h4 libLink support
+          p!= 'noUiSlider has full support for libLink, which will let you write values to input elements very easily. libLink will update the slider if you change an input as well!'
+          p!= 'As you can see, noUiSlider updates the value in the <code>$(\'#readout\')</code> element, and typing in the input will change the slider.'
+          div#noui-slider-link
+          p
+            br/
+            strong Value:&nbsp;
+            span#noui-slider-link-val
+          form.form-inline(role="form")
+            div.form-group
+              input.form-control#noui-slider-link-input
+
+        //Feature overview
+        div.demo-sliders
+          h4 Feature overview
+          p!= 'Play with the example a bit, and look at the samples to see how easy it was to set up all those form-fields. Note how all input is automatically validated, to prevent invalid values anywhere.'
+          form#moneyForm
+            pre: code= '<form id="moneyForm">'
+            div.panel.panel-default: div.panel-body
+              div#noui-slider-mf-rangeSlider
+              br/
+              pre: code= '<div id="noui-slider-mf-rangeSlider"></div>'
+            div.panel.panel-default: div.panel-body
+              div#noui-slider-mf-value
+              pre: code= '<div id="noui-slider-mf-value"></div>'
+            div.panel.panel-default: div.panel-body
+              div.form-group: input#noui-slider-mf-one.form-control(type="text" name="one")
+              div.form-group: input#noui-slider-mf-two.form-control(type="text" name="two")
+              pre: code= '<div class="form-group">\n  <input type="text" class="form-control" id="noui-slider-mf-one" name="one">\n</div>\n<div class="form-group">\n  <input type="text" class="form-control" id="noui-slider-mf-two" name="two">\n</div>'
+            div.panel.panel-default: div.panel-body
+              div#noui-slider-mf-someElement
+              pre: code= '<div id="noui-slider-mf-someElement"></div>'
+            div.text-center
+              +buttons('btn-success', 'Alert form values.')(id="noui-slider-mf-btn")
+            br/
+            pre: code= '</form>'
+
+    //Working with dates
+    div.panel.panel-white
+      div.panel-heading Working with dates
+      div.panel-body
+        div.demo-sliders
+          p!= 'As all dates in JavaScript can be represented as time, noUiSlider can handle them, too. This example will show you how to convert dates to numerical ranges, and then use the <code>serialization</code> feature to display them in a pretty format.'
+          p!= 'We\'ll be creating timestamps from strings. In order to do this easily, we\'ll define a new helper function. This function accepts a string, creates a <code>new Date</code> and then returns it as a timestamp.'
+          p!= 'In in overview below you\'ll find the code used to run this example. For readability, all <strong>helper</strong> functions have been moved into their own tab.'
+          div#noui-slider-date
+          br/
+          p
+            strong Value:&nbsp;
+            span#noui-slider-event-start
+          p
+            strong Value:&nbsp;
+            span#noui-slider-event-end
+
+
+div.row
+  div.col-lg-12
+
+    //Pips Add-On
+    div.panel.panel-white
+      div.panel-heading Pips Add-On
+      div.panel-body
+        div.demo-sliders
+          p!= 'This optional extention to noUiSlider allows you to generate points along the slider.'
+          p!= 'Five options can be set: <code>mode</code> to determine where to place pips, <code>values</code> as additional options for <code>mode</code> , <code>stepped</code> to round pip values to the slider stepping, <code>density</code> to pre-scale the number of pips, and <code>filter</code> to manually modify pip size.'
+          p!= 'All sliders on the page use the same range, as displayed to the right.'
+
+          //Range
+          div.row
+            div.col-md-6
+              h4 Left-to-Right (default):
+              div.demo-sliders
+                div#noui-slider-pips-range.pips-range
+
+              br/
+              br/
+
+              h4 Right-to-Left:
+              div.demo-sliders
+                div#noui-slider-pips-range-rtl.pips-range
+
+            div.col-md-6
+              h4 Vertical and vertical, bottom-to-top:
+              div.demo-sliders
+                div.row
+                  div.col-md-6
+                    div.demo-sliders
+                      div.vertical
+                        div#noui-slider-pips-range-vertical.pips-range(style="height:200px;")
+                  div.col-md-6
+                    div.demo-sliders
+                      div.vertical
+                        div#noui-slider-pips-range-vertical-rtl.pips-range(style="height:200px;")
+          br/
+          br/
+
+          //Steps
+          h4 Steps
+          div.demo-sliders
+            p!= 'In <code>positions</code> mode, pips are generated at percentage-based positions on the slider. Optionally, the <code>stepped</code> option can be set to <code>true</code> to match the pips to the slider steps.'
+            p!= 'The <code>filter</code> function must return <code>0</code> (no value), <code>1</code> (small value) or <code>2</code> (large value).'
+            p!= 'Here, we\'ll use large values for every step matching a thousand (<code>1000</code> , <code>2000</code> , <code>3000</code> ), and small values for every step matching 500 (<code>2500</code> , <code>3500</code> , <code>4500</code> ).'
+            p!= 'The Pips add-on supports <code>format</code> in the same way the slider itself does.'
+            div#noui-slider-pips-steps
+
+          br/
+          br/
+          br/
+          br/
+
+          //Positions
+          h4 Positions
+          div.demo-sliders
+            p!= 'In <code>positions</code> mode, pips are generated at percentage-based positions on the slider. Optionally, the <code>stepped</code> option can be set to <code>true</code> to match the pips to the slider steps.'
+            div#noui-slider-pips-positions
+          br/
+          br/
+          div.demo-sliders
+            h5 Stepped positions:
+            br/
+            div#noui-slider-pips-positions-stepped
+
+          br/
+          br/
+          br/
+          br/
+
+          //Count
+          h4 Count
+          div.demo-sliders
+            p!= 'The <code>count</code> mode can be used to generate a fixed number of pips. As with <code>positions</code> mode, the <code>stepped</code> option can be used.'
+            div#noui-slider-pips-count
+          br/
+          br/
+          div.demo-sliders
+            h5 Stepped count:
+            br/
+            div#noui-slider-pips-count-stepped
+
+          br/
+          br/
+          br/
+          br/
+
+          //Values
+          h4 Values
+          div.demo-sliders
+            p!= 'The <code>values</code> mode is similar to <code>positions</code> , but it accepts values instead of percentages. The <code>stepped</code> option can be used for this mode.'
+            div#noui-slider-pips-values
+          br/
+          br/
+          div.demo-sliders
+            h5 Stepped values:
+            br/
+            div#noui-slider-pips-values-stepped
+          br/
+          br/
+
+    //More
+    div.panel.panel-white
+      div.panel-heading More
+      div.panel-body
+
+        //Disabling a slider
+        h4 Disabling a slider
+        div.demo-sliders
+          p!= 'Disabling a slider is identical to disabling a checkbox or textarea; simply set the <code class="language-markup">disabled</code> attribute.'
+          p!= 'A disabled slider can\'t be changed by sliding, click or touching, but you can still change its value using the <code>.val()</code> method. You can use CSS to show the disabled state. The default theme also sets a <code>not-allowed</code> cursor.'
+          p!= 'The slider below is disabled when the checkbox gets checked, and re-enabled when it is unchecked.'
+          div#noui-slider-disable
+          br/
+          label
+            input#noui-slider-disable-checkbox(type="checkbox")
+            |&nbsp;Disable this slider
+
+        br/
+        br/
+        br/
+        br/
+
+        //Color Options
+        h4 Color Options
+        div.demo-sliders
+          div.noui-slider.noui-slider-primary
+        div.demo-sliders
+          div.noui-slider.noui-slider-success
+        div.demo-sliders
+          div.noui-slider.noui-slider-info
+        div.demo-sliders
+          div.noui-slider.noui-slider-warning
+        div.demo-sliders
+          div.noui-slider.noui-slider-danger
+        div.demo-sliders
+          div.noui-slider.noui-slider-red
+        div.demo-sliders
+          div.noui-slider.noui-slider-orange
+        div.demo-sliders
+          div.noui-slider.noui-slider-yellow
+        div.demo-sliders
+          div.noui-slider.noui-slider-green
+        div.demo-sliders
+          div.noui-slider.noui-slider-black
+        div.demo-sliders
+          div.noui-slider.noui-slider-blue
+        div.demo-sliders
+          div.noui-slider.noui-slider-violet
+        div.demo-sliders
+          div.noui-slider.noui-slider-pink
+        div.demo-sliders
+          div.noui-slider.noui-slider-grey

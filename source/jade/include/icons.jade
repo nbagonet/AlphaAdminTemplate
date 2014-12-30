@@ -1,0 +1,44 @@
+//- UI Elements - Icons
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Nav Tabs
+  ul.nav.nav-tabs.nav-tabs-orange(role="tablist")
+    li.active
+      a(href="#fontawesome" role="tab" data-toggle="tab")
+        |Font Awesome&nbsp;
+        span.badge.badge-warning v4.2.0
+    li
+      a(href="#glyphicons" role="tab" data-toggle="tab") Glyphicons
+    li
+      a(href="#themifyicons" role="tab" data-toggle="tab")
+        |Themify Icons&nbsp;
+        span.badge.badge-warning v1.0.1
+    li
+      a(href="#entypo" role="tab" data-toggle="tab")
+        |Entypo&nbsp;
+        span.badge.badge-warning v2.0
+
+  //Tab Panes
+  div.tab-content
+
+    //Font Awesome
+    div#fontawesome.tab-pane.fade.in.active
+      include ./module/icons-fontawesome
+
+    //Glyphicons
+    div#glyphicons.tab-pane.fade
+      include ./module/icons-glyphicons
+
+    //Themify Icons
+    div#themifyicons.tab-pane.fade
+      include ./module/icons-themify
+
+    //Entypo
+    div#entypo.tab-pane.fade
+      include ./module/icons-entypo

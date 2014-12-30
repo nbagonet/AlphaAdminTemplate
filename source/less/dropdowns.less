@@ -1,0 +1,36 @@
+//
+// Dropdown menus
+// --------------------------------------------------
+
+
+// The dropdown menu (ul)
+/* Dropdown menu */
+.dropdown-menu
+{
+    padding: 0;
+
+    border-radius: @border-radius-base;
+    li
+    {
+        position: relative;
+    }
+    > li > a
+    {
+        font-size: @font-size-small;
+        font-weight: @font-weight-thin;
+
+        padding: @dropdown-item-padding-vertical @dropdown-item-padding-horizontal;
+    }
+    > .divider
+    {
+        margin: 3px 0;
+    }
+    .dropdown-header
+    {
+        font-size: @font-size-small;
+        font-weight: @font-weight-bold;
+
+        margin: -1px -1px 0;
+        padding: @dropdown-item-padding-vertical @dropdown-item-padding-horizontal;
+    }
+}

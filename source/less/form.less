@@ -1,0 +1,45 @@
+//
+// Form
+// --------------------------------------------------
+
+
+
+/* Forms */
+.demo-input-group
+{
+    padding-bottom: 20px;
+    .demo-box
+    {
+        padding-bottom: 20px;
+    }
+}
+
+.form-control
+{
+    border-radius: @border-radius-base;
+}
+.navbar-toggle
+{
+    border-radius: @border-radius-base;
+}
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn
+{
+    border-radius: @border-radius-base 0 0 @border-radius-base;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn
+{
+    border-radius: 0 @border-radius-base @border-radius-base 0;
+}
