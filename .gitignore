@@ -5,8 +5,8 @@ bower_components
 .jshintrc
 *.yml
 .DS_Store
-* codekit*
-* sublime*
+*codekit*
+*sublime*
 bower.json
 package.json
 .editorconfig
