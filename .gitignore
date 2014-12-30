@@ -1,17 +1,6 @@
 bower_components
 .git
 .gitignore
-.jshintignore
-.jshintrc
-*.yml
 .DS_Store
 *codekit*
 *sublime*
-bower.json
-package.json
-.editorconfig
-Gulpfile.js
-component.json
-Gemfile.lock
-Rakefile
-.bowerrc
