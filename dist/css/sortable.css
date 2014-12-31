@@ -1,0 +1,10 @@
+/* Sortable */
+body.dragging,
+body.dragging * {
+  cursor: move !important;
+}
+.dragged {
+  position: absolute;
+  z-index: 2000;
+  opacity: .5;
+}

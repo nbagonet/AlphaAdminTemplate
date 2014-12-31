@@ -1,0 +1,164 @@
+//- UI Advanced - Sortable & Netsable List - Sortable
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-white
+  div.panel-heading
+    |Sortable Items
+  div.panel-body
+
+    //Default
+    h4 Default
+    div.row
+      div.col-sm-6
+        ul#demo-sortable-default.list-group.sortable
+          li.list-group-item.list-group-item-success Item 1
+          li.list-group-item.list-group-item-warning Item 2
+          li.list-group-item.list-group-item-danger Item 3
+          li.list-group-item.list-group-item-info Item 4
+
+    //Connected lists with drop animation
+    h4 Connected lists with drop animation
+    div.row
+      div.col-sm-6
+        ul.demo-sortable-simple_with_animation.list-group.sortable
+          li.list-group-item Item 1
+          li.list-group-item Item 2
+          li.list-group-item Item 3
+          li.list-group-item Item 4
+          li.list-group-item Item 5
+          li.list-group-item Item 6
+      div.col-sm-6
+        ul.demo-sortable-simple_with_animation.list-group.sortable
+          li.list-group-item.list-group-item-success Item 1
+          li.list-group-item.list-group-item-success Item 2
+          li.list-group-item.list-group-item-success Item 3
+          li.list-group-item.list-group-item-success Item 4
+          li.list-group-item.list-group-item-success Item 5
+          li.list-group-item.list-group-item-success Item 6
+
+    //Sort handle and limited drag/drop
+    h4 Sort handle and limited drag/drop
+    div.row
+      div.col-sm-6
+        h5 I'm draggable and droppable
+        ul.demo-sortable-simple_with_drop.list-group.sortable
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 1
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 2
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 3
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 4
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 5
+          li.list-group-item
+            i.fa.fa-arrows.mright5
+            |Item 6
+      div.col-sm-6
+        h5 I'm only draggable
+        ul.demo-sortable-simple_with_no_drop.list-group.sortable
+          li.list-group-item.list-group-item-success
+            i.fa.fa-arrows.mright5
+            |Item 1
+          li.list-group-item.list-group-item-success
+            i.fa.fa-arrows.mright5
+            |Item 2
+          li.list-group-item.list-group-item-success
+            i.fa.fa-arrows.mright5
+            |Item 3
+        h5 I'm only droppable
+        ul.demo-sortable-simple_with_no_drag.list-group.sortable
+          li.list-group-item.list-group-item-info
+            i.fa.fa-arrows.mright5
+            |Item 1
+          li.list-group-item.list-group-item-info
+            i.fa.fa-arrows.mright5
+            |Item 2
+          li.list-group-item.list-group-item-info
+            i.fa.fa-arrows.mright5
+            |Item 3
+
+    //Connected lists with limited drop targets
+    h4 Connected lists with limited drop targets
+    div.row
+      div.col-md-4
+        h5 Serialize result
+        pre#serialize_output.well.well-sm
+      div.col-md-4
+        ul.demo-sortable-limited_drop_targets.list-group.sortable
+          li.list-group-item Item 1
+          li.list-group-item Item 2
+          li.list-group-item Item 3
+          li.list-group-item.list-group-item-success Item 4
+          li.list-group-item.list-group-item-success Item 5
+          li.list-group-item.list-group-item-success Item 6
+      div.col-md-4
+        ul.demo-sortable-limited_drop_targets.list-group.sortable
+          li.list-group-item.list-group-item-success Item 1
+          li.list-group-item Item 2
+          li.list-group-item.list-group-item-success Item 3
+          li.list-group-item Item 4
+          li.list-group-item.list-group-item-success Item 5
+          li.list-group-item Item 6
+
+    //Serialization and delay
+    h4 Serialization and delay
+    div.row
+      div.col-md-4
+        h5 Serialize result
+        pre#serialize_output2.well.well-sm
+      div.col-md-4
+        ul.demo-sortable-serialization.sortable
+          - for(var i=1;i<=3;i++)
+            li(data-id="#{i}" data-name="Item #{i}") Item #{i}
+
+          li(data-id="4" data-name="Item 4") Item 4
+            ul
+              - for(var i=1;i<=6;i++)
+                li(data-id="4-#{i}" data-name="Item 4.#{i}") Item 4.#{i}
+
+          - for(var i=5;i<=10;i++)
+            li(data-id="#{i}" data-name="Item #{i}") Item #{i}
+      div.col-md-4
+        ul.demo-sortable-serialization.sortable
+          - for(var i=1;i<=6;i++)
+            li(data-id="#{i}" data-name="Item #{i}") Item #{i}
+
+    //Sort tables
+    h4
+      |Sort tables&nbsp;
+      small (doesn't work well in Konqueror and IE)
+    div.row
+      div.col-md-6
+        h5 Sortable Rows
+        table.demo-sortable-sorted_table.table.table-striped.table-bordered.sortable
+          thead
+            tr
+              th A Column
+              th B Column
+          tbody
+            - for(var i=0;i<10;i++)
+              tr
+                td A Item #{i}
+                td B Item #{i}
+      div.col-md-6
+        h5 Sortable column heads
+        table.table.table-striped.table-bordered.sortable
+          thead.sorted_head
+            tr
+              th A Column
+              th B Column
+          tbody
+            - for(var i=0;i<10;i++)
+              tr
+                td A Item #{i}
+                td B Item #{i}

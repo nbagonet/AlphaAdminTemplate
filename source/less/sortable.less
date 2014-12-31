@@ -1,0 +1,46 @@
+//
+// Sortable
+// --------------------------------------------------
+
+
+/* Sortable */
+body.dragging,
+body.dragging *
+{
+    cursor: move !important;
+}
+.dragged
+{
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+
+    opacity: .5;
+    height:auto;
+}
+.sortable
+{
+    .placeholder
+    {
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        list-style: none;
+        &:before
+        {
+            position: absolute;
+            z-index: 2001;
+
+            width: 0;
+            height: 0;
+            margin-top: -5px;
+
+            content: '';
+
+            border: 5px solid transparent;
+            border-right: none;
+            border-left-color: @brand-main-base;
+        }
+    }
+}

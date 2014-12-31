@@ -3710,6 +3710,35 @@ blockquote.pull-right {
 .widget {
   overflow: hidden;
 }
+/* Sortable */
+body.dragging,
+body.dragging * {
+  cursor: move !important;
+}
+.dragged {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  opacity: .5;
+  height: auto;
+}
+.sortable .placeholder {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+.sortable .placeholder:before {
+  position: absolute;
+  z-index: 2001;
+  width: 0;
+  height: 0;
+  margin-top: -5px;
+  content: '';
+  border: 5px solid transparent;
+  border-right: none;
+  border-left-color: #0092c7;
+}
 /* Single Element CSS Spinners */
 .load1 .loader,
 .load1 .loader:before,
