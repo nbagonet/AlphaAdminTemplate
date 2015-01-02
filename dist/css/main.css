@@ -3139,6 +3139,9 @@ li.mega-menu-dropdown {
 .demo-list-group {
   padding-bottom: 20px;
 }
+.list-group .list-group {
+  margin: 10px 0 0 0;
+}
 .list-group-item:first-child {
   border-radius: 0 0 0 0;
 }
@@ -3738,6 +3741,211 @@ body.dragging * {
   border: 5px solid transparent;
   border-right: none;
   border-left-color: #0092c7;
+}
+/**
+ * Nestable
+ */
+.dd {
+  line-height: 20px;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dd-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dd-list .dd-list {
+  padding-left: 30px;
+}
+.dd-collapsed .dd-list {
+  display: none;
+}
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+  line-height: 20px;
+  position: relative;
+  display: block;
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.dd-handle {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: #fafafa;
+  background: -webkit-linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+  background: linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+}
+.dd-handle:hover {
+  color: #2ea8e5;
+  background: #fff;
+}
+.dd-item > button {
+  line-height: 1;
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 25px;
+  height: 20px;
+  margin: 5px 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-indent: 100%;
+  border: 0;
+  background: transparent;
+}
+.dd-item > button:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  content: '+';
+  text-align: center;
+  text-indent: 0;
+}
+.dd-item > button[data-action='collapse']:before {
+  content: '-';
+}
+.dd-placeholder,
+.dd-empty {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 30px;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px dashed #b6bcbf;
+  background: #f2fbff;
+}
+.dd-empty {
+  min-height: 100px;
+  border: 1px dashed #bbb;
+  background-color: #e5e5e5;
+  background-image: -webkit-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), -webkit-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+  background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
+}
+.dd-dragel {
+  position: absolute;
+  z-index: 9999;
+  pointer-events: none;
+}
+.dd-dragel > .dd-item .dd-handle {
+  margin-top: 0;
+}
+.dd-dragel .dd-handle {
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+/**
+ * Nestable Extras
+ */
+.nestable-lists {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 30px 0;
+  border: 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+#nestable-menu {
+  margin: 20px 0;
+  padding: 0;
+}
+#nestable2 .dd-handle {
+  color: #fff;
+  border: 1px solid #999;
+  background: #bbb;
+  background: -webkit-linear-gradient(top, #bbbbbb 0%, #999999 100%);
+  background: linear-gradient(top, #bbbbbb 0%, #999999 100%);
+}
+#nestable2 .dd-handle:hover {
+  background: #bbb;
+}
+#nestable2 .dd-item > button:before {
+  color: #fff;
+}
+.dd-hover > .dd-handle {
+  background: #2ea8e5 !important;
+}
+/**
+ * Nestable Draggable Handles
+ */
+.dd3-content {
+  font-weight: bold;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px 5px 40px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fafafa;
+  background: -webkit-linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+  background: linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+}
+.dd3-content:hover {
+  color: #2ea8e5;
+  background: #fff;
+}
+.dd-dragel > .dd3-item > .dd3-content {
+  margin: 0;
+}
+.dd3-item > button {
+  margin-left: 30px;
+}
+.dd3-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 30px;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  text-indent: 100%;
+  border: 1px solid #aaa;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #ddd;
+  background: -webkit-linear-gradient(top, #dddddd 0%, #bbbbbb 100%);
+  background: linear-gradient(top, #dddddd 0%, #bbbbbb 100%);
+}
+.dd3-handle:before {
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: block;
+  width: 100%;
+  content: '≡';
+  text-align: center;
+  text-indent: 0;
+  color: #fff;
+}
+.dd3-handle:hover {
+  background: #ddd;
 }
 /* Single Element CSS Spinners */
 .load1 .loader,

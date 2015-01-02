@@ -1,0 +1,63 @@
+//- UI Advanced - Sortable & Netsable List - Netsable List
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-white
+  div.panel-heading
+    |Netsable List
+  div.panel-body.demo-netsable
+
+    //Default
+    h4 Default
+    div#nestable-menu.pbottom10
+      +buttons('btn-success', 'Expand All', 'fa fa-expand')(data-action="expand-all")
+      +buttons('btn-danger', 'Collapse All', 'fa fa-compress')(data-action="collapse-all")
+    div.row
+      div.col-md-6
+        div#nestable.dd
+          ol.dd-list
+            - for(var i=1;i<=6;i++)
+              li.dd-item(data-id="#{i}")
+                div.dd-handle Item #{i}
+                - if(i == 3)
+                  ol.dd-list
+                    - for(var j=1;j<=7;j++)
+                      li.dd-item(data-id="#{i}-#{j}")
+                        div.dd-handle Item #{i}-#{j}
+                        - if(j == 2)
+                          ol.dd-list
+                            - for(var k=1;k<=5;k++)
+                              li.dd-item(data-id="#{i}-#{j}-#{k}")
+                                div.dd-handle Item #{i}-#{j}-#{k}
+
+      div.col-md-6
+        div#nestable2.dd
+          ol.dd-list
+            - for(var i=7;i<=14;i++)
+              li.dd-item(data-id="#{i}")
+                div.dd-handle Item #{i}
+                - if(i == 10)
+                  ol.dd-list
+                    - for(var j=1;j<=5;j++)
+                      li.dd-item(data-id="#{i}-#{j}")
+                        div.dd-handle Item #{i}-#{j}
+
+    h5 Serialised Output (per list)
+    div.row.pbottom20
+      div.col-md-6
+        pre#nestable-output
+      div.col-md-6
+        pre#nestable2-output
+
+    //Draggable Handles
+    h4 Draggable Handles
+    div.row.pbottom20
+      div.col-sm-6
+        div#nestable3.dd
+          ol.dd-list
+            - for(var i=15;i<=20;i++)
+              li.dd-item.dd3-item(data-id="#{i}")
+                div.dd-handle.dd3-handle Drag
+                div.dd3-content Item #{i}
