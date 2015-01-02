@@ -1,0 +1,240 @@
+//- UI Advanced - Dropdown Select - Bootstrap Select
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-orange
+  div.panel-heading
+    |Bootstrap Select
+  div.panel-body
+
+    table.table.table-bordered
+      tr
+        th.text-right(style="min-width:100px;") Default
+        td
+          select.selectpicker
+            option Mustard
+            option Ketchup
+            option Relish
+      tr
+        th.text-right Groups
+        td
+          select.selectpicker
+            optgroup(label="Picnic")
+              option Mustard
+              option Ketchup
+              option Relish
+            optgroup(label="Camping")
+              option Tent
+              option Flashlight
+              option Toilet Paper
+      tr
+        th.text-right Multiple Selects
+        td
+          select.selectpicker(multiple)
+            option Mustard
+            option Ketchup
+            option Relish
+      tr
+        th.text-right Limit the selection number
+        td
+          select.selectpicker.mright5.mbottom5(multiple data-max-options="2")
+            option Mustard
+            option Ketchup
+            option Relish
+          select.selectpicker.mbottom5(multiple data-max-options="2")
+            optgroup(label="Condiments" data-max-options="2")
+              option Mustard
+              option Ketchup
+              option Relish
+            optgroup(label="Breads" data-max-options="2")
+              option Plain
+              option Steamed
+              option Toasted
+      tr
+        th.text-right Select Styles
+        td
+          each val in ['primary','success','info','warning','danger','red','orange','yellow','green','black','blue','violet','pink','grey']
+            select(data-style="btn-#{val}").selectpicker.mright5.mbottom5
+              option Mustard
+              option Ketchup
+              option Relish
+          each val in ['primary','success','info','warning','danger','red','orange','yellow','green','black','blue','violet','pink','grey']
+            select(data-style="btn-#{val} btn-outlined").selectpicker.mright5.mbottom5
+              option Mustard
+              option Ketchup
+              option Relish
+      tr
+        th.text-right Live Search
+        td
+          select.selectpicker(data-live-search="true")
+            option Hot Dog, Fries and a Soda
+            option Burger, Shake and a Smile
+            option Sugar, Spice and all things nice
+      tr
+        th.text-right Title
+        td
+          select.selectpicker
+            option(title="No.1") Mustard
+            option(title="No.2") Ketchup
+            option(title="No.3") Relish
+      tr
+        th.text-right Title with Multiple Selects
+        td
+          select.selectpicker(multiple title="Choose one of the following...")
+            option Mustard
+            option(title="No.2") Ketchup
+            option Relish
+      tr
+        th.text-right Data Select Text Format
+        td
+          select.selectpicker.mright5.mbottom5(multiple data-selected-text-format="values")
+            option Mustard
+            option Ketchup
+            option Relish
+          select.selectpicker.mright5.mbottom5(multiple data-selected-text-format="count")
+            option Mustard
+            option Ketchup
+            option Relish
+          select.selectpicker.mright5.mbottom5(multiple data-selected-text-format="count>2")
+            option Mustard
+            option Ketchup
+            option Relish
+      tr
+        th.text-right Disabled
+        td
+          select.selectpicker.mright5.mbottom5(disabled)
+            option Mustard
+            option Ketchup
+            option Relish
+          select.selectpicker.mright5.mbottom5
+            option Mustard
+            option(disabled) Ketchup
+            option Relish
+          select.selectpicker.mright5.mbottom5
+            optgroup(label="Picnic" disabled)
+              option Mustard
+              option Ketchup
+              option Relish
+            optgroup(label="Camping")
+              option Tent
+              option Flashlight
+              option Toilet Paper
+      tr
+        th.text-right Custom Size
+        td
+          div.mright5.mbottom5
+            select.selectpicker.mright5(data-width="auto")
+              option Mustard
+              option Ketchup
+              option Relish
+            |data-width="auto"
+          div.mright5.mbottom5
+            select.selectpicker.mright5(data-width="150px")
+              option Mustard
+              option Ketchup
+              option Relish
+            |data-width="100px"
+          div.mright5.mbottom5
+            select.selectpicker.mright5(data-width="75%")
+              option Mustard
+              option Ketchup
+              option Relish
+            |data-width="75%"
+      tr
+        th.text-right Data Size
+        td
+          div.mright5.mbottom5
+            select.selectpicker.mright5(data-size="auto")
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+            |data-size="auto"
+          div.mright5.mbottom5
+            select.selectpicker.mright5(data-size="5")
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+              option Mustard
+              option Ketchup
+              option Relish
+              option Mayonnaise
+              option Barbecue Sauce
+              option Salad Dressing
+              option Tabasco
+              option Salsa
+            |data-size="5"
+      tr
+        th.text-right Data Divider
+        td
+          select.selectpicker
+            option Mustard
+            option Ketchup
+            option Relish
+            option(data-divider="true")
+            option Mayonnaise
+            option Barbecue Sauce
+            option Salad Dressing
+      tr
+        th.text-right Show Subtext
+        td
+          select.selectpicker(data-show-subtext="true")
+            option(data-subtext="sub1") Mustard
+            option(data-subtext="sub2") Ketchup
+            option(data-subtext="sub3") Relish
+      tr
+        th.text-right Data Icons
+        td
+          select.selectpicker
+            option(data-icon="glyphicon-glass") Mustard
+            option(data-icon="fa fa-bus") Bus
+            option(data-icon="ti-email") Email
+            option(data-icon="icon-camera") Camera
+      tr
+        th.text-right HTML Content
+        td
+          select.selectpicker
+            option(data-content="Relish <span class='label label-success'>Relish</span>") Relish
+            option(data-content="<span class='label label-danger'>Mustard</span>") Mustard
+      tr
+        th.text-right Dropdown header
+        td
+          select.selectpicker(data-header="Select a condiment")
+            option Mustard
+            option Ketchup
+            option Relish

@@ -4,9 +4,9 @@
 // and disabled options for all buttons
 
 .button-variant(@color; @background; @border) {
-  color: @color;
-  background-color: @background;
-  border-color: @border;
+  color: @color!important;
+  background-color: @background!important;
+  border-color: @border!important;
 
   &:hover,
   &:focus,
@@ -14,14 +14,14 @@
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    color: @color;
-    background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    color: @color!important;
+    background-color: darken(@background, 10%)!important;
+        border-color: darken(@border, 12%)!important;
   }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    background-image: none;
+    background-image: none!important;
   }
   &.disabled,
   &[disabled],
@@ -32,21 +32,21 @@
     &.focus,
     &:active,
     &.active {
-      background-color: @background;
-          border-color: @border;
+      background-color: @background!important;
+          border-color: @border!important;
     }
   }
 
   .badge {
-    color: @background;
-    background-color: @color;
+    color: @background!important;
+    background-color: @color!important;
   }
 }
 
 .button-outlined-variant(@color; @border) {
-  color: @color;
-  background-color: transparent;
-  border-color: @border;
+  color: @color!important;
+  background-color: transparent!important;
+  border-color: @border!important;
 
   &:hover,
   &:focus,
@@ -54,14 +54,14 @@
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    color: #fff;
-    background-color: darken(@border, 8%);
-        border-color: darken(@border, 10%);
+    color: #fff!important;
+    background-color: darken(@border, 8%)!important;
+        border-color: darken(@border, 10%)!important;
   }
   &:active,
   &.active,
   .open > .dropdown-toggle& {
-    background-image: none;
+    background-image: none!important;
   }
   &.disabled,
   &[disabled],
@@ -72,8 +72,8 @@
     &.focus,
     &:active,
     &.active {
-      background-color: darken(@border, 8%);
-          border-color: darken(@border, 10%);
+      background-color: darken(@border, 8%)!important;
+          border-color: darken(@border, 10%)!important;
     }
   }
 }

@@ -3929,6 +3929,7 @@ body.dragging * {
 .dd3-handle:hover {
   background: #ddd;
 }
+/* Bootstrap Select */
 /* Single Element CSS Spinners */
 .load1 .loader,
 .load1 .loader:before,
