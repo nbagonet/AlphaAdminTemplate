@@ -2911,19 +2911,6 @@ li.mega-menu-dropdown {
   margin: 10px;
 }
 /* Buttons */
-.demo-btn {
-  font-size: 0;
-}
-.demo-btn > .btn {
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-.demo-btn > .btn-group,
-.demo-btn > .btn-toolbar,
-.demo-btn > .btn-group-vertical {
-  margin-right: 5px;
-  margin-bottom: 10px;
-}
 .btn {
   font-weight: 300;
   border-radius: 0;
@@ -2937,10 +2924,6 @@ li.mega-menu-dropdown {
 }
 .btn ~ .dropdown-toggle > .caret {
   margin-left: 0;
-}
-.btn i {
-  width: 1.5em;
-  text-align: center;
 }
 .btn-rounded {
   border-radius: 40px;
