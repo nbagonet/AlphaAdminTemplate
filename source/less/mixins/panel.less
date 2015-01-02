@@ -1,0 +1,22 @@
+// Panels Theme
+.panel-theme(@border;@bg;@head-color;@head-bg)
+{
+    border: 1px solid @border;
+    background-color: @bg;
+    > .panel-heading
+    {
+        color: @head-color;
+        border-bottom: 1px solid @border;
+        background-color:@head-bg;
+        border-top-left-radius: @border-radius-base;
+        border-top-right-radius: @border-radius-base;
+    }
+    > .panel-footer
+    {
+        // background-color: lighten(@head-bg, 35%);
+        border-bottom-right-radius: @border-radius-base;
+        border-bottom-left-radius: @border-radius-base;
+        // border-top: 1px solid @border;
+        // color: @border;
+    }
+}

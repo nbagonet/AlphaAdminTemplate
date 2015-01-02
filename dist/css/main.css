@@ -856,9 +856,8 @@ a:focus {
   color: #0092c7;
   outline: none;
 }
-p,
-pre {
-  margin-top: 0;
+p {
+  margin: 0 0 10px;
 }
 h1,
 h2,
