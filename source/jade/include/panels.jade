@@ -1,0 +1,36 @@
+//- UI Elements - Panels
+
+
+include ../common/variables
+include ./mixins
+
+- var panel_body_txt = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.";
+
+.col-sm-4
+
+  div.panel.panel-default
+    div.panel-body
+      strong.text-uppercase.mtop10 Panel without Heading & Footer
+      p.mtop10 #{panel_body_txt}
+
+  each val in ['white','primary','success','info','warning']
+    div.panel(class="panel-#{val}")
+      div.panel-heading Panel #{val}
+      div.panel-body
+        p #{panel_body_txt}
+
+.col-sm-4
+
+  each val in ['danger','red','orange','yellow','green']
+    div.panel(class="panel-#{val}")
+      div.panel-heading Panel #{val}
+      div.panel-body
+        p #{panel_body_txt}
+
+.col-sm-4
+
+  each val in ['black','blue','violet','pink','grey']
+    div.panel(class="panel-#{val}")
+      div.panel-heading Panel #{val}
+      div.panel-body
+        p #{panel_body_txt}
