@@ -1,1 +1,3 @@
-bower_components,.DS_Store
+bower_components
+.DS_Store
+*.codekit
