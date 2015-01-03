@@ -103,6 +103,10 @@ samp
     border-radius: @border-radius-base;
 }
 
+th{
+    font-weight: @font-weight-base;
+}
+
 /* Page Wrapper */
 .page-wrapper
 {
@@ -186,7 +190,7 @@ samp
     @size: unit(@name, px);
     .m@{pos}@{name}
     {
-        margin-@{pos}: @size;
+        margin-@{pos}: @size!important;
     }
     .gen-margin(@pos, @n, @step, (@i + 1));
 }
@@ -201,7 +205,7 @@ samp
     @size: unit(@name, px);
     .m@{name}
     {
-        margin: @size;
+        margin: @size!important;
     }
     .gen-margin-all(@n, @step, (@i + 1));
 }
@@ -215,7 +219,7 @@ samp
     @size: unit(@name, px);
     .p@{pos}@{name}
     {
-        padding-@{pos}: @size;
+        padding-@{pos}: @size!important;
     }
     .gen-padding(@pos, @n, @step, (@i + 1));
 }
@@ -230,7 +234,7 @@ samp
     @size: unit(@name, px);
     .p@{name}
     {
-        padding: @size;
+        padding: @size!important;
     }
     .gen-padding-all(@n, @step, (@i + 1));
 }

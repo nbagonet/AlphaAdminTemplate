@@ -831,9 +831,6 @@ textarea {
     }
 }
 
-/* ==========================================================================
-   Alpha Admin Template Core CSS
-   ========================================================================== */
 html {
   height: 100%;
 }
@@ -902,6 +899,9 @@ pre,
 samp {
   border-radius: 0;
 }
+th {
+  font-weight: 400;
+}
 /* Page Wrapper */
 .page-wrapper {
   overflow: hidden;
@@ -959,521 +959,521 @@ samp {
 }
 /* Margin */
 .mtop5 {
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 .mtop10 {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 .mtop15 {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 .mtop20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .mtop25 {
-  margin-top: 25px;
+  margin-top: 25px !important;
 }
 .mtop30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 .mtop35 {
-  margin-top: 35px;
+  margin-top: 35px !important;
 }
 .mtop40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 .mtop45 {
-  margin-top: 45px;
+  margin-top: 45px !important;
 }
 .mtop50 {
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
 .mtop55 {
-  margin-top: 55px;
+  margin-top: 55px !important;
 }
 .mtop60 {
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 .mtop65 {
-  margin-top: 65px;
+  margin-top: 65px !important;
 }
 .mtop70 {
-  margin-top: 70px;
+  margin-top: 70px !important;
 }
 .mtop75 {
-  margin-top: 75px;
+  margin-top: 75px !important;
 }
 .mtop80 {
-  margin-top: 80px;
+  margin-top: 80px !important;
 }
 .mtop85 {
-  margin-top: 85px;
+  margin-top: 85px !important;
 }
 .mtop90 {
-  margin-top: 90px;
+  margin-top: 90px !important;
 }
 .mtop95 {
-  margin-top: 95px;
+  margin-top: 95px !important;
 }
 .mtop100 {
-  margin-top: 100px;
+  margin-top: 100px !important;
 }
 .mbottom5 {
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 .mbottom10 {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 .mbottom15 {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 .mbottom20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 .mbottom25 {
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 .mbottom30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .mbottom35 {
-  margin-bottom: 35px;
+  margin-bottom: 35px !important;
 }
 .mbottom40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 .mbottom45 {
-  margin-bottom: 45px;
+  margin-bottom: 45px !important;
 }
 .mbottom50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 .mbottom55 {
-  margin-bottom: 55px;
+  margin-bottom: 55px !important;
 }
 .mbottom60 {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 .mbottom65 {
-  margin-bottom: 65px;
+  margin-bottom: 65px !important;
 }
 .mbottom70 {
-  margin-bottom: 70px;
+  margin-bottom: 70px !important;
 }
 .mbottom75 {
-  margin-bottom: 75px;
+  margin-bottom: 75px !important;
 }
 .mbottom80 {
-  margin-bottom: 80px;
+  margin-bottom: 80px !important;
 }
 .mbottom85 {
-  margin-bottom: 85px;
+  margin-bottom: 85px !important;
 }
 .mbottom90 {
-  margin-bottom: 90px;
+  margin-bottom: 90px !important;
 }
 .mbottom95 {
-  margin-bottom: 95px;
+  margin-bottom: 95px !important;
 }
 .mbottom100 {
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 .mleft5 {
-  margin-left: 5px;
+  margin-left: 5px !important;
 }
 .mleft10 {
-  margin-left: 10px;
+  margin-left: 10px !important;
 }
 .mleft15 {
-  margin-left: 15px;
+  margin-left: 15px !important;
 }
 .mleft20 {
-  margin-left: 20px;
+  margin-left: 20px !important;
 }
 .mleft25 {
-  margin-left: 25px;
+  margin-left: 25px !important;
 }
 .mleft30 {
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 .mleft35 {
-  margin-left: 35px;
+  margin-left: 35px !important;
 }
 .mleft40 {
-  margin-left: 40px;
+  margin-left: 40px !important;
 }
 .mleft45 {
-  margin-left: 45px;
+  margin-left: 45px !important;
 }
 .mleft50 {
-  margin-left: 50px;
+  margin-left: 50px !important;
 }
 .mleft55 {
-  margin-left: 55px;
+  margin-left: 55px !important;
 }
 .mleft60 {
-  margin-left: 60px;
+  margin-left: 60px !important;
 }
 .mleft65 {
-  margin-left: 65px;
+  margin-left: 65px !important;
 }
 .mleft70 {
-  margin-left: 70px;
+  margin-left: 70px !important;
 }
 .mleft75 {
-  margin-left: 75px;
+  margin-left: 75px !important;
 }
 .mleft80 {
-  margin-left: 80px;
+  margin-left: 80px !important;
 }
 .mleft85 {
-  margin-left: 85px;
+  margin-left: 85px !important;
 }
 .mleft90 {
-  margin-left: 90px;
+  margin-left: 90px !important;
 }
 .mleft95 {
-  margin-left: 95px;
+  margin-left: 95px !important;
 }
 .mleft100 {
-  margin-left: 100px;
+  margin-left: 100px !important;
 }
 .mright5 {
-  margin-right: 5px;
+  margin-right: 5px !important;
 }
 .mright10 {
-  margin-right: 10px;
+  margin-right: 10px !important;
 }
 .mright15 {
-  margin-right: 15px;
+  margin-right: 15px !important;
 }
 .mright20 {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 .mright25 {
-  margin-right: 25px;
+  margin-right: 25px !important;
 }
 .mright30 {
-  margin-right: 30px;
+  margin-right: 30px !important;
 }
 .mright35 {
-  margin-right: 35px;
+  margin-right: 35px !important;
 }
 .mright40 {
-  margin-right: 40px;
+  margin-right: 40px !important;
 }
 .mright45 {
-  margin-right: 45px;
+  margin-right: 45px !important;
 }
 .mright50 {
-  margin-right: 50px;
+  margin-right: 50px !important;
 }
 .mright55 {
-  margin-right: 55px;
+  margin-right: 55px !important;
 }
 .mright60 {
-  margin-right: 60px;
+  margin-right: 60px !important;
 }
 .mright65 {
-  margin-right: 65px;
+  margin-right: 65px !important;
 }
 .mright70 {
-  margin-right: 70px;
+  margin-right: 70px !important;
 }
 .mright75 {
-  margin-right: 75px;
+  margin-right: 75px !important;
 }
 .mright80 {
-  margin-right: 80px;
+  margin-right: 80px !important;
 }
 .mright85 {
-  margin-right: 85px;
+  margin-right: 85px !important;
 }
 .mright90 {
-  margin-right: 90px;
+  margin-right: 90px !important;
 }
 .mright95 {
-  margin-right: 95px;
+  margin-right: 95px !important;
 }
 .mright100 {
-  margin-right: 100px;
+  margin-right: 100px !important;
 }
 .m5 {
-  margin: 5px;
+  margin: 5px !important;
 }
 .m10 {
-  margin: 10px;
+  margin: 10px !important;
 }
 .m15 {
-  margin: 15px;
+  margin: 15px !important;
 }
 .m20 {
-  margin: 20px;
+  margin: 20px !important;
 }
 .m25 {
-  margin: 25px;
+  margin: 25px !important;
 }
 .m30 {
-  margin: 30px;
+  margin: 30px !important;
 }
 /* Padding */
 .ptop5 {
-  padding-top: 5px;
+  padding-top: 5px !important;
 }
 .ptop10 {
-  padding-top: 10px;
+  padding-top: 10px !important;
 }
 .ptop15 {
-  padding-top: 15px;
+  padding-top: 15px !important;
 }
 .ptop20 {
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 .ptop25 {
-  padding-top: 25px;
+  padding-top: 25px !important;
 }
 .ptop30 {
-  padding-top: 30px;
+  padding-top: 30px !important;
 }
 .ptop35 {
-  padding-top: 35px;
+  padding-top: 35px !important;
 }
 .ptop40 {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 .ptop45 {
-  padding-top: 45px;
+  padding-top: 45px !important;
 }
 .ptop50 {
-  padding-top: 50px;
+  padding-top: 50px !important;
 }
 .ptop55 {
-  padding-top: 55px;
+  padding-top: 55px !important;
 }
 .ptop60 {
-  padding-top: 60px;
+  padding-top: 60px !important;
 }
 .ptop65 {
-  padding-top: 65px;
+  padding-top: 65px !important;
 }
 .ptop70 {
-  padding-top: 70px;
+  padding-top: 70px !important;
 }
 .ptop75 {
-  padding-top: 75px;
+  padding-top: 75px !important;
 }
 .ptop80 {
-  padding-top: 80px;
+  padding-top: 80px !important;
 }
 .ptop85 {
-  padding-top: 85px;
+  padding-top: 85px !important;
 }
 .ptop90 {
-  padding-top: 90px;
+  padding-top: 90px !important;
 }
 .ptop95 {
-  padding-top: 95px;
+  padding-top: 95px !important;
 }
 .ptop100 {
-  padding-top: 100px;
+  padding-top: 100px !important;
 }
 .pbottom5 {
-  padding-bottom: 5px;
+  padding-bottom: 5px !important;
 }
 .pbottom10 {
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
 }
 .pbottom15 {
-  padding-bottom: 15px;
+  padding-bottom: 15px !important;
 }
 .pbottom20 {
-  padding-bottom: 20px;
+  padding-bottom: 20px !important;
 }
 .pbottom25 {
-  padding-bottom: 25px;
+  padding-bottom: 25px !important;
 }
 .pbottom30 {
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
 }
 .pbottom35 {
-  padding-bottom: 35px;
+  padding-bottom: 35px !important;
 }
 .pbottom40 {
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
 .pbottom45 {
-  padding-bottom: 45px;
+  padding-bottom: 45px !important;
 }
 .pbottom50 {
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
 }
 .pbottom55 {
-  padding-bottom: 55px;
+  padding-bottom: 55px !important;
 }
 .pbottom60 {
-  padding-bottom: 60px;
+  padding-bottom: 60px !important;
 }
 .pbottom65 {
-  padding-bottom: 65px;
+  padding-bottom: 65px !important;
 }
 .pbottom70 {
-  padding-bottom: 70px;
+  padding-bottom: 70px !important;
 }
 .pbottom75 {
-  padding-bottom: 75px;
+  padding-bottom: 75px !important;
 }
 .pbottom80 {
-  padding-bottom: 80px;
+  padding-bottom: 80px !important;
 }
 .pbottom85 {
-  padding-bottom: 85px;
+  padding-bottom: 85px !important;
 }
 .pbottom90 {
-  padding-bottom: 90px;
+  padding-bottom: 90px !important;
 }
 .pbottom95 {
-  padding-bottom: 95px;
+  padding-bottom: 95px !important;
 }
 .pbottom100 {
-  padding-bottom: 100px;
+  padding-bottom: 100px !important;
 }
 .pleft5 {
-  padding-left: 5px;
+  padding-left: 5px !important;
 }
 .pleft10 {
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 .pleft15 {
-  padding-left: 15px;
+  padding-left: 15px !important;
 }
 .pleft20 {
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 .pleft25 {
-  padding-left: 25px;
+  padding-left: 25px !important;
 }
 .pleft30 {
-  padding-left: 30px;
+  padding-left: 30px !important;
 }
 .pleft35 {
-  padding-left: 35px;
+  padding-left: 35px !important;
 }
 .pleft40 {
-  padding-left: 40px;
+  padding-left: 40px !important;
 }
 .pleft45 {
-  padding-left: 45px;
+  padding-left: 45px !important;
 }
 .pleft50 {
-  padding-left: 50px;
+  padding-left: 50px !important;
 }
 .pleft55 {
-  padding-left: 55px;
+  padding-left: 55px !important;
 }
 .pleft60 {
-  padding-left: 60px;
+  padding-left: 60px !important;
 }
 .pleft65 {
-  padding-left: 65px;
+  padding-left: 65px !important;
 }
 .pleft70 {
-  padding-left: 70px;
+  padding-left: 70px !important;
 }
 .pleft75 {
-  padding-left: 75px;
+  padding-left: 75px !important;
 }
 .pleft80 {
-  padding-left: 80px;
+  padding-left: 80px !important;
 }
 .pleft85 {
-  padding-left: 85px;
+  padding-left: 85px !important;
 }
 .pleft90 {
-  padding-left: 90px;
+  padding-left: 90px !important;
 }
 .pleft95 {
-  padding-left: 95px;
+  padding-left: 95px !important;
 }
 .pleft100 {
-  padding-left: 100px;
+  padding-left: 100px !important;
 }
 .pright5 {
-  padding-right: 5px;
+  padding-right: 5px !important;
 }
 .pright10 {
-  padding-right: 10px;
+  padding-right: 10px !important;
 }
 .pright15 {
-  padding-right: 15px;
+  padding-right: 15px !important;
 }
 .pright20 {
-  padding-right: 20px;
+  padding-right: 20px !important;
 }
 .pright25 {
-  padding-right: 25px;
+  padding-right: 25px !important;
 }
 .pright30 {
-  padding-right: 30px;
+  padding-right: 30px !important;
 }
 .pright35 {
-  padding-right: 35px;
+  padding-right: 35px !important;
 }
 .pright40 {
-  padding-right: 40px;
+  padding-right: 40px !important;
 }
 .pright45 {
-  padding-right: 45px;
+  padding-right: 45px !important;
 }
 .pright50 {
-  padding-right: 50px;
+  padding-right: 50px !important;
 }
 .pright55 {
-  padding-right: 55px;
+  padding-right: 55px !important;
 }
 .pright60 {
-  padding-right: 60px;
+  padding-right: 60px !important;
 }
 .pright65 {
-  padding-right: 65px;
+  padding-right: 65px !important;
 }
 .pright70 {
-  padding-right: 70px;
+  padding-right: 70px !important;
 }
 .pright75 {
-  padding-right: 75px;
+  padding-right: 75px !important;
 }
 .pright80 {
-  padding-right: 80px;
+  padding-right: 80px !important;
 }
 .pright85 {
-  padding-right: 85px;
+  padding-right: 85px !important;
 }
 .pright90 {
-  padding-right: 90px;
+  padding-right: 90px !important;
 }
 .pright95 {
-  padding-right: 95px;
+  padding-right: 95px !important;
 }
 .pright100 {
-  padding-right: 100px;
+  padding-right: 100px !important;
 }
 .p5 {
-  padding: 5px;
+  padding: 5px !important;
 }
 .p10 {
-  padding: 10px;
+  padding: 10px !important;
 }
 .p15 {
-  padding: 15px;
+  padding: 15px !important;
 }
 .p20 {
-  padding: 20px;
+  padding: 20px !important;
 }
 .p25 {
-  padding: 25px;
+  padding: 25px !important;
 }
 .p30 {
-  padding: 30px;
+  padding: 30px !important;
 }
 /* No Border */
 .no-b {
@@ -1952,9 +1952,6 @@ samp {
 .demo-other > div .btn {
   margin-bottom: 20px;
 }
-/* ==========================================================================
-   Alpha Admin Template Components CSS
-   ========================================================================== */
 /* Browsehappy */
 .browsehappy {
   display: none;
@@ -7560,6 +7557,7 @@ body.dragging * {
   40% {
     opacity: 1; } }
 
+/* other preloaders */
 /* preloader */
 .demo-loader {
   overflow: hidden;
@@ -7671,3 +7669,495 @@ body.dragging * {
 .sk-spinner-fading-circle.sk-spinner .sk-circle:before {
   background-color: #fff;
 }
+/* Select2 Dropdowns */
+/* Select2 Dropdowns */
+.select2-container {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+.select2-container,
+.select2-drop,
+.select2-search,
+.select2-search input {
+  /*
+    Force border-box so that % widths fit the parent
+    container without overlap because of margin/padding.
+    More Info : http://www.quirksmode.org/css/box.html
+  */
+  /* webkit */
+  -moz-box-sizing: border-box;
+  /* firefox */
+  box-sizing: border-box;
+  /* css3 */
+}
+.select2-container .select2-choice {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  padding: 6px 25px 6px 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-touch-callout: none;
+}
+.select2-container .select2-choice:hover {
+  color: #333;
+  border-color: #adadad;
+  outline: none;
+  background-color: #e6e6e6;
+}
+.select2-container.select2-drop-above .select2-choice {
+  border-bottom-color: #ddd;
+  border-radius: 0 0 0 0;
+}
+.select2-container.select2-allowclear .select2-choice .select2-chosen {
+  margin-right: 42px;
+}
+.select2-container .select2-choice > .select2-chosen {
+  display: block;
+  float: none;
+  overflow: hidden;
+  width: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.select2-container .select2-choice abbr {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  display: inline-block;
+  display: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.select2-container .select2-choice abbr:after {
+  content: '\f00d';
+}
+.select2-container.select2-allowclear .select2-choice abbr {
+  display: inline-block;
+}
+.select2-container .select2-choice abbr:hover {
+  cursor: pointer;
+  color: #d9534f;
+}
+.select2-drop-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  border: 0;
+  /* styles required for IE to work */
+  background-color: #fff;
+  filter: alpha(opacity=0);
+}
+.select2-drop {
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  width: 100%;
+  margin-top: 2px;
+  color: #000;
+  border: 1px solid #aaa;
+  border-radius: 0 0 0 0;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.select2-drop.select2-drop-above {
+  margin-top: -2px;
+  border-radius: 0 0 0 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.175);
+}
+.select2-drop-active {
+  border: 1px solid #dfdfdf;
+}
+.select2-drop.select2-drop-above.select2-drop-active {
+  border-top: 1px solid #adadad;
+}
+.select2-drop-auto-width {
+  width: auto;
+  border-top: 1px solid #aaa;
+}
+.select2-container .select2-choice .select2-arrow {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.select2-container .select2-choice .select2-arrow b {
+  display: none;
+}
+html[dir='rtl'] .select2-container .select2-choice .select2-arrow b {
+  background-position: 2px 1px;
+}
+.select2-search {
+  position: relative;
+  z-index: 10000;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 5px 5px 0 5px;
+  white-space: nowrap;
+}
+.select2-search input {
+  font-size: 14px;
+  line-height: 1.42857143;
+  width: 100%;
+  height: 34px;
+  margin: 0;
+  padding: 6px 12px;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  outline: 0;
+  background-color: #fff;
+  -webkit-transition: border-color ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s;
+  -webkit-transition: box-shadow ease-in-out 0.15s;
+  transition: box-shadow ease-in-out 0.15s;
+  box-shadow: none;
+}
+.select2-search input:focus {
+  border-color: #c3c3c3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.select2-search input.select2-active {
+  background: #ffffff url('../img/select2-spinner.gif') no-repeat 100%;
+  background: url('../img/select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #ffffff), color-stop(0.99, #eeeeee));
+  background: url('../img/select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #ffffff 85%, #eeeeee 99%);
+  background: url('../img/select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(top, #ffffff 85%, #eeeeee 99%) 0 0;
+  background: url('../img/select2-spinner.gif') no-repeat 100%, linear-gradient(to bottom, #ffffff 85%, #eeeeee 99%) 0 0;
+}
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+  color: #333;
+  border: 1px solid #adadad;
+  outline: none;
+}
+.select2-dropdown-open .select2-choice {
+  background-color: #e6e6e6;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+  border: 1px solid #adadad;
+}
+.select2-hidden-accessible {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+/* results */
+.select2-results {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 200px;
+  margin: 5px;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.select2-results ul.select2-result-sub {
+  margin: 0;
+  padding-left: 0;
+}
+.select2-results li {
+  display: list-item;
+  list-style: none;
+  background-image: none;
+}
+.select2-results li.select2-result-with-children > .select2-result-label {
+  font-weight: normal;
+}
+.select2-results .select2-result-label {
+  min-height: 1em;
+  margin: 0;
+  padding: 3px 7px 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.select2-results-dept-1 .select2-result-label {
+  padding-left: 20px;
+}
+.select2-results-dept-2 .select2-result-label {
+  padding-left: 40px;
+}
+.select2-results-dept-3 .select2-result-label {
+  padding-left: 60px;
+}
+.select2-results-dept-4 .select2-result-label {
+  padding-left: 80px;
+}
+.select2-results-dept-5 .select2-result-label {
+  padding-left: 100px;
+}
+.select2-results-dept-6 .select2-result-label {
+  padding-left: 110px;
+}
+.select2-results-dept-7 .select2-result-label {
+  padding-left: 120px;
+}
+.select2-results .select2-highlighted {
+  color: #333;
+  background: #e6e6e6;
+}
+.select2-results li em {
+  font-style: normal;
+  background: #feffde;
+}
+.select2-results .select2-highlighted em {
+  background: transparent;
+}
+.select2-results .select2-highlighted ul {
+  color: #000;
+  background: #fff;
+}
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-ajax-error,
+.select2-results .select2-selection-limit {
+  display: list-item;
+  padding: 5px 10px;
+  background: #f4f4f4;
+}
+/*
+disabled look for disabled choices in the results dropdown
+*/
+.select2-results .select2-disabled.select2-highlighted {
+  display: list-item;
+  cursor: default;
+  color: #666;
+  background: #f4f4f4;
+}
+.select2-results .select2-disabled {
+  display: list-item;
+  cursor: default;
+  background: #f4f4f4;
+}
+.select2-results .select2-selected {
+  display: none;
+}
+.select2-more-results.select2-active {
+  background: #f4f4f4 url('../img/select2-spinner.gif') no-repeat 100%;
+}
+.select2-results .select2-ajax-error {
+  background: rgba(255, 50, 50, 0.2);
+}
+.select2-more-results {
+  display: list-item;
+  background: #f4f4f4;
+}
+/* disabled styles */
+.select2-container.select2-container-disabled .select2-choice {
+  cursor: default;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  background-image: none;
+}
+.select2-container.select2-container-disabled .select2-choice .select2-arrow {
+  background-color: #f4f4f4;
+}
+.select2-container.select2-container-disabled .select2-choice abbr {
+  display: none;
+}
+/* multiselect */
+.select2-container-multi .select2-choices {
+  font-size: 14px;
+  line-height: 1.42857143;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto !important;
+  margin: 0;
+  padding: 5px 12px;
+  cursor: text;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  outline: 0;
+  background-color: #fff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s;
+  -webkit-transition: box-shadow ease-in-out 0.15s;
+  transition: box-shadow ease-in-out 0.15s;
+  box-shadow: none;
+}
+.select2-container-multi .select2-choices:focus {
+  border-color: #c3c3c3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.select2-locked {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  cursor: not-allowed !important;
+}
+.select2-locked:after {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  content: '\f023';
+}
+.select2-container-multi.select2-container-active .select2-choices {
+  border-color: #c3c3c3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.select2-container-multi .select2-choices li {
+  float: left;
+  list-style: none;
+}
+.select2-container-multi .select2-choices .select2-search-field {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+  border: none;
+  outline: 0;
+  background: transparent !important;
+  box-shadow: none;
+}
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+  background: #ffffff url('../img/select2-spinner.gif') no-repeat 100% !important;
+}
+.select2-default {
+  color: #999 !important;
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+  font-size: 12px;
+  line-height: 1;
+  position: relative;
+  margin: 1px 0 1px 5px;
+  padding: 2px 18px 2px 5px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #aaa;
+  background-color: #fefefe;
+  -webkit-touch-callout: none;
+}
+.select2-container-multi .select2-choices .select2-search-choice:hover {
+  background-color: #fafafa;
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
+  cursor: default;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+  background: #d4d4d4;
+}
+.select2-search-choice-close {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  border: 0;
+  outline: 0;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.select2-search-choice-close:after {
+  content: '\f00d';
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
+  background-position: right -11px;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
+  background-position: right -11px;
+}
+/* disabled styles */
+.select2-container-multi.select2-container-disabled .select2-choices {
+  cursor: default;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  background-image: none;
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
+  padding: 3px 5px 3px 5px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  background-image: none;
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
+  display: none;
+  background: none;
+}
+/* end multiselect */
+.select2-result-selectable .select2-match,
+.select2-result-unselectable .select2-match {
+  text-decoration: underline;
+}
+.select2-offscreen,
+.select2-offscreen:focus {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.select2-display-none {
+  display: none;
+}
+.select2-measure-scrollbar {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  overflow: scroll;
+  width: 100px;
+  height: 100px;
+}
+/* Retina-ize icons */

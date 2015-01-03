@@ -1,0 +1,153 @@
+//- UI Advanced - Dropdown Select - Select2 Dropdowns
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-warning
+  div.panel-heading
+    |Select2 Dropdowns
+  div.panel-body
+
+    table.table.table-bordered
+      tr
+        th.text-right(style="min-width:100px;") The Basics
+        td
+          select#e1(style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Multi-Value Select Boxes
+        td
+          select#e9(multiple style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Placeholders
+        td
+          select#e2.mright5.mbottom5(style="width:250px;")
+            option
+            include ./dropdown-select-select2-dropdowns-demo-data
+          select#e2_2.mright5.mbottom5(multiple style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Minimum Input
+        td
+          select#e3(style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Templating
+        td
+          select#e4(style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Loading Data
+        td
+          input#e5(type="hidden" style="width:250px;")
+      tr
+        th.text-right Maximum Selection Size
+        td
+          select#e19(multiple style="width:250px;")
+            include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Loading Array Data
+        td
+          p!= 'Example below inlines the <code>data</code> by specifying an array in the data element. Items in such an array must have <code>id</code> and <code>text</code> keys.'
+          div.mbottom10
+            input#e10(type="hidden" style="width:250px;")
+          p!= 'If your data does not have a <code>text</code> key, an alternative key can be specified as a string:'
+          div.mbottom10
+            input#e10_2(type="hidden" style="width:250px;")
+          p!= 'or as a function:'
+          div.mbottom10
+            input#e10_3(type="hidden" style="width:250px;")
+          p!= '<code>data</code> can also itself be a function that returns a results object:'
+          div.mbottom10
+            input#e10_4(type="hidden" style="width:250px;")
+      tr
+        th.text-right Loading Array Data
+        td
+          input#e6.bigdrop(type="hidden" style="width:100%;")
+      tr
+        th.text-right Infinite Scroll with Remote Data
+        td
+          input#e7.bigdrop(type="hidden" style="width:100%;")
+      tr
+        th.text-right Programmatic Access
+        td
+          div
+            +buttons('btn-primary mright5 mbottom5', 'Alert selected value')(id="e8_get")
+            +buttons('btn-success mright5 mbottom5', 'Set to California')(id="e8_set")
+            +buttons('btn-success mright5 mbottom5', 'Clear')(id="e8_cl")
+            +buttons('btn-info mright5 mbottom5', 'Alert selected using data')(id="e8_get2")
+            +buttons('btn-warning mright5 mbottom5', 'Set to California using data')(id="e8_set2")
+            +buttons('btn-danger mright5 mbottom5', 'Open')(id="e8_open")
+            +buttons('btn-danger mright5 mbottom5', 'Close')(id="e8_close")
+          div.mbottom20
+            select#e8(style="width:250px;")
+              include ./dropdown-select-select2-dropdowns-demo-data
+          div
+            +buttons('btn-primary mright5 mbottom5', 'Alert selected value')(id="e8_2_get")
+            +buttons('btn-success mright5 mbottom5', 'Set to California and Massachusetts')(id="e8_2_set")
+            +buttons('btn-info mright5 mbottom5', 'Alert selected value using data')(id="e8_2_get2")
+            +buttons('btn-warning mright5 mbottom5', 'Set to California and Massachusetts using data')(id="e8_2_set2")
+            +buttons('btn-warning mright5 mbottom5', 'Clear')(id="e8_2_cl")
+            +buttons('btn-danger mright5 mbottom5', 'Open')(id="e8_2_open")
+            +buttons('btn-danger mright5 mbottom5', 'Close')(id="e8_2_close")
+          div.mbottom20
+            select#e8_2(multiple style="width:250px;")
+              option
+              include ./dropdown-select-select2-dropdowns-demo-data
+      tr
+        th.text-right Events
+        td
+          input#e11.mright5.mbottom5(type="hidden" style="width:250px;")
+          input#e11_2.mright5.mbottom5(type="hidden" style="width:250px;")
+          div.ptop10.pbottom15
+            h5 Event Log
+            pre.pre-scrollable#events_11
+      tr
+        th.text-right Tagging Support
+        td
+          input#e12(type="hidden" style="width:250px;" value="brown, red, green")
+      tr
+        th.text-right Maximum Input Length
+        td
+          input#e23(type="hidden" style="width:250px;" value="brown, red, green")
+      tr
+        th.text-right Auto Tokenization
+        td
+          input#e20(type="hidden" style="width:250px;" value="brown")
+      tr
+        th.text-right Reacting to external value changes
+        td
+          div.mbottom10
+            select#e13(multiple style="width:250px;")
+              include ./dropdown-select-select2-dropdowns-demo-data
+          div
+            +buttons('btn-primary mright5 mbottom5', 'Select California')(id="e13_ca")
+            +buttons('btn-success mright5 mbottom5', 'Select Alaska and Colorado')(id="e13_ak_co")
+      tr
+        th.text-right Select2 Lifecycle
+        td
+          div.mbottom10
+            select#e14(multiple style="width:250px;")
+              include ./dropdown-select-select2-dropdowns-demo-data
+          div
+            +buttons('btn-success mright5 mbottom5', 'Init')(id="e14_init")
+            +buttons('btn-danger mright5 mbottom5', 'Destroy')(id="e14_destroy")
+      tr
+        th.text-right Select2 Disabled Mode
+        td
+          div.mbottom10
+            select#e16.mright5(disabled style="width:250px;")
+              include ./dropdown-select-select2-dropdowns-demo-data
+            select#e16_2.mright5(multiple disabled style="width:250px;")
+              include ./dropdown-select-select2-dropdowns-demo-data
+          div
+            +buttons('btn-primary mright5 mbottom5', 'Enable')(id="e16_enable")
+            +buttons('btn-success mright5 mbottom5', 'Disable')(id="e16_disable")
+            +buttons('btn-info mright5 mbottom5', 'Writable')(id="e16_writable")
+            +buttons('btn-warning mright5 mbottom5', 'Readonly')(id="e16_readonly")
+      tr
+        th.text-right Lock selections
+        td
+          input#e21(type="hidden" style="width:250px;")
