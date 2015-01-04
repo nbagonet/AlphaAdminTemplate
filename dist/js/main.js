@@ -203,15 +203,61 @@ $(function() {
   //END CKEDITOR
 
   // Initialze Bootstrap WYSIWYG5 Editors begin
-  if($(".wysihtml5").length>0){
+  if ($(".wysihtml5").length > 0) {
     $(".wysihtml5").wysihtml5();
   }
   // Initialze Bootstrap WYSIWYG5 Editors end
 
   // Initialze Summernote begin
-  if($(".summernote-demo").length>0){
+  if ($(".summernote-demo").length > 0) {
     $(".summernote-demo").summernote();
   }
   // Initialze Summernote end
+
+  // Notific8 Test begin
+  if ($('#notific8Test').length > 0) {
+    $('#notific8Test').on('click', function(event) {
+      var params = {
+          life: $('#notific8Life').find('option:selected').val(),
+          theme: $('#notific8Theme').val(),
+          sticky: $('#notific8Sticky').is(':checked'),
+          horizontalEdge: $('#notific8horizontal').find('option:selected').val(),
+          verticalEdge: $('#notific8vertical').find('option:selected').val()
+        },
+        text = $('#notific8Text').val(),
+        $heading = $('#notific8Heading'),
+        $closeText = $('#notific8CloseText'),
+        $icon = $('#notific8Icon');
+
+      if ($.trim($heading.val()) !== '') {
+        params.heading = $heading.val();
+      }
+      if ($.trim($icon.val()) !== '') {
+        params.icon = $icon.val();
+      }
+      if ($.trim($closeText.val()) !== '') {
+        params.closeText = $closeText.val();
+      }
+
+      // show notification
+      $.notific8(text, params);
+    });
+  }
+  // Notific8 Test end
+
+  // Sco.Message.js Test begin
+  if ($("#scoMsgInfoTest").length > 0) {
+    $('#scoMsgInfoTest').on('click', function(e) {
+      e.preventDefault();
+      $.scojs_message('This is an info message', $.scojs_message.TYPE_OK);
+    });
+  }
+  if ($("#scoMsgErrTest").length > 0) {
+    $('#scoMsgErrTest').on('click', function(e) {
+      e.preventDefault();
+      $.scojs_message('This is an error message', $.scojs_message.TYPE_ERROR);
+    });
+  }
+  // Sco.Message.js Test end
 
 });

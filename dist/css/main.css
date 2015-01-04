@@ -902,6 +902,10 @@ samp {
 th {
   font-weight: 400;
 }
+.radio label,
+.checkbox label {
+  font-weight: 300;
+}
 /* Page Wrapper */
 .page-wrapper {
   overflow: hidden;
@@ -8210,4 +8214,20 @@ disabled look for disabled choices in the results dropdown
 }
 .sk-spinner-fading-circle.sk-spinner .sk-circle:before {
   background-color: #fff;
+}
+/* Notific8 & Sco.message */
+/* Notific8 */
+.jquery-notific8-container {
+  opacity: .95;
+}
+/* Sco.Message.js */
+#page_message {
+  border: none;
+  opacity: .95;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.075) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.075) 50%, rgba(255, 255, 255, 0.075) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.075) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.075) 50%, rgba(255, 255, 255, 0.075) 75%, transparent 75%, transparent);
+  text-shadow: none;
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.075);
 }

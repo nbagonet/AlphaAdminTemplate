@@ -1,0 +1,28 @@
+{
+  "name": "jquery-notific8",
+  "version": "1.5.0",
+  "authors": [
+    "Will Steinmetz <willsteinmetz@users.noreply.github.com>"
+  ],
+  "description": "jQuery notific8 notification plug-in",
+  "main": [
+    "dist/jquery.notific8.min.js",
+    "dist/jquery.notific8.min.css"
+  ],
+  "keywords": [
+    "javascript",
+    "jquery",
+    "css",
+    "sass",
+    "jquery-plugin"
+  ],
+  "license": "BSD",
+  "homepage": "https://github.com/ralivue/jquery-notific8",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
