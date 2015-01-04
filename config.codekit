@@ -3590,6 +3590,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/uia-dropdown_select.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/uia-dropdown_select.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/uia-editor.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -40989,7 +40998,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/common\/variables.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/article.jade": {
 		"compileDebug": 1,
@@ -41000,7 +41009,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/article.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/breadcrumb.jade": {
 		"compileDebug": 1,
@@ -41011,7 +41020,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/buttons.jade": {
 		"compileDebug": 1,
@@ -41022,7 +41031,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/buttons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/checkbox-radio.jade": {
 		"compileDebug": 1,
@@ -41033,7 +41042,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/checkbox-radio.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/dropdown-select.jade": {
 		"compileDebug": 1,
@@ -41044,7 +41053,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/dropdown-select.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/editor.jade": {
 		"compileDebug": 1,
@@ -41055,7 +41064,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/editor.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/foot.jade": {
 		"compileDebug": 1,
@@ -41066,7 +41075,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/foot.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/general.jade": {
 		"compileDebug": 1,
@@ -41077,7 +41086,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/general.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/grid-layout.jade": {
 		"compileDebug": 1,
@@ -41088,7 +41097,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/grid-layout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/head.jade": {
 		"compileDebug": 1,
@@ -41099,7 +41108,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/head.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/icons.jade": {
 		"compileDebug": 1,
@@ -41110,7 +41119,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/icons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/alerts.jade": {
 		"compileDebug": 1,
@@ -41121,7 +41130,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/alerts.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/buttons.jade": {
 		"compileDebug": 1,
@@ -41132,7 +41141,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/buttons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/dropdown-menu-item.jade": {
 		"compileDebug": 1,
@@ -41143,7 +41152,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/dropdown-menu-item.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/dropdown-menu.jade": {
 		"compileDebug": 1,
@@ -41154,7 +41163,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/dropdown-menu.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/icons.jade": {
 		"compileDebug": 1,
@@ -41165,7 +41174,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/icons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/panel.jade": {
 		"compileDebug": 1,
@@ -41176,7 +41185,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/panel.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixin\/title-breadcrumb.jade": {
 		"compileDebug": 1,
@@ -41187,7 +41196,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixin\/title-breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/mixins.jade": {
 		"compileDebug": 1,
@@ -41198,7 +41207,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/mixins.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/modals.jade": {
 		"compileDebug": 1,
@@ -41209,7 +41218,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/modals.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/browsehappy.jade": {
 		"compileDebug": 1,
@@ -41220,7 +41229,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/browsehappy.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/con-title-breadcrumb-module.jade": {
 		"compileDebug": 1,
@@ -41231,7 +41240,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/con-title-breadcrumb-module.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/con-title-breadcrumb.jade": {
 		"compileDebug": 1,
@@ -41242,7 +41251,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/con-title-breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/dropdown-select-bootstrap-select.jade": {
 		"compileDebug": 1,
@@ -41253,7 +41262,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-bootstrap-select.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/dropdown-select-multi-select.jade": {
 		"compileDebug": 1,
@@ -41264,7 +41273,7 @@
 		"outputAbbreviatedPath": "\/dist\/dropdown-select-multi-select.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/dropdown-select-select2-dropdowns-demo-data.jade": {
 		"compileDebug": 1,
@@ -41275,7 +41284,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-select2-dropdowns-demo-data.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/dropdown-select-select2-dropdowns.jade": {
 		"compileDebug": 1,
@@ -41286,7 +41295,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-select2-dropdowns.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/editor-bootstarp-markdown.jade": {
 		"compileDebug": 1,
@@ -41297,7 +41306,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-bootstarp-markdown.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/editor-ckeditor.jade": {
 		"compileDebug": 1,
@@ -41308,7 +41317,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-ckeditor.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/editor-summernote.jade": {
 		"compileDebug": 1,
@@ -41319,7 +41328,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-summernote.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/editor-wysihtml5.jade": {
 		"compileDebug": 1,
@@ -41330,7 +41339,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-wysihtml5.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-alerts.jade": {
 		"compileDebug": 1,
@@ -41341,7 +41350,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-alerts.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-input-groups.jade": {
 		"compileDebug": 1,
@@ -41352,7 +41361,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-input-groups.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-labels-badges.jade": {
 		"compileDebug": 1,
@@ -41363,7 +41372,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-labels-badges.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-list-groups.jade": {
 		"compileDebug": 1,
@@ -41374,7 +41383,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-list-groups.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-navbar.jade": {
 		"compileDebug": 1,
@@ -41385,7 +41394,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-navbar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-others.jade": {
 		"compileDebug": 1,
@@ -41396,7 +41405,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-others.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-paginations.jade": {
 		"compileDebug": 1,
@@ -41407,7 +41416,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-paginations.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/general-thumbnails.jade": {
 		"compileDebug": 1,
@@ -41418,7 +41427,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/general-thumbnails.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-horizontal-menu.jade": {
 		"compileDebug": 1,
@@ -41429,7 +41438,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-horizontal-menu.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-language-switcher.jade": {
 		"compileDebug": 1,
@@ -41440,7 +41449,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-language-switcher.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-messages.jade": {
 		"compileDebug": 1,
@@ -41451,7 +41460,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-messages.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-notifications.jade": {
 		"compileDebug": 1,
@@ -41462,7 +41471,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-notifications.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-personal-menu.jade": {
 		"compileDebug": 1,
@@ -41473,7 +41482,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-personal-menu.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-quicklinks.jade": {
 		"compileDebug": 1,
@@ -41484,7 +41493,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-quicklinks.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header-tasks.jade": {
 		"compileDebug": 1,
@@ -41495,7 +41504,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header-tasks.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/header.jade": {
 		"compileDebug": 1,
@@ -41506,7 +41515,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/icons-entypo.jade": {
 		"compileDebug": 1,
@@ -41517,7 +41526,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/icons-entypo.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/icons-fontawesome.jade": {
 		"compileDebug": 1,
@@ -41528,7 +41537,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/icons-fontawesome.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/icons-glyphicons.jade": {
 		"compileDebug": 1,
@@ -41539,7 +41548,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/icons-glyphicons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/icons-themify.jade": {
 		"compileDebug": 1,
@@ -41550,7 +41559,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/icons-themify.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/netsable.jade": {
 		"compileDebug": 1,
@@ -41561,7 +41570,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/netsable.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/progressbar-horizontal.jade": {
 		"compileDebug": 1,
@@ -41572,7 +41581,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/progressbar-horizontal.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/progressbar-misc.jade": {
 		"compileDebug": 1,
@@ -41583,7 +41592,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/progressbar-misc.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/progressbar-vertical.jade": {
 		"compileDebug": 1,
@@ -41594,7 +41603,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/progressbar-vertical.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sidebar-label.jade": {
 		"compileDebug": 1,
@@ -41605,7 +41614,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sidebar-label.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sidebar-menu.jade": {
 		"compileDebug": 1,
@@ -41616,7 +41625,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sidebar-menu.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sidebar-profile.jade": {
 		"compileDebug": 1,
@@ -41627,7 +41636,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sidebar-profile.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sliders-ionrangesliders.jade": {
 		"compileDebug": 1,
@@ -41638,7 +41647,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sliders-ionrangesliders.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sliders-jqueryuisliders.jade": {
 		"compileDebug": 1,
@@ -41649,7 +41658,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sliders-jqueryuisliders.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sliders-nouisliders.jade": {
 		"compileDebug": 1,
@@ -41660,7 +41669,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sliders-nouisliders.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/sortable.jade": {
 		"compileDebug": 1,
@@ -41671,7 +41680,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/sortable.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-chat.jade": {
 		"compileDebug": 1,
@@ -41682,7 +41691,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-chat.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-message-card.jade": {
 		"compileDebug": 1,
@@ -41693,7 +41702,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-message-card.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-profile-card-1.jade": {
 		"compileDebug": 1,
@@ -41704,7 +41713,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-profile-card-1.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-profile-card-2.jade": {
 		"compileDebug": 1,
@@ -41715,7 +41724,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-profile-card-2.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-profile-card-3.jade": {
 		"compileDebug": 1,
@@ -41726,7 +41735,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-profile-card-3.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-profile-card-4.jade": {
 		"compileDebug": 1,
@@ -41737,7 +41746,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-profile-card-4.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-profile-card-5.jade": {
 		"compileDebug": 1,
@@ -41748,7 +41757,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-profile-card-5.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/module\/widget-weather-card.jade": {
 		"compileDebug": 1,
@@ -41759,7 +41768,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/widget-weather-card.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/panels.jade": {
 		"compileDebug": 1,
@@ -41770,7 +41779,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/panels.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/preloader.jade": {
 		"compileDebug": 1,
@@ -41781,7 +41790,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/preloader.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/progress-bar.jade": {
 		"compileDebug": 1,
@@ -41792,7 +41801,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/progress-bar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/scroll-to-top.jade": {
 		"compileDebug": 1,
@@ -41803,7 +41812,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/scroll-to-top.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/sidebar.jade": {
 		"compileDebug": 1,
@@ -41814,7 +41823,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/sidebar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/sliders.jade": {
 		"compileDebug": 1,
@@ -41825,7 +41834,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/sliders.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/sortable-and-nestable-lists.jade": {
 		"compileDebug": 1,
@@ -41836,7 +41845,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/sortable-and-nestable-lists.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/tabs-and-accordions.jade": {
 		"compileDebug": 1,
@@ -41847,7 +41856,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/tabs-and-accordions.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/typography.jade": {
 		"compileDebug": 1,
@@ -41858,7 +41867,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/typography.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/include\/widgets.jade": {
 		"compileDebug": 1,
@@ -41869,7 +41878,7 @@
 		"outputAbbreviatedPath": "\/source\/jade\/include\/widgets.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/index.jade": {
 		"compileDebug": 1,
@@ -41880,7 +41889,7 @@
 		"outputAbbreviatedPath": "\/dist\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-fixed_topbar.jade": {
 		"compileDebug": 1,
@@ -41891,7 +41900,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-fixed_topbar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-horizontal_menu.jade": {
 		"compileDebug": 1,
@@ -41902,7 +41911,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-horizontal_menu_and_sidebar.jade": {
 		"compileDebug": 1,
@@ -41913,7 +41922,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu_and_sidebar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-horizontal_menu_boxed.jade": {
 		"compileDebug": 1,
@@ -41924,7 +41933,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu_boxed.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-left_sidebar.jade": {
 		"compileDebug": 1,
@@ -41935,7 +41944,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-left_sidebar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-left_sidebar_collapsed.jade": {
 		"compileDebug": 1,
@@ -41946,7 +41955,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-left_sidebar_collapsed.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-right_sidebar.jade": {
 		"compileDebug": 1,
@@ -41957,7 +41966,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-right_sidebar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-right_sidebar_collapsed.jade": {
 		"compileDebug": 1,
@@ -41968,7 +41977,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-right_sidebar_collapsed.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/layout-title_and_breadcrumb.jade": {
 		"compileDebug": 1,
@@ -41979,7 +41988,7 @@
 		"outputAbbreviatedPath": "\/dist\/layout-title_and_breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-buttons.jade": {
 		"compileDebug": 1,
@@ -41990,7 +41999,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-buttons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-checkbox_and_radio.jade": {
 		"compileDebug": 1,
@@ -42001,7 +42010,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-checkbox_and_radio.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-general.jade": {
 		"compileDebug": 1,
@@ -42012,7 +42021,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-general.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-grid_layout.jade": {
 		"compileDebug": 1,
@@ -42023,7 +42032,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-grid_layout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-icons.jade": {
 		"compileDebug": 1,
@@ -42034,7 +42043,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-icons.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-modals.jade": {
 		"compileDebug": 1,
@@ -42045,7 +42054,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-modals.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-panels.jade": {
 		"compileDebug": 1,
@@ -42056,7 +42065,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-panels.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-progress_bars.jade": {
 		"compileDebug": 1,
@@ -42067,7 +42076,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-progress_bars.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-sliders.jade": {
 		"compileDebug": 1,
@@ -42078,7 +42087,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-sliders.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-tabs_and_accordions.jade": {
 		"compileDebug": 1,
@@ -42089,7 +42098,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-tabs_and_accordions.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-typography.jade": {
 		"compileDebug": 1,
@@ -42100,7 +42109,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-typography.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/ui-widgets.jade": {
 		"compileDebug": 1,
@@ -42111,7 +42120,7 @@
 		"outputAbbreviatedPath": "\/dist\/ui-widgets.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/uia-dropdown_select.jade": {
 		"compileDebug": 1,
@@ -42122,7 +42131,7 @@
 		"outputAbbreviatedPath": "\/dist\/uia-dropdown_select.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/uia-editor.jade": {
 		"compileDebug": 1,
@@ -42133,7 +42142,7 @@
 		"outputAbbreviatedPath": "\/dist\/uia-editor.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/uia-preloader.jade": {
 		"compileDebug": 1,
@@ -42144,7 +42153,7 @@
 		"outputAbbreviatedPath": "\/dist\/uia-preloader.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/uia-sortable_and_nestable_lists.jade": {
 		"compileDebug": 1,
@@ -42155,7 +42164,7 @@
 		"outputAbbreviatedPath": "\/dist\/uia-sortable_and_nestable_lists.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/less\/accordion.less": {
 		"allowInsecureImports": 0,
@@ -43826,7 +43835,7 @@
 	"jadeAutoOutputPathReplace2": "",
 	"jadeAutoOutputPathStyle": 1,
 	"jadeCompileDebug": 1,
-	"jadeOutputStyle": 0,
+	"jadeOutputStyle": 1,
 	"javascriptAutoOutputPathEnabled": 1,
 	"javascriptAutoOutputPathFilenamePattern": "*.min.js",
 	"javascriptAutoOutputPathRelativePath": "dist\/js",
