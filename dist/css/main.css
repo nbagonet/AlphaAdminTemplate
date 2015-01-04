@@ -2115,7 +2115,7 @@ th {
 /* Labels */
 label,
 .label {
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 0 0 0 0;
 }
 .label-outlined {
@@ -3632,6 +3632,10 @@ blockquote.pull-right {
 .demo-checkbox-radio li {
   position: relative;
   padding: 5px 0;
+}
+/* if iCheck parent node is <label>, and has attr "data-icheck='true'" */
+label[data-icheck="true"] {
+  margin-left: -20px;
 }
 /* Icons */
 .demo-icons {

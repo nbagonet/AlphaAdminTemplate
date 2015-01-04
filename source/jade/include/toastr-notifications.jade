@@ -1,0 +1,131 @@
+//- UI Advanced - Toastr Notifications
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.panel.panel-white
+    div.panel-body
+
+      div.row#toastrCfg
+
+        div.col-md-3
+          div.form-group
+            label.control-label(for="title") Title
+            input#title.form-control(type="text" value="" placeholder="Enter a title ...")
+          div.form-group
+            label.control-label(for="message") Message
+            textarea#message.form-control(rows="3" placeholder="Enter a message ..." style="resize:none;")
+          div.form-group
+            div.checkbox
+              label(for="closeButton" data-icheck="true")
+                input#closeButton.icheck(type="checkbox" value="checked")
+                |&nbsp;Close Button
+            div.checkbox
+              label(for="addBehaviorOnToastClick" data-icheck="true")
+                input#addBehaviorOnToastClick.icheck(type="checkbox" value="checked")
+                |&nbsp;Add behavior on toast click
+            div.checkbox
+              label(for="debugInfo" data-icheck="true")
+                input#debugInfo.icheck(type="checkbox" value="checked")
+                |&nbsp;Debug
+            div.checkbox
+              label(for="progressBar" data-icheck="true")
+                input#progressBar.icheck(type="checkbox" value="checked")
+                |&nbsp;Progress Bar
+
+        div.col-md-3
+          div#toastTypeGroup.form-group.mbottom15
+            label Toast Type
+            div.radio
+              label
+                input.icheck(type="radio" name="toasts" value="success" checked)
+                |&nbsp;Success
+            div.radio
+              label
+                input.icheck(type="radio" name="toasts" value="info")
+                |&nbsp;Info
+            div.radio
+              label
+                input.icheck(type="radio" name="toasts" value="warning")
+                |&nbsp;Warning
+            div.radio
+              label
+                input.icheck(type="radio" name="toasts" value="error")
+                |&nbsp;Errorr
+
+          div#positionGroup.form-group
+            label Position
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-top-right" checked)
+                |&nbsp;Top Right
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-bottom-right")
+                |&nbsp;Bottom Right
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-bottom-left")
+                |&nbsp;Bottom Left
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-top-left")
+                |&nbsp;Top Left
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-top-full-width")
+                |&nbsp;Top Full Width
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-bottom-full-width")
+                |&nbsp;Bottom Full Width
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-top-center")
+                |&nbsp;Top Center
+            div.radio
+              label
+                input.icheck(type="radio" name="positions" value="toast-bottom-center")
+                |&nbsp;Bottom Center
+
+        div.col-md-3
+          div.form-group
+            label.control-label(for="showEasing") Show Easing
+            input#showEasing.form-control.input-sm(value="swing" type="text" placeholder="swing, linear")
+          div.form-group
+            label.control-label(for="hideEasing") Hide Easing
+            input#hideEasing.form-control.input-sm(value="linear" type="text" placeholder="swing, linear")
+          div.form-group
+            label.control-label(for="showMethod") Show Method
+            input#showMethod.form-control.input-sm(value="fadeIn" type="text" placeholder="show, fadeIn, slideDown")
+          div.form-group
+            label.control-label(for="hideMethod") Hide Method
+            input#hideMethod.form-control.input-sm(value="fadeOut" type="text" placeholder="hide, fadeOut, slideUp")
+
+        div.col-md-3
+          div.form-group
+            label.control-label(for="showDuration") Show Duration
+            input#showDuration.form-control.input-sm(value="300" type="text" placeholder="ms")
+          div.form-group
+            label.control-label(for="hideDuration") Hide Duration
+            input#hideDuration.form-control.input-sm(value="1000" type="text" placeholder="ms")
+          div.form-group
+            label.control-label(for="timeOut") Time out
+            input#timeOut.form-control.input-sm(value="5000" type="text" placeholder="ms")
+          div.form-group
+            label.control-label(for="extendedTimeOut") Extended time out
+            input#extendedTimeOut.form-control.input-sm(value="1000" type="text" placeholder="ms")
+
+      div.row
+        div.col-md-12
+          +buttons("btn-danger mright5", "Show Toast")(id="showtoast")
+          +buttons("btn-success mright5", "Clear Toasts")(id="cleartoasts")
+          +buttons("btn-warning mright5", "Clear Last Toast")(id="clearlasttoast")
+
+      div.row.mtop20
+        div.col-md-12
+          pre#toastrOptions
