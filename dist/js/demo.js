@@ -2604,3 +2604,105 @@
   * Select2 Dropdowns Demos end
   */
 
+
+ /**
+  * Multi Select Demo begin
+  */
+ $(function() {
+
+   // Pre-selected options begin
+   if ($('#pre-selected-options').length > 0) {
+     $('#pre-selected-options').multiSelect();
+   }
+   // Pre-selected options end
+
+   // Callbacks begin
+   if ($('#callbacks').length > 0) {
+     $('#callbacks').multiSelect({
+       afterSelect: function(values) {
+         alert("Select value: " + values);
+       },
+       afterDeselect: function(values) {
+         alert("Deselect value: " + values);
+       }
+     });
+   }
+   // Callbacks end
+
+   // Keep Order begin
+   if ($('#keep-order').length > 0) {
+     $('#keep-order').multiSelect({
+       keepOrder: true
+     });
+   }
+   // Keep Order end
+
+   // Public methods begin
+   if ($('#public-methods').length > 0) {
+     var public_methods_arr = [];
+     for (var i = 0; i < 100; i++) {
+       public_methods_arr[i] = 'elem_' + (i + 1);
+     }
+
+     $('#public-methods').multiSelect({});
+     $('#refresh').on('click', function() {
+       $('#public-methods').multiSelect('refresh');
+       return false;
+     });
+     $('#select-all').click(function() {
+       $('#public-methods').multiSelect('select_all');
+       return false;
+     });
+     $('#deselect-all').click(function() {
+       $('#public-methods').multiSelect('deselect_all');
+       return false;
+     });
+     $('#select-100').click(function() {
+       $('#public-methods').multiSelect('select', public_methods_arr);
+       return false;
+     });
+     $('#deselect-100').click(function() {
+       $('#public-methods').multiSelect('deselect', public_methods_arr);
+       return false;
+     });
+
+     $('#add-option').on('click', function() {
+       $('#public-methods').multiSelect('addOption', {
+         value: 42,
+         text: 'test 42',
+         index: 0
+       });
+       return false;
+     });
+   }
+   // Public methods end
+
+   // Optgroup begin
+   if ($('#optgroup').length > 0) {
+     $('#optgroup').multiSelect({
+       selectableOptgroup: true
+     });
+   }
+   // Optgroup end
+
+   // Disabled attribute begin
+   if ($('#disabled-attribute').length > 0) {
+     $('#disabled-attribute').multiSelect();
+   }
+   // Disabled attribute end
+
+   // Custom headers and footers begin
+   if ($('#custom-headers').length > 0) {
+     $('#custom-headers').multiSelect({
+       selectableHeader: "<h5 class='text-center p10 no-m text-green'>Selectable items</h5>",
+       selectionHeader: "<h5 class='text-center p10 no-m text-red'>Selection items</h5>",
+       selectableFooter: "<div class='text-center p10 no-m text-green'>Selectable footer</div>",
+       selectionFooter: "<div class='text-center p10 no-m text-red'>Selection footer</div>"
+     });
+   }
+   // Custom headers and footers end
+
+ });
+ /**
+  * Multi Select Demo end
+  */

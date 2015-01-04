@@ -1,0 +1,78 @@
+//- UI Advanced - Dropdown Select - Multi Select
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-green
+  div.panel-heading
+    |Multi Select
+  div.panel-body
+
+    h4 Pre-selected options
+    div.ptop10.pbottom10
+      select#pre-selected-options(multiple)
+        - for(var i=1;i<=100;i++)
+          if i==1 || i==4
+            option(value="elem_#{i}" selected) elem #{i}
+          else
+            option(value="elem_#{i}") elem #{i}
+
+    h4 Callbacks
+    div.ptop10.pbottom10
+      select#callbacks(multiple)
+        - for(var i=1;i<=100;i++)
+          option(value="elem_#{i}") elem #{i}
+      div.alert.alert-warning.mtop10.mbottom10(role="alert")
+        p!= '<strong>Note:</strong> This feature won\'t work if there are optgroups in the original select.'
+
+    h4 Keep Order
+    div.ptop10.pbottom10
+      select#keep-order(multiple)
+        - for(var i=1;i<=100;i++)
+          option(value="elem_#{i}") elem #{i}
+
+    h4 Public methods
+    div.ptop10.pbottom10
+      div.btn-group.btn-group-xs.mbottom5
+        +buttons('btn-success mright5 mbottom5', 'Select all')(id="select-all")
+        +buttons('btn-warning mright5 mbottom5', 'Deselect all')(id="deselect-all")
+        +buttons('btn-danger mright5 mbottom5', 'Select 100 elems')(id="select-100")
+        +buttons('btn-info mright5 mbottom5', 'Deselect 100 elems')(id="deselect-100")
+        +buttons('btn-orange mright5 mbottom5', 'Add options')(id="add-option")
+        +buttons('btn-violet mright5 mbottom5', 'Refresh')(id="refresh")
+      div
+        select#public-methods(multiple)
+          - for(var i=1;i<=200;i++)
+            if i==2
+              option(value="elem_#{i}" disabled) elem #{i}
+            else
+              option(value="elem_#{i}") elem #{i}
+
+    h4 Optgroup
+    div.ptop10.pbottom10
+      select#optgroup(multiple)
+        optgroup(label="Friends")
+          option(value="1") Yoda
+          option(value="2" selected) Obiwan
+        optgroup(label="Enemies")
+          option(value="3") Palpatine
+          option(value="4" disabled) Darth Vader
+
+    h4 Disabled attribute
+    div.ptop10.pbottom10
+      select#disabled-attribute(multiple disabled)
+        - for(var i=1;i<=100;i++)
+          option(value="elem_#{i}") elem #{i}
+      div.alert.alert-info.mtop10.mbottom10(role="alert")
+        p
+          strong Note:
+          |&nbsp;You can also deactivate option one by one by adding disabled attribute to each option you want to disable
+          br/
+          code= 'option value=\'fuu\' disabled=\'disabled\'>bar</option>'
+
+    h4 Custom headers and footers
+    div.ptop10.pbottom10
+      select#custom-headers(multiple)
+        - for(var i=1;i<=100;i++)
+          option(value="elem_#{i}") elem #{i}
