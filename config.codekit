@@ -223,7 +223,7 @@
 		},
 	"\/dist\/css\/main.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/css\/main.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -250,7 +250,7 @@
 		},
 	"\/dist\/css\/themes\/blue-orange.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/css\/themes\/blue-orange.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3273,7 +3273,7 @@
 		},
 	"\/dist\/index.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3335,17 +3335,6 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/js\/jquery.multi-select.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/js\/jquery.multi-select.min.js",
-		"outputAbbreviatedPath": "\/dist\/js\/jquery.multi-select.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
 	"\/dist\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -3392,7 +3381,7 @@
 		},
 	"\/dist\/layout-fixed_topbar.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-fixed_topbar.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3401,7 +3390,7 @@
 		},
 	"\/dist\/layout-horizontal_menu.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3410,7 +3399,7 @@
 		},
 	"\/dist\/layout-horizontal_menu_and_sidebar.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu_and_sidebar.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3419,7 +3408,7 @@
 		},
 	"\/dist\/layout-horizontal_menu_boxed.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu_boxed.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3428,7 +3417,7 @@
 		},
 	"\/dist\/layout-left_sidebar.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-left_sidebar.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3437,7 +3426,7 @@
 		},
 	"\/dist\/layout-left_sidebar_collapsed.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-left_sidebar_collapsed.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3446,7 +3435,7 @@
 		},
 	"\/dist\/layout-right_sidebar.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-right_sidebar.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3455,7 +3444,7 @@
 		},
 	"\/dist\/layout-right_sidebar_collapsed.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-right_sidebar_collapsed.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3464,7 +3453,7 @@
 		},
 	"\/dist\/layout-title_and_breadcrumb.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/layout-title_and_breadcrumb.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3495,7 +3484,7 @@
 		},
 	"\/dist\/ui-buttons.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-buttons.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3504,7 +3493,7 @@
 		},
 	"\/dist\/ui-checkbox_and_radio.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-checkbox_and_radio.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3513,7 +3502,7 @@
 		},
 	"\/dist\/ui-general.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-general.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3522,7 +3511,7 @@
 		},
 	"\/dist\/ui-grid_layout.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-grid_layout.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3531,7 +3520,7 @@
 		},
 	"\/dist\/ui-icons.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-icons.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3540,7 +3529,7 @@
 		},
 	"\/dist\/ui-modals.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-modals.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3549,7 +3538,7 @@
 		},
 	"\/dist\/ui-panels.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-panels.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3558,7 +3547,7 @@
 		},
 	"\/dist\/ui-progress_bars.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-progress_bars.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3567,7 +3556,7 @@
 		},
 	"\/dist\/ui-sliders.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-sliders.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3576,7 +3565,7 @@
 		},
 	"\/dist\/ui-tabs_and_accordions.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-tabs_and_accordions.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3585,7 +3574,7 @@
 		},
 	"\/dist\/ui-typography.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-typography.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3594,25 +3583,16 @@
 		},
 	"\/dist\/ui-widgets.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/ui-widgets.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/uia-dropdown_select.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-dropdown_select.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/uia-editor.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/uia-editor.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3621,7 +3601,7 @@
 		},
 	"\/dist\/uia-preloader.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/uia-preloader.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -3630,7 +3610,7 @@
 		},
 	"\/dist\/uia-sortable_and_nestable_lists.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/uia-sortable_and_nestable_lists.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -35577,15 +35557,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/iCheck\/skins\/flat\/_all.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/flat\/_all.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/vendor\/iCheck\/skins\/flat\/aero.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -35616,6 +35587,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/dist\/vendor\/iCheck\/skins\/flat\/all.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/flat\/all.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/dist\/vendor\/iCheck\/skins\/flat\/blue.css": {
 		"fileType": 16,
@@ -35927,20 +35907,20 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/vendor\/iCheck\/skins\/line\/_all.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/line\/_all.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/vendor\/iCheck\/skins\/line\/aero.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/line\/aero.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/iCheck\/skins\/line\/all.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/line\/all.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -36048,15 +36028,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/iCheck\/skins\/minimal\/_all.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/minimal\/_all.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/vendor\/iCheck\/skins\/minimal\/aero.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -36087,6 +36058,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/dist\/vendor\/iCheck\/skins\/minimal\/all.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/minimal\/all.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/dist\/vendor\/iCheck\/skins\/minimal\/blue.css": {
 		"fileType": 16,
@@ -36398,15 +36378,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/vendor\/iCheck\/skins\/square\/_all.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/square\/_all.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/vendor\/iCheck\/skins\/square\/aero.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -36437,6 +36408,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/dist\/vendor\/iCheck\/skins\/square\/all.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/iCheck\/skins\/square\/all.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/dist\/vendor\/iCheck\/skins\/square\/blue.css": {
 		"fileType": 16,
@@ -37730,6 +37710,17 @@
 		"outputAbbreviatedPath": "\/dist\/vendor\/multi-select\/js\/jquery.multi-select.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/multi-select\/js\/jquery.multi-select.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/multi-select\/js\/jquery.multi-select.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.multi-select.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
@@ -40982,8 +40973,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
@@ -41260,6 +41251,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-bootstrap-select.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-bootstrap-select.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/source\/jade\/include\/module\/dropdown-select-multi-select.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/dropdown-select-multi-select.jade",
+		"outputAbbreviatedPath": "\/dist\/dropdown-select-multi-select.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -41875,9 +41877,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/index.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/index.html",
+		"outputAbbreviatedPath": "\/dist\/index.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-fixed_topbar.jade": {
@@ -41886,9 +41888,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-fixed_topbar.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-fixed_topbar.html",
+		"outputAbbreviatedPath": "\/dist\/layout-fixed_topbar.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-horizontal_menu.jade": {
@@ -41897,9 +41899,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu.html",
+		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-horizontal_menu_and_sidebar.jade": {
@@ -41908,9 +41910,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu_and_sidebar.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu_and_sidebar.html",
+		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu_and_sidebar.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-horizontal_menu_boxed.jade": {
@@ -41919,9 +41921,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu_boxed.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-horizontal_menu_boxed.html",
+		"outputAbbreviatedPath": "\/dist\/layout-horizontal_menu_boxed.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-left_sidebar.jade": {
@@ -41930,9 +41932,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-left_sidebar.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-left_sidebar.html",
+		"outputAbbreviatedPath": "\/dist\/layout-left_sidebar.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-left_sidebar_collapsed.jade": {
@@ -41941,9 +41943,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-left_sidebar_collapsed.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-left_sidebar_collapsed.html",
+		"outputAbbreviatedPath": "\/dist\/layout-left_sidebar_collapsed.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-right_sidebar.jade": {
@@ -41952,9 +41954,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-right_sidebar.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-right_sidebar.html",
+		"outputAbbreviatedPath": "\/dist\/layout-right_sidebar.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-right_sidebar_collapsed.jade": {
@@ -41963,9 +41965,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-right_sidebar_collapsed.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-right_sidebar_collapsed.html",
+		"outputAbbreviatedPath": "\/dist\/layout-right_sidebar_collapsed.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/layout-title_and_breadcrumb.jade": {
@@ -41974,9 +41976,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/layout-title_and_breadcrumb.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/layout-title_and_breadcrumb.html",
+		"outputAbbreviatedPath": "\/dist\/layout-title_and_breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-buttons.jade": {
@@ -41985,9 +41987,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-buttons.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-buttons.html",
+		"outputAbbreviatedPath": "\/dist\/ui-buttons.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-checkbox_and_radio.jade": {
@@ -41996,9 +41998,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-checkbox_and_radio.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-checkbox_and_radio.html",
+		"outputAbbreviatedPath": "\/dist\/ui-checkbox_and_radio.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-general.jade": {
@@ -42007,9 +42009,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-general.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-general.html",
+		"outputAbbreviatedPath": "\/dist\/ui-general.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-grid_layout.jade": {
@@ -42018,9 +42020,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-grid_layout.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-grid_layout.html",
+		"outputAbbreviatedPath": "\/dist\/ui-grid_layout.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-icons.jade": {
@@ -42029,9 +42031,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-icons.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-icons.html",
+		"outputAbbreviatedPath": "\/dist\/ui-icons.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-modals.jade": {
@@ -42040,9 +42042,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-modals.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-modals.html",
+		"outputAbbreviatedPath": "\/dist\/ui-modals.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-panels.jade": {
@@ -42051,9 +42053,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-panels.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-panels.html",
+		"outputAbbreviatedPath": "\/dist\/ui-panels.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-progress_bars.jade": {
@@ -42062,9 +42064,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-progress_bars.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-progress_bars.html",
+		"outputAbbreviatedPath": "\/dist\/ui-progress_bars.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-sliders.jade": {
@@ -42073,9 +42075,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-sliders.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-sliders.html",
+		"outputAbbreviatedPath": "\/dist\/ui-sliders.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-tabs_and_accordions.jade": {
@@ -42084,9 +42086,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-tabs_and_accordions.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-tabs_and_accordions.html",
+		"outputAbbreviatedPath": "\/dist\/ui-tabs_and_accordions.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-typography.jade": {
@@ -42095,9 +42097,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-typography.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-typography.html",
+		"outputAbbreviatedPath": "\/dist\/ui-typography.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/ui-widgets.jade": {
@@ -42106,9 +42108,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/ui-widgets.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/ui-widgets.html",
+		"outputAbbreviatedPath": "\/dist\/ui-widgets.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/uia-dropdown_select.jade": {
@@ -42117,9 +42119,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/uia-dropdown_select.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/uia-dropdown_select.html",
+		"outputAbbreviatedPath": "\/dist\/uia-dropdown_select.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/uia-editor.jade": {
@@ -42128,9 +42130,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/uia-editor.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/uia-editor.html",
+		"outputAbbreviatedPath": "\/dist\/uia-editor.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/uia-preloader.jade": {
@@ -42139,9 +42141,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/uia-preloader.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/uia-preloader.html",
+		"outputAbbreviatedPath": "\/dist\/uia-preloader.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/jade\/uia-sortable_and_nestable_lists.jade": {
@@ -42150,9 +42152,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/uia-sortable_and_nestable_lists.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/uia-sortable_and_nestable_lists.html",
+		"outputAbbreviatedPath": "\/dist\/uia-sortable_and_nestable_lists.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/source\/less\/accordion.less": {
@@ -42943,9 +42945,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/main.less",
-		"outputAbbreviatedPath": "\/source\/css\/main.css",
+		"outputAbbreviatedPath": "\/dist\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
@@ -43503,9 +43505,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/themes\/blue-orange.less",
-		"outputAbbreviatedPath": "\/source\/less\/css\/blue-orange.css",
+		"outputAbbreviatedPath": "\/dist\/css\/themes\/blue-orange.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
