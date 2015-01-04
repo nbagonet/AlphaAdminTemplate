@@ -88,7 +88,7 @@ a:focus {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #555555;
-  background-color: #fbfbfb;
+  background-color: #e9e9e9;
 }
 .dropdown-menu > li.disabled a {
   color: #bbbbbb;
@@ -177,7 +177,7 @@ a:focus {
   border-bottom: 1px #dfdfdf solid;
 }
 .topheader .dropdown-notifications ul > li > a:hover {
-  background-color: #fbfbfb;
+  background-color: #e9e9e9;
 }
 .topheader .dropdown-notifications ul > li > a .dropdown-notifications-info,
 .topheader .dropdown-notifications ul > li > a .dropdown-notifications-time {
@@ -188,14 +188,14 @@ a:focus {
 }
 .topheader .dropdown-messages ul > li > a:hover {
   color: #555555;
-  background-color: #fbfbfb;
+  background-color: #e9e9e9;
 }
 .topheader .dropdown-tasks ul > li > a {
   border-bottom: 1px #dfdfdf solid;
 }
 .topheader .dropdown-tasks ul > li > a:hover {
   color: #555555;
-  background-color: #fbfbfb;
+  background-color: #e9e9e9;
 }
 .topheader .dropdown-language .flag {
   border: 1px #dfdfdf solid;
@@ -257,11 +257,11 @@ li.sidebar-profile > .media a:hover {
   }
   .small-sidebar .side-menu-sub > li > a:hover {
     color: #555555;
-    background-color: #fbfbfb;
+    background-color: #e9e9e9;
   }
   .small-sidebar .side-menu-sub > li > a.active {
     color: #0092c7;
-    background-color: #fbfbfb;
+    background-color: #e9e9e9;
   }
 }
 /* Main */
@@ -307,7 +307,7 @@ li.sidebar-profile > .media a:hover {
 .mega-menu-submenu > li > a:active,
 .mega-menu-submenu > li > a:focus {
   color: #555555;
-  background-color: #fbfbfb;
+  background-color: #e9e9e9;
 }
 .multi-level-menu {
   border: 1px #dfdfdf solid;
