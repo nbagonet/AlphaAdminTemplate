@@ -1,0 +1,11 @@
+[{
+  "text": "Child 1",
+  "icon": "ti-cut"
+}, {
+  "text": "Child 2",
+  "icon": "ti-zoom-in",
+  "children": [{
+    "text": "One more",
+    "icon": "ti-zoom-out"
+  }]
+}]

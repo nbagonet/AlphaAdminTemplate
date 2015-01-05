@@ -1,0 +1,50 @@
+//
+// Tree view
+// --------------------------------------------------
+
+
+/* jsTree */
+.jstree-default
+{
+    .jstree-hovered
+    {
+        color: #fff;
+        border-radius: @border-radius-base;
+        background: lighten(@brand-minor,15%);
+
+        .box-shadow(none);
+    }
+    .jstree-clicked
+    {
+        color: #fff;
+        border-radius: @border-radius-base;
+        background: @brand-minor;
+
+        .box-shadow(none);
+    }
+    .jstree-disabled
+    {
+        cursor: not-allowed;
+
+        color: #d0d0d0;
+    }
+    .jstree-wholerow-clicked
+    {
+        background: @brand-minor;
+    }
+    .jstree-wholerow-hovered
+    {
+        background: lighten(@brand-minor,15%);
+    }
+    .jstree-search
+    {
+        font-weight: @font-weight-bolder;
+        font-style: normal;
+
+        color: @color-danger;
+    }
+}
+.jstree-anchor
+{
+    padding-right: 10px;
+}

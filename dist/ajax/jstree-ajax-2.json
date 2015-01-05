@@ -1,0 +1,9 @@
+[{
+  "text": "Root 1",
+  "icon": "ti-settings",
+  "children": true
+}, {
+  "text": "Root 2",
+  "icon": "ti-search",
+  "children": true
+}]

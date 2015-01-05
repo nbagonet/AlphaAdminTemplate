@@ -1821,13 +1821,13 @@ th {
 }
 .link-info,
 .link-info a {
-  color: #5cb85c;
+  color: #5bc0de;
 }
 .link-info:hover,
 .link-info a:hover,
 .link-info:focus,
 .link-info a:focus {
-  color: #3d8b3d;
+  color: #28a1c5;
 }
 .link-warning,
 .link-warning a {
@@ -4476,6 +4476,37 @@ disabled look for disabled choices in the results dropdown
   cursor: not-allowed;
   color: #ddd;
   background-color: #fafafa;
+}
+/* jsTree */
+.jstree-default .jstree-hovered {
+  color: #fff;
+  border-radius: 0;
+  background: #f69175;
+  box-shadow: none;
+}
+.jstree-default .jstree-clicked {
+  color: #fff;
+  border-radius: 0;
+  background: #f2572d;
+  box-shadow: none;
+}
+.jstree-default .jstree-disabled {
+  cursor: not-allowed;
+  color: #d0d0d0;
+}
+.jstree-default .jstree-wholerow-clicked {
+  background: #f2572d;
+}
+.jstree-default .jstree-wholerow-hovered {
+  background: #f69175;
+}
+.jstree-default .jstree-search {
+  font-weight: 700;
+  font-style: normal;
+  color: #d9534f;
+}
+.jstree-anchor {
+  padding-right: 10px;
 }
 /* Single Element CSS Spinners */
 .load1 .loader,

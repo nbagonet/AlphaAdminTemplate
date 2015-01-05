@@ -1,0 +1,241 @@
+//- UI Advanced - Tree View - JsTree
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-orange
+  div.panel-heading
+    |JsTree
+    span.badge.badge-warning.text-orange.mleft5: strong v3.0.8
+  div.panel-body
+
+    div.row
+      div.col-md-4
+        //Basic markup
+        h4 Basic markup
+        div.well
+          div#jstree01
+            ul
+              li(data-jstree='{"icon":"ti-wand"}') Root node 1
+              li(data-jstree='{"icon":"ti-save"}') Root node 2
+      div.col-md-4
+        //Nodes with children
+        h4 Nodes with children
+        div.well
+          div#jstree02
+            ul
+              li Root node 1
+                ul
+                  li Child node 1
+                  li: a(href="#") Child node 2
+      div.col-md-4
+        //Setting initial state with classes
+        h4 Setting initial state with classes
+        div.well
+          div#jstree03
+            ul
+              li.jstree-open(data-jstree='{"icon":"ti-user"}') Root
+                ul
+                  li(data-jstree='{"icon":"ti-link"}'): a.jstree-clicked(href="#") Child
+
+    div.row
+      div.col-md-4
+        //Setting initial state with data attribute
+        h4 Setting initial state with data attribute
+        div.well
+          div#jstree04
+            ul
+              li(data-jstree='{"opened":true,"selected":true,"icon":"ti-unlink"}') Root
+                ul
+                  li(data-jstree='{"disabled":true,"icon":"ti-trash"}') Child
+                  li(data-jstree='{"icon":"./img/flag/Armenia.png"}') Child
+                  li(data-jstree='{"icon":"glyphicon glyphicon-leaf"}') Child
+
+      div.col-md-4
+        //Loading with AJAX
+        h4 Loading with AJAX
+        div.well(style="overflow:hidden;overflow-x:auto;")
+          div#jstree05
+
+      div.col-md-4
+        //Using JSON
+        h4 Using JSON
+        div.well
+          div#jstree06
+
+    div.row
+      div.col-md-4
+        //Using the alternative JSON format
+        h4 Using the alternative JSON format
+        div.well
+          div#jstree07
+
+      div.col-md-4
+        //Using AJAX
+        h4 Using AJAX
+        div.well
+          div#jstree08
+
+      div.col-md-4
+        //Using a function
+        h4 Using a function
+        div.well
+          div#jstree09
+
+    div.row
+      div.col-md-4
+        //Listening for events
+        h4 Listening for events
+        div.well
+          div#jstree10
+            ul
+              li#r1.jstree-open(data-jstree='{"selected":true,"icon":"ti-ruler-pencil"}') Root 1
+                ul
+                  li#n1(data-jstree='{"icon":"ti-ruler-alt"}') Child 1
+                  li#n2(data-jstree='{"icon":"ti-bookmark"}') Child 2
+              li#r2.jstree-open(data-jstree='{"icon":"ti-bookmark-alt"}') Root 2
+                ul
+                  li#n3(data-jstree='{"icon":"ti-reload"}') Child 3
+                  li#n4(data-jstree='{"icon":"ti-plus"}') Child 4
+          pre#event_result.no-mb
+
+      div.col-md-4
+        //Invoking methods on an instance
+        h4 Invoking methods on an instance
+        div.well.mbottom10
+          div#jstree11
+            ul
+              li#mn1(data-jstree='{"icon":"ti-pin"}') Node 1
+              li#mn2(data-jstree='{"icon":"ti-pencil"}') Node 2
+              li#mn3(data-jstree='{"icon":"ti-pencil-alt"}') Node 3
+        div.btn-group.btn-group-sm
+          +buttons("btn-info mright5", "Select 1")(id="jstree11-btn-1")
+          +buttons("btn-info mright5", "Select 2")(id="jstree11-btn-2")
+          +buttons("btn-info mright5", "Select 3")(id="jstree11-btn-3")
+
+      div.col-md-4
+        //Controls & Search
+        h4 Controls &amp; Search
+        div.btn-group.btn-group-sm.mbottom5
+          +buttons("btn-success mright5","Create","ti-plus mright5")(id="jstree12-btn-create")
+          +buttons("btn-warning mright5","Rename","ti-pencil mright5")(id="jstree12-btn-rename")
+          +buttons("btn-danger mright5","Delete","ti-trash mright5")(id="jstree12-btn-delete")
+        div.form-group.mbottom5
+          input#jstree12-search.form-control(type="text" value="" placeholder="Search")
+        div.well
+          div#jstree12
+
+    div.row
+      div.col-md-4
+        //Checkbox plugin
+        h4 Checkbox plugin
+        div.well
+          div#jstree13
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-paint-roller"}') Root node
+                ul
+                  li(data-jstree='{"icon":"ti-paint-bucket"}') Child node 1
+                  li(data-jstree='{"icon":"ti-medall"}') Child node 2
+
+      div.col-md-4
+        //Contextmenu plugin
+        h4 Contextmenu plugin
+        div.well
+          div#jstree14
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-medall-alt"}') Root node
+                ul
+                  li(data-jstree='{"icon":"ti-marker"}') Context click me
+
+      div.col-md-4
+        //Drag & drop plugin
+        h4 Drag &amp; drop plugin
+        div.well
+          div#jstree15
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-marker-alt"}') Root node 1
+                ul
+                  li(data-jstree='{"icon":"ti-lock"}') Child node 1
+                  li(data-jstree='{"icon":"ti-unlock"}') Child node 2
+              li(data-jstree='{"icon":"ti-location-arrow"}') Root node 2
+
+    div.row
+      div.col-md-4
+        //Search plugin
+        h4 Search plugin
+        div.form-group.mbottom5
+          input#jstree16-search.form-control(type="text" value="" placeholder="Search")
+        div.well
+          div#jstree16
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-key"}') Root node 1
+                ul
+                  li(data-jstree='{"icon":"ti-image"}') Child node 1
+                  li(data-jstree='{"icon":"ti-layers"}') Child node 2
+              li(data-jstree='{"icon":"ti-layers-alt"}') Root node 2
+
+      div.col-md-4
+        //Sort plugin
+        h4 Sort plugin
+        div.well
+          div#jstree17
+            ul
+              li(data-jstree='{"icon":"ti-eye"}') Root node 3
+              li(data-jstree='{"opened":true,"icon":"ti-heart"}') Root node 1
+                ul
+                  li(data-jstree='{"icon":"ti-heart-broken"}') 2
+                  li(data-jstree='{"icon":"ti-hand-stop"}') 1
+                  li(data-jstree='{"icon":"ti-flag"}') 3
+                  li(data-jstree='{"icon":"ti-flag-alt"}') 0
+              li(data-jstree='{"icon":"ti-flag-alt-2"}') Root node 2
+
+      div.col-md-4
+        //State plugin
+        h4 State plugin
+        div.well
+          div#jstree18
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-import"}') Root node
+                ul
+                  li(data-jstree='{"icon":"ti-export"}') A
+                  li(data-jstree='{"icon":"ti-cup"}') few
+                  li(data-jstree='{"icon":"ti-crown"}') more
+                  li(data-jstree='{"icon":"ti-comments"}') nodes
+              li(data-jstree='{"icon":"ti-comment"}') Root node 2
+
+    div.row
+      div.col-md-4
+        //Types plugin
+        h4 Types plugin
+        div.well
+          div#jstree19
+            ul
+              li(data-jstree='{"opened":true,"type":"demo"}') Root node
+                ul
+                  li Node
+              li Root node 2
+
+      div.col-md-4
+        //Unique plugin
+        h4 Unique plugin
+        div.well
+          div#jstree20
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-comment-alt"}') Root node
+                ul
+                  li(data-jstree='{"icon":"ti-thought"}') Node
+              li(data-jstree='{"icon":"ti-clip"}') Root node 2
+                ul
+                  li(data-jstree='{"icon":"ti-check"}') Node
+
+      div.col-md-4
+        //Wholerow plugin
+        h4 Wholerow plugin
+        div.well
+          div#jstree21
+            ul
+              li(data-jstree='{"opened":true,"icon":"ti-camera"}') Root node
+                ul
+                  li(data-jstree='{"slected":true,"icon":"ti-announcement"}') Node
+              li(data-jstree='{"icon":"ti-brush"}') Root node 2

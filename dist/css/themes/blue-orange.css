@@ -70,11 +70,11 @@ h6 .small,
 }
 /* Links color */
 a {
-  color: #f2572d;
+  color: #0092c7;
 }
 a:hover,
 a:focus {
-  color: #c6340c;
+  color: #005a7b;
 }
 /* Dropdown menu */
 .dropdown-menu {
@@ -170,7 +170,7 @@ a:focus {
   color: #888888;
 }
 .topheader .dropdown-footer > a:hover {
-  color: #c6340c;
+  color: #005a7b;
   background-color: #f6f6f6;
 }
 .topheader .dropdown-notifications ul > li > a {
@@ -285,7 +285,7 @@ li.sidebar-profile > .media a:hover {
 .layout-breadcrumb a:hover,
 .layout-breadcrumb a:active,
 .layout-breadcrumb a:focus {
-  color: #c6340c;
+  color: #005a7b;
 }
 .layout-breadcrumb > .active {
   color: #bbbbbb;
