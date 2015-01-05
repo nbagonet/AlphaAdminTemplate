@@ -4555,6 +4555,85 @@ table.treetable tbody .expanded .indenter a {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+/* Bootstrap Tree */
+.tree {
+  /*Remove connectors before root*/
+}
+.tree a {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+}
+.tree li {
+  list-style-type: none;
+  margin: 0px 0;
+  padding: 5px 0px 0px 2px;
+  position: relative;
+  /*Remove connectors after last child*/
+}
+.tree li::before,
+.tree li::after {
+  content: '';
+  left: -20px;
+  position: absolute;
+  right: auto;
+}
+.tree li::before {
+  border-left: 1px solid #777777;
+  bottom: 50px;
+  height: 100%;
+  top: 0;
+  width: 1px;
+  -webkit-transition: "border-color 0.1s ease 0.1s";
+  transition: "border-color 0.1s ease 0.1s";
+}
+.tree li::after {
+  border-top: 1px solid #777777;
+  height: 20px;
+  top: 14px;
+  width: 23px;
+  -webkit-transition: "border-color 0.1s ease 0.1s";
+  transition: "border-color 0.1s ease 0.1s";
+}
+.tree li span {
+  border: 1px solid #777777;
+  border-radius: 0;
+  display: inline-block;
+  line-height: 14px;
+  padding: 2px 4px;
+  text-decoration: none;
+  margin-right: 5px;
+  -webkit-transition: color 0.2s ease 0.1s, background-color 0.2s ease 0.1s, border-color 0.3s ease 0.2s;
+  transition: color 0.2s ease 0.1s, background-color 0.2s ease 0.1s, border-color 0.3s ease 0.2s;
+}
+.tree li.parent_li > span {
+  cursor: pointer;
+  /*Time for some hover effects*/
+}
+.tree li.parent_li > span:hover {
+  background-color: #f14415;
+  border: 1px solid #de3a0e;
+  color: #fff;
+}
+.tree li.parent_li > span:hover + ul li::after {
+  border-top-color: #f2572d;
+}
+.tree li.parent_li > span:hover + ul li::before {
+  border-left-color: #f2572d;
+}
+.tree li.parent_li > span:hover + ul li span {
+  background: #fcddd5;
+  border: 1px solid #f57d5d;
+  color: #000;
+}
+.tree li:last-child::before {
+  height: 15px;
+}
+.tree > ul > li::before,
+.tree > ul > li::after {
+  border: 0;
+}
 /* Single Element CSS Spinners */
 .load1 .loader,
 .load1 .loader:before,

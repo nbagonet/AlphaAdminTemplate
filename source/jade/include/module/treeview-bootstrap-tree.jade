@@ -1,0 +1,180 @@
+//- UI Advanced - Tree View - Bootstrap Tree
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-warning
+  div.panel-heading
+    |Bootstrap-themed trees
+  div.panel-body
+
+    div.mbottom15
+      h4 Demonstration 1
+      .tree.well
+        ul
+          li
+            span
+              i.icon-folder
+              |  Parent
+            a(href='') Goes somewhere
+            ul
+              li
+                span
+                  i.icon-minus-circled
+                  |  Child
+                a(href='') Goes somewhere
+                ul
+                  li
+                    span
+                      i.icon-leaf
+                      |  Grand Child
+                    a(href='') Goes somewhere
+              li
+                span
+                  i.icon-minus-circled
+                  |  Child
+                a(href='') Goes someswhere
+                ul
+                  li
+                    span
+                      i.icon-leaf
+                      |  Grand Child
+                    a(href='') Goes somewhere
+                  li
+                    span
+                      i.icon-minus-circled
+                      |  Grand Child
+                    a(href='') Goes somewhere
+                    ul
+                      li
+                        span
+                          i.icon-minus-circled
+                          |  Great Grand Child
+                        a(href='') Goes somewhere
+                        ul
+                          li
+                            span
+                              i.icon-leaf
+                              |  Great great Grand Child
+                            a(href='') Goes somewhere
+                          li
+                            span
+                              i.icon-leaf
+                              |  Great great Grand Child
+                            a(href='') Goes somewhere
+                      li
+                        span
+                          i.icon-leaf
+                          |  Great Grand Child
+                        a(href='') Goes somewhere
+                      li
+                        span
+                          i.icon-leaf
+                          |  Great Grand Child
+                        a(href='') Goes somewhere
+                  li
+                    span
+                      i.icon-leaf
+                      |  Grand Child
+                    a(href='') Goes somewhere
+          li
+            span
+              i.icon-folder
+              |  Parent2
+            a(href='') Goes somewhere
+            ul
+              li
+                span
+                  i.icon-leaf
+                  |  Child
+                a(href='') Goes somewhere
+
+    div.mbottom15
+      h4 Demonstration 2
+      .tree.well
+        ul
+          li
+            span
+              i.icon-calendar
+              |  2013, Week 2
+            ul
+              li
+                span.badge.badge-success
+                  i.icon-minus-circled
+                  |  Monday, January 7: 8.00 hours
+                ul
+                  li
+                    a(href='')
+                      span
+                        i.icon-clock
+                        |  8.00
+                      |  – Changed CSS to accomodate...
+              li
+                span.badge.badge-success
+                  i.icon-minus-circled
+                  |  Tuesday, January 8: 8.00 hours
+                ul
+                  li
+                    span
+                      i.icon-clock
+                      |  6.00
+                    |  – 
+                    a(href='') Altered code...
+                  li
+                    span
+                      i.icon-clock
+                      |  2.00
+                    |  – 
+                    a(href='') Simplified our approach to...
+              li
+                span.badge.badge-warning
+                  i.icon-minus-circled
+                  |  Wednesday, January 9: 6.00 hours
+                ul
+                  li
+                    a(href='')
+                      span
+                        i.icon-clock
+                        |  3.00
+                      |  – Fixed bug caused by...
+                  li
+                    a(href='')
+                      span
+                        i.icon-clock
+                        |  3.00
+                      |  – Comitting latest code to Git...
+              li
+                span.badge.badge-important
+                  i.icon-minus-circled
+                  |  Wednesday, January 9: 4.00 hours
+                ul
+                  li
+                    a(href='')
+                      span
+                        i.icon-clock
+                        |  2.00
+                      |  – Create component that...
+          li
+            span
+              i.icon-calendar
+              |  2013, Week 3
+            ul
+              li
+                span.badge.badge-success
+                  i.icon-minus-circled
+                  |  Monday, January 14: 8.00 hours
+                ul
+                  li
+                    span
+                      i.icon-clock
+                      |  7.75
+                    |  – 
+                    a(href='') Writing documentation...
+                  li
+                    span
+                      i.icon-clock
+                      |  0.25
+                    |  – 
+                    a(href='') Reverting code back to...
