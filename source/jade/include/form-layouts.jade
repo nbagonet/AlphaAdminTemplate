@@ -1,0 +1,249 @@
+//- Forms - Form Layouts
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.row
+
+    div.col-md-6
+      //Form Actions On Bottom
+      div.panel.panel-success
+        div.panel-heading Form Actions On Bottom
+        div.panel-body
+          form.form-horizontal.mtop15(role="form")
+            div.form-group
+              label.col-md-3.control-label(for="email01")
+                |Email
+                span.text-red *
+              div.col-md-9
+                input#email01.form-control(type="email" placeholder="Email")
+            div.form-group
+              label.col-md-3.control-label(for="pass01")
+                |Password
+                span.text-red *
+              div.col-md-9
+                input#pass01.form-control(type="password" placeholder="Password")
+            div.form-group
+              div.col-md-offset-3.col-md-9
+                +buttons("btn-danger mright5","Sign in")
+                +buttons("btn-grey","Cancel")
+
+    div.col-md-6
+      //Form Actions On Top
+      div.panel.panel-warning
+        div.panel-heading Form Actions On Top
+        div.panel-body
+          form.form-horizontal.mtop15(role="form")
+            div.form-group
+              div.col-md-offset-3.col-md-9
+                +buttons("btn-danger mright5","Sign in")
+                +buttons("btn-grey","Cancel")
+            div.form-group
+              label.col-md-3.control-label(for="email02")
+                |Email
+                span.text-red *
+              div.col-md-9
+                input#email02.form-control(type="email" placeholder="Email")
+            div.form-group
+              label.col-md-3.control-label(for="pass02")
+                |Password
+                span.text-red *
+              div.col-md-9
+                input#pass02.form-control(type="password" placeholder="Password")
+
+  div.row
+
+    div.col-md-12
+      //Form Actions On Top & Bottom
+      div.panel.panel-danger
+        div.panel-heading Form Actions On Top &amp; Bottom
+        div.panel-body
+          form.form-horizontal.mtop15(role="form")
+            div.form-group
+              div.col-md-offset-3.col-md-9
+                +buttons("btn-success mright5","Sign in")
+                +buttons("btn-grey","Cancel")
+            div.form-group
+              label.col-md-3.control-label(for="email03")
+                |Email
+                span.text-red *
+              div.col-md-9
+                input#email03.form-control(type="email" placeholder="Email")
+            div.form-group
+              label.col-md-3.control-label(for="pass03")
+                |Password
+                span.text-red *
+              div.col-md-9
+                input#pass03.form-control(type="password" placeholder="Password")
+            div.form-group
+              div.col-md-offset-3.col-md-9
+                +buttons("btn-success mright5","Sign in")
+                +buttons("btn-grey","Cancel")
+
+  div.row
+
+    div.col-md-6
+      //Left Aligned
+      div.panel.panel-orange
+        div.panel-heading Left Aligned
+        div.panel-body
+          form.mtop15(role="form")
+            div.form-group
+              +buttons("btn-success mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+            div.form-group
+              label(for="email04")
+                |Email
+                span.text-red *
+              input#email04.form-control(type="email" placeholder="Email")
+            div.form-group
+              label(for="pass04")
+                |Password
+                span.text-red *
+              input#pass04.form-control(type="password" placeholder="Password")
+            div.form-group
+              +buttons("btn-success mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+
+    div.col-md-6
+      //Right Aligned
+      div.panel.panel-yellow
+        div.panel-heading Right Aligned
+        div.panel-body
+          form.mtop15(role="form")
+            div.form-group.text-right
+              +buttons("btn-success mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+            div.form-group
+              label(for="email05")
+                |Email
+                span.text-red *
+              input#email05.form-control(type="email" placeholder="Email")
+            div.form-group
+              label(for="pass05")
+                |Password
+                span.text-red *
+              input#pass05.form-control(type="password" placeholder="Password")
+            div.form-group.text-right
+              +buttons("btn-success mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+
+  div.row
+
+    div.col-md-12
+      //Center Aligned
+      div.panel.panel-green
+        div.panel-heading Center Aligned
+        div.panel-body
+          form.mtop15(role="form")
+            div.form-group.text-center
+              +buttons("btn-red mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+            div.form-group
+              label(for="email06")
+                |Email
+                span.text-red *
+              input#email06.form-control(type="email" placeholder="Email")
+            div.form-group
+              label(for="pass06")
+                |Password
+                span.text-red *
+              input#pass06.form-control(type="password" placeholder="Password")
+            div.form-group.text-center
+              +buttons("btn-red mright5","Sign in")
+              +buttons("btn-grey","Cancel")
+
+  div.row
+
+    div.col-md-12
+      //Basic 2 Columns Form
+      div.panel.panel-black
+        div.panel-heading Basic 2 Columns Form
+        div.panel-body
+          form(role="form")
+            h3 Form Name
+            div.row
+              div.col-md-6
+                div.form-group
+                  label(for="inputFirstName") First Name
+                  input#inputFirstName.form-control(type="text" placeholder="First Name")
+              div.col-md-6
+                div.form-group
+                  label(for="inputLastName") Last Name
+                  input#inputLastName.form-control(type="text" placeholder="Last Name")
+            div.row
+              div.col-md-6
+                div.form-group
+                  label(for="inputEmail") Email Address
+                  input#inputEmail.form-control(type="email" placeholder="Email Address")
+              div.col-md-6
+                div.form-group
+                  label(for="selGender") Gender
+                  select#selGender.form-control
+                    option Male
+                    option Female
+            div.row
+              div.col-md-6
+                div.form-group
+                  label(for="inputBirthday") Birthday
+                  input#inputBirthday.form-control(type="date")
+              div.col-md-6
+                div.form-group
+                  label(for="inputPhone") Phone
+                  input#inputPhone.form-control(type="tel")
+            div.form-group.text-right
+              +buttons("btn-red mright5","Submit")
+              +buttons("btn-grey","Cancel")
+
+    div.row
+
+    div.col-md-12
+      //Horizontal 2 Columns Form
+      div.panel.panel-violet
+        div.panel-heading Horizontal 2 Columns Form
+        div.panel-body
+          form.form-horizontal(role="form")
+            h3 Form Name
+            div.row.mtop20
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="inputFirstName2") First Name
+                  div.col-md-9
+                    input#inputFirstName2.form-control(type="text" placeholder="First Name")
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="inputLastName2") Last Name
+                  div.col-md-9
+                    input#inputLastName2.form-control(type="text" placeholder="Last Name")
+            div.row
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="inputEmail2") Email
+                  div.col-md-9
+                    input#inputEmail2.form-control(type="email" placeholder="Email Address")
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="selGender2") Gender
+                  div.col-md-9
+                    select#selGender2.form-control
+                      option Male
+                      option Female
+            div.row
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="inputBirthday2") Birthday
+                  div.col-md-9
+                    input#inputBirthday2.form-control(type="date")
+              div.col-md-6
+                div.form-group
+                  label.col-md-3.control-label(for="inputPhone2") Phone
+                  div.col-md-9
+                    input#inputPhone2.form-control(type="tel")
+            div.row
+              div.col-md-12.text-right
+                +buttons("btn-red mright5","Submit")
+                +buttons("btn-grey","Cancel")

@@ -1,0 +1,125 @@
+//- Forms - Form Layouts
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.row
+
+    div.col-md-12
+      //Forms Grid
+      div.panel.panel-pink
+        div.panel-heading Forms Grid
+        div.panel-body
+          form.form-horizontal(role="form")
+            div.form-group
+              - for(var i=0;i<6;i++)
+                div.col-md-2: input.form-control(type="text" placeholder="2/12")
+            div.form-group
+              - for(var i=0;i<4;i++)
+                div.col-md-3: input.form-control(type="text" placeholder="3/12")
+            div.form-group
+              - for(var i=0;i<3;i++)
+                div.col-md-4: input.form-control(type="text" placeholder="4/12")
+            div.form-group
+              - for(var i=0;i<2;i++)
+                div.col-md-6: input.form-control(type="text" placeholder="6/12")
+            div.form-group
+              div.col-md-12: input.form-control(type="text" placeholder="12/12")
+
+  div.row
+
+    div.col-md-6
+      //Basic controls
+      div.panel.panel-green
+        div.panel-heading Basic controls
+        div.panel-body
+          form.form-horizontal(role="form")
+            div.form-group
+              label.col-md-4.control-label(for="textInput") Text
+              div.col-md-8: input#textInput.form-control(type="text" placeholder="Text")
+            div.form-group
+              label.col-md-4.control-label(for="colorInput") Color
+              div.col-md-8: input#colorInput.form-control(type="color" value="#cc0000")
+            div.form-group
+              label.col-md-4.control-label(for="dateInput") Date
+              div.col-md-8: input#dateInput.form-control(type="date" value="2015-01-01")
+            div.form-group
+              label.col-md-4.control-label(for="monthInput") Month
+              div.col-md-8: input#monthInput.form-control(type="month" value="2015-01")
+            div.form-group
+              label.col-md-4.control-label(for="weekInput") Week
+              div.col-md-8: input#weekInput.form-control(type="week" value="2015-W01")
+            div.form-group
+              label.col-md-4.control-label(for="timeInput") Time
+              div.col-md-8: input#timeInput.form-control(type="time" value="01:00")
+            div.form-group
+              label.col-md-4.control-label(for="dateTimeInput") Date Time
+              div.col-md-8: input#dateTimeInput.form-control(type="datetime-local" value="2015-01-01T01:00")
+            div.form-group
+              label.col-md-4.control-label(for="emailInput") Email
+              div.col-md-8: input#emailInput.form-control(type="email" placeholder="Email")
+            div.form-group
+              label.col-md-4.control-label(for="numberInput") Number
+              div.col-md-8: input#numberInput.form-control(type="number" value="90" max="100" min="10" step="5")
+            div.form-group
+              label.col-md-4.control-label(for="urlInput") Url
+              div.col-md-8: input#urlInput.form-control(type="url" placeholder="Url")
+            div.form-group
+              label.col-md-4.control-label(for="radios") Multiple Radios
+              div.col-md-8
+                div.radio
+                  label(for="radios-0" data-icheck="true")
+                    input#radios-0.icheck(type="radio" name="radios" value="0")
+                    span.mleft5 Option 0
+                div.radio
+                  label(for="radios-1" data-icheck="true")
+                    input#radios-1.icheck(type="radio" name="radios" value="1")
+                    span.mleft5 Option 1
+            div.form-group
+              label.col-md-4.control-label(for="radios") Inline Radios
+              div.col-md-8
+                - for(var i=0;i<4;i++)
+                  label.radio-inline(for="radios-inline-#{i}" data-icheck="true")
+                      input.icheck(id="radios-inline-#{i}" type="radio" name="radios" value="#{i}")
+                      span.mleft5 #{i}
+            div.form-group
+              label.col-md-4.control-label(for="checkboxes") Inline Checkboxes
+              div.col-md-8
+                - for(var i=0;i<4;i++)
+                  label.checkbox-inline(for="checkboxes-inline-#{i}" data-icheck="true")
+                    input.icheck(id="checkboxes-inline-#{i}" type="checkbox" name="checkboxes" value="#{i}")
+                    span.mleft5 #{i}
+            div.form-group
+              label.col-md-4.control-label(for="filebutton") File Button
+              div.col-md-8
+                input#filebutton(name="filebutton" type="file")
+            div.form-group
+              label.col-md-4.control-label(for="selectbasic") Select Basic
+              div.col-md-8
+                select#selectbasic.form-control(name="selectbasic")
+                  option Option 1
+                  option Option 2
+            div.form-group
+              label.col-md-4.control-label(for="selectmultiple") Select Multiple
+              div.col-md-8
+                select#selectmultiple.form-control(name="selectmultiple" multiple)
+                  - for(var i=1;i<=10;i++)
+                    option Option #{i}
+            div.form-group
+              label.col-md-4.control-label(for="prependedtext") Prepended Text
+              div.col-md-8
+                div.input-group
+                  span.input-group-addon prepend
+                  input#prependedtext.form-control(type="text" name="prependedtext" placeholder="placeholder")
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="appendedtext") Appended Text
+              div.col-md-8
+                div.input-group
+                  input#appendedtext.form-control(type="text" name="appendedtext" placeholder="placeholder")
+                  span.input-group-addon append
+                p.help-block 'help'

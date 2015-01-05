@@ -2407,6 +2407,7 @@ fieldset[disabled] .btn-danger.btn-outlined.active {
 }
 .form-control:focus {
   border-color: #c3c3c3;
+  background-color: #fefbf7;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .input-group-addon {
