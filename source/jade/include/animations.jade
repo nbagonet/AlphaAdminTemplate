@@ -1,0 +1,98 @@
+//- UI Advanced - Animations
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div
+    form
+      |Try it:&nbsp;
+      select#animations-type.input.input--dropdown.js--animations.mright20(style="width:300px;")
+        optgroup(label='Attention Seekers')
+          option(value='bounce') bounce
+          option(value='flash') flash
+          option(value='pulse') pulse
+          option(value='rubberBand') rubberBand
+          option(value='shake') shake
+          option(value='swing') swing
+          option(value='tada') tada
+          option(value='wobble') wobble
+        optgroup(label='Bouncing Entrances')
+          option(value='bounceIn') bounceIn
+          option(value='bounceInDown') bounceInDown
+          option(value='bounceInLeft') bounceInLeft
+          option(value='bounceInRight') bounceInRight
+          option(value='bounceInUp') bounceInUp
+        optgroup(label='Bouncing Exits')
+          option(value='bounceOut') bounceOut
+          option(value='bounceOutDown') bounceOutDown
+          option(value='bounceOutLeft') bounceOutLeft
+          option(value='bounceOutRight') bounceOutRight
+          option(value='bounceOutUp') bounceOutUp
+        optgroup(label='Fading Entrances')
+          option(value='fadeIn') fadeIn
+          option(value='fadeInDown') fadeInDown
+          option(value='fadeInDownBig') fadeInDownBig
+          option(value='fadeInLeft') fadeInLeft
+          option(value='fadeInLeftBig') fadeInLeftBig
+          option(value='fadeInRight') fadeInRight
+          option(value='fadeInRightBig') fadeInRightBig
+          option(value='fadeInUp') fadeInUp
+          option(value='fadeInUpBig') fadeInUpBig
+        optgroup(label='Fading Exits')
+          option(value='fadeOut') fadeOut
+          option(value='fadeOutDown') fadeOutDown
+          option(value='fadeOutDownBig') fadeOutDownBig
+          option(value='fadeOutLeft') fadeOutLeft
+          option(value='fadeOutLeftBig') fadeOutLeftBig
+          option(value='fadeOutRight') fadeOutRight
+          option(value='fadeOutRightBig') fadeOutRightBig
+          option(value='fadeOutUp') fadeOutUp
+          option(value='fadeOutUpBig') fadeOutUpBig
+        optgroup(label='Flippers')
+          option(value='flip') flip
+          option(value='flipInX') flipInX
+          option(value='flipInY') flipInY
+          option(value='flipOutX') flipOutX
+          option(value='flipOutY') flipOutY
+        optgroup(label='Lightspeed')
+          option(value='lightSpeedIn') lightSpeedIn
+          option(value='lightSpeedOut') lightSpeedOut
+        optgroup(label='Rotating Entrances')
+          option(value='rotateIn') rotateIn
+          option(value='rotateInDownLeft') rotateInDownLeft
+          option(value='rotateInDownRight') rotateInDownRight
+          option(value='rotateInUpLeft') rotateInUpLeft
+          option(value='rotateInUpRight') rotateInUpRight
+        optgroup(label='Rotating Exits')
+          option(value='rotateOut') rotateOut
+          option(value='rotateOutDownLeft') rotateOutDownLeft
+          option(value='rotateOutDownRight') rotateOutDownRight
+          option(value='rotateOutUpLeft') rotateOutUpLeft
+          option(value='rotateOutUpRight') rotateOutUpRight
+        optgroup(label='Specials')
+          option(value='hinge') hinge
+          option(value='rollIn') rollIn
+          option(value='rollOut') rollOut
+        optgroup(label='Zoom Entrances')
+          option(value='zoomIn') zoomIn
+          option(value='zoomInDown') zoomInDown
+          option(value='zoomInLeft') zoomInLeft
+          option(value='zoomInRight') zoomInRight
+          option(value='zoomInUp') zoomInUp
+        optgroup(label='Zoom Exits')
+          option(value='zoomOut') zoomOut
+          option(value='zoomOutDown') zoomOutDown
+          option(value='zoomOutLeft') zoomOutLeft
+          option(value='zoomOutRight') zoomOutRight
+          option(value='zoomOutUp') zoomOutUp
+
+  //Sandbox...
+  div.mtop20.mbottom20
+    div#animationSandbox
+      div.jumbotron.jumbotron-dark(style="background-image:url(#{base_img}/tmp/tmp-2.jpg);")
+        h1 Hello, world!
+        p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.

@@ -3314,3 +3314,30 @@
  /**
   * Bootstrap Tree demo end
   */
+
+
+ /**
+  * Animations demo begin
+  */
+ $(function() {
+   if ($("#animations-type").length > 0) {
+     $("#animations-type").select2();
+   }
+
+   function testAnim(x) {
+     $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+       $(this).removeClass();
+     });
+   };
+
+   $(document).ready(function() {
+     $('.js--animations').change(function() {
+       var anim = $(this).val();
+       testAnim(anim);
+     });
+   });
+
+ });
+ /**
+  * Animations demo end
+  */
