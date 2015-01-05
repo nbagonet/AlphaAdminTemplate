@@ -3205,3 +3205,86 @@
  /**
   * JsTree demo end
   */
+
+ /**
+  * jQuery treetable begin
+  */
+ $(function() {
+
+   // example-basic
+   if ($("#example-basic").length > 0) {
+     $("#example-basic").treetable({
+       expandable: true
+     });
+   }
+
+   // Basic Static Tree
+   if ($("#example-basic-static").length > 0) {
+     $("#example-basic-static").treetable();
+   }
+
+   // Basic Expandable Tree
+   if ($("#example-basic-expandable").length > 0) {
+     $("#example-basic-expandable").treetable({
+       expandable: true
+     });
+   }
+
+   // Complex Tree With Drag and Drop
+   if ($("#example-advanced").length > 0) {
+
+     $("#example-advanced").treetable({
+       expandable: true
+     });
+
+     // Highlight selected row
+     $("#example-advanced tbody").on("mousedown", "tr", function() {
+       $(".selected").not(this).removeClass("selected");
+       $(this).toggleClass("selected");
+     });
+
+     // Drag & Drop Example Code
+     $("#example-advanced .file, #example-advanced .folder").draggable({
+       helper: "clone",
+       opacity: .75,
+       refreshPositions: true,
+       revert: "invalid",
+       revertDuration: 300,
+       scroll: true
+     });
+
+     $("#example-advanced .folder").each(function() {
+       $(this).parents("#example-advanced tr").droppable({
+         accept: ".file, .folder",
+         drop: function(e, ui) {
+           var droppedEl = ui.draggable.parents("tr");
+           $("#example-advanced").treetable("move", droppedEl.data("ttId"), $(this).data("ttId"));
+         },
+         hoverClass: "accept",
+         over: function(e, ui) {
+           var droppedEl = ui.draggable.parents("tr");
+           if (this != droppedEl[0] && !$(this).is(".expanded")) {
+             $("#example-advanced").treetable("expandNode", $(this).data("ttId"));
+           }
+         }
+       });
+     });
+
+     $("form#reveal").submit(function() {
+       var nodeId = $("#revealNodeId").val()
+
+       try {
+         $("#example-advanced").treetable("reveal", nodeId);
+       } catch (error) {
+         alert(error.message);
+       }
+
+       return false;
+     });
+
+   }
+
+ });
+ /**
+  * jQuery treetable end
+  */

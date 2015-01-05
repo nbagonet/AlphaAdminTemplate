@@ -4508,6 +4508,53 @@ disabled look for disabled choices in the results dropdown
 .jstree-anchor {
   padding-right: 10px;
 }
+/* jQuery treetable */
+table.treetable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d5d5d5;
+}
+table.treetable thead {
+  background: #eeeeee;
+}
+table.treetable thead th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #d5d5d5;
+}
+table.treetable tbody td {
+  padding: 8px 10px;
+  cursor: default;
+}
+table.treetable tbody .branch {
+  background-color: #f5f5f5;
+}
+table.treetable tbody .indenter {
+  line-height: 16px;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+table.treetable tbody .indenter a {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  text-indent: 3px;
+  color: #777;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+table.treetable tbody .indenter a:before {
+  content: '\f054';
+}
+table.treetable tbody .expanded .indenter a {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 /* Single Element CSS Spinners */
 .load1 .loader,
 .load1 .loader:before,

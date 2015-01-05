@@ -48,3 +48,79 @@
 {
     padding-right: 10px;
 }
+
+
+/* jQuery treetable */
+table.treetable
+{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border: 1px solid darken(@gray-lighter, 10%);
+    thead
+    {
+        background: @gray-lighter;
+        th
+        {
+            padding: 10px;
+
+            text-align: left;
+
+            border: 1px solid darken(@gray-lighter, 10%);
+        }
+    }
+    tbody
+    {
+        td
+        {
+            padding: 8px 10px;
+
+            cursor: default;
+        }
+        .branch
+        {
+            background-color: lighten(@gray-lighter, 2.5%);
+        }
+        .indenter
+        {
+            line-height: 16px;
+
+            overflow: hidden;
+
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            a
+            {
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: 14px;
+
+                display: inline-block;
+
+                text-align: center;
+                text-indent: 3px;
+
+                color: #777;
+
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                &:before
+                {
+                    content: '\f054';
+                }
+            }
+        }
+        .expanded
+        {
+            .indenter
+            {
+                a
+                {
+                    .rotate(90deg);
+                }
+            }
+        }
+    }
+}
