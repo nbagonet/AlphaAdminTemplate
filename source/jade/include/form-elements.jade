@@ -72,26 +72,26 @@ div.col-lg-12
               label.col-md-4.control-label(for="radios") Multiple Radios
               div.col-md-8
                 div.radio
-                  label(for="radios-0" data-icheck="true")
-                    input#radios-0.icheck(type="radio" name="radios" value="0")
+                  label(for="radios-0")
+                    input#radios-0(type="radio" name="radios" value="0")
                     span.mleft5 Option 0
                 div.radio
-                  label(for="radios-1" data-icheck="true")
-                    input#radios-1.icheck(type="radio" name="radios" value="1")
+                  label(for="radios-1")
+                    input#radios-1(type="radio" name="radios" value="1")
                     span.mleft5 Option 1
             div.form-group
               label.col-md-4.control-label(for="radios") Inline Radios
               div.col-md-8
                 - for(var i=0;i<4;i++)
-                  label.radio-inline(for="radios-inline-#{i}" data-icheck="true")
-                      input.icheck(id="radios-inline-#{i}" type="radio" name="radios" value="#{i}")
+                  label.radio-inline(for="radios-inline-#{i}")
+                      input(id="radios-inline-#{i}" type="radio" name="radios" value="#{i}")
                       span.mleft5 #{i}
             div.form-group
               label.col-md-4.control-label(for="checkboxes") Inline Checkboxes
               div.col-md-8
                 - for(var i=0;i<4;i++)
-                  label.checkbox-inline(for="checkboxes-inline-#{i}" data-icheck="true")
-                    input.icheck(id="checkboxes-inline-#{i}" type="checkbox" name="checkboxes" value="#{i}")
+                  label.checkbox-inline(for="checkboxes-inline-#{i}")
+                    input(id="checkboxes-inline-#{i}" type="checkbox" name="checkboxes" value="#{i}")
                     span.mleft5 #{i}
             div.form-group
               label.col-md-4.control-label(for="filebutton") File Button
@@ -123,3 +123,191 @@ div.col-lg-12
                   input#appendedtext.form-control(type="text" name="appendedtext" placeholder="placeholder")
                   span.input-group-addon append
                 p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="prependedcheckbox") Prepended Checkbox
+              div.col-md-8
+                div.input-group
+                  span.input-group-addon
+                    input(type="checkbox")
+                  input#prependedcheckbox.form-control(type="text" name="prependedcheckbox" placeholder="placeholder")
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="appendedcheckbox") Append Checkbox
+              div.col-md-8
+                div.input-group
+                  input#appendedcheckbox.form-control(type="text" name="appendedcheckbox" placeholder="placeholder")
+                  span.input-group-addon
+                    input(type="checkbox")
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="textarea") Textarea
+              div.col-md-8
+                textarea#textarea.form-control(name="textarea" rows="3" placeholder="placeholder")
+            div.form-group
+              label.col-md-4.control-label(for="") Double Button
+              div.col-md-8
+                +buttons("btn-success mright5","Button 1")
+                +buttons("btn-danger","Button 2")
+
+    div.col-md-6
+      //Disabled states
+      div.panel.panel-grey
+        div.panel-heading Disabled states
+        div.panel-body
+          form.form-horizontal(role="form")
+            div.form-group
+              label.col-md-4.control-label(for="textInputDisabled") Text
+              div.col-md-8: input#textInputDisabled.form-control(type="text" placeholder="Text" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="colorInputDisabled") Color
+              div.col-md-8: input#colorInputDisabled.form-control(type="color" value="#cc0000" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="dateInputDisabled") Date
+              div.col-md-8: input#dateInputDisabled.form-control(type="date" value="2015-01-01" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="monthInputDisabled") Month
+              div.col-md-8: input#monthInputDisabled.form-control(type="month" value="2015-01" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="weekInputDisabled") Week
+              div.col-md-8: input#weekInputDisabled.form-control(type="week" value="2015-W01" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="timeInputDisabled") Time
+              div.col-md-8: input#timeInputDisabled.form-control(type="time" value="01:00" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="dateTimeInputDisabled") Date Time
+              div.col-md-8: input#dateTimeInputDisabled.form-control(type="datetime-local" value="2015-01-01T01:00" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="emailInputDisabled") Email
+              div.col-md-8: input#emailInputDisabled.form-control(type="email" placeholder="Email" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="numberInputDisabled") Number
+              div.col-md-8: input#numberInputDisabled.form-control(type="number" value="90" max="100" min="10" step="5" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="urlInputDisabled") Url
+              div.col-md-8: input#urlInputDisabled.form-control(type="url" placeholder="Url" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="radiosDisabled") Multiple Radios
+              div.col-md-8
+                div.radio
+                  label(for="radiosDisabled-0")
+                    input#radiosDisabled-0(type="radio" name="radiosDisabled" value="0" disabled)
+                    span.mleft5 Option 0
+                div.radio
+                  label(for="radiosDisabled-1")
+                    input#radiosDisabled-1(type="radio" name="radiosDisabled" value="1" disabled)
+                    span.mleft5 Option 1
+            div.form-group
+              label.col-md-4.control-label(for="radiosDisabled") Inline Radios
+              div.col-md-8
+                - for(var i=0;i<4;i++)
+                  label.radio-inline(for="radiosDisabled-inline-#{i}")
+                      input(id="radiosDisabled-inline-#{i}" type="radio" name="radiosDisabled" value="#{i}" disabled)
+                      span.mleft5 #{i}
+            div.form-group
+              label.col-md-4.control-label(for="checkboxesDisabled") Inline Checkboxes
+              div.col-md-8
+                - for(var i=0;i<4;i++)
+                  label.checkbox-inline(for="checkboxesDisabled-inline-#{i}")
+                    input(id="checkboxesDisabled-inline-#{i}" type="checkbox" name="checkboxesDisabled" value="#{i}" disabled)
+                    span.mleft5 #{i}
+            div.form-group
+              label.col-md-4.control-label(for="filebuttonDisabled") File Button
+              div.col-md-8
+                input#filebuttonDisabled(name="filebuttonDisabled" type="file" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="selectbasicDisabled") Select Basic
+              div.col-md-8
+                select#selectbasicDisabled.form-control(name="selectbasicDisabled" disabled)
+                  option Option 1
+                  option Option 2
+            div.form-group
+              label.col-md-4.control-label(for="selectmultipleDisabled") Select Multiple
+              div.col-md-8
+                select#selectmultipleDisabled.form-control(name="selectmultipleDisabled" multiple disabled)
+                  - for(var i=1;i<=10;i++)
+                    option Option #{i}
+            div.form-group
+              label.col-md-4.control-label(for="prependedtextDisabled") Prepended Text
+              div.col-md-8
+                div.input-group
+                  span.input-group-addon prepend
+                  input#prependedtextDisabled.form-control(type="text" name="prependedtextDisabled" placeholder="placeholder" disabled)
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="appendedtextDisabled") Appended Text
+              div.col-md-8
+                div.input-group
+                  input#appendedtextDisabled.form-control(type="text" name="appendedtextDisabled" placeholder="placeholder" disabled)
+                  span.input-group-addon append
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="prependedcheckboxDisabled") Prepended Checkbox
+              div.col-md-8
+                div.input-group
+                  span.input-group-addon
+                    input(type="checkbox" disabled)
+                  input#prependedcheckboxDisabled.form-control(type="text" name="prependedcheckboxDisabled" placeholder="placeholder" disabled)
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="appendedcheckboxDisabled") Append Checkbox
+              div.col-md-8
+                div.input-group
+                  input#appendedcheckboxDisabled.form-control(type="text" name="appendedcheckboxDisabled" placeholder="placeholder" disabled)
+                  span.input-group-addon
+                    input(type="checkbox" disabled)
+                p.help-block 'help'
+            div.form-group
+              label.col-md-4.control-label(for="textareaDisabled") Textarea
+              div.col-md-8
+                textarea#textareaDisabled.form-control(name="textareaDisabled" rows="3" placeholder="placeholder" disabled)
+            div.form-group
+              label.col-md-4.control-label(for="") Double Button
+              div.col-md-8
+                +buttons("btn-success mright5","Button 1")(disabled)
+                +buttons("btn-danger","Button 2")(disabled)
+
+  div.row
+
+    div.col-md-6
+      //Validation states
+      div.panel.panel-violet
+        div.panel-heading Validation states
+        div.panel-body
+          form.form-horizontal(role="form")
+            div.form-group.has-success.has-feedback
+              label.col-md-4.control-label(for="inputSuccess1") Input with success
+              div.col-md-8
+                input#inputSuccess1.form-control(type="text" value="Success")
+                span.glyphicon.glyphicon-ok.form-control-feedback
+            div.form-group.has-warning.has-feedback
+              label.col-md-4.control-label(for="inputWarning1") Input with warning
+              div.col-md-8
+                input#inputWarning1.form-control(type="text" value="Warning")
+                span.glyphicon.glyphicon-warning-sign.form-control-feedback
+            div.form-group.has-error.has-feedback
+              label.col-md-4.control-label(for="inputError1") Input with error
+              div.col-md-8
+                input#inputError1.form-control(type="text" value="Error")
+                span.glyphicon.glyphicon-remove.form-control-feedback
+
+    div.col-md-6
+      //Validation states disabled
+      div.panel.panel-grey
+        div.panel-heading Validation states disabled
+        div.panel-body
+          form.form-horizontal(role="form")
+            div.form-group.has-success.has-feedback
+              label.col-md-4.control-label(for="inputSuccess2") Input with success
+              div.col-md-8
+                input#inputSuccess2.form-control(type="text" value="Success" disabled)
+                span.glyphicon.glyphicon-ok.form-control-feedback
+            div.form-group.has-warning.has-feedback
+              label.col-md-4.control-label(for="inputWarning2") Input with warning
+              div.col-md-8
+                input#inputWarning2.form-control(type="text" value="Warning" disabled)
+                span.glyphicon.glyphicon-warning-sign.form-control-feedback
+            div.form-group.has-error.has-feedback
+              label.col-md-4.control-label(for="inputError2") Input with error
+              div.col-md-8
+                input#inputError2.form-control(type="text" value="Error" disabled)
+                span.glyphicon.glyphicon-remove.form-control-feedback

@@ -17,6 +17,36 @@
 .form-control
 {
     border-radius: @border-radius-base;
+    .has-success &
+    {
+        color: darken(@color-success,30%);
+        background-color: lighten(@color-success, 43%);
+        &[disabled],
+        &[readonly]
+        {
+            background-color: #eee;
+        }
+    }
+    .has-warning &
+    {
+        color: darken(@color-warning,30%);
+        background-color: lighten(@color-warning, 35%);
+        &[disabled],
+        &[readonly]
+        {
+            background-color: #eee;
+        }
+    }
+    .has-error &
+    {
+        color: darken(@color-danger,20%);
+        background-color: lighten(@color-danger, 38%);
+        &[disabled],
+        &[readonly]
+        {
+            background-color: #eee;
+        }
+    }
 }
 .navbar-toggle
 {

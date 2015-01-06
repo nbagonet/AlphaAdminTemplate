@@ -3097,6 +3097,30 @@ li.mega-menu-dropdown {
 .form-control {
   border-radius: 0;
 }
+.has-success .form-control {
+  color: #255625;
+  background-color: #f5fbf5;
+}
+.has-success .form-control[disabled],
+.has-success .form-control[readonly] {
+  background-color: #fafafa;
+}
+.has-warning .form-control {
+  color: #985f0d;
+  background-color: #fef9f3;
+}
+.has-warning .form-control[disabled],
+.has-warning .form-control[readonly] {
+  background-color: #fafafa;
+}
+.has-error .form-control {
+  color: #a02622;
+  background-color: #fbefee;
+}
+.has-error .form-control[disabled],
+.has-error .form-control[readonly] {
+  background-color: #fafafa;
+}
 .navbar-toggle {
   border-radius: 0;
 }
