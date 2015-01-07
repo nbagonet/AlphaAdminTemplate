@@ -1,0 +1,25 @@
+//- Forms - Customized Elements - Dynamic Character Count
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-green
+  div.panel-heading Character Count
+  div.panel-body
+    div
+      form(role="form")
+        textarea#countableArea.form-control(rows="2" placeholder="Try it out yourself, Countable is enabled on this textarea. Just start typing...") Try it out yourself, Countable is enabled on this textarea. Just start typing...
+      pre.no-mb
+        p
+          |Paragraphs:
+          span#result__paragraphs 0
+        p
+          |Words:
+          span#result__words 0
+        p
+          |Characters:
+          span#result__characters 0
+        p
+          |Characters (with spaces):
+          span#result__all 0

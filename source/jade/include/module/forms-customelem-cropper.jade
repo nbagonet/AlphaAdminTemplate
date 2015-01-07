@@ -1,0 +1,257 @@
+//- Forms - Customized Elements - Image cropper
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-success
+  div.panel-heading Image cropper
+  div.panel-body
+    div#demo-cropper
+
+      style.
+        .img-preview {
+          background-color: #f7f7f7;
+          overflow: hidden;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .img-preview-sm {
+          height: 90px;
+          width: 160px;
+        }
+        #dataURLView img{
+          max-width: 100%;
+        }
+
+      .row
+        .col-md-9
+          h3 Image:
+          .img-container.pbottom15
+            img(src='http://lorempixel.com/800/450/animals/9/' width="100%")
+          .docs-toolbar.pbottom15.text-center
+            .btn-group
+              button.btn.btn-primary(data-method='zoom', data-option='0.1', type='button', title='Zoom In')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("zoom", 0.1)')
+                  span.glyphicon.glyphicon-zoom-in
+              button.btn.btn-primary(data-method='zoom', data-option='-0.1', type='button', title='Zoom Out')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("zoom", -0.1)')
+                  span.glyphicon.glyphicon-zoom-out
+              button.btn.btn-primary(data-method='rotate', data-option='-90', type='button', title='Rotate Left')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("rotate", -90)')
+                  span.glyphicon.glyphicon-share-alt.docs-flip-horizontal(style="-ms-transform:scale(-1, 1);transform:scale(-1, 1);")
+              button.btn.btn-primary(data-method='rotate', data-option='90', type='button', title='Rotate Right')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("rotate", 90)')
+                  span.glyphicon.glyphicon-share-alt
+              button.btn.btn-primary(data-method='setDragMode', data-option='move', type='button', title='Move')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("setDragMode", "move")')
+                  span.glyphicon.glyphicon-move
+              button.btn.btn-primary(data-method='setDragMode', data-option='crop', type='button', title='Crop')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("setDragMode", "crop")')
+                  span.glyphicon.glyphicon-plus
+              button.btn.btn-primary(data-method='clear', type='button', title='Clear')
+                span.docs-tooltip(data-toggle='tooltip', title='$().cropper("clear")')
+                  span.glyphicon.glyphicon-remove
+              label.btn.btn-primary(for='inputImage', title='Upload image file')
+                input#inputImage.hide(name='file', type='file', accept='image/*')
+                span.docs-tooltip(data-toggle='tooltip', title='Import image with FileReader')
+                  span.glyphicon.glyphicon-upload
+        .col-md-3
+          h3 Preview:
+          .row
+            .col-md-8
+              .img-preview.img-preview-sm
+          hr
+          h3 Data:
+          .docs-data
+            .input-group.mbottom5
+              label.input-group-addon(for='dataX') X
+              input#dataX.form-control(type='text', placeholder='x')
+              span.input-group-addon px
+            .input-group.mbottom5
+              label.input-group-addon(for='dataY') Y
+              input#dataY.form-control(type='text', placeholder='y')
+              span.input-group-addon px
+            .input-group.mbottom5
+              label.input-group-addon(for='dataWidth') W
+              input#dataWidth.form-control(type='text', placeholder='width')
+              span.input-group-addon px
+            .input-group
+              label.input-group-addon(for='dataHeight') H
+              input#dataHeight.form-control(type='text', placeholder='height')
+              span.input-group-addon px
+
+      .row
+        .col-md-9
+          .docs-btn-group
+            h3 Methods:
+            .button-group
+              button#reset.btn.btn-warning.btn-sm.mright5.mbottom5(data-method='reset', data-toggle='tooltip', type='button', title='$().cropper("reset")') Reset
+              button#reset2.btn.btn-warning.btn-sm.mright5.mbottom5(data-method='reset', data-option='true', data-toggle='tooltip', type='button', title='$().cropper("reset", true)') Reset (deep)
+              button#enable.btn.btn-success.btn-sm.mright5.mbottom5(data-method='enable', type='button') Enable
+              button#disable.btn.btn-warning.btn-sm.mright5.mbottom5(data-method='disable', type='button') Disable
+              button#clear.btn.btn-primary.btn-sm.mright5.mbottom5(data-method='clear', type='button') Clear
+              button#destroy.btn.btn-danger.btn-sm.mright5.mbottom5(data-method='destroy', type='button') Destroy
+              button#freeRatio.btn.btn-info.btn-sm.mright5.mbottom5(data-method='setAspectRatio', data-option='auto', data-toggle='tooltip', type='button', title='$().cropper("setAspectRatio", "auto")') Free Ratio
+              button#setData.btn.btn-primary.btn-sm.mbottom5(type='button', title='Set with the following data') Set Data
+            .row
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-addon X
+                  input#setDataX.form-control(type='number', value='550')
+                  span.input-group-addon px
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-addon Y
+                  input#setDataY.form-control(type='number', value='100')
+                  span.input-group-addon px
+            .row
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-addon Width
+                  input#setDataWidth.form-control(type='number', value='480')
+                  span.input-group-addon px
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-addon Height
+                  input#setDataHeight.form-control(type='number', value='270')
+                  span.input-group-addon px
+            .row
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#zoom.btn.btn-primary(type='button') Zoom
+                  input#zoomWith.form-control(type='number', value='0.5')
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#rotate.btn.btn-primary(type='button') Rotate
+                  input#rotateWith.form-control(type='number', value='45')
+                  span.input-group-addon deg
+            .row
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#replace.btn.btn-primary(type='button') Replace
+                  input#replaceWith.form-control(type='text', value='img/picture-2.jpg', placeholder='Input image URL')
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#setAspectRatio.btn.btn-primary(type='button') Set Aspect Ratio
+                  input#setAspectRatioWith.form-control(type='text', value='0.618', placeholder='Input aspect ratio')
+            .row
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#getData.btn.btn-info(type='button') Get Data
+                  input#getDataInto.form-control(type='text')
+              .col-sm-6.col-md-6
+                .input-group.mbottom5
+                  span.input-group-btn
+                    button#getImageData.btn.btn-info(type='button') Get Image Data
+                  input#getImageDataInto.form-control(type='text')
+            .row.docs-data-url
+              .col-sm-12
+                button#getDataURL.btn.btn-primary.btn-sm.mright5.mbottom5(data-toggle='tooltip', type='button', title='$().cropper("getDataURL")') Get Data URL
+                button#getDataURL2.btn.btn-primary.btn-sm.mright5.mbottom5(data-toggle='tooltip', type='button', title='$().cropper("getDataURL", "image/jpeg")') Get Data URL (JPG)
+                button#getDataURL3.btn.btn-primary.btn-sm.mright5.mbottom5(data-toggle='tooltip', type='button', title='$().cropper("getDataURL", {width: 160, height: 90})') Get Data URL (160*90)
+                button#getDataURL4.btn.btn-primary.btn-sm.mbottom5(data-toggle='tooltip', type='button', title='$().cropper("getDataURL", {width: 320, height: 180}, "image/jpeg", 0.8)') Get Data URL (320*180, JPG, 0.8)
+              .col-sm-6.mbottom5
+                textarea#dataURLInto.form-control(rows='8')
+              .col-sm-6.mbottom5
+                #dataURLView
+        .col-md-3
+          h3 Options:
+          form.form-horizontal.docs-options(role='form')
+            .form-group
+              label.col-xs-4.control-label autoCrop:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#autoCrop1(name='autoCrop', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#autoCrop2(name='autoCrop', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label dragCrop:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#dragCrop1(name='dragCrop', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#dragCrop2(name='dragCrop', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label modal:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#modal1(name='modal', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#modal2(name='modal', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label dashed:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#dashed1(name='dashed', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#dashed2(name='dashed', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label movable:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#movable1(name='movable', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#movable2(name='movable', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label resizable:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#resizable1(name='resizable', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#resizable2(name='resizable', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label zoomable:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#zoomable1(name='zoomable', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#zoomable2(name='zoomable', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label rotatable:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary.active
+                    input#rotatable1(name='rotatable', type='radio', value='true', checked='')
+                    |  Yes
+                  label.btn.btn-primary
+                    input#rotatable2(name='rotatable', type='radio', value='false')
+                    |  No
+            .form-group
+              label.col-xs-4.control-label multiple:
+              .col-xs-8
+                .btn-group(data-toggle='buttons')
+                  label.btn.btn-primary
+                    input#multiple1(name='multiple', type='radio', value='true')
+                    |  Yes
+                  label.btn.btn-primary.active
+                    input#multiple2(name='multiple', type='radio', value='false', checked='')
+                    |  No
+

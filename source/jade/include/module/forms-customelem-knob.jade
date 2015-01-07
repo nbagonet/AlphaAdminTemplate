@@ -1,0 +1,47 @@
+//- Forms - Customized Elements - Knob Dial
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-warning
+  div.panel-heading Knob Dial
+  div.panel-body
+    div.row
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 Disable display input
+        input.knob(data-width="200" data-displayInput="false" value="35")
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 'cursor' mode
+        input.knob(data-width='200', data-cursor='true', data-fgcolor='#222222', data-thickness='.3', value='29')
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 Display previous value
+        input.knob(data-width='200', data-min='-100', data-displayprevious='true', value='44')
+    div.row
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 Angle offset
+        input.knob(data-angleoffset='90', data-linecap='round', value='35')
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 Angle offset and arc
+        input.knob(data-angleoffset='-125', data-anglearc='250', data-fgcolor='#cc0000', data-bgcolor="#ffcc00" value='35')
+      div.col-md-4.text-center.mtop20.mbottom20
+        h4 5-digit values, step 1000
+        input.knob(data-min='-15000', data-displayprevious='true', data-max='15000', data-step='1000', value='-11000')
+    div.row.mtop20
+      h4.text-center Overloaded 'draw' method
+      div.col-md-4.text-center.mbottom20
+        input.knob(data-width='200', data-displayprevious='true', data-fgcolor='#4a4a4a', data-skin='tron', data-cursor='true', value='75', data-thickness='.2')
+      div.col-md-4.text-center.mbottom20
+        input.knob(data-width='200', data-displayprevious='true', data-fgcolor='#336699', data-skin='tron', data-thickness='.2', value='75')
+      div.col-md-4.text-center.mbottom20
+        input.knob(data-width='200', data-angleoffset='180', data-fgcolor='#ffcc00', data-skin='tron', data-thickness='.1', value='35')
+    div.row.mtop20
+      h4.text-center Superpose (unreadable futuristic clock)
+      div.col-md-12.text-center.mbottom20
+        div(style='position:relative;width:350px;margin:auto;height:350px;')
+          div(style='position:absolute;left:10px;top:10px')
+            input.knob.hour(data-min='0', data-max='24', data-bgcolor='#333', data-fgcolor='#ffec03', data-displayinput='false', data-width='300', data-height='300', data-thickness='.3')
+          div(style='position:absolute;left:60px;top:60px')
+            input.knob.minute(data-min='0', data-max='60', data-bgcolor='#333', data-displayinput='false', data-width='200', data-height='200', data-thickness='.45')
+          div(style='position:absolute;left:110px;top:110px')
+            input.knob.second(data-min='0', data-max='60', data-bgcolor='#333', data-fgcolor='rgb(127, 255, 0)', data-displayinput='false', data-width='100', data-height='100', data-thickness='.3')

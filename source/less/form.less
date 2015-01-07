@@ -73,3 +73,98 @@
 {
     border-radius: 0 @border-radius-base @border-radius-base 0;
 }
+
+
+/* Bootstrap Switch */
+.bootstrap-switch
+{
+    border-color: transparent;
+    border-radius: @border-radius-base;
+    .bootstrap-switch-label
+    {
+        color: #333;
+        background: darken(@gray-lighter, 5%);
+    }
+    .bootstrap-switch-handle-on,
+    .bootstrap-switch-handle-off
+    {
+        &.bootstrap-switch-red
+        {
+            color: #fff;
+            background-color: @color-red;
+        }
+        &.bootstrap-switch-orange
+        {
+            color: #fff;
+            background-color: @color-orange;
+        }
+        &.bootstrap-switch-yellow
+        {
+            color: #fff;
+            background-color: @color-yellow;
+        }
+        &.bootstrap-switch-green
+        {
+            color: #fff;
+            background-color: @color-green;
+        }
+        &.bootstrap-switch-black
+        {
+            color: #fff;
+            background-color: @color-black;
+        }
+        &.bootstrap-switch-blue
+        {
+            color: #fff;
+            background-color: @color-blue;
+        }
+        &.bootstrap-switch-violet
+        {
+            color: #fff;
+            background-color: @color-violet;
+        }
+        &.bootstrap-switch-pink
+        {
+            color: #fff;
+            background-color: @color-pink;
+        }
+        &.bootstrap-switch-grey
+        {
+            color: #fff;
+            background-color: @color-grey;
+        }
+    }
+    .bootstrap-switch-handle-on
+    {
+        border-top-left-radius: @border-radius-base;
+        border-bottom-left-radius: @border-radius-base;
+    }.bootstrap-switch-handle-off
+    {
+        border-top-right-radius: @border-radius-base;
+        border-bottom-right-radius: @border-radius-base;
+    }
+    &.bootstrap-switch-focused
+    {
+        border-color: transparent;
+
+        .box-shadow(none);
+    }
+    &.bootstrap-switch-on,
+    &.bootstrap-switch-inverse.bootstrap-switch-off
+    {
+        .bootstrap-switch-label
+        {
+            border-top-right-radius: @border-radius-base;
+            border-bottom-right-radius: @border-radius-base;
+        }
+    }
+    &.bootstrap-switch-off,
+    &.bootstrap-switch-inverse.bootstrap-switch-on
+    {
+        .bootstrap-switch-label
+        {
+            border-top-left-radius: @border-radius-base;
+            border-bottom-left-radius: @border-radius-base;
+        }
+    }
+}

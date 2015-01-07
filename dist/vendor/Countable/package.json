@@ -1,0 +1,31 @@
+{
+  "name": "countable",
+  "description": "Countable is a JavaScript library to add live paragraph-, word- and character-counting to an HTML element.",
+  "author": "Sacha Schmid <https://twitter.com/sachaschmid>",
+  "version": "2.1.0",
+  "main": "Countable.js",
+  "keywords": [
+    "paragraphs",
+    "words",
+    "characters",
+    "count",
+    "live"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RadLikeWhoa/Countable.git"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "karma": "^0.12.21",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.7",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "license": "MIT"
+}

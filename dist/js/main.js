@@ -199,7 +199,9 @@ $(function() {
   // Initialize Skycons end
 
   //BEGIN CKEDITOR
-  CKEDITOR.disableAutoInline = true;
+  if (CKEDITOR) {
+    CKEDITOR.disableAutoInline = true;
+  }
   //END CKEDITOR
 
   // Initialze Bootstrap WYSIWYG5 Editors begin
@@ -259,5 +261,11 @@ $(function() {
     });
   }
   // Sco.Message.js Test end
+
+  // Bootstrap Switch begin
+  if ($(".switch").length > 0) {
+    $(".switch").bootstrapSwitch();
+  }
+  // Bootstrap Switch end
 
 });

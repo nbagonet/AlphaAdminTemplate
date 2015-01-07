@@ -1,0 +1,91 @@
+//- Forms - Customized Elements - x-editable
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-pink
+  div.panel-heading X-editable
+  div#x-editable-demo.panel-body
+    div.mtop20.mbottom20.clearfix
+      div.pull-left.mright30
+        p Click to edit
+      div.pull-left.mright30
+        label
+          input#autoopen.icheck(type="checkbox")
+          span.mleft5 auto-open next field
+      div.pull-left.mright30
+        label
+          input#inline-editing.icheck(type="checkbox")
+          span.mleft5 Inline editing
+      div.pull-left.mright30
+        label
+          span.mright5 Enable:
+          input#enable.switch(type="checkbox" checked data-on-color="success" data-off-color="danger" data-size="mini")
+
+    div.mbottom20
+      table#user.table.table-bordered.table-striped(style='clear: both')
+        tbody
+          tr
+            td(width='35%') Simple text field
+            td(width='65%')
+              a#username(href='#', data-type='text', data-pk='1', data-title='Enter username') superuser
+          tr
+            td Empty text field, required
+            td
+              a#firstname(href='#', data-type='text', data-pk='1', data-placement='right', data-placeholder='Required', data-title='Enter your firstname')
+          tr
+            td Select, local array, custom display
+            td
+              a#sex(href='#', data-type='select', data-pk='1', data-value='', data-title='Select sex')
+          tr
+            td Select, remote array, no buttons
+            td
+              a#group(href='#', data-type='select', data-pk='1', data-value='5', data-source='/groups', data-title='Select group') Admin
+          tr
+            td Select, error while loading
+            td
+              a#status(href='#', data-type='select', data-pk='1', data-value='0', data-source='/status', data-title='Select status') Active
+          tr
+            td Combodate (date)
+            td
+              a#dob(href='#', data-type='combodate', data-value='1984-05-15', data-format='YYYY-MM-DD', data-viewformat='DD/MM/YYYY', data-template='D / MMM / YYYY', data-pk='1', data-title='Select Date of birth')
+          tr
+            td Combodate (datetime)
+            td
+              a#event(href='#', data-type='combodate', data-template='D MMM YYYY  HH:mm', data-format='YYYY-MM-DD HH:mm', data-viewformat='MMM D, YYYY, HH:mm', data-pk='1', data-title='Setup event date and time')
+          tr
+            td
+              | Textarea, buttons below. Submit by 
+              i ctrl+enter
+            td
+              a#comments(href='#', data-type='textarea', data-pk='1', data-placeholder='Your comments here...', data-title='Enter comments')
+                | awesome
+                | user!
+          tr
+            td Twitter typeahead.js
+            td
+              a#state2(href='#', data-type='typeaheadjs', data-pk='1', data-placement='right', data-title='Start typing State..')
+          tr
+            td Checklist
+            td
+              a#fruits(href='#', data-type='checklist', data-value='2,3', data-title='Select fruits')
+          tr
+            td Select2 (tags mode)
+            td
+              a#tags(href='#', data-type='select2', data-pk='1', data-title='Enter tags') html, javascript
+          tr
+            td Select2 (dropdown mode)
+            td
+              a#country(href='#', data-type='select2', data-pk='1', data-value='BS', data-title='Select country')
+          tr
+            td Custom input, several fields
+            td
+              a#address(href='#', data-type='address', data-pk='1', data-title='Please, fill address')
+
+    div.mbottom20
+      h4
+        |Console&nbsp;
+        small (all ajax requests here are emulated)
+      div
+        textarea#console.form-control(rows="8" autocomplete="off")

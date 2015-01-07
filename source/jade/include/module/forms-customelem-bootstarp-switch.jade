@@ -1,0 +1,33 @@
+//- Forms - Customized Elements - Bootstrap Switch
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-violet
+  div.panel-heading Bootstrap Switch
+  div.panel-body
+    div
+      form.form-horizontal(role="form")
+        div.form-group
+          label.col-md-3.control-label Colors
+          div.col-md-9
+            each color in ['primary','success','info','warning','danger','default','red','orange','yellow','green','blue','black','violet','pink','grey']
+              input.switch(type="checkbox" checked data-on-color="#{color}" data-wrapper-class="container mright5 mbottom5")
+        div.form-group
+          label.col-md-3.control-label Size
+          div.col-md-9
+            each size in ['mini','small','normal','large']
+              input.switch(type="checkbox" checked data-on-color="primary" data-wrapper-class="container mright5 mbottom5" data-size="#{size}")
+        div.form-group
+          label.col-md-3.control-label Disabled
+          div.col-md-9
+            input.switch(type="checkbox" checked data-on-color="red" data-wrapper-class="container mright5 mbottom5" disabled)
+        div.form-group
+          label.col-md-3.control-label Text
+          div.col-md-9
+            input.switch(type="checkbox" data-on-color="green" data-off-color="red" data-wrapper-class="container mright5 mbottom5" data-on-text="Open" data-off-text="Close" checked)
+        div.form-group
+          label.col-md-3.control-label Icons
+          div.col-md-9
+            input.switch(type="checkbox" data-on-color="info" data-off-color="grey" data-wrapper-class="container mright5 mbottom5" data-on-text="<i class='fa fa-lock'></i>" data-off-text="<i class='fa fa-unlock'></i>" checked)

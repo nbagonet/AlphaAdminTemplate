@@ -1,0 +1,31 @@
+//- Forms - Customized Elements - Mask input
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-red
+  div.panel-heading Mask input
+  div.panel-body
+    div
+      form#maskInput.form-horizontal(role="form")
+        div.form-group.has-feedback
+          label.col-md-3.control-label(for="maskInput-date") Date
+          div.col-md-9
+            input#maskInput-date.form-control(name="maskInput-date" type="text" placeholder="__ / __ / ____")
+            span.form-control-feedback.glyphicon.glyphicon-calendar.text-grey
+        div.form-group.has-feedback
+          label.col-md-3.control-label(for="maskInput-phone") Phone
+          div.col-md-9
+            input#maskInput-phone.form-control(name="maskInput-phone" type="tel" placeholder="( ___ ) ___ - ____")
+            span.form-control-feedback.glyphicon.glyphicon-phone-alt.text-grey
+        div.form-group.has-feedback
+          label.col-md-3.control-label(for="maskInput-credit-card") Credit card
+          div.col-md-9
+            input#maskInput-credit-card.form-control(name="maskInput-credit-card" type="text" placeholder="xxxx - xxxx - xxxx - xxxx")
+            span.form-control-feedback.glyphicon.glyphicon-credit-card.text-grey
+        div.form-group.has-feedback
+          label.col-md-3.control-label(for="maskInput-product-key") Product Key
+          div.col-md-9
+            input#maskInput-product-key.form-control(name="maskInput-product-key" type="text" placeholder="a* - 123 - 1234 - abcd1234")
+            span.form-control-feedback.glyphicon.glyphicon-lock.text-grey
