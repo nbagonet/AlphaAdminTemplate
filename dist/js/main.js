@@ -268,4 +268,8 @@ $(function() {
   }
   // Bootstrap Switch end
 
+  // Bootstrap File Input begin
+  $('input[type=file]').bootstrapFileInput();
+  // Bootstrap File Input end
+
 });

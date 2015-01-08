@@ -31,8 +31,8 @@
     {
         > .caret
         {
+            width: 0;
             margin-left: .5em;
-            width:0;
         }
     }
     ~ .dropdown-toggle
@@ -82,4 +82,28 @@
     font-size: @font-size-smaller;
 
     border-radius: @border-radius-base;
+}
+
+
+/* Bootstrap Select */
+.bootstrap-select
+{
+    .btn
+    {
+        font-weight: @font-weight-thin;
+        &:focus
+        {
+            outline: none!important;
+        }
+    }
+    &.btn-group
+    {
+        .dropdown-menu
+        {
+            &.inner
+            {
+                overflow-x: hidden;
+            }
+        }
+    }
 }

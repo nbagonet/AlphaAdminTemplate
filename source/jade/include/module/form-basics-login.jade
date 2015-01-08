@@ -1,0 +1,31 @@
+//- Forms - Form Basics - Login
+
+include ../../common/variables
+include ../mixins
+
+
+form.form-horizontal.p5(role="form" action="#login-submit")
+  div.form-group.has-feedback
+    label.col-md-3.control-label(for="login-name") Name
+    div.col-md-9
+      input#login-name.form-control(name="login-name" type="text" placeholder="")
+      span.form-control-feedback.glyphicon.glyphicon-user.text-grey
+  div.form-group.has-feedback
+    label.col-md-3.control-label(for="login-pass") Password
+    div.col-md-9
+      input#login-pass.form-control(name="login-pass" type="password" placeholder="")
+      span.form-control-feedback.glyphicon.glyphicon-lock.text-grey
+  div.form-group.mbottom10
+    div.col-md-offset-3.col-md-9
+      div.row
+        div.col-md-7.no-pr
+          div.checkbox.no-p
+            label(data-icheck="true")
+              input.icheck(type="checkbox")
+              span.mleft5 Keep me signed in
+        div.col-md-5.text-right.no-pl
+          a.link-red(href="#forgot_password") Forgot password?
+  div.form-group.no-mb
+    div.col-md-offset-3.col-md-9
+      +buttons("btn-red mright5","Sign in","fa fa-sign-in fa-lg mright5")
+      +buttons("btn-success","Registr","","","","2")(href="#Registr")

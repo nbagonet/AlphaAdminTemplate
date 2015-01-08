@@ -1,0 +1,34 @@
+//- Forms - Form Basics - Review Form
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#review")
+  div.form-group.has-feedback
+    input#review-name.form-control(type="text" name="review-name" placeholder="Name")
+    i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+  div.form-group.has-feedback
+    input#review-email.form-control(type="text" name="review-email" placeholder="Email")
+    i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+  div.form-group
+    textarea.form-control(rows="5" placeholder="Text of the review")
+  //Rating
+  div.form-group
+    div.row
+      div.col-md-6.ptop10
+        label.control-label(for="review-rating1") Quality of the product
+      div.col-md-6.text-right
+        input#review-rating1.rating(name='review-rating1' value='1', data-min='0', data-max='5', data-step='0.5', data-size='xs' data-show-clear="false" data-show-caption="false")
+    div.row
+      div.col-md-6.ptop10
+        label.control-label(for="review-rating2") Reliability of the product
+      div.col-md-6.text-right
+        input#review-rating2.rating(name='review-rating1' value='1', data-min='0', data-max='5', data-step='0.5', data-size='xs' data-show-clear="false" data-show-caption="false")
+    div.row
+      div.col-md-6.ptop10
+        label.control-label(for="review-rating3") Overall rating
+      div.col-md-6.text-right
+        input#review-rating3.rating(name='review-rating1' value='1', data-min='0', data-max='5', data-step='0.5', data-size='xs' data-show-clear="false" data-show-caption="false")
+  div.form-group.text-right
+    +buttons("btn-pink","Submit review")

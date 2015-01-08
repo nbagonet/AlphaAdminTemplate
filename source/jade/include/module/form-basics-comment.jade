@@ -1,0 +1,28 @@
+//- Forms - Form Basics - Comment Form
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#comment")
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        label.control-label(for="comment-name") Name
+        input#comment-name.form-control(name="comment-name" type="text" placeholder="")
+        i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        label.control-label(for="comment-email") Email
+        input#comment-email.form-control(name="comment-email" type="email" placeholder="")
+        i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+  div.form-group.has-feedback
+    label.control-label(for="comment-site") Website
+    input#comment-site.form-control(name="comment-site" type="url" placeholder="")
+    i.form-control-feedback.fa.fa-lg.fa-globe.text-grey
+  div.form-group
+    label.control-label(for="comment-con") Comment
+    textarea#comment-con.form-control(rows="5" name="comment-con")
+    small.help-block= 'You may use these HTML tags and attributes: <a href="" title="">, <abbr title="">, <acronym title="">, <b>, <blockquote cite="">, <cite>, <code>, <del datetime="">, <em>, <i>, <q cite="">, <strike>, <strong>.'
+  div.form-group.text-right
+    +buttons("btn-violet","Add comment","fa fa-paper-plane-o mright5")

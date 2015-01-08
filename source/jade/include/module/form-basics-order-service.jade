@@ -1,0 +1,59 @@
+//- Forms - Form Basics - Order services
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#order-service")
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-name.form-control(name="os-name" type="text" placeholder="Name")
+        i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-company.form-control(name="os-company" type="text" placeholder="Conmpany")
+        i.form-control-feedback.fa.fa-lg.fa-briefcase.text-grey
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-email.form-control(name="os-email" type="email" placeholder="Email")
+        i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-phone.form-control(name="os-phone" type="tel" placeholder="Phone")
+        i.form-control-feedback.fa.fa-lg.fa-phone.text-grey
+  hr.no-mt
+  div.row
+    div.col-md-6
+      div.form-group
+        select.form-control.selectpicker
+          option Interested in
+          option(value='design') Design
+          option(value='development') Development
+          option(value='illustration') Illustration
+          option(value='brading') Branding
+          option(value='video') Video
+    div.col-md-6
+      div.form-group
+        select.form-control.selectpicker
+          option Budget
+          option(value='0') Less than 5000$
+          option(value='1') 5000$ - 10000$
+          option(value='2') 10000$ - 20000$
+          option(value='3') More than 20000$
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-esd.form-control(name="os-esd" type="text" placeholder="Expected start date")
+        i.form-control-feedback.fa.fa-lg.fa-calendar.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        input#os-eed.form-control(name="os-eed" type="text" placeholder="Expected end date")
+        i.form-control-feedback.fa.fa-lg.fa-calendar.text-grey
+  div.form-group
+    input#inputIncludeFile.btn-black.btn-block(name="inputIncludeFile" type="file" placeholder="Inlcude some file" title="Inlcude some file..." data-filename-placement="inside")
+  div.form-group
+    textarea.form-control(rows="5" placeholder="Tell us about your project")
+  div.text-right
+    +buttons("btn-black","Send")

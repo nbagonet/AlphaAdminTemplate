@@ -1,0 +1,50 @@
+//- Forms - Form Basics - Registration
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#reg")
+  div.form-group.has-feedback
+    input#reg-name.form-control(name="reg-name" type="text" placeholder="Username")
+    i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+  div.form-group.has-feedback
+    input#reg-email.form-control(name="reg-email" type="email" placeholder="Email address")
+    i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+  div.form-group.has-feedback
+    input#reg-pass.form-control(name="reg-pass" type="text" placeholder="Password")
+    i.form-control-feedback.fa.fa-lg.fa-unlock-alt.text-grey
+  div.form-group.has-feedback
+    input#reg-cpass.form-control(name="reg-cpass" type="text" placeholder="Confirm Password")
+    i.form-control-feedback.fa.fa-lg.fa-lock.text-grey
+  hr.no-mt
+  div.row
+    div.col-md-6
+      div.form-group
+        input#reg-fname.form-control(name="reg-fname" type="text" placeholder="First Name")
+    div.col-md-6
+      div.form-group
+        input#reg-lname.form-control(name="reg-lname" type="text" placeholder="Last Name")
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#reg-mob.form-control(name="reg-mob" type="text" placeholder="Mobile phone")
+        i.form-control-feedback.fa.fa-lg.fa-mobile.text-grey
+    div.col-md-6
+      div.form-group
+        select.form-control.selectpicker
+          option Male
+          option Female
+          option Other
+  div.form-group
+    div.checkbox.no-mt
+      label(data-icheck="true")
+        input.icheck(type="checkbox")
+        span.mleft5.small I want to receive news and special offers
+  div.form-group
+    div.checkbox.no-mt
+      label(data-icheck="true")
+        input.icheck(type="checkbox")
+        span.mleft5.small!= 'I agree with the <a class="link-green" href="###" target="_blank">Terms and Conditions<i class="fa fa-external-link mleft5"></i></a>'
+  div.form-group.text-right.mtop25
+    +buttons("btn-green btn-block btn-lg", "Submit")

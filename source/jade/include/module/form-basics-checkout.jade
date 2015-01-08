@@ -1,0 +1,84 @@
+//- Forms - Form Basics - Checkout
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#checkout-submit")
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#checkout-first-name.form-control(name="checkout-first-name" type="text" placeholder="First Name")
+        i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        input#checkout-last-name.form-control(name="checkout-last-name" type="text" placeholder="Last Name")
+        i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        input#checkout-email.form-control(name="checkout-email" type="email" placeholder="Email")
+        i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        input#checkout-phone.form-control(name="checkout-phone" type="tel" placeholder="Phone")
+        i.form-control-feedback.fa.fa-lg.fa-phone.text-grey
+  hr.no-mt
+  div.row
+    div.col-md-4
+      div.form-group
+        select.form-control.selectpicker
+          option Country
+          option Andorra
+          option United Arab
+    div.col-md-4
+      div.form-group
+        select.form-control.selectpicker
+          option City
+          option Hongkong
+          option London
+    div.col-md-4
+      div.form-group
+        input#checkout-post-code.form-control(name="checkout-post-code" type="text" placeholder="Post code")
+  div.form-group.has-feedback
+    input#checkout-address.form-control(name="checkout-address" type="text" placeholder="Address")
+    i.form-control-feedback.fa.fa-lg.fa-location-arrow.text-grey
+  div.form-group
+    textarea.form-control(rows="5" placeholder="Additional info")
+  hr.no-mt
+  div.form-group
+    div.radio
+      label.radio-inline(data-icheck="true")
+        input.icheck(type="radio" name="checkout-pay" value="Visa")
+        i.fa.fa-2x.fa-cc-visa.text-primary.mleft5(style="vertical-align:middle;")
+      label.radio-inline(data-icheck="true")
+        input.icheck(type="radio" name="checkout-pay" value="MasterCard")
+        i.fa.fa-2x.fa-cc-mastercard.text-danger.mleft5(style="vertical-align:middle;")
+      label.radio-inline(data-icheck="true")
+        input.icheck(type="radio" name="checkout-pay" value="PayPal")
+        i.fa.fa-2x.fa-cc-paypal.text-blue.mleft5(style="vertical-align:middle;")
+      label.radio-inline(data-icheck="true")
+        input.icheck(type="radio" name="checkout-pay" value="AmericanExpress")
+        i.fa.fa-2x.fa-cc-amex.text-black.mleft5(style="vertical-align:middle;")
+  div.form-group
+    input#checkout-card-name.form-control(name="checkout-card-name" type="text" placeholder="Name on card")
+  div.row
+    div.col-md-9
+      div.form-group
+        input#checkout-card-number.form-control(name="checkout-card-number" type="text" placeholder="Card number")
+    div.col-md-3
+      div.form-group
+        input#checkout-card-cvv2.form-control(name="checkout-card-cvv2" type="text" placeholder="CVV2")
+  div.form-horizontal
+    div.row.form-group
+      label.col-md-4.control-label Expiration date
+      div.col-md-4
+        select.form-control.selectpicker
+          option Month
+          each month in ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+            option #{month}
+      div.col-md-4
+        input#checkout-exp-year.form-control(name="checkout-exp-year" type="text" placeholder="Year")
+  hr.no-mt
+  div.form-group.text-right
+    +buttons("btn-warning","Continue ","","fa fa-arrow-right")

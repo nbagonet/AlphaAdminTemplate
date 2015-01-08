@@ -1,0 +1,33 @@
+//- Forms - Form Basics - Contacts
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form" action="#contacts-submit")
+  div.row
+    div.col-md-6
+      div.form-group.has-feedback
+        label.control-label(for="contacts-name") Name
+        input#contacts-name.form-control(name="contacts-name" type="text" placeholder="")
+        i.form-control-feedback.fa.fa-lg.fa-user.text-grey
+    div.col-md-6
+      div.form-group.has-feedback
+        label.control-label(for="contacts-email") Email
+        input#contacts-email.form-control(name="contacts-email" type="email" placeholder="")
+        i.form-control-feedback.fa.fa-lg.fa-envelope.text-grey
+  div.form-group
+    label.control-label(for="contacts-subject") Subject
+    input#contacts-subject.form-control(name="contacts-subject" type="text" placeholder="")
+  div.form-group
+    label.control-label(for="contacts-message") Message
+    textarea#contacts-message.form-control(rows="5" name="contacts-message")
+  div.form-group
+    div.row
+      div.col-md-8.no-pr
+        div.checkbox.no-mt
+          label(data-icheck="true")
+            input.icheck(type="checkbox")
+            span.mleft5.small Send a copy to my e-mail address
+      div.col-md-4.text-right.no-pl
+        +buttons("btn-orange","Send message")
