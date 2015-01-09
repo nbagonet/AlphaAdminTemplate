@@ -3,6 +3,10 @@
 // --------------------------------------------------
 
 
+// == CSS images folder
+@css-img-base : "../img/";
+
+
 // == Colors
 //
 //## Default Color.
@@ -85,6 +89,11 @@
 @headings-line-height  :1.1;
 @headings-color        :inherit;
 
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
 
 // == Iconography
 //
@@ -107,6 +116,37 @@
 //
 //##
 @buttons-font-wight:@font-weight-base;
+
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @color-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @color-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @color-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @color-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @color-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
 
 
 
@@ -279,3 +319,5 @@
 //##
 @modal-fullwidth-width:100%;
 @modal-widewidth-width:70%;
+
+

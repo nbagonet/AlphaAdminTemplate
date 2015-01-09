@@ -221,16 +221,12 @@ a.editable-click.editable-disabled:hover {
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-.datepicker {
+/*.datepicker {
   padding: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   direction: ltr;
-  /*.dow {
-		border-top: 1px solid #ddd !important;
-	}*/
-
 }
 .datepicker-inline {
   width: 220px;
@@ -660,4 +656,4 @@ a.editable-click.editable-disabled:hover {
   border: 1px solid #ccc;
   margin-left: -5px;
   margin-right: -5px;
-}
+}*/

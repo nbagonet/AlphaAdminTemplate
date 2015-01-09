@@ -1,4 +1,4 @@
-/* !!!THIS SCRIPT IS DEMO USE, PLEASE DO NOT INCLUDE IT IN FORMAL SYSTEM!!! */
+// THIS SCRIPT IS DEMO
 
 ;
 $(function() {
@@ -4325,4 +4325,99 @@ $(function() {
 });
 /**
  * Image cropper demo end
+ */
+
+
+/**
+ * Bootstrap Datepicker demo begin
+ */
+$(function() {
+
+  // Default
+  if ($("#bs-datepicker-default")[0]) {
+    $("#bs-datepicker-default").datepicker({
+      autoclose: true,
+      todayHighlight: true
+    });
+  }
+
+  // Format
+  if ($("#bs-datepicker-format")[0]) {
+    $("#bs-datepicker-format").datepicker({
+      format: "yyyy-mm-dd",
+      multidate: false,
+      autoclose: true,
+      todayHighlight: true
+    });
+  }
+
+  // Start with years
+  if ($("#bs-datepicker-swy")[0]) {
+    $("#bs-datepicker-swy").datepicker({
+      startView: 1
+    });
+  }
+
+  // Range
+  if ($("#bs-datepicker-range")[0]) {
+    $("#bs-datepicker-range").datepicker();
+  }
+
+  // Inline
+  if ($("#bs-datepicker-inline")[0]) {
+    $("#bs-datepicker-inline").datepicker();
+  }
+
+});
+/**
+ * Bootstrap Datepicker demo end
+ */
+
+
+/**
+ * Date Range Pickers begin
+ */
+$(function() {
+
+  // Date
+  if ($("#daterange-pickers-date")[0]) {
+    $("#daterange-pickers-date").daterangepicker();
+  }
+
+  // Date&Time
+  if ($("#daterange-pickers-datetime")[0]) {
+    $("#daterange-pickers-datetime").daterangepicker({
+      timePicker: true,
+      timePickerIncrement: 30,
+      format: 'MM/DD/YYYY h:mm A'
+    });
+  }
+
+  // Advanced
+  if ($("#daterange-pickers-advanced")[0]) {
+    $("#daterange-pickers-advanced > span").html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+    $('#daterange-pickers-advanced').daterangepicker({
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+          'Last 7 Days': [moment().subtract('days', 6), moment()],
+          'Last 30 Days': [moment().subtract('days', 29), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+        },
+        startDate: moment().subtract('days', 29),
+        endDate: moment(),
+        opens: 'left'
+      },
+      function(start, end) {
+        $('#daterange-pickers-advanced > span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        $('#daterange-pickers-advanced input[name="datestart"]').val(start.format("YYYY-MM-DD"));
+        $('#daterange-pickers-advanced input[name="endstart"]').val(end.format("YYYY-MM-DD"));
+      }
+    );
+  }
+
+});
+/**
+ * Date Range Pickers end
  */

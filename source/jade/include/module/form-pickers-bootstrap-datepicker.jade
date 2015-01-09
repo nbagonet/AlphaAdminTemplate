@@ -1,0 +1,36 @@
+//- Forms - Form Pickers - Bootstrap Datepicker
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form")
+
+  div.form-group.has-feedback
+    label.control-label(for="bs-datepicker-default") Default
+    input#bs-datepicker-default.form-control(name="bs-datepicker-default" type="text" placeholder="")
+    span.form-control-feedback.fa.fa-calendar.text-grey
+
+  div.form-group.has-feedback
+    label.control-label(for="bs-datepicker-format") Format
+    input#bs-datepicker-format.form-control(name="bs-datepicker-format" type="text" placeholder="")
+    span.form-control-feedback.fa.fa-calendar.text-grey
+
+  div.form-group
+    label.control-label(for="bs-datepicker-swy") Start with years
+    div.input-group.date
+      input#bs-datepicker-swy.form-control(name="bs-datepicker-swy" type="text" placeholder="")
+      span.input-group-addon
+        i.fa.fa-calendar
+
+  div.form-group
+    label.control-label(for="bs-datepicker-range") Range
+    div#bs-datepicker-range.input-daterange.input-group
+      input.form-control(name="startdate" type="text")
+      span.input-group-addon
+        i.fa.fa-long-arrow-right
+      input.form-control(name="enddate" type="text")
+
+  div.form-group
+    label.control-label(for="bs-datepicker-inline") Inline
+    div#bs-datepicker-inline

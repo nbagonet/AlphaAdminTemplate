@@ -1,0 +1,28 @@
+//- Forms - Form Pickers - Date Range Pickers
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form")
+
+  div.form-group.has-feedback
+    label.control-label(for="daterange-pickers-date") Date
+    input#daterange-pickers-date.form-control(name="daterange-pickers-date" type="text" placeholder="")
+    span.form-control-feedback.fa.fa-calendar.text-grey
+
+  div.form-group.has-feedback
+    label.control-label(for="daterange-pickers-datetime") Date &amp; Time
+    input#daterange-pickers-datetime.form-control(name="daterange-pickers-datetime" type="text" placeholder="")
+    span.form-control-feedback.fa.fa-calendar.text-grey
+
+  div.form-group
+    label.control-label(for="daterange-pickers-advanced") Advanced
+    div
+      div#daterange-pickers-advanced.btn.btn-info.btn-block.reportrange
+        i.fa.fa-calendar.mright5
+        span.mright5
+        |Report
+        i.fa.fa-angle-down.mleft5
+        input(type="hidden" name="datestart" value="")
+        input(type="hidden" name="endstart" value="")
