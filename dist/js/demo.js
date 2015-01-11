@@ -4421,3 +4421,254 @@ $(function() {
 /**
  * Date Range Pickers end
  */
+
+
+/**
+ * Color Picker demo begin
+ */
+$(function() {
+
+  // Default
+  if ($("#colorpicker-default")[0]) {
+    $("#colorpicker-default").colorpicker().on('changeColor', function(ev) {
+      $("#colorpicker-default").css('color', ev.color.toHex());
+    });
+  }
+
+  // As a Component
+  if ($("#colorpicker-component")[0]) {
+    $("#colorpicker-component").colorpicker();
+  }
+
+  // RGBA Format
+  if ($("#colorpicker-rgba")[0]) {
+    $("#colorpicker-rgba").colorpicker({
+      format: 'rgba'
+    });
+  }
+
+  // Horizonal mode
+  if ($("#colorpicker-horizontal")[0]) {
+    $("#colorpicker-horizontal").colorpicker({
+      format: 'rgba',
+      horizontal: 'true'
+    });
+  }
+
+});
+/**
+ * Color Picker demo end
+ */
+
+
+/**
+ * Datetime Picker demo begin
+ */
+$(function() {
+
+  // Default
+  if ($("#datetimepicker1")[0]) {
+    $("#datetimepicker1").datetimepicker();
+  }
+
+  // Disable date
+  if ($("#datetimepicker2")[0]) {
+    $("#datetimepicker2").datetimepicker({
+      pickDate: false
+    });
+  }
+
+  // Disable time
+  if ($("#datetimepicker3")[0]) {
+    $("#datetimepicker3").datetimepicker({
+      pickTime: false
+    });
+  }
+
+});
+/**
+ * Datetime Picker demo end
+ */
+
+
+/**
+ * Time Picker demo begin
+ */
+$(function() {
+
+  // Default
+  if ($("#timepicker1")[0]) {
+    $('#timepicker1').timepicker({
+      minuteStep: 5,
+      showInputs: false,
+      disableFocus: true
+    });
+  }
+
+  // 24 Hours
+  if ($("#timepicker2")[0]) {
+    $('#timepicker2').timepicker({
+      autoclose: true,
+      minuteStep: 5,
+      showSeconds: true,
+      showInputs: false,
+      showMeridian: false
+    });
+  }
+
+});
+/**
+ * Time Picker demo end
+ */
+
+
+/**
+ * Clockpicker demo begin
+ */
+$(function() {
+
+  // Default
+  if ($("#clockpicker1")[0]) {
+    $("#clockpicker1").clockpicker({
+      placement: 'top',
+      donetext: 'Done',
+      autoclose: true,
+      'default': 'now'
+    });
+  }
+
+});
+/**
+ * Clockpicker demo end
+ */
+
+
+/**
+ * jQuery Validation demo begin
+ */
+$(document).ready(function() {
+
+  // Validate Types demo
+  if ($("#form-validate-type")[0]) {
+    $("#form-validate-type").validate({
+      rules: {
+        email1: {
+          required: true,
+          email: true
+        },
+        url1: {
+          required: true,
+          url: true
+        },
+        date1: {
+          required: true,
+          date: true
+        },
+        date2: {
+          required: true,
+          date: true
+        },
+        min1: {
+          required: true,
+          minlength: 3
+        },
+        max1: {
+          required: true,
+          maxlength: 4
+        },
+        range1: {
+          required: true,
+          rangelength: [2, 6]
+        },
+        minnum1: {
+          required: true,
+          min: 13
+        },
+        maxnum1: {
+          required: true,
+          max: 23
+        },
+        range2: {
+          required: true,
+          range: [13, 23]
+        },
+        num1: {
+          required: true,
+          number: true
+        },
+        num2: {
+          required: true,
+          digits: true
+        },
+        creditcard: {
+          required: true,
+          creditcard: true
+        },
+        password: "required",
+        cpassword: {
+          equalTo: "#password"
+        },
+        select1: {
+          required: true
+        }
+      },
+      messages: {
+        email1: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        url1: {
+          required: "Please enter a url.",
+          email: "Please enter a valid url."
+        },
+        date1: {
+          required: "Please enter date.",
+          date: "Please enter a valid date."
+        }
+      }
+    });
+  }
+
+  // Signin demo
+  if ($("#form-validate-signin")[0]) {
+    $("#form-validate-signin").validate({
+      rules: {
+        'signin_email': {
+          required: true,
+          email: true
+        },
+        'signin_password': {
+          required: true
+        }
+      }
+    });
+  }
+
+  // Signup demo
+  if ($("#form-validate-signup")[0]) {
+    $("#form-validate-signup").validate({
+      rules: {
+        'signup_name': {
+          required: true,
+          rangelength: [2, 20]
+        },
+        'signup_email': {
+          required: true,
+          email: true
+        },
+        'signup_password': {
+          required: true,
+          rangelength: [6, 32]
+        },
+        'signup_cpassword': {
+          equalTo: "#signup_password",
+          rangelength: [6, 32]
+        }
+      }
+    });
+  }
+
+});
+/**
+ * jQuery Validation demo end
+ */

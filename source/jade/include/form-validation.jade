@@ -1,0 +1,32 @@
+//- Forms - Form Validation
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.row
+
+    div.col-md-6
+
+      //Validate Types
+      div.panel.panel-danger
+        div.panel-heading Validate Types
+        div.panel-body
+          include ./module/form-validation-types
+
+    div.col-md-6
+
+      //Sign In
+      div.panel.panel-green
+        div.panel-heading Sign In
+        div.panel-body
+          include ./module/form-validation-signin
+
+      //Sign Up
+      div.panel.panel-violet
+        div.panel-heading Sign Up
+        div.panel-body
+          include ./module/form-validation-signup

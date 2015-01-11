@@ -11,16 +11,34 @@ div.col-lg-12
 
     div.col-lg-6
 
+      //Color Picker
+      div.panel.panel-black
+        div.panel-heading Color Picker
+        div.panel-body
+          include ./module/form-pickers-color-picker
+
       //Date Range Pickers
-      div.panel.panel-info
+      div.panel.panel-orange
         div.panel-heading Date Range Pickers
         div.panel-body
           include ./module/form-pickers-daterange-pickers
 
+      //Timepicker
+      div.panel.panel-pink
+        div.panel-heading Timepicker
+        div.panel-body
+          include ./module/form-pickers-time-picker
+
     div.col-lg-6
 
       //Bootstrap Datepicker
-      div.panel.panel-success
+      div.panel.panel-green
         div.panel-heading Bootstrap Datepicker
         div.panel-body
           include ./module/form-pickers-bootstrap-datepicker
+
+      //Datetime Picker
+      div.panel.panel-violet
+        div.panel-heading Datetime Picker
+        div.panel-body
+          include ./module/form-pickers-datetime-picker

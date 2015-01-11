@@ -272,4 +272,32 @@ $(function() {
   $('input[type=file]').bootstrapFileInput();
   // Bootstrap File Input end
 
+  // jQuery Validation used on Bootstrap's form, include "success"&"error" begin
+  if (typeof($.fn.validate) != "undefined") {
+    jQuery.validator.setDefaults({
+      highlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-success');
+        $(element).closest('.form-group').addClass('has-error has-feedback');
+        $(element).closest('.form-group').find(".glyphicon-remove,.glyphicon-ok").remove();
+        $(element).after('<span class="glyphicon glyphicon-remove form-control-feedback"></span>');
+      },
+      unhighlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-error');
+        $(element).closest('.form-group').addClass('has-success has-feedback');
+        $(element).closest('.form-group').find(".glyphicon-remove,.glyphicon-ok").remove();
+        $(element).after('<span class="glyphicon glyphicon-ok form-control-feedback"></span>');
+      },
+      errorElement: 'small',
+      errorClass: 'help-block fadeIn animated',
+      errorPlacement: function(error, element) {
+        if (element.parent('.input-group').length) {
+          error.insertAfter(element.parent());
+        } else {
+          error.insertAfter(element);
+        }
+      }
+    });
+  }
+  // jQuery Validation... end
+
 });

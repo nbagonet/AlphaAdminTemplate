@@ -1,0 +1,26 @@
+//- Forms - Form Validation - Sign Up
+
+include ../../common/variables
+include ../mixins
+
+
+form#form-validate-signup.ptop10(role="form")
+
+  div.form-group
+    label.control-label(for="signup_name") Username
+    input#signup_name.form-control(type="text" name="signup_name" placeholder="Min length 2, Max length 30")
+
+  div.form-group
+    label.control-label(for="signup_email") Email
+    input#signup_email.form-control(type="email" name="signup_email" placeholder="")
+
+  div.form-group
+    label.control-label(for="signup_password") Password
+    input#signup_password.form-control(type="password" name="signup_password" placeholder="Min length 6, Max length 32")
+
+  div.form-group
+    label.control-label(for="signup_cpassword") Confirm Password
+    input#signup_cpassword.form-control(type="password" name="signup_cpassword" placeholder="Min length 6, Max length 32")
+
+  div.form-group
+    +buttons("btn-violet btn-lg btn-block", "Sign up")(type="submit")

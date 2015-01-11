@@ -1,0 +1,28 @@
+//- Forms - Form Pickers - Datetime Picker
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form")
+
+  div.form-group
+    label.control-label(for="datetimepicker1") Default
+    div.input-group#datetimepicker1
+      input.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o
+
+  div.form-group
+    label.control-label(for="datetimepicker1") Disable date
+    div.input-group#datetimepicker2
+      input.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o
+
+  div.form-group
+    label.control-label(for="datetimepicker1") Disable time
+    div.input-group#datetimepicker3
+      input.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o

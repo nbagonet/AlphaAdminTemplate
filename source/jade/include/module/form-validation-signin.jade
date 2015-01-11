@@ -1,0 +1,18 @@
+//- Forms - Form Validation - Sign In
+
+include ../../common/variables
+include ../mixins
+
+
+form#form-validate-signin.ptop10(role="form")
+
+  div.form-group
+    label.control-label(for="signin_email") Email
+    input#signin_email.form-control(type="email" name="signin_email" placeholder="Email")
+
+  div.form-group
+    label.control-label(for="signin_password") Password
+    input#signin_password.form-control(type="password" name="signin_password" placeholder="Password")
+
+  div.form-group
+    +buttons("btn-green btn-lg btn-block", "Sign in")(type="submit")

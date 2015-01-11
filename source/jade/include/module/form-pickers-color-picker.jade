@@ -1,0 +1,25 @@
+//- Forms - Form Pickers - Color Picker
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form")
+
+  div.form-group
+    label.control-label(for="colorpicker-default") Default
+    input#colorpicker-default.form-control(name="colorpicker-default" type="text" placeholder="" value="#cc0000")
+
+  div.form-group
+    label.control-label(for="colorpicker-component") As a Component
+    div.input-group#colorpicker-component
+      input.form-control(name="colorpicker-component" type="text" placeholder="" value="#ffcc00")
+      span.input-group-addon: i
+
+  div.form-group
+    label.control-label(for="colorpicker-rgba") RGBA format
+    input#colorpicker-rgba.form-control(name="colorpicker-rgba" type="text" placeholder="" value="#336699")
+
+  div.form-group
+    label.control-label(for="colorpicker-horizontal") Horizonal mode
+    input#colorpicker-horizontal.form-control(name="colorpicker-horizontal" type="text" placeholder="" value="rgba(0,255,170,1)")

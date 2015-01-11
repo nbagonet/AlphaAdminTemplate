@@ -1,0 +1,28 @@
+//- Forms - Form Pickers - Time Picker
+
+include ../../common/variables
+include ../mixins
+
+
+form.p5(role="form")
+
+  div.form-group
+    label.control-label(for="timepicker1") Default
+    div.input-group
+      input#timepicker1.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o
+
+  div.form-group
+    label.control-label(for="timepicker2") 24 Hours
+    div.input-group
+      input#timepicker2.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o
+
+  div.form-group
+    label.control-label(for="clockpicker1") Clockpicker
+    div.input-group
+      input#clockpicker1.form-control(type="text")
+      span.input-group-addon
+        i.fa.fa-clock-o

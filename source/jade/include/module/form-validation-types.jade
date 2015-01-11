@@ -1,0 +1,77 @@
+//- Forms - Form Validation - Validate Types
+
+include ../../common/variables
+include ../mixins
+
+
+form#form-validate-type.ptop10(role="form")
+
+  div.form-group
+    label.control-label(for="email1") Email
+    input#email1.form-control(type="email" name="email1" placeholder="xxx@xxx.com")
+
+  div.form-group
+    label.control-label(for="password") Password
+    input#password.form-control(type="password" name="password" placeholder="")
+
+  div.form-group
+    label.control-label(for="cpassword") Confirm Password
+    input#cpassword.form-control(type="password" name="cpassword" placeholder="")
+
+  div.form-group
+    label.control-label(for="url1") Url
+    input#url1.form-control(type="url" name="url1" placeholder="http://xxx.com")
+
+  div.form-group
+    label.control-label(for="date1") Date
+    input#date1.form-control(type="date" name="date1" placeholder="e.g. 20150101")
+
+  div.form-group
+    label.control-label(for="date2") Date(ISO)
+    input#date2.form-control(type="date" name="date2" placeholder="e.g. 2015-01-01")
+
+  div.form-group
+    label.control-label(for="min1") Min Length 3
+    input#min1.form-control(type="text" name="min1" placeholder="Required, minimum length 3")
+
+  div.form-group
+    label.control-label(for="max1") Max Length 4
+    input#max1.form-control(type="text" name="max1" placeholder="Required, maximum length 4")
+
+  div.form-group
+    label.control-label(for="range1") Range Length 2~6
+    input#range1.form-control(type="text" name="range1" placeholder="Required, minium length 2, maximum length 6")
+
+  div.form-group
+    label.control-label(for="minnum1") Min Number 13
+    input#minnum1.form-control(type="number" name="minnum1" placeholder="Required, minimum 13")
+
+  div.form-group
+    label.control-label(for="maxum1") Max Number 23
+    input#maxnum1.form-control(type="number" name="maxnum1" placeholder="Required, maximum value 23")
+
+  div.form-group
+    label.control-label(for="range2") Range Number 13~23
+    input#range2.form-control(type="number" name="range2" placeholder="Required, minium 13, maximum 23")
+
+  div.form-group
+    label.control-label(for="num1") Number
+    input#num1.form-control(type="number" name="num1" placeholder="Required, decimal number")
+
+  div.form-group
+    label.control-label(for="num2") Digits
+    input#num2.form-control(type="number" name="num2" placeholder="Required, digits")
+
+  div.form-group
+    label.control-label(for="creditcard") Creditcard
+    input#creditcard.form-control(type="text" name="creditcard" placeholder="Required, creditcard")
+
+  div.form-group
+    label.control-label(for="select1") Select
+    select#select1.form-control(name="select1")
+      option(value="") nothing
+      option(value="1") 1
+      option(value="2") 2
+
+  div.form-group
+    +buttons("btn-danger", "Submit")(type="submit")
