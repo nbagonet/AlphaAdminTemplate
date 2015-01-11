@@ -18,6 +18,13 @@
 @gray-light            :lighten(@gray-base, 46.7%); // #777
 @gray-lighter          :lighten(@gray-base, 93.5%); // #eee
 
+@base-white           :#fff;
+@base-grey            :@gray;
+@base-grey-dark       :darken(@base-grey, 20%);
+@base-grey-darker     :darken(@base-grey, 45%);
+@base-grey-light      :lighten(@base-grey, 20%);
+@base-grey-lighter    :lighten(@base-grey, 40%);
+
 @brand-main-base       :#0092c7;
 @brand-main-base-light :darken(@brand-main-base, 20%);
 
@@ -294,24 +301,175 @@
 
 // == Slider
 //
-//## jQuery UI Sliders
-@jqui-slider-horizontal-border-size    :1px;
-@jqui-slider-horizontal-size           :10px;
-@jqui-slider-handle-border-size        :5px;
-@jqui-slider-handle-width              :20px;
-@jqui-slider-handle-height             :20px;
-@jqui-slider-handle-border-radius      :50%;
+//** jQuery UI Sliders
+//**  Primary
+@jqui-slider-primary-horizontal-border-color   :transparent;
+@jqui-slider-primary-horizontal-bg             :#f5f5f5;
+@jqui-slider-primary-handle-border-color       :#fff;
+@jqui-slider-primary-handle-bg                 :@color-primary;
+@jqui-slider-primary-handle-hover-border-color :#fff;
+@jqui-slider-primary-handle-hover-bg           :lighten(@color-primary,20%);
+@jqui-slider-primary-range-bg                  :@color-primary;
 
-@jqui-slider-horizontal-border-color   :transparent;
-@jqui-slider-horizontal-bg             :#f5f5f5;
-@jqui-slider-handle-border-color       :#fff;
-@jqui-slider-handle-bg                 :@brand-minor;
-@jqui-slider-handle-hover-border-color :#fff;
-@jqui-slider-handle-hover-bg           :lighten(@brand-minor,20%);
-@jqui-slider-range-bg                  :@brand-minor;
+//**  Success
+@jqui-slider-success-horizontal-border-color   :transparent;
+@jqui-slider-success-horizontal-bg             :#f5f5f5;
+@jqui-slider-success-handle-border-color       :#fff;
+@jqui-slider-success-handle-bg                 :@color-success;
+@jqui-slider-success-handle-hover-border-color :#fff;
+@jqui-slider-success-handle-hover-bg           :lighten(@color-success,20%);
+@jqui-slider-success-range-bg                  :@color-success;
 
-//## NoUI Sliders
-@noui-slider-connect-bg:@brand-minor;
+//**  Info
+@jqui-slider-info-horizontal-border-color   :transparent;
+@jqui-slider-info-horizontal-bg             :#f5f5f5;
+@jqui-slider-info-handle-border-color       :#fff;
+@jqui-slider-info-handle-bg                 :@color-info;
+@jqui-slider-info-handle-hover-border-color :#fff;
+@jqui-slider-info-handle-hover-bg           :lighten(@color-info,20%);
+@jqui-slider-info-range-bg                  :@color-info;
+
+
+//**  Warning
+@jqui-slider-warning-horizontal-border-color   :transparent;
+@jqui-slider-warning-horizontal-bg             :#f5f5f5;
+@jqui-slider-warning-handle-border-color       :#fff;
+@jqui-slider-warning-handle-bg                 :@color-warning;
+@jqui-slider-warning-handle-hover-border-color :#fff;
+@jqui-slider-warning-handle-hover-bg           :lighten(@color-warning,20%);
+@jqui-slider-warning-range-bg                  :@color-warning;
+
+
+//**  Danger
+@jqui-slider-danger-horizontal-border-color   :transparent;
+@jqui-slider-danger-horizontal-bg             :#f5f5f5;
+@jqui-slider-danger-handle-border-color       :#fff;
+@jqui-slider-danger-handle-bg                 :@color-danger;
+@jqui-slider-danger-handle-hover-border-color :#fff;
+@jqui-slider-danger-handle-hover-bg           :lighten(@color-danger,20%);
+@jqui-slider-danger-range-bg                  :@color-danger;
+
+
+//**  Red
+@jqui-slider-red-horizontal-border-color   :transparent;
+@jqui-slider-red-horizontal-bg             :#f5f5f5;
+@jqui-slider-red-handle-border-color       :#fff;
+@jqui-slider-red-handle-bg                 :@color-red;
+@jqui-slider-red-handle-hover-border-color :#fff;
+@jqui-slider-red-handle-hover-bg           :lighten(@color-red,20%);
+@jqui-slider-red-range-bg                  :@color-red;
+
+
+//**  Orange
+@jqui-slider-orange-horizontal-border-color   :transparent;
+@jqui-slider-orange-horizontal-bg             :#f5f5f5;
+@jqui-slider-orange-handle-border-color       :#fff;
+@jqui-slider-orange-handle-bg                 :@color-orange;
+@jqui-slider-orange-handle-hover-border-color :#fff;
+@jqui-slider-orange-handle-hover-bg           :lighten(@color-orange,20%);
+@jqui-slider-orange-range-bg                  :@color-orange;
+
+
+//**  Yellow
+@jqui-slider-yellow-horizontal-border-color   :transparent;
+@jqui-slider-yellow-horizontal-bg             :#f5f5f5;
+@jqui-slider-yellow-handle-border-color       :#fff;
+@jqui-slider-yellow-handle-bg                 :@color-yellow;
+@jqui-slider-yellow-handle-hover-border-color :#fff;
+@jqui-slider-yellow-handle-hover-bg           :lighten(@color-yellow,20%);
+@jqui-slider-yellow-range-bg                  :@color-yellow;
+
+
+//**  Green
+@jqui-slider-green-horizontal-border-color   :transparent;
+@jqui-slider-green-horizontal-bg             :#f5f5f5;
+@jqui-slider-green-handle-border-color       :#fff;
+@jqui-slider-green-handle-bg                 :@color-green;
+@jqui-slider-green-handle-hover-border-color :#fff;
+@jqui-slider-green-handle-hover-bg           :lighten(@color-green,20%);
+@jqui-slider-green-range-bg                  :@color-green;
+
+
+//**  Black
+@jqui-slider-black-horizontal-border-color   :transparent;
+@jqui-slider-black-horizontal-bg             :#f5f5f5;
+@jqui-slider-black-handle-border-color       :#fff;
+@jqui-slider-black-handle-bg                 :@color-black;
+@jqui-slider-black-handle-hover-border-color :#fff;
+@jqui-slider-black-handle-hover-bg           :lighten(@color-black,20%);
+@jqui-slider-black-range-bg                  :@color-black;
+
+
+//**  Blue
+@jqui-slider-blue-horizontal-border-color   :transparent;
+@jqui-slider-blue-horizontal-bg             :#f5f5f5;
+@jqui-slider-blue-handle-border-color       :#fff;
+@jqui-slider-blue-handle-bg                 :@color-blue;
+@jqui-slider-blue-handle-hover-border-color :#fff;
+@jqui-slider-blue-handle-hover-bg           :lighten(@color-blue,20%);
+@jqui-slider-blue-range-bg                  :@color-blue;
+
+
+//**  Violet
+@jqui-slider-violet-horizontal-border-color   :transparent;
+@jqui-slider-violet-horizontal-bg             :#f5f5f5;
+@jqui-slider-violet-handle-border-color       :#fff;
+@jqui-slider-violet-handle-bg                 :@color-violet;
+@jqui-slider-violet-handle-hover-border-color :#fff;
+@jqui-slider-violet-handle-hover-bg           :lighten(@color-violet,20%);
+@jqui-slider-violet-range-bg                  :@color-violet;
+
+
+//**  Pink
+@jqui-slider-pink-horizontal-border-color   :transparent;
+@jqui-slider-pink-horizontal-bg             :#f5f5f5;
+@jqui-slider-pink-handle-border-color       :#fff;
+@jqui-slider-pink-handle-bg                 :@color-pink;
+@jqui-slider-pink-handle-hover-border-color :#fff;
+@jqui-slider-pink-handle-hover-bg           :lighten(@color-pink,20%);
+@jqui-slider-pink-range-bg                  :@color-pink;
+
+
+//**  Grey
+@jqui-slider-grey-horizontal-border-color   :transparent;
+@jqui-slider-grey-horizontal-bg             :#f5f5f5;
+@jqui-slider-grey-handle-border-color       :#fff;
+@jqui-slider-grey-handle-bg                 :@color-grey;
+@jqui-slider-grey-handle-hover-border-color :#fff;
+@jqui-slider-grey-handle-hover-bg           :lighten(@color-grey,20%);
+@jqui-slider-grey-range-bg                  :@color-grey;
+
+
+
+//** NoUI Sliders
+//** Primary
+@noui-slider-parimary-connect-bg :@color-primary;
+//** Success
+@noui-slider-success-connect-bg  :@color-success;
+//** Info
+@noui-slider-info-connect-bg     :@color-info;
+//** Warning
+@noui-slider-warning-connect-bg  :@color-warning;
+//** Danger
+@noui-slider-danger-connect-bg   :@color-danger;
+//** Red
+@noui-slider-red-connect-bg      :@color-red;
+//** Orange
+@noui-slider-orange-connect-bg   :@color-orange;
+//** Yellow
+@noui-slider-yellow-connect-bg   :@color-yellow;
+//** Green
+@noui-slider-green-connect-bg    :@color-green;
+//** Black
+@noui-slider-black-connect-bg    :@color-black;
+//** Blue
+@noui-slider-blue-connect-bg     :@color-blue;
+//** Violet
+@noui-slider-violet-connect-bg   :@color-violet;
+//** Pink
+@noui-slider-pink-connect-bg     :@color-pink;
+//** Grey
+@noui-slider-grey-connect-bg     :@color-grey;
 
 
 // == Modal
@@ -319,5 +477,299 @@
 //##
 @modal-fullwidth-width:100%;
 @modal-widewidth-width:70%;
+
+//** Modal Themes
+//** Primary
+@modal-primary-header-bg    :@color-primary;
+@modal-primary-header-color :@base-white;
+//** Success
+@modal-success-header-bg    :@color-success;
+@modal-success-header-color :@base-white;
+//** Info
+@modal-info-header-bg       :@color-info;
+@modal-info-header-color    :@base-white;
+//** Warning
+@modal-warning-header-bg    :@color-warning;
+@modal-warning-header-color :@base-white;
+//** Danger
+@modal-danger-header-bg     :@color-danger;
+@modal-danger-header-color  :@base-white;
+//** Red
+@modal-red-header-bg        :@color-red;
+@modal-red-header-color     :@base-white;
+//** Orange
+@modal-orange-header-bg     :@color-orange;
+@modal-orange-header-color  :@base-white;
+//** Yellow
+@modal-yellow-header-bg     :@color-yellow;
+@modal-yellow-header-color  :@base-white;
+//** Green
+@modal-green-header-bg      :@color-green;
+@modal-green-header-color   :@base-white;
+//** Black
+@modal-black-header-bg      :@color-black;
+@modal-black-header-color   :@base-white;
+//** Blue
+@modal-blue-header-bg       :@color-blue;
+@modal-blue-header-color    :@base-white;
+//** Violet
+@modal-violet-header-bg     :@color-violet;
+@modal-violet-header-color  :@base-white;
+//** Pink
+@modal-pink-header-bg       :@color-pink;
+@modal-pink-header-color    :@base-white;
+//** Grey
+@modal-grey-header-bg       :@color-grey;
+@modal-grey-header-color    :@base-grey;
+
+
+// --------------------------------------------------
+
+
+//** Navbar - Blue
+@navbar-blue-bg             :@color-blue;
+@navbar-blue-border         :darken(@color-blue,10%);
+@navbar-blue-color          :@base-white;
+@navbar-blue-link-hover-bg  :darken(@color-blue,5%);
+@navbar-blue-link-active-bg :@navbar-blue-border;
+
+//** Navbar - Red
+@navbar-red-bg             :@color-red;
+@navbar-red-border         :darken(@color-red,10%);
+@navbar-red-color          :@base-white;
+@navbar-red-link-hover-bg  :darken(@color-red,5%);
+@navbar-red-link-active-bg :@navbar-red-border;
+
+//** Navbar - Orange
+@navbar-orange-bg             :@color-orange;
+@navbar-orange-border         :darken(@color-orange,10%);
+@navbar-orange-color          :@base-white;
+@navbar-orange-link-hover-bg  :darken(@color-orange,5%);
+@navbar-orange-link-active-bg :@navbar-orange-border;
+
+//** Navbar - Green
+@navbar-green-bg             :@color-green;
+@navbar-green-border         :darken(@color-green,10%);
+@navbar-green-color          :@base-white;
+@navbar-green-link-hover-bg  :darken(@color-green,5%);
+@navbar-green-link-active-bg :@navbar-green-border;
+
+//** Navbar - Yellow
+@navbar-yellow-bg             :@color-yellow;
+@navbar-yellow-border         :darken(@color-yellow,10%);
+@navbar-yellow-color          :@base-white;
+@navbar-yellow-link-hover-bg  :darken(@color-yellow,5%);
+@navbar-yellow-link-active-bg :@navbar-yellow-border;
+
+//** Navbar - Black
+@navbar-black-bg             :@color-black;
+@navbar-black-border         :darken(@color-black,10%);
+@navbar-black-color          :@base-white;
+@navbar-black-link-hover-bg  :darken(@color-black,5%);
+@navbar-black-link-active-bg :@navbar-black-border;
+
+//** Navbar - Violet
+@navbar-violet-bg             :@color-violet;
+@navbar-violet-border         :darken(@color-violet,10%);
+@navbar-violet-color          :@base-white;
+@navbar-violet-link-hover-bg  :darken(@color-violet,5%);
+@navbar-violet-link-active-bg :@navbar-violet-border;
+
+//** Navbar - Pink
+@navbar-pink-bg             :@color-pink;
+@navbar-pink-border         :darken(@color-pink,10%);
+@navbar-pink-color          :@base-white;
+@navbar-pink-link-hover-bg  :darken(@color-pink,5%);
+@navbar-pink-link-active-bg :@navbar-pink-border;
+
+//** Navbar - Grey
+@navbar-grey-bg             :@color-grey;
+@navbar-grey-border         :darken(@color-grey,10%);
+@navbar-grey-color          :@base-white;
+@navbar-grey-link-hover-bg  :darken(@color-grey,5%);
+@navbar-grey-link-active-bg :@navbar-grey-border;
+
+
+// --------------------------------------------------
+
+
+//** Tabs - Red
+@tab-red-bg            :transparent;
+@tab-red-border        :@color-red;
+@tab-red-text          :@base-grey;
+@tab-red-hover-bg      :transparent;
+@tab-red-hover-border  :transparent;
+@tab-red-hover-text    :@color-red;
+@tab-red-active-bg     :@color-red;
+@tab-red-active-border :@tab-red-active-bg;
+@tab-red-active-text   :@base-white;
+
+//** Tabs - Orange
+@tab-orange-bg            : transparent;
+@tab-orange-border        :@color-orange;
+@tab-orange-text          :@color-orange;
+@tab-orange-hover-bg      :transparent;
+@tab-orange-hover-border  :transparent;
+@tab-orange-hover-text    :@color-orange;
+@tab-orange-active-bg     :@color-orange;
+@tab-orange-active-border :@tab-orange-active-bg;
+@tab-orange-active-text   :@base-white;
+
+//** Tabs - Yellow
+@tab-yellow-bg            : transparent;
+@tab-yellow-border        :@color-yellow;
+@tab-yellow-text          :@color-yellow;
+@tab-yellow-hover-bg      :transparent;
+@tab-yellow-hover-border  :transparent;
+@tab-yellow-hover-text    :@color-yellow;
+@tab-yellow-active-bg     :@color-yellow;
+@tab-yellow-active-border :@tab-yellow-active-bg;
+@tab-yellow-active-text   :@base-white;
+
+//** Tabs - Green
+@tab-green-bg            : transparent;
+@tab-green-border        :@color-green;
+@tab-green-text          :@color-green;
+@tab-green-hover-bg      :transparent;
+@tab-green-hover-border  :transparent;
+@tab-green-hover-text    :@color-green;
+@tab-green-active-bg     :@color-green;
+@tab-green-active-border :@tab-green-active-bg;
+@tab-green-active-text   :@base-white;
+
+//** Tabs - Black
+@tab-black-bg            : transparent;
+@tab-black-border        :@color-black;
+@tab-black-text          :@color-black;
+@tab-black-hover-bg      :transparent;
+@tab-black-hover-border  :transparent;
+@tab-black-hover-text    :@color-black;
+@tab-black-active-bg     :@color-black;
+@tab-black-active-border :@tab-black-active-bg;
+@tab-black-active-text   :@base-white;
+
+//** Tabs - Blue
+@tab-blue-bg            : transparent;
+@tab-blue-border        :@color-blue;
+@tab-blue-text          :@color-blue;
+@tab-blue-hover-bg      :transparent;
+@tab-blue-hover-border  :transparent;
+@tab-blue-hover-text    :@color-blue;
+@tab-blue-active-bg     :@color-blue;
+@tab-blue-active-border :@tab-blue-active-bg;
+@tab-blue-active-text   :@base-white;
+
+//** Tabs - Violet
+@tab-violet-bg            : transparent;
+@tab-violet-border        :@color-violet;
+@tab-violet-text          :@color-violet;
+@tab-violet-hover-bg      :transparent;
+@tab-violet-hover-border  :transparent;
+@tab-violet-hover-text    :@color-violet;
+@tab-violet-active-bg     :@color-violet;
+@tab-violet-active-border :@tab-violet-active-bg;
+@tab-violet-active-text   :@base-white;
+
+//** Tabs - Pink
+@tab-pink-bg            : transparent;
+@tab-pink-border        :@color-pink;
+@tab-pink-text          :@color-pink;
+@tab-pink-hover-bg      :transparent;
+@tab-pink-hover-border  :transparent;
+@tab-pink-hover-text    :@color-pink;
+@tab-pink-active-bg     :@color-pink;
+@tab-pink-active-border :@tab-pink-active-bg;
+@tab-pink-active-text   :@base-white;
+
+//** Tabs - Grey
+@tab-grey-bg            : transparent;
+@tab-grey-border        :@color-grey;
+@tab-grey-text          :@color-grey;
+@tab-grey-hover-bg      :transparent;
+@tab-grey-hover-border  :transparent;
+@tab-grey-hover-text    :@color-grey;
+@tab-grey-active-bg     :@color-grey;
+@tab-grey-active-border :@tab-grey-active-bg;
+@tab-grey-active-text   :@base-white;
+
+
+// --------------------------------------------------
+
+
+//** Panel
+@panel-white-bg             :@base-white;
+@panel-white-border-color   :@gray-lighter;
+@panel-white-head-color     :@base-grey-light;
+@panel-white-head-bg        :@base-white;
+
+@panel-primary-bg           :@base-white;
+@panel-primary-border-color :@color-primary;
+@panel-primary-head-color   :@base-white;
+@panel-primary-head-bg      :@color-primary;
+
+@panel-success-bg           :@base-white;
+@panel-success-border-color :@color-success;
+@panel-success-head-color   :@base-white;
+@panel-success-head-bg      :@color-success;
+
+@panel-info-bg              :@base-white;
+@panel-info-border-color    :@color-info;
+@panel-info-head-color      :@base-white;
+@panel-info-head-bg         :@color-info;
+
+@panel-warning-bg           :@base-white;
+@panel-warning-border-color :@color-warning;
+@panel-warning-head-color   :@base-white;
+@panel-warning-head-bg      :@color-warning;
+
+@panel-danger-bg            :@base-white;
+@panel-danger-border-color  :@color-danger;
+@panel-danger-head-color    :@base-white;
+@panel-danger-head-bg       :@color-danger;
+
+@panel-red-bg               :@base-white;
+@panel-red-border-color     :@color-red;
+@panel-red-head-color       :@base-white;
+@panel-red-head-bg          :@color-red;
+
+@panel-orange-bg            :@base-white;
+@panel-orange-border-color  :@color-orange;
+@panel-orange-head-color    :@base-white;
+@panel-orange-head-bg       :@color-orange;
+
+@panel-yellow-bg            :@base-white;
+@panel-yellow-border-color  :@color-yellow;
+@panel-yellow-head-color    :@base-white;
+@panel-yellow-head-bg       :@color-yellow;
+
+@panel-green-bg             :@base-white;
+@panel-green-border-color   :@color-green;
+@panel-green-head-color     :@base-white;
+@panel-green-head-bg        :@color-green;
+
+@panel-black-bg             :@base-white;
+@panel-black-border-color   :@color-black;
+@panel-black-head-color     :@base-white;
+@panel-black-head-bg        :@color-black;
+
+@panel-blue-bg              :@base-white;
+@panel-blue-border-color    :@color-blue;
+@panel-blue-head-color      :@base-white;
+@panel-blue-head-bg         :@color-blue;
+
+@panel-violet-bg            :@base-white;
+@panel-violet-border-color  :@color-violet;
+@panel-violet-head-color    :@base-white;
+@panel-violet-head-bg       :@color-violet;
+
+@panel-pink-bg              :@base-white;
+@panel-pink-border-color    :@color-pink;
+@panel-pink-head-color      :@base-white;
+@panel-pink-head-bg         :@color-pink;
+
+@panel-grey-bg              :@base-white;
+@panel-grey-border-color    :@color-grey;
+@panel-grey-head-color      :@base-white;
+@panel-grey-head-bg         :@color-grey;
 
 

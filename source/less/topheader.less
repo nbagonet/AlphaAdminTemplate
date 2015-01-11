@@ -25,7 +25,8 @@
     margin-bottom: 0;
 
     border: none;
-    border-radius: @border-radius-base;
+    // border-radius: @border-radius-base;
+    border-radius: 0;
     .brand
     {
         width: @top-header-brand-width;
@@ -118,7 +119,7 @@
     }
     .topsearch
     {
-        font-size: @font-size-small;
+        font-size: @font-size-base;
 
         position: absolute;
         z-index: 8;
@@ -130,7 +131,7 @@
         padding: 0;
 
         border: none;
-        border-radius: @border-radius-base;
+        border-radius: 0;
 
         .transition(width .4s ease);
         .transition(padding .4s ease);
@@ -186,7 +187,8 @@
         }
         > i
         {
-            font-size: @font-size-larger;            @media (max-width: @screen-sm-max)
+            font-size: @font-size-larger;
+            @media (max-width: @screen-sm-max)
             {
                 font-size: @font-size-base;
             }

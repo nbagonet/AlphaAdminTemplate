@@ -12,12 +12,9 @@
 {
     padding: 4px;
 
-    border-radius: @border-radius-base;
-
     direction: ltr;
     &-inline
     {
-        // width: 220px;
         width: 100%;
     }
     &&-rtl
@@ -309,6 +306,7 @@
     width: 100%;
     input
     {
+        text-align: center;
         &:first-child
         {
             border-radius: 0 @border-radius-base @border-radius-base 0;
@@ -332,16 +330,5 @@
 
         border-width: 1px 0;
         text-shadow: 0 1px 0 #fff;
-    }
-    input
-    {
-        text-align: center;
-    }
-    input
-    {
-        &:first-child
-        {
-            border-radius: @border-radius-base 0 0 @border-radius-base;
-        }
     }
 }

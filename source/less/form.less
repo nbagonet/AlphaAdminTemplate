@@ -16,7 +16,6 @@
 
 .form-control
 {
-    border-radius: @border-radius-base;
     .has-success &
     {
         color: darken(@color-success,30%);
@@ -48,31 +47,6 @@
         }
     }
 }
-.navbar-toggle
-{
-    border-radius: @border-radius-base;
-}
-
-.input-group .form-control:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .btn-group > .btn,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn
-{
-    border-radius: @border-radius-base 0 0 @border-radius-base;
-}
-.input-group .form-control:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .btn-group > .btn,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn
-{
-    border-radius: 0 @border-radius-base @border-radius-base 0;
-}
 .form-control-feedback
 {
     line-height: 34px!important;
@@ -83,12 +57,6 @@
 .bootstrap-switch
 {
     border-color: transparent;
-    border-radius: @border-radius-base;
-    .bootstrap-switch-label
-    {
-        color: #333;
-        background: darken(@gray-lighter, 5%);
-    }
     .bootstrap-switch-handle-on,
     .bootstrap-switch-handle-off
     {
@@ -138,122 +106,17 @@
             background-color: @color-grey;
         }
     }
-    .bootstrap-switch-handle-on
-    {
-        border-top-left-radius: @border-radius-base;
-        border-bottom-left-radius: @border-radius-base;
-    }.bootstrap-switch-handle-off
-    {
-        border-top-right-radius: @border-radius-base;
-        border-bottom-right-radius: @border-radius-base;
-    }
     &.bootstrap-switch-focused
     {
         border-color: transparent;
 
         .box-shadow(none);
     }
-    &.bootstrap-switch-on,
-    &.bootstrap-switch-inverse.bootstrap-switch-off
-    {
-        .bootstrap-switch-label
-        {
-            border-top-right-radius: @border-radius-base;
-            border-bottom-right-radius: @border-radius-base;
-        }
-    }
-    &.bootstrap-switch-off,
-    &.bootstrap-switch-inverse.bootstrap-switch-on
-    {
-        .bootstrap-switch-label
-        {
-            border-top-left-radius: @border-radius-base;
-            border-bottom-left-radius: @border-radius-base;
-        }
-    }
 }
 
 
-/* jquery-filestyle */
-// #filebutton
-// {
-//     top: 0;
-// }
-// .jquery-filestyle
-// {
-//     position: relative;
-
-//     display: table!important;
-
-//     border-collapse: separate;
-//     input[type=text][disabled]
-//     {
-//         font-size: @font-size-base;
-//         line-height: 1.42857143;
-
-//         position: relative;
-//         z-index: 2;
-
-//         display: table-cell;
-//         float: left;
-
-//         width: 100%;
-//         height: 34px;
-//         margin-bottom: 0;
-//         padding: 6px 12px;
-
-//         cursor: not-allowed;
-
-//         opacity: 1;
-//         color: @gray;
-//         border: 1px #c8c8c8 solid;
-//         border-radius: @border-radius-base 0 0 @border-radius-base;
-//         background-color: @gray-lighter;
-//         background-image: none;
-//         box-shadow: none;
-
-//         .transition(border-color @link-animation-time);
-//         .transition(box-shadow @link-animation-time);
-//     }
-//     label
-//     {
-//         font-size: @font-size-base;
-//         font-weight: @font-weight-base;
-//         line-height: 1.42857143;
-
-//         position: relative;
-//         z-index: 3;
-//         left: -1px;
-
-//         display: table-cell;
-
-//         width: 1%;
-//         margin-bottom: 0;
-//         padding: 6px 12px;
-
-//         cursor: pointer;
-//         -webkit-user-select: none;
-//         text-align: center;
-//         vertical-align: middle;
-//         white-space: nowrap;
-
-//         color: #333;
-//         border: 1px solid #c8c8c8;
-//         border-radius: 0 @border-radius-base @border-radius-base 0;
-//         outline: none!important;
-//         background-color: #fff;
-//         background-image: none;
-
-//         .transition(@link-animation-time);
-//         touch-action: manipulation;
-//         &:hover
-//         {
-//             border-color: #adadad;
-//             background-color: #e6e6e6;
-//         }
-//         i
-//         {
-//             font-size: @font-size-base;
-//         }
-//     }
-// }
+/* Color Picker */
+.colorpicker
+{
+    padding: 5px;
+}
