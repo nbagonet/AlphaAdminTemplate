@@ -1,0 +1,44 @@
+//- Tables - Basic Tables - Contextual Column
+
+include ../../common/variables
+include ../mixins
+
+
+table.table
+  thead
+    tr
+      th #
+      th Entity
+      th Value
+      th Status
+  tbody
+    tr
+      td.info 1
+      td.success Facebook
+      td.warning 573
+      td.danger
+        div.progress.no-mb: div.progress-bar.progress-bar-primary(role="progressbar" data-transitiongoal="40")
+    tr
+      td.info 2
+      td.success Google
+      td.warning 1,138
+      td.danger
+        div.progress.no-mb: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="21")
+    tr
+      td.info 3
+      td.success Yahoo
+      td.warning 488
+      td.danger
+        div.progress.no-mb: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="57")
+    tr
+      td.info 4
+      td.success Themeforest
+      td.warning 1,290
+      td.danger
+        div.progress.no-mb: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="85")
+    tr
+      td.info 5
+      td.success Evanto
+      td.warning 478
+      td.danger
+        div.progress.no-mb: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="62")

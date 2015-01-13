@@ -1,0 +1,275 @@
+//
+// Table
+// --------------------------------------------------
+
+
+/* Table */
+.table
+{
+    > thead
+    {
+        > tr
+        {
+            > th
+            {
+                border-bottom-width: 1px;
+            }
+        }
+    }
+}
+
+
+/* Responsive Tables - The Unseen Column */
+.table-unseen
+{
+    @media only screen and (max-width: @screen-sm-max)
+    {
+        td:nth-child(2),
+        th:nth-child(2)
+        {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: @screen-xs-max)
+    {
+        td:nth-child(4),
+        th:nth-child(4),
+        td:nth-child(7),
+        th:nth-child(7),
+        td:nth-child(8),
+        th:nth-child(8)
+        {
+            display: none;
+        }
+    }
+}
+
+
+/* Responsive Tables - Flip Scroll */
+.table-flipscroll
+{
+    @media only screen and (max-width: @screen-sm-max)
+    {
+        .cf:after
+        {
+            font-size: 0;
+
+            display: block;
+            visibility: hidden;
+            clear: both;
+
+            height: 0;
+
+            content: ' ';
+        }
+        * html .cf
+        {
+            zoom: 1;
+        }
+        *:first-child + html .cf
+        {
+            zoom: 1;
+        }
+        table
+        {
+            width: 100%;
+
+            border-spacing: 0;
+            border-collapse: collapse;
+            &.table-bordered
+            {
+                thead
+                {
+                    border-right: none;
+                    th
+                    {
+                        &:last-child
+                        {
+                            border-bottom: 1px solid #ddd;
+                        }
+                    }
+                }
+            }
+            tbody
+            {
+                padding-bottom: 0;
+            }
+        }
+
+        th,
+        td
+        {
+            margin: 0;
+
+            vertical-align: top;
+        }
+        th
+        {
+            text-align: left;
+        }
+
+        table
+        {
+            position: relative;
+
+            display: block;
+
+            width: 100%;
+        }
+        thead
+        {
+            display: block;
+            float: left;
+
+            border-right: 1px solid #ddd;
+        }
+        tbody
+        {
+            position: relative;
+
+            display: block;
+            overflow-x: auto;
+
+            width: auto;
+            padding-bottom: 15px;
+
+            white-space: nowrap;
+        }
+        thead tr
+        {
+            display: block;
+            th
+            {
+                border-left: none;
+                &:last-child
+                {
+                    border-bottom: none;
+                }
+            }
+        }
+        th
+        {
+            display: block;
+
+            text-align: right;
+        }
+        tbody tr
+        {
+            display: inline-block;
+
+            vertical-align: top;
+            td
+            {
+                border-top: none;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-left: none;
+                &:last-child
+                {
+                    border-bottom: none;
+                }
+            }
+            &:last-child
+            {
+                td
+                {
+                    border-right: none;
+                }
+            }
+        }
+        td
+        {
+            display: block;
+
+            min-height: 1.25em;
+
+            text-align: left;
+        }
+
+
+        /* sort out borders */
+
+        th
+        {
+            border-bottom: 0;
+            border-left: 0;
+        }
+        td
+        {
+            border-right: 0;
+            border-bottom: 0;
+            border-left: 0;
+        }
+    }
+}
+
+
+/* Responsive Tables - No More Tables */
+.table-nomore
+{
+    @media only screen and (max-width: @screen-sm-max)
+    {
+        /* Force table to not be like tables anymore */
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr
+        {
+            display: block;
+        }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr
+        {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr
+        {
+            border: 1px solid #ccc;
+        }
+
+        td
+        {
+            position: relative;
+
+            padding-left: 50%;
+
+            text-align: left;
+            white-space: normal;
+            /* Behave  like a "row" */
+
+            border: none;
+            border-bottom: 1px solid #eee;
+        }
+
+        td:before
+        {
+            font-weight: bold;
+            /* Now like a table header */
+
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+
+            width: 45%;
+            padding-right: 10px;
+
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        /*
+    Label the data
+    */
+        td:before
+        {
+            content: attr(data-title);
+        }
+    }
+}

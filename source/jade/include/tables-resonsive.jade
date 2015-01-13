@@ -1,0 +1,31 @@
+//- Tables - Responsive Tables
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Basic Responsive Table
+  div.panel.panel-red
+    div.panel-heading Basic Responsive Table
+    div.panel-body
+      include ./module/tables-responsive-basic
+
+  //The Unseen Column
+  div.panel.panel-orange
+    div.panel-heading The Unseen Column
+    div.panel-body
+      include ./module/tables-responsive-unseen
+
+  //Flip Scroll
+  div.panel.panel-yellow
+    div.panel-heading Flip Scroll
+    div.panel-body
+      include ./module/tables-responsive-flipscroll
+
+  //No More Tables
+  div.panel.panel-green
+    div.panel-heading No More Tables
+    div.panel-body
+      include ./module/tables-responsive-nomore

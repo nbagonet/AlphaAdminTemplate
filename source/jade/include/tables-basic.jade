@@ -1,0 +1,60 @@
+//- Tables - Basic Tables
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.row
+
+    div.col-md-6
+      //Simple Table
+      div.panel.panel-white
+        div.panel-heading Simple Table
+        div.panel-body
+          include ./module/tables-basic-simple
+
+      //Bordered Table
+      div.panel.panel-success
+        div.panel-heading Bordered Table
+        div.panel-body
+          include ./module/tables-basic-bordered
+
+      //Contextual Row
+      div.panel.panel-warning
+        div.panel-heading Contextual Row
+        div.panel-body
+          include ./module/tables-basic-contextual
+
+      //Contextual Column
+      div.panel.panel-red
+        div.panel-heading Contextual Column
+        div.panel-body
+          include ./module/tables-basic-contextual-column
+
+    div.col-md-6
+      //Stripped Table
+      div.panel.panel-primary
+        div.panel-heading Stripped Table
+        div.panel-body
+          include ./module/tables-basic-stripped
+
+      //Hover Rows
+      div.panel.panel-info
+        div.panel-heading Hover Rows
+        div.panel-body
+          include ./module/tables-basic-hover
+
+      //Variations Table
+      div.panel.panel-danger
+        div.panel-heading Variations Table
+        div.panel-body
+          include ./module/tables-basic-variations
+
+      //Condensed Table
+      div.panel.panel-grey
+        div.panel-heading Condensed Table
+        div.panel-body
+          include ./module/tables-basic-condensed

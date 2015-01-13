@@ -1,0 +1,29 @@
+//- Tables - Responsive Tables - Basic Responsive Table
+
+include ../../common/variables
+include ../mixins
+
+
+- var table_data = {1:["Other browsers", "All others",  "-", "-", "U"],2:["Trident", "AOL browser (AOL desktop)", "Win XP", "6", "A"],3:["Gecko", "Camino 1.0", "OSX.2+", "1.8", "A"],4:["Gecko", "Camino 1.5", "OSX.3+", "1.8", "A"],5:["Misc", "Dillo 0.8", "Embedded devices", "-", "X"],6:["Gecko", "Epiphany 2.20", "Gnome", "1.8", "A"],7:["Gecko", "Firefox 1.0", "Win 98+ / OSX.2+", "1.7", "A"],8:["Gecko", "Firefox 1.5", "Win 98+ / OSX.2+", "1.8", "A"],9:["Gecko", "Firefox 2.0", "Win 98+ / OSX.2+", "1.8", "A"],10:["Gecko", "Firefox 3.0", "Win 2k+ / OSX.3+", "1.9", "A"]};
+
+div.table-responsive
+  table.table.table-bordered.table-hover
+    thead
+      tr
+        th Rendering engine
+        th Browser
+        th Platform(s)
+        th Engine version
+        th CSS grade
+    tfoot
+      tr
+        th Rendering engine
+        th Browser
+        th Platform(s)
+        th Engine version
+        th CSS grade
+    tbody
+      each val in table_data
+        tr
+          each con in val
+            td #{con}
