@@ -1,0 +1,18 @@
+//- Forms - Form Wizards - Basic
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-warning
+  div.panel-heading Basic Wizard Color
+  div.panel-body
+
+    each val, index in {1:'primary',2:'success',3:'info',4:'warning',5:'danger',6:'red',7:'orange',8:'yellow',9:'green',10:'black',11:'blue',12:'violet',13:'pink',14:'grey'}
+      div(id="wizard-basic-c#{index}" class="ptop15 wizard-basic wizard-basic-#{val}")
+        h3 Step 1
+        section This is step 1.
+        h3 Step 2
+        section This is step 2.
+        h3 Step 3
+        section This is step 3.

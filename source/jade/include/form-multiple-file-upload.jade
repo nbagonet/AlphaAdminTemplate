@@ -1,0 +1,125 @@
+//- Forms - Multiple File Upload
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.alert.alert-success
+    p!= 'File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images, audio and video for jQuery.<br>Supports cross-domain, chunked and resumable file uploads and client-side image resizing.<br>Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.'
+
+  form#fileupload(action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data")
+    div.row.fileupload-buttonbar
+      div.col-lg-8
+        span.btn.btn-success.fileinput-button.mright5
+          i.glyphicon.glyphicon-plus
+          span Add files...
+          input(type="file" name="files[]" multiple)
+        +buttons("btn btn-primary start mright5","Start upload","glyphicon glyphicon-upload mright5")(type="submit")
+        +buttons("btn btn-warning cancel mright5","Cancel upload","glyphicon glyphicon-ban-circle mright5")(type="reset")
+        +buttons("btn btn-danger delete mright5","Delete","glyphicon glyphicon-trash mright5")(type="button")
+        input.toggle(type="checkbox")
+        span.fileupload-process
+      div.col-lg-4.fileupload-progress.fade
+        div.progress.progress-striped.active.no-mb.mtop10(role="progressbar" aria-valuemin="0" aria-valuemax="100")
+          div.progress-bar.progress-bar-success(style="width:0%;")
+        div.progress-extended &nbsp;
+    table.table.table-striped(role="presentation")
+      tbody.files
+
+  br
+
+  div.panel.panel-white
+    div.panel-heading
+      h3.panel-title Demo Notes
+    div.panel-body
+      ul
+        li!= 'The maximum file size for uploads in this demo is <strong>5 MB</strong> (default file size is unlimited).'
+        li!= 'Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).'
+        li!= 'Uploaded files will be deleted automatically after <strong>5 minutes</strong> (demo setting).'
+        li!= 'You can <strong>drag &amp; drop</strong> files from your desktop on this webpage (see <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>).'
+        li!= 'Please refer to the <a href="https://github.com/blueimp/jQuery-File-Upload">project website</a> and <a href="https://github.com/blueimp/jQuery-File-Upload/wiki">documentation</a> for more information.'
+        li!= 'Built with the <a href="http://getbootstrap.com/">Bootstrap</a> CSS framework and Icons from <a href="http://glyphicons.com/">Glyphicons</a>.'
+
+  div#blueimp-gallery.blueimp-gallery.blueimp-gallery-controls(data-filter=":even")
+    div.slides
+    h3.title
+    a.prev ‹
+    a.next ›
+    a.close ×
+    a.play-pause
+    a.indicator
+
+script#template-upload(type="text/x-tmpl").
+  {% for (var i=0, file; file=o.files[i]; i++) { %}
+      <tr class="template-upload fade">
+          <td>
+              <span class="preview"></span>
+          </td>
+          <td>
+              <p class="name">{%=file.name%}</p>
+              <strong class="error text-danger"></strong>
+          </td>
+          <td>
+              <p class="size">Processing...</p>
+              <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+          </td>
+          <td>
+              {% if (!i && !o.options.autoUpload) { %}
+                  <button class="btn btn-primary start" disabled>
+                      <i class="glyphicon glyphicon-upload"></i>
+                      <span>Start</span>
+                  </button>
+              {% } %}
+              {% if (!i) { %}
+                  <button class="btn btn-warning cancel">
+                      <i class="glyphicon glyphicon-ban-circle"></i>
+                      <span>Cancel</span>
+                  </button>
+              {% } %}
+          </td>
+      </tr>
+  {% } %}
+script#template-download(type="text/x-tmpl").
+  {% for (var i=0, file; file=o.files[i]; i++) { %}
+      <tr class="template-download fade">
+          <td>
+              <span class="preview">
+                  {% if (file.thumbnailUrl) { %}
+                      <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                  {% } %}
+              </span>
+          </td>
+          <td>
+              <p class="name">
+                  {% if (file.url) { %}
+                      <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                  {% } else { %}
+                      <span>{%=file.name%}</span>
+                  {% } %}
+              </p>
+              {% if (file.error) { %}
+                  <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+              {% } %}
+          </td>
+          <td>
+              <span class="size">{%=o.formatFileSize(file.size)%}</span>
+          </td>
+          <td>
+              {% if (file.deleteUrl) { %}
+                  <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                      <i class="glyphicon glyphicon-trash"></i>
+                      <span>Delete</span>
+                  </button>
+                  <input type="checkbox" name="delete" value="1" class="toggle">
+              {% } else { %}
+                  <button class="btn btn-warning cancel">
+                      <i class="glyphicon glyphicon-ban-circle"></i>
+                      <span>Cancel</span>
+                  </button>
+              {% } %}
+          </td>
+      </tr>
+  {% } %}

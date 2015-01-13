@@ -269,7 +269,8 @@ $(function() {
   // Bootstrap Switch end
 
   // Bootstrap File Input begin
-  $('input[type=file]').bootstrapFileInput();
+  // Must have "file-inputs" className.
+  $('.file-inputs').bootstrapFileInput();
   // Bootstrap File Input end
 
   // jQuery Validation used on Bootstrap's form, include "success"&"error" begin

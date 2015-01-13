@@ -103,11 +103,6 @@ a:focus {
   color: #94e3ff;
   background-color: #555555;
 }
-@media (max-width: 991px) {
-  .topheader .navbar-top-links {
-    background-color: #494949;
-  }
-}
 .topheader .sidebar-toggle .icon-bar {
   background-color: #ffffff;
 }

@@ -1,0 +1,112 @@
+//- Forms - Form Wizards - Basic Form
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-danger
+  div.panel-heading Basic Form Wizard
+  div.panel-body
+
+    form#wizard-basic.ptop15(action="#" role="form")
+
+      div.wizard-basic.wizard-basic-primary
+        h3 Set up account
+        section
+          h4.text-grey Set up your account
+          div.form-horizontal
+            div.form-group.ptop20
+              label.col-md-3.control-label(for="username")
+                |Username
+                span.text-red *
+              div.col-sm-9
+                div.input-group
+                  div.input-group-addon
+                    i.fa.fa-user
+                  input#username.form-control(type="text" name="username" placeholder="Username")
+            div.form-group
+              label.col-md-3.control-label(for="password")
+                |Password
+                span.text-red *
+              div.col-sm-9
+                div.input-group
+                  div.input-group-addon
+                    i.fa.fa-key
+                  input#password.form-control(type="password" name="password" placeholder="Password")
+            div.form-group
+              label.col-md-3.control-label(for="password")
+                |Confirm Password
+                span.text-red *
+              div.col-sm-9
+                div.input-group
+                  div.input-group-addon
+                    i.fa.fa-key
+                  input#cpassword.form-control(type="password" name="cpassword" placeholder="Confirm Password")
+
+        h3 Provide information
+        section
+          h4.text-grey Delivery information
+          div.row.ptop20
+            div.col-md-12
+              div.form-group
+                label.control-label(for="street")
+                  |Street
+                  span.text-red *
+                input#street.form-control(type="text" name="street" placeholder="")
+          div.row
+            div.col-md-6
+              div.form-group
+                label.control-label(for="district")
+                  |District
+                input#district.form-control(type="text" name="district" placeholder="")
+            div.col-md-6
+              div.form-group
+                label.control-label(for="city")
+                  |City
+                  span.text-red *
+                input#city.form-control(type="text" name="city" placeholder="")
+          div.row
+            div.col-md-6
+              div.form-group
+                label.control-label(for="postcode")
+                  |Post Code
+                input#postcode.form-control(type="text" name="postcode" placeholder="")
+            div.col-md-6
+              div.form-group
+                label.control-label(for="country")
+                  |Country
+                select#country.form-control(name="country")
+                  option Select Country
+                  option(value="United States") United States
+                  option(value="England") England
+                  option(value="Spain") Spain
+
+        h3 Check products
+        section
+          h4 Checking products
+          div.form-horizontal
+            div.form-group.ptop20
+              label.col-md-3.control-label(for="product1")
+                |Product 1:
+              div.col-md-9
+                input#product1.form-control(type="text" name="product1" placeholder="Enter product detail")
+            div.form-group
+              label.col-md-3.control-label(for="product2")
+                |Product 1:
+              div.col-md-9
+                input#product2.form-control(type="text" name="product2" placeholder="Enter product detail")
+            div.form-group
+              label.col-md-3.control-label(for="product3")
+                |Product 1:
+              div.col-md-9
+                input#product3.form-control(type="text" name="product3" placeholder="Enter product detail")
+            div.form-group
+              label.col-md-3.control-label(for="checkoutmethod")
+                |Checkout method:
+                span.text-red *
+              div.col-lg-3.col-md-5
+                select#checkoutmethod.form-control(name="checkoutmethod")
+                  option(value="") Select checkout method
+                  option(value="1") Cash
+                  option(value="2") Visa Card
+                  option(value="3") Master Card

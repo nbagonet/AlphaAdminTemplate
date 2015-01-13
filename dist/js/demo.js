@@ -4672,3 +4672,141 @@ $(document).ready(function() {
 /**
  * jQuery Validation demo end
  */
+
+
+/**
+ * Wizard demo begin
+ */
+$(function() {
+
+  // Basic
+  if ($("#wizard-basic")[0]) {
+    var _form = $("#wizard-basic");
+    _form.validate({
+      rules: {
+        username: {
+          required: true
+        },
+        password: {
+          required: true,
+          rangelength: [6, 32]
+        },
+        cpassword: {
+          required: true,
+          equalTo: "#password",
+          rangelength: [6, 32]
+        },
+        street: {
+          required: true
+        },
+        city: {
+          required: true
+        },
+        checkoutmethod: {
+          required: true
+        }
+      }
+    });
+    _form.children("div").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      titleTemplate: "<span class=\"number\"><span class=\"number-inner\">#index#</span></span><span class=\"title\"><span class=\"title-inner\">#title#</span></span>",
+      transitionEffect: "slideLeft",
+      autoFocus: true,
+      labels: {
+        finish: "Finish <i class=\"fa fa-check-circle-o\"></i>",
+        next: "Next <i class=\"fa fa-arrow-circle-o-right\"></i>",
+        previous: "<i class=\"fa fa-arrow-circle-o-left\"></i> Previous"
+      },
+      onStepChanging: function(event, currentIndex, newIndex) {
+        _form.validate().settings.ignore = ":disabled,:hidden";
+        return _form.valid();
+      },
+      onFinishing: function(event, currentIndex) {
+        _form.validate().settings.ignore = ":disabled";
+        return _form.valid();
+      },
+      onFinished: function(event, currentIndex) {
+        alert("Submitted!");
+        _form.submit();
+      }
+
+    });
+  }
+
+  for (var i = 1; i <= 14; i++) {
+    if ($("#wizard-basic-c" + i)[0]) {
+      $("#wizard-basic-c" + i).steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        titleTemplate: "<span class=\"number\"><span class=\"number-inner\">#index#</span></span><span class=\"title\"><span class=\"title-inner\">#title#</span></span>",
+        transitionEffect: "slideLeft",
+        autoFocus: true,
+        labels: {
+          finish: "Finish <i class=\"fa fa-check-circle-o\"></i>",
+          next: "Next <i class=\"fa fa-arrow-circle-o-right\"></i>",
+          previous: "<i class=\"fa fa-arrow-circle-o-left\"></i> Previous"
+        }
+      });
+    }
+  }
+
+});
+/**
+ * Wizard demo end
+ */
+
+
+/**
+ * Multiple File Upload demo begin
+ */
+$(function() {
+  if ($('#fileupload')[0]) {
+
+    // Initialize the jQuery File Upload widget:
+    $('#fileupload').fileupload({
+      disableImageResize: false,
+      // Uncomment the following to send cross-domain cookies:
+      //xhrFields: {withCredentials: true},
+      url: 'vendor/jQuery-File-Upload/server/php/'
+    });
+
+    // Enable iframe cross-domain access via redirect option:
+    $('#fileupload').fileupload(
+      'option',
+      'redirect',
+      window.location.href.replace(
+        /\/[^\/]*$/,
+        '/cors/result.html?%s'
+      )
+    );
+
+    // Demo settings:
+    $('#fileupload').fileupload('option', {
+      url: 'vendor/jQuery-File-Upload/server/php/',
+      // Enable image resizing, except for Android and Opera,
+      // which actually support image resizing, but fail to
+      // send Blob objects via XHR requests:
+      disableImageResize: /Android(?!.*Chrome)|Opera/
+        .test(window.navigator.userAgent),
+      maxFileSize: 5000000,
+      acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i
+    });
+    // Upload server status check for browsers with CORS support:
+    if ($.support.cors) {
+      $.ajax({
+        url: 'vendor/jQuery-File-Upload/server/php/',
+        type: 'HEAD'
+      }).fail(function() {
+        $('<div class="alert alert-danger"/>')
+          .text('Upload server currently unavailable - ' +
+            new Date())
+          .appendTo('#fileupload');
+      });
+    }
+
+  }
+});
+/**
+ * Multiple File Upload demo end
+ */

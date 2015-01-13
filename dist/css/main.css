@@ -2471,13 +2471,9 @@ label,
   width: 1.5em;
   text-align: center;
 }
-.navbar-top-links .topbar-user > .dropdown-toggle {
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
 .navbar-top-links .topbar-user > .dropdown-toggle > img {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
 }
 @media (max-width: 991px) {
@@ -7591,7 +7587,6 @@ table.treetable tbody .expanded .indenter a {
   animation: progress-bar-stripes 2s linear infinite;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.075);
 }
-/* Bootstrap Datepicker */
 /*!
  * Datepicker for Bootstrap
  *
@@ -8205,4 +8200,651 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   vertical-align: middle;
   border-width: 1px 0;
   text-shadow: 0 1px 0 #fff;
+}
+/* Wizard */
+.wizard,
+.tabcontrol {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.wizard a,
+.tabcontrol a {
+  outline: 0;
+}
+.wizard ul,
+.tabcontrol ul {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+}
+.wizard ul > li,
+.tabcontrol ul > li {
+  display: block;
+  padding: 0;
+}
+.wizard > .steps,
+.tabcontrol > .steps {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.wizard > .steps .current-info,
+.tabcontrol > .steps .current-info {
+  position: absolute;
+  left: -999em;
+}
+.wizard > .steps > ul,
+.tabcontrol > .steps > ul {
+  display: table;
+  width: 100%;
+}
+.wizard > .steps > ul > li,
+.tabcontrol > .steps > ul > li {
+  position: relative;
+  display: table-cell;
+  width: 1%;
+  text-align: center;
+}
+.wizard > .steps > ul > li.current .number:after,
+.tabcontrol > .steps > ul > li.current .number:after {
+  height: 32px;
+}
+.wizard > .steps > ul > li.current .title,
+.tabcontrol > .steps > ul > li.current .title {
+  font-weight: 400;
+}
+.wizard > .steps > ul > li.done .number:after,
+.tabcontrol > .steps > ul > li.done .number:after {
+  height: 75px;
+}
+.wizard > .steps > ul > li.done .title,
+.tabcontrol > .steps > ul > li.done .title {
+  font-weight: 700;
+}
+.wizard > .steps > ul > li:after,
+.tabcontrol > .steps > ul > li:after {
+  font-size: 0;
+  position: absolute;
+  top: 35px;
+  right: -17px;
+  display: block;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 34px;
+  height: 5px;
+  content: ' ';
+  border-radius: 2px;
+  background: #f1f1f1;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.35);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+@media (max-width: 991px) {
+  .wizard > .steps > ul > li:after,
+  .tabcontrol > .steps > ul > li:after {
+    display: none!important;
+  }
+}
+.wizard > .steps > ul > li.last:after,
+.tabcontrol > .steps > ul > li.last:after {
+  display: none;
+}
+.wizard > .steps > ul > li .number,
+.tabcontrol > .steps > ul > li .number {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.wizard > .steps > ul > li .number .number-inner,
+.tabcontrol > .steps > ul > li .number .number-inner {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 53px;
+  position: relative;
+  z-index: 9;
+  display: block;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  margin: 9px 11px 11px 9px;
+  color: #f1f1f1;
+  border-radius: 50%;
+  background: #fff;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#fafafa));
+  text-shadow: rgba(0, 0, 0, 0.075) -2px 0, rgba(0, 0, 0, 0.075) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.15) -1px -2px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+.wizard > .steps > ul > li .number:after,
+.tabcontrol > .steps > ul > li .number:after {
+  position: absolute;
+  z-index: 8;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 75px;
+  height: 0;
+  content: ' ';
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+.wizard > .steps > ul > li a:hover .number,
+.tabcontrol > .steps > ul > li a:hover .number,
+.wizard > .steps > ul > li a:active .number,
+.tabcontrol > .steps > ul > li a:active .number,
+.wizard > .steps > ul > li a:hover:focus .number,
+.tabcontrol > .steps > ul > li a:hover:focus .number {
+  border-color: #ddd;
+}
+.wizard > .steps > ul > li .title,
+.tabcontrol > .steps > ul > li .title {
+  display: block;
+  text-align: center;
+  color: #aaa;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+.wizard > .content,
+.tabcontrol > .content {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  min-height: 100px;
+}
+.wizard > .content > .title,
+.tabcontrol > .content > .title {
+  position: absolute;
+  left: -999em;
+}
+.wizard > .content .body,
+.tabcontrol > .content .body {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+.wizard > .actions,
+.tabcontrol > .actions {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+.wizard > .actions li,
+.tabcontrol > .actions li {
+  float: right;
+}
+.wizard > .actions li:first-child,
+.tabcontrol > .actions li:first-child {
+  float: left;
+}
+.wizard > .actions li a,
+.tabcontrol > .actions li a {
+  display: inline-block;
+  padding: 6px 10px;
+}
+.wizard > .actions li.disabled a,
+.tabcontrol > .actions li.disabled a {
+  cursor: not-allowed;
+  color: #ddd!important;
+  background-color: transparent!important;
+}
+.wizard-basic-primary > .steps > ul > li.current .number:after {
+  background: #92bce0;
+}
+.wizard-basic-primary > .steps > ul > li.current .title {
+  color: #92bce0;
+}
+.wizard-basic-primary > .steps > ul > li.done:after {
+  background: #428bca;
+}
+.wizard-basic-primary > .steps > ul > li.done .number:after {
+  background: #428bca;
+}
+.wizard-basic-primary > .steps > ul > li.done .number-inner {
+  color: #428bca;
+}
+.wizard-basic-primary > .steps > ul > li.done .title {
+  color: #428bca;
+}
+.wizard-basic-primary > .steps > ul > li a:hover .title,
+.wizard-basic-primary > .steps > ul > li a:focus .title,
+.wizard-basic-primary > .steps > ul > li a:active .title {
+  color: #3071a9;
+}
+.wizard-basic-primary > .actions a {
+  color: #428bca;
+}
+.wizard-basic-primary > .actions a:hover,
+.wizard-basic-primary > .actions a:active,
+.wizard-basic-primary > .actions a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.wizard-basic-success > .steps > ul > li.current .number:after {
+  background: #a3d7a3;
+}
+.wizard-basic-success > .steps > ul > li.current .title {
+  color: #a3d7a3;
+}
+.wizard-basic-success > .steps > ul > li.done:after {
+  background: #5cb85c;
+}
+.wizard-basic-success > .steps > ul > li.done .number:after {
+  background: #5cb85c;
+}
+.wizard-basic-success > .steps > ul > li.done .number-inner {
+  color: #5cb85c;
+}
+.wizard-basic-success > .steps > ul > li.done .title {
+  color: #5cb85c;
+}
+.wizard-basic-success > .steps > ul > li a:hover .title,
+.wizard-basic-success > .steps > ul > li a:focus .title,
+.wizard-basic-success > .steps > ul > li a:active .title {
+  color: #449d44;
+}
+.wizard-basic-success > .actions a {
+  color: #5cb85c;
+}
+.wizard-basic-success > .actions a:hover,
+.wizard-basic-success > .actions a:active,
+.wizard-basic-success > .actions a:focus {
+  color: #fff;
+  background-color: #5cb85c;
+}
+.wizard-basic-info > .steps > ul > li.current .number:after {
+  background: #b0e1ef;
+}
+.wizard-basic-info > .steps > ul > li.current .title {
+  color: #b0e1ef;
+}
+.wizard-basic-info > .steps > ul > li.done:after {
+  background: #5bc0de;
+}
+.wizard-basic-info > .steps > ul > li.done .number:after {
+  background: #5bc0de;
+}
+.wizard-basic-info > .steps > ul > li.done .number-inner {
+  color: #5bc0de;
+}
+.wizard-basic-info > .steps > ul > li.done .title {
+  color: #5bc0de;
+}
+.wizard-basic-info > .steps > ul > li a:hover .title,
+.wizard-basic-info > .steps > ul > li a:focus .title,
+.wizard-basic-info > .steps > ul > li a:active .title {
+  color: #31b0d5;
+}
+.wizard-basic-info > .actions a {
+  color: #5bc0de;
+}
+.wizard-basic-info > .actions a:hover,
+.wizard-basic-info > .actions a:active,
+.wizard-basic-info > .actions a:focus {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.wizard-basic-warning > .steps > ul > li.current .number:after {
+  background: #f8d9ac;
+}
+.wizard-basic-warning > .steps > ul > li.current .title {
+  color: #f8d9ac;
+}
+.wizard-basic-warning > .steps > ul > li.done:after {
+  background: #f0ad4e;
+}
+.wizard-basic-warning > .steps > ul > li.done .number:after {
+  background: #f0ad4e;
+}
+.wizard-basic-warning > .steps > ul > li.done .number-inner {
+  color: #f0ad4e;
+}
+.wizard-basic-warning > .steps > ul > li.done .title {
+  color: #f0ad4e;
+}
+.wizard-basic-warning > .steps > ul > li a:hover .title,
+.wizard-basic-warning > .steps > ul > li a:focus .title,
+.wizard-basic-warning > .steps > ul > li a:active .title {
+  color: #ec971f;
+}
+.wizard-basic-warning > .actions a {
+  color: #f0ad4e;
+}
+.wizard-basic-warning > .actions a:hover,
+.wizard-basic-warning > .actions a:active,
+.wizard-basic-warning > .actions a:focus {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+.wizard-basic-danger > .steps > ul > li.current .number:after {
+  background: #eba5a3;
+}
+.wizard-basic-danger > .steps > ul > li.current .title {
+  color: #eba5a3;
+}
+.wizard-basic-danger > .steps > ul > li.done:after {
+  background: #d9534f;
+}
+.wizard-basic-danger > .steps > ul > li.done .number:after {
+  background: #d9534f;
+}
+.wizard-basic-danger > .steps > ul > li.done .number-inner {
+  color: #d9534f;
+}
+.wizard-basic-danger > .steps > ul > li.done .title {
+  color: #d9534f;
+}
+.wizard-basic-danger > .steps > ul > li a:hover .title,
+.wizard-basic-danger > .steps > ul > li a:focus .title,
+.wizard-basic-danger > .steps > ul > li a:active .title {
+  color: #c9302c;
+}
+.wizard-basic-danger > .actions a {
+  color: #d9534f;
+}
+.wizard-basic-danger > .actions a:hover,
+.wizard-basic-danger > .actions a:active,
+.wizard-basic-danger > .actions a:focus {
+  color: #fff;
+  background-color: #d9534f;
+}
+.wizard-basic-red > .steps > ul > li.current .number:after {
+  background: #f07471;
+}
+.wizard-basic-red > .steps > ul > li.current .title {
+  color: #f07471;
+}
+.wizard-basic-red > .steps > ul > li.done:after {
+  background: #e31d18;
+}
+.wizard-basic-red > .steps > ul > li.done .number:after {
+  background: #e31d18;
+}
+.wizard-basic-red > .steps > ul > li.done .number-inner {
+  color: #e31d18;
+}
+.wizard-basic-red > .steps > ul > li.done .title {
+  color: #e31d18;
+}
+.wizard-basic-red > .steps > ul > li a:hover .title,
+.wizard-basic-red > .steps > ul > li a:focus .title,
+.wizard-basic-red > .steps > ul > li a:active .title {
+  color: #b51713;
+}
+.wizard-basic-red > .actions a {
+  color: #e31d18;
+}
+.wizard-basic-red > .actions a:hover,
+.wizard-basic-red > .actions a:active,
+.wizard-basic-red > .actions a:focus {
+  color: #fff;
+  background-color: #e31d18;
+}
+.wizard-basic-orange > .steps > ul > li.current .number:after {
+  background: #f8a48d;
+}
+.wizard-basic-orange > .steps > ul > li.current .title {
+  color: #f8a48d;
+}
+.wizard-basic-orange > .steps > ul > li.done:after {
+  background: #f2572d;
+}
+.wizard-basic-orange > .steps > ul > li.done .number:after {
+  background: #f2572d;
+}
+.wizard-basic-orange > .steps > ul > li.done .number-inner {
+  color: #f2572d;
+}
+.wizard-basic-orange > .steps > ul > li.done .title {
+  color: #f2572d;
+}
+.wizard-basic-orange > .steps > ul > li a:hover .title,
+.wizard-basic-orange > .steps > ul > li a:focus .title,
+.wizard-basic-orange > .steps > ul > li a:active .title {
+  color: #de3a0e;
+}
+.wizard-basic-orange > .actions a {
+  color: #f2572d;
+}
+.wizard-basic-orange > .actions a:hover,
+.wizard-basic-orange > .actions a:active,
+.wizard-basic-orange > .actions a:focus {
+  color: #fff;
+  background-color: #f2572d;
+}
+.wizard-basic-yellow > .steps > ul > li.current .number:after {
+  background: #f7e18d;
+}
+.wizard-basic-yellow > .steps > ul > li.current .title {
+  color: #f7e18d;
+}
+.wizard-basic-yellow > .steps > ul > li.done:after {
+  background: #f1c82d;
+}
+.wizard-basic-yellow > .steps > ul > li.done .number:after {
+  background: #f1c82d;
+}
+.wizard-basic-yellow > .steps > ul > li.done .number-inner {
+  color: #f1c82d;
+}
+.wizard-basic-yellow > .steps > ul > li.done .title {
+  color: #f1c82d;
+}
+.wizard-basic-yellow > .steps > ul > li a:hover .title,
+.wizard-basic-yellow > .steps > ul > li a:focus .title,
+.wizard-basic-yellow > .steps > ul > li a:active .title {
+  color: #dcb10f;
+}
+.wizard-basic-yellow > .actions a {
+  color: #f1c82d;
+}
+.wizard-basic-yellow > .actions a:hover,
+.wizard-basic-yellow > .actions a:active,
+.wizard-basic-yellow > .actions a:focus {
+  color: #fff;
+  background-color: #f1c82d;
+}
+.wizard-basic-green > .steps > ul > li.current .number:after {
+  background: #00fad3;
+}
+.wizard-basic-green > .steps > ul > li.current .title {
+  color: #00fad3;
+}
+.wizard-basic-green > .steps > ul > li.done:after {
+  background: #00947d;
+}
+.wizard-basic-green > .steps > ul > li.done .number:after {
+  background: #00947d;
+}
+.wizard-basic-green > .steps > ul > li.done .number-inner {
+  color: #00947d;
+}
+.wizard-basic-green > .steps > ul > li.done .title {
+  color: #00947d;
+}
+.wizard-basic-green > .steps > ul > li a:hover .title,
+.wizard-basic-green > .steps > ul > li a:focus .title,
+.wizard-basic-green > .steps > ul > li a:active .title {
+  color: #006152;
+}
+.wizard-basic-green > .actions a {
+  color: #00947d;
+}
+.wizard-basic-green > .actions a:hover,
+.wizard-basic-green > .actions a:active,
+.wizard-basic-green > .actions a:focus {
+  color: #fff;
+  background-color: #00947d;
+}
+.wizard-basic-blue > .steps > ul > li.current .number:after {
+  background: #48dbfd;
+}
+.wizard-basic-blue > .steps > ul > li.current .title {
+  color: #48dbfd;
+}
+.wizard-basic-blue > .steps > ul > li.done:after {
+  background: #02b4dd;
+}
+.wizard-basic-blue > .steps > ul > li.done .number:after {
+  background: #02b4dd;
+}
+.wizard-basic-blue > .steps > ul > li.done .number-inner {
+  color: #02b4dd;
+}
+.wizard-basic-blue > .steps > ul > li.done .title {
+  color: #02b4dd;
+}
+.wizard-basic-blue > .steps > ul > li a:hover .title,
+.wizard-basic-blue > .steps > ul > li a:focus .title,
+.wizard-basic-blue > .steps > ul > li a:active .title {
+  color: #028baa;
+}
+.wizard-basic-blue > .actions a {
+  color: #02b4dd;
+}
+.wizard-basic-blue > .actions a:hover,
+.wizard-basic-blue > .actions a:active,
+.wizard-basic-blue > .actions a:focus {
+  color: #fff;
+  background-color: #02b4dd;
+}
+.wizard-basic-black > .steps > ul > li.current .number:after {
+  background: #808080;
+}
+.wizard-basic-black > .steps > ul > li.current .title {
+  color: #808080;
+}
+.wizard-basic-black > .steps > ul > li.done:after {
+  background: #4d4d4d;
+}
+.wizard-basic-black > .steps > ul > li.done .number:after {
+  background: #4d4d4d;
+}
+.wizard-basic-black > .steps > ul > li.done .number-inner {
+  color: #4d4d4d;
+}
+.wizard-basic-black > .steps > ul > li.done .title {
+  color: #4d4d4d;
+}
+.wizard-basic-black > .steps > ul > li a:hover .title,
+.wizard-basic-black > .steps > ul > li a:focus .title,
+.wizard-basic-black > .steps > ul > li a:active .title {
+  color: #333333;
+}
+.wizard-basic-black > .actions a {
+  color: #4d4d4d;
+}
+.wizard-basic-black > .actions a:hover,
+.wizard-basic-black > .actions a:active,
+.wizard-basic-black > .actions a:focus {
+  color: #fff;
+  background-color: #4d4d4d;
+}
+.wizard-basic-violet > .steps > ul > li.current .number:after {
+  background: #a046aa;
+}
+.wizard-basic-violet > .steps > ul > li.current .title {
+  color: #a046aa;
+}
+.wizard-basic-violet > .steps > ul > li.done:after {
+  background: #5c2862;
+}
+.wizard-basic-violet > .steps > ul > li.done .number:after {
+  background: #5c2862;
+}
+.wizard-basic-violet > .steps > ul > li.done .number-inner {
+  color: #5c2862;
+}
+.wizard-basic-violet > .steps > ul > li.done .title {
+  color: #5c2862;
+}
+.wizard-basic-violet > .steps > ul > li a:hover .title,
+.wizard-basic-violet > .steps > ul > li a:focus .title,
+.wizard-basic-violet > .steps > ul > li a:active .title {
+  color: #3a193e;
+}
+.wizard-basic-violet > .actions a {
+  color: #5c2862;
+}
+.wizard-basic-violet > .actions a:hover,
+.wizard-basic-violet > .actions a:active,
+.wizard-basic-violet > .actions a:focus {
+  color: #fff;
+  background-color: #5c2862;
+}
+.wizard-basic-pink > .steps > ul > li.current .number:after {
+  background: #fdc6db;
+}
+.wizard-basic-pink > .steps > ul > li.current .title {
+  color: #fdc6db;
+}
+.wizard-basic-pink > .steps > ul > li.done:after {
+  background: #fa639e;
+}
+.wizard-basic-pink > .steps > ul > li.done .number:after {
+  background: #fa639e;
+}
+.wizard-basic-pink > .steps > ul > li.done .number-inner {
+  color: #fa639e;
+}
+.wizard-basic-pink > .steps > ul > li.done .title {
+  color: #fa639e;
+}
+.wizard-basic-pink > .steps > ul > li a:hover .title,
+.wizard-basic-pink > .steps > ul > li a:focus .title,
+.wizard-basic-pink > .steps > ul > li a:active .title {
+  color: #f8327f;
+}
+.wizard-basic-pink > .actions a {
+  color: #fa639e;
+}
+.wizard-basic-pink > .actions a:hover,
+.wizard-basic-pink > .actions a:active,
+.wizard-basic-pink > .actions a:focus {
+  color: #fff;
+  background-color: #fa639e;
+}
+.wizard-basic-grey > .steps > ul > li.current .number:after {
+  background: #d6d6d6;
+}
+.wizard-basic-grey > .steps > ul > li.current .title {
+  color: #d6d6d6;
+}
+.wizard-basic-grey > .steps > ul > li.done:after {
+  background: #a3a3a3;
+}
+.wizard-basic-grey > .steps > ul > li.done .number:after {
+  background: #a3a3a3;
+}
+.wizard-basic-grey > .steps > ul > li.done .number-inner {
+  color: #a3a3a3;
+}
+.wizard-basic-grey > .steps > ul > li.done .title {
+  color: #a3a3a3;
+}
+.wizard-basic-grey > .steps > ul > li a:hover .title,
+.wizard-basic-grey > .steps > ul > li a:focus .title,
+.wizard-basic-grey > .steps > ul > li a:active .title {
+  color: #8a8a8a;
+}
+.wizard-basic-grey > .actions a {
+  color: #a3a3a3;
+}
+.wizard-basic-grey > .actions a:hover,
+.wizard-basic-grey > .actions a:active,
+.wizard-basic-grey > .actions a:focus {
+  color: #fff;
+  background-color: #a3a3a3;
 }

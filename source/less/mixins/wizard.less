@@ -1,0 +1,62 @@
+// Wizard Theme
+.gen-wizard-basic-theme(@bg;@color;){
+  > .steps
+    {
+        > ul
+        {
+            > li
+            {
+                &.current
+                {
+                    .number
+                    {
+                        &:after
+                        {
+                            background: lighten(@bg,20%);
+                        }
+                    }
+                    .title
+                    {
+                        color: lighten(@color,20%);
+                    }
+                }
+                &.done
+                {
+                    &:after
+                    {
+                        background: @bg;
+                    }
+                    .number:after
+                    {
+                        background: @bg;
+                    }
+                    .number-inner
+                    {
+                        color: @color;
+                    }
+                    .title
+                    {
+                        color: @color;
+                    }
+                }
+                & a:hover .title,
+                & a:focus .title,
+                & a:active .title{
+                    color:darken(@color,10%);
+                }
+            }
+        }
+    }
+    > .actions
+    {
+        a{
+            color:@color;
+            &:hover,
+            &:active,
+            &:focus{
+                color:#fff;
+                background-color:@color;
+            }
+        }
+    }
+}
