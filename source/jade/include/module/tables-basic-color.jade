@@ -1,0 +1,22 @@
+//- Tables - Basic Tables - Color Table
+
+include ../../common/variables
+include ../mixins
+
+
+- var color = ['default','primary','success','info','warning','danger','red','orange','yellow','green','black','blue','violet','pink','grey'];
+
+each val in color
+  div.ptop10
+    table.table.table-bordered(class="table-#{val}")
+      thead
+        tr
+          th Entity
+          th Value
+          th Status
+      tbody
+        tr
+          td #{val}
+          td 573
+          td
+            div.progress.no-mb(data-hover="tooltip" data-original-title="40%"): div.progress-bar(class="progress-bar-#{val}" role="progressbar" data-transitiongoal="40")

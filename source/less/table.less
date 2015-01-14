@@ -19,6 +19,84 @@
 }
 
 
+/* Color Table */
+.table-primary
+{
+    .table-color(@color-primary;#fff);
+}
+.table-success
+{
+    .table-color(@color-success;#fff);
+}
+.table-info
+{
+    .table-color(@color-info;#fff);
+}
+.table-warning
+{
+    .table-color(@color-warning;#fff);
+}
+.table-danger
+{
+    .table-color(@color-danger;#fff);
+}
+.table-red
+{
+    .table-color(@color-red;#fff);
+}
+.table-orange
+{
+    .table-color(@color-orange;#fff);
+}
+.table-yellow
+{
+    .table-color(@color-yellow;#fff);
+}
+.table-green
+{
+    .table-color(@color-green;#fff);
+}
+.table-black
+{
+    .table-color(@color-black;#fff);
+}
+.table-blue
+{
+    .table-color(@color-blue;#fff);
+}
+.table-violet
+{
+    .table-color(@color-violet;#fff);
+}
+.table-pink
+{
+    .table-color(@color-pink;#fff);
+}
+.table-grey
+{
+    .table-color(@color-grey;#fff);
+}
+.table-default
+{
+    .table-color(#eee;@gray-light);
+}
+
+
+/* Table Size */
+.table-sm
+{
+    font-size: @font-size-smaller;
+}
+.table-lg
+{
+    font-size: @font-size-large;
+}
+.table-xl
+{
+    font-size: @font-size-larger;
+}
+
+
 /* Responsive Tables - The Unseen Column */
 .table-unseen
 {
@@ -272,4 +350,85 @@
             content: attr(data-title);
         }
     }
+}
+
+
+/* Table Sorter */
+.tablesorter
+{
+    .header
+    {
+        position: relative;
+
+        padding-right: 24px;
+
+        cursor: pointer;
+        &.headerSortDown
+        {
+            &:before
+            {
+                display: none;
+            }
+        }
+        &.headerSortUp
+        {
+            &:after
+            {
+                display: none;
+            }
+        }
+        &:before,
+        &:after
+        {
+            font: normal normal normal 14px/1 FontAwesome;
+
+            position: absolute;
+            right: 8px;
+
+            color: @gray-light;
+        }
+        &:before
+        {
+            top: 8px;
+
+            content: '\f0de';
+        }
+        &:after
+        {
+            bottom: 8px;
+
+            content: '\f0dd';
+        }
+    }
+}
+.table-primary,
+.table-success,
+.table-info,
+.table-warning,
+.table-danger,
+.table-red,
+.table-orange,
+.table-yelloe,
+.table-green,
+.table-blue,
+.table-black,
+.table-violet,
+.table-pink,
+.table-grey
+{
+    .header
+    {
+        &:before,
+        &:after
+        {
+            color: #fff;
+        }
+    }
+}
+
+
+/* Fixed Header Table */
+.tableFloatingHeaderOriginal
+{
+    .box-shadow(0 4px 8px rgba(0,0,0,.125));
 }

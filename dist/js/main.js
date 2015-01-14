@@ -301,4 +301,41 @@ $(function() {
   }
   // jQuery Validation... end
 
+  // Table check all begin
+  if ($(".checkall")[0]) {
+    $('.checkall').on('ifChecked ifUnchecked', function(event) {
+      if (event.type == 'ifChecked') {
+        $(this).closest('table').find('input[type=checkbox]').iCheck('check');
+      } else {
+        $(this).closest('table').find('input[type=checkbox]').iCheck('uncheck');
+      }
+    });
+  }
+  // Table check all end
+
+  // Table Sorter begin
+  if ($("table.tablesorter")[0]) {
+    $("table.tablesorter").each(function(index, el) {
+      var _this = $(this);
+      if (_this.find(".checkall").length > 0) {
+        _this.tablesorter({
+          headers: {
+            0: {
+              sorter: false
+            }
+          }
+        });
+      }else{
+        _this.tablesorter();
+      }
+    });
+  }
+  // Table Sorter end
+
+  // Table Fixed Header begin
+  if($("table.table-fixed-header")[0]){
+    $("table.table-fixed-header").stickyTableHeaders();
+  }
+  // Table Fixed Header end
+
 });

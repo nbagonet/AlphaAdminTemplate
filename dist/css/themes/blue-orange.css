@@ -676,6 +676,7 @@ fieldset[disabled] .datepicker table tr td.selected.disabled.active,
 fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
   background-color: #777777 !important;
   border-color: #555555 !important;
+  cursor: not-allowed;
 }
 .datepicker table tr td.selected .badge,
 .datepicker table tr td.selected:hover .badge,
@@ -808,6 +809,7 @@ fieldset[disabled] .datepicker table tr td.active.disabled.active,
 fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
   background-color: #f2572d !important;
   border-color: #ae2e0b !important;
+  cursor: not-allowed;
 }
 .datepicker table tr td.active .badge,
 .datepicker table tr td.active:hover .badge,
@@ -950,6 +952,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled.active,
 fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #f2572d !important;
   border-color: #ae2e0b !important;
+  cursor: not-allowed;
 }
 .datepicker table tr td span.active .badge,
 .datepicker table tr td span.active:hover .badge,
@@ -1013,6 +1016,7 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action]:active,
 fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
   background-color: #f8a48d !important;
   border-color: #f57d5d !important;
+  cursor: not-allowed;
 }
 .bootstrap-datetimepicker-widget button[data-action] .badge {
   color: #f8a48d !important;

@@ -1,0 +1,98 @@
+//- Tables - Action Tables - Pagination
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.table-container.p10
+  //- Table control bar
+  div.row.pbottom5
+    div.col-lg-8
+      div.pagination-panel
+        span Page
+        +buttons("btn btn-default disabled mleft5","","fa fa-caret-left","","","2")(href="javascript:void(0)")
+        input.form-control.input-inline.input-mini.text-center.mleft5(type="number" value="1" min="1" max="5" maxlength="1")
+        +buttons("btn btn-default mleft5","","fa fa-caret-right","","","2")(href="javascript:void(0)")
+        span.mleft5 of 6 | View
+        select.selectpicker.mleft5(data-width="auto")
+          option(value="20") 20
+          option(value="50") 50
+          option(value="100") 100
+          option(value="150") 150
+          option(value="All") All
+        span.mleft5 records | Found total 58 records
+    div.col-lg-4.link-success.text-right
+      ul.pagination.no-m
+        li
+          a(href="#")
+            i.fa.fa-angle-left
+        each val in [1, 2, 3, 4, 5]
+          li
+            a(href="#")= val
+        li
+          a(href="#")
+            i.fa.fa-angle-right
+
+  //- Table container
+  - var table_act_data_demo = {1:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],2:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],3:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],4:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],5:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK']};
+  div.table-flipscroll
+    table.table.table-hover.table-striped.table-bordered.no-mb
+      thead
+        tr
+          th.text-center
+            input.icheck.checkall(type="checkbox")
+          th #
+          th Username
+          th Country
+          th Gender
+          th Order
+          th Date
+          th Price
+          th Status
+          th Actions
+      tbody
+        each val, index in table_act_data_demo
+          tr
+            td.text-center
+              input.icheck(type="checkbox")
+            td #{index}
+            td #{val[0]}
+            td #{val[1]}
+            td #{val[2]}
+            td #{val[3]}
+            td #{val[4]}
+            td #{val[5]}
+            td
+              span(class="label label-sm label-#{val[6]}") #{val[7]}
+            td
+              +buttons("btn-xs btn-default mright5","Edit","fa fa-edit mright5")
+              +buttons("btn-xs btn-default","Delete","fa fa-trash-o mright5")
+
+  //- Table control bar
+  div.row.ptop10
+    div.col-md-8
+      div.pagination-panel
+        span Page
+        +buttons("btn btn-default disabled mleft5","","fa fa-caret-left","","","2")(href="javascript:void(0)")
+        input.form-control.input-inline.input-mini.text-center.mleft5(type="number" value="1" min="1" max="5" maxlength="1")
+        +buttons("btn btn-default mleft5","","fa fa-caret-right","","","2")(href="javascript:void(0)")
+        span.mleft5 of 6 | View
+        select.selectpicker.mleft5(data-width="auto")
+          option(value="20") 20
+          option(value="50") 50
+          option(value="100") 100
+          option(value="150") 150
+          option(value="All") All
+        span.mleft5 records | Found total 58 records
+    div.col-md-4.link-success.text-right
+      ul.pagination.no-m
+        li
+          a(href="#")
+            i.fa.fa-angle-left
+        each val in [1, 2, 3, 4, 5]
+          li
+            a(href="#")= val
+        li
+          a(href="#")
+            i.fa.fa-angle-right

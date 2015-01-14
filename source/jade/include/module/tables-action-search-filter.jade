@@ -1,0 +1,66 @@
+//- Tables - Action Tables - Search Filter
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.table-container.p10
+  //- Table search bar
+  div.row
+    div.col-lg-6.pbottom10
+      div.input-group.input-group-sm
+        span.input-group-btn
+          +buttons('btn-default', 'Filter', '', 'caret', 'true')
+          +dropdown-menu('','')
+            +dropdown-menu-item-normal('', '#', 'Newest', 'fa fa-newspaper-o mright5')
+            +dropdown-menu-item-normal('', '#', 'Rating', 'fa fa-star-o mright5')
+            +dropdown-menu-item-normal('', '#', 'Price', 'fa fa-money mright5')
+            +dropdown-menu-item-normal('', '#', 'Sales', 'fa fa-shopping-cart mright5')
+        input.form-control(type="text" placeholder="Keyword")
+        span.input-group-btn
+          +buttons("btn-danger","Search")
+    div.col-lg-6.text-right.pbottom10
+      span 5 records selected:
+      select.form-control.input-inline.input-sm.mleft5
+        option(value="") Select...
+        option(value="cancel") Cancel
+        option(value="hold") Hold
+        option(value="onhold") On Hold
+        option(value="close") Close
+      +buttons("btn-danger btn-sm mleft5","Submit","fa fa-check mright5")
+
+  //- Table container
+  - var table_act_data_demo = {1:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],2:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],3:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],4:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],5:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK']};
+  div.table-flipscroll
+    table.table.table-hover.table-striped.table-bordered.no-mb
+      thead
+        tr
+          th.text-center
+            input.icheck.checkall(type="checkbox")
+          th #
+          th Username
+          th Country
+          th Gender
+          th Order
+          th Date
+          th Price
+          th Status
+          th Actions
+      tbody
+        each val, index in table_act_data_demo
+          tr
+            td.text-center
+              input.icheck(type="checkbox")
+            td #{index}
+            td #{val[0]}
+            td #{val[1]}
+            td #{val[2]}
+            td #{val[3]}
+            td #{val[4]}
+            td #{val[5]}
+            td
+              span(class="label label-sm label-#{val[6]}") #{val[7]}
+            td
+              +buttons("btn-xs btn-default mright5","Edit","fa fa-edit mright5")
+              +buttons("btn-xs btn-default","Delete","fa fa-trash-o mright5")

@@ -1,0 +1,20 @@
+//- Tables - Action Tables
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Pagination
+  div.panel.panel-success
+    div.panel-heading Pagination
+    div.panel-body
+      include ./module/tables-action-pagination
+
+  //Search Filter
+  div.panel.panel-warning
+    div.panel-heading Search Filter
+    div.panel-body
+      include ./module/tables-action-search-filter

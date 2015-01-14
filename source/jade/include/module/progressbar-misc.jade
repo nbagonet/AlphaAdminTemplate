@@ -148,3 +148,13 @@ div.row
           div#m-multi-trigger
             //data-init="false": Don't Init Progress Bar
             div.progress.progress-striped.active(data-init="false"): div.progress-bar(role="progressbar")
+
+div.row
+  div.col-lg-12
+    //Color Options
+    - var color = ['primary','success','info','warning','danger','red','orange','yellow','green','black','blue','violet','pink','grey'];
+    div.panel.panel-white
+      div.panel-heading Color Options
+      div.panel-body
+        each val in color
+          div.progress: div.progress-bar(class="progress-bar-#{val}" role="progressbar" data-transitiongoal="40")

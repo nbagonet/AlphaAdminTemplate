@@ -3421,11 +3421,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/tables-action_tables.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/tables-action_tables.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/tables-basic_tables.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/tables-basic_tables.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/tables-resonsive_tables.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/tables-resonsive_tables.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -43669,6 +43687,104 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/dist\/vendor\/jquery-cookie\/CHANGELOG.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/CHANGELOG.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/CHANGELOG.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jquery-cookie\/CONTRIBUTING.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/CONTRIBUTING.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/CONTRIBUTING.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jquery-cookie\/Gruntfile.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/Gruntfile.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Gruntfile.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/jquery-cookie\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/README.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jquery-cookie\/src\/jquery.cookie.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/src\/jquery.cookie.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.cookie.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/jquery-cookie\/src\/jquery.cookie.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/src\/jquery.cookie.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.cookie.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/jquery-cookie\/test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jquery-cookie\/test\/malformed_cookie.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/test\/malformed_cookie.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jquery-cookie\/test\/tests.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jquery-cookie\/test\/tests.js",
+		"outputAbbreviatedPath": "\/dist\/js\/tests.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/dist\/vendor\/jQuery-File-Upload\/angularjs.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -55206,6 +55322,448 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/dist\/vendor\/tablesorter\/addons\/pager\/jquery.tablesorter.pager.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/addons\/pager\/jquery.tablesorter.pager.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/addons\/pager\/jquery.tablesorter.pager.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/addons\/pager\/jquery.tablesorter.pager.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.tablesorter.pager.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/jsmin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/jsmin.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jsmin.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/pack.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/pack.js",
+		"outputAbbreviatedPath": "\/dist\/js\/pack.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/packer.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/packer.js",
+		"outputAbbreviatedPath": "\/dist\/js\/packer.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/ParseMaster.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/ParseMaster.js",
+		"outputAbbreviatedPath": "\/dist\/js\/ParseMaster.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/build\/writeFile.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/build\/writeFile.js",
+		"outputAbbreviatedPath": "\/dist\/js\/writeFile.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/assets\/ajax-content.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/assets\/ajax-content.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/css\/jq.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/css\/jq.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-ajax.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-ajax.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-attribute-sort.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-attribute-sort.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-empty-table.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-empty-table.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-extending-defaults.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-extending-defaults.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-meta-headers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-meta-headers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-meta-parsers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-meta-parsers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-meta-sort-list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-meta-sort-list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-debug.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-debug.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-digits.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-digits.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-sort-force.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-sort-force.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-sort-key.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-sort-key.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-sort-list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-sort-list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-sort-order.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-sort-order.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-option-text-extraction.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-option-text-extraction.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-options-headers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-options-headers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-pager.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-pager.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-parsers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-parsers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-trigger-sort.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-trigger-sort.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-triggers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-triggers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-update-cell.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-update-cell.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/example-widgets.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/example-widgets.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/img\/external.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 165,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/img\/external.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/img\/external.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/js\/docs.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/js\/docs.js",
+		"outputAbbreviatedPath": "\/dist\/js\/docs.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/docs\/js\/examples.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/docs\/js\/examples.js",
+		"outputAbbreviatedPath": "\/dist\/js\/examples.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/jquery-latest.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/jquery-latest.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery-latest.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/jquery.metadata.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/jquery.metadata.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.metadata.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/jquery.tablesorter.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/jquery.tablesorter.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.tablesorter.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/jquery.tablesorter.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/jquery.tablesorter.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.tablesorter.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/tablesorter\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/README.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/themes\/blue\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/blue\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/tablesorter\/themes\/green\/asc.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2665,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/asc.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/asc.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/tablesorter\/themes\/green\/bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2655,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/bg.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/tablesorter\/themes\/green\/desc.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2662,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/desc.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/desc.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/tablesorter\/themes\/green\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/tablesorter\/themes\/green\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/vendor\/themify-icons\/demo-files\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -60016,6 +60574,50 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/source\/jade\/include\/module\/tables-action-pagination.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-action-pagination.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-action-pagination.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/tables-action-search-filter.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-action-search-filter.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-action-search-filter.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/tables-advanced-fixed-header.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-advanced-fixed-header.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-advanced-fixed-header.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/tables-advanced-sorter.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-advanced-sorter.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-advanced-sorter.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/include\/module\/tables-basic-bordered.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -60023,6 +60625,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-basic-bordered.jade",
 		"outputAbbreviatedPath": "\/dist\/tables-basic-bordered.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/tables-basic-color.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-basic-color.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-basic-color.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -60078,6 +60691,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-basic-simple.jade",
 		"outputAbbreviatedPath": "\/dist\/tables-basic-simple.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/tables-basic-size.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-basic-size.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-basic-size.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -60357,6 +60981,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/source\/jade\/include\/tables-actions.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/tables-actions.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-actions.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/tables-advanced.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/tables-advanced.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-advanced.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/include\/tables-basic.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -60542,6 +61188,28 @@
 		"outputAbbreviatedPath": "\/dist\/layout-title_and_breadcrumb.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/tables-action_tables.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/tables-action_tables.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-action_tables.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/tables-advanced_tables.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/tables-advanced_tables.jade",
+		"outputAbbreviatedPath": "\/dist\/tables-advanced_tables.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
 	"\/source\/jade\/tables-basic_tables.jade": {
@@ -61414,6 +62082,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/mixins\/slider.less",
 		"outputAbbreviatedPath": "\/source\/less\/css\/slider.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/source\/less\/mixins\/table.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/less\/mixins\/table.less",
+		"outputAbbreviatedPath": "\/dist\/css\/table.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
