@@ -4810,3 +4810,130 @@ $(function() {
 /**
  * Multiple File Upload demo end
  */
+
+
+/**
+ * Table Export demo begin
+ */
+$(function() {
+  if ($(".table-export-json")[0]) {
+    $(".table-export-json").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'json',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-xml")[0]) {
+    $(".table-export-xml").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'xml',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-sql")[0]) {
+    $(".table-export-sql").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'sql'
+      });
+    })
+  }
+  if ($(".table-export-csv")[0]) {
+    $(".table-export-csv").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'csv'
+      });
+    })
+  }
+  if ($(".table-export-txt")[0]) {
+    $(".table-export-txt").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'txt',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-excel")[0]) {
+    $(".table-export-excel").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'excel',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-word")[0]) {
+    $(".table-export-word").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'doc',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-powerpoint")[0]) {
+    $(".table-export-powerpoint").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'powerpoint',
+        escape: 'false'
+      });
+    })
+  }
+  if ($(".table-export-pdf")[0]) {
+    $(".table-export-pdf").on("click", function(e) {
+      $("#example-export").tableExport({
+        type: 'pdf',
+        escape: 'false',
+        pdfFontSize: 9
+      });
+    })
+  }
+});
+/**
+ * Table Export demo end
+ */
+
+
+/**
+ * Data Tables demo begin
+ */
+$(document).ready(function() {
+
+  // Basic
+  if ($("#demo-datatables-1")[0]) {
+    $("#demo-datatables-1").DataTable();
+  }
+
+  // State saving
+  if ($("#demo-datatables-2")[0]) {
+    $("#demo-datatables-2").DataTable({
+      stateSave: true
+    });
+  }
+
+  // Scroll
+  if ($("#demo-datatables-3")[0]) {
+    $("#tab-scroll").on('shown.bs.tab', function(e) {
+      if ($("#scroll").find(".dataTables_scroll").length < 1) {
+        $("#demo-datatables-3").DataTable({
+          "scrollY": 200,
+          "scrollX": true
+        });
+      }
+    });
+  }
+
+  // Ajax
+  if ($("#demo-datatables-4")[0]) {
+    $("#tab-ajax").on('shown.bs.tab', function(e) {
+      if ($("#demo-datatables-4").find("tbody").length < 1) {
+        $("#demo-datatables-4").DataTable({
+          "ajax": "./ajax/datatable-ajax.json"
+        });
+      }
+    });
+  }
+
+});
+/**
+ * Data Tables demo end
+ */

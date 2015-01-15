@@ -432,3 +432,118 @@
 {
     .box-shadow(0 4px 8px rgba(0,0,0,.125));
 }
+
+
+/* DataTables */
+.dataTables_wrapper
+{
+    label{
+        font-weight: @font-weight-thin;
+    }
+    input[type='search']
+    {
+        .box-sizing(border-box);
+    }
+    .table
+    {
+        > thead
+        {
+            > tr
+            {
+                > th
+                {
+                    &.sorting,
+                    &.sorting_asc,
+                    &.sorting_desc
+                    {
+                        position: relative;
+
+                        padding-right: 24px;
+
+                        cursor: pointer;
+
+                        outline: none;
+                        overflow: hidden;
+                        &:before,
+                        &:after
+                        {
+                            font: normal normal normal 14px/1 FontAwesome;
+
+                            position: absolute;
+                            right: 8px;
+
+                            color: @gray-light;
+                        }
+                        &:before
+                        {
+                            top: 8px;
+
+                            content: '\f0de';
+                        }
+                        &:after
+                        {
+                            bottom: 8px;
+
+                            content: '\f0dd';
+                        }
+                    }
+                    &.sorting_asc
+                    {
+                        &:before
+                        {
+                            display: none;
+                        }
+                    }
+                    &.sorting_desc
+                    {
+                        &:after
+                        {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-primary,
+    .table-success,
+    .table-info,
+    .table-warning,
+    .table-danger,
+    .table-red,
+    .table-orange,
+    .table-yelloe,
+    .table-green,
+    .table-blue,
+    .table-black,
+    .table-violet,
+    .table-pink,
+    .table-grey
+    {
+        > thead
+        {
+            > tr
+            {
+                > th
+                {
+                    &.sorting,
+                    &.sorting_asc,
+                    &.sorting_desc
+                    {
+                        &:before,
+                        &:after
+                        {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dataTable-scroll-x{
+    th,td{
+        white-space: nowrap;
+    }
+}

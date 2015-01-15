@@ -1,0 +1,55 @@
+//- Tables - Table Export
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  div.panel.panel-white
+    div.panel-body
+
+      div.table-container.p10
+
+        div.btn-group.mbottom10
+          +buttons("btn-danger","Export","fa fa-wrench mright5", 'caret', 'true')
+          +dropdown-menu('','')
+            +dropdown-menu-item-normal('table-export-json', '#', 'Export to JSON')
+            +dropdown-menu-item-normal('table-export-xml', '#', 'Export to XML')
+            +dropdown-menu-item-normal('table-export-sql', '#', 'Export to SQL')
+            +dropdown-menu-item-normal('table-export-csv', '#', 'Export to CSV')
+            +dropdown-menu-item-normal('table-export-txt', '#', 'Export to TXT')
+            +dropdown-menu-item-normal('table-export-word', '#', 'Export to Word')
+            +dropdown-menu-item-normal('table-export-excel', '#', 'Export to Excel')
+            +dropdown-menu-item-normal('table-export-powerpoint', '#', 'Export to PowerPoint')
+            +dropdown-menu-item-normal('table-export-pdf', '#', 'Export to PDF')
+
+        - var table_act_data_demo = {1:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],2:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],3:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],4:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],5:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK'],6:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],7:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],8:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],9:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],10:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK'],11:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],12:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],13:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],14:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],15:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK'],16:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],17:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],18:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],19:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],20:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK'],21:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],22:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],23:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],24:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],25:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK'],26:['Derrick','United States','Male','32','2014-11-24','$123.45','success','Approved'],27:['Egbert','England','Female','27','2015-01-01','$123.45','info','Pending'],28:['Fabian','Japan','Female','13','2014-12-05','$123.45','warning','Suspended'],29:['Gabriel','China','Female','4','2013-11-20','$123.45','danger','Blacked'],30:['Hunter','Canada','Male','52','2015-01-10','$123.45','violet','OK']};
+        table#example-export.table.table-default.table-hover.table-bordered
+          thead
+            tr
+              th #
+              th Username
+              th Country
+              th Gender
+              th Order
+              th Date
+              th Price
+              th Status
+              th Actions
+          tbody
+            each val, index in table_act_data_demo
+              tr
+                td #{index}
+                td #{val[0]}
+                td #{val[1]}
+                td #{val[2]}
+                td #{val[3]}
+                td #{val[4]}
+                td #{val[5]}
+                td
+                  span(class="label label-sm label-#{val[6]}") #{val[7]}
+                td
+                  +buttons("btn-xs btn-default mright5","Edit","fa fa-edit mright5")
+                  +buttons("btn-xs btn-default","Delete","fa fa-trash-o mright5")

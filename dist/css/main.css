@@ -8934,63 +8934,78 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   border-bottom-width: 1px;
 }
 /* Color Table */
-.table-primary > thead th {
+.table-primary > thead th,
+.table-primary > tfoot th {
   color: #ffffff;
   background-color: #428bca;
 }
-.table-success > thead th {
+.table-success > thead th,
+.table-success > tfoot th {
   color: #ffffff;
   background-color: #5cb85c;
 }
-.table-info > thead th {
+.table-info > thead th,
+.table-info > tfoot th {
   color: #ffffff;
   background-color: #5bc0de;
 }
-.table-warning > thead th {
+.table-warning > thead th,
+.table-warning > tfoot th {
   color: #ffffff;
   background-color: #f0ad4e;
 }
-.table-danger > thead th {
+.table-danger > thead th,
+.table-danger > tfoot th {
   color: #ffffff;
   background-color: #d9534f;
 }
-.table-red > thead th {
+.table-red > thead th,
+.table-red > tfoot th {
   color: #ffffff;
   background-color: #e31d18;
 }
-.table-orange > thead th {
+.table-orange > thead th,
+.table-orange > tfoot th {
   color: #ffffff;
   background-color: #f2572d;
 }
-.table-yellow > thead th {
+.table-yellow > thead th,
+.table-yellow > tfoot th {
   color: #ffffff;
   background-color: #f1c82d;
 }
-.table-green > thead th {
+.table-green > thead th,
+.table-green > tfoot th {
   color: #ffffff;
   background-color: #00947d;
 }
-.table-black > thead th {
+.table-black > thead th,
+.table-black > tfoot th {
   color: #ffffff;
   background-color: #4d4d4d;
 }
-.table-blue > thead th {
+.table-blue > thead th,
+.table-blue > tfoot th {
   color: #ffffff;
   background-color: #02b4dd;
 }
-.table-violet > thead th {
+.table-violet > thead th,
+.table-violet > tfoot th {
   color: #ffffff;
   background-color: #5c2862;
 }
-.table-pink > thead th {
+.table-pink > thead th,
+.table-pink > tfoot th {
   color: #ffffff;
   background-color: #fa639e;
 }
-.table-grey > thead th {
+.table-grey > thead th,
+.table-grey > tfoot th {
   color: #ffffff;
   background-color: #a3a3a3;
 }
-.table-default > thead th {
+.table-default > thead th,
+.table-default > tfoot th {
   color: #777777;
   background-color: #eeeeee;
 }
@@ -9234,4 +9249,140 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 /* Fixed Header Table */
 .tableFloatingHeaderOriginal {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+}
+/* DataTables */
+.dataTables_wrapper label {
+  font-weight: 300;
+}
+.dataTables_wrapper input[type='search'] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dataTables_wrapper .table > thead > tr > th.sorting,
+.dataTables_wrapper .table > thead > tr > th.sorting_asc,
+.dataTables_wrapper .table > thead > tr > th.sorting_desc {
+  position: relative;
+  padding-right: 24px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+.dataTables_wrapper .table > thead > tr > th.sorting:before,
+.dataTables_wrapper .table > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table > thead > tr > th.sorting:after,
+.dataTables_wrapper .table > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table > thead > tr > th.sorting_desc:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  right: 8px;
+  color: #777777;
+}
+.dataTables_wrapper .table > thead > tr > th.sorting:before,
+.dataTables_wrapper .table > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table > thead > tr > th.sorting_desc:before {
+  top: 8px;
+  content: '\f0de';
+}
+.dataTables_wrapper .table > thead > tr > th.sorting:after,
+.dataTables_wrapper .table > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table > thead > tr > th.sorting_desc:after {
+  bottom: 8px;
+  content: '\f0dd';
+}
+.dataTables_wrapper .table > thead > tr > th.sorting_asc:before {
+  display: none;
+}
+.dataTables_wrapper .table > thead > tr > th.sorting_desc:after {
+  display: none;
+}
+.dataTables_wrapper .table-primary > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-success > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-info > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-red > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-green > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-black > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting:before,
+.dataTables_wrapper .table-primary > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-success > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-info > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-red > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-green > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-black > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting_asc:before,
+.dataTables_wrapper .table-primary > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-success > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-info > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-red > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-green > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-black > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting_desc:before,
+.dataTables_wrapper .table-primary > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-success > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-info > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-red > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-green > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-black > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting:after,
+.dataTables_wrapper .table-primary > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-success > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-info > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-red > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-green > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-black > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting_asc:after,
+.dataTables_wrapper .table-primary > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-success > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-info > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-warning > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-danger > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-red > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-orange > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-yelloe > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-green > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-blue > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-black > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-violet > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-pink > thead > tr > th.sorting_desc:after,
+.dataTables_wrapper .table-grey > thead > tr > th.sorting_desc:after {
+  color: #fff;
+}
+.dataTable-scroll-x th,
+.dataTable-scroll-x td {
+  white-space: nowrap;
 }

@@ -1,0 +1,31 @@
+//- Tables - Data Tables
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  ul.nav.nav-tabs.nav-tabs-orange(role="tablist")
+    li#tab-basic.active: a(href="#basic" role="tab" data-toggle="tab") Basic
+    li#tab-state-saving: a(href="#state-saving" role="tab" data-toggle="tab") State saving
+    li#tab-scroll: a(href="#scroll" role="tab" data-toggle="tab") Scroll
+    li#tab-ajax: a(href="#ajax" role="tab" data-toggle="tab") Ajax sourced data
+
+  div.tab-content
+
+    //Basic
+    div#basic.tab-pane.fade.in.active
+      include ./module/tables-datatables-basic
+
+    //State saving
+    div#state-saving.tab-pane.fade
+      include ./module/tables-datatables-state-saving
+
+    //Scroll
+    div#scroll.tab-pane.fade.in
+      include ./module/tables-datatables-scroll
+
+    //Ajax sourced data
+    div#ajax.tab-pane.fade.in
+      include ./module/tables-datatables-ajax
