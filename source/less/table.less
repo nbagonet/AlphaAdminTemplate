@@ -437,7 +437,8 @@
 /* DataTables */
 .dataTables_wrapper
 {
-    label{
+    label
+    {
         font-weight: @font-weight-thin;
     }
     input[type='search']
@@ -458,12 +459,13 @@
                     {
                         position: relative;
 
+                        overflow: hidden;
+
                         padding-right: 24px;
 
                         cursor: pointer;
 
                         outline: none;
-                        overflow: hidden;
                         &:before,
                         &:after
                         {
@@ -542,8 +544,63 @@
     }
 }
 
-.dataTable-scroll-x{
-    th,td{
+.dataTable-scroll-x
+{
+    th,
+    td
+    {
         white-space: nowrap;
+    }
+}
+
+
+/* Bootstrap Table */
+.fixed-table-container
+{
+    -webkit-border-radius: @table-border-radius;
+       -moz-border-radius: @table-border-radius;
+            border-radius: @table-border-radius;
+    thead
+    {
+        th
+        {
+            &:first-child
+            {
+                -webkit-border-top-left-radius: @table-border-radius;
+                -moz-border-radius-topleft: @table-border-radius;
+                        border-top-left-radius: @table-border-radius;
+            }
+        }
+    }
+}
+.fixed-table-header
+{
+    -webkit-border-radius: @table-border-radius @table-border-radius 0 0;
+       -moz-border-radius: @table-border-radius @table-border-radius 0 0;
+            border-radius: @table-border-radius @table-border-radius 0 0;
+}
+.fixed-table-toolbar
+{
+    .btn-group
+    {
+        > .btn-group
+        {
+            &:first-child
+            {
+                > .btn
+                {
+                    border-top-left-radius: @table-border-radius;
+                    border-bottom-left-radius: @table-border-radius;
+                }
+            }
+            &:last-child
+            {
+                > .btn
+                {
+                    border-top-right-radius: @table-border-radius;
+                    border-bottom-right-radius: @table-border-radius;
+                }
+            }
+        }
     }
 }

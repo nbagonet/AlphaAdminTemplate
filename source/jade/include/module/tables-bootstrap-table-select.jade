@@ -1,0 +1,53 @@
+//- Tables - Bootstrap Table - Select
+
+include ../../common/variables
+include ../mixins
+
+
+//Radio Select
+div.ptop10
+  h4 Radio Select
+  table#bs-table-8.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-click-to-select='true', data-select-item-name='myRadioName')
+    thead
+      tr
+        th(data-field='state', data-radio='true')
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Checkbox Select
+div.ptop20
+  h4 Checkbox Select
+  table#bs-table-9.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-click-to-select='true')
+    thead
+      tr
+        th(data-field='state', data-checkbox='true')
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Disabled Checkbox
+div.ptop20
+  h4 Disabled Checkbox
+  table#bs-table-10.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-click-to-select='true')
+    thead
+      tr
+        th(data-field='state', data-checkbox='true', data-formatter='stateFormatter')
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Single Checkbox
+div.ptop20
+  h4 Single Checkbox
+  table#bs-table-11.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-click-to-select='true', data-single-select='true')
+    thead
+      tr
+        th(data-field='state', data-checkbox='true')
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description

@@ -1,0 +1,27 @@
+//- Tables - Bootstrap Table - Basic
+
+include ../../common/variables
+include ../mixins
+
+
+//Table from data
+div.ptop10
+  h4 Table from data
+  table#bs-table-1.table.table-hover.table-default
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Table from url
+div.ptop20
+  h4 Table from url
+  table#bs-table-2.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json')
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description

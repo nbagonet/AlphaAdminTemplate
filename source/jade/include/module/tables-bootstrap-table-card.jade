@@ -1,0 +1,16 @@
+//- Tables - Bootstrap Table - Card View
+
+include ../../common/variables
+include ../mixins
+
+
+//Card View
+div.ptop10
+  h4 Card View
+  table#bs-table-7.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-card-view='true')
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description

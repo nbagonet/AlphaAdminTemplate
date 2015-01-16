@@ -6531,8 +6531,8 @@ label[data-icheck="true"] {
 .demo-icons .glyphicon,
 .demo-icons [class^='ti-'],
 .demo-icons [class*=' ti-'],
-.demo-icons [class^='icon-'],
-.demo-icons [class*=' icon-'] {
+.demo-icons [class^='entypo-'],
+.demo-icons [class*=' entypo-'] {
   font-size: 30px;
   float: left;
   text-align: left;
@@ -9262,10 +9262,10 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .dataTables_wrapper .table > thead > tr > th.sorting_asc,
 .dataTables_wrapper .table > thead > tr > th.sorting_desc {
   position: relative;
+  overflow: hidden;
   padding-right: 24px;
   cursor: pointer;
   outline: none;
-  overflow: hidden;
 }
 .dataTables_wrapper .table > thead > tr > th.sorting:before,
 .dataTables_wrapper .table > thead > tr > th.sorting_asc:before,
@@ -9385,4 +9385,30 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .dataTable-scroll-x th,
 .dataTable-scroll-x td {
   white-space: nowrap;
+}
+/* Bootstrap Table */
+.fixed-table-container {
+  border-radius: 0;
+}
+.fixed-table-container thead th:first-child {
+  border-top-left-radius: 0;
+}
+.fixed-table-header {
+  border-radius: 0 0 0 0;
+}
+.fixed-table-toolbar .btn-group > .btn-group:first-child > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.fixed-table-toolbar .btn-group > .btn-group:last-child > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* Jvector Map */
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
+  -moz-box-sizing: content-box;
+       box-sizing: content-box;
+  border-radius: 0;
 }

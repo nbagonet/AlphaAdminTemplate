@@ -6,13 +6,13 @@ include ./mixins
 
 div.col-lg-12
 
-  ul.nav.nav-tabs.nav-tabs-orange(role="tablist")
+  ul.nav.nav-tabs.responsive.nav-tabs-orange(role="tablist")
     li#tab-basic.active: a(href="#basic" role="tab" data-toggle="tab") Basic
     li#tab-state-saving: a(href="#state-saving" role="tab" data-toggle="tab") State saving
     li#tab-scroll: a(href="#scroll" role="tab" data-toggle="tab") Scroll
     li#tab-ajax: a(href="#ajax" role="tab" data-toggle="tab") Ajax sourced data
 
-  div.tab-content
+  div.tab-content.responsive
 
     //Basic
     div#basic.tab-pane.fade.in.active

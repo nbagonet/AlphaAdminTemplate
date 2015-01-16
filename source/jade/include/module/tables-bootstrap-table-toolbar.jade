@@ -1,0 +1,45 @@
+//- Tables - Bootstrap Table - Toolbar
+
+include ../../common/variables
+include ../mixins
+
+
+//Basic Toolbar
+div.ptop10
+  h4 Basic Toolbar
+  table#bs-table-12.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-search='true', data-show-refresh='true', data-show-toggle='true', data-show-columns='true')
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Custom Toolbar
+div.ptop20
+  h4 Custom Toolbar
+  #toolbar-demo.btn-group
+    button.btn.btn-default(type='button')
+      i.glyphicon.glyphicon-plus
+    button.btn.btn-default(type='button')
+      i.glyphicon.glyphicon-heart
+    button.btn.btn-default(type='button')
+      i.glyphicon.glyphicon-trash
+  table#bs-table-13.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-search='true', data-show-refresh='true', data-show-toggle='true', data-show-columns='true', data-toolbar='#toolbar-demo')
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description
+
+//Pagination
+div.ptop20
+  h4 Pagination
+  table#bs-table-14.table.table-hover.table-default(data-toggle='table', data-url='https://api.github.com/users/aterrien/repos', data-query-params='queryParams', data-pagination='true', data-search='true', data-height='300')
+    thead
+      tr
+        th(data-field='name') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description') Description

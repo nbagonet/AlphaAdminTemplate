@@ -1,0 +1,21 @@
+//- Tables - Bootstrap Table - Columns
+
+include ../../common/variables
+include ../mixins
+
+
+//Basic Columns
+div.ptop10
+  h4 Basic Columns
+  table#bs-table-5.table.table-hover.table-default(data-toggle='table', data-url='./ajax/bs-table-ajax-1.json', data-show-columns='true')
+    thead
+      tr
+        th(data-field='name', data-switchable='false') Name
+        th(data-field='stargazers_count') Stars
+        th(data-field='forks_count') Forks
+        th(data-field='description', data-visible='false') Description
+
+//Large Columns
+div.ptop20
+  h4 Large Columns
+  table#bs-table-6.table.table-hover.table-default(data-show-columns='true', data-height='300')

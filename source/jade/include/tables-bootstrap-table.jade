@@ -1,0 +1,47 @@
+//- Tables - Bootstrap Table
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  ul.nav.nav-tabs.responsive.nav-tabs-orange(role="tablist")
+    li#tab-basic.active: a(href="#basic" role="tab" data-toggle="tab") Basic
+    li#tab-sort: a(href="#sort" role="tab" data-toggle="tab") Sort
+    li#tab-columns: a(href="#columns" role="tab" data-toggle="tab") Columns
+    li#tab-card: a(href="#card" role="tab" data-toggle="tab") Card View
+    li#tab-select: a(href="#select" role="tab" data-toggle="tab") Select
+    li#tab-toolbar: a(href="#toolbar" role="tab" data-toggle="tab") Toolbar
+    li#tab-editable: a(href="#editable" role="tab" data-toggle="tab") Editable
+
+  div.tab-content.responsive
+
+    //Basic
+    div#basic.tab-pane.fade.in.active
+      include ./module/tables-bootstrap-table-basic
+
+    //Sort
+    div#sort.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-sort
+
+    //Columns
+    div#columns.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-columns
+
+    //Card View
+    div#card.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-card
+
+    //Select
+    div#select.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-select
+
+    //Toolbar
+    div#toolbar.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-toolbar
+
+    //Editable
+    div#editable.tab-pane.fade.in
+      include ./module/tables-bootstrap-table-editable

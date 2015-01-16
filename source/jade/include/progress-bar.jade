@@ -8,7 +8,7 @@ include ./mixins
 div.col-lg-12
 
   //Nav Tabs
-  ul.nav.nav-tabs.nav-tabs-orange(role="tablist")
+  ul.nav.nav-tabs.responsive.nav-tabs-orange(role="tablist")
     li.active
       a(href="#horizontal" role="tab" data-toggle="tab") Horizontal
     li
@@ -17,7 +17,7 @@ div.col-lg-12
       a(href="#misc" role="tab" data-toggle="tab") Misc
 
   //Tab Panes
-  div.tab-content
+  div.tab-content.responsive
 
     //Horizontal
     div#horizontal.tab-pane.fade.in.active

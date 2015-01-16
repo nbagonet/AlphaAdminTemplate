@@ -1,0 +1,35 @@
+//- Tables - Bootstrap Table - Basic
+
+include ../../common/variables
+include ../mixins
+
+
+//Basic Sort
+div.ptop10
+  h4 Basic Sort
+  table#bs-table-3.table.table-hover.table-default(data-toggle='table', data-url='https://api.github.com/users/aristath/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1', data-sort-name='stargazers_count', data-sort-order='desc')
+    thead
+      tr
+        th(data-field='name', data-sortable='true')
+          | Name
+        th(data-field='stargazers_count', data-sortable='true')
+          | Stars
+        th(data-field='forks_count', data-sortable='true')
+          | Forks
+        th(data-field='description', data-sortable='true')
+          | Description
+
+//Custom Sort
+div.ptop20
+  h4 Custom Sort
+  table#bs-table-4.table.table-hover.table-default(data-toggle='table', data-url='https://api.github.com/users/vitalets/repos?type=owner&sort=full_name&direction=asc&per_page=100&page=1', data-sort-name='stargazers_count', data-sort-order='asc')
+    thead
+      tr
+        th(data-field='name', data-sortable='true', data-formatter='nameFormatter')
+          | Name
+        th(data-field='stargazers_count', data-sortable='true', data-sorter='starsSorter')
+          | Stars
+        th(data-field='forks_count', data-sortable='true')
+          | Forks
+        th(data-field='description', data-sortable='true')
+          | Description

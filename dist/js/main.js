@@ -46,6 +46,18 @@ $(function() {
   $("*[data-toggle='popover']").popover();
   //Initialize popovers end
 
+  // Initialize responsive-tabs begin
+  if (typeof(fakewaffle) != "undefined") {
+    fakewaffle.responsiveTabs(['xs', 'sm', 'md']);
+    $(".panel-group").on("shown.bs.collapse", function(e) {
+      var _this = $(this).find(".panel-collapse.in").prev(".panel-heading");
+      $("body,html").stop().animate({
+        scrollTop: _this.offset().top
+      }, 500);
+    });
+  }
+  // Initialize responsive-tabs end
+
   //Small sidebar sub-menu toggle begin
   var SMCurIdx = $(".side-menu > li > a").index($("a.active"));
 
@@ -325,7 +337,7 @@ $(function() {
             }
           }
         });
-      }else{
+      } else {
         _this.tablesorter();
       }
     });
@@ -333,7 +345,7 @@ $(function() {
   // Table Sorter end
 
   // Table Fixed Header begin
-  if($("table.table-fixed-header")[0]){
+  if ($("table.table-fixed-header")[0]) {
     $("table.table-fixed-header").stickyTableHeaders();
   }
   // Table Fixed Header end

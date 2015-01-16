@@ -3314,10 +3314,10 @@ $(function() {
         var children = $(this).parent('li.parent_li').find(' > ul > li');
         if (children.is(':visible')) {
           children.hide('fast');
-          $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+          $(this).attr('title', 'Expand this branch').find(' > i').addClass('entypo-plus-sign').removeClass('entypo-minus-sign');
         } else {
           children.show('fast');
-          $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+          $(this).attr('title', 'Collapse this branch').find(' > i').addClass('entypo-minus-sign').removeClass('entypo-plus-sign');
         }
         e.stopPropagation();
       });
@@ -4936,4 +4936,434 @@ $(document).ready(function() {
 });
 /**
  * Data Tables demo end
+ */
+
+
+/**
+ * Bootstrap Table demo begin
+ */
+
+// Disabled checkbox
+function stateFormatter(value, row, index) {
+  if (index === 2) {
+    return {
+      disabled: true
+    };
+  }
+  if (index === 0) {
+    return {
+      disabled: true,
+      checked: true
+    }
+  }
+  return value;
+}
+
+// Custom Sort
+function starsSorter(a, b) {
+  if (a < b) return 1;
+  if (a > b) return -1;
+  return 0;
+}
+
+$(function() {
+
+  // Table from data
+  if ($("#bs-table-1")[0]) {
+    var data1 = [{
+      "name": "bootstrap-table",
+      "stargazers_count": "526",
+      "forks_count": "122",
+      "description": "An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. (supports twitter bootstrap v2 and v3) "
+    }, {
+      "name": "multiple-select",
+      "stargazers_count": "288",
+      "forks_count": "150",
+      "description": "A jQuery plugin to select multiple elements with checkboxes :)"
+    }, {
+      "name": "bootstrap-show-password",
+      "stargazers_count": "32",
+      "forks_count": "11",
+      "description": "Show/hide password plugin for twitter bootstrap."
+    }, {
+      "name": "blog",
+      "stargazers_count": "13",
+      "forks_count": "4",
+      "description": "my blog"
+    }, {
+      "name": "scutech-redmine",
+      "stargazers_count": "6",
+      "forks_count": "3",
+      "description": "Redmine notification tools for chrome extension."
+    }];
+    $('#bs-table-1').bootstrapTable({
+      data: data1
+    });
+  }
+
+  // Large Columns
+  if ($("#bs-table-6")[0]) {
+    function buildTable($el, cells, rows) {
+      var i, j, row,
+        columns = [],
+        data = [];
+
+      for (i = 0; i < cells; i++) {
+        columns.push({
+          field: 'field' + i,
+          title: 'Cell' + i
+        });
+      }
+      for (i = 0; i < rows; i++) {
+        row = {};
+        for (j = 0; j < cells; j++) {
+          row['field' + j] = 'Row-' + i + '-' + j;
+        }
+        data.push(row);
+      }
+      $el.bootstrapTable('destroy').bootstrapTable({
+        columns: columns,
+        data: data
+      });
+    }
+    buildTable($('#bs-table-6'), 50, 50);
+  }
+
+  // Editable
+  if ($("#bs-table-15")[0]) {
+    $('#bs-table-15').bootstrapTable({
+      idField: 'name',
+      url: './ajax/bs-table-ajax-1.json',
+      columns: [{
+        field: 'name',
+        title: 'Name'
+      }, {
+        field: 'stargazers_count',
+        title: 'Stars',
+        editable: {
+          type: 'text'
+        }
+      }, {
+        field: 'forks_count',
+        title: 'Forks',
+        editable: {
+          type: 'text'
+        }
+      }, {
+        field: 'description',
+        title: 'Description',
+        editable: {
+          type: 'textarea'
+        }
+      }]
+    });
+  }
+
+});
+/**
+ * Bootstrap Table demo end
+ */
+
+
+/**
+ * Google Maps demo begin
+ */
+//Set Map Size
+function setGoogleMapSize() {
+  if (($("#sidebar").height() + $(".topheader").height()) > $(window).height()) {
+    $("#google_maps_demo").css({
+      "height": $("#sidebar").height()
+    });
+  } else {
+    $("#google_maps_demo").css({
+      "height": $(window).height() - $(".topheader").height() - $(".layouts-title-breadcrumb").height()
+    });
+  }
+}
+$(function() {
+
+  if ($("#google_maps_demo")[0]) {
+
+    $("#google_maps_demo").css({
+      "margin-top": -20,
+      "margin-bottom": -70,
+      "width": "100%"
+    });
+
+    setGoogleMapSize();
+
+    $(window).resize(function() {
+      setGoogleMapSize();
+    });
+
+    // Init
+    var map = new GMaps({
+      el: '#google_maps_demo',
+      lat: 25.0401312,
+      lng: 121.5119762
+    });
+    map.addMarker({
+      lat: 25.0401312,
+      lng: 121.5119762,
+      title: "中华民国总统府",
+      details: {
+        database_id: 42,
+        author: "HPNeo"
+      },
+      click: function(e) {
+        if (console.log) {
+          console.log(e);
+        }
+        alert("You clicked on this marker");
+      }
+    });
+    map.addMarker({
+      lat: 25.039398,
+      lng: 121.509537,
+      title: "Marker with InfoWindow",
+      infoWindow: {
+        content: "<p>HTML Content</p>"
+      }
+    });
+
+  }
+
+});
+/**
+ * Google Maps demo end
+ */
+
+
+/**
+ * Jvector Map demo begin
+ */
+//Set Map Size
+function setJvectorMapSize() {
+  if (($("#sidebar").height() + $(".topheader").height()) > $(window).height()) {
+    $("#world-map-gdp").css({
+      "height": $("#sidebar").height()
+    });
+  } else {
+    $("#world-map-gdp").css({
+      "height": $(window).height() - $(".topheader").height() - $(".layouts-title-breadcrumb").height()
+    });
+  }
+}
+$(function() {
+
+  var gdpData = {
+    "AF": 16.63,
+    "AL": 11.58,
+    "DZ": 158.97,
+    "AO": 85.81,
+    "AG": 1.1,
+    "AR": 351.02,
+    "AM": 8.83,
+    "AU": 1219.72,
+    "AT": 366.26,
+    "AZ": 52.17,
+    "BS": 7.54,
+    "BH": 21.73,
+    "BD": 105.4,
+    "BB": 3.96,
+    "BY": 52.89,
+    "BE": 461.33,
+    "BZ": 1.43,
+    "BJ": 6.49,
+    "BT": 1.4,
+    "BO": 19.18,
+    "BA": 16.2,
+    "BW": 12.5,
+    "BR": 2023.53,
+    "BN": 11.96,
+    "BG": 44.84,
+    "BF": 8.67,
+    "BI": 1.47,
+    "KH": 11.36,
+    "CM": 21.88,
+    "CA": 1563.66,
+    "CV": 1.57,
+    "CF": 2.11,
+    "TD": 7.59,
+    "CL": 199.18,
+    "CN": 5745.13,
+    "CO": 283.11,
+    "KM": 0.56,
+    "CD": 12.6,
+    "CG": 11.88,
+    "CR": 35.02,
+    "CI": 22.38,
+    "HR": 59.92,
+    "CY": 22.75,
+    "CZ": 195.23,
+    "DK": 304.56,
+    "DJ": 1.14,
+    "DM": 0.38,
+    "DO": 50.87,
+    "EC": 61.49,
+    "EG": 216.83,
+    "SV": 21.8,
+    "GQ": 14.55,
+    "ER": 2.25,
+    "EE": 19.22,
+    "ET": 30.94,
+    "FJ": 3.15,
+    "FI": 231.98,
+    "FR": 2555.44,
+    "GA": 12.56,
+    "GM": 1.04,
+    "GE": 11.23,
+    "DE": 3305.9,
+    "GH": 18.06,
+    "GR": 305.01,
+    "GD": 0.65,
+    "GT": 40.77,
+    "GN": 4.34,
+    "GW": 0.83,
+    "GY": 2.2,
+    "HT": 6.5,
+    "HN": 15.34,
+    "HK": 226.49,
+    "HU": 132.28,
+    "IS": 12.77,
+    "IN": 1430.02,
+    "ID": 695.06,
+    "IR": 337.9,
+    "IQ": 84.14,
+    "IE": 204.14,
+    "IL": 201.25,
+    "IT": 2036.69,
+    "JM": 13.74,
+    "JP": 5390.9,
+    "JO": 27.13,
+    "KZ": 129.76,
+    "KE": 32.42,
+    "KI": 0.15,
+    "KR": 986.26,
+    "UNDEFINED": 5.73,
+    "KW": 117.32,
+    "KG": 4.44,
+    "LA": 6.34,
+    "LV": 23.39,
+    "LB": 39.15,
+    "LS": 1.8,
+    "LR": 0.98,
+    "LY": 77.91,
+    "LT": 35.73,
+    "LU": 52.43,
+    "MK": 9.58,
+    "MG": 8.33,
+    "MW": 5.04,
+    "MY": 218.95,
+    "MV": 1.43,
+    "ML": 9.08,
+    "MT": 7.8,
+    "MR": 3.49,
+    "MU": 9.43,
+    "MX": 1004.04,
+    "MD": 5.36,
+    "MN": 5.81,
+    "ME": 3.88,
+    "MA": 91.7,
+    "MZ": 10.21,
+    "MM": 35.65,
+    "NA": 11.45,
+    "NP": 15.11,
+    "NL": 770.31,
+    "NZ": 138,
+    "NI": 6.38,
+    "NE": 5.6,
+    "NG": 206.66,
+    "NO": 413.51,
+    "OM": 53.78,
+    "PK": 174.79,
+    "PA": 27.2,
+    "PG": 8.81,
+    "PY": 17.17,
+    "PE": 153.55,
+    "PH": 189.06,
+    "PL": 438.88,
+    "PT": 223.7,
+    "QA": 126.52,
+    "RO": 158.39,
+    "RU": 1476.91,
+    "RW": 5.69,
+    "WS": 0.55,
+    "ST": 0.19,
+    "SA": 434.44,
+    "SN": 12.66,
+    "RS": 38.92,
+    "SC": 0.92,
+    "SL": 1.9,
+    "SG": 217.38,
+    "SK": 86.26,
+    "SI": 46.44,
+    "SB": 0.67,
+    "ZA": 354.41,
+    "ES": 1374.78,
+    "LK": 48.24,
+    "KN": 0.56,
+    "LC": 1,
+    "VC": 0.58,
+    "SD": 65.93,
+    "SR": 3.3,
+    "SZ": 3.17,
+    "SE": 444.59,
+    "CH": 522.44,
+    "SY": 59.63,
+    "TW": 426.98,
+    "TJ": 5.58,
+    "TZ": 22.43,
+    "TH": 312.61,
+    "TL": 0.62,
+    "TG": 3.07,
+    "TO": 0.3,
+    "TT": 21.2,
+    "TN": 43.86,
+    "TR": 729.05,
+    "TM": 0,
+    "UG": 17.12,
+    "UA": 136.56,
+    "AE": 239.65,
+    "GB": 2258.57,
+    "US": 14624.18,
+    "UY": 40.71,
+    "UZ": 37.72,
+    "VU": 0.72,
+    "VE": 285.21,
+    "VN": 101.99,
+    "YE": 30.02,
+    "ZM": 15.69,
+    "ZW": 5.57
+  };
+
+  $("#world-map-gdp").css({
+    "margin-top": -20,
+    "margin-bottom": -70,
+    "width": "100%"
+  });
+
+  setJvectorMapSize();
+
+  $(window).resize(function() {
+    setJvectorMapSize();
+  });
+
+  $('#world-map-gdp').vectorMap({
+    map: 'world_mill_en',
+    series: {
+      regions: [{
+        values: gdpData,
+        scale: ['#C8EEFF', '#0071A4'],
+        normalizeFunction: 'polynomial'
+      }]
+    },
+    onRegionTipShow: function(e, el, code) {
+      el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+    }
+  });
+
+});
+/**
+ * Jvector Map demo end
  */
