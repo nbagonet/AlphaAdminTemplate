@@ -1,0 +1,63 @@
+//- Charts - Flot Charts - Interactivity
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+
+  //Turning series on/off
+  div.col-lg-12
+    h4 Turning series on/off
+    div#flot8.mbottom10(style="height:400px;")
+    div#choices.text-left.mbottom30
+
+  //Rectangular selection support and zooming
+  div.col-lg-12
+    h4 Rectangular selection support and zooming
+    div#flot9.mbottom10(style="height:300px;")
+    div.mbottom10
+      |You selected:
+      span#selection.mleft5
+    div.mbottom10
+      label
+        input#zoom.mright5(type="checkbox")
+        |Zoom to selection.
+    div.mbottom30
+      +buttons("btn-success mright5","Clear selection")(id="clearSelection")
+      +buttons("btn-info","Select year 1994")(id="setSelection")
+
+  //Zooming with overview
+  div.col-lg-12
+    h4 Zooming with overview
+    div.row.mbottom30
+      div#flot10.col-sm-10(style="height:300px;")
+      div#overview.col-sm-2(style="height:125px;")
+
+  //Interacting with the data points
+  div.col-lg-6
+    h4 Interacting with the data points
+    div#flot11.mbottom10(style="height:300px;")
+    div.mbottom10
+      label
+        input#enablePosition.mright5(type="checkbox" checked)
+        |Show mouse position
+        span#hoverdata
+        span#clickdata
+    div.mbottom10
+      label
+        input#enableTooltip.mright5(type="checkbox" checked)
+        |Enable tooltip
+
+  //Panning and zooming
+  div.col-lg-6
+    h4 Panning and zooming
+    div#flot12.mbottom10(style="height:300px;")
+    div#message.mbottom30
+
+  //Automatically redraw when window is resized
+  div.col-lg-12
+    h4 Automatically redraw when window is resized
+    div#flot13.mbottom10(style="height:300px;")
+    div#message2.mbottom30

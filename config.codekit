@@ -22,6 +22,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/dist\/charts-flot_charts.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/charts-flot_charts.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/css\/images\/ui-bg_diagonals-thick_18_b81900_40x40.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -271,6 +280,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/forms-form_wizards.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/forms-multiple_file_upload.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/forms-multiple_file_upload.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3412,6 +3430,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/maps-google_map.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/maps-google_map.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/maps-jvector_map.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -3596,6 +3623,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/ui-typography.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/ui-typography.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/ui-widgets.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -3655,6 +3691,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/uia-sortable_and_nestable_lists.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/uia-toastr_notifications.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/uia-toastr_notifications.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -14324,296 +14369,308 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/Chart.js": {
+	"\/dist\/vendor\/Chart.js\/Chart.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/Chart.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/Chart.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/Chart.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/chartjs\/Chart.min.js": {
+	"\/dist\/vendor\/Chart.js\/Chart.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/Chart.min.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/Chart.min.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/Chart.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/chartjs\/docs\/Chart.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/Chart.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/Chart.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/chartjs\/docs\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/chartjs\/docs\/prettify.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/prettify.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/chartjs\/docs\/prettify.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/prettify.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/prettify.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/chartjs\/docs\/prettify.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/prettify.less",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/css\/prettify.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/dist\/vendor\/chartjs\/docs\/styles.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/styles.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/chartjs\/docs\/styles.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/docs\/styles.less",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/css\/styles.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/dist\/vendor\/chartjs\/LICENSE.md": {
+	"\/dist\/vendor\/Chart.js\/CONTRIBUTING.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/LICENSE.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/LICENSE.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/CONTRIBUTING.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/CONTRIBUTING.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/readme.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/readme.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/chartjs\/readme.md": {
+	"\/dist\/vendor\/Chart.js\/docs\/00-Getting-Started.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/readme.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/readme.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/00-Getting-Started.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/00-Getting-Started.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/bar.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/01-Line-Chart.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/bar.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/01-Line-Chart.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/01-Line-Chart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/doughnut.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/02-Bar-Chart.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/doughnut.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/02-Bar-Chart.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/02-Bar-Chart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/line.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/03-Radar-Chart.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/line.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/03-Radar-Chart.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/03-Radar-Chart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/pie.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/04-Polar-Area-Chart.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/pie.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/04-Polar-Area-Chart.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/04-Polar-Area-Chart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/polarArea.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/05-Pie-Doughnut-Chart.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/polarArea.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/05-Pie-Doughnut-Chart.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/05-Pie-Doughnut-Chart.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/radar.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/06-Advanced.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/radar.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/06-Advanced.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/06-Advanced.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/samples\/sixup.html": {
-		"fileType": 8192,
+	"\/dist\/vendor\/Chart.js\/docs\/07-Notes.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/samples\/sixup.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/07-Notes.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/docs\/07-Notes.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/6charts.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 79923,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/6charts.png",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/6charts.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/Chart.js": {
+	"\/dist\/vendor\/Chart.js\/gulpfile.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/Chart.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/Chart.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/gulpfile.js",
+		"outputAbbreviatedPath": "\/dist\/js\/gulpfile.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/effects.js": {
-		"fileType": 64,
+	"\/dist\/vendor\/Chart.js\/LICENSE.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/effects.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/effects.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/LICENSE.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/LICENSE.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/excanvas.js": {
-		"fileType": 64,
+	"\/dist\/vendor\/Chart.js\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/excanvas.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/excanvas.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/README.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/README.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/html.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 83653,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/html.png",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/html.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/dist\/vendor\/chartjs\/site\/assets\/simple.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48416,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/simple.png",
-		"outputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/assets\/simple.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/dist\/vendor\/chartjs\/site\/index.html": {
+	"\/dist\/vendor\/Chart.js\/samples\/bar.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/bar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/chartjs\/site\/styles.css": {
-		"fileType": 16,
+	"\/dist\/vendor\/Chart.js\/samples\/doughnut.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/chartjs\/site\/styles.css",
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/doughnut.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/line-customTooltips.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/line-customTooltips.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/line.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/line.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/pie-customTooltips.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/pie-customTooltips.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/pie.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/pie.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/polar-area.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/polar-area.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/samples\/radar.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/samples\/radar.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.Bar.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.Bar.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.Bar.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.Core.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.Core.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.Core.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.Doughnut.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.Doughnut.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.Doughnut.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.Line.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.Line.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.Line.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.PolarArea.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.PolarArea.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.PolarArea.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/Chart.js\/src\/Chart.Radar.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/Chart.js\/src\/Chart.Radar.js",
+		"outputAbbreviatedPath": "\/dist\/js\/Chart.Radar.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
 		},
 	"\/dist\/vendor\/ckeditor\/adapters\/jquery.js": {
 		"fileType": 64,
@@ -48460,607 +48517,807 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/API.md": {
+	"\/dist\/vendor\/flot\/API.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/API.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/API.html",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/API.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/API.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/CONTRIBUTING.md": {
+	"\/dist\/vendor\/flot\/CONTRIBUTING.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/CONTRIBUTING.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/CONTRIBUTING.html",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/CONTRIBUTING.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/CONTRIBUTING.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/ajax\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/ajax\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/ajax\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/ajax\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/annotating\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/annotating\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/annotating\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/annotating\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/axes-interacting\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/axes-interacting\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-interacting\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/axes-interacting\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/axes-multiple\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/axes-multiple\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-multiple\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/axes-multiple\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/axes-time-zones\/date.js": {
+	"\/dist\/vendor\/flot\/examples\/axes-time-zones\/date.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-time-zones\/date.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-time-zones\/date.min.js",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/axes-time-zones\/date.js",
+		"outputAbbreviatedPath": "\/dist\/js\/date.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/axes-time-zones\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/axes-time-zones\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-time-zones\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/axes-time-zones\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/axes-time\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/axes-time\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/axes-time\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/axes-time\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/background.png": {
+	"\/dist\/vendor\/flot\/examples\/background.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 231,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/background.png",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/background.png",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/background.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/background.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/basic-options\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/basic-options\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/basic-options\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/basic-options\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/basic-usage\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/basic-usage\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/basic-usage\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/basic-usage\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/canvas\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/canvas\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/canvas\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/canvas\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/categories\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/categories\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/categories\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/categories\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/examples.css": {
+	"\/dist\/vendor\/flot\/examples\/examples.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/examples.css",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/examples.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/image\/hs-2004-27-a-large-web.jpg": {
+	"\/dist\/vendor\/flot\/examples\/image\/hs-2004-27-a-large-web.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 34489,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/image\/hs-2004-27-a-large-web.jpg",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/image\/hs-2004-27-a-large-web.jpg",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/image\/hs-2004-27-a-large-web.jpg",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/image\/hs-2004-27-a-large-web.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/image\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/image\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/image\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/image\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/interacting\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/interacting\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/interacting\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/interacting\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/navigate\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/navigate\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/navigate\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/navigate\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/percentiles\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/percentiles\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/percentiles\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/percentiles\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/realtime\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/realtime\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/realtime\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/realtime\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/resize\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/resize\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/resize\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/resize\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/selection\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/selection\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/selection\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/selection\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/series-errorbars\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/series-errorbars\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/series-errorbars\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/series-errorbars\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/series-pie\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/series-pie\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/series-pie\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/series-pie\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/series-toggle\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/series-toggle\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/series-toggle\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/series-toggle\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/series-types\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/series-types\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/series-types\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/series-types\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/shared\/jquery-ui\/jquery-ui.min.css": {
+	"\/dist\/vendor\/flot\/examples\/shared\/jquery-ui\/jquery-ui.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/shared\/jquery-ui\/jquery-ui.min.css",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/shared\/jquery-ui\/jquery-ui.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/shared\/jquery-ui\/jquery-ui.min.js": {
+	"\/dist\/vendor\/flot\/examples\/shared\/jquery-ui\/jquery-ui.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/shared\/jquery-ui\/jquery-ui.min.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/shared\/jquery-ui\/jquery-ui.min.min.js",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/shared\/jquery-ui\/jquery-ui.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery-ui.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/stacking\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/stacking\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/stacking\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/stacking\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/symbols\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/symbols\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/symbols\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/symbols\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/threshold\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/threshold\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/threshold\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/threshold\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/tracking\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/tracking\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/tracking\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/tracking\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/visitors\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/visitors\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/visitors\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/visitors\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/examples\/zooming\/index.html": {
+	"\/dist\/vendor\/flot\/examples\/zooming\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/examples\/zooming\/index.html",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/examples\/zooming\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/excanvas.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/excanvas.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/excanvas.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/excanvas.min.js": {
+	"\/dist\/vendor\/flot\/excanvas.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/excanvas.min.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/excanvas.min.min.js",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/excanvas.js",
+		"outputAbbreviatedPath": "\/dist\/js\/excanvas.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/flotcharts\/FAQ.md": {
+	"\/dist\/vendor\/flot\/excanvas.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/excanvas.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/excanvas.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/FAQ.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/FAQ.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/FAQ.html",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/FAQ.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/FAQ.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/vendor\/flotcharts\/jquery.colorhelpers.js": {
+	"\/dist\/vendor\/flot\/jquery.colorhelpers.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.colorhelpers.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.colorhelpers.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.canvas.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.canvas.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.canvas.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.categories.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.categories.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.categories.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.crosshair.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.crosshair.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.crosshair.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.errorbars.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.errorbars.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.errorbars.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.fillbetween.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.fillbetween.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.fillbetween.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.image.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.image.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.image.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.navigate.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.navigate.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.navigate.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.pie.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.pie.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.pie.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.resize.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.resize.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.resize.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.selection.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.selection.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.selection.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.stack.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.stack.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.stack.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.symbol.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.symbol.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.symbol.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.threshold.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.threshold.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.threshold.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.flot.time.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.time.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.flot.time.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/jquery.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.js",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/jquery.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/dist\/vendor\/flotcharts\/NEWS.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/NEWS.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/NEWS.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/flotcharts\/PLUGINS.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/PLUGINS.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/PLUGINS.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/vendor\/flotcharts\/README.html": {
-		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/README.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.colorhelpers.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.colorhelpers.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
 		},
-	"\/dist\/vendor\/flotcharts\/README.md": {
+	"\/dist\/vendor\/flot\/jquery.colorhelpers.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.colorhelpers.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.colorhelpers.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.all.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.all.js",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.all.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.all.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.all.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.all.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.canvas.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.canvas.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.canvas.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.canvas.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.canvas.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.canvas.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.categories.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.categories.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.categories.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.categories.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.categories.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.categories.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.crosshair.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.crosshair.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.crosshair.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.crosshair.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.crosshair.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.crosshair.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.errorbars.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.errorbars.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.errorbars.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.errorbars.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.errorbars.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.errorbars.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.fillbetween.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.fillbetween.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.fillbetween.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.fillbetween.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.fillbetween.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.fillbetween.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.image.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.image.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.image.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.image.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.image.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.image.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.navigate.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.navigate.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.navigate.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.navigate.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.navigate.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.navigate.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.pie.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.pie.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.pie.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.pie.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.pie.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.pie.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.resize.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.resize.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.resize.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.resize.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.resize.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.resize.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.selection.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.selection.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.selection.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.selection.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.selection.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.selection.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.stack.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.stack.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.stack.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.stack.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.stack.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.stack.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.symbol.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.symbol.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.symbol.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.symbol.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.symbol.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.symbol.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.threshold.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.threshold.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.threshold.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.threshold.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.threshold.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.threshold.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.time.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.time.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.time.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.flot.time.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.time.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.flot.time.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/jquery.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/flot\/NEWS.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/README.md",
-		"outputAbbreviatedPath": "\/dist\/vendor\/flotcharts\/README.html",
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/NEWS.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/NEWS.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/flot\/PLUGINS.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/PLUGINS.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/PLUGINS.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/flot\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dist\/vendor\/flot\/README.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/flot\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -57193,6 +57450,37 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/dist\/vendor\/jvectormap\/jquery-jvectormap-2.0.1.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jvectormap\/jquery-jvectormap-2.0.1.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/jvectormap\/jquery-jvectormap-2.0.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jvectormap\/jquery-jvectormap-2.0.1.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery-jvectormap-2.0.1.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/dist\/vendor\/jvectormap\/jquery-jvectormap-world-mill-en.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/jvectormap\/jquery-jvectormap-world-mill-en.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery-jvectormap-world-mill-en.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/dist\/vendor\/medium-editor\/CHANGES.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -57788,6 +58076,17 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
+		},
+	"\/dist\/vendor\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/modernizr.js",
+		"outputAbbreviatedPath": "\/dist\/js\/modernizr.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
 		},
 	"\/dist\/vendor\/moment\/benchmarks\/clone.js": {
 		"fileType": 64,
@@ -67844,6 +68143,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/source\/jade\/charts-flot_charts.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/charts-flot_charts.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-flot_charts.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/common\/variables.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -67994,6 +68304,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/buttons.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/include\/buttons.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/charts-chartjs.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/charts-chartjs.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-chartjs.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/charts-float-charts.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/charts-float-charts.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-float-charts.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -68313,6 +68645,39 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/browsehappy.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/browsehappy.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/charts-flot-additional.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/charts-flot-additional.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-flot-additional.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/charts-flot-basic.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/charts-flot-basic.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-flot-basic.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/charts-flot-interactivity.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/charts-flot-interactivity.jade",
+		"outputAbbreviatedPath": "\/dist\/charts-flot-interactivity.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -70330,6 +70695,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/source\/less\/charts.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/less\/charts.less",
+		"outputAbbreviatedPath": "\/dist\/css\/charts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/source\/less\/daterange-pickers.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -70580,6 +70965,26 @@
 		"outputAbbreviatedPath": "\/dist\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/source\/less\/map.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/less\/map.less",
+		"outputAbbreviatedPath": "\/dist\/css\/map.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
@@ -71393,6 +71798,110 @@
 	],
 "lastSavedByUser": "王硕",
 "manualImportLinks": {
+	"\/dist\/vendor\/flot\/jquery.flot.all.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.js",
+			"position": 0,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/excanvas.js",
+			"position": 1,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.colorhelpers.js",
+			"position": 2,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.canvas.js",
+			"position": 3,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.categories.js",
+			"position": 4,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.crosshair.js",
+			"position": 5,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.errorbars.js",
+			"position": 6,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.fillbetween.js",
+			"position": 7,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.image.js",
+			"position": 8,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.navigate.js",
+			"position": 9,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.pie.js",
+			"position": 10,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.resize.js",
+			"position": 11,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.selection.js",
+			"position": 12,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.stack.js",
+			"position": 13,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.symbol.js",
+			"position": 14,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.threshold.js",
+			"position": 15,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/dist\/vendor\/flot\/jquery.flot.time.js",
+			"position": 16,
+			"type": 1
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

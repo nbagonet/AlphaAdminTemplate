@@ -9412,3 +9412,14 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
        box-sizing: content-box;
   border-radius: 0;
 }
+/* Float Charts */
+.legend .legendColorBox {
+  padding: 3px 0;
+}
+.legend .legendColorBox > div {
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.legend .legendColorBox > div > div {
+  border-radius: 50%;
+}

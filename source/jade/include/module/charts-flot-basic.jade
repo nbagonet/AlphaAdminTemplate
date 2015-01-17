@@ -1,0 +1,52 @@
+//- Charts - Flot Charts - Basic Usage
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+
+  //Basic example
+  div.col-lg-6
+    h4 Basic example
+    div#flot1.mbottom30(style="height:300px;")
+
+  //Different graph types
+  div.col-lg-6
+    h4 Different graph types
+    div#flot2.mbottom30(style="height:300px;")
+
+  //Simple categories/textual data
+  div.col-lg-6
+    h4 Simple categories/textual data
+    div#flot3.mbottom30(style="height:300px;")
+
+  //Setting various options
+  div.col-lg-6
+    h4 Setting various options
+    div#flot4.mbottom30(style="height:300px;")
+
+  //Annotating a chart
+  div.col-lg-6
+    h4 Annotating a chart
+    div#flot5.mbottom30(style="height:300px;")
+
+  //Updating graphs with AJAX
+  div.col-lg-6
+    h4 Updating graphs with AJAX
+    div#flot6.mbottom10(style="height:300px;")
+    div.mbottom30.text-center
+      +buttons("btn-success mright5 fetchSeries","First dataset")(data-source="./ajax/data-eu-gdp-growth.json")
+      +buttons("btn-info mright5 fetchSeries","Second dataset")(data-source="./ajax/data-japan-gdp-growth.json")
+      +buttons("btn-warning mright5 fetchSeries","Third dataset")(data-source="./ajax/data-usa-gdp-growth.json")
+      +buttons("btn-danger dataUpdate","Poll for data")
+
+  //Real-time updates
+  div.col-lg-12
+    h4 Real-time updates
+    div#flot7.mbottom10(style="height:300px;")
+    div.mbottom30
+      |Time between updates:
+      input#updateInterval.form-control.input-inline.input-mini.mleft5.mright5(type="text")
+      |milliseconds

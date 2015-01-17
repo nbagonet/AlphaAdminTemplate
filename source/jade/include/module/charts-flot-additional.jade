@@ -1,0 +1,129 @@
+//- Charts - Flot Charts - Additional Features
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.row
+
+  //Using other symbols than circles for points
+  div.col-lg-6
+    h4 Using other symbols than circles for points
+    div#flot14.mbottom30(style="height:400px;")
+
+  //Plotting time series
+  div.col-lg-6
+    h4 Plotting time series
+    div#flot15.mbottom10(style="height:300px;")
+    div.mbottom10
+      |Zoom to:
+      +buttons("btn-info mright5 mleft5","Whole period")(id="whole")
+      +buttons("btn-info mright5","1990-2000")(id="nineties")
+      +buttons("btn-info mright5","1996-2000")(id="latenineties")
+    div.mbottom30
+      |Zoom to:
+      +buttons("btn-warning mright5 mleft5 mbottom5","1999 by quarter")(id="ninetyninequarters")
+      +buttons("btn-warning mright5 mbottom5","1999 by month")(id="ninetynine")
+      +buttons("btn-warning mright5 mbottom5","Last week of 1999")(id="lastweekninetynine")
+      +buttons("btn-warning mright5 mbottom5","Dec. 31, 1999")(id="lastdayninetynine")
+
+  //Visitors per day with zooming and weekends
+  div.col-lg-12
+    h4 Visitors per day with zooming and weekends
+    div#flot16.mbottom10(style="height:300px;")
+    div#flot16-overview.mbottom30(style="height:100px;")
+
+  //Multiple axes
+  div.col-lg-6
+    h4 Multiple axes
+    div#flot17.mbottom10(style="height:350px;")
+    p.mbottom30
+      |Position axis
+      +buttons("btn-success flot17-btn mright5 mleft5","left")
+      +buttons("btn-success flot17-btn","right")
+
+  //Interacting with the axes
+  div.col-lg-6
+    h4 Interacting with the axes
+    div#flot18.mbottom10(style="height:350px;")
+    p.mbottom30
+      |Try clicking an axis.
+      span#flot18-click.mleft10.text-danger
+
+  //Thresholding the data
+  div.col-lg-12
+    h4 Thresholding the data
+    div#flot19.mbottom10(style="height:350px;")
+    div.mbottom30
+      +buttons("btn-warning mright5","Threshold at 5")(id="flot19-btn1")
+      +buttons("btn-warning mright5","Threshold at 0")(id="flot19-btn2")
+      +buttons("btn-warning mright5","Threshold at -2.5")(id="flot19-btn3")
+
+  //Stacked charts
+  div.col-lg-12
+    h4 Stacked charts
+    div#flot20.mbottom10(style="height:400px;")
+    div.mbottom10.stackControls
+      +buttons("btn-danger mright5","With stacking")
+      +buttons("btn-danger","Without stacking")
+    div.mbottom30.graphControls
+      +buttons("btn-green mright5","Bars")
+      +buttons("btn-blue mright5","Lines")
+      +buttons("btn-violet","Lines with steps")
+
+  //Using filled areas to plot percentiles
+  div.col-lg-6
+    h4 Using filled areas to plot percentiles
+    div#flot21.mbottom30(style="height:300px;")
+
+  //Tracking curves with crosshair
+  div.col-lg-6
+    h4 Tracking curves with crosshair
+    div#flot22.mbottom30(style="height:300px;")
+
+  //Plotting error bars
+  div.col-lg-12
+    h4 Plotting error bars
+    div#flot23.mbottom30(style="height:400px;")
+
+  //Pie charts
+  div.col-lg-12
+    h4 Pie charts
+    div#flot-pie.row
+      div.col-lg-6
+        h5 Default pie chart
+        div#flot24.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Default without legend
+        div#flot25.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Custom Label Formatter
+        div#flot26.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Label Radius
+        div#flot27.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Label Styles #1
+        div#flot28.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Label Styles #2
+        div#flot29.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Hidden Labels
+        div#flot30.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Combined Slice
+        div#flot31.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Rectangular Pie
+        div#flot32.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Tilted Pie
+        div#flot33.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Donut Hole
+        div#flot34.mbottom30(style="height:300px;")
+      div.col-lg-6
+        h5 Interactivity
+        div#flot35.mbottom30(style="height:300px;")
