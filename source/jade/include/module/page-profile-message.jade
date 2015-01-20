@@ -1,0 +1,87 @@
+//- Pages - Profile - Message
+
+
+include ../../common/variables
+include ../mixins
+
+div.row
+  div.col-lg-6.pbottom15
+    span(style="margin-left:8px;")
+      input.icheck(type="checkbox")
+    +buttons("btn-danger btn-sm mright10 mleft10","New","fa fa-pencil-square-o mright5")
+    +buttons("btn-default btn-sm mright10","Delete","fa fa-trash-o mright5")
+  div.col-lg-6.pbottom15
+    div.input-group
+      input.form-control.input-sm(type="search" placeholder="Keyword...")
+      span.input-group-btn
+        +buttons("btn-default btn-sm","Search")
+
+table.table.table-hover.profile-msglist.no-mb
+  tbody
+    tr
+      th
+        input.icheck(type="checkbox")
+      td.hidden-xs.hidden-sm
+        a.link-yellow(href="#")
+          i.fa.fa-star
+      td
+        a.link-black(href="#") Brandon Cruz
+      td.hidden-xs.hidden-sm
+        span.label.label-success New
+      td.profile-msglist-title
+        a.link-black(href="#" title="translate book's invitation is waiting for your response - Members are waiting to connect with you!")
+          strong translate book's invitation is waiting for your response
+          span.text-grey &nbsp;-&nbsp;Members are waiting to connect with you!
+      td.hidden-xs.hidden-sm
+        i.fa.fa-paperclip
+      td.small.text-grey(width="1%") 17:38
+    tr
+      th
+        input.icheck(type="checkbox")
+      td.hidden-xs.hidden-sm
+        a.link-grey(href="#")
+          i.fa.fa-star-o
+      td
+        a.link-black(href="#") Harold Brown
+      td.hidden-xs.hidden-sm
+        span.label.label-danger Trash
+      td.profile-msglist-title
+        a.link-black(href="#" title="Win More Projects. Start Sponsoring Your Bids - Will your bid take the lead?")
+          span Win More Projects. Start Sponsoring Your Bids
+          span.text-grey &nbsp;-&nbsp;Will your bid take the lead?
+      td.hidden-xs.hidden-sm
+      td.small.text-grey(width="1%") Jan 18
+      - for(var i=0;i<18;i++)
+        tr
+          th
+            input.icheck(type="checkbox")
+          td.hidden-xs.hidden-sm
+            a.link-grey(href="#")
+              i.fa.fa-star-o
+          td.link-black
+            a(href="#") Jane Doe
+          td.hidden-xs.hidden-sm
+          td.profile-msglist-title
+            a.link-black(href="#" title="Lorem ipsum dolor sit amet - consectetuer adipiscing elit.")
+              span Lorem ipsum dolor sit amet
+              span.text-grey &nbsp;-&nbsp;Consectetuer adipiscing elit.
+          td.hidden-xs.hidden-sm
+          td.small.text-grey(width="1%") Jan 18
+
+hr.no-mt
+
+div.text-right
+  ul.pagination.pagination-sm.no-m
+    li.disabled
+      a(href="#")
+        i.fa.fa-angle-left
+    each val in [1, 2, 3, 4, 5]
+      if val === 1
+        li.active
+          a(href="#")= val
+      else
+        li
+          a(href="#")= val
+    li
+      a(href="#")
+        i.fa.fa-angle-right

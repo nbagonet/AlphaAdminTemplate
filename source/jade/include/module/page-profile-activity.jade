@@ -1,0 +1,100 @@
+//- Pages - Profile - Activity
+
+
+include ../../common/variables
+include ../mixins
+
+div.media
+  div.media-left
+    img.media-object.img-circle.avatar.avatar-sm(src="#{userhead[1]}")
+  div.media-body
+    h5.media-heading
+      a.link-black(href="#")
+        strong Diane Harris
+      small.mleft5 posted a new note
+    p.small.text-grey 1 days ago at 6:18am
+    div.mtop15
+      h5.mbottom5.no-mt
+        a(href="#")
+          strong Lorem ipsum dolor sit amet
+      p.small Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+
+hr.hr-grey
+
+div.media
+  div.media-left
+    img.media-object.img-circle.avatar.avatar-sm(src="#{userhead[2]}")
+  div.media-body
+    h5.media-heading
+      a.link-black(href="#")
+        strong Jane Doe
+      small.mleft5 posted a new blog
+    p.small.text-grey 2 days ago
+    div.mtop15
+      div.media
+        div.media-left
+          a.thumbnail(href="#" style="width:100px;")
+            img.media-object(src="http://lorempixel.com/100/75/city/")
+        div.media-body
+          h5.mbottom5.no-mt
+            a(href="#")
+              strong Lorem ipsum dolor sit amet
+          p.small Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+
+hr.hr-grey
+
+div.media
+  div.media-left
+    img.media-object.img-circle.avatar.avatar-sm(src="#{userhead[3]}")
+  div.media-body
+    h5.media-heading
+      a.link-black(href="#")
+        strong Gerald Morris
+      small.mleft5 upload 9 pictures
+    p.small.text-grey 3 days ago
+    div.mtop15
+      ul.list-unstyled.list-inline
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/abstract/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/animals/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/business/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/cats/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/city/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/food/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/nightlife/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/fashion/")
+        li: a(href="#")
+            img.mbottom10(src="http://lorempixel.com/150/120/people/")
+
+hr.hr-grey
+
+div.media
+  div.media-left
+    img.media-object.img-circle.avatar.avatar-sm(src="#{userhead[4]}")
+  div.media-body
+    h5.media-heading
+      a.link-black(href="#")
+        strong Jason Holmes
+      small.mleft5 posted 3 new tasks
+    p.small.text-grey 4 days ago
+    div.mtop15
+      ul.list-unstyled
+        li
+          p.small.mbottom5 Fix BUG #479
+          div.progress.progress-center-text.progress-sm: div.progress-bar.progress-bar-success(role="progressbar" data-transitiongoal="75")
+        li
+          p.small.mbottom5 Review javascript code
+          div.progress.progress-center-text.progress-sm: div.progress-bar.progress-bar-info(role="progressbar" data-transitiongoal="45")
+        li
+          p.small.mbottom5 Update database
+          div.progress.progress-center-text.progress-sm: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="50")
+        li
+          p.small.mbottom5 Reinstall the server operating system
+          div.progress.progress-center-text.progress-sm: div.progress-bar.progress-bar-danger(role="progressbar" data-transitiongoal="43")

@@ -1783,7 +1783,7 @@ if ($("#icheck-demo").length > 0) {
 if ($(".demo-icons").length > 0) {
   $(function() {
     var iconColorClass = ['primary', 'success', 'info', 'warning', 'danger', 'red', 'orange', 'yellow', 'green', 'black', 'blue', 'violet', 'pink', 'grey'];
-    $(".demo-icons .fa, .demo-icons .glyphicon, .demo-icons [class|='ti'], .demo-icons [class|='icon']").parent("a").each(function() {
+    $(".demo-icons .fa, .demo-icons .glyphicon, .demo-icons [class|='ti'], .demo-icons [class|='entypo']").parent("a").each(function() {
       $(this).addClass("link-" + iconColorClass[Math.floor(Math.random() * iconColorClass.length)]);
     });
   });
@@ -10164,4 +10164,262 @@ $(function() {
 });
 /**
  * Chart.js demo end
+ */
+
+
+/**
+ * Easy Pie Chart demo begin
+ */
+$(function() {
+
+  if ($("#easypie1")[0]) {
+    $("#easypie1").easyPieChart({
+      animate: 2000,
+      barColor: "#428bca",
+      trackColor: "#eee",
+      scaleColor: "#ddd",
+      lineCap: "round",
+      lineWidth: 5,
+      size: 100
+    });
+  }
+
+  if ($("#easypie2")[0]) {
+    $("#easypie2").easyPieChart({
+      animate: 3000,
+      barColor: "#5cb85c",
+      trackColor: "#eee",
+      scaleColor: "#ddd",
+      lineCap: "butt",
+      lineWidth: 10,
+      size: 100
+    });
+  }
+
+  if ($("#easypie3")[0]) {
+    $("#easypie3").easyPieChart({
+      animate: 2500,
+      barColor: "#f0ad4e",
+      trackColor: "#eee",
+      scaleColor: "#ddd",
+      lineCap: "square",
+      lineWidth: 15,
+      size: 100
+    });
+  }
+
+});
+/**
+ * Easy Pie Chart demo end
+ */
+
+
+/**
+ * Sparklines demo begin
+ */
+
+/** 
+ ** Draw the little mouse speed animated graph
+ ** This just attaches a handler to the mousemove event to see
+ ** (roughly) how far the mouse has moved
+ ** and then updates the display a couple of times a second via
+ ** setTimeout()
+ **/
+function drawMouseSpeedDemo() {
+  var mrefreshinterval = 500; // update display every 500ms
+  var lastmousex = -1;
+  var lastmousey = -1;
+  var lastmousetime;
+  var mousetravel = 0;
+  var mpoints = [];
+  var mpoints_max = 30;
+  $('html').mousemove(function(e) {
+    var mousex = e.pageX;
+    var mousey = e.pageY;
+    if (lastmousex > -1) {
+      mousetravel += Math.max(Math.abs(mousex - lastmousex), Math.abs(mousey - lastmousey));
+    }
+    lastmousex = mousex;
+    lastmousey = mousey;
+  });
+  var mdraw = function() {
+      var md = new Date();
+      var timenow = md.getTime();
+      if (lastmousetime && lastmousetime != timenow) {
+        var pps = Math.round(mousetravel / (timenow - lastmousetime) * 1000);
+        mpoints.push(pps);
+        if (mpoints.length > mpoints_max)
+          mpoints.splice(0, 1);
+        mousetravel = 0;
+        $('#mousespeed').sparkline(mpoints, {
+          width: mpoints.length * 2,
+          tooltipSuffix: ' pixels per second',
+          lineColor: '#fa639e',
+          fillColor: '#f0ad4e'
+        });
+      }
+      lastmousetime = timenow;
+      setTimeout(mdraw, mrefreshinterval);
+    }
+    // We could use setInterval instead, but I prefer to do it this way
+  setTimeout(mdraw, mrefreshinterval);
+};
+
+
+// Demo Run...
+$(function() {
+
+  if ($("#mousespeed")[0]) {
+    drawMouseSpeedDemo();
+  }
+
+  if ($(".sparkline")[0]) {
+    // Line charts taking their values from the tag
+    $('.sparkline').sparkline('html', {
+      fillColor: false,
+      lineColor: '#428bca',
+      highlightSpotColor: '#00947d',
+      highlightLineColor: '#a3a3a3'
+    });
+  }
+
+  if ($(".sparkbar")[0]) {
+    // Bar charts using inline values
+    $('.sparkbar').sparkline('html', {
+      type: 'bar',
+      barColor: '#02b4dd',
+      negBarColor: '#f2572d',
+      stackedBarColor: ['#f0ad4e', '#5bc0de']
+    });
+  }
+
+  if ($("#compositeline")[0]) {
+    // Composite line charts, the second using values supplied via javascript
+    $('#compositeline').sparkline('html', {
+      fillColor: false,
+      changeRangeMin: 0,
+      chartRangeMax: 10,
+      lineColor: '#f2572d'
+    });
+    $('#compositeline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
+      composite: true,
+      fillColor: false,
+      lineColor: '#00947d',
+      changeRangeMin: 0,
+      chartRangeMax: 10
+    });
+  }
+
+  if ($("#normalline")[0]) {
+    // Line charts with normal range marker
+    $('#normalline').sparkline('html', {
+      fillColor: false,
+      lineColor: '#e31d18',
+      normalRangeMin: -1,
+      normalRangeMax: 8
+    });
+  }
+
+  if ($("#compositebar")[0]) {
+    // Bar + line composite charts
+    $('#compositebar').sparkline('html', {
+      type: 'bar',
+      barColor: '#fa639e'
+    });
+    $('#compositebar').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
+      composite: true,
+      fillColor: false,
+      lineColor: '#00947d'
+    });
+  }
+
+  // Discrete charts
+  if ($('.discrete1')[0]) {
+    $('.discrete1').sparkline('html', {
+      type: 'discrete',
+      lineColor: '#428bca',
+      xwidth: 18
+    });
+  }
+  if ($('#discrete2')[0]) {
+    $('#discrete2').sparkline('html', {
+      type: 'discrete',
+      lineColor: '#5cb85c',
+      thresholdColor: '#d9534f',
+      thresholdValue: 4
+    });
+  }
+
+  // Customized line chart
+  if ($('#linecustom')[0]) {
+    $('#linecustom').sparkline('html', {
+      height: '1.5em',
+      width: '8em',
+      lineColor: '#d9534f',
+      fillColor: '#f0ad4e',
+      minSpotColor: false,
+      maxSpotColor: false,
+      spotColor: '#5bc0de',
+      spotRadius: 3
+    });
+  }
+
+  // Tri-state charts using inline values
+  if ($('.sparktristate')[0]) {
+    $('.sparktristate').sparkline('html', {
+      type: 'tristate',
+      posBarColor: '#428bca',
+      negBarColor: '#f0ad4e',
+      zeroBarColor: '#d9534f'
+    });
+  }
+  if ($('.sparktristatecols')[0]) {
+    $('.sparktristatecols').sparkline('html', {
+      type: 'tristate',
+      posBarColor: '#428bca',
+      negBarColor: '#f0ad4e',
+      zeroBarColor: '#d9534f',
+      colorMap: {
+        '-2': '#fa639e',
+        '2': '#5c2862'
+      }
+    });
+  }
+
+  // Box plots
+  if ($('.sparkboxplot')[0]) {
+    $('.sparkboxplot').sparkline('html', {
+      type: 'box'
+    });
+  }
+  if ($('.sparkboxplotraw')[0]) {
+    $('.sparkboxplotraw').sparkline([1, 3, 5, 8, 10, 15, 18], {
+      type: 'box',
+      raw: true,
+      showOutliers: true,
+      target: 6
+    });
+  }
+
+  // Pie charts
+  if ($('.sparkpie')[0]) {
+    $('.sparkpie').sparkline('html', {
+      type: 'pie',
+      height: '1.0em'
+    });
+  }
+
+  // Bullet charts
+  if ($('.sparkbullet')[0]) {
+    $('.sparkbullet').sparkline('html', {
+      type: 'bullet',
+      targetColor:'#fa639e',
+      performanceColor:'#f0ad4e',
+      rangeColors:['#a3a3a3','#02b4dd','#428bca']
+    });
+  }
+
+});
+/**
+ * Sparklines demo end
  */

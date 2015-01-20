@@ -1,0 +1,61 @@
+//- Pages - Profile
+
+
+include ../common/variables
+include ./mixins
+
+
+div#page-user-profile
+
+  div.col-md-4
+
+    //Profile Sidebar
+    include ./module/page-profile-sidebar
+
+  div.col-md-8
+
+    //Profile Tabs
+    ul.nav.nav-tabs.responsive.nav-tabs-orange(role="tablist")
+      li.active
+        a(href="#activity" role="tab" data-toggle="tab")
+          i.fa.fa-bullhorn.mright5
+          |Activity
+      li
+        a(href="#followers" role="tab" data-toggle="tab")
+          i.fa.fa-users.mright5
+          |Followers
+      li
+        a(href="#blogs" role="tab" data-toggle="tab")
+          i.fa.fa-pencil.mright5
+          |Blogs
+      li
+        a(href="#chat" role="tab" data-toggle="tab")
+          i.fa.fa-comments-o.mright5
+          |Chat
+      li
+        a(href="#message" role="tab" data-toggle="tab")
+          i.fa.fa-envelope-o.mright5
+          |Message
+
+    //Profile Tab Panes
+    div.tab-content.responsive
+
+      //Activity
+      div#activity.tab-pane.fade.in.active
+        include ./module/page-profile-activity
+
+      //Followers
+      div#followers.tab-pane.fade.in
+        include ./module/page-profile-followers
+
+      //Blogs
+      div#blogs.tab-pane.fade.in
+        include ./module/page-profile-blog
+
+      //Chat
+      div#chat.tab-pane.fade.in
+        include ./module/page-profile-chat
+
+      //Message
+      div#message.tab-pane.fade.in
+        include ./module/page-profile-message

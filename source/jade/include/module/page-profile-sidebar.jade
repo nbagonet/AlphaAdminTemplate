@@ -1,0 +1,83 @@
+//- Pages - Profile - Profile Sidebar
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.panel.panel-white
+  div.panel-body
+
+    //Head
+    div.show.text-center
+      img.img-circle.avatar.avatar-lg(src="#{userhead[0]}")
+
+    //Profile Content
+    div.mtop20
+      table.table.table-striped
+        tbody
+          tr
+            th.text-right Name:
+            td Anton Durant
+          tr
+            th.text-right Email:
+            td
+              a(href="mailto:name@example.com") name@example.com
+          tr
+            th.text-right Age:
+            td 31
+          tr
+            th.text-right Sex:
+            td
+              i.fa.fa-male.mright5
+              |Male
+          tr
+            th.text-right Height:
+            td 1.81m
+          tr
+            th.text-right Weight:
+            td 70kg
+          tr
+            th.text-right Location:
+            td
+              a(href="#{page_maps_google_map.url}")
+                i.fa.fa-map-marker.mright5
+                |Taipei
+          tr
+            th.text-right Address:
+            td 1600 Amphitheatre Parkway, Mountain View, CA 94043
+          tr
+            th.text-right Skill:
+            td
+              span.label.label-orange.mright5 HTML5
+              span.label.label-success.mright5 CSS3
+          tr
+            th.text-right Joined:
+            td 13 Dec 2012
+          tr
+            th.text-right Intro:
+            td Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+    //Social Links
+    div.text-center
+      ul.list-inline
+        li: a.link-primary(href="#")
+          span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-facebook.fa-stack-1x.fa-inverse
+        li: a.link-info(href="#")
+          span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-twitter.fa-stack-1x.fa-inverse
+        li: a.link-orange(href="#")
+          span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-weibo.fa-stack-1x.fa-inverse
+        li: a.link-success(href="#")
+          span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-wechat.fa-stack-1x.fa-inverse
+        li: a.link-black(href="#")
+          span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-tumblr.fa-stack-1x.fa-inverse

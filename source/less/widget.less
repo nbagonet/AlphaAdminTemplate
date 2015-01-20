@@ -8,3 +8,256 @@
 {
     overflow: hidden;
 }
+
+
+/* Widget - Chat */
+.widget-chat-control
+{
+    margin-top: 15px;
+    padding: 10px;
+
+    background-color: @gray-lighter;
+}
+.widget-chat-item
+{
+    .widget-chat-item-label
+    {
+        position: relative;
+        > div
+        {
+            position: relative;
+            z-index: 1;
+        }
+        .alert
+        {
+            //.box-shadow(0 0 5px rgba(0,0,0,.075));
+            &:after
+            {
+                position: absolute;
+                z-index: 2;
+                top: 20px;
+
+                display: block;
+                overflow: hidden;
+
+                width: 0;
+                height: 0;
+
+                content: '';
+
+                border-width: 8px 10px 8px 0;
+                border-style: solid;
+                border-color: transparent #eee transparent transparent;
+            }
+            &:before
+            {
+                position: absolute;
+                z-index: 3;
+                top: 21px;
+
+                display: block;
+                overflow: hidden;
+
+                width: 0;
+                height: 0;
+
+                content: '';
+
+                border-width: 7px 9px 7px 0;
+                border-style: solid;
+                border-color: transparent #fff transparent transparent;
+            }
+            &.alert-success
+            {
+                &:after
+                {
+                    border-color: transparent @alert-success-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-success-bg transparent transparent;
+                }
+            }
+            &.alert-info
+            {
+                &:after
+                {
+                    border-color: transparent @alert-info-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-info-bg transparent transparent;
+                }
+            }
+            &.alert-warning
+            {
+                &:after
+                {
+                    border-color: transparent @alert-warning-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-warning-bg transparent transparent;
+                }
+            }
+            &.alert-danger
+            {
+                &:after
+                {
+                    border-color: transparent @alert-danger-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-danger-bg transparent transparent;
+                }
+            }
+            &.alert-red
+            {
+                &:after
+                {
+                    border-color: transparent @alert-red-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-red-bg transparent transparent;
+                }
+            }
+            &.alert-orange
+            {
+                &:after
+                {
+                    border-color: transparent @alert-orange-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-orange-bg transparent transparent;
+                }
+            }
+            &.alert-yellow
+            {
+                &:after
+                {
+                    border-color: transparent @alert-yellow-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-yellow-bg transparent transparent;
+                }
+            }
+            &.alert-green
+            {
+                &:after
+                {
+                    border-color: transparent @alert-green-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-green-bg transparent transparent;
+                }
+            }
+            &.alert-black
+            {
+                &:after
+                {
+                    border-color: transparent @alert-black-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-black-bg transparent transparent;
+                }
+            }
+            &.alert-blue
+            {
+                &:after
+                {
+                    border-color: transparent @alert-blue-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-blue-bg transparent transparent;
+                }
+            }
+            &.alert-violet
+            {
+                &:after
+                {
+                    border-color: transparent @alert-violet-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-violet-bg transparent transparent;
+                }
+            }
+            &.alert-pink
+            {
+                &:after
+                {
+                    border-color: transparent @alert-pink-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-pink-bg transparent transparent;
+                }
+            }
+            &.alert-grey
+            {
+                &:after
+                {
+                    border-color: transparent @alert-grey-border transparent transparent;
+                }
+                &:before
+                {
+                    border-color: transparent @alert-grey-bg transparent transparent;
+                }
+            }
+        }
+    }
+    > .pull-left
+    {
+        & + .widget-chat-item-label
+        {
+            margin-left: 85px;
+            .alert
+            {
+                &:after
+                {
+                    left: 0;
+
+                    margin-left: -10px;
+                }
+                &:before
+                {
+                    left: 0;
+
+                    margin-left: -9px;
+                }
+            }
+        }
+    }
+    > .pull-right
+    {
+        & + .widget-chat-item-label
+        {
+            margin-right: 85px;
+            .alert
+            {
+                &:after
+                {
+                    right: 0;
+
+                    margin-right: -10px;
+
+                    .rotate(180deg);
+                }
+                &:before
+                {
+                    right: 0;
+
+                    margin-right: -9px;
+
+                    .rotate(180deg);
+                }
+            }
+        }
+    }
+}

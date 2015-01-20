@@ -1,0 +1,72 @@
+//- Pages - Profile - Followers
+
+
+include ../../common/variables
+include ../mixins
+
+
+- var fhead = [userhead[7],userhead[8],userhead[9],userhead[10],userhead[11],userhead[12]];
+- var fname = ['Vito Corleone','Joseph Gordon','Gary Oldman','Kevin Spacey','Liv Tyler','Jonathan Lee'];
+- var fintro = ['Fictional Character','Actor/Director','Actor/Director','Actor/Director','Actor/Director','Musician/Band'];
+
+//Following
+div.mbottom20
+  div.clearfix
+    h3.pull-left
+      strong Following
+      strong.small.mleft5 123
+    span.pull-right.mtop15.small
+      a.link-grey(href="#")
+        |Show All
+        i.fa.fa-angle-double-right.mleft5
+
+  hr.hr-grey.no-mt
+
+  div.row
+
+    - for(var i=0;i<6;i++)
+      div.col-md-6
+        div.widget.panel.panel-white.no-b
+          div.panel-body.bgc-white
+            div.pull-left.mright10
+              a(href="#")
+                img.img-circle.avatar.avatar-m(src="#{fhead[i]}" alt="#{fname[i]}")
+            div.text-black
+              p.mbottom5
+                strong
+                  a(href="#") #{fname[i]}
+              p.small #{fintro[i]}
+              p.no-mb
+                +buttons("btn-success btn-xs mright5","Follow","fa fa-plus mright5")
+                +buttons("btn-danger btn-xs","Unfollow","fa fa-trash mright5")
+
+//Followers
+div.mbottom20
+  div.clearfix
+    h3.pull-left
+      strong Followers
+      strong.small.mleft5 123
+    span.pull-right.mtop15.small
+      a.link-grey(href="#")
+        |Show All
+        i.fa.fa-angle-double-right.mleft5
+
+  hr.hr-grey.no-mt
+
+  div.row
+
+    - for(var i=0;i<6;i++)
+      div.col-md-6
+        div.widget.panel.panel-white.no-b
+          div.panel-body.bgc-white
+            div.pull-left.mright10
+              a(href="#")
+                img.img-circle.avatar.avatar-m(src="#{fhead[i]}" alt="#{fname[i]}")
+            div.text-black
+              p.mbottom5
+                strong
+                  a(href="#") #{fname[i]}
+              p.small #{fintro[i]}
+              p.no-mb
+                +buttons("btn-success btn-xs mright5","Follow","fa fa-plus mright5")
+                +buttons("btn-danger btn-xs","Unfollow","fa fa-trash mright5")
