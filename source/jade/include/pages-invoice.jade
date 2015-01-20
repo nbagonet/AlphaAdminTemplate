@@ -1,0 +1,98 @@
+//- Pages - Invoice
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Invoice
+  div.invoice
+    //Invoice header
+    div.invoice-header
+      div.invoice-logo
+        img(src="#{base_img}logo-black.png")
+      div.invoice-addr
+        dl
+          dt Address:
+          dd 1600 Amphitheatre, Mountain View, CA 94043
+        dl
+          dt Phone:
+          dd +1 650-253-0000
+        dl
+          dt Email:
+          dd office@domain.com
+
+    //Invoice body
+    div.invoice-body
+      div.invoice-inv-info
+        div.invoice-inv-from
+          h1 INVOICE
+          ul
+            li
+              strong Invoice No:
+              span 000001
+            li
+              strong Invoice Date:
+              span December 25, 2014
+            li
+              strong Total Due:
+              span $12345.67
+        div.invoice-inv-to
+          h3 INVOICE TO
+          ul
+            li
+              strong Address:
+              span Tsinghua Science Park Bldg 6, No. 1 Zhongguancun East Road, Haidian District, Beijing 100084
+            li
+              strong Phone:
+              span +86-10-62503000
+            li
+              strong Email:
+              span yourname@domain.com
+      div.invoice-detail
+        table.invoice-table
+          thead
+            tr
+              th.invoice-table-item-th Item
+              th.invoice-table-quantity-th Quantity
+              th.invoice-table-price-th Unit Price
+              th.invoice-table-total-th Total
+          tbody
+            - for(var i=0;i<5;i++)
+              tr
+                th.invoice-table-item-td
+                  h5 Item Name
+                  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                td.invoice-table-quantity-td 1
+                td.invoice-table-price-td $100.00
+                td.invoice-table-total-td $100.00
+          tfoot
+            tr
+              td.invoice-table-terms-tf(colspan="2" rowspan="2")
+                strong Trems:
+                span 30 days from issue
+              th.invoice-table-th-tf Subtotal
+              td.invoice-table-td-tf $500.00
+            tr
+              th.invoice-table-th-tf Tax VAT 7%
+              td.invoice-table-td-tf $35.00
+            tr
+              td.invoice-table-pi-tf(colspan="2" rowspan="3")
+                strong Payment Information:
+                br
+                span Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              th.invoice-table-th-tf Discount 0%
+              td.invoice-table-td-tf $0.00
+            tr
+              th.invoice-table-th-total Total Due
+              td.invoice-table-td-total $535.00
+
+    //Invoice footer
+    div.invoice-footer
+      p www.Domain.com
+
+  div.text-center.ptop30.hidden-print
+    +buttons("btn-danger btn-lg mright10","Print","fa fa-print mright5")(onclick="window.print()")
+    +buttons("btn-default btn-lg","Edit","fa fa-pencil-square-o mright5")

@@ -350,4 +350,13 @@ $(function() {
   }
   // Table Fixed Header end
 
+  // Invoice begin
+  if($(".invoice")[0]){
+
+    // Hide something...
+    $(".sidebar,.head-wrapper,.scroll-to-top,.layouts-title-breadcrumb").addClass("hidden-print");
+
+  }
+  // Invoice end
+
 });

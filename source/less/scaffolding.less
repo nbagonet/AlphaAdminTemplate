@@ -133,6 +133,10 @@ input[type="search"]{
 
         padding: (@top-header-height + 40) 0 0;
     }
+    @media print
+    {
+        padding: 15px 0;
+    }
 }
 
 
@@ -146,9 +150,14 @@ input[type="search"]{
     padding-bottom: 99999px;
     @media (max-width: @screen-sm-max)
     {
+        overflow: instead;
+
         margin: 0;
         padding-bottom: 0;
-        overflow:instead;
+    }
+    @media print
+    {
+        margin-left: 0;
     }
 }
 
