@@ -10437,11 +10437,147 @@ $(function() {
         easing: 'ease'
       },
       controls: {
-    activeClass: 'btn-orange active'
-  }
+        activeClass: 'btn-orange active'
+      }
     });
   }
 });
 /**
  * Gallery demo end
+ */
+
+
+/**
+ * Calender demo begin
+ */
+$(function() {
+
+  /* initialize the external events
+        -----------------------------------------------------------------*/
+  var eventDrag = function(el) {
+    // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+    // it doesn't need to have a start or end
+    var eventObject = {
+      title: $.trim(el.text()), // use the element's text as the event titleTemplate
+      stick: true, // maintain when user navigates (see docs on the renderEvent method)
+      color: el.css("background-color")
+    };
+
+    // store the Event Object in the DOM element so we can get to it later
+    el.data('event', eventObject);
+
+    // make the event draggable using jQuery UI
+    el.draggable({
+      zIndex: 999,
+      revert: true, // will cause the event to go back to its
+      revertDuration: 0 //  original position after the drag
+    });
+  }
+  $('#external-events .fc-event-btn').each(function() {
+    eventDrag($(this));
+  });
+
+  // Add New Event
+  var addEvent = function(name) {
+    name = name.length == 0 ? "Untitled Event" : name;
+    var html = $('<div class="fc-event-btn btn btn-xs btn-primary mright5 mbottom5"><i class="fa fa-thumb-tack mright5"></i>' + name + '</div>');
+    $('#event-box').append(html);
+    eventDrag(html);
+  };
+  $('#event-add').on('click', function() {
+    var name = $('#event-name').val();
+    addEvent(name);
+  });
+
+  /* initialize the calendar
+    -----------------------------------------------------------------*/
+
+  $('#calendar').fullCalendar({
+    header: {
+      left: 'today prev,next',
+      center: 'title',
+      right: 'month,basicWeek,basicDay'
+    },
+    editable: true,
+    eventLimit: true, // allow "more" link when too many events
+    droppable: true, // this allows things to be dropped onto the calendar !!!
+    drop: function() {
+      // is the "remove after drop" checkbox checked?
+      if ($('#drop-remove').is(':checked')) {
+        // if so, remove the element from the "Draggable Events" list
+        $(this).remove();
+      }
+    },
+    events: [{
+      title: 'All Day Event',
+      start: '2015-01-01',
+      color: '#428bca',
+      textColor: '#fff'
+    }, {
+      title: 'Long Event',
+      start: '2015-01-12',
+      end: '2015-01-14',
+      color: '#5cb85c',
+      textColor: '#fff'
+    }, {
+      id: 999,
+      title: 'Repeating Event',
+      start: '2015-01-08T16:00:00',
+      color: '#5bc0de',
+      textColor: '#fff'
+    }, {
+      id: 999,
+      title: 'Repeating Event',
+      start: '2015-01-16T16:00:00',
+      color: '#f0ad4e',
+      textColor: '#fff'
+    }, {
+      title: 'Conference',
+      start: '2015-01-11',
+      end: '2014-01-13',
+      color: '#d9534f',
+      textColor: '#fff'
+    }, {
+      title: 'Meeting',
+      start: '2015-01-12T10:30:00',
+      end: '2015-01-12T12:30:00',
+      color: '#e31d18',
+      textColor: '#fff'
+    }, {
+      title: 'Lunch',
+      start: '2015-01-12T12:00:00',
+      color: '#f2572d',
+      textColor: '#fff'
+    }, {
+      title: 'Meeting',
+      start: '2015-01-12T14:30:00',
+      color: '#00947d',
+      textColor: '#fff'
+    }, {
+      title: 'Happy Hour',
+      start: '2015-01-12T17:30:00',
+      color: '#5c2862',
+      textColor: '#fff'
+    }, {
+      title: 'Dinner',
+      start: '2015-01-12T20:00:00',
+      color: '#f1c82d',
+      textColor: '#fff'
+    }, {
+      title: 'Birthday Party',
+      start: '2015-01-13T07:00:00',
+      color: '#fa639e',
+      textColor: '#fff'
+    }, {
+      title: 'Click for Google',
+      url: 'http://google.com/',
+      start: '2015-01-28',
+      color: '#4d4d4d',
+      textColor: '#fff'
+    }]
+  });
+
+});
+/**
+ * Calender demo end
  */

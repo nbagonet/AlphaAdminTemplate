@@ -10136,3 +10136,37 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+/* Calendar */
+/*!
+ * FullCalendar v2.2.6 Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+ */
+/* Buttons (styled <button> tags, normalized to work cross-browser)
+--------------------------------------------------------------------------------------------------*/
+.fc-state-default.fc-corner-left {
+  /* non-theme */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.fc-state-default.fc-corner-right {
+  /* non-theme */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+.fc-state-default {
+  outline: none;
+  background-image: none;
+  border-color: #e6e6e6;
+  box-shadow: none;
+  text-shadow: none;
+}
+/* Global Event Styles
+--------------------------------------------------------------------------------------------------*/
+.fc-event {
+  border-radius: 0;
+}

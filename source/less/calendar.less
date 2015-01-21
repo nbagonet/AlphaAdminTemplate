@@ -1,0 +1,49 @@
+//
+// Calendar
+// --------------------------------------------------
+
+
+/* Calendar */
+
+/*!
+ * FullCalendar v2.2.6 Stylesheet
+ * Docs & License: http://arshaw.com/fullcalendar/
+ * (c) 2013 Adam Shaw
+ */
+
+/* Buttons (styled <button> tags, normalized to work cross-browser)
+--------------------------------------------------------------------------------------------------*/
+.fc-state-default.fc-corner-left
+{
+    /* non-theme */
+    border-top-left-radius: @calender-border-radius;
+    border-bottom-left-radius: @calender-border-radius;
+}
+
+.fc-state-default.fc-corner-right
+{
+    /* non-theme */
+    border-top-right-radius: @calender-border-radius;
+    border-bottom-right-radius: @calender-border-radius;
+}
+
+/*
+  button states
+  borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+*/
+
+.fc-state-default
+{
+    outline: none;
+    background-image: none;
+    border-color: #e6e6e6;
+    .box-shadow(none);
+    text-shadow:none;
+}
+
+/* Global Event Styles
+--------------------------------------------------------------------------------------------------*/
+
+.fc-event {
+  border-radius: @calender-border-radius;
+}

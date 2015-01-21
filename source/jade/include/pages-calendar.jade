@@ -1,0 +1,75 @@
+//- Pages - Calendar
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  //Calendar
+  div.panel.panel-white
+    div.panel-body
+      div.row
+
+        div.col-md-3
+          div#external-events
+            div
+              h4 Add New Event
+              div
+                input#event-name.form-control(type="text" placeholder="Enter Event Name" maxlength="12")
+              div.mtop10
+                +buttons("btn-success","Add Event","fa fa-plus mright5")(id="event-add")
+            hr.hr-grey
+            div
+              h4 Draggable Events
+              div#event-box.ptop10
+                .fc-event-btn.btn.btn-xs.btn-primary.mright5.mbottom5
+                  i.fa.fa-angellist.mright5
+                  |My Event 1
+                .fc-event-btn.btn.btn-xs.btn-success.mright5.mbottom5
+                  i.fa.fa-area-chart.mright5
+                  |My Event 2
+                .fc-event-btn.btn.btn-xs.btn-info.mright5.mbottom5
+                  i.fa.fa-at.mright5
+                  |My Event 3
+                .fc-event-btn.btn.btn-xs.btn-warning.mright5.mbottom5
+                  i.fa.fa-bell-slash.mright5
+                  |My Event 4
+                .fc-event-btn.btn.btn-xs.btn-danger.mright5.mbottom5
+                  i.fa.fa-bicycle.mright5
+                  |My Event 5
+                .fc-event-btn.btn.btn-xs.btn-red.mright5.mbottom5
+                  i.fa.fa-binoculars.mright5
+                  |My Event 6
+                .fc-event-btn.btn.btn-xs.btn-orange.mright5.mbottom5
+                  i.fa.fa-calculator.mright5
+                  |My Event 7
+                .fc-event-btn.btn.btn-xs.btn-yellow.mright5.mbottom5
+                  i.fa.fa-cc.mright5
+                  |My Event 8
+                .fc-event-btn.btn.btn-xs.btn-green.mright5.mbottom5
+                  i.fa.fa-futbol-o.mright5
+                  |My Event 9
+                .fc-event-btn.btn.btn-xs.btn-black.mright5.mbottom5
+                  i.fa.fa-line-chart.mright5
+                  |My Event 10
+                .fc-event-btn.btn.btn-xs.btn-blue.mright5.mbottom5
+                  i.fa.fa-wifi.mright5
+                  |My Event 11
+                .fc-event-btn.btn.btn-xs.btn-violet.mright5.mbottom5
+                  i.fa.fa-yelp.mright5
+                  |My Event 12
+                .fc-event-btn.btn.btn-xs.btn-pink.mright5.mbottom5
+                  i.fa.fa-tty.mright5
+                  |My Event 13
+                .fc-event-btn.btn.btn-xs.btn-grey.mright5.mbottom5
+                  i.fa.fa-anchor.mright5
+                  |My Event 14
+              hr.hr-grey
+              div.pbottom15
+                label
+                  input#drop-remove.icheck(type="checkbox")
+                  small.mleft5 Remove after drop
+
+        div.col-md-9
+          div#calendar
