@@ -1,0 +1,63 @@
+//- Pages - Gallery
+
+
+include ../common/variables
+include ./mixins
+
+
+- var gallery_pic_data = ['abstract','animals','business','cats','city','food','nightlife','fashion','people','nature','sports','technics','transport'];
+
+div.col-lg-12
+
+  //Gallery
+  div.panel.panel-white
+    div.panel-heading Media Gallery
+    div.panel-body
+
+      div.gallery-wrap
+
+        //Control bar
+        div.row.gallery-bar
+          dl
+            dt Filter:
+            dd
+              +buttons("btn-default btn-sm mright5 filter active","All")(data-filter="all")
+              +buttons("btn-default btn-sm mright5 filter","Video","fa fa-video-camera mright5 hidden-sm hidden-xs")(data-filter=".video")
+              +buttons("btn-default btn-sm filter","Picture","fa fa-picture-o mright5 hidden-sm hidden-xs")(data-filter=".picture")
+          dl
+            dt Sort:
+            dd
+              +buttons("btn-default btn-sm mright5 sort active","Random","fa fa-random mright5 hidden-sm hidden-xs")(data-sort="random")
+              +buttons("btn-default btn-sm sort mright5","Asc","fa fa-arrow-up mright5 hidden-sm hidden-xs")(data-sort="myorder:asc")
+              +buttons("btn-default btn-sm sort","Desc","fa fa-arrow-down mright5 hidden-sm hidden-xs")(data-sort="myorder:desc")
+
+        //Gallery list
+        div.row.gallery-list
+
+          - for(var i=1;i<gallery_pic_data.length;i++)
+            div.col-md-3.gallery-item.mix.picture(data-myorder="#{i}")
+              div.gallery-hover-effect(href="javascript:void(0)")
+                div.gallery-img
+                  img.img-responsive(src="http://lorempixel.com/400/300/#{gallery_pic_data[i]}/")
+                div.gallery-info
+                  h3 Lorem ipsum
+                  a.gallery-zoom(href="http://lorempixel.com/800/600/#{gallery_pic_data[i]}/" data-gallery="#gallery1" title="Lorem ipsum")
+                    i.fa.fa-search-plus
+          div.col-md-3.gallery-item.mix.video
+            div.gallery-hover-effect(href="javascript:void(0)")
+              div.gallery-img
+                img.img-responsive(src="https://i.ytimg.com/vi/rm6A_8tBFvs/hqdefault.jpg")
+              div.gallery-info
+                h3 Lorem ipsum
+                a.gallery-zoom(href="https://www.youtube.com/watch?v=rm6A_8tBFvs" type="text/html" data-youtube="rm6A_8tBFvs" data-poster="https://i.ytimg.com/vi/rm6A_8tBFvs/hqdefault.jpg" data-title="Lorem ipsum" data-gallery="#gallery1")
+                  i.fa.fa-play-circle-o
+
+//Lightbox
+#gallery1.blueimp-gallery.blueimp-gallery-controls(data-start-slideshow='false', data-filter=':even', data-useBootstrapModal='false')
+  .slides
+  h3.title
+  a.prev ‹
+  a.next ›
+  a.close ×
+  a.play-pause
+  ol.indicator

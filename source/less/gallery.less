@@ -1,0 +1,132 @@
+//
+// Gallery
+// --------------------------------------------------
+
+
+/* Gallery */
+.gallery-wrap
+{
+    padding: 0;
+}
+.gallery-bar
+{
+    dl
+    {
+        display: inline-block;
+
+        margin-top: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+
+        vertical-align: middle;
+        dt,
+        dd
+        {
+            display: inline-block;
+
+            vertical-align: middle;
+        }
+        dd
+        {
+            margin-left: 10px;
+        }
+    }
+}
+.gallery-list
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .mix{
+      display: none;
+    }
+    .gallery-item
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        margin-bottom: 15px;
+        .gallery-hover-effect
+        {
+            position: relative;
+
+            overflow: hidden;
+
+            width: 100%;
+            height: 100%;
+
+            border: 0;
+
+            .box-shadow(none);
+            .gallery-img
+            {
+                .transition(all .35s ease-in-out);
+                .scale(1);
+            }
+            .gallery-info
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                visibility: hidden;
+
+                text-align: center;
+
+                opacity: 0;
+                background: rgba(0,0,0,.6);
+
+                .transition(all .35s ease-in-out);
+                .translate(0,100%);
+                .gallery-zoom
+                {
+                    font-size: 60px;
+
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 20px;
+
+                    cursor: pointer;
+
+                    color: #fff;
+                }
+                h3
+                {
+                    font-size: @font-size-h5;
+
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+
+                    width: 100%;
+
+                    color: #fff;
+                }
+            }
+            &:hover,
+            &:focus
+            {
+                .gallery-img
+                {
+                    .scale(1.2);
+                }
+                .gallery-info
+                {
+                    visibility: visible;
+
+                    opacity: 1;
+
+                    .translate(0,0);
+                }
+            }
+        }
+    }
+}
