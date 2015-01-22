@@ -1348,3 +1348,20 @@ label,
 .well {
   border-radius: 0;
 }
+/* Timeline - 2 Column */
+@media (max-width: 768px) {
+  .timeline-2col > li:after {
+    background-color: #f1f1f1;
+  }
+}
+.timeline-2col > li.timeline-label {
+  border-color: #f1f1f1;
+}
+.timeline-2col > li.timeline-item > .timeline-badge {
+  border-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+  .timeline-2col > li.timeline-item > .timeline-tag:after {
+    border-color: #f1f1f1;
+  }
+}

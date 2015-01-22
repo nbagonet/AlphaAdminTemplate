@@ -1,0 +1,22 @@
+//- Pages - Timeline
+
+
+include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+
+  ul#tabs-timeline.nav.nav-tabs.responsive.nav-tabs-orange(role="tablist")
+    li#tab-TwoColumn.active: a(href="#TwoColumn" role="tab" data-toggle="tab") Full-Responsive
+    //- li#tab-OneColumn: a(href="#OneColumn" role="tab" data-toggle="tab") One Column
+
+  div.tab-content.responsive(style="background:transparent; border:none;")
+
+    //Two Column
+    div#TwoColumn.tab-pane.fade.in.active
+      include ./module/pages-timeline-twocol
+
+    //- //One Column
+    //- div#OneColumn.tab-pane.fade.in
+    //-   include ./module/pages-timeline-onecol

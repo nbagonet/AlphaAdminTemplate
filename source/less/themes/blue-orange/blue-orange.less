@@ -1431,3 +1431,38 @@ label,
     border-radius: @well-border-radius;
 }
 
+
+/* Timeline - 2 Column */
+.timeline-2col
+{
+    > li
+    {
+        @media (max-width: @screen-sm-min){
+          &:after{
+            background-color: @main-bg;
+          }
+        }
+        &.timeline-label
+        {
+            border-color: @main-bg;
+        }
+        &.timeline-item
+        {
+            > .timeline-badge
+            {
+                border-color: @main-bg;
+            }
+            > .timeline-tag
+            {
+                @media (max-width: @screen-sm-min)
+                {
+                    &:after
+                    {
+                        border-color: @main-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+

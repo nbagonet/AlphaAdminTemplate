@@ -1,0 +1,51 @@
+// Timeline
+
+.timeline-item-color(@bg;@color){
+  &.timeline-label > strong,
+    &.timeline-item > .timeline-badge,
+    &.timeline-item > .timeline-panel
+    {
+        color: @color;
+        background-color: @bg;
+    }
+    @media (max-width: @screen-sm-min)
+    {
+        &.timeline-item > .timeline-tag > dl
+        {
+            color: @color;
+            background-color: @bg;
+            > dd{
+                > span{
+                    color: @color;
+                    opacity:.7;
+                }
+            }
+        }
+    }
+    > .timeline-tag
+    {
+        > dl
+        {
+            color: @bg;
+        }
+    }
+    &.timeline-item > .timeline-panel
+    {
+        &:after
+        {
+            border-color: transparent @bg transparent transparent;
+        }
+    }
+    &.timeline-left.timeline-item > .timeline-panel
+    {
+        &:after
+        {
+            border-color: transparent transparent transparent @bg;
+        }
+    }
+    small{
+      color:@color;
+      opacity:.7;
+      font-size: 12px;
+    }
+}
