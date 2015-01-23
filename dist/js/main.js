@@ -15,6 +15,12 @@ $(function() {
   });
   //Toggle Search end
 
+  // Moved footer to main container begin
+  if ($(".footer")[0] && $(".main")[0]) {
+    $(".footer").appendTo(".main").show();
+  }
+  // Moved footer to main container end
+
   //Find use simscroll elements begin
   var SCElm = $("*[data-scroll='slimscroll'][data-scroll-size]");
   SCElm.each(function(index, element) {
@@ -58,6 +64,28 @@ $(function() {
   }
   // Initialize responsive-tabs end
 
+  // Sidebar slimscroll begin
+  var SMInit = function() {
+    $(".sidebar-inner").slimScroll({
+      width: "100%",
+      height: "100%",
+      size: '5px',
+      position: 'right',
+      color: '#555',
+      railColor: '#555',
+      railOpacity: 0.4,
+      railVisible: false,
+      wheelStep: 10
+    });
+  };
+  SMInit();
+  var SMDestroy = function() {
+    $(".sidebar-inner").slimScroll({
+      destroy: true
+    }).removeAttr('style');;
+  };
+  // Sidebar slimscroll end
+
   //Small sidebar sub-menu toggle begin
   var SMCurIdx = $(".side-menu > li > a").index($("a.active"));
 
@@ -83,6 +111,8 @@ $(function() {
       }
       $(this).stop().fadeOut("fast");
     });
+
+    SMDestroy();
   }
 
   /**
@@ -97,6 +127,8 @@ $(function() {
     $(".side-menu > li > a[data-trigger='collapse']").next(".collapsible").off("mouseenter mouseleave");
 
     $(".side-menu > li > a[data-trigger='collapse'][class='active']").next(".collapsible").show();
+
+    SMInit();
   }
 
   if ($("body").hasClass("small-sidebar")) {
@@ -155,15 +187,15 @@ $(function() {
   //Initialize iCheck end
 
   //Fix ".page-wrapper" height begin
-  function fixPageWapperHeight() {
-    if ($(".page-wrapper").outerHeight(true) < $(window).height()) {
-      $(".page-wrapper").height($(window).height());
-    }
-  }
-  $(window).on("resize", function(e) {
-    fixPageWapperHeight();
-  });
-  fixPageWapperHeight();
+  // function fixPageWapperHeight() {
+  //   if ($(".page-wrapper").outerHeight(true) < $(window).height()) {
+  //     $(".page-wrapper").height($(window).height());
+  //   }
+  // }
+  // $(window).on("resize", function(e) {
+  //   fixPageWapperHeight();
+  // });
+  // fixPageWapperHeight();
   //Fix ".page-wrapper" height end
 
   //Initialize Progress Bar begin
@@ -351,7 +383,7 @@ $(function() {
   // Table Fixed Header end
 
   // Invoice begin
-  if($(".invoice")[0]){
+  if ($(".invoice")[0]) {
 
     // Hide something...
     $(".sidebar,.head-wrapper,.scroll-to-top,.layouts-title-breadcrumb").addClass("hidden-print");
