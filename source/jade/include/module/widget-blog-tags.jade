@@ -1,0 +1,16 @@
+//- UI Elements - Widgets - Blog Tags
+
+include ../../common/variables
+include ../mixins
+
+- var tags = ['Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetuer', 'adipiscing', 'elit', 'Aenean', 'commodo', 'ligula', 'eget', 'dolor', 'Aenean', 'massa', 'Cum', 'sociis', 'natoque', 'penatibus', 'et', 'magnis', 'dis', 'parturient', 'montes', 'nascetur', 'ridiculus', 'mus'];
+
+//Widget - Blog Tags
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-tags.mright10
+    |Tags
+  div.panel-body
+    div.blog-widget-tags
+      each val in tags
+        a(href="#") #{val}

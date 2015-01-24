@@ -1,0 +1,259 @@
+//
+// Blog
+// --------------------------------------------------
+
+
+/* Blog - Posts */
+.blog-post-head,
+.blog-post-body,
+.blog-widget
+{
+    a,
+    img
+    {
+        .transition(ease-in-out .25s);
+    }
+}
+.blog-post-head
+{
+    margin-bottom: 15px;
+    padding: 15px 15px 0;
+    @media (max-width: @screen-sm-max)
+    {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    h3
+    {
+        font-family: @blog-post-title-font-family;
+        font-size: @blog-post-title-font-size;
+
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.blog-post-meta
+{
+    li
+    {
+        > div
+        {
+            font-size: @blog-post-meta-font-size;
+
+            position: relative;
+
+            display: inline-block;
+
+            margin-bottom: 15px;
+            padding: 8px 10px;
+
+            border: 1px solid transparent;
+            > i
+            {
+                font-size: @font-size-base;
+            }
+            .dropdown-menu
+            {
+                min-width: 0;
+            }
+        }
+    }
+}
+
+.blog-post-body
+{
+    padding: 0 15px 15px;
+    @media (max-width: @screen-sm-max)
+    {
+        padding: 0 5px;
+    }
+    .blog-post-img,
+    .blog-post-link,
+    .blog-post-video,
+    .blog-post-maps
+    {
+        margin-right: -30px;
+        margin-left: -30px;
+        @media (max-width: @screen-sm-max)
+        {
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+    }
+    .blog-post-link
+    {
+        a
+        {
+            display: table;
+
+            width: 100%;
+            margin-bottom: -30px;
+            padding: 30px;
+
+            background-color: #eee;
+            > i, > span
+            {
+                display: table-cell;
+
+                vertical-align: middle;
+            }
+            > i
+            {
+                text-align: center;
+            }
+            > span
+            {
+                padding-left: 15px;
+                > h4
+                {
+                    font-size: @blog-post-linkblk-title-font-size;
+
+                    margin-top: 0;
+                }
+                > small
+                {
+                    font-size: @blog-post-linkblk-link-font-size;
+                }
+            }
+        }
+    }
+    .blog-post-inner
+    {
+        margin-top: 15px;
+        hr
+        {
+            margin-top: 30px;
+        }
+        .blog-post-meta-entrance
+        {
+            padding: 7px;
+
+            border: 1px solid transparent;
+        }
+    }
+    a
+    {
+        &:hover
+        {
+            img
+            {
+                opacity: .9;
+            }
+        }
+    }
+}
+
+
+/* Blog - Widgets */
+.blog-widget
+{
+    .blog-categories-list,
+    .blog-widget-archives
+    {
+        margin: -10px 5px;
+        li
+        {
+            padding: 10px 5px;
+
+            border-bottom: 1px dotted #e6e6e6;
+            &:last-child
+            {
+                border-bottom: none;
+            }
+        }
+    }
+    .carousel
+    {
+        margin: -15px;
+    }
+    .blog-widget-postslist,
+    .blog-widget-commetnslist
+    {
+        .media
+        {
+            padding: 15px 5px;
+
+            border-bottom: 1px dotted #e6e6e6;
+        }
+        li
+        {
+            &:last-child
+            {
+                .media
+                {
+                    padding-bottom: 5px;
+
+                    border-bottom: none;
+                }
+            }
+            &:first-child
+            {
+                .media
+                {
+                    padding-top: 5px;
+                }
+            }
+        }
+        .media-left
+        {
+            &:hover
+            {
+                opacity: .85;
+            }
+        }
+        .media-heading
+        {
+            font-family: @blog-post-title-font-family;
+            font-weight: @font-weight-thin;
+        }
+        .media-body
+        {
+            p
+            {
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .blog-widget-pictureslist
+    {
+        padding: 5px 0 0 5px;
+        li
+        {
+            float: left;
+
+            width: 25%;
+            padding: 0 5px 5px 0;
+            a
+            {
+                &:hover
+                {
+                    img
+                    {
+                        opacity: .85;
+                    }
+                }
+            }
+        }
+    }
+    .blog-widget-tags
+    {
+        overflow: hidden;
+
+        padding: 5px 0 0 5px;
+        > a
+        {
+            float: left;
+
+            margin: 0 5px 5px 0;
+            padding: 5px;
+
+            border: 1px solid transparent;
+        }
+    }
+    .blog-widget-ads
+    {
+        margin: -15px;
+    }
+}

@@ -1,0 +1,28 @@
+//- UI Elements - Widgets - Blog Carousel
+
+include ../../common/variables
+include ../mixins
+
+//Widget - Blog Carousel
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-picture-o.mright10
+    |Gallery
+  div.panel-body
+    div#carousel-example-2.carousel.slide(data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true")
+      ol.carousel-indicators
+        li.active(data-target="#carousel-example-2" data-slide-to="0")
+        li(data-target="#carousel-example-2" data-slide-to="1")
+        li(data-target="#carousel-example-2" data-slide-to="2")
+        li(data-target="#carousel-example-2" data-slide-to="3")
+      div.carousel-inner(role="listbox")
+        div.item.active: img(src="http://lorempixel.com/400/300/city" width="100%" alt="No.1")
+        div.item: img(src="http://lorempixel.com/400/300/food" width="100%" alt="No.2")
+        div.item: img(src="http://lorempixel.com/400/300/nightlife" width="100%" alt="No.3")
+        div.item: img(src="http://lorempixel.com/400/300/fashion" width="100%" alt="No.4")
+      a.left.carousel-control(href="#carousel-example-2" role="button" data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left
+        span.sr-only Previous
+      a.right.carousel-control(href="#carousel-example-2" role="button" data-slide="next")
+        span.glyphicon.glyphicon-chevron-right
+        span.sr-only Next

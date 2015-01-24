@@ -1093,7 +1093,7 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
 }
 /* Carousel */
 .carousel-indicators li {
-  border-radius: 0;
+  border-radius: 50%;
 }
 /* Select2 */
 .select2-container .select2-choice {
@@ -1364,4 +1364,84 @@ label,
   .timeline-2col > li.timeline-item > .timeline-tag:after {
     border-color: #f1f1f1;
   }
+}
+/* ===========
+ * Blog
+ * ========== */
+/* Blog - Posts */
+.blog-post-head h3 {
+  color: #333333;
+}
+.blog-post-head h3 a {
+  color: #333333;
+}
+.blog-post-head h3 a:hover,
+.blog-post-head h3 a:active,
+.blog-post-head h3 a:focus {
+  color: #f2572d;
+}
+.blog-post-meta li > div {
+  color: #777777;
+  border-color: #e4e4e4;
+  border-radius: 0;
+  background-color: #f6f6f6;
+}
+.blog-post-meta li > div > a {
+  color: #f2572d;
+}
+.blog-post-meta li > div > a:hover,
+.blog-post-meta li > div > a:active,
+.blog-post-meta li > div > a:focus {
+  color: #333333;
+}
+.blog-post-body .blog-post-link a {
+  color: #ffffff;
+  background-color: #f26640;
+}
+.blog-post-body .blog-post-link a:hover,
+.blog-post-body .blog-post-link a:active,
+.blog-post-body .blog-post-link a:focus {
+  color: #ffffff;
+  background-color: #f16d49;
+}
+.blog-post-body .blog-post-inner .blog-post-meta-entrance {
+  color: #ffffff;
+  border-color: #f2572d;
+  border-radius: 0;
+  background-color: #f2572d;
+}
+.blog-post-body .blog-post-inner .blog-post-meta-entrance:hover,
+.blog-post-body .blog-post-inner .blog-post-meta-entrance:active,
+.blog-post-body .blog-post-inner .blog-post-meta-entrance:focus {
+  color: #ffffff;
+  border-color: #333333;
+  background-color: #333333;
+}
+/* Blog - Widgets */
+.blog-widget .panel-heading {
+  color: #333333;
+}
+.blog-widget li a,
+.blog-widget .blog-widget-tags a {
+  color: #333333;
+}
+.blog-widget li a:hover,
+.blog-widget .blog-widget-tags a:hover,
+.blog-widget li a:active,
+.blog-widget .blog-widget-tags a:active,
+.blog-widget li a:focus,
+.blog-widget .blog-widget-tags a:focus {
+  color: #f2572d;
+}
+.blog-widget .blog-widget-tags > a {
+  color: #949494;
+  border-color: #d4d4d4;
+  background-color: #fafafa;
+}
+.blog-widget .blog-widget-tags > a:hover,
+.blog-widget .blog-widget-tags > a:active,
+.blog-widget .blog-widget-tags > a:focus {
+  color: #ffffff;
+  border-color: #f26640;
+  background-color: #f26640;
 }

@@ -1,0 +1,22 @@
+//- UI Elements - Widgets - Blog Comments List
+
+include ../../common/variables
+include ../mixins
+
+//Widget - Blog Comments List
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-comments.mright10
+    |Recent Comments
+  div.panel-body
+    ul.blog-widget-commetnslist.list-unstyled
+      - for(var i=0;i<5;i++)
+        li
+          div.media
+            a.media-left(href="#{page_pages_blog_item.url}")
+              img(src="http://lorempixel.com/people/70/70/" alt="Glenn Holland")
+            div.media-body
+              p Glenn Holland
+              p
+                a(href="#{page_pages_blog_item.url}")
+                  small This is a comment.

@@ -21,37 +21,6 @@
 
 @brand-minor           :#f2572d;
 
-// @base-color-1          :#0067a6;
-// @base-color-1-dark     :darken(@base-color-1, 20%);
-// @base-color-1-darker   :darken(@base-color-1, 40%);
-// @base-color-1-light    :lighten(@base-color-1, 20%);
-// @base-color-1-lighter  :lighten(@base-color-1, 40%);
-
-// @base-color-2          :#0092c7;
-// @base-color-2-dark     :darken(@base-color-2, 20%);
-// @base-color-2-darker   :darken(@base-color-2, 40%);
-// @base-color-2-light    :lighten(@base-color-2, 20%);
-// @base-color-2-lighter  :lighten(@base-color-2, 40%);
-
-// @base-color-3          :#008972;
-// @base-color-3-dark     :darken(@base-color-3, 20%);
-// @base-color-3-darker   :darken(@base-color-3, 40%);
-// @base-color-3-light    :lighten(@base-color-3, 20%);
-// @base-color-3-lighter  :lighten(@base-color-3, 40%);
-
-// @base-color-4          :#efc028;
-// @base-color-4-dark     :darken(@base-color-4, 20%);
-// @base-color-4-darker   :darken(@base-color-4, 40%);
-// @base-color-4-light    :lighten(@base-color-4, 20%);
-// @base-color-4-lighter  :lighten(@base-color-4, 40%);
-
-// @base-color-5          :#f2572d;
-// @base-color-5-dark     :darken(@base-color-5, 20%);
-// @base-color-5-darker   :darken(@base-color-5, 40%);
-// @base-color-5-light    :lighten(@base-color-5, 20%);
-// @base-color-5-lighter  :lighten(@base-color-5, 40%);
-
-
 
 
 // --------------------------------------------------
@@ -273,7 +242,7 @@
 // --------------------------------------------------
 
 //** Carousel
-@carousel-border-radius:0;
+@carousel-indicators-border-radius:50%;
 
 // --------------------------------------------------
 
@@ -423,3 +392,44 @@
 
 //** Well
 @well-border-radius:0;
+
+
+// --------------------------------------------------
+
+
+//** Blog Post
+@blog-post-title-color                      :@gray-dark;
+@blog-post-title-hover-color                :@brand-minor;
+
+@blog-post-meta-bg                          :lighten(@gray-lighter,3%);
+@blog-post-meta-border-color                :darken(@blog-post-meta-bg,7%);
+@blog-post-meta-color                       :@gray-light;
+@blog-post-meta-link-color                  :@blog-post-title-hover-color;
+@blog-post-meta-link-hover-color            :@blog-post-title-color;
+@blog-post-meta-border-radius               :0;
+@blog-post-meta-entrance-bg                 :@blog-post-title-hover-color;
+@blog-post-meta-entrance-color              :#fff;
+@blog-post-meta-entrance-hover-bg           :@blog-post-title-color;
+@blog-post-meta-entrance-border-color       :@blog-post-meta-entrance-bg;
+@blog-post-meta-entrance-hover-border-color :@blog-post-meta-entrance-hover-bg;
+
+@blog-post-linkblk-bg                       :mix(@blog-post-title-hover-color, #eee, 90%);
+@blog-post-linkblk-hover-bg                 :mix(@blog-post-linkblk-bg, #eee, 95%);
+@blog-post-linkblk-color                    :#fff;
+
+
+//** Blog Widgets
+//**** Widgets heading
+@blog-widget-heading-color    :@blog-post-title-color;
+//**** Widgets link
+@blog-widget-link-color       :@blog-widget-heading-color;
+@blog-widget-link-hover-color :@blog-post-title-hover-color;
+//**** Widgets border radius
+@blog-widget-border-radius    :0;
+//**** Tag
+@blog-widget-tag-bg           :#fafafa;
+@blog-widget-tag-border       :darken(@blog-widget-tag-bg,15%);
+@blog-widget-tag-color        :darken(@blog-widget-tag-bg,40%);
+@blog-widget-tag-hover-bg     :mix(@blog-post-title-hover-color, #eee, 90%);
+@blog-widget-tag-hover-border :@blog-widget-tag-hover-bg;
+@blog-widget-tag-hover-color  :#fff;

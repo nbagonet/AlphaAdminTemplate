@@ -1,0 +1,18 @@
+//- UI Elements - Widgets - Blog Categories
+
+include ../../common/variables
+include ../mixins
+
+//Widget - Blog Categories
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-folder-open-o.mright10
+    |Categories
+  div.panel-body
+    ul.list-unstyled.blog-categories-list
+      - for(var i=0;i<5;i++)
+        li.clearfix
+          a(href="#")
+            span.pull-left Category Name
+            span.pull-right
+              i.fa.fa-angle-right.mleft5

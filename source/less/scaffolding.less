@@ -2,8 +2,11 @@
 // Scaffolding
 // --------------------------------------------------
 
-html,body
+html,
+body
 {
+    overflow: hidden;
+
     height: 100%;
 }
 body
@@ -17,10 +20,11 @@ body
     html,
     body
     {
+        overflow: auto;
+
         height: auto;
     }
 }
-
 
 a
 {
@@ -132,16 +136,18 @@ input[type="search"]{
     overflow: hidden;
 
     width: 100%;
-    height:100%;
+    height: 100%;
     padding: @top-header-height 0 0;
-    &:before,&:after{
-        display:none;
+    &:before,
+    &:after
+    {
+        display: none;
     }
     @media (max-width: @screen-sm-max)
     {
         overflow: auto;
-        height:auto;
 
+        height: auto;
         padding: (@top-header-height + 40) 0 0;
     }
     @media print
@@ -155,16 +161,16 @@ input[type="search"]{
 .main
 {
     overflow: auto;
+    overflow: hidden;
+    overflow-y: auto;
 
+    height: 100%;
     margin-left: @sidebar-width;
-    height:100%;
-    overflow:hidden;
-    overflow-y:auto;
     @media (max-width: @screen-sm-max)
     {
         overflow: auto;
-        height:auto;
 
+        height: auto;
         margin-left: 0;
     }
     @media print
@@ -190,6 +196,7 @@ input[type="search"]{
 {
     position: relative;
 
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
 }

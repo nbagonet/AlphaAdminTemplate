@@ -1,0 +1,16 @@
+//- UI Elements - Widgets - Blog Pictures List
+
+include ../../common/variables
+include ../mixins
+
+//Widget - Blog Pictures List
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-flickr.mright10
+    |Flickr
+  div.panel-body
+    ul.blog-widget-pictureslist.list-unstyled
+      - for(var i=0;i<16;i++)
+        li
+          a(href="#")
+            img(src="http://lorempixel.com/100/100/" class="img-responsive")

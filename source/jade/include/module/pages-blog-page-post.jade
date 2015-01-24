@@ -1,0 +1,632 @@
+//- Pages - Blog Page - Posts
+
+
+include ../../common/variables
+include ../mixins
+
+
+//- Posts - Carousel
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Carousel Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-img
+        div#carousel-example-generic.carousel.slide(data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true")
+          ol.carousel-indicators
+            li.active(data-target="#carousel-example-generic" data-slide-to="0")
+            li(data-target="#carousel-example-generic" data-slide-to="1")
+            li(data-target="#carousel-example-generic" data-slide-to="2")
+            li(data-target="#carousel-example-generic" data-slide-to="3")
+          div.carousel-inner(role="listbox")
+            div.item.active: img(src="http://lorempixel.com/800/400/abstract" width="100%" alt="No.1")
+            div.item: img(src="http://lorempixel.com/800/400/animals" width="100%" alt="No.2")
+            div.item: img(src="http://lorempixel.com/800/400/business" width="100%" alt="No.3")
+            div.item: img(src="http://lorempixel.com/800/400/cats" width="100%" alt="No.4")
+          a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev")
+            span.glyphicon.glyphicon-chevron-left
+            span.sr-only Previous
+          a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next")
+            span.glyphicon.glyphicon-chevron-right
+            span.sr-only Next
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Link
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Link Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-calendar.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-link
+        a(href="#" target="_blank")
+          i.fa.fa-link.fa-3x
+          span
+            h4 Tour of a Performant and Responsive CSS Only Site
+            small http://css-tricks.com/tour-performant-responsive-css-site/
+
+
+//- Posts - Picture
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Single Picture Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-img
+        a(href="#{page_pages_blog_item.url}")
+          img(src="http://lorempixel.com/800/400/" width="100%" alt="This is a Picture...")
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Video
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Video Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-video
+        div.embed-responsive.embed-responsive-16by9
+          iframe.embed-responsive-item(src="//www.youtube.com/embed/fvbmdsn_4Uk")
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Twitter
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Twitter Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-twitter.text-center
+        <blockquote class="twitter-tweet" lang="en"><p>Never stop. Never surrender. Kobe&#39;s warrior spirit always lives to fight another day. <a href="https://twitter.com/hashtag/KOBEX?src=hash">#KOBEX</a> revealed 1.31. <a href="http://t.co/dUVc5rTQ8L">pic.twitter.com/dUVc5rTQ8L</a></p>&mdash; Nike Basketball (@nikebasketball) <a href="https://twitter.com/nikebasketball/status/558325836751712257">January 22, 2015</a></blockquote>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Facebook Post
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Facebook Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-facebook.text-center
+        <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-post" data-href="https://www.facebook.com/video.php?v=10153116889254124" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/video.php?v=10153116889254124">Post</a> by <a href="https://www.facebook.com/MiamiHeat">Miami Heat</a>.</div></div>
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Soundcloud Post
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Soundcloud Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-soundcloud.text-center
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/170339902&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Maps
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Map Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-maps.text-center
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3614.8253626980163!2d121.511944!3d25.04!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90a870e5af1%3A0x180e1a442209d1c1!2zMTAw5Y-w5rm-5Y-w5YyX5biC5Lit5q2j5Yy65Lit5Y2O5rCR5Zu95oC757uf5bqc!5e0!3m2!1szh-CN!2s!4v1422035016661" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Instagram
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Instagram Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-instagram.text-center
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/yNJpapLO5r/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">The Lakers are back in their #HollywoodNights unis tonight. Get in on the action by participating in the fan photo sweepstakes presented by adidas.  Tonight, upload a pic of yourself showcasing your Hollywood Nights spirit and include #HollywoodNights and be entered for your chance to win an autographed Hollywood Nights jersey and adidas gift card.  Visit Lakers.com for official rules.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Los Angeles Lakers（@lakers）发的照片 · <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-01-23T17:51:09+00:00">1月 23, 2015 at 9:51上午 PST</time></p></div></blockquote>
+        <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Google Plus
+//- article.panel.panel-white
+//-   div.panel-body
+//-     div.blog-post-head
+//-       h3
+//-         a(href="#{page_pages_blog_item.url}") This is a Google+ Post
+//-       div.blog-post-meta
+//-         ul.list-inline
+//-           li: div
+//-             i.fa.fa-user.mright5
+//-             a(href="#") Glenn Holland
+//-           li: div
+//-             i.fa.fa-clock-o.mright5
+//-             |November 14, 2014
+//-           li: div
+//-             i.fa.fa-comments.mright5
+//-             a(href="#") 123 Comments
+//-           li: div
+//-             i.fa.fa-folder-open.mright5
+//-             a(href="#") Wordpress
+//-           li: div
+//-             i.fa.fa-heart.mright5
+//-             a(href="#") 123
+//-     div.blog-post-body
+//-       div.blog-post-googleplus.text-center
+//-         <!-- Place this tag in your head or just before your close body tag. -->
+//-         <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+//-         <!-- Place this tag where you want the widget to render. -->
+//-         <div class="g-post" data-href="https://plus.google.com/106189723444098348646/posts/9ZCR5Mf2mta"></div>
+//-       div.blog-post-inner
+//-         p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+//-         hr.hr-grey
+//-         div.blog-post-meta.clearfix
+//-           ul.list-inline.pull-left
+//-             li.hidden-xs: div
+//-               i.fa.fa-eye.mright5
+//-               span.text-red 1,234
+//-               span.mleft5 VIEWS
+//-             li: div.dropup
+//-               i.fa.fa-share-alt.mright5
+//-               a(href="javascript:void(0)" data-toggle="dropdown") Share
+//-               ul.dropdown-menu(role="menu")
+//-                 li.text-center
+//-                   a.link-primary(href="#" title="Facebook")
+//-                     i.fa.fa-facebook.fa-2x
+//-                 li.text-center
+//-                   a.link-info(href="#" title="Twitter")
+//-                     i.fa.fa-twitter.fa-2x
+//-                 li.text-center
+//-                   a.link-danger(href="#" title="Weibo")
+//-                     i.fa.fa-weibo.fa-2x
+//-                 li.text-center
+//-                   a.link-success(href="#" title="WeiXin")
+//-                     i.fa.fa-weixin.fa-2x
+//-           a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+//-             |Read Article
+//-             i.fa.fa-angle-double-right.mleft5
+
+
+//- Posts - Stardand
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3
+        a(href="#{page_pages_blog_item.url}") This is a Stardand Post
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim...
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+          a.pull-right.blog-post-meta-entrance(href="#{page_pages_blog_item.url}")
+            |Read Article
+            i.fa.fa-angle-double-right.mleft5
+
+
+//- Paginations
+div.blog-paginations
+  ul.pager
+    li.previous
+      a(href="#")
+        i.fa.fa-angle-double-left
+        |&nbsp;&nbsp;Older
+    li.next
+      a(href="#")
+        |Newer&nbsp;&nbsp;
+        i.fa.fa-angle-double-right

@@ -10,8 +10,8 @@
 
     position: fixed;
     z-index: (@zindex-topheader * 10);
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
 
     display: none;
     a
@@ -25,13 +25,14 @@
 
         opacity: .3;
         color: #fff!important;
+        border: 1px solid #fff;
         border-radius: 50%;
-        border:1px solid #fff;
         background: #000;
         &:hover,
         &:active,
-        &.focus{
-          opacity: .5;
+        &.focus
+        {
+            opacity: .5;
         }
         i
         {

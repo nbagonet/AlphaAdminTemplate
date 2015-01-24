@@ -1,0 +1,14 @@
+//- UI Elements - Widgets - Search
+
+include ../../common/variables
+include ../mixins
+
+//Widget - Search
+div.widget.panel.panel-white
+  div.panel-heading
+    i.fa.fa-search.mright10
+    |Search
+  div.panel-body
+    form(role="search")
+      input.form-control(type="search" placeholder="Enter keyword")
+      +buttons("btn-orange btn-block mtop10","Search")

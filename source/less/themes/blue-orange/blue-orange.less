@@ -998,7 +998,7 @@ a.thumbnail
 {
     li
     {
-        border-radius: @carousel-border-radius;
+        border-radius: @carousel-indicators-border-radius;
     }
 }
 
@@ -1466,3 +1466,125 @@ label,
     }
 }
 
+
+
+/* ===========
+ * Blog
+ * ========== */
+/* Blog - Posts */
+.blog-post-head
+{
+    h3
+    {
+        color: @blog-post-title-color;
+        a
+        {
+            color: @blog-post-title-color;
+            &:hover,
+            &:active,
+            &:focus
+            {
+                color: @blog-post-title-hover-color;
+            }
+        }
+    }
+}
+.blog-post-meta
+{
+    li
+    {
+        > div
+        {
+            color: @blog-post-meta-color;
+            border-color: @blog-post-meta-border-color;
+            border-radius: @blog-post-meta-border-radius;
+            background-color: @blog-post-meta-bg;
+            > a
+            {
+                color: @blog-post-meta-link-color;
+                &:hover,
+                &:active,
+                &:focus
+                {
+                    color: @blog-post-meta-link-hover-color;
+                }
+            }
+        }
+    }
+}
+.blog-post-body
+{
+    .blog-post-link
+    {
+        a
+        {
+            color: @blog-post-linkblk-color;
+            background-color: @blog-post-linkblk-bg;
+            &:hover,
+            &:active,
+            &:focus
+            {
+                color: @blog-post-linkblk-color;
+                background-color: @blog-post-linkblk-hover-bg;
+            }
+        }
+    }
+    .blog-post-inner
+    {
+        .blog-post-meta-entrance
+        {
+            color: @blog-post-meta-entrance-color;
+            border-color: @blog-post-meta-entrance-border-color;
+            border-radius: @blog-post-meta-border-radius;
+            background-color: @blog-post-meta-entrance-bg;
+            &:hover,
+            &:active,
+            &:focus
+            {
+                color: @blog-post-meta-entrance-color;
+                border-color: @blog-post-meta-entrance-hover-border-color;
+                background-color: @blog-post-meta-entrance-hover-bg;
+            }
+        }
+    }
+}
+
+/* Blog - Widgets */
+.blog-widget
+{
+    .panel-heading
+    {
+        color: @blog-widget-heading-color;
+    }
+    li,
+    .blog-widget-tags
+    {
+        a
+        {
+            color: @blog-widget-link-color;
+            &:hover,
+            &:active,
+            &:focus
+            {
+                color: @blog-widget-link-hover-color;
+            }
+        }
+    }
+    .blog-widget-tags
+    {
+        > a
+        {
+            color: @blog-widget-tag-color;
+            border-color: @blog-widget-tag-border;
+            background-color: @blog-widget-tag-bg;
+            &:hover,
+            &:active,
+            &:focus
+            {
+                color: @blog-widget-tag-hover-color;
+                border-color: @blog-widget-tag-hover-border;
+                background-color: @blog-widget-tag-hover-bg;
+            }
+        }
+    }
+}

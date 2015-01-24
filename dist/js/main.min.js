@@ -160,12 +160,12 @@ $(function() {
   //Topheader Multi level menu end
 
   //Initialize Scroll to top begin
-  $(window).scroll(function(e) {
+  $("window,.main").scroll(function(e) {
     var _winH = $(this).height(),
       _scrollTOP = $(this).scrollTop();
 
     $("#scroll-to-top").on("click", function(e) {
-      $("body,html").stop().animate({
+      $("body,html,.main").stop().animate({
         scrollTop: 0
       }, 500);
     });
