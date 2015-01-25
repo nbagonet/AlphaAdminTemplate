@@ -1,0 +1,89 @@
+@import url('main-blessed1.css?z=1422197342772');
+
+.blog-comments .media .media-body .media-heading > span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.blog-comments .media .media-body p {
+  margin-bottom: 15px;
+}
+.blog-comments > .media:first-child {
+  border-top: none;
+}
+.blog-comments > .media .media {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* Blog - Widgets */
+.blog-widget .blog-categories-list,
+.blog-widget .blog-widget-archives {
+  margin: -10px 5px;
+}
+.blog-widget .blog-categories-list li,
+.blog-widget .blog-widget-archives li {
+  padding: 10px 5px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+.blog-widget .blog-categories-list li:last-child,
+.blog-widget .blog-widget-archives li:last-child {
+  border-bottom: none;
+}
+.blog-widget .carousel {
+  margin: -15px;
+}
+.blog-widget .blog-widget-postslist .media,
+.blog-widget .blog-widget-commetnslist .media {
+  padding: 15px 5px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+.blog-widget .blog-widget-postslist li:last-child .media,
+.blog-widget .blog-widget-commetnslist li:last-child .media {
+  padding-bottom: 5px;
+  border-bottom: none;
+}
+.blog-widget .blog-widget-postslist li:first-child .media,
+.blog-widget .blog-widget-commetnslist li:first-child .media {
+  padding-top: 5px;
+}
+.blog-widget .blog-widget-postslist .media-left:hover,
+.blog-widget .blog-widget-commetnslist .media-left:hover {
+  opacity: .85;
+}
+.blog-widget .blog-widget-postslist .media-heading,
+.blog-widget .blog-widget-commetnslist .media-heading {
+  font-family: 'Roboto Slab', 'Droid Arabic Kufi', Arial, sans-serif;
+  font-weight: 300;
+}
+.blog-widget .blog-widget-postslist .media-body p,
+.blog-widget .blog-widget-commetnslist .media-body p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.blog-widget .blog-widget-commetnslist .media-left img {
+  width: 70px;
+  height: 70px;
+}
+.blog-widget .blog-widget-pictureslist {
+  padding: 5px 0 0 5px;
+}
+.blog-widget .blog-widget-pictureslist li {
+  float: left;
+  width: 25%;
+  padding: 0 5px 5px 0;
+}
+.blog-widget .blog-widget-pictureslist li a:hover img {
+  opacity: .85;
+}
+.blog-widget .blog-widget-tags {
+  overflow: hidden;
+  padding: 5px 0 0 5px;
+}
+.blog-widget .blog-widget-tags > a {
+  float: left;
+  margin: 0 5px 5px 0;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+.blog-widget .blog-widget-ads {
+  margin: -15px;
+}

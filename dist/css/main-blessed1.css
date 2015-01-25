@@ -11003,8 +11003,17 @@ li.timeline-grey small {
 .blog-post-body a:hover img {
   opacity: .9;
 }
-/* Blog - Widgets */
-.blog-widget .blog-categories-list,
-.blog-widget .blog-widget-archives {
-  margin: -10px 5px;
+/* Blog - Comments */
+.blog-comments .media {
+  margin-top: 0!important;
+  padding: 15px 15px 0;
+  border-top: 1px dotted #e6e6e6;
+}
+.blog-comments .media .media-left img {
+  width: 60px;
+  height: 60px;
+}
+.blog-comments .media .media-body .media-heading {
+  font-size: 14px;
+  margin-bottom: 10px;
 }

@@ -31,15 +31,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/dist\/charts-chartjs.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/charts-chartjs.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/charts-easy_pie_chart.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -72569,8 +72560,8 @@
 	"\/source\/jade\/include\/charts-chartjs.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/charts-chartjs.jade",
 		"outputAbbreviatedPath": "\/dist\/charts-chartjs.html",
 		"outputPathIsOutsideProject": 0,
@@ -73633,6 +73624,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/source\/jade\/include\/module\/pages-blog-page-article.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/pages-blog-page-article.jade",
+		"outputAbbreviatedPath": "\/dist\/pages-blog-page-article.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/include\/module\/pages-blog-page-post.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -74346,6 +74348,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/source\/jade\/include\/pages-blog-item.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/pages-blog-item.jade",
+		"outputAbbreviatedPath": "\/dist\/pages-blog-item.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/include\/pages-blog-page.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -74749,6 +74762,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/maps-jvector_map.jade",
 		"outputAbbreviatedPath": "\/dist\/maps-jvector_map.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/pages-blog_item.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/pages-blog_item.jade",
+		"outputAbbreviatedPath": "\/dist\/pages-blog_item.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1

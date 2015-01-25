@@ -1445,3 +1445,7 @@ label,
   border-color: #f26640;
   background-color: #f26640;
 }
+/* Blog - Comments */
+.blog-comments .media .media-body .media-heading > span {
+  color: #989898;
+}

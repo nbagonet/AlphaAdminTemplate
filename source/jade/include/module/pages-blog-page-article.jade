@@ -1,0 +1,173 @@
+//- Pages - Blog Page - Article
+
+
+include ../../common/variables
+include ../mixins
+
+
+article.panel.panel-white
+  div.panel-body
+    div.blog-post-head
+      h3 This is a Article
+      div.blog-post-meta
+        ul.list-inline
+          li: div
+            i.fa.fa-user.mright5
+            a(href="#") Glenn Holland
+          li: div
+            i.fa.fa-clock-o.mright5
+            |November 14, 2014
+          li: div
+            i.fa.fa-comments.mright5
+            a(href="#") 123 Comments
+          li: div
+            i.fa.fa-folder-open.mright5
+            a(href="#") Wordpress
+          li: div
+            i.fa.fa-heart.mright5
+            a(href="#") 123
+    div.blog-post-body
+      div.blog-post-img
+        div#carousel-example-generic.carousel.slide(data-ride="carousel" data-interval="5000" data-pause="hover" data-wrap="true")
+          ol.carousel-indicators
+            li.active(data-target="#carousel-example-generic" data-slide-to="0")
+            li(data-target="#carousel-example-generic" data-slide-to="1")
+            li(data-target="#carousel-example-generic" data-slide-to="2")
+            li(data-target="#carousel-example-generic" data-slide-to="3")
+          div.carousel-inner(role="listbox")
+            div.item.active: img(src="http://lorempixel.com/800/400/abstract" width="100%" alt="No.1")
+            div.item: img(src="http://lorempixel.com/800/400/animals" width="100%" alt="No.2")
+            div.item: img(src="http://lorempixel.com/800/400/business" width="100%" alt="No.3")
+            div.item: img(src="http://lorempixel.com/800/400/cats" width="100%" alt="No.4")
+          a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev")
+            span.glyphicon.glyphicon-chevron-left
+            span.sr-only Previous
+          a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next")
+            span.glyphicon.glyphicon-chevron-right
+            span.sr-only Next
+      div.blog-post-inner
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        hr.hr-grey
+        div.blog-post-meta.clearfix
+          ul.list-inline.pull-left
+            li.hidden-xs: div
+              i.fa.fa-eye.mright5
+              span.text-red 1,234
+              span.mleft5 VIEWS
+            li: div.dropup
+              i.fa.fa-share-alt.mright5
+              a(href="javascript:void(0)" data-toggle="dropdown") Share
+              ul.dropdown-menu(role="menu")
+                li.text-center
+                  a.link-primary(href="#" title="Facebook")
+                    i.fa.fa-facebook.fa-2x
+                li.text-center
+                  a.link-info(href="#" title="Twitter")
+                    i.fa.fa-twitter.fa-2x
+                li.text-center
+                  a.link-danger(href="#" title="Weibo")
+                    i.fa.fa-weibo.fa-2x
+                li.text-center
+                  a.link-success(href="#" title="WeiXin")
+                    i.fa.fa-weixin.fa-2x
+            li.hidden-xs: div
+              i.fa.fa-tags.mright5
+              a(href="#") Lorem
+              |,&nbsp;
+              a(href="#") ipsum
+              |,&nbsp;
+              a(href="#") dolor
+              |,&nbsp;
+              a(href="#") sit
+
+//Comments
+div.panel.panel-white
+  div.panel-heading
+    i.fa.fa-comments.mright10
+    |Comments (123)
+  div.panel-body
+    ul.blog-comments.media-list
+      li.media
+        div.media-left
+          img.media-object(src="#{userhead[10]}")
+        div.media-body
+          h4.media-heading
+            |Glenn Holland
+            span.pull-right
+              |November 24, 2014 7:26pm&nbsp;/&nbsp;
+              a(href="#") Reply
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          div.media
+            div.media-left
+              img.media-object(src="#{userhead[11]}")
+            div.media-body
+              h4.media-heading
+                |Glenn Holland
+                span.pull-right
+                  |November 24, 2014 7:26pm&nbsp;/&nbsp;
+                  a(href="#") Reply
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+              div.media
+                div.media-left
+                  img.media-object(src="#{userhead[12]}")
+                div.media-body
+                  h4.media-heading
+                    |Glenn Holland
+                    span.pull-right
+                      |November 24, 2014 7:26pm&nbsp;/&nbsp;
+                      a(href="#") Reply
+                  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      li.media
+        div.media-left
+          img.media-object(src="#{userhead[13]}")
+        div.media-body
+          h4.media-heading
+            |Glenn Holland
+            span.pull-right
+              |November 24, 2014 7:26pm&nbsp;/&nbsp;
+              a(href="#") Reply
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+
+//Comments Form
+div.panel.panel-white
+  div.panel-heading
+    i.fa.fa-comment.mright10
+    |Leave a reply
+  div.panel-body
+    div.blog-comments-post
+      form(role="form")
+        div.form-group
+          input#comment-name.form-control(type="text" name="name" placeholder="Your Name")
+        div.form-group
+          input#comment-email.form-control(type="email" name="email" placeholder="Email")
+        div.form-group
+          input#comment-url.form-control(type="url" name="url" placeholder="Url")
+        div.form-group
+          textarea#comment-comment.form-control(rows="5" name="comment" placeholder="Comment")
+        div.form-group
+          +buttons("btn-default","Post Comment")
+
