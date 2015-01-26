@@ -1449,3 +1449,141 @@ label,
 .blog-comments .media .media-body .media-heading > span {
   color: #989898;
 }
+/* Background Layer */
+.cover-overlay {
+  background-color: #111111;
+}
+/* Signin */
+.signin-box,
+.signup-box,
+.forgot-password-box,
+.lock-screen-box {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.signin-box .signin-title,
+.signup-box .signin-title,
+.forgot-password-box .signin-title,
+.lock-screen-box .signin-title,
+.signin-box .signup-title,
+.signup-box .signup-title,
+.forgot-password-box .signup-title,
+.lock-screen-box .signup-title,
+.signin-box .forgot-password-title,
+.signup-box .forgot-password-title,
+.forgot-password-box .forgot-password-title,
+.lock-screen-box .forgot-password-title,
+.signin-box .lock-screen-title,
+.signup-box .lock-screen-title,
+.forgot-password-box .lock-screen-title,
+.lock-screen-box .lock-screen-title {
+  color: #0092c7;
+}
+.signin-box .signin-sub-title,
+.signup-box .signin-sub-title,
+.forgot-password-box .signin-sub-title,
+.lock-screen-box .signin-sub-title,
+.signin-box .signup-sub-title,
+.signup-box .signup-sub-title,
+.forgot-password-box .signup-sub-title,
+.lock-screen-box .signup-sub-title,
+.signin-box .forgot-password-sub-title,
+.signup-box .forgot-password-sub-title,
+.forgot-password-box .forgot-password-sub-title,
+.lock-screen-box .forgot-password-sub-title,
+.signin-box .lock-screen-sub-title,
+.signup-box .lock-screen-sub-title,
+.forgot-password-box .lock-screen-sub-title,
+.lock-screen-box .lock-screen-sub-title {
+  color: #777777;
+}
+.signin-box .signin-sub-title a,
+.signup-box .signin-sub-title a,
+.forgot-password-box .signin-sub-title a,
+.lock-screen-box .signin-sub-title a,
+.signin-box .signup-sub-title a,
+.signup-box .signup-sub-title a,
+.forgot-password-box .signup-sub-title a,
+.lock-screen-box .signup-sub-title a,
+.signin-box .forgot-password-sub-title a,
+.signup-box .forgot-password-sub-title a,
+.forgot-password-box .forgot-password-sub-title a,
+.lock-screen-box .forgot-password-sub-title a,
+.signin-box .lock-screen-sub-title a,
+.signup-box .lock-screen-sub-title a,
+.forgot-password-box .lock-screen-sub-title a,
+.lock-screen-box .lock-screen-sub-title a {
+  color: #d9534f;
+}
+.signin-box .signin-sub-title a:hover,
+.signup-box .signin-sub-title a:hover,
+.forgot-password-box .signin-sub-title a:hover,
+.lock-screen-box .signin-sub-title a:hover,
+.signin-box .signup-sub-title a:hover,
+.signup-box .signup-sub-title a:hover,
+.forgot-password-box .signup-sub-title a:hover,
+.lock-screen-box .signup-sub-title a:hover,
+.signin-box .forgot-password-sub-title a:hover,
+.signup-box .forgot-password-sub-title a:hover,
+.forgot-password-box .forgot-password-sub-title a:hover,
+.lock-screen-box .forgot-password-sub-title a:hover,
+.signin-box .lock-screen-sub-title a:hover,
+.signup-box .lock-screen-sub-title a:hover,
+.forgot-password-box .lock-screen-sub-title a:hover,
+.lock-screen-box .lock-screen-sub-title a:hover {
+  color: #f2572d;
+}
+.signin-box .signin-options,
+.signup-box .signin-options,
+.forgot-password-box .signin-options,
+.lock-screen-box .signin-options,
+.signin-box .signup-options,
+.signup-box .signup-options,
+.forgot-password-box .signup-options,
+.lock-screen-box .signup-options {
+  color: #777777;
+}
+.signin-box .signin-options a,
+.signup-box .signin-options a,
+.forgot-password-box .signin-options a,
+.lock-screen-box .signin-options a,
+.signin-box .signup-options a,
+.signup-box .signup-options a,
+.forgot-password-box .signup-options a,
+.lock-screen-box .signup-options a {
+  color: #777777;
+}
+.signin-box .signin-options a:hover,
+.signup-box .signin-options a:hover,
+.forgot-password-box .signin-options a:hover,
+.lock-screen-box .signin-options a:hover,
+.signin-box .signup-options a:hover,
+.signup-box .signup-options a:hover,
+.forgot-password-box .signup-options a:hover,
+.lock-screen-box .signup-options a:hover {
+  color: #f2572d;
+}
+.lock-screen-box .lock-screen-logo img {
+  border-color: rgba(255, 255, 255, 0.95);
+}
+.signin-social {
+  color: #ffffff;
+}
+.signin-social ul a {
+  color: #ffffff;
+}
+/* Error */
+.error-page {
+  background-color: #f1f1f1;
+}
+.error-page .error-page-content {
+  color: #777777;
+}
+.error-page .error-page-content > h1 {
+  color: #0092c7;
+}
+.error-page .error-page-content > h4 {
+  color: #0092c7;
+}
+.error-page .footer {
+  color: #aaaaaa;
+}

@@ -1,0 +1,53 @@
+//- Pages - Signin(Login)
+
+include ../common/variables
+include ./mixins
+
+
+//Signin page
+
+div.cover(style="background-image:url(#{base_img}sign-bg.jpg)")
+div.cover-overlay
+
+div.center-box
+  div.center-box-inner
+    div.col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
+
+      //Signin Box
+      div.panel.panel-white.no-b.signin-box
+        div.panel-body
+
+          header.text-center
+            div.signin-logo
+              img(src="#{base_img}logo-alpha.png" alt="AlphaAdmin")
+            div.signin-title Login to AlphaAdmin
+            div.signin-sub-title
+              span.mright10 Don't have an account?
+              a#goto-signup(href="#{page_pages_signup.url}") Signup Now
+
+          div.signin-form
+            form(action="#{page_dashboard.url}" role="form")
+              input.form-control.input-lg(type="text" placeholder="Username"  autocomplete="off")
+              input.form-control.input-lg(type="password" placeholder="Password" autocomplete="off")
+              div.signin-options.show
+                div.pull-right
+                  a(href="#{page_pages_forgot_password.url}") Forgot password?
+                label.checkbox
+                  input.icheck(type="checkbox" checked)
+                  span.mleft5 Keep me signed in
+              div.signin-btn
+                +buttons("btn-success btn-lg btn-block","SIGN IN")(type="submit")
+
+      //Social Login
+      div.signin-social
+        h5.signin-social-title Login with a social network
+        ul.list-inline
+          li
+            a(href="#")
+              i.entypo-facebook-circled
+          li
+            a(href="#")
+              i.entypo-gplus-circled
+          li
+            a(href="#")
+              i.entypo-twitter-circled

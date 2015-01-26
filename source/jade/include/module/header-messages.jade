@@ -15,7 +15,7 @@ if topbar_message
     +dropdown-menu('', 'dropdown-messages', 'You have 5 new messages', '300|256', 'Read all messages', page_email_inbox.url)
       ul(class="list-unstyled link-black")
 
-        li: a(href="email-view_mail.html")
+        li: a(href="#{page_email_view_mail.url}")
           dl(class="media")
             dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{userhead[0]}" alt="Gem Tang")
             dd(class="media-body")
@@ -24,7 +24,7 @@ if topbar_message
                 span(class="badge badge-blue") New
               p: small(title="Thanks to my two babes, Laurinda & Renee:)") Thanks to my two babes, Laurinda &amp; Renee:)
 
-        li: a(href="email-view_mail.html")
+        li: a(href="#{page_email_view_mail.url}")
           dl(class="media")
             dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{userhead[1]}" alt="Julien Gong Min")
             dd(class="media-body")
@@ -33,7 +33,7 @@ if topbar_message
                 span(class="badge badge-orange") Trash
               p: small(title="I typed two articles with Hanx Writer app. Gee. It really helps me to write more") I typed two articles with Hanx Writer app. Gee. It really helps me to write more
 
-        li: a(href="email-view_mail.html")
+        li: a(href="#{page_email_view_mail.url}")
           dl(class="media")
             dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{userhead[2]}" alt="Mophy Mo")
             dd(class="media-body")
@@ -42,7 +42,7 @@ if topbar_message
                 span(class="badge badge-red") Social
               p: small(title="Flat Interaction Design") Flat Interaction Design
 
-        li: a(href="email-view_mail.html")
+        li: a(href="#{page_email_view_mail.url}")
           dl(class="media")
             dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{userhead[3]}" alt="Michael Wynn Ma")
             dd(class="media-body")
@@ -51,7 +51,7 @@ if topbar_message
                 span(class="badge badge-blue") Promotions
               p: small(title="there is no noise about Smartisan ? let me show it. thats pretty good") there is no noise about Smartisan ? let me show it. thats pretty good
 
-        li: a(href="email-view_mail.html")
+        li: a(href="#{page_email_view_mail.url}")
           dl(class="media")
             dt(class="pull-left"): img(class="media-object img-circle img-responsive" src="#{userhead[4]}" alt="Mag Fay")
             dd(class="media-body")

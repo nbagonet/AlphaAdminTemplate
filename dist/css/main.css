@@ -1,5 +1,26 @@
-@import url('main-blessed1.css?z=1422197342772');
+@import url('main-blessed1.css?z=1422293563453');
 
+.blog-post-body .blog-post-inner .blog-post-meta-entrance {
+  padding: 7px;
+  border: 1px solid transparent;
+}
+.blog-post-body a:hover img {
+  opacity: .9;
+}
+/* Blog - Comments */
+.blog-comments .media {
+  margin-top: 0!important;
+  padding: 15px 15px 0;
+  border-top: 1px dotted #e6e6e6;
+}
+.blog-comments .media .media-left img {
+  width: 60px;
+  height: 60px;
+}
+.blog-comments .media .media-body .media-heading {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 .blog-comments .media .media-body .media-heading > span {
   font-size: 12px;
   font-weight: 300;
@@ -86,4 +107,423 @@
 }
 .blog-widget .blog-widget-ads {
   margin: -15px;
+}
+/* Signin & Signup & Forgot password & Lock screen */
+body.signin,
+body.signup,
+body.forgot-password,
+body.lock-screen {
+  overflow-y: auto;
+  background-color: #000;
+}
+body.signin .footer,
+body.signup .footer,
+body.forgot-password .footer,
+body.lock-screen .footer {
+  margin-top: 0;
+  text-align: center;
+}
+.signin-box,
+.signup-box,
+.forgot-password-box,
+.lock-screen-box {
+  opacity: 0;
+  margin-top: 20px;
+}
+.signin-box .signin-logo,
+.signup-box .signin-logo,
+.forgot-password-box .signin-logo,
+.lock-screen-box .signin-logo,
+.signin-box .signup-logo,
+.signup-box .signup-logo,
+.forgot-password-box .signup-logo,
+.lock-screen-box .signup-logo,
+.signin-box .forgot-password-logo,
+.signup-box .forgot-password-logo,
+.forgot-password-box .forgot-password-logo,
+.lock-screen-box .forgot-password-logo,
+.signin-box .lock-screen-logo,
+.signup-box .lock-screen-logo,
+.forgot-password-box .lock-screen-logo,
+.lock-screen-box .lock-screen-logo {
+  padding: 15px 0 20px;
+}
+.signin-box .signin-logo img,
+.signup-box .signin-logo img,
+.forgot-password-box .signin-logo img,
+.lock-screen-box .signin-logo img,
+.signin-box .signup-logo img,
+.signup-box .signup-logo img,
+.forgot-password-box .signup-logo img,
+.lock-screen-box .signup-logo img,
+.signin-box .forgot-password-logo img,
+.signup-box .forgot-password-logo img,
+.forgot-password-box .forgot-password-logo img,
+.lock-screen-box .forgot-password-logo img,
+.signin-box .lock-screen-logo img,
+.signup-box .lock-screen-logo img,
+.forgot-password-box .lock-screen-logo img,
+.lock-screen-box .lock-screen-logo img {
+  max-height: 100px;
+}
+.signin-box .signin-title,
+.signup-box .signin-title,
+.forgot-password-box .signin-title,
+.lock-screen-box .signin-title,
+.signin-box .signup-title,
+.signup-box .signup-title,
+.forgot-password-box .signup-title,
+.lock-screen-box .signup-title,
+.signin-box .forgot-password-title,
+.signup-box .forgot-password-title,
+.forgot-password-box .forgot-password-title,
+.lock-screen-box .forgot-password-title,
+.signin-box .lock-screen-title,
+.signup-box .lock-screen-title,
+.forgot-password-box .lock-screen-title,
+.lock-screen-box .lock-screen-title {
+  font-family: 'Roboto Slab', 'Droid Arabic Kufi', Arial, sans-serif;
+  font-size: 24px;
+}
+.signin-box .signin-sub-title,
+.signup-box .signin-sub-title,
+.forgot-password-box .signin-sub-title,
+.lock-screen-box .signin-sub-title,
+.signin-box .signup-sub-title,
+.signup-box .signup-sub-title,
+.forgot-password-box .signup-sub-title,
+.lock-screen-box .signup-sub-title,
+.signin-box .forgot-password-sub-title,
+.signup-box .forgot-password-sub-title,
+.forgot-password-box .forgot-password-sub-title,
+.lock-screen-box .forgot-password-sub-title,
+.signin-box .lock-screen-sub-title,
+.signup-box .lock-screen-sub-title,
+.forgot-password-box .lock-screen-sub-title,
+.lock-screen-box .lock-screen-sub-title {
+  font-size: 12px;
+  padding: 10px 0 15px;
+}
+.signin-box .signin-sub-title a,
+.signup-box .signin-sub-title a,
+.forgot-password-box .signin-sub-title a,
+.lock-screen-box .signin-sub-title a,
+.signin-box .signup-sub-title a,
+.signup-box .signup-sub-title a,
+.forgot-password-box .signup-sub-title a,
+.lock-screen-box .signup-sub-title a,
+.signin-box .forgot-password-sub-title a,
+.signup-box .forgot-password-sub-title a,
+.forgot-password-box .forgot-password-sub-title a,
+.lock-screen-box .forgot-password-sub-title a,
+.signin-box .lock-screen-sub-title a,
+.signup-box .lock-screen-sub-title a,
+.forgot-password-box .lock-screen-sub-title a,
+.lock-screen-box .lock-screen-sub-title a {
+  font-weight: 400;
+}
+.signin-box .signin-form .form-control,
+.signup-box .signin-form .form-control,
+.forgot-password-box .signin-form .form-control,
+.lock-screen-box .signin-form .form-control,
+.signin-box .signup-form .form-control,
+.signup-box .signup-form .form-control,
+.forgot-password-box .signup-form .form-control,
+.lock-screen-box .signup-form .form-control,
+.signin-box .forgot-password-form .form-control,
+.signup-box .forgot-password-form .form-control,
+.forgot-password-box .forgot-password-form .form-control,
+.lock-screen-box .forgot-password-form .form-control,
+.signin-box .lock-screen-form .form-control,
+.signup-box .lock-screen-form .form-control,
+.forgot-password-box .lock-screen-form .form-control,
+.lock-screen-box .lock-screen-form .form-control {
+  margin-bottom: 15px;
+}
+.signin-box .signin-form .signin-options,
+.signup-box .signin-form .signin-options,
+.forgot-password-box .signin-form .signin-options,
+.lock-screen-box .signin-form .signin-options,
+.signin-box .signup-form .signin-options,
+.signup-box .signup-form .signin-options,
+.forgot-password-box .signup-form .signin-options,
+.lock-screen-box .signup-form .signin-options,
+.signin-box .forgot-password-form .signin-options,
+.signup-box .forgot-password-form .signin-options,
+.forgot-password-box .forgot-password-form .signin-options,
+.lock-screen-box .forgot-password-form .signin-options,
+.signin-box .lock-screen-form .signin-options,
+.signup-box .lock-screen-form .signin-options,
+.forgot-password-box .lock-screen-form .signin-options,
+.lock-screen-box .lock-screen-form .signin-options,
+.signin-box .signin-form .signup-options,
+.signup-box .signin-form .signup-options,
+.forgot-password-box .signin-form .signup-options,
+.lock-screen-box .signin-form .signup-options,
+.signin-box .signup-form .signup-options,
+.signup-box .signup-form .signup-options,
+.forgot-password-box .signup-form .signup-options,
+.lock-screen-box .signup-form .signup-options,
+.signin-box .forgot-password-form .signup-options,
+.signup-box .forgot-password-form .signup-options,
+.forgot-password-box .forgot-password-form .signup-options,
+.lock-screen-box .forgot-password-form .signup-options,
+.signin-box .lock-screen-form .signup-options,
+.signup-box .lock-screen-form .signup-options,
+.forgot-password-box .lock-screen-form .signup-options,
+.lock-screen-box .lock-screen-form .signup-options {
+  font-size: 12px;
+}
+.signin-box .signin-form .signin-options label,
+.signup-box .signin-form .signin-options label,
+.forgot-password-box .signin-form .signin-options label,
+.lock-screen-box .signin-form .signin-options label,
+.signin-box .signup-form .signin-options label,
+.signup-box .signup-form .signin-options label,
+.forgot-password-box .signup-form .signin-options label,
+.lock-screen-box .signup-form .signin-options label,
+.signin-box .forgot-password-form .signin-options label,
+.signup-box .forgot-password-form .signin-options label,
+.forgot-password-box .forgot-password-form .signin-options label,
+.lock-screen-box .forgot-password-form .signin-options label,
+.signin-box .lock-screen-form .signin-options label,
+.signup-box .lock-screen-form .signin-options label,
+.forgot-password-box .lock-screen-form .signin-options label,
+.lock-screen-box .lock-screen-form .signin-options label,
+.signin-box .signin-form .signup-options label,
+.signup-box .signin-form .signup-options label,
+.forgot-password-box .signin-form .signup-options label,
+.lock-screen-box .signin-form .signup-options label,
+.signin-box .signup-form .signup-options label,
+.signup-box .signup-form .signup-options label,
+.forgot-password-box .signup-form .signup-options label,
+.lock-screen-box .signup-form .signup-options label,
+.signin-box .forgot-password-form .signup-options label,
+.signup-box .forgot-password-form .signup-options label,
+.forgot-password-box .forgot-password-form .signup-options label,
+.lock-screen-box .forgot-password-form .signup-options label,
+.signin-box .lock-screen-form .signup-options label,
+.signup-box .lock-screen-form .signup-options label,
+.forgot-password-box .lock-screen-form .signup-options label,
+.lock-screen-box .lock-screen-form .signup-options label {
+  font-weight: 300;
+}
+.signin-box .signin-form .signin-options .pull-right,
+.signup-box .signin-form .signin-options .pull-right,
+.forgot-password-box .signin-form .signin-options .pull-right,
+.lock-screen-box .signin-form .signin-options .pull-right,
+.signin-box .signup-form .signin-options .pull-right,
+.signup-box .signup-form .signin-options .pull-right,
+.forgot-password-box .signup-form .signin-options .pull-right,
+.lock-screen-box .signup-form .signin-options .pull-right,
+.signin-box .forgot-password-form .signin-options .pull-right,
+.signup-box .forgot-password-form .signin-options .pull-right,
+.forgot-password-box .forgot-password-form .signin-options .pull-right,
+.lock-screen-box .forgot-password-form .signin-options .pull-right,
+.signin-box .lock-screen-form .signin-options .pull-right,
+.signup-box .lock-screen-form .signin-options .pull-right,
+.forgot-password-box .lock-screen-form .signin-options .pull-right,
+.lock-screen-box .lock-screen-form .signin-options .pull-right,
+.signin-box .signin-form .signup-options .pull-right,
+.signup-box .signin-form .signup-options .pull-right,
+.forgot-password-box .signin-form .signup-options .pull-right,
+.lock-screen-box .signin-form .signup-options .pull-right,
+.signin-box .signup-form .signup-options .pull-right,
+.signup-box .signup-form .signup-options .pull-right,
+.forgot-password-box .signup-form .signup-options .pull-right,
+.lock-screen-box .signup-form .signup-options .pull-right,
+.signin-box .forgot-password-form .signup-options .pull-right,
+.signup-box .forgot-password-form .signup-options .pull-right,
+.forgot-password-box .forgot-password-form .signup-options .pull-right,
+.lock-screen-box .forgot-password-form .signup-options .pull-right,
+.signin-box .lock-screen-form .signup-options .pull-right,
+.signup-box .lock-screen-form .signup-options .pull-right,
+.forgot-password-box .lock-screen-form .signup-options .pull-right,
+.lock-screen-box .lock-screen-form .signup-options .pull-right {
+  position: relative;
+  z-index: 2;
+}
+.signin-box .signin-form .signin-btn,
+.signup-box .signin-form .signin-btn,
+.forgot-password-box .signin-form .signin-btn,
+.lock-screen-box .signin-form .signin-btn,
+.signin-box .signup-form .signin-btn,
+.signup-box .signup-form .signin-btn,
+.forgot-password-box .signup-form .signin-btn,
+.lock-screen-box .signup-form .signin-btn,
+.signin-box .forgot-password-form .signin-btn,
+.signup-box .forgot-password-form .signin-btn,
+.forgot-password-box .forgot-password-form .signin-btn,
+.lock-screen-box .forgot-password-form .signin-btn,
+.signin-box .lock-screen-form .signin-btn,
+.signup-box .lock-screen-form .signin-btn,
+.forgot-password-box .lock-screen-form .signin-btn,
+.lock-screen-box .lock-screen-form .signin-btn,
+.signin-box .signin-form .signup-btn,
+.signup-box .signin-form .signup-btn,
+.forgot-password-box .signin-form .signup-btn,
+.lock-screen-box .signin-form .signup-btn,
+.signin-box .signup-form .signup-btn,
+.signup-box .signup-form .signup-btn,
+.forgot-password-box .signup-form .signup-btn,
+.lock-screen-box .signup-form .signup-btn,
+.signin-box .forgot-password-form .signup-btn,
+.signup-box .forgot-password-form .signup-btn,
+.forgot-password-box .forgot-password-form .signup-btn,
+.lock-screen-box .forgot-password-form .signup-btn,
+.signin-box .lock-screen-form .signup-btn,
+.signup-box .lock-screen-form .signup-btn,
+.forgot-password-box .lock-screen-form .signup-btn,
+.lock-screen-box .lock-screen-form .signup-btn,
+.signin-box .signin-form .forgot-password-btn,
+.signup-box .signin-form .forgot-password-btn,
+.forgot-password-box .signin-form .forgot-password-btn,
+.lock-screen-box .signin-form .forgot-password-btn,
+.signin-box .signup-form .forgot-password-btn,
+.signup-box .signup-form .forgot-password-btn,
+.forgot-password-box .signup-form .forgot-password-btn,
+.lock-screen-box .signup-form .forgot-password-btn,
+.signin-box .forgot-password-form .forgot-password-btn,
+.signup-box .forgot-password-form .forgot-password-btn,
+.forgot-password-box .forgot-password-form .forgot-password-btn,
+.lock-screen-box .forgot-password-form .forgot-password-btn,
+.signin-box .lock-screen-form .forgot-password-btn,
+.signup-box .lock-screen-form .forgot-password-btn,
+.forgot-password-box .lock-screen-form .forgot-password-btn,
+.lock-screen-box .lock-screen-form .forgot-password-btn,
+.signin-box .signin-form .lock-screen-btn,
+.signup-box .signin-form .lock-screen-btn,
+.forgot-password-box .signin-form .lock-screen-btn,
+.lock-screen-box .signin-form .lock-screen-btn,
+.signin-box .signup-form .lock-screen-btn,
+.signup-box .signup-form .lock-screen-btn,
+.forgot-password-box .signup-form .lock-screen-btn,
+.lock-screen-box .signup-form .lock-screen-btn,
+.signin-box .forgot-password-form .lock-screen-btn,
+.signup-box .forgot-password-form .lock-screen-btn,
+.forgot-password-box .forgot-password-form .lock-screen-btn,
+.lock-screen-box .forgot-password-form .lock-screen-btn,
+.signin-box .lock-screen-form .lock-screen-btn,
+.signup-box .lock-screen-form .lock-screen-btn,
+.forgot-password-box .lock-screen-form .lock-screen-btn,
+.lock-screen-box .lock-screen-form .lock-screen-btn {
+  margin-top: 15px;
+}
+.signin-box .signin-form .signin-btn .btn,
+.signup-box .signin-form .signin-btn .btn,
+.forgot-password-box .signin-form .signin-btn .btn,
+.lock-screen-box .signin-form .signin-btn .btn,
+.signin-box .signup-form .signin-btn .btn,
+.signup-box .signup-form .signin-btn .btn,
+.forgot-password-box .signup-form .signin-btn .btn,
+.lock-screen-box .signup-form .signin-btn .btn,
+.signin-box .forgot-password-form .signin-btn .btn,
+.signup-box .forgot-password-form .signin-btn .btn,
+.forgot-password-box .forgot-password-form .signin-btn .btn,
+.lock-screen-box .forgot-password-form .signin-btn .btn,
+.signin-box .lock-screen-form .signin-btn .btn,
+.signup-box .lock-screen-form .signin-btn .btn,
+.forgot-password-box .lock-screen-form .signin-btn .btn,
+.lock-screen-box .lock-screen-form .signin-btn .btn,
+.signin-box .signin-form .signup-btn .btn,
+.signup-box .signin-form .signup-btn .btn,
+.forgot-password-box .signin-form .signup-btn .btn,
+.lock-screen-box .signin-form .signup-btn .btn,
+.signin-box .signup-form .signup-btn .btn,
+.signup-box .signup-form .signup-btn .btn,
+.forgot-password-box .signup-form .signup-btn .btn,
+.lock-screen-box .signup-form .signup-btn .btn,
+.signin-box .forgot-password-form .signup-btn .btn,
+.signup-box .forgot-password-form .signup-btn .btn,
+.forgot-password-box .forgot-password-form .signup-btn .btn,
+.lock-screen-box .forgot-password-form .signup-btn .btn,
+.signin-box .lock-screen-form .signup-btn .btn,
+.signup-box .lock-screen-form .signup-btn .btn,
+.forgot-password-box .lock-screen-form .signup-btn .btn,
+.lock-screen-box .lock-screen-form .signup-btn .btn,
+.signin-box .signin-form .forgot-password-btn .btn,
+.signup-box .signin-form .forgot-password-btn .btn,
+.forgot-password-box .signin-form .forgot-password-btn .btn,
+.lock-screen-box .signin-form .forgot-password-btn .btn,
+.signin-box .signup-form .forgot-password-btn .btn,
+.signup-box .signup-form .forgot-password-btn .btn,
+.forgot-password-box .signup-form .forgot-password-btn .btn,
+.lock-screen-box .signup-form .forgot-password-btn .btn,
+.signin-box .forgot-password-form .forgot-password-btn .btn,
+.signup-box .forgot-password-form .forgot-password-btn .btn,
+.forgot-password-box .forgot-password-form .forgot-password-btn .btn,
+.lock-screen-box .forgot-password-form .forgot-password-btn .btn,
+.signin-box .lock-screen-form .forgot-password-btn .btn,
+.signup-box .lock-screen-form .forgot-password-btn .btn,
+.forgot-password-box .lock-screen-form .forgot-password-btn .btn,
+.lock-screen-box .lock-screen-form .forgot-password-btn .btn,
+.signin-box .signin-form .lock-screen-btn .btn,
+.signup-box .signin-form .lock-screen-btn .btn,
+.forgot-password-box .signin-form .lock-screen-btn .btn,
+.lock-screen-box .signin-form .lock-screen-btn .btn,
+.signin-box .signup-form .lock-screen-btn .btn,
+.signup-box .signup-form .lock-screen-btn .btn,
+.forgot-password-box .signup-form .lock-screen-btn .btn,
+.lock-screen-box .signup-form .lock-screen-btn .btn,
+.signin-box .forgot-password-form .lock-screen-btn .btn,
+.signup-box .forgot-password-form .lock-screen-btn .btn,
+.forgot-password-box .forgot-password-form .lock-screen-btn .btn,
+.lock-screen-box .forgot-password-form .lock-screen-btn .btn,
+.signin-box .lock-screen-form .lock-screen-btn .btn,
+.signup-box .lock-screen-form .lock-screen-btn .btn,
+.forgot-password-box .lock-screen-form .lock-screen-btn .btn,
+.lock-screen-box .lock-screen-form .lock-screen-btn .btn {
+  font-weight: 600;
+}
+.lock-screen-box {
+  margin-top: 94px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.lock-screen-box .lock-screen-logo {
+  margin-top: -74px;
+  padding-top: 0;
+}
+.lock-screen-box .lock-screen-logo img {
+  width: 128px;
+  height: 128px;
+  max-height: 128px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+}
+.signin-social {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.signin-social .signin-social-title {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.signin-social ul {
+  font-size: 40px;
+}
+.signin-social ul:hover a,
+.signin-social ul:active a,
+.signin-social ul:focus a {
+  opacity: .2;
+}
+.signin-social ul a:hover,
+.signin-social ul a:active,
+.signin-social ul a:focus {
+  opacity: 1;
+}
+/* Error */
+.error-page .error-page-content {
+  text-align: center;
+}
+.error-page .error-page-content > h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 150px;
+}
+.error-page .error-page-content > h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.error-page .footer {
+  text-align: center;
+  margin-top: 30px;
 }

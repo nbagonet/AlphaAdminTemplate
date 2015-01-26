@@ -1,0 +1,20 @@
+//- Pages - 404
+
+include ../common/variables
+include ./mixins
+
+
+//404 page
+
+div.center-box
+  div.center-box-inner
+
+    div.error-page-content
+      h1 404
+      h4 Page not Found
+      p Sorry, but the page you are looking for has not been found on our server.
+      p Try checking URL for errors, then hit the refresh button on your browser.
+      p
+        a.link-red(href="#{page_dashboard.url}")
+          |Return home
+          i.fa.fa-angle-double-right.mleft5

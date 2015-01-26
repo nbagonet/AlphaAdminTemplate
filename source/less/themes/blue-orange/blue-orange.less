@@ -1606,3 +1606,100 @@ label,
         }
     }
 }
+
+
+
+/* Background Layer */
+.cover-overlay
+{
+    background-color: @bglay-bg;
+}
+
+
+/* Signin */
+.signin-box,
+.signup-box,
+.forgot-password-box,
+.lock-screen-box
+{
+    background-color: @signin-box-bg;
+    .signin-title,
+    .signup-title,
+    .forgot-password-title,
+    .lock-screen-title
+    {
+        color: @signin-title-color;
+    }
+    .signin-sub-title,
+    .signup-sub-title,
+    .forgot-password-sub-title,
+    .lock-screen-sub-title
+    {
+        color: @signin-sub-title-color;
+        a
+        {
+            color: @signin-sub-title-link-color;
+            &:hover
+            {
+                color: @signin-sub-title-link-hover-color;
+            }
+        }
+    }
+    .signin-options,
+    .signup-options
+    {
+        color: @signin-options-color;
+        a
+        {
+            color: @signin-options-link-color;
+            &:hover
+            {
+                color: @signin-options-link-hover-color;
+            }
+        }
+    }
+}
+.lock-screen-box
+{
+    .lock-screen-logo
+    {
+        img
+        {
+            border-color: @signin-box-userhead-border-color;
+        }
+    }
+}
+.signin-social
+{
+    color: @signin-social-color;
+    ul
+    {
+        a
+        {
+            color: @signin-social-link-color;
+        }
+    }
+}
+
+
+/* Error */
+.error-page
+{
+    background-color: @error-page-bg;
+    .error-page-content
+    {
+        color: @error-info-color;
+        > h1
+        {
+            color: @error-code-color;
+        }
+        > h4
+        {
+            color: @error-title-color;
+        }
+    }
+    .footer
+    {
+        color: @error-footer-color;
+    }
+}

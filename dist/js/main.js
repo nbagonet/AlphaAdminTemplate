@@ -391,4 +391,51 @@ $(function() {
   }
   // Invoice end
 
+  // Signin Page begin
+  if ($("body").hasClass("signin")) {
+    // signin box's animate
+    $(".signin-box").addClass("animated fadeInDown");
+
+    // show footer
+    $(".footer").appendTo(".center-box-inner > div").show();
+  }
+  // Signin Page end
+
+  // Signup Page begin
+  if ($("body").hasClass("signup")) {
+    // signin box's animate
+    $(".signup-box").addClass("animated fadeInDown");
+
+    // show footer
+    $(".footer").appendTo(".center-box-inner > div").show();
+  }
+  // Signup Page end
+
+  // Forgot password Page begin
+  if ($("body").hasClass("forgot-password")) {
+    // signin box's animate
+    $(".forgot-password-box").addClass("animated fadeInDown");
+
+    // show footer
+    $(".footer").appendTo(".center-box-inner > div").show();
+  }
+  // Forgot password Page end
+
+  // Lock Screen Page begin
+  if ($("body").hasClass("lock-screen")) {
+    // signin box's animate
+    $(".lock-screen-box").addClass("animated fadeInDown");
+
+    // show footer
+    $(".footer").appendTo(".center-box-inner > div").show();
+  }
+  // Lock Screen Page end
+
+  // Error Page begin
+  if ($("body").hasClass("error-page")) {
+    // show footer
+    $(".footer").appendTo(".center-box-inner > div").show();
+  }
+  // Error Page end
+
 });

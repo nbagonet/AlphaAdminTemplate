@@ -1,0 +1,151 @@
+//
+// Signin & Signup & Forgot password & Lock screen
+// --------------------------------------------------
+
+
+/* Signin & Signup & Forgot password & Lock screen */
+body
+{
+    &.signin,
+    &.signup,
+    &.forgot-password,
+    &.lock-screen
+    {
+        overflow-y: auto;
+        background-color: #000;
+        .footer
+        {
+            margin-top: 0;
+
+            text-align: center;
+        }
+    }
+}
+.signin-box,
+.signup-box,
+.forgot-password-box,
+.lock-screen-box
+{
+    opacity: 0;
+    margin-top:20px;
+    .signin-logo,
+    .signup-logo,
+    .forgot-password-logo,
+    .lock-screen-logo
+    {
+        padding: 15px 0 20px;
+        img
+        {
+            max-height: 100px;
+        }
+    }
+    .signin-title,
+    .signup-title,
+    .forgot-password-title,
+    .lock-screen-title
+    {
+        font-family: @font-family-roboto;
+        font-size: @font-size-h3;
+    }
+    .signin-sub-title,
+    .signup-sub-title,
+    .forgot-password-sub-title,
+    .lock-screen-sub-title
+    {
+        font-size: 12px;
+
+        padding: 10px 0 15px;
+        a{
+          font-weight: @font-weight-base;
+        }
+    }
+    .signin-form,
+    .signup-form,
+    .forgot-password-form,
+    .lock-screen-form
+    {
+        .form-control
+        {
+            margin-bottom: 15px;
+        }
+        .signin-options,
+        .signup-options
+        {
+            font-size: 12px;
+            label
+            {
+                font-weight: @font-weight-thin;
+            }
+            .pull-right
+            {
+                position: relative;
+                z-index: 2;
+            }
+        }
+        .signin-btn,
+        .signup-btn,
+        .forgot-password-btn,
+        .lock-screen-btn
+        {
+            margin-top: 15px;
+            .btn
+            {
+                font-weight: @font-weight-bold;
+            }
+        }
+    }
+}
+.lock-screen-box
+{
+    margin-top: 94px;
+
+    .box-shadow(0 1px 1px rgba(0,0,0,.05));
+    .lock-screen-logo
+    {
+        margin-top: -74px;
+        padding-top: 0;
+        img
+        {
+            width: 128px;
+            height: 128px;
+            max-height: 128px;
+
+            border: 10px solid transparent;
+            border-radius: 50%;
+        }
+    }
+}
+.signin-social
+{
+    margin-bottom: 10px;
+
+    text-align: center;
+    .signin-social-title
+    {
+        font-weight: @font-weight-base;
+
+        letter-spacing: 1px;
+    }
+    ul
+    {
+        font-size: 40px;
+        &:hover,
+        &:active,
+        &:focus
+        {
+            a
+            {
+                opacity: .2;
+            }
+        }
+        a
+        {
+            &:hover,
+            &:active,
+            &:focus
+            {
+                opacity: 1;
+            }
+        }
+    }
+}

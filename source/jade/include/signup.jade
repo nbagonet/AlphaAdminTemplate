@@ -1,0 +1,56 @@
+//- Pages - Signup(Register)
+
+include ../common/variables
+include ./mixins
+
+
+//Signup page
+
+div.cover(style="background-image:url(#{base_img}sign-bg.jpg)")
+div.cover-overlay
+
+div.center-box
+  div.center-box-inner
+    div.col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-4
+
+      //Signup Box
+      div.panel.panel-white.no-b.signup-box
+        div.panel-body
+
+          header.text-center
+            div.signup-logo
+              img(src="#{base_img}logo-alpha.png" alt="AlphaAdmin")
+            div.signup-title Create New Account
+            div.signup-sub-title
+              span.mright10 Already have an account?
+              a#goto-signin(href="#{page_pages_signin.url}") Signin
+
+          div.signup-form
+            form(action="#{page_pages_signin.url}" role="form")
+              input.form-control.input-lg(type="text" placeholder="Username"  autocomplete="off")
+              input.form-control.input-lg(type="email" placeholder="Email"  autocomplete="off")
+              input.form-control.input-lg(type="password" placeholder="Password" autocomplete="off")
+              input.form-control.input-lg(type="password" placeholder="Confirm Password" autocomplete="off")
+              div.signup-options.show
+                label.checkbox
+                  input.icheck(type="checkbox" checked)
+                  span.mleft5 I want to receive news and special offers
+                label.checkbox
+                  input.icheck(type="checkbox" checked)
+                  span.mleft5 I agree with the Terms and Conditions
+              div.signup-btn
+                +buttons("btn-success btn-lg btn-block","SIGN UP")(type="submit")
+
+      //Social Login
+      div.signin-social
+        h5.signin-social-title Login with a social network
+        ul.list-inline
+          li
+            a(href="#")
+              i.entypo-facebook-circled
+          li
+            a(href="#")
+              i.entypo-gplus-circled
+          li
+            a(href="#")
+              i.entypo-twitter-circled
