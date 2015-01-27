@@ -1,4 +1,4 @@
-@import url('main-blessed1.css?z=1422293563453');
+@import url('main-blessed1.css?z=1422363275570');
 
 .blog-post-body .blog-post-inner .blog-post-meta-entrance {
   padding: 7px;
@@ -526,4 +526,33 @@ body.lock-screen .footer {
 .error-page .footer {
   text-align: center;
   margin-top: 30px;
+}
+/* FAQ */
+.faq .panel-group .panel-heading {
+  font-size: 18px;
+}
+.faq .panel-group .panel-heading > a {
+  display: table;
+}
+.faq .panel-group .panel-heading > a > strong,
+.faq .panel-group .panel-heading > a > span {
+  display: table-cell;
+  vertical-align: top;
+}
+.faq .panel-group .panel-heading > a > strong {
+  font-weight: 400;
+  padding-right: 10px;
+}
+.faq .panel-group .panel-body {
+  display: table;
+}
+.faq .panel-group .panel-body > strong,
+.faq .panel-group .panel-body > span {
+  display: table-cell;
+  vertical-align: top;
+}
+.faq .panel-group .panel-body > strong {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 10px;
 }

@@ -77,6 +77,13 @@ $(function() {
       railVisible: false,
       wheelStep: 10
     });
+
+    // Scroll to active item position
+    var _actItem = $(".sidebar-inner .side-menu li a.active").last();
+    var _actItemPosY = _actItem.offset().top;
+    $(".sidebar-inner").slimScroll({
+      scrollTo: _actItemPosY - $(".topheader").height() - 100
+    });
   };
   SMInit();
   var SMDestroy = function() {
@@ -386,7 +393,7 @@ $(function() {
   if ($(".invoice")[0]) {
 
     // Hide something...
-    $(".sidebar,.head-wrapper,.scroll-to-top,.layouts-title-breadcrumb").addClass("hidden-print");
+    $(".sidebar,.head-wrapper,.scroll-to-top,.layouts-title-breadcrumb,.footer").addClass("hidden-print");
 
   }
   // Invoice end

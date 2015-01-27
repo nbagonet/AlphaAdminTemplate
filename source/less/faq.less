@@ -1,0 +1,49 @@
+//
+// FAQ
+// --------------------------------------------------
+
+
+/* FAQ */
+.faq
+{
+    .panel-group
+    {
+        .panel-heading
+        {
+            font-size: @font-size-large;
+            > a
+            {
+                display: table;
+                > strong, > span
+                {
+                    display: table-cell;
+
+                    vertical-align: top;
+                }
+                > strong
+                {
+                    font-weight: @font-weight-base;
+
+                    padding-right: 10px;
+                }
+            }
+        }
+        .panel-body
+        {
+            display: table;
+            > strong, > span
+            {
+                display: table-cell;
+
+                vertical-align: top;
+            }
+            > strong
+            {
+                font-size: @font-size-large;
+                font-weight: @font-weight-base;
+
+                padding-right: 10px;
+            }
+        }
+    }
+}

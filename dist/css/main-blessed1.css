@@ -964,6 +964,7 @@ input[type="search"] {
 /* Page Content */
 .page-content {
   padding-bottom: 47px;
+  min-height: 100%;
 }
 .wrapper {
   padding: 15px;
