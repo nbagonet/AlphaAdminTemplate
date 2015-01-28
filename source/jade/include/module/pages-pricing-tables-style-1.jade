@@ -1,0 +1,117 @@
+//- Pages - Pricing Tables - Style 1
+
+
+include ../../common/variables
+include ../mixins
+
+
+div.pricing-tables.row.no-m
+  div.col-md-4.col-xs-12
+    div.pricing
+      div.pricing-heading
+        h4
+          |Economy
+          small Perfect to get started with a basic site
+      div.pricing-body
+        div.pricing-cost
+          dl
+            dt
+              span Starting at
+              h5
+                |$3.99
+                small /month
+            dd
+              strong ON SALE - SAVE 42%
+              span $6.99/month when you renew
+              select.selectpicker(data-width="100%")
+                option 3 months - $6.99/month
+                option(selected) 12 months - $3.99/month
+                option 24 months - $3.99/month
+                option 36 months - $3.99/month
+                option 48 months - $3.99/month
+                option 60 months - $3.99/month
+              +buttons("btn-orange btn-lg btn-block mtop10","Add to Cart")
+        div.pricing-info
+          ul
+            li!= '1 Website'
+            li!= '<strong>100 GB</strong> Storage'
+            li!= 'Unlimited bandwidth'
+            li!= '100 Email Addresses'
+            li!= 'Free Domain with annual plan'
+            li!= '-'
+            li!= '-'
+            li!= '-'
+  div.active.col-md-4.col-xs-12
+    div.pricing
+      div.pricing-heading
+        h4
+          |Deluxe
+          small Ideal for building and managing multiple sites
+      div.pricing-body
+        div.pricing-cost
+          dl
+            dt
+              span Starting at
+              h5
+                |$4.49
+                small /month
+            dd
+              strong ON SALE - SAVE 50%
+              span $8.99/month when you renew
+              select.selectpicker(data-width="100%")
+                option 1 months - $8.99/month
+                option(selected) 12 months - $4.49/month
+                option 24 months - $4.49/month
+                option 36 months - $4.49/month
+                option 48 months - $4.49/month
+                option 60 months - $4.49/month
+              +buttons("btn-orange btn-lg btn-block mtop10","Add to Cart")
+        div.pricing-info
+          ul
+            li!= 'Unlimited Websites'
+            li!= '<strong><abbr data-hover="tooltip" data-trigger="click hover focus" data-placement="bottom" title="Our Web Hosting plans are designed to host most personal, small business and organization websites. We don\'t limit the amount of storage and bandwidth your site can use as long as it complies with our Hosting Agreement. Should your website bandwidth or storage usage present a risk to the stability, performance or uptime of our servers, we will notify you via email and you may be required to upgrade to a Virtual Private Server or Dedicated (Private) Server, or we may restrict the resources your website is using. It’s very rare that a website violates our Hosting Agreement and is typically only seen in sites that use hosting for file sharing or storage." data-template="<div class=\'tooltip\' role=\'tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\' style=\'text-align:left;max-width:300px;padding:10px;\'></div></div>">Unlimited</abbr></strong> Storage'
+            li!= 'Unlimited bandwidth'
+            li!= '500 Email Addresses'
+            li!= 'Free Domain with annual plan'
+            li!= '-'
+            li!= '-'
+            li!= '-'
+  div.col-md-4.col-xs-12
+    //Ribbon
+    div.github-fork-ribbon-wrapper.right
+      div.github-fork-ribbon
+        a(href="javascript:void(0)") More Power
+    div.pricing
+      div.pricing-heading
+        h4
+          |Ultimate
+          small Good for higher traffic. Twice the power, memory, email and more
+      div.pricing-body
+        div.pricing-cost
+          dl
+            dt
+              span Starting at
+              h5
+                |$7.49
+                small /month
+            dd
+              strong ON SALE - SAVE 50%
+              span $14.99/month when you renew
+              select.selectpicker(data-width="100%")
+                option 1 months - $14.99/month
+                option(selected) 12 months - $7.49/month
+                option 24 months - $7.49/month
+                option 36 months - $7.49/month
+                option 48 months - $7.49/month
+                option 60 months - $7.49/month
+              +buttons("btn-orange btn-lg btn-block mtop10","Add to Cart")
+        div.pricing-info
+          ul
+            li!= 'Unlimited Websites'
+            li!= '<strong><abbr data-hover="tooltip" data-trigger="click hover focus" data-placement="bottom" title="Our Web Hosting plans are designed to host most personal, small business and organization websites. We don\'t limit the amount of storage and bandwidth your site can use as long as it complies with our Hosting Agreement. Should your website bandwidth or storage usage present a risk to the stability, performance or uptime of our servers, we will notify you via email and you may be required to upgrade to a Virtual Private Server or Dedicated (Private) Server, or we may restrict the resources your website is using. It’s very rare that a website violates our Hosting Agreement and is typically only seen in sites that use hosting for file sharing or storage." data-template="<div class=\'tooltip\' role=\'tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\' style=\'text-align:left;max-width:300px;padding:10px;\'></div></div>">Unlimited</abbr></strong> Storage'
+            li!= 'Unlimited bandwidth'
+            li!= '1000 Email Addresses'
+            li!= 'Free Domain with annual plan'
+            li!= '<abbr data-hover="tooltip" data-trigger="click hover focus" data-placement="bottom" data-html="true" title="Available Resources:<br><br>Ultimate Plan<br>2 CPU, 1 GB RAM, 125 Entry Processes<br><br>Economy & Deluxe<br>1 CPU, 512 MB RAM, 100 Entry Processes" data-template="<div class=\'tooltip\' role=\'tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\' style=\'text-align:left;max-width:300px;padding:10px;\'></div></div>">2X Processing Power & Memory</abbr><br>(Available for Linux/cPanel only)'
+            li!= '<strong><abbr data-hover="tooltip" data-trigger="click hover focus" data-placement="bottom" title="A $35.88/yr value, our Premium DNS makes it easy to resolve common issues that prevent people from accessing your site, improving your overall performance, availability, and security." data-template="<div class=\'tooltip\' role=\'tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\' style=\'text-align:left;max-width:300px;padding:10px;\'></div></div>">Premium DNS</abbr></strong> Management Tool'
+            li!= '<strong>1 year SSL Certificate</strong> - Secures customer data & increases search rankings<br><small><abbr data-hover="tooltip" data-trigger="click hover focus" data-placement="top" title="A $35.88/yr value, our Premium DNS makes it easy to resolve common issues that prevent people from accessing your site, improving your overall performance, availability, and security." data-template="<div class=\'tooltip\' role=\'tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\' style=\'text-align:left;max-width:300px;padding:10px;\'></div></div>">Restrictions apply</abbr></small>'

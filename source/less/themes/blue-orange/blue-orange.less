@@ -1703,3 +1703,63 @@ label,
         color: @error-footer-color;
     }
 }
+
+
+/* Pricing Tables - style 1 */
+.pricing-tables
+{
+    color: @pricing-s1-color;
+    [class*=col-]
+    {
+        background-color: @pricing-s1-bg;
+    }
+    .pricing-heading
+    {
+        > h4
+        {
+            color: @pricing-s1-heading-color;
+            > small
+            {
+                color: @pricing-s1-heading-sub-color;
+            }
+        }
+    }
+    .pricing-body
+    {
+        .pricing-cost
+        {
+            dt
+            {
+                > h5, > h5 > small
+                {
+                    color: @pricing-s1-cost-color;
+                }
+            }
+            dd
+            {
+                > strong
+                {
+                    color: @pricing-s1-cost-color;
+                }
+            }
+        }
+        .pricing-info
+        {
+            > ul
+            {
+                > li
+                {
+                    abbr
+                    {
+                        &:hover,
+                        &:active,
+                        &:focus
+                        {
+                            color: @link-base-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1587,3 +1587,28 @@ label,
 .error-page .footer {
   color: #aaaaaa;
 }
+/* Pricing Tables - style 1 */
+.pricing-tables {
+  color: #777777;
+}
+.pricing-tables [class*=col-] {
+  background-color: #ffffff;
+}
+.pricing-tables .pricing-heading > h4 {
+  color: #777777;
+}
+.pricing-tables .pricing-heading > h4 > small {
+  color: #848484;
+}
+.pricing-tables .pricing-body .pricing-cost dt > h5,
+.pricing-tables .pricing-body .pricing-cost dt > h5 > small {
+  color: #f2572d;
+}
+.pricing-tables .pricing-body .pricing-cost dd > strong {
+  color: #f2572d;
+}
+.pricing-tables .pricing-body .pricing-info > ul > li abbr:hover,
+.pricing-tables .pricing-body .pricing-info > ul > li abbr:active,
+.pricing-tables .pricing-body .pricing-info > ul > li abbr:focus {
+  color: #007fae;
+}
