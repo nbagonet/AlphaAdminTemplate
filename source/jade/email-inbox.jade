@@ -1,10 +1,10 @@
-//- Layouts - Horizontal Menu
+//- Email - Inbox
 //- --------------------------------------------------
 include ./common/variables
 //- --------------------------------------------------
 //- Page Config
 - var page_language   = "en";
-- var page            = page_layouts_fixed_topbar;
+- var page            = page_email_inbox;
 - var page_name       = page.name;
 - var page_url        = page.url;
 - var page_parent     = page.parent;
@@ -44,7 +44,7 @@ html(class="no-js" lang=page_language)
 
         //- Page Content
         div.container-fluid.page-content: div.row
-          include ./include/article
+          include ./include/email-inbox
 
     //- Include public page foot
     include ./include/foot

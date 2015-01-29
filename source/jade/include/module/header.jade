@@ -17,10 +17,10 @@ div(class="container-fluid head-wrapper")
           span(class="icon-bar")
 
         //brand
-        a(class="navbar-brand brand" href="index.html")
-          img(src="img/logo.png" alt="#{site_description}")
+        a(class="navbar-brand brand" href="#{page_dashboard.url}")
+          img(src="#{base_img}logo.png" alt="#{site_description}")
         a(class="hide navbar-brand navbar-brand-small brand", href="index.html")
-          img(src="img/logo-s.png" alt="#{site_description}")
+          img(src="#{base_img}logo-s.png" alt="#{site_description}")
 
       if body_class_name.indexOf("horizontal-menu") != -1
         include ./header-horizontal-menu

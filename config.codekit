@@ -22,42 +22,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/charts-chart.js.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/charts-chart.js.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/charts-easy_pie_chart.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/charts-easy_pie_chart.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/charts-flot_charts.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/charts-flot_charts.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/charts-sparklines.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/charts-sparklines.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/css\/images\/ui-bg_diagonals-thick_18_b81900_40x40.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -244,87 +208,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dist\/css\/themes\/blue-orange.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-coustomized_elements.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-coustomized_elements.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-dropzone_file_upload.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-dropzone_file_upload.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_basics.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_basics.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_elements.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_elements.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_layouts.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_layouts.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_pickers.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_pickers.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_validation.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_validation.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-form_wizards.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-form_wizards.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/forms-multiple_file_upload.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/forms-multiple_file_upload.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3310,15 +3193,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/dist\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/js\/demo.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -3418,312 +3292,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
-	"\/dist\/layout-fixed_topbar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-fixed_topbar.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-horizontal_menu.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-horizontal_menu_and_sidebar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu_and_sidebar.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-horizontal_menu_boxed.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-horizontal_menu_boxed.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-left_sidebar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-left_sidebar.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-left_sidebar_collapsed.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-left_sidebar_collapsed.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-right_sidebar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-right_sidebar.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-right_sidebar_collapsed.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-right_sidebar_collapsed.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/layout-title_and_breadcrumb.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/layout-title_and_breadcrumb.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/maps-google_map.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/maps-google_map.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/maps-jvector_map.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/maps-jvector_map.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-404.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-404.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-500.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-500.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-blank.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-blank.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-blog_item.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-blog_item.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-blog_page.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-blog_page.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-calendar.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-calendar.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-faq.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-faq.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-forgot_password.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-forgot_password.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-gallery.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-gallery.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-invoice.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-invoice.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-lock_screen.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-lock_screen.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-profile.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-profile.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-signin.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-signin.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-signup.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-signup.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-timeline-onecol.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-timeline-onecol.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/pages-timeline.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/pages-timeline.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-action_tables.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-action_tables.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-advanced_tables.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-advanced_tables.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-basic_tables.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-basic_tables.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-bootstrap_table.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-bootstrap_table.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-data_tables.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-data_tables.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-resonsive_tables.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-resonsive_tables.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/tables-table_export.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/tables-table_export.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/dist\/tile-wide.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3745,186 +3313,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/dist\/ui-buttons.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-buttons.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-checkbox_and_radio.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-checkbox_and_radio.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-general.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-general.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-grid_layout.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-grid_layout.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-icons.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-icons.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-modals.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-modals.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-panels.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-panels.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-progress_bars.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-progress_bars.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-sliders.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-sliders.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-tabs_and_accordions.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-tabs_and_accordions.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-typography.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-typography.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/ui-widgets.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/ui-widgets.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-animations.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-animations.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-dropdown_select.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-dropdown_select.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-editor.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-editor.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-notific8.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-notific8.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-preloader.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-preloader.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-sortable_and_nestable_lists.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-sortable_and_nestable_lists.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-toastr_notifications.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-toastr_notifications.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/dist\/uia-tree_view.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dist\/uia-tree_view.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/dist\/vendor\/animate.css\/animate.css": {
 		"fileType": 16,
@@ -67066,6 +66454,571 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
+	"\/dist\/vendor\/stickUp\/example\/css\/bootstrap.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/css\/bootstrap.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/css\/jquery.snippet.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/css\/jquery.snippet.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Android.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2752,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Android.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Android.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Apple.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2329,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Apple.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Apple.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Blogger.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2503,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Blogger.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Blogger.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Chrome.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2909,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Chrome.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Chrome.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/CSS3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2561,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/CSS3.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/CSS3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Delicious.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1856,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Delicious.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Delicious.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Dribbble.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3683,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Dribbble.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Dribbble.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Dropbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3307,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Dropbox.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Dropbox.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2260,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Facebook.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Flickr.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2269,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Flickr.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Flickr.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Forrest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2755,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Forrest.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Forrest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Github.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2553,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Github.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Github.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Google+.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3562,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Google+.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Google+.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/HTML5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2701,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/HTML5.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/HTML5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/IE.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3005,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/IE.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/IE.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Instagram.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2776,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Instagram.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Instagram.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/jQuery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3114,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/jQuery.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/jQuery.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/LastFM.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3058,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/LastFM.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/LastFM.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/LinkedIN.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2387,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/LinkedIN.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/LinkedIN.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Mail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2405,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Mail.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Mail.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/NeilOrangePeel.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3660,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/NeilOrangePeel.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/NeilOrangePeel.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Picasa.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2937,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Picasa.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Picasa.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Pinterest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3040,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Pinterest.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Pinterest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Reddit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3174,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Reddit.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Reddit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/RSS.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2886,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/RSS.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/RSS.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Safari.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3597,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Safari.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Safari.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Skype.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3235,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Skype.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Skype.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Soundcloud.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2629,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Soundcloud.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Soundcloud.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Treehouse.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3074,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Treehouse.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Treehouse.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Tumblr.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2404,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Tumblr.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Tumblr.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2529,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Twitter.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Vimeo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2707,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Vimeo.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Vimeo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Windows.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2263,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Windows.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Windows.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/WordPress.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3818,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/WordPress.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/WordPress.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/Yahoo!.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2755,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Yahoo!.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/Yahoo!.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/icons\/YouTube.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3180,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/YouTube.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/icons\/YouTube.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/onepager.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 739,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/onepager.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/onepager.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/opensource.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4420,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/opensource.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/opensource.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/images\/simple.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2379,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/simple.png",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/images\/simple.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/bootstrap.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/bootstrap.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/holder.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/holder.js",
+		"outputAbbreviatedPath": "\/dist\/js\/holder.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/jquery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/jquery.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/jquery.snippet.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/jquery.snippet.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/jquery.snippet.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/stickUp.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/stickUp.js",
+		"outputAbbreviatedPath": "\/dist\/js\/stickUp.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/js\/stickUp.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/js\/stickUp.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/stickUp.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/example\/stickup.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/example\/stickup.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/stickUp\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/README.md",
+		"outputAbbreviatedPath": "\/dist\/vendor\/stickUp\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/dist\/vendor\/stickUp\/stickUp.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/stickUp.js",
+		"outputAbbreviatedPath": "\/dist\/js\/stickUp.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/dist\/vendor\/stickUp\/stickUp.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/vendor\/stickUp\/stickUp.min.js",
+		"outputAbbreviatedPath": "\/dist\/js\/stickUp.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/dist\/vendor\/StickyTableHeaders\/demo\/bootstrap.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -72526,6 +72479,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/source\/jade\/email-compose_mail.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/email-compose_mail.jade",
+		"outputAbbreviatedPath": "\/dist\/email-compose_mail.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/email-inbox.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/email-inbox.jade",
+		"outputAbbreviatedPath": "\/dist\/email-inbox.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/source\/jade\/forms-coustomized_elements.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -72764,6 +72739,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/editor.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/include\/editor.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/email-compose.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/email-compose.jade",
+		"outputAbbreviatedPath": "\/dist\/email-compose.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/email-inbox.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/email-inbox.jade",
+		"outputAbbreviatedPath": "\/dist\/email-inbox.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -73226,6 +73223,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-wysihtml5.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/include\/module\/editor-wysihtml5.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/email-list.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/email-list.jade",
+		"outputAbbreviatedPath": "\/dist\/email-list.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/source\/jade\/include\/module\/email-sidebar.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/email-sidebar.jade",
+		"outputAbbreviatedPath": "\/dist\/email-sidebar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -73846,17 +73865,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/source\/jade\/include\/module\/pages-timeline-onecol.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/pages-timeline-onecol.jade",
-		"outputAbbreviatedPath": "\/dist\/pages-timeline-onecol.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
 	"\/source\/jade\/include\/module\/pages-timeline-twocol.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -74186,15 +74194,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
-		},
-	"\/source\/jade\/include\/module\/tables-bootstrap-table-sort.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/include\/module\/tables-bootstrap-table-sort.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/source\/jade\/include\/module\/tables-bootstrap-table-sort.jade": {
 		"compileDebug": 1,
@@ -74874,17 +74873,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/index.jade",
 		"outputAbbreviatedPath": "\/dist\/index.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 1
-		},
-	"\/source\/jade\/layout-fixed_topbar.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/layout-fixed_topbar.jade",
-		"outputAbbreviatedPath": "\/dist\/layout-fixed_topbar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1

@@ -187,7 +187,7 @@
 
 //- ** Pages
 - var page_pages                 = {name:"Pages", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-file-o", labelclass:"label-danger", labeltext:"", sub:page_pages_sub};
-- var page_pages_sub             = [page_pages_profile, page_pages_invoice, page_pages_gallery, page_pages_calendar, page_pages_timeline, page_pages_blog_page, page_pages_blog_item, page_pages_signin, page_pages_signup, page_pages_forgot_password, page_pages_lock_screen, page_pages_404, page_pages_500, page_pages_blank, page_pages_faq, page_pages_pricing_tables, page_pages_change_log, page_pages_chat, page_pages_search_result];
+- var page_pages_sub             = [page_pages_profile, page_pages_invoice, page_pages_gallery, page_pages_calendar, page_pages_timeline, page_pages_blog_page, page_pages_blog_item, page_pages_signin, page_pages_signup, page_pages_forgot_password, page_pages_lock_screen, page_pages_404, page_pages_500, page_pages_blank, page_pages_faq, page_pages_pricing_tables, page_pages_fullscreen];
 //- ** Pages - Profile
 - var page_pages_profile         = {name:"Profile", url:"pages-profile.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Pages - Invoice
@@ -220,24 +220,16 @@
 - var page_pages_faq             = {name:"FAQ", url:"pages-faq.html", parent:"Pages", bodyclass:"faq", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Pages - Pricing Tables
 - var page_pages_pricing_tables  = {name:"Pricing Tables", url:"pages-pricing_tables.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
-//- ** Pages - Change Log
-- var page_pages_change_log      = {name:"Change Log", url:"pages-change_log.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Pages - Blank Page
 - var page_pages_blank       = {name:"Blank Page", url:"pages-blank.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Pages - Full Screen
-- var page_pages_fullscreen      = {name:"Full Screen", url:"pages-fullscreen.html", parent:"Pages", bodyclass:"full-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
-//- ** Pages - Catalog
-- var page_pages_catalog         = {name:"Catalog", url:"pages-catalog.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
-//- ** Pages - Chat
-- var page_pages_chat            = {name:"Chat", url:"pages-chat.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
-//- ** Pages - Search Result
-- var page_pages_search_result   = {name:"Search Result", url:"pages-search_result.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_fullscreen      = {name:"Full Screen", url:"javascript:fullScreen();", parent:"Pages", bodyclass:"full-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 
 //- ** Email
 - var page_email              = {name:"Email", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-envelope-o", labelclass:"label-danger", labeltext:"", sub:page_email_sub};
 - var page_email_sub          = [page_email_inbox, page_email_compose_mail, page_email_view_mail];
 //- ** Email - Inbox
-- var page_email_inbox        = {name:"Inbox", url:"email-inbox.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_email_inbox        = {name:"MailBox", url:"email-inbox.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Email - Compose Mail
 - var page_email_compose_mail = {name:"Compose Mail", url:"email-compose_mail.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
 //- ** Email - View Mail

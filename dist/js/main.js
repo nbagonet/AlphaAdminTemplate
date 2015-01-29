@@ -65,32 +65,34 @@ $(function() {
   // Initialize responsive-tabs end
 
   // Sidebar slimscroll begin
-  var SMInit = function() {
-    $(".sidebar-inner").slimScroll({
-      width: "100%",
-      height: "100%",
-      size: '5px',
-      position: 'right',
-      color: '#555',
-      railColor: '#555',
-      railOpacity: 0.4,
-      railVisible: false,
-      wheelStep: 10
-    });
+  if ($(".sidebar-inner")[0]) {
+    var SMInit = function() {
+      $(".sidebar-inner").slimScroll({
+        width: "100%",
+        height: "100%",
+        size: '5px',
+        position: 'right',
+        color: '#555',
+        railColor: '#555',
+        railOpacity: 0.4,
+        railVisible: false,
+        wheelStep: 10
+      });
 
-    // Scroll to active item position
-    var _actItem = $(".sidebar-inner .side-menu li a.active").last();
-    var _actItemPosY = _actItem.offset().top;
-    $(".sidebar-inner").slimScroll({
-      scrollTo: _actItemPosY - $(".topheader").height() - 100
-    });
-  };
-  SMInit();
-  var SMDestroy = function() {
-    $(".sidebar-inner").slimScroll({
-      destroy: true
-    }).removeAttr('style');;
-  };
+      // Scroll to active item position
+      var _actItem = $(".sidebar-inner .side-menu li a.active").last();
+      var _actItemPosY = _actItem.offset().top;
+      $(".sidebar-inner").slimScroll({
+        scrollTo: _actItemPosY - $(".topheader").height() - 100
+      });
+    };
+    SMInit();
+    var SMDestroy = function() {
+      $(".sidebar-inner").slimScroll({
+        destroy: true
+      }).removeAttr('style');;
+    };
+  }
   // Sidebar slimscroll end
 
   //Small sidebar sub-menu toggle begin
@@ -260,12 +262,6 @@ $(function() {
     $(".wysihtml5").wysihtml5();
   }
   // Initialze Bootstrap WYSIWYG5 Editors end
-
-  // Initialze Summernote begin
-  if ($(".summernote-demo").length > 0) {
-    $(".summernote-demo").summernote();
-  }
-  // Initialze Summernote end
 
   // Notific8 Test begin
   if ($('#notific8Test').length > 0) {

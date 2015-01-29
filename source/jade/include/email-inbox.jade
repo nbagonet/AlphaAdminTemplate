@@ -1,0 +1,75 @@
+//- Email - Inbox
+
+
+//- include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+  div.mail-container
+    div.row
+      div.col-sm-3.col-md-2
+        //Mail Sidebar
+        include ./module/email-sidebar
+
+      div.col-sm-9.col-md-10
+
+        //Control bar
+        div#mail-box-control-bar.mail-control-head.clearfix.mbottom20
+
+          //Select
+          div.btn-group(data-hover="tooltip" data-placement="bottom" data-original-title="select")
+            button.btn.btn-default(type="button")
+              input.icheck(type="checkbox")
+            +buttons('btn-default', '', '', 'caret', 'true')
+            +dropdown-menu("", "")
+              +dropdown-menu-item-normal('', '#', 'All')
+              +dropdown-menu-item-normal('', '#', 'None')
+              +dropdown-menu-item-normal('', '#', 'Read')
+              +dropdown-menu-item-normal('', '#', 'Unread')
+              +dropdown-menu-item-normal('', '#', 'Starred')
+              +dropdown-menu-item-normal('', '#', 'Unstarred')
+
+          //Refresh
+          +buttons("btn-default mleft5","","fa fa-refresh")(data-hover="tooltip" data-placement="bottom" data-original-title="Refresh")
+
+          //More
+          div.btn-group.mleft5
+            +buttons('btn-default', 'More', '', 'caret', 'true')
+            +dropdown-menu("", "")
+              +dropdown-menu-item-normal('', '#', 'Make all as read')
+
+          //Pagination
+          div.pull-right
+            span.text-muted.mright15
+              strong 1
+              |&nbsp;&nbsp;–&nbsp;&nbsp;
+              strong 50
+              |&nbsp;&nbsp;of&nbsp;&nbsp;
+              strong 277
+            div.btn-group
+              +buttons('btn-default', '', 'ti-angle-left')
+              +buttons('btn-default', '', 'ti-angle-right')
+
+        //Mail Box
+        div.mail-box
+          ul#mail-box-tab.nav.nav-tabs.responsive.nav-tabs-default(role="tablist")
+            li.active
+              a(href="#primary" role="tab" data-toggle="tab" title="Person-to-person conversations and messages that don't appear in other tabs.")
+                i.fa.fa-inbox.mright5
+                |Primary
+            li
+              a(href="#social" role="tab" data-toggle="tab" title="Messages from social networks, media-sharing sites, online dating services, and other social websites.")
+                i.fa.fa-users.mright5
+                |Social
+            li
+              a(href="#promotions" role="tab" data-toggle="tab" title="Deals, offers, and other marketing emails.")
+                i.fa.fa-tags.mright5
+                |Promotions
+          div.tab-content.responsive.hidden-xs.hidden-sm.hidden-md
+            div#primary.tab-pane.fade.in.active
+              include ./module/email-list
+            div#social.tab-pane.fade
+              include ./module/email-list
+            div#promotions.tab-pane.fade
+              include ./module/email-list

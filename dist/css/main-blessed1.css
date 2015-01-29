@@ -964,7 +964,6 @@ input[type="search"] {
 /* Page Content */
 .page-content {
   padding-bottom: 47px;
-  min-height: 100%;
 }
 .wrapper {
   padding: 15px;
@@ -2119,6 +2118,10 @@ hr.hr-white {
   width: 100%;
   height: 100%;
   vertical-align: middle;
+}
+/* Img Thumbnail */
+.img-thumbnail {
+  border-radius: 0;
 }
 /* Demo */
 .demo-other {
@@ -11028,7 +11031,4 @@ li.timeline-grey small {
 }
 .blog-post-body .blog-post-inner {
   margin-top: 15px;
-}
-.blog-post-body .blog-post-inner hr {
-  margin-top: 30px;
 }

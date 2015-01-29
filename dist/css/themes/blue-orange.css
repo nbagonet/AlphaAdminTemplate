@@ -453,8 +453,8 @@ li.sidebar-profile > .media a:hover {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   color: #ffffff;
-  border-color: #f2572d;
-  background-color: #f2572d;
+  border-color: #f26640;
+  background-color: #f26944;
 }
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
@@ -464,7 +464,7 @@ li.sidebar-profile > .media a:hover {
 .list-group-item.active > .badge,
 .list-group-item.active:hover > .badge,
 .list-group-item.active:focus > .badge {
-  color: #f2572d !important;
+  color: #f26944 !important;
 }
 /* Thumbnail */
 .thumbnail {

@@ -1,0 +1,55 @@
+//- Email - Sidebar
+
+include ../../common/variables
+include ../mixins
+
+
+div.mail-sidebar
+  div.mail-control-head.mbottom20
+    div.btn-group
+      +buttons('btn-default', 'Mail', '', 'caret', 'true')
+      +dropdown-menu("", "")
+        +dropdown-menu-item-normal('', '#', 'Mail')
+        +dropdown-menu-item-normal('', '#', 'Contacts')
+        +dropdown-menu-item-normal('', '#', 'Tasks')
+  div.mail-sidebar-mainbtn.mbottom20
+    +buttons("btn-red btn-block","COMPOSE","","","","2")(href="#{page_email_compose_mail.url}")
+  div.mail-sidebar-category
+    h5 FOLDERS
+    div.list-group
+      a.list-group-item.active(href="#")
+        i.fa.fa-inbox.mright5
+        |Inbox
+        span.badge.badge-red.pull-right 123
+      a.list-group-item(href="#")
+        i.fa.fa-star-o.mright5
+        |Important
+      a.list-group-item(href="#")
+        i.fa.fa-share-square-o.mright5
+        |Sent Mail
+      a.list-group-item(href="#")
+        i.fa.fa-clipboard.mright5
+        |Drafts
+      a.list-group-item(href="#")
+        i.fa.fa-envelope-o.mright5
+        |All Mail
+        span.badge.badge-green.pull-right 123
+      a.list-group-item(href="#")
+        i.fa.fa-trash-o.mright5
+        |Spam
+        span.badge.badge-grey.pull-right 123
+  div.mail-sidebar-category
+    h5 LABELS
+    div.list-group
+      a.list-group-item(href="#")
+        i.fa.fa-circle.text-red.mright5
+        |Home
+      a.list-group-item(href="#")
+        i.fa.fa-circle.text-yellow.mright5
+        |Work
+      a.list-group-item(href="#")
+        i.fa.fa-circle.text-blue.mright5
+        |Office
+      a.list-group-item(href="#")
+        i.fa.fa-circle.text-violet.mright5
+        |Family

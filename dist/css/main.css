@@ -1,5 +1,8 @@
-@import url('main-blessed1.css?z=1422431767602');
+@import url('main-blessed1.css?z=1422552276029');
 
+.blog-post-body .blog-post-inner hr {
+  margin-top: 30px;
+}
 .blog-post-body .blog-post-inner .blog-post-meta-entrance {
   padding: 7px;
   border: 1px solid transparent;

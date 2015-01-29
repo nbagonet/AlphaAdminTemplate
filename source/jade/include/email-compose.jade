@@ -1,0 +1,36 @@
+//- Email - Compose Mail
+
+
+//- include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+  div.mail-container
+    div.row
+      div.col-sm-3.col-md-2
+        //Mail Sidebar
+        include ./module/email-sidebar
+
+      div.col-sm-9.col-md-10
+
+        //Compose Mail
+        +panel("panel-white","")
+          form.p10(role="form")
+            div.form-group
+              input#compose-mail-to.form-control(type="email" name="to" placeholder="To:")
+            div.form-group
+              input#compose-mail-cc.form-control(type="email" name="cc" placeholder="Cc:")
+            div.form-group
+              input#compose-mail-bcc.form-control(type="email" name="bcc" placeholder="Bcc:")
+            div.form-group
+              input#compose-mail-subject.form-control(type="text" name="subject" placeholder="Subject:")
+            div.form-group
+              div#compose-mail-message
+            div.form-group
+              input#email-upload-single.btn-default.file-inputs(name="filebutton" type="file" data-filename-placement="inside")
+              div.progress.progress-center-text.progress-striped.active.mtop10: div.progress-bar.progress-bar-orange(role="progressbar" data-transitiongoal="60")
+            div.clearfix
+              +buttons("btn-success btn-lg mright10","Send","fa fa-paper-plane mright10")
+              +buttons("btn-grey btn-lg mright10","Save Draft","fa fa-floppy-o mright5")
+              +buttons("btn-danger btn-lg btn-outlined pull-right","Discard","fa fa-trash mright5")
