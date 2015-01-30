@@ -1,0 +1,140 @@
+//- Email - View Mail
+
+
+//- include ../common/variables
+include ./mixins
+
+
+div.col-lg-12
+  div.mail-container
+    div.row
+      div.col-sm-3.col-md-2
+        //Mail Sidebar
+        include ./module/email-sidebar
+
+      div.col-sm-9.col-md-10
+
+        //Control bar
+        div#mail-box-control-bar.mail-control-head.clearfix.mbottom20
+          +buttons("btn-default mright10","","fa fa-arrow-left","","","2")(href="#{page_email_inbox.url}" data-hover="tooltip" data-placement="bottom" data-original-title="Back to Inbox")
+          div.btn-group.mright10(role="group")
+            +buttons("btn-default","","fa fa-archive")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Archive")
+            +buttons("btn-default","","fa fa-exclamation-circle")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Report spam")
+            +buttons("btn-default","","fa fa-trash")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Delete")
+          div.btn-group.mright10(role="group")
+            +buttons('btn-default', '', 'fa fa-folder mright5', 'caret', 'true')(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Move to")
+            +dropdown-menu("", "", "Move to:")
+              +dropdown-menu-item-normal('', '#', 'Notes')
+              +dropdown-menu-item-normal('', '#', 'Social')
+              +dropdown-menu-item-normal('', '#', 'Promotions')
+              +dropdown-menu-item-normal('', '#', 'Updates')
+              +dropdown-menu-item-normal('', '#', 'Forums')
+              +dropdown-menu-item-normal('divider')
+              +dropdown-menu-item-normal('', '#', 'Spam')
+              +dropdown-menu-item-normal('', '#', 'Trash')
+              +dropdown-menu-item-normal('divider')
+              +dropdown-menu-item-normal('', '#', 'Create new')
+              +dropdown-menu-item-normal('', '#', 'Manage labels')
+          div.btn-group.mright10(role="group")
+            +buttons('btn-default', '', 'fa fa-tag mright5', 'caret', 'true')(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Labels")
+            +dropdown-menu("", "", "Label as:")
+              +dropdown-menu-item-normal('', '#', 'Updates')
+              +dropdown-menu-item-normal('', '#', 'Notes')
+              +dropdown-menu-item-normal('', '#', 'Social')
+              +dropdown-menu-item-normal('', '#', 'Promotions')
+              +dropdown-menu-item-normal('', '#', 'Forums')
+              +dropdown-menu-item-normal('divider')
+              +dropdown-menu-item-normal('', '#', 'Create new')
+              +dropdown-menu-item-normal('', '#', 'Manage labels')
+          div.btn-group.mright10
+            +buttons('btn-default', 'More', '', 'caret', 'true')
+            +dropdown-menu("", "")
+              +dropdown-menu-item-normal('', '#', 'Mark as unread')
+              +dropdown-menu-item-normal('', '#', 'Mark as important')
+              +dropdown-menu-item-normal('', '#', 'Add to tasks')
+              +dropdown-menu-item-normal('', '#', 'Add star')
+              +dropdown-menu-item-normal('', '#', 'Create event')
+              +dropdown-menu-item-normal('', '#', 'Filter messages link this')
+              +dropdown-menu-item-normal('', '#', 'Mute')
+
+          //Pagination
+          div.pull-right
+            span.text-muted.mright15
+              strong 6
+              |&nbsp;&nbsp;of&nbsp;&nbsp;
+              strong 4,047
+            div.btn-group
+              +buttons('btn-default', '', 'fa fa-chevron-left')
+              +buttons('btn-default', '', 'fa fa-chevron-right')
+
+        //View Mail
+        +panel("panel-white","")
+          div.pleft10.pright10
+            div.clearfix
+              h4.pull-left Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              div.btn-group.pull-right
+                +buttons("btn-default btn-xs","","fa fa-reply")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Reply")
+                +buttons("btn-default btn-xs","","fa fa-share")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Forward")
+                +buttons("btn-default btn-xs","","fa fa-trash")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Delete")
+                +buttons("btn-default btn-xs","","fa fa-print")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Print")
+            hr
+            div.clearfix
+              div.row
+                div.col-md-8
+                  div.media
+                    div.media-left
+                      img.img-circle(src="#{userhead[16]}" width="42")
+                    div.media-body
+                      p.no-m
+                        strong Kelli Steele
+                        |&nbsp;&lt;name@domain.com&gt;
+                      p.no-m
+                        |to me
+                        +buttons("btn-default btn-xs mleft5","","caret")(tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true" title="" data-content="<table class='small'><tbody><tr><th class='text-right pright10 text-nowrap'>from:</th><td><strong>Kelli Steele</strong><br>&nbsp;&lt;name@domain.com&gt;</td></tr><tr><th class='text-right pright10 text-nowrap'>reply-to:</th><td>name@domain.com</td></tr><tr><th class='text-right pright10 text-nowrap'>to:</th><td>my@domain.com</td></tr><tr><th class='text-right pright10 text-nowrap'>date:</th><td>Thu, Jan 29, 2015 at 3:32 AM</td></tr><tr><th class='text-right pright10 text-nowrap'>subject:</th><td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td></tr><tr><th class='text-right pright10 text-nowrap'>mailed-by:</th><td>email.domain.com</td></tr><tr><th class='text-right pright10 text-nowrap'>signed-by:</th><td>domain.com</td></tr></tbody></table>")
+                div.col-md-4
+                  div.text-right
+                    i.fa.fa-paperclip.mright10
+                    |Jan 29 (1 day ago)
+            hr
+            div.p10
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+              blockquote
+                p Grand jury to weigh case of NASCAR's Tony Stewart A grand jury will decide whether NASCAR driver Tony Stewart will be charged in the August death of a fellow driver at a sprint car race in upstate New York, a prosecutor said Tuesday. Ontario County
+                footer!= 'Someone famous in <cite title="Source Title">Source Title</cite>'
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            hr
+            div.p10
+              div.clearfix
+                div.pull-left
+                  strong 4 Attachments
+                div.pull-right
+                  +buttons("btn-default","","fa fa-cloud-download")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Download all attachments")
+              div.ptop10
+                div.row
+                  div.col-xs-12.col-sm-6.col-md-3
+                    div.thumbnail
+                      img(src="http://lorempixel.com/200/100/" width="100%" alt="" style="height:100px;")
+                      div.caption
+                        p IMG_001.JPG (123KB)
+                        +buttons("btn-default btn-block","","fa fa-download mright5")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Download")
+                  div.col-xs-12.col-sm-6.col-md-3
+                    div.thumbnail
+                      div.text-center(style="line-height:100px;")
+                        i.fa.fa-file-archive-o.fa-3x
+                      div.caption
+                        p demo.zip (1MB)
+                        +buttons("btn-default btn-block","","fa fa-download mright5")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Download")
+                  div.col-xs-12.col-sm-6.col-md-3
+                    div.thumbnail
+                      div.text-center(style="line-height:100px;")
+                        i.fa.fa-file-word-o.fa-3x
+                      div.caption
+                        p demo.docx (234KB)
+                        +buttons("btn-default btn-block","","fa fa-download mright5")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Download")
+                  div.col-xs-12.col-sm-6.col-md-3
+                    div.thumbnail
+                      div.text-center(style="line-height:100px;")
+                        i.fa.fa-file-excel-o.fa-3x
+                      div.caption
+                        p demo.xlsx (135KB)
+                        +buttons("btn-default btn-block","","fa fa-download mright5")(data-hover="tooltip" data-placement="bottom" data-container="body" data-original-title="Download")

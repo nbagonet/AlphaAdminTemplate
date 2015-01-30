@@ -31,13 +31,13 @@ div.col-lg-12
               +dropdown-menu-item-normal('', '#', 'Unstarred')
 
           //Refresh
-          +buttons("btn-default mleft5","","fa fa-refresh")(data-hover="tooltip" data-placement="bottom" data-original-title="Refresh")
+          +buttons("btn-default mleft10","","fa fa-refresh")(data-hover="tooltip" data-placement="bottom" data-original-title="Refresh")
 
           //More
-          div.btn-group.mleft5
+          div.btn-group.mleft10
             +buttons('btn-default', 'More', '', 'caret', 'true')
             +dropdown-menu("", "")
-              +dropdown-menu-item-normal('', '#', 'Make all as read')
+              +dropdown-menu-item-normal('', '#', 'Mark all as read')
 
           //Pagination
           div.pull-right
@@ -48,8 +48,8 @@ div.col-lg-12
               |&nbsp;&nbsp;of&nbsp;&nbsp;
               strong 277
             div.btn-group
-              +buttons('btn-default', '', 'ti-angle-left')
-              +buttons('btn-default', '', 'ti-angle-right')
+              +buttons('btn-default', '', 'fa fa-chevron-left')
+              +buttons('btn-default', '', 'fa fa-chevron-right')
 
         //Mail Box
         div.mail-box
