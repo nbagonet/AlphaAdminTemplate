@@ -1,0 +1,19 @@
+//- UI Elements - Widgets - Small Count Panel #4
+
+//- include ../../common/variables
+include ../mixins
+
+
+//Small Count Panel #4
+div.widget.panel.panel-white.no-b
+  div.panel-body.bgc-pink
+    div.pbottom10.clearfix
+      span.text-uppercase This is a title
+    div.clearfix(style="height:70px;")
+      div.pbottom5
+        span.h1(data-counter data-from="1" data-to="234567" data-speed="5000" data-refreshInterval="50")
+        span.h1.mleft5 GB
+      div.small
+        |This is description.
+    div.clearfix
+      div.progress.progress-sm.no-mb: div.progress-bar.progress-bar-green(role="progressbar" data-transitiongoal="36")

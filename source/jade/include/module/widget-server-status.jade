@@ -1,0 +1,43 @@
+//- UI Elements - Widgets - Server Status
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+//Server Status
+div.widget.panel.panel-info.no-b
+  div.panel-heading
+    i.ti-server.mright10
+    |Server Status
+  div.panel-body
+    div.row
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-cpu.easypie(data-percent="13" style="width:100px;height:100px;line-height:100px;") 13%
+        div.text-center.ptop10
+          i.ti-magnet.mright5
+          |CPU Usage
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-memory.easypie(data-percent="78" style="width:100px;height:100px;line-height:100px;") 78%
+        div.text-center.ptop10
+          i.ti-package.mright5
+          |Memory Usage
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-disk.easypie(data-percent="32" style="width:100px;height:100px;line-height:100px;") 32%
+        div.text-center.ptop10
+          i.ti-harddrives.mright5
+          |Disk Usage
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-bandwidth.easypie(data-percent="98" style="width:100px;height:100px;line-height:100px;") 98%
+        div.text-center.ptop10
+          i.ti-rss-alt.mright5
+          |Bandwidth Usage
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-database.easypie(data-percent="90" style="width:100px;height:100px;line-height:100px;") 90/100
+        div.text-center.ptop10
+          i.ti-server.mright5
+          |Database Usage
+      div.col-sm-6.col-md-4.text-center.ptop10.pbottom10
+        div#server-stu-email.easypie(data-percent="50" style="width:100px;height:100px;line-height:100px;") 25/50
+        div.text-center.ptop10
+          i.ti-envelope.mright5
+          |Email Account

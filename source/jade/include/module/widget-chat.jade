@@ -1,18 +1,18 @@
 //- UI Elements - Widgets - Chat
 
-include ../../common/variables
+//- include ../../common/variables
 include ../mixins
 
 
 //Chat
 div.widget.panel.panel-white.no-b
   div.panel-heading
-    i.fa.fa-comment.mright5
+    i.fa.fa-comments.mright5
     |Chat
   div.panel-body
-    div.pright10(data-scroll='slimscroll' data-scroll-size='100%|1000')
+    div.pright10(data-scroll='slimscroll' data-scroll-size='100%|250')
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[16]}" alt="Michael Ma")
         div.widget-chat-item-label
           +alerts("alert-success p10", "false")
@@ -24,7 +24,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet consectetuer adipiscing elit.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-info", "false")
@@ -36,7 +36,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[16]}" alt="Michael Ma")
         div.widget-chat-item-label
           +alerts("alert-warning", "false")
@@ -48,7 +48,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet consectetuer adipiscing elit venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-danger", "false")
@@ -60,7 +60,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[16]}" alt="Michael Ma")
         div.widget-chat-item-label
           +alerts("alert-white p10", "false")
@@ -72,7 +72,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet consectetuer adipiscing elit.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-red", "false")
@@ -84,7 +84,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[16]}" alt="Michael Ma")
         div.widget-chat-item-label
           +alerts("alert-orange", "false")
@@ -96,7 +96,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet consectetuer adipiscing elit venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-yellow", "false")
@@ -108,7 +108,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-green", "false")
@@ -120,7 +120,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-black", "false")
@@ -132,7 +132,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-blue", "false")
@@ -144,7 +144,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-violet", "false")
@@ -156,7 +156,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-left(href="#")
+        a.pull-left(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-pink", "false")
@@ -168,7 +168,7 @@ div.widget.panel.panel-white.no-b
             p.small
               |Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
       div.widget-chat-item.clearfix
-        a.pull-right(href="#")
+        a.pull-right(href="#{page_pages_profile.url}")
           img.img-circle.avatar.avatar-m(src="#{userhead[17]}" alt="Ryan Hsu")
         div.widget-chat-item-label
           +alerts("alert-grey", "false")

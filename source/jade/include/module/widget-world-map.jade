@@ -1,0 +1,42 @@
+//- UI Elements - Widgets - World Map - Traffic sources
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+//World Map - Traffic sources
+div.widget.panel.panel-danger.no-b
+  div.panel-heading Traffic sources
+  div.panel-body
+    div.row
+
+      //- Map
+      div.col-md-6
+        div#dashboard-map(style="height:560px;")
+
+      //- Table
+      div.col-md-6
+        table.table.table-striped.table-hover.no-mb
+          thead
+            tr
+              th(colspan="2")
+                strong Country
+              th
+                strong Part
+              th
+                strong Dinamic
+          tbody
+            - for(var i=1;i<=10;i++)
+              tr
+                td(width="1%")
+                  span.badge.badge-grey #{i}
+                td
+                  h5.no-m United States
+                  small.mright5
+                    i.fa.fa-clock-o.mright5
+                    |Last Update
+                  span.badge.badge-success 02:37
+                td(width="1%")
+                  span.traffic-pie 1,4,2,1,3
+                td(width="1%")
+                  span.traffic-line 3,5,7,4,5,6,8,10,8,5,2,5,8,3,6,7,3,2,1,3,7,4,2,7,8,10

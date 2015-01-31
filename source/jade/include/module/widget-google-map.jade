@@ -1,0 +1,16 @@
+//- UI Elements - Widgets - Google Map
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+script(src="http://maps.google.com/maps/api/js?sensor=true")
+script(src="./vendor/gmaps/gmaps.js")
+
+//Google Map
+div.widget.panel.panel-violet.no-b
+  div.panel-heading
+    |Google Map
+    small.text-grey.mleft10 Geolocation
+  div.panel-body
+    div#google_map_dashboard(style="height:300px;")

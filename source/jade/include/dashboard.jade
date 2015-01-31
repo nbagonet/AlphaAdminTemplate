@@ -1,0 +1,55 @@
+//- Dashboard
+
+
+//- include ../common/variables
+//- include ./mixins
+
+
+div.col-lg-12
+
+  //Count Widgets
+  div.row
+
+    div.col-md-3.col-sm-6.col-xs-12
+      include ./module/widget-count-small-1
+    div.col-md-3.col-sm-6.col-xs-12
+      include ./module/widget-count-small-2
+    div.col-md-3.col-sm-6.col-xs-12
+      include ./module/widget-count-small-3
+    div.col-md-3.col-sm-6.col-xs-12
+      include ./module/widget-count-small-4
+
+  //FullWidth Chart Widget
+  div.row
+    div.col-lg-12
+      include ./module/widget-chart-full-1
+
+  //Map
+  div.row
+    div.col-lg-12
+      include ./module/widget-world-map
+
+  div.row
+
+    div.col-md-8
+      //Calendar
+      include ./module/widget-calendar-1
+
+      //Server Status
+      include ./module/widget-server-status
+
+      //Timeline
+      include ./module/pages-timeline-twocol
+
+    div.col-md-4
+      //Weather Card
+      include ./module/widget-weather-card
+
+      //Profile Card #2
+      include ./module/widget-profile-card-2
+
+      //Chat
+      include ./module/widget-chat
+
+      //Google Map
+      include ./module/widget-google-map

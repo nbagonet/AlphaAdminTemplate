@@ -1,0 +1,24 @@
+//- UI Elements - Widgets - Small Count Panel #1
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+//Small Count Panel #1
+div.widget.panel.panel-white.no-b
+  div.panel-body.bgc-orange
+    div.pbottom10.clearfix
+      span.text-uppercase This is a title
+      span.pull-right
+        a(href="javascript:void(0)")
+          i.ti-reload
+    div.clearfix(style="height:70px;")
+      div.pull-left
+        div.pbottom5
+          span.h1 $
+          span.h1(data-counter data-from="123" data-to="987" data-speed="5000" data-refreshInterval="50")
+        div.small This is description.
+      div.pull-right
+        i.ti-shopping-cart-full.fa-4x
+    div.clearfix
+      div.progress.progress-sm.no-mb: div.progress-bar.progress-bar-warning(role="progressbar" data-transitiongoal="60")

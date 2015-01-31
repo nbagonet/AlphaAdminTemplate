@@ -1,0 +1,23 @@
+//- UI Elements - Widgets - Small Count Panel #3
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+//Small Count Panel #3
+div.widget.panel.panel-white.no-b
+  div.panel-body.bgc-warning
+    div.pbottom10.clearfix
+      span.text-uppercase This is a title
+    div.clearfix(style="height:85px;")
+      div.pull-left
+        div.pbottom5
+          span.h1(data-counter data-from="1" data-to="123456" data-speed="5000" data-refreshInterval="50")
+        div.small
+          |This is description.
+          br
+          a(href="#")
+            |This is a link
+            i.ti-angle-double-right.mleft5
+      div.pull-right
+        i.ti-user.fa-4x

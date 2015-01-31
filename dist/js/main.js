@@ -441,4 +441,11 @@ $(function() {
   }
   // Error Page end
 
+  // Counter begin
+  $("*[data-counter]").each(function(index, element) {
+    var _this = $(this);
+    _this.countTo();
+  });
+  // Counter end
+
 });

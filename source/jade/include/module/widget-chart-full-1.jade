@@ -1,0 +1,61 @@
+//- UI Elements - Widgets - FullWidth Chart Widget #1
+
+//- include ../../common/variables
+//- include ../mixins
+
+
+//FullWidth Chart Widget #1
+div.widget.panel.panel-white.no-b
+  div.panel-heading This is a title
+  div.panel-body
+    div#demo-full-width-charts-1.p10.mbottom10(style="height:250px;")
+  div.panel-footer.bgc-white.no-b
+    div#choices.row.text-center
+      div.col-md-2.col-sm-4
+        h3
+          |UK
+          small.text-green.mleft10
+            i.fa.fa-arrow-up
+            |12%
+        div.pbottom10
+           input.switch(type="checkbox" name="uk" id="iduk" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
+      div.col-md-2.col-sm-4
+        h3
+          |Japan
+          small.text-green.mleft10
+            i.fa.fa-arrow-up
+            |1%
+        div.pbottom10
+           input.switch(type="checkbox" name="japan" id="idjapan" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
+      div.col-md-2.col-sm-4
+        h3
+          |USA
+          small.text-red.mleft10
+            i.fa.fa-arrow-down
+            |37%
+        div.pbottom10
+           input.switch(type="checkbox" name="usa" id="idusa" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
+      div.col-md-2.col-sm-4
+        h3
+          |Russia
+          small.text-red.mleft10
+            i.fa.fa-arrow-down
+            |76%
+        div.pbottom10
+           input.switch(type="checkbox" name="russia" id="idrussia" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
+      div.col-md-2.col-sm-4
+        h3
+          |China
+          small.text-green.mleft10
+            i.fa.fa-arrow-up
+            |17%
+        div.pbottom10
+           input.switch(type="checkbox" name="china" id="idchina" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
+      div.col-md-2.col-sm-4
+        h3
+          |Others
+          small.text-red.mleft10
+            i.fa.fa-arrow-down
+            |7%
+        div.pbottom10
+           input.switch(type="checkbox" name="others" id="idothers" checked data-on-color="green" data-wrapper-class="container" data-size="mini")
