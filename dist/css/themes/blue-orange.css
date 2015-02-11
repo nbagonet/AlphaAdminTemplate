@@ -208,7 +208,7 @@ li.sidebar-profile > .media a {
   color: #94e3ff;
 }
 li.sidebar-profile > .media a:hover {
-  color: #fef1ed;
+  color: #fbe9d9;
   background-color: transparent;
 }
 @media (min-width: 992px) {
@@ -294,7 +294,7 @@ li.sidebar-profile > .media a:hover {
 }
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus {
-  color: #f2572d;
+  color: #e67e22;
   background-color: #eeeeee;
 }
 .nav-pills > li.active > a,
@@ -302,13 +302,13 @@ li.sidebar-profile > .media a:hover {
 .nav-pills > li.active > a:active,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #f2572d;
+  background-color: #e67e22;
 }
 .nav-pills > li.active > a > .badge,
 .nav-pills > li.active > a:hover > .badge,
 .nav-pills > li.active > a:active > .badge,
 .nav-pills > li.active > a:focus > .badge {
-  color: #f2572d;
+  color: #e67e22;
   background-color: #ffffff;
 }
 /* Pagination */
@@ -332,7 +332,7 @@ li.sidebar-profile > .media a:hover {
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: #f2572d;
+  color: #e67e22;
   border-color: #eeeeee;
   background-color: #ffffff;
 }
@@ -340,7 +340,7 @@ li.sidebar-profile > .media a:hover {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #f2572d;
+  color: #e67e22;
   border-color: #eeeeee;
   background-color: #fbfbfb;
 }
@@ -351,8 +351,8 @@ li.sidebar-profile > .media a:hover {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   color: #ffffff;
-  border-color: #f2572d;
-  background-color: #f2572d;
+  border-color: #e67e22;
+  background-color: #e67e22;
 }
 .pagination > .disabled > a,
 .pagination > .disabled > span,
@@ -366,7 +366,7 @@ li.sidebar-profile > .media a:hover {
 }
 .pager > li > a,
 .pager > li > span {
-  color: #f2572d;
+  color: #e67e22;
   border-color: #eeeeee;
   background-color: #ffffff;
 }
@@ -374,7 +374,7 @@ li.sidebar-profile > .media a:hover {
 .pager > li > span:hover,
 .pager > li > a:focus,
 .pager > li > span:focus {
-  color: #f2572d;
+  color: #e67e22;
   border-color: #eeeeee;
   background-color: #fbfbfb;
 }
@@ -385,8 +385,8 @@ li.sidebar-profile > .media a:hover {
 .pager > .active > a:focus,
 .pager > .active > span:focus {
   color: #ffffff;
-  border-color: #f2572d;
-  background-color: #f2572d;
+  border-color: #e67e22;
+  background-color: #e67e22;
 }
 .pager > .disabled > a,
 .pager > .disabled > span,
@@ -453,8 +453,8 @@ li.sidebar-profile > .media a:hover {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   color: #ffffff;
-  border-color: #f26640;
-  background-color: #f26944;
+  border-color: #e78936;
+  background-color: #e78b3a;
 }
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
@@ -464,7 +464,7 @@ li.sidebar-profile > .media a:hover {
 .list-group-item.active > .badge,
 .list-group-item.active:hover > .badge,
 .list-group-item.active:focus > .badge {
-  color: #f26944 !important;
+  color: #e78b3a !important;
 }
 /* Thumbnail */
 .thumbnail {
@@ -533,7 +533,7 @@ a.thumbnail:focus {
 .datepicker table tr td.today.disabled,
 .datepicker table tr td.today.disabled:hover {
   color: #ffffff;
-  background: #f8a48d !important;
+  background: #f0b37e !important;
 }
 .datepicker table tr td.today.active:hover {
   color: #ffffff;
@@ -550,7 +550,7 @@ a.thumbnail:focus {
 .datepicker table tr td.range.today.disabled,
 .datepicker table tr td.range.today.disabled:hover {
   border-radius: 0;
-  background: #f9b7a5;
+  background: #f3c195;
 }
 .datepicker table tr td.selected,
 .datepicker table tr td.selected:hover,
@@ -690,8 +690,8 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
 .datepicker table tr td.active.disabled,
 .datepicker table tr td.active.disabled:hover {
   color: #ffffff !important;
-  background-color: #f2572d !important;
-  border-color: #ae2e0b !important;
+  background-color: #e67e22 !important;
+  border-color: #924d10 !important;
 }
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active:hover:hover,
@@ -718,8 +718,8 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
 .open > .dropdown-toggle.datepicker table tr td.active.disabled,
 .open > .dropdown-toggle.datepicker table tr td.active.disabled:hover {
   color: #ffffff !important;
-  background-color: #de3a0e !important;
-  border-color: #751f07 !important;
+  background-color: #bf6516 !important;
+  border-color: #5b300a !important;
 }
 .datepicker table tr td.active:active,
 .datepicker table tr td.active:hover:active,
@@ -807,15 +807,15 @@ fieldset[disabled] .datepicker table tr td.active.active,
 fieldset[disabled] .datepicker table tr td.active:hover.active,
 fieldset[disabled] .datepicker table tr td.active.disabled.active,
 fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
-  background-color: #f2572d !important;
-  border-color: #ae2e0b !important;
+  background-color: #e67e22 !important;
+  border-color: #924d10 !important;
   cursor: not-allowed;
 }
 .datepicker table tr td.active .badge,
 .datepicker table tr td.active:hover .badge,
 .datepicker table tr td.active.disabled .badge,
 .datepicker table tr td.active.disabled:hover .badge {
-  color: #f2572d !important;
+  color: #e67e22 !important;
   background-color: #ffffff !important;
 }
 .datepicker table tr td span {
@@ -833,8 +833,8 @@ fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
 .datepicker table tr td span.active.disabled,
 .datepicker table tr td span.active.disabled:hover {
   color: #ffffff !important;
-  background-color: #f2572d !important;
-  border-color: #ae2e0b !important;
+  background-color: #e67e22 !important;
+  border-color: #924d10 !important;
 }
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active:hover:hover,
@@ -861,8 +861,8 @@ fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled,
 .open > .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
   color: #ffffff !important;
-  background-color: #de3a0e !important;
-  border-color: #751f07 !important;
+  background-color: #bf6516 !important;
+  border-color: #5b300a !important;
 }
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
@@ -950,15 +950,15 @@ fieldset[disabled] .datepicker table tr td span.active.active,
 fieldset[disabled] .datepicker table tr td span.active:hover.active,
 fieldset[disabled] .datepicker table tr td span.active.disabled.active,
 fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
-  background-color: #f2572d !important;
-  border-color: #ae2e0b !important;
+  background-color: #e67e22 !important;
+  border-color: #924d10 !important;
   cursor: not-allowed;
 }
 .datepicker table tr td span.active .badge,
 .datepicker table tr td span.active:hover .badge,
 .datepicker table tr td span.active.disabled .badge,
 .datepicker table tr td span.active.disabled:hover .badge {
-  color: #f2572d !important;
+  color: #e67e22 !important;
   background-color: #ffffff !important;
 }
 .datepicker table tr td span.old,
@@ -974,12 +974,12 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 /* Bootstrap Datetime Picker */
 .bootstrap-datetimepicker-widget a[data-action] {
-  color: #f2572d;
+  color: #e67e22;
 }
 .bootstrap-datetimepicker-widget button[data-action] {
   color: #ffffff !important;
-  background-color: #f8a48d !important;
-  border-color: #f57d5d !important;
+  background-color: #f0b37e !important;
+  border-color: #eb9950 !important;
 }
 .bootstrap-datetimepicker-widget button[data-action]:hover,
 .bootstrap-datetimepicker-widget button[data-action]:focus,
@@ -988,8 +988,8 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 .bootstrap-datetimepicker-widget button[data-action].active,
 .open > .dropdown-toggle.bootstrap-datetimepicker-widget button[data-action] {
   color: #ffffff !important;
-  background-color: #f57d5d !important;
-  border-color: #f14f23 !important;
+  background-color: #eb9950 !important;
+  border-color: #e4791a !important;
 }
 .bootstrap-datetimepicker-widget button[data-action]:active,
 .bootstrap-datetimepicker-widget button[data-action].active,
@@ -1014,22 +1014,22 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action]:active,
 .bootstrap-datetimepicker-widget button[data-action].disabled.active,
 .bootstrap-datetimepicker-widget button[data-action][disabled].active,
 fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
-  background-color: #f8a48d !important;
-  border-color: #f57d5d !important;
+  background-color: #f0b37e !important;
+  border-color: #eb9950 !important;
   cursor: not-allowed;
 }
 .bootstrap-datetimepicker-widget button[data-action] .badge {
-  color: #f8a48d !important;
+  color: #f0b37e !important;
   background-color: #ffffff !important;
 }
 .bootstrap-datetimepicker-widget td.today:before {
-  border-bottom-color: #f2572d;
+  border-bottom-color: #e67e22;
 }
 .bootstrap-datetimepicker-widget .accordion-toggle a.btn {
-  color: #f2572d;
+  color: #e67e22;
 }
 .bootstrap-datetimepicker-widget .accordion-toggle a.btn:hover {
-  color: #de3a0e;
+  color: #bf6516;
 }
 /* Date Range Pickers */
 .daterangepicker {
@@ -1041,7 +1041,7 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
 }
 .daterangepicker td.in-range {
   border-radius: 0;
-  background: #fef1ed;
+  background: #fbe9d9;
 }
 .daterangepicker td.start-date {
   border-radius: 0 0 0 0;
@@ -1054,8 +1054,8 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
 }
 .daterangepicker td.active,
 .daterangepicker td.active:hover {
-  border-color: #de3a0e;
-  background-color: #f2572d;
+  border-color: #bf6516;
+  background-color: #e67e22;
 }
 .daterangepicker .calendar th,
 .daterangepicker .calendar td {
@@ -1074,8 +1074,8 @@ fieldset[disabled] .bootstrap-datetimepicker-widget button[data-action].active {
 .daterangepicker .ranges li.active,
 .daterangepicker .ranges li:hover {
   color: #fff;
-  border: 1px solid #f2572d;
-  background: #f2572d;
+  border: 1px solid #e67e22;
+  background: #e67e22;
 }
 .daterangepicker .ranges .range_inputs > div:nth-child(2) {
   padding-left: 5px;
@@ -1224,7 +1224,7 @@ label,
   border-radius: 50%;
   border-width: 5px;
   border-color: #ffffff;
-  background-color: #f2572d;
+  background-color: #e67e22;
   -webkit-transition: background ease-in-out 0.15s;
   transition: background ease-in-out 0.15s;
 }
@@ -1232,7 +1232,7 @@ label,
 .ui-slider .ui-slider-handle:active,
 .ui-slider .ui-slider-handle:focus {
   border-color: #ffffff;
-  background-color: #f8a48d;
+  background-color: #f0b37e;
   -webkit-transition: background ease-in-out 0.15s;
   transition: background ease-in-out 0.15s;
 }
@@ -1253,11 +1253,11 @@ label,
 .ui-slider .ui-slider-range {
   border-radius: 0;
   width: 9px;
-  background-color: #f2572d;
+  background-color: #e67e22;
 }
 /* NoUI Sliders */
 .noUi-connect {
-  background-color: #f2572d;
+  background-color: #e67e22;
 }
 .noui-tooltip {
   border: 1px solid #d9d9d9;
@@ -1266,7 +1266,7 @@ label,
 }
 /* Sortable */
 .sortable .placeholder:before {
-  border-left-color: #f2572d;
+  border-left-color: #e67e22;
 }
 /* Tab */
 .nav-tabs > li > a {
@@ -1311,21 +1311,21 @@ label,
 .jstree-default .jstree-hovered {
   color: #ffffff;
   border-radius: 0;
-  background: #f69175;
+  background: #eea667;
 }
 .jstree-default .jstree-clicked {
   color: #ffffff;
   border-radius: 0;
-  background: #f2572d;
+  background: #e67e22;
 }
 .jstree-default .jstree-disabled {
   color: #d0d0d0;
 }
 .jstree-default .jstree-wholerow-clicked {
-  background: #f2572d;
+  background: #e67e22;
 }
 .jstree-default .jstree-wholerow-hovered {
-  background: #f69175;
+  background: #eea667;
 }
 .jstree-default.jstree-checkbox-no-clicked .jstree-clicked {
   color: #777777;
@@ -1335,7 +1335,7 @@ label,
 .jstree-default.jstree-checkbox-no-clicked .jstree-clicked.jstree-hovered {
   color: #ffffff;
   border-radius: 0;
-  background: #f69175;
+  background: #eea667;
 }
 .jstree-anchor {
   color: #777777;
@@ -1378,7 +1378,7 @@ label,
 .blog-post-head h3 a:hover,
 .blog-post-head h3 a:active,
 .blog-post-head h3 a:focus {
-  color: #f2572d;
+  color: #e67e22;
 }
 .blog-post-meta li > div {
   color: #777777;
@@ -1387,7 +1387,7 @@ label,
   background-color: #f6f6f6;
 }
 .blog-post-meta li > div > a {
-  color: #f2572d;
+  color: #e67e22;
 }
 .blog-post-meta li > div > a:hover,
 .blog-post-meta li > div > a:active,
@@ -1396,19 +1396,19 @@ label,
 }
 .blog-post-body .blog-post-link a {
   color: #ffffff;
-  background-color: #f26640;
+  background-color: #e78936;
 }
 .blog-post-body .blog-post-link a:hover,
 .blog-post-body .blog-post-link a:active,
 .blog-post-body .blog-post-link a:focus {
   color: #ffffff;
-  background-color: #f16d49;
+  background-color: #e78e40;
 }
 .blog-post-body .blog-post-inner .blog-post-meta-entrance {
   color: #ffffff;
-  border-color: #f2572d;
+  border-color: #e67e22;
   border-radius: 0;
-  background-color: #f2572d;
+  background-color: #e67e22;
 }
 .blog-post-body .blog-post-inner .blog-post-meta-entrance:hover,
 .blog-post-body .blog-post-inner .blog-post-meta-entrance:active,
@@ -1431,7 +1431,7 @@ label,
 .blog-widget .blog-widget-tags a:active,
 .blog-widget li a:focus,
 .blog-widget .blog-widget-tags a:focus {
-  color: #f2572d;
+  color: #e67e22;
 }
 .blog-widget .blog-widget-tags > a {
   color: #949494;
@@ -1442,8 +1442,8 @@ label,
 .blog-widget .blog-widget-tags > a:active,
 .blog-widget .blog-widget-tags > a:focus {
   color: #ffffff;
-  border-color: #f26640;
-  background-color: #f26640;
+  border-color: #e78936;
+  background-color: #e78936;
 }
 /* Blog - Comments */
 .blog-comments .media .media-body .media-heading > span {
@@ -1530,7 +1530,7 @@ label,
 .signup-box .lock-screen-sub-title a:hover,
 .forgot-password-box .lock-screen-sub-title a:hover,
 .lock-screen-box .lock-screen-sub-title a:hover {
-  color: #f2572d;
+  color: #e67e22;
 }
 .signin-box .signin-options,
 .signup-box .signin-options,
@@ -1560,7 +1560,7 @@ label,
 .signup-box .signup-options a:hover,
 .forgot-password-box .signup-options a:hover,
 .lock-screen-box .signup-options a:hover {
-  color: #f2572d;
+  color: #e67e22;
 }
 .lock-screen-box .lock-screen-logo img {
   border-color: rgba(255, 255, 255, 0.95);
@@ -1602,10 +1602,10 @@ label,
 }
 .pricing-tables .pricing-body .pricing-cost dt > h5,
 .pricing-tables .pricing-body .pricing-cost dt > h5 > small {
-  color: #f2572d;
+  color: #e67e22;
 }
 .pricing-tables .pricing-body .pricing-cost dd > strong {
-  color: #f2572d;
+  color: #e67e22;
 }
 .pricing-tables .pricing-body .pricing-info > ul > li abbr:hover,
 .pricing-tables .pricing-body .pricing-info > ul > li abbr:active,
