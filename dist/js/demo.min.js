@@ -4398,17 +4398,17 @@ $(function() {
 
   // Advanced
   if ($("#daterange-pickers-advanced")[0]) {
-    $("#daterange-pickers-advanced > span").html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+    $("#daterange-pickers-advanced > span").html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
     $('#daterange-pickers-advanced').daterangepicker({
         ranges: {
           'Today': [moment(), moment()],
-          'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-          'Last 7 Days': [moment().subtract('days', 6), moment()],
-          'Last 30 Days': [moment().subtract('days', 29), moment()],
+          'Yesterday': [moment().subtract(1,'days'), moment().subtract('days', 1)],
+          'Last 7 Days': [moment().subtract(6,'days'), moment()],
+          'Last 30 Days': [moment().subtract(29,'days'), moment()],
           'This Month': [moment().startOf('month'), moment().endOf('month')],
-          'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+          'Last Month': [moment().subtract(1,'month').startOf('month'), moment().subtract(1,'month').endOf('month')]
         },
-        startDate: moment().subtract('days', 29),
+        startDate: moment().subtract(29,'days'),
         endDate: moment(),
         opens: 'left'
       },
@@ -5141,21 +5141,21 @@ $(function() {
  * Jvector Map demo begin
  */
 //Set Map Size
-function setJvectorMapSize() {
-  if (($("#sidebar").height() + $(".topheader").height()) > $(window).height()) {
-    $("#world-map-gdp").css({
-      "height": $("#sidebar").height()
-    });
-  } else {
-    $("#world-map-gdp").css({
-      "height": $(window).height() - $(".topheader").height() - $(".layouts-title-breadcrumb").height()
-    });
-  }
-}
+// function setJvectorMapSize() {
+//   if (($("#sidebar").height() + $(".topheader").height()) > $(window).height()) {
+//     $("#world-map-gdp").css({
+//       "height": $("#sidebar").height()
+//     });
+//   } else {
+//     $("#world-map-gdp").css({
+//       "height": $(window).height() - $(".topheader").height() - $(".layouts-title-breadcrumb").height()
+//     });
+//   }
+// }
 $(function() {
 
   if ($("#world-map-gdp")[0]) {
-    $.getScript('./vendor/jvectormap/jquery-jvectormap-2.0.1.min.js', function(data, textStatus, jqxhr) {
+    // $.getScript('./vendor/jvectormap/jquery-jvectormap-2.0.1.min.js', function(data, textStatus, jqxhr) {
       $.getScript('./vendor/jvectormap/jquery-jvectormap-world-mill-en.js', function(data, textStatus, jqxhr) {
 
         var gdpData = {
@@ -5346,15 +5346,16 @@ $(function() {
 
         $("#world-map-gdp").css({
           "margin-top": -20,
-          "margin-bottom": -70,
-          "width": "100%"
+          // "margin-bottom": -70,
+          "width": "100%",
+          "height": $(window).height() - $(".topheader").height() - $(".layouts-title-breadcrumb").height()
         });
 
-        setJvectorMapSize();
+        // setJvectorMapSize();
 
-        $(window).resize(function() {
-          setJvectorMapSize();
-        });
+        // $(window).resize(function() {
+        //   setJvectorMapSize();
+        // });
 
         $('#world-map-gdp').vectorMap({
           map: 'world_mill_en',
@@ -5371,7 +5372,7 @@ $(function() {
         });
 
       });
-    });
+    // });
   }
 
 });
@@ -10463,130 +10464,134 @@ $(function() {
  */
 $(function() {
 
-  /* initialize the external events
-        -----------------------------------------------------------------*/
-  var eventDrag = function(el) {
-    // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-    // it doesn't need to have a start or end
-    var eventObject = {
-      title: $.trim(el.text()), // use the element's text as the event titleTemplate
-      stick: true, // maintain when user navigates (see docs on the renderEvent method)
-      color: el.css("background-color")
-    };
+  if($('#calendar')[0]){
 
-    // store the Event Object in the DOM element so we can get to it later
-    el.data('event', eventObject);
+    /* initialize the external events
+          -----------------------------------------------------------------*/
+    var eventDrag = function(el) {
+      // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+      // it doesn't need to have a start or end
+      var eventObject = {
+        title: $.trim(el.text()), // use the element's text as the event titleTemplate
+        stick: true, // maintain when user navigates (see docs on the renderEvent method)
+        color: el.css("background-color")
+      };
 
-    // make the event draggable using jQuery UI
-    el.draggable({
-      zIndex: 999,
-      revert: true, // will cause the event to go back to its
-      revertDuration: 0 //  original position after the drag
+      // store the Event Object in the DOM element so we can get to it later
+      el.data('event', eventObject);
+
+      // make the event draggable using jQuery UI
+      el.draggable({
+        zIndex: 999,
+        revert: true, // will cause the event to go back to its
+        revertDuration: 0 //  original position after the drag
+      });
+    }
+    $('#external-events .fc-event-btn').each(function() {
+      eventDrag($(this));
     });
+
+    // Add New Event
+    var addEvent = function(name) {
+      name = name.length == 0 ? "Untitled Event" : name;
+      var html = $('<div class="fc-event-btn btn btn-xs btn-primary mright5 mbottom5"><i class="fa fa-thumb-tack mright5"></i>' + name + '</div>');
+      $('#event-box').append(html);
+      eventDrag(html);
+    };
+    $('#event-add').on('click', function() {
+      var name = $('#event-name').val();
+      addEvent(name);
+    });
+
+    /* initialize the calendar
+      -----------------------------------------------------------------*/
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'today prev,next',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      droppable: true, // this allows things to be dropped onto the calendar !!!
+      drop: function() {
+        // is the "remove after drop" checkbox checked?
+        if ($('#drop-remove').is(':checked')) {
+          // if so, remove the element from the "Draggable Events" list
+          $(this).remove();
+        }
+      },
+      events: [{
+        title: 'All Day Event',
+        start: '2015-01-01',
+        color: '#428bca',
+        textColor: '#fff'
+      }, {
+        title: 'Long Event',
+        start: '2015-01-12',
+        end: '2015-01-14',
+        color: '#5cb85c',
+        textColor: '#fff'
+      }, {
+        id: 999,
+        title: 'Repeating Event',
+        start: '2015-01-08T16:00:00',
+        color: '#5bc0de',
+        textColor: '#fff'
+      }, {
+        id: 999,
+        title: 'Repeating Event',
+        start: '2015-01-16T16:00:00',
+        color: '#f0ad4e',
+        textColor: '#fff'
+      }, {
+        title: 'Conference',
+        start: '2015-01-11',
+        end: '2014-01-13',
+        color: '#d9534f',
+        textColor: '#fff'
+      }, {
+        title: 'Meeting',
+        start: '2015-01-12T10:30:00',
+        end: '2015-01-12T12:30:00',
+        color: '#e31d18',
+        textColor: '#fff'
+      }, {
+        title: 'Lunch',
+        start: '2015-01-12T12:00:00',
+        color: '#f2572d',
+        textColor: '#fff'
+      }, {
+        title: 'Meeting',
+        start: '2015-01-12T14:30:00',
+        color: '#00947d',
+        textColor: '#fff'
+      }, {
+        title: 'Happy Hour',
+        start: '2015-01-12T17:30:00',
+        color: '#5c2862',
+        textColor: '#fff'
+      }, {
+        title: 'Dinner',
+        start: '2015-01-12T20:00:00',
+        color: '#f1c82d',
+        textColor: '#fff'
+      }, {
+        title: 'Birthday Party',
+        start: '2015-01-13T07:00:00',
+        color: '#fa639e',
+        textColor: '#fff'
+      }, {
+        title: 'Click for Google',
+        url: 'http://google.com/',
+        start: '2015-01-28',
+        color: '#4d4d4d',
+        textColor: '#fff'
+      }]
+    });
+
   }
-  $('#external-events .fc-event-btn').each(function() {
-    eventDrag($(this));
-  });
-
-  // Add New Event
-  var addEvent = function(name) {
-    name = name.length == 0 ? "Untitled Event" : name;
-    var html = $('<div class="fc-event-btn btn btn-xs btn-primary mright5 mbottom5"><i class="fa fa-thumb-tack mright5"></i>' + name + '</div>');
-    $('#event-box').append(html);
-    eventDrag(html);
-  };
-  $('#event-add').on('click', function() {
-    var name = $('#event-name').val();
-    addEvent(name);
-  });
-
-  /* initialize the calendar
-    -----------------------------------------------------------------*/
-
-  $('#calendar').fullCalendar({
-    header: {
-      left: 'today prev,next',
-      center: 'title',
-      right: 'month,basicWeek,basicDay'
-    },
-    editable: true,
-    eventLimit: true, // allow "more" link when too many events
-    droppable: true, // this allows things to be dropped onto the calendar !!!
-    drop: function() {
-      // is the "remove after drop" checkbox checked?
-      if ($('#drop-remove').is(':checked')) {
-        // if so, remove the element from the "Draggable Events" list
-        $(this).remove();
-      }
-    },
-    events: [{
-      title: 'All Day Event',
-      start: '2015-01-01',
-      color: '#428bca',
-      textColor: '#fff'
-    }, {
-      title: 'Long Event',
-      start: '2015-01-12',
-      end: '2015-01-14',
-      color: '#5cb85c',
-      textColor: '#fff'
-    }, {
-      id: 999,
-      title: 'Repeating Event',
-      start: '2015-01-08T16:00:00',
-      color: '#5bc0de',
-      textColor: '#fff'
-    }, {
-      id: 999,
-      title: 'Repeating Event',
-      start: '2015-01-16T16:00:00',
-      color: '#f0ad4e',
-      textColor: '#fff'
-    }, {
-      title: 'Conference',
-      start: '2015-01-11',
-      end: '2014-01-13',
-      color: '#d9534f',
-      textColor: '#fff'
-    }, {
-      title: 'Meeting',
-      start: '2015-01-12T10:30:00',
-      end: '2015-01-12T12:30:00',
-      color: '#e31d18',
-      textColor: '#fff'
-    }, {
-      title: 'Lunch',
-      start: '2015-01-12T12:00:00',
-      color: '#f2572d',
-      textColor: '#fff'
-    }, {
-      title: 'Meeting',
-      start: '2015-01-12T14:30:00',
-      color: '#00947d',
-      textColor: '#fff'
-    }, {
-      title: 'Happy Hour',
-      start: '2015-01-12T17:30:00',
-      color: '#5c2862',
-      textColor: '#fff'
-    }, {
-      title: 'Dinner',
-      start: '2015-01-12T20:00:00',
-      color: '#f1c82d',
-      textColor: '#fff'
-    }, {
-      title: 'Birthday Party',
-      start: '2015-01-13T07:00:00',
-      color: '#fa639e',
-      textColor: '#fff'
-    }, {
-      title: 'Click for Google',
-      url: 'http://google.com/',
-      start: '2015-01-28',
-      color: '#4d4d4d',
-      textColor: '#fff'
-    }]
-  });
 
 });
 /**

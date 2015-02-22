@@ -188,11 +188,13 @@ $(function() {
   //Initialize Scroll to top end
 
   //Initialize iCheck begin
-  $('input.icheck').iCheck({
-    checkboxClass: 'icheckbox_minimal-grey',
-    radioClass: 'iradio_minimal-grey',
-    increaseArea: '20%' // optional
-  });
+  if($('input.icheck')[0]){
+    $('input.icheck').iCheck({
+      checkboxClass: 'icheckbox_minimal-grey',
+      radioClass: 'iradio_minimal-grey',
+      increaseArea: '20%' // optional
+    });
+  }
   //Initialize iCheck end
 
   //Fix ".page-wrapper" height begin
@@ -252,7 +254,7 @@ $(function() {
   // Initialize Skycons end
 
   //BEGIN CKEDITOR
-  if (CKEDITOR) {
+  if (typeof(CKEDITOR)!="undefined") {
     CKEDITOR.disableAutoInline = true;
   }
   //END CKEDITOR
@@ -317,7 +319,9 @@ $(function() {
 
   // Bootstrap File Input begin
   // Must have "file-inputs" className.
-  $('.file-inputs').bootstrapFileInput();
+  if($('.file-inputs')[0]){
+    $('.file-inputs').bootstrapFileInput();
+  }
   // Bootstrap File Input end
 
   // jQuery Validation used on Bootstrap's form, include "success"&"error" begin

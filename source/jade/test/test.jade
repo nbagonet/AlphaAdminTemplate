@@ -1,0 +1,73 @@
+
+include var
+
+//- --------------------------------------------------
+//- Page Config
+- var page_language   = "en";
+- var page            = page_TEST;
+- var page_name       = page.name;
+- var page_url        = page.url;
+- var page_parent     = page.parent;
+- var body_class_name = page.bodyclass;
+//- --------------------------------------------------
+
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title #{page_name} - #{site_name}
+    meta(name="description", content=site_description)
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    //Place favicon.ico and apple-touch-icon(s) in the root directory
+    link(rel="apple-touch-icon", href="apple-touch-icon-precomposed.png")
+    link(rel="shortcut icon", href="favicon.ico")
+
+    //Core Vendor CSS
+    each url in css.core_vendor
+      link(rel="stylesheet" href=url)
+
+    //Vendor CSS
+    each url in page.css
+      link(rel="stylesheet" href=url)
+
+    //Core Styles
+    link(rel="stylesheet", href=css.core)
+
+    //Template Style
+    link(rel="stylesheet", id="curStyle", href=css.style[0])
+
+    //Modernizr
+    script(src=base_vendor+"modernizr.js")
+
+  body
+
+    //Load jQuery
+    <!--[if IE]>
+    script(src=js.jquery_1x_cdn)
+    script window.jQuery || document.write('<script src="#{js.jquery_1x}"><\/script>')
+    <![endif]-->
+    <!--[if !IE]>-->
+    script(src=js.jquery_2x_cdn)
+    script window.jQuery || document.write('<script src="#{js.jquery_2x}"><\/script>')
+    <!-- <![endif]-->
+
+    //Load Core Vendor
+    each url in js.core_vendor
+      script(src=url)
+
+    //Load Vendor
+    each url in page.js
+      script(src=url)
+
+    //Load Plugins
+    script(src=js.plugins)
+
+    //Load Main
+    script(src=js.main)
+
+    unless js_demo == ""
+      //Javascript for template demo, don't use it online
+      script(src=js.demo)
+

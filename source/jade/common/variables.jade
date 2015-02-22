@@ -1,14 +1,12 @@
 //- Variables
 //- --------------------------------------------------
 
-
 //- Site infomation:
 - var site_name                = "AplhaAdmin";
 - var site_description         = site_name + ": Bootstarp3 Responsive Admin Template";
 - var google_analytics_site_id = "UA-58071833-1"; //- UA-XXXXX-X to be your site's ID
 
 //- --------------------------------------------------
-
 
 //- Base URL:
 - var base_css       = "css/";
@@ -19,37 +17,9 @@
 
 //- --------------------------------------------------
 
-
-//- CSS files:
-- var css_vendor            = ["//fonts.googleapis.com/css?family=Anton|Open+Sans:400italic,400,300,600,700|Roboto+Slab:400,300,700", base_vendor + "bootstrap/dist/css/bootstrap.min.css", base_vendor + "bootstrap-progressbar/css/bootstrap-progressbar-3.2.0.min.css", base_vendor + "font-awesome/css/font-awesome.min.css", base_vendor + "jquery-ui.css",base_vendor + "bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.min.css", base_vendor + "css-loaders/css/load1.css", base_vendor + "css-loaders/css/load2.css", base_vendor + "css-loaders/css/load3.css", base_vendor + "css-loaders/css/load4.css", base_vendor + "css-loaders/css/load5.css", base_vendor + "css-loaders/css/load6.css", base_vendor + "css-loaders/css/load7.css", base_vendor + "css-loaders/css/load8.css", base_vendor + "css-spinners/css/spinners.css", base_vendor + "entypo/font/entypo.css", base_vendor + "iCheck/skins/all.css", base_vendor + "ion.rangeSlider/css/ion.rangeSlider.css", base_css + "ion.rangeSlider.skinAlpha.css", base_vendor + "nouislider/distribute/jquery.nouislider.min.css", base_vendor + "nouislider/distribute/jquery.nouislider.pips.min.css", base_vendor + "sco.js/css/scojs.css", base_vendor + "animate.css/animate.min.css", base_vendor + "animate.css/animate.min.css", base_vendor + "SpinKit/css/spinkit.css", base_vendor + "themify-icons/themify-icons.css", base_vendor + "summernote/dist/summernote.css", base_vendor + "bootstrap-markdown/css/bootstrap-markdown.min.css", base_vendor + "bootstrap-select/dist/css/bootstrap-select.min.css", base_vendor + "multi-select/css/multi-select.css", base_vendor + "jquery-notific8/dist/jquery.notific8.min.css", base_vendor + "toastr/build/toastr.min.css", base_vendor + "jstree/dist/themes/default/style.min.css", base_vendor + "bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css", base_vendor + "medium-editor/dist/css/medium-editor.min.css", base_vendor + "medium-editor/dist/css/themes/default.min.css", base_vendor + "x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css", base_vendor + "cropper/dist/cropper.min.css", base_vendor + "x-editable/dist/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css", base_vendor + "x-editable/dist/inputs-ext/address/address.css", base_vendor + "bootstrap-star-rating/css/star-rating.min.css", base_vendor + "bootstrap-daterangepicker/daterangepicker-bs3.css", base_vendor + "bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css", base_vendor + "bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css", base_vendor + "bootstrap-timepicker/css/bootstrap-timepicker.min.css", base_vendor + "clockpicker/dist/bootstrap-clockpicker.min.css", base_vendor + "jQuery-File-Upload/css/jquery.fileupload.css", base_vendor + "jQuery-File-Upload/css/jquery.fileupload-ui.css", base_vendor + "Gallery/css/blueimp-gallery.min.css", base_vendor + "dropzone/downloads/css/dropzone.css", base_vendor + "bootstrap-table/dist/bootstrap-table.min.css", base_vendor + "jvectormap/jquery-jvectormap-2.0.1.css", base_vendor + "fullcalendar/dist/fullcalendar.css"];
-
-- var css_core              = base_css + "main.css"; //- Core Styles
-- var css_style_blue_orange = base_css_style + "blue-orange.css"; //- Template Style - Blue&Orange
+include source
 
 //- --------------------------------------------------
-
-
-//- Current Template Style:
-- var current_style = css_style_blue_orange;
-
-//- --------------------------------------------------
-
-
-//- Javascript Files:
-- var js_vendor        = [base_vendor + "moment/min/moment-with-locales.min.js", base_vendor + "jQuery-File-Upload/js/vendor/jquery.ui.widget.js", base_vendor + "JavaScript-Templates/js/tmpl.min.js", base_vendor + "JavaScript-Load-Image/js/load-image.all.min.js", base_vendor + "JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js", base_vendor + "bootstrap/dist/js/bootstrap.min.js", base_vendor + "bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js", base_vendor + "bootstrap-responsive-tabs/js/responsive-tabs.js", base_vendor + "bootstrap-progressbar/bootstrap-progressbar.min.js", base_vendor + "bootstrap3-wysiwyg/dist/bootstrap3-wysihtml5.all.min.js", base_vendor + "Chart.js/Chart.min.js", base_vendor + "ckeditor/ckeditor.js", base_vendor + "iCheck/icheck.min.js", base_vendor + "ion.rangeSlider/js/ion.rangeSlider.min.js", base_vendor + "easy-pie-chart/dist/jquery.easypiechart.min.js", base_vendor + "nouislider/distribute/jquery.nouislider.all.min.js", base_vendor + "sco.js/js/sco.ajax.js", base_vendor + "sco.js/js/sco.collapse.js", base_vendor + "sco.js/js/sco.confirm.js", base_vendor + "sco.js/js/sco.countdown.js", base_vendor + "sco.js/js/sco.message.js", base_vendor + "sco.js/js/sco.modal.js", base_vendor + "sco.js/js/sco.panes.js", base_vendor + "sco.js/js/sco.tab.js", base_vendor + "sco.js/js/sco.tooltip.js", base_vendor + "sco.js/js/sco.valid.js", base_vendor + "skycons-html5/skycons.js", base_vendor + "slimScroll/jquery.slimscroll.min.js",base_js + "jquery-ui.min.js", base_vendor + "summernote/dist/summernote.min.js", base_vendor + "bootstrap-markdown/js/bootstrap-markdown.js", base_vendor + "jquery-sortable/source/js/jquery-sortable-min.js", base_vendor + "Nestable/jquery.nestable.js", base_vendor + "bootstrap-select/dist/js/bootstrap-select.min.js", base_vendor + "select2/select2.js", base_vendor + "multi-select/js/jquery.multi-select.min.js", base_vendor + "jquery-notific8/dist/jquery.notific8.min.js", base_vendor + "toastr/build/toastr.min.js", base_vendor + "jstree/dist/jstree.js", base_vendor + "jquery-treetable/jquery.treetable.min.js", base_vendor + "jquery.maskedinput/dist/jquery.maskedinput.min.js", base_vendor + "Countable/Countable.min.js", base_vendor + "bootstrap-switch/dist/js/bootstrap-switch.min.js", base_vendor + "jQuery-Knob/js/jquery.knob.js", base_vendor + "medium-editor/dist/js/medium-editor.min.js", base_vendor + "x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js", base_vendor + "x-editable/dist/inputs-ext/address/address.min.js", base_vendor + "x-editable/dist/inputs-ext/typeaheadjs/typeaheadjs.min.js", base_vendor + "x-editable/dist/inputs-ext/typeaheadjs/lib/typeahead.min.js", base_vendor + "cropper/dist/cropper.min.js", base_vendor + "jquery-mockjax/jquery.mockjax.js", base_vendor + "bootstrap-file-input/bootstrap.file-input.min.js", base_vendor + "bootstrap-star-rating/js/star-rating.min.js", base_vendor + "bootstrap-datepicker/js/bootstrap-datepicker.min.js", base_vendor + "bootstrap-daterangepicker/daterangepicker.min.js", base_vendor + "bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js", base_vendor + "bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js", base_vendor + "bootstrap-timepicker/js/bootstrap-timepicker.min.js", base_vendor + "clockpicker/dist/bootstrap-clockpicker.min.js", base_vendor + "jquery-validation/dist/jquery.validate.min.js", base_vendor + "jquery-validation/dist/additional-methods.min.js", base_vendor + "jquery-steps/build/jquery.steps.min.js", base_vendor + "Gallery/js/jquery.blueimp-gallery.min.js", base_vendor + "jQuery-File-Upload/js/jquery.iframe-transport.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-process.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-image.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-audio.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-video.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-validate.js", base_vendor + "jQuery-File-Upload/js/jquery.fileupload-ui.js", base_vendor + "dropzone/downloads/dropzone-amd-module.js", base_vendor + "jquery-cookie/src/jquery.cookie.min.js", base_vendor + "tablesorter/jquery.tablesorter.min.js", base_vendor + "StickyTableHeaders/js/jquery.stickytableheaders.min.js", base_vendor + "tableExport/tableExport.js", base_vendor + "tableExport/jquery.base64.js", base_vendor + "tableExport/html2canvas.js", base_vendor + "tableExport/jspdf/libs/sprintf.js", base_vendor + "tableExport/jspdf/jspdf.js", base_vendor + "tableExport/jspdf/libs/base64.js", base_vendor + "DataTables/media/js/jquery.dataTables.min.js", base_vendor + "bootstrap-table/dist/bootstrap-table.min.js", base_vendor + "bootstrap-table/dist/extensions/editable/bootstrap-table-editable.min.js", base_vendor + "flot/jquery.flot.all.min.js", base_vendor + "flot-axislabels/jquery.flot.axislabels.js", base_vendor + "flot.tooltip/js/jquery.flot.tooltip.min.js", base_vendor + "jquery.sparkline/jquery.sparkline.min.js", base_vendor + "mixitup/build/jquery.mixitup.min.js", base_vendor + "fullcalendar/dist/fullcalendar.min.js", base_vendor + "jquery-countTo/jquery.countTo.js"];
-
-- var js_jquery_1x     = base_js + "jquery-1.11.1.min.js";
-- var js_jquery_1x_cdn = "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js";
-- var js_jquery_2x     = base_js + "jquery-2.1.1.min.js";
-- var js_jquery_2x_cdn = "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
-
-- var js_plugins       = base_js + "plugins.min.js";
-- var js_main          = base_js + "main.min.js";
-
-- var js_demo          = base_js + "demo.min.js";
-
-//- --------------------------------------------------
-
 
 //- TopBar Config
 - var topbar_notifications     = true; //- Enable Notifications Menu
@@ -61,199 +31,194 @@
 
 //- --------------------------------------------------
 
-
-//- Userhead
-- var userhead = ['//s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/aniitafer_01/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/putorti/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/5key/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/jennyshen/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/raquelromanp/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/chloepark/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/jackiesaik/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/madedigital/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/popey/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/teeragit/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/mahdif/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/andyfang98/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/lettershoppe/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/lady_katherine/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/cynthiasavard/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/katiefritz/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/vicivadeline/128.jpg','https://s3.amazonaws.com/uifaces/faces/twitter/uxpiper/128.jpg'];
-
-
-//- --------------------------------------------------
-
-
 //- Page List
-- var page_list = [page_dashboard, page_layouts, page_ui_elements, page_ui_advanced, page_forms, page_tables, page_pages, page_email, page_charts, page_maps];
+- var page_list = [page_frontend, page_dashboard, page_layouts, page_ui_elements, page_ui_advanced, page_forms, page_tables, page_pages, page_email, page_charts, page_maps];
+
+//- ** Frontend Template
+- var page_frontend = {name:"Frontend Template", url:"front/", parent:"", bodyclass:"", iconclass:"fa fa-tablet", labelclass:"label-danger", labeltext:"", sub:""};
 
 //- ** Dashboard
-- var page_dashboard = {name:"Dashboard", url:"index.html", parent:"", bodyclass:"", iconclass:"fa fa-tachometer", labelclass:"label-danger", labeltext:"", sub:""};
+- var page_dashboard = {name:"Dashboard", url:"index.html", parent:"", bodyclass:"", iconclass:"fa fa-tachometer", labelclass:"label-danger", labeltext:"", sub:"", css:[css.bs_switch,css.fullcalendar,css.jvectormap], js:[js.bs_switch,js.fullcalendar,js.jvectormap,js.skycons,js.flot,js.flot_axislabels,js.flot_tooltip,js.sparkline,js.countTo,js.easy_pie_chart]};
 
 //- ** Layouts
 - var page_layouts                             = {name:"Layouts", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-columns", labelclass:"label-danger", labeltext:"", sub:page_layout_sub};
 - var page_layout_sub                          = [page_layouts_left_sidebar, page_layouts_left_sidebar_collapsed, page_layouts_right_sidebar, page_layouts_right_sidebar_collapsed, page_layouts_horizontal_menu_and_sidebar, page_layouts_horizontal_menu, page_layouts_horizontal_menu_boxed, page_layouts_title_and_breadcrumb];
 //- ## Layouts - Left Sidebar
-- var page_layouts_left_sidebar                = {name:"Left Sidebar", url:"layout-left_sidebar.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_left_sidebar                = {name:"Left Sidebar", url:"layout-left_sidebar.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Left Sidebar Collapsed
-- var page_layouts_left_sidebar_collapsed      = {name:"Left Sidebar Collapsed", url:"layout-left_sidebar_collapsed.html", parent:"Layouts", bodyclass:"small-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_left_sidebar_collapsed      = {name:"Left Sidebar Collapsed", url:"layout-left_sidebar_collapsed.html", parent:"Layouts", bodyclass:"small-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Right Sidebar
-- var page_layouts_right_sidebar               = {name:"Right Sidebar", url:"layout-right_sidebar.html", parent:"Layouts", bodyclass:"right-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_right_sidebar               = {name:"Right Sidebar", url:"layout-right_sidebar.html", parent:"Layouts", bodyclass:"right-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Right Sidebar Collapsed
-- var page_layouts_right_sidebar_collapsed     = {name:"Right Sidebar Collapsed", url:"layout-right_sidebar_collapsed.html", parent:"Layouts", bodyclass:"small-sidebar right-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_right_sidebar_collapsed     = {name:"Right Sidebar Collapsed", url:"layout-right_sidebar_collapsed.html", parent:"Layouts", bodyclass:"small-sidebar right-sidebar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Horizontal Menu & Side Bar
-- var page_layouts_horizontal_menu_and_sidebar = {name:"Horizontal Menu & Side Bar", url:"layout-horizontal_menu_and_sidebar.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_horizontal_menu_and_sidebar = {name:"Horizontal Menu & Side Bar", url:"layout-horizontal_menu_and_sidebar.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Horizontal Menu
-- var page_layouts_horizontal_menu             = {name:"Horizontal Menu", url:"layout-horizontal_menu.html", parent:"Layouts", bodyclass:"horizontal-menu", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_horizontal_menu             = {name:"Horizontal Menu", url:"layout-horizontal_menu.html", parent:"Layouts", bodyclass:"horizontal-menu", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Horizontal Boxed
-- var page_layouts_horizontal_menu_boxed       = {name:"Horizontal Boxed", url:"layout-horizontal_menu_boxed.html", parent:"Layouts", bodyclass:"horizontal-menu boxed", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_horizontal_menu_boxed       = {name:"Horizontal Boxed", url:"layout-horizontal_menu_boxed.html", parent:"Layouts", bodyclass:"horizontal-menu boxed", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Fixed Topbar
-//- - var page_layouts_fixed_topbar                = {name:"Fixed Topbar", url:"layout-fixed_topbar.html", parent:"Layouts", bodyclass:"fixed-topbar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+//- - var page_layouts_fixed_topbar                = {name:"Fixed Topbar", url:"layout-fixed_topbar.html", parent:"Layouts", bodyclass:"fixed-topbar", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## Layouts - Title & Breadcrumb
-- var page_layouts_title_and_breadcrumb        = {name:"Title & Breadcrumb", url:"layout-title_and_breadcrumb.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_layouts_title_and_breadcrumb        = {name:"Title & Breadcrumb", url:"layout-title_and_breadcrumb.html", parent:"Layouts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 
 //- ** UI Elements
 - var page_ui_elements                     = {name:"UI Elements", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-laptop", labelclass:"label-danger", labeltext:"", sub:page_ui_elements_sub};
 - var page_ui_elements_sub                 = [page_ui_elements_buttons, page_ui_elements_general, page_ui_elements_typography, page_ui_elements_tabs_and_accordions, page_ui_elements_progress_bars, page_ui_elements_sliders, page_ui_elements_modals, page_ui_elements_panels, page_ui_elements_checkbox_and_radio, page_ui_elements_icons, page_ui_elements_grid_layout, page_ui_elements_widgets];
 //- ## UI Elements - Buttons
-- var page_ui_elements_buttons             = {name:"Buttons", url:"ui-buttons.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_buttons             = {name:"Buttons", url:"ui-buttons.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements - General
-- var page_ui_elements_general             = {name:"General", url:"ui-general.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_general             = {name:"General", url:"ui-general.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ## UI Elements -  Typography
-- var page_ui_elements_typography          = {name:"Typography", url:"ui-typography.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_typography          = {name:"Typography", url:"ui-typography.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Tabs & Accordions
-- var page_ui_elements_tabs_and_accordions = {name:"Tabs & Accordions", url:"ui-tabs_and_accordions.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_tabs_and_accordions = {name:"Tabs & Accordions", url:"ui-tabs_and_accordions.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Progress Bar
-- var page_ui_elements_progress_bars       = {name:"Progress Bar", url:"ui-progress_bars.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_progress_bars       = {name:"Progress Bar", url:"ui-progress_bars.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Silders
-- var page_ui_elements_sliders             = {name:"Silders", url:"ui-sliders.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_sliders             = {name:"Silders", url:"ui-sliders.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.ion,css.ion_skin,css.noui,css.noui_pips], js:[js.ion,js.noui]};
 //- ## UI Elements -  Modals
-- var page_ui_elements_modals              = {name:"Modals", url:"ui-modals.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_modals              = {name:"Modals", url:"ui-modals.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Panels
-- var page_ui_elements_panels              = {name:"Panels", url:"ui-panels.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_panels              = {name:"Panels", url:"ui-panels.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Checkbox & Radio
-- var page_ui_elements_checkbox_and_radio  = {name:"Checkbox & Radio", url:"ui-checkbox_and_radio.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_checkbox_and_radio  = {name:"Checkbox & Radio", url:"ui-checkbox_and_radio.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ## UI Elements -  Icons
-- var page_ui_elements_icons               = {name:"Icons", url:"ui-icons.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_icons               = {name:"Icons", url:"ui-icons.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Grid Layout
-- var page_ui_elements_grid_layout         = {name:"Grid Layout", url:"ui-grid_layout.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_grid_layout         = {name:"Grid Layout", url:"ui-grid_layout.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ## UI Elements -  Widgets
-- var page_ui_elements_widgets             = {name:"Widgets", url:"ui-widgets.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_elements_widgets             = {name:"Widgets", url:"ui-widgets.html", parent:"UI Elements", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.skycons]};
 
 //- ** UI Advanced
 - var page_ui_advanced                             = {name:"UI Advanced", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-desktop", labelclass:"label-danger", labeltext:"", sub:page_ui_advanced_sub};
 - var page_ui_advanced_sub                         = [page_ui_advanced_preloader, page_ui_advanced_editor, page_ui_advanced_sortable_and_nestable_lists, page_ui_advanced_dropdown_select, page_ui_advanced_notific8, page_ui_advanced_toastr_notifications, page_ui_advanced_tree_view, page_ui_advanced_animations];
 //- ## UI Advanced - Preloader
-- var page_ui_advanced_preloader                   = {name:"Preloader", url:"uia-preloader.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_preloader                   = {name:"Preloader", url:"uia-preloader.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.loaders,css.spinners,css.spinkit], js:[]};
 //- ## UI Advanced - Editor
-- var page_ui_advanced_editor                      = {name:"Editor", url:"uia-editor.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_editor                      = {name:"Editor", url:"uia-editor.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.summernote,css.bs_markdown,css.medium_editor,css.medium_editor_skin,css.bs_wysihtml5], js:[js.summernote,js.bs_markdown,js.medium_editor,js.ckeditor,js.bs_wysihtml5]};
 //- ## UI Advanced - Sortable & Netsable List
-- var page_ui_advanced_sortable_and_nestable_lists = {name:"Sortable & Netsable List", url:"uia-sortable_and_nestable_lists.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_sortable_and_nestable_lists = {name:"Sortable & Netsable List", url:"uia-sortable_and_nestable_lists.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.jq_sortable,js.Nestable]};
 //- ## UI Advanced - Dropdown Select
-- var page_ui_advanced_dropdown_select             = {name:"Dropdown Select", url:"uia-dropdown_select.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_dropdown_select             = {name:"Dropdown Select", url:"uia-dropdown_select.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.bs_select,css.multiselect], js:[js.select2,js.bs_select,js.multiselect]};
 //- ## UI Advanced - Notific8 & Sco.message
-- var page_ui_advanced_notific8                    = {name:"Notific8 & Sco.message", url:"uia-notific8.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_notific8                    = {name:"Notific8 & Sco.message", url:"uia-notific8.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck,css.notific8,css.bs_select], js:[js.icheck,js.notific8,js.bs_select]};
 //- ## UI Advanced - Toastr Notifications
-- var page_ui_advanced_toastr_notifications        = {name:"Toastr Notifications", url:"uia-toastr_notifications.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_toastr_notifications        = {name:"Toastr Notifications", url:"uia-toastr_notifications.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.toastr,css.icheck], js:[js.toastr,js.icheck]};
 //- ## UI Advanced - Tree View
-- var page_ui_advanced_tree_view                   = {name:"Tree View", url:"uia-tree_view.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_tree_view                   = {name:"Tree View", url:"uia-tree_view.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.jstree], js:[js.jstree,js.jq_treetable]};
 //- ## UI Advanced - Animations
-- var page_ui_advanced_animations                  = {name:"Animations", url:"uia-animations.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_ui_advanced_animations                  = {name:"Animations", url:"uia-animations.html", parent:"UI Advanced", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.select2]};
 
 //- ** Forms
 - var page_forms                      = {name:"Forms", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-pencil-square-o", labelclass:"label-danger", labeltext:"", sub:page_forms_sub};
 - var page_forms_sub                  = [page_forms_form_layouts, page_forms_form_elements, page_forms_coustomized_elements, page_forms_form_basics, page_forms_form_pickers, page_forms_form_validation, page_forms_form_wizards, page_forms_multiple_file_upload, page_forms_dropzone_file_upload];
 //- ** Forms - Form Layouts
-- var page_forms_form_layouts         = {name:"Form Layouts", url:"forms-form_layouts.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_layouts         = {name:"Form Layouts", url:"forms-form_layouts.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Forms - Forms Elements
-- var page_forms_form_elements        = {name:"Form Elements", url:"forms-form_elements.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_elements        = {name:"Form Elements", url:"forms-form_elements.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.bs_file_input]};
 //- ** Forms - Customized Elements
-- var page_forms_coustomized_elements = {name:"Customized Elements", url:"forms-coustomized_elements.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_coustomized_elements = {name:"Customized Elements", url:"forms-coustomized_elements.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck,css.bs_switch,css.xeditable,css.xeditable_ext_typeaheadjs,css.xeditable_ext_address,css.cropper], js:[js.icheck,js.bs_switch,js.maskedinput,js.Countable,js.jq_knob,js.jq_mockjax,js.xeditable,js.xeditable_ext_typeaheadjs,js.xeditable_ext_address,js.cropper]};
 //- ** Forms - Form Basics
-- var page_forms_form_basics          = {name:"Form Basics", url:"forms-form_basics.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_basics          = {name:"Form Basics", url:"forms-form_basics.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck,css.bs_select,css.bs_star_rating], js:[js.icheck,js.bs_file_input,js.bs_select,js.bs_star_rating]};
 //- ** Forms - Form Pickers
-- var page_forms_form_pickers         = {name:"Form Pickers", url:"forms-form_pickers.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_pickers         = {name:"Form Pickers", url:"forms-form_pickers.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.bs_daterangepicker,css.bs_colorpicker,css.bs_datetimepicker,css.bs_timepicker,css.bs_clockpicker], js:[js.bs_datepicker,js.bs_daterangepicker,js.bs_colorpicker,js.bs_datetimepicker,js.bs_timepicker,js.bs_clockpicker]};
 //- ** Forms - Form Validation
-- var page_forms_form_validation      = {name:"Form Validation", url:"forms-form_validation.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_validation      = {name:"Form Validation", url:"forms-form_validation.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.jq_validation,js.jq_validation_methods]};
 //- ** Forms - Form Wizards
-- var page_forms_form_wizards         = {name:"Form Wizards", url:"forms-form_wizards.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_form_wizards         = {name:"Form Wizards", url:"forms-form_wizards.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.jq_validation,js.jq_validation_methods,js.jq_steps]};
 //- ** Forms - Multiple File Upload
-- var page_forms_multiple_file_upload = {name:"Multiple File Upload", url:"forms-multiple_file_upload.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_multiple_file_upload = {name:"Multiple File Upload", url:"forms-multiple_file_upload.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.jq_file_upload,css.jq_file_upload_ui,css.blueimp_gallery], js:[js.jq_file_upload_widget,js.javascripe_load_image,js.javascript_template,js.blueimp_gallery,js.jq_file_upload]};
 //- ** Forms - Dropzone File Upload
-- var page_forms_dropzone_file_upload = {name:"Dropzone File Upload", url:"forms-dropzone_file_upload.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_forms_dropzone_file_upload = {name:"Dropzone File Upload", url:"forms-dropzone_file_upload.html", parent:"Forms", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.dropzone], js:[js.dropzone]};
 
 //- ** Tables
 - var page_tables                  = {name:"Tables", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-table", labelclass:"label-danger", labeltext:"", sub:page_tables_sub};
 - var page_tables_sub              = [page_tables_basic_tables, page_tables_resonsive_tables, page_tables_action_tables, page_tables_advanced_tables, page_tables_table_export, page_tables_data_tables, page_tables_bootstrap_table];
 //- ** Tables - Basic Tables
-- var page_tables_basic_tables     = {name:"Basic Tables", url:"tables-basic_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_basic_tables     = {name:"Basic Tables", url:"tables-basic_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Tables - Resonsive Tables
-- var page_tables_resonsive_tables = {name:"Resonsive Tables", url:"tables-resonsive_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_resonsive_tables = {name:"Resonsive Tables", url:"tables-resonsive_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Tables - Action Tables
-- var page_tables_action_tables    = {name:"Action Tables", url:"tables-action_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_action_tables    = {name:"Action Tables", url:"tables-action_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ** Tables - Advanced Tables
-- var page_tables_advanced_tables    = {name:"Advanced Tables", url:"tables-advanced_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_advanced_tables    = {name:"Advanced Tables", url:"tables-advanced_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck,js.jq_tablesorter,js.StickyTableHeaders]};
 //- ** Tables - Table Export
-- var page_tables_table_export     = {name:"Table Export", url:"tables-table_export.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_table_export     = {name:"Table Export", url:"tables-table_export.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.tableExport,js.tableExport_base64,js.tableExport_html2canvas,js.tableExport_jspdf_sprintf,js.tableExport_jspdf,js.tableExport_jspdf_base64]};
 //- ** Tables - Data Tables
-- var page_tables_data_tables      = {name:"Data Tables", url:"tables-data_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_data_tables      = {name:"Data Tables", url:"tables-data_tables.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.DataTables]};
 //- ** Tables - Bootstrap Table
-- var page_tables_bootstrap_table  = {name:"Bootstrap Table", url:"tables-bootstrap_table.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_tables_bootstrap_table  = {name:"Bootstrap Table", url:"tables-bootstrap_table.html", parent:"Tables", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.xeditable,css.xeditable_ext_typeaheadjs,css.xeditable_ext_address,css.bs_table], js:[js.xeditable,js.xeditable_ext_typeaheadjs,js.xeditable_ext_address,js.bs_table,js.bs_table_ext_editable]};
 
 //- ** Pages
 - var page_pages                 = {name:"Pages", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-file-o", labelclass:"label-danger", labeltext:"", sub:page_pages_sub};
 - var page_pages_sub             = [page_pages_profile, page_pages_invoice, page_pages_gallery, page_pages_calendar, page_pages_timeline, page_pages_blog_page, page_pages_blog_item, page_pages_signin, page_pages_signup, page_pages_forgot_password, page_pages_lock_screen, page_pages_404, page_pages_500, page_pages_blank, page_pages_faq, page_pages_pricing_tables, page_pages_fullscreen];
 //- ** Pages - Profile
-- var page_pages_profile         = {name:"Profile", url:"pages-profile.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_profile         = {name:"Profile", url:"pages-profile.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ** Pages - Invoice
-- var page_pages_invoice         = {name:"Invoice", url:"pages-invoice.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_invoice         = {name:"Invoice", url:"pages-invoice.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Gallery
-- var page_pages_gallery         = {name:"Gallery", url:"pages-gallery.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_gallery         = {name:"Gallery", url:"pages-gallery.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.blueimp_gallery], js:[js.mixitup,js.blueimp_gallery]};
 //- ** Pages - Calendar
-- var page_pages_calendar        = {name:"Calendar", url:"pages-calendar.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_calendar        = {name:"Calendar", url:"pages-calendar.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck,css.fullcalendar], js:[js.icheck,js.fullcalendar]};
 //- ** Pages - Timeline
-- var page_pages_timeline        = {name:"Timeline", url:"pages-timeline.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_timeline        = {name:"Timeline", url:"pages-timeline.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Blog Page
-- var page_pages_blog_page       = {name:"Blog Page", url:"pages-blog_page.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_blog_page       = {name:"Blog Page", url:"pages-blog_page.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Blog Item
-- var page_pages_blog_item       = {name:"Blog Item", url:"pages-blog_item.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_blog_item       = {name:"Blog Item", url:"pages-blog_item.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Signin
-- var page_pages_signin          = {name:"Signin", url:"pages-signin.html", parent:"Pages", bodyclass:"signin", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_signin          = {name:"Signin", url:"pages-signin.html", parent:"Pages", bodyclass:"signin", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ** Pages - Signup
-- var page_pages_signup          = {name:"Signup", url:"pages-signup.html", parent:"Pages", bodyclass:"signup", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_signup          = {name:"Signup", url:"pages-signup.html", parent:"Pages", bodyclass:"signup", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ** Pages - Forgot Password
-- var page_pages_forgot_password = {name:"Forgot Password", url:"pages-forgot_password.html", parent:"Pages", bodyclass:"forgot-password", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_forgot_password = {name:"Forgot Password", url:"pages-forgot_password.html", parent:"Pages", bodyclass:"forgot-password", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Lock Screen
-- var page_pages_lock_screen     = {name:"Lock Screen", url:"pages-lock_screen.html", parent:"Pages", bodyclass:"lock-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_lock_screen     = {name:"Lock Screen", url:"pages-lock_screen.html", parent:"Pages", bodyclass:"lock-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - 404 Page
-- var page_pages_404             = {name:"404 Page", url:"pages-404.html", parent:"Pages", bodyclass:"error-page", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_404             = {name:"404 Page", url:"pages-404.html", parent:"Pages", bodyclass:"error-page", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - 500 page
-- var page_pages_500             = {name:"500 page", url:"pages-500.html", parent:"Pages", bodyclass:"error-page", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_500             = {name:"500 page", url:"pages-500.html", parent:"Pages", bodyclass:"error-page", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - User List
-- var page_pages_user_list       = {name:"User List", url:"pages-user_list.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_user_list       = {name:"User List", url:"pages-user_list.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - FAQ
-- var page_pages_faq             = {name:"FAQ", url:"pages-faq.html", parent:"Pages", bodyclass:"faq", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_faq             = {name:"FAQ", url:"pages-faq.html", parent:"Pages", bodyclass:"faq", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Pricing Tables
-- var page_pages_pricing_tables  = {name:"Pricing Tables", url:"pages-pricing_tables.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_pricing_tables  = {name:"Pricing Tables", url:"pages-pricing_tables.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.bs_select], js:[js.bs_select]};
 //- ** Pages - Blank Page
-- var page_pages_blank       = {name:"Blank Page", url:"pages-blank.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_blank       = {name:"Blank Page", url:"pages-blank.html", parent:"Pages", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Pages - Full Screen
-- var page_pages_fullscreen      = {name:"Full Screen", url:"javascript:fullScreen();", parent:"Pages", bodyclass:"full-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_pages_fullscreen      = {name:"Full Screen", url:"javascript:fullScreen();", parent:"Pages", bodyclass:"full-screen", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 
 //- ** Email
 - var page_email              = {name:"Email", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-envelope-o", labelclass:"label-danger", labeltext:"", sub:page_email_sub};
 - var page_email_sub          = [page_email_inbox, page_email_compose_mail, page_email_view_mail];
 //- ** Email - Inbox
-- var page_email_inbox        = {name:"MailBox", url:"email-inbox.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_email_inbox        = {name:"MailBox", url:"email-inbox.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.icheck], js:[js.icheck]};
 //- ** Email - Compose Mail
-- var page_email_compose_mail = {name:"Compose Mail", url:"email-compose_mail.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_email_compose_mail = {name:"Compose Mail", url:"email-compose_mail.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.summernote], js:[js.bs_file_input,js.summernote]};
 //- ** Email - View Mail
-- var page_email_view_mail    = {name:"View Mail", url:"email-view_mail.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_email_view_mail    = {name:"View Mail", url:"email-view_mail.html", parent:"Email", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 
 //- ** Charts
 - var page_charts                = {name:"Charts", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-line-chart", labelclass:"label-danger", labeltext:"", sub:page_charts_sub};
 - var page_charts_sub            = [page_charts_flot_charts, page_charts_chartjs, page_charts_easy_pie_chart, page_charts_sparklines];
 //- ** Charts - Flot Charts
-- var page_charts_flot_charts    = {name:"Flot Charts", url:"charts-flot_charts.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_charts_flot_charts    = {name:"Flot Charts", url:"charts-flot_charts.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.flot], js:[js.flot,js.flot_tooltip]};
 //- ** Charts - Chart.js
-- var page_charts_chartjs        = {name:"Chart.js", url:"charts-chart.js.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_charts_chartjs        = {name:"Chart.js", url:"charts-chart.js.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.chartjs]};
 //- ** Charts - Easy Pie Chart
-- var page_charts_easy_pie_chart = {name:"Easy Pie Chart", url:"charts-easy_pie_chart.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_charts_easy_pie_chart = {name:"Easy Pie Chart", url:"charts-easy_pie_chart.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.easy_pie_chart]};
 //- ** Charts - Sparklines
-- var page_charts_sparklines     = {name:"Sparklines", url:"charts-sparklines.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_charts_sparklines     = {name:"Sparklines", url:"charts-sparklines.html", parent:"Charts", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[js.sparkline]};
 
 //- ** Maps
 - var page_maps             = {name:"Maps", url:"javascript:void(0)", parent:"", bodyclass:"", iconclass:"fa fa-map-marker", labelclass:"label-danger", labeltext:"New", sub:page_maps_sub};
 - var page_maps_sub         = [page_maps_google_map, page_maps_jvector_map];
 //- ** Maps - Google Map
-- var page_maps_google_map  = {name:"Google Map", url:"maps-google_map.html", parent:"Maps", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_maps_google_map  = {name:"Google Map", url:"maps-google_map.html", parent:"Maps", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[], js:[]};
 //- ** Maps - Jvector Map
-- var page_maps_jvector_map = {name:"Jvector Map", url:"maps-jvector_map.html", parent:"Maps", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:""};
+- var page_maps_jvector_map = {name:"Jvector Map", url:"maps-jvector_map.html", parent:"Maps", bodyclass:"", iconclass:"fa fa-angle-double-right", labelclass:"label-danger", labeltext:"", css:[css.jvectormap], js:[js.jvectormap]};
 
 //- --------------------------------------------------
 

@@ -13,15 +13,19 @@ head
   link(rel="apple-touch-icon", href="apple-touch-icon-precomposed.png")
   link(rel="shortcut icon", href="favicon.ico")
 
+  //Core Vendor CSS
+  each url in css.core_vendor
+    link(rel="stylesheet" href=url)
+
   //Vendor CSS
-  each url in css_vendor
-    link(rel="stylesheet", href=url)
+  each url in page.css
+    link(rel="stylesheet" href=url)
 
   //Core Styles
-  link(rel="stylesheet", href=css_core)
+  link(rel="stylesheet", href=css.core)
 
   //Template Style
-  link(rel="stylesheet", id="curStyle", href=current_style)
+  link(rel="stylesheet", id="curStyle", href=css.style[0])
 
   //Modernizr
   script(src=base_vendor+"modernizr.js")
