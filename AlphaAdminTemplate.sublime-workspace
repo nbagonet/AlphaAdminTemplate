@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"border-ri",
+				"border-radius"
+			],
+			[
+				"squa",
+				"squared"
+			],
+			[
+				"dn",
+				"d-n	display: none;"
+			],
+			[
+				"op",
+				"op	opacity"
+			],
+			[
+				"mr",
+				"margin-right"
+			],
+			[
+				"h",
+				"h	height"
+			],
+			[
+				"w",
+				"w	width"
+			],
+			[
+				"mous",
+				"mouseenter	.mouseenter()"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"append",
+				"append	.append()"
+			],
+			[
+				"sli",
+				"slimScroll"
+			],
+			[
+				"sco",
+				"scojs"
+			],
+			[
+				"blue",
+				"blueimp_gallery"
+			],
+			[
+				"med",
+				"medium_editor"
+			],
+			[
+				"mu",
+				"multiselect"
+			],
+			[
 				"row",
 				"row"
 			],
@@ -34,10 +110,6 @@
 			[
 				"border",
 				"border-box"
-			],
-			[
-				"op",
-				"opacity"
 			],
 			[
 				"z",
@@ -86,10 +158,6 @@
 			[
 				"Pic",
 				"Picture"
-			],
-			[
-				"append",
-				"appendTo"
 			],
 			[
 				"ov",
@@ -244,16 +312,8 @@
 				"cur	cursor: ${pointer};"
 			],
 			[
-				"w",
-				"wizard.less"
-			],
-			[
 				"a",
 				"absolute"
-			],
-			[
-				"h",
-				"height"
 			],
 			[
 				"font-s",
@@ -270,10 +330,6 @@
 			[
 				"pan",
 				"panel"
-			],
-			[
-				"border-r",
-				"border-radius"
 			],
 			[
 				"date",
@@ -458,67 +514,53 @@
 			[
 				"pla",
 				"placeholder"
-			],
-			[
-				"opti",
-				"option"
-			],
-			[
-				"Res",
-				"Refresh"
-			],
-			[
-				"inc",
-				"included"
-			],
-			[
-				"html",
-				"html5"
-			],
-			[
-				"doc",
-				"doctype"
-			],
-			[
-				"io",
-				"ion.rangeSlider.skinAlpha.css"
-			],
-			[
-				"chec",
-				"checked  (function)"
-			],
-			[
-				"over",
-				"overflow"
-			],
-			[
-				"rel",
-				"relative"
-			],
-			[
-				"position",
-				"position:   (property)"
-			],
-			[
-				"id",
-				"id=\"demoBtn"
-			],
-			[
-				"no",
-				"jquery.nouislider.pips.min.css"
-			],
-			[
-				"cl",
-				"class	Attr"
-			],
-			[
-				"wid",
-				"width"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/wangshuo/works/2015/terntour/fe/fis-conf.js",
+			"settings":
+			{
+				"buffer_size": 650,
+				"line_ending": "Unix",
+				"name": "fis.config.init({"
+			}
+		},
+		{
+			"file": "/Users/wangshuo/works/2015/terntour/fe/jade/index.jade",
+			"settings":
+			{
+				"buffer_size": 410,
+				"line_ending": "Unix",
+				"name": "doctype html"
+			}
+		},
+		{
+			"file": "/Users/wangshuo/works/2015/terntour/fe/jade/inc/head.jade",
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/wangshuo/works/2015/terntour/fe/jade/config.jade",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/jade/charts-chart.js.jade",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -593,30 +635,93 @@
 	"expanded_folders":
 	[
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/common",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/mixin",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less"
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange-rounded",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/green-orange"
 	],
 	"file_history":
 	[
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/main.js",
+		"/Users/wangshuo/works/2015/terntour/fe/start-fis-server.sh",
+		"/Users/wangshuo/Downloads/Flat-UI-master/Flat-UI-master/README.md",
+		"/Users/wangshuo/works/高逼格素材/Startup Framework/startup-framework-presentation-psd/startup-framework-presentation-psd/readme.txt",
+		"/Users/wangshuo/Downloads/FlatUI-Free/FlatUI-Free/readme.txt",
+		"/Users/wangshuo/Downloads/Flat-UI-master/Flat-UI-master/Gruntfile.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/green-orange-rounded/green-orange-rounded.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange/blue-orange.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/green-orange/green-orange-config.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange/blue-orange-config.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/browsehappy.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/green-orange/green-orange.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/theme-base.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange-rounded/blue-orange-rounded-config.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/variables.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange-rounded/blue-orange-rounded.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/theme-control.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/timeline.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/demo.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/foot.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/head.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/test/var.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/main.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/plugins.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/test/test.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/theme-control/theme-control.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/blog.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/sidebar.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/panel.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/panel.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/progressbar.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/vendor-prefixes.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/background.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/progressbar.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/buttons.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/thumbnails.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/dropdowns.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/common/variables.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/common/source.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/main.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/config.codekit",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/scaffolding.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/buttons.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/theme-control/theme-control",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/index.html",
+		"/Users/wangshuo/Documents/wangshuo-aws-vps.pem",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/demo.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/forms-customelem-x-editable.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/forms-customelem-character-count.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/treeview-bootstrap-tree.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/uia-tree_view.jade",
+		"/Users/wangshuo/Library/Application Support/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/Users/wangshuo/Library/Application Support/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/sco.all.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/sco.all.min.js.map",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/jQuery-File-Upload/js/jquery.fileupload.all.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-timeline.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.all.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.tooltip.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.valid.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.tab.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.panes.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.message.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.modal.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.countdown.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.confirm.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.collapse.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/sco.js/js/sco.ajax.js",
+		"/Users/wangshuo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-pricing_tables.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/500.jade",
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/browsehappy.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-google-map.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/dashboard.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/index.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/common/variables.jade",
 		"/Users/wangshuo/Downloads/phpMyAdmin-4.3.9-all-languages/phpMyAdmin-4.3.9-all-languages/libraries/config.default.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/common/vendor.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/vendor/css-loaders/css/load.css",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/variables.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/github/Flat-UI/dist/js/flat-ui.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/jquery-2.1.1.min.js",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/map-google-map.jade",
@@ -626,7 +731,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/charts-sparklines.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-world-map.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/charts-easy_pie_chart.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/scaffolding.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-chart-full-1.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/map-jvector-map.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-calendar-1.jade",
@@ -635,9 +739,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/widgets.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-profile-card-2.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/mixin/panel.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/panel.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-calendar.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/themes/blue-orange/blue-orange.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/charts.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-count-small-1.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-count-small-2.jade",
@@ -646,7 +748,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-count-small-4.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/progressbar-horizontal.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/charts-flot-basic.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/background.less",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-profile-card-1.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/dropdown-select-select2-dropdowns-demo-data.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/dropdown-select-select2-dropdowns.jade",
@@ -666,73 +767,13 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/pages-pricing-tables-style-2.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/pages-pricing-tables-compare.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-pricing-tables.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-pricing_tables.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/general-list-groups.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/mixin/dropdown-menu-item.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/mixin/dropdown-menu.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/dist/js/plugins.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-timeline.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-chat.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-chat.jade",
 		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-faq.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/pricing.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/alert.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-pricing-tables-style-1.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-pricing-tables.html",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/main.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-faq.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/faq.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-blank.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/error.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/404.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/500.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-500.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-404.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/signin.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/lock-screen.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-lock_screen.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/forgot-password.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-personal-menu.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-quicklinks.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-notifications.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-messages.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-language-switcher.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/header-horizontal-menu.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/signup.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/signin.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-forgot_password.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-signup.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-signin.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/vendor-prefixes.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/foot.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-comments.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-categories.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-pictures.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-ads.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/pages-blog-page-article.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/blog.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-carousel.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-blog-item.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/pages-blog-page-post.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-blog_item.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/layout.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/daterange-pickers.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/pages-blog-page-sidebar.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-archives.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-posts.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/untitled",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/pages-blog-page.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-blog-tags.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/carousel.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-search.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/topheader.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/mixins/timeline.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/widget-profile-card-5.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/general-paginations.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/scroll-to-top.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/sidebar.less",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/include/module/general-others.jade",
-		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/jade/pages-blog_page.jade"
+		"/Applications/XAMPP/xamppfiles/htdocs/AlphaAdminTemplate/source/less/pricing.less"
 	],
 	"find":
 	{
@@ -756,6 +797,66 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@brand-main-base",
+			"radius",
+			"right",
+			"panel",
+			"border-radius-base",
+			".ui-slider",
+			"border-r",
+			"Progress",
+			"progress",
+			".panel-group",
+			".panel-group ",
+			"tab",
+			"progress",
+			".side-menu-sub",
+			"panel",
+			"@blog-widget-border-radius",
+			"}\n",
+			"thumbnail",
+			"datepicker-border-radius",
+			"dropdown",
+			"@btn-border-radius",
+			"Button",
+			".btn",
+			".transition",
+			"form_bas",
+			"$(\"#world-map-gdp\").css({",
+			"setJvectorMapSize",
+			"select",
+			"blue",
+			"editable",
+			"jquery",
+			"jquery.wid",
+			"blueimp",
+			"subtract",
+			"icon-",
+			"tree",
+			"select",
+			", labeltext:\"\"};",
+			"if",
+			"map",
+			".js",
+			".js\"",
+			".js",
+			"map",
+			"jvectormap",
+			"bootstrap-table",
+			"cropper",
+			"typeahead",
+			"typehead",
+			"x-ed",
+			"jstree",
+			"base_vendor + ",
+			"bootstrap-selec",
+			"markdown",
+			"summernote",
+			"sco",
+			"noui",
+			"jquery.ui",
+			"monent",
+			"page_pages_pricing_tables",
 			"progressbar",
 			"bootstrap",
 			"bootstarp",
@@ -823,67 +924,7 @@
 			"bottom",
 			"blog-widget-commetnslist",
 			"blog",
-			"Transitions",
-			"panel",
-			"color",
-			"mus",
-			"ridiculus",
-			"nascetur",
-			"montes",
-			"parturient",
-			"dis",
-			"magnis",
-			"et",
-			"penatibus",
-			"natoque",
-			"sociis",
-			"Cum",
-			"massa",
-			"Aenean",
-			"dolor",
-			"eget",
-			"ligula",
-			"commodo",
-			"Aenean",
-			"elit",
-			"adipiscing",
-			"consectetuer",
-			"amet",
-			"sit",
-			"dolor",
-			"ipsum",
-			"cats",
-			"business",
-			"animals",
-			"carousel",
-			"@top-header-bg",
-			".head",
-			".head-wrapper",
-			"google",
-			".scroll-to-top",
-			"scroll",
-			"top",
-			"right",
-			"mleft5",
-			"page_pages_blog_item",
-			"footer",
-			"page-wrapper",
-			".head-wrapper",
-			"smallsidebar-toggle",
-			"opacity",
-			"map",
-			"jvector",
-			"success",
-			"successs",
-			"success",
-			"main",
-			".timeline-label",
-			".fc-state-default",
-			"border-radius",
-			"border-ra",
-			"border-",
-			"thumb",
-			"tack"
+			"Transitions"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -891,6 +932,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"entypo-",
+			", labeltext:\"\", css:[], js:[]};",
 			"",
 			"#{page_email_view_mail.url}",
 			"entypo-",
@@ -932,8 +975,476 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/wangshuo/works/2015/terntour/fe/fis-conf.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"auto_name": "fis.config.init({",
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"is_xml": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "/Users/wangshuo/works/2015/terntour/fe/jade/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "doctype html",
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"is_xml": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/wangshuo/works/2015/terntour/fe/jade/inc/head.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"is_xml": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/wangshuo/works/2015/terntour/fe/jade/config.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/jade/charts-chart.js.jade",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								720,
+								709
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark (SL).tmTheme",
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -954,11 +1465,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -975,6 +1493,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 122.0
 	},
 	"output.sftp":
 	{
@@ -1018,7 +1540,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

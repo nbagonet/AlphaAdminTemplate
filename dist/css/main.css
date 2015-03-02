@@ -1,4 +1,4 @@
-@import url('main-blessed1.css?z=1423626008011');
+@import url('main-blessed1.css?z=1425291208406');
 
 .blog-widget .blog-widget-pictureslist li {
   float: left;
@@ -673,4 +673,68 @@ body.lock-screen .footer {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+#theme-control {
+  position: fixed;
+  z-index: 11000;
+  top: 100px;
+  right: -200px;
+  opacity: .6;
+  -webkit-transition: right ease 0.5s;
+  transition: right ease 0.5s;
+}
+#theme-control:hover,
+#theme-control.active {
+  opacity: .9;
+}
+#theme-control.active {
+  right: 0;
+}
+#theme-control .tc-btn {
+  line-height: 42px;
+  position: absolute;
+  z-index: 10;
+  left: -41px;
+  width: 42px;
+  cursor: pointer;
+  text-align: center;
+  border: #bbbbbb 1px solid;
+  border-right-color: #fff;
+  background: #fff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.075);
+}
+#theme-control .tc-panel {
+  width: 200px;
+  padding: 15px;
+  color: #888888;
+  border: #bbbbbb 1px solid;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.075);
+}
+#theme-control .tc-theme h4 {
+  margin-top: 0;
+}
+#theme-control .tc-theme > ul > li {
+  float: left;
+  overflow: hidden;
+  width: 30px;
+  margin: 5px;
+}
+#theme-control .tc-theme > ul > li > a {
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  opacity: .5;
+}
+#theme-control .tc-theme > ul > li > a:hover {
+  opacity: 1;
+}
+#theme-control .tc-theme > ul > li .tc-theme-rounded {
+  border-radius: 5px;
+}
+#theme-control .tc-theme > ul > li .tc-colors-c1,
+#theme-control .tc-theme > ul > li .tc-colors-c2 {
+  display: inline-block;
+  width: 50%;
+  height: 30px;
 }

@@ -4,21 +4,21 @@
 // jQuery Slider Styles
 .jqui-slider-style(@horizontal-border-color; @horizontal-bg; @handle-border-color; @handle-bg; @handle-hover-border-color; @handle-hover-bg; @range-bg;){
     border-color: @horizontal-border-color;
-    background-color: @horizontal-bg;
+    background-color: @horizontal-bg!important;
     .ui-slider-handle
     {
         border-color: @handle-border-color;
-        background-color: @handle-bg;
+        background-color: @handle-bg!important;
         &:hover,
         &:active,
         &:focus
         {
-            background-color: @handle-hover-bg;
+            background-color: @handle-hover-bg!important;
             border-color: @handle-hover-border-color;
         }
     }
     .ui-slider-range
     {
-        background-color: @range-bg;
+        background-color: @range-bg!important;
     }
 }

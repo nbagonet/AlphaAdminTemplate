@@ -1,0 +1,501 @@
+//
+// Themes - Config
+//
+//## All themes config is here.
+// --------------------------------------------------
+
+
+// --------------------------------------------------
+
+
+//** CSS images folder
+@css-img-base          : "../../img/";
+
+
+// --------------------------------------------------
+
+
+//** Themes base color
+@brand-main-base       :#8E44AD;
+@brand-main-base-light :darken(@brand-main-base, 20%);
+
+@brand-minor           :#E0CD42;
+
+
+
+// --------------------------------------------------
+
+
+//** Selection highlight
+@selection-bg   :@gray-light;
+@selection-text :#fff;
+
+
+// --------------------------------------------------
+
+
+//** Text color
+@text-color     :@gray-light;
+
+
+// --------------------------------------------------
+
+
+//** Links color
+@link-base-color       :@brand-main-base;
+@link-base-hover-color :darken(@link-base-color,5%);
+
+
+// --------------------------------------------------
+
+//** Global border radius
+@border-radius-size :0;
+
+// --------------------------------------------------
+
+//** Buttons border radius
+@btn-border-radius  :0;
+
+
+// --------------------------------------------------
+
+
+//** Dropdown menu
+@dropdown-bg                  :@base-white;
+@dropdown-border-color        :lighten(@base-grey-lighter, 14%);
+@dropdown-link-color          :@base-grey-light;
+@dropdown-link-hover-color    :@base-grey;
+@dropdown-link-hover-bg       :lighten(@base-grey-lighter, 18%);
+@dropdown-link-disabled-color :@base-grey-lighter;
+@dropdown-footer-bg           :lighten(@base-grey-lighter, 23%);
+@dropdown-border-radius       :0;
+
+
+// --------------------------------------------------
+
+
+//** Top header background
+@top-header-bg                       :lighten(@base-grey-dark, 10%);
+@top-header-brand-bg                 :lighten(@top-header-bg, 4%);
+
+//** Top header navbar
+@top-header-nav-border-radius        :0;
+@top-header-nav-color                :@base-white;
+@top-header-nav-hover-color          :lighten(@brand-main-base,40%);
+@top-header-nav-bg                   :@top-header-bg;
+@top-header-nav-hover-bg             :lighten(@top-header-nav-bg, 10%);
+@top-header-top-links-bg             :lighten(@top-header-nav-bg, 5%);
+
+//** Top header sidebar toggle button
+@top-header-sidebar-toggle-color     :@top-header-nav-color;
+
+//** Top header search
+@top-header-search-placeholder-color :@base-grey-lighter;
+
+
+// --------------------------------------------------
+
+
+//** Sidebar background
+@sidebar-bg                                  :@brand-main-base;
+@sidebar-main-hover-bg                       :fade(@base-white, 20%);
+@sidebar-sub-bg                              :fade(@base-white, 30%);
+
+//** Sidebar cutting line color
+@sidebar-line-color                          :fade(@base-white, 10%);
+
+//** Sidebar text color
+@sidebar-text-color                          :@base-white;
+
+//** Sidebar profile
+@sidebar-head-border-color                   :@sidebar-sub-bg;
+@sidebar-profile-link-color                  :lighten(@brand-main-base,40%);
+@sidebar-profile-link-hover-color            :lighten(@brand-minor,40%);
+
+//** Sidebar Collapsed
+@sidebar-collapsed-sub-menu-bg               :@dropdown-bg;
+@sidebar-collapsed-sub-menu-link-color       :@dropdown-link-color;
+@sidebar-collapsed-sub-menu-link-hover-color :@dropdown-link-hover-color;
+@sidebar-collapsed-sub-menu-link-hover-bg    :@dropdown-link-hover-bg;
+@sidebar-collapsed-sub-menu-active-bg        :@sidebar-collapsed-sub-menu-link-hover-bg;
+@sidebar-collapsed-sub-menu-active-color     :@brand-main-base;
+
+
+// --------------------------------------------------
+
+
+//** Main
+@main-bg  :darken(@base-white,5.5%);
+
+
+// --------------------------------------------------
+
+
+//** Background Layer
+@bglay-bg :#111;
+
+
+// --------------------------------------------------
+
+
+//** Title & Breadcrumb
+@title-breadcrumb-bg         :@base-white;
+@title-breadcrumb-line-color :@main-bg;
+@breadcrumb-color            :@base-grey-light;
+@breadcrumb-link-color       :@base-grey;
+@breadcrumb-link-hover-color :@link-base-hover-color;
+@breadcrumb-active-color     :@base-grey-lighter;
+
+
+// --------------------------------------------------
+
+
+//** SubTitle
+@sub-title-color :@base-grey-lighter;
+
+
+
+// --------------------------------------------------
+
+
+//** Pills
+@pill-bg          :transparent;
+@pill-text        :@gray-light;
+@pill-hover-bg    :@gray-lighter;
+@pill-hover-text  :@brand-minor;
+@pill-active-bg   :@brand-minor;
+@pill-active-text :@base-white;
+
+
+
+// --------------------------------------------------
+
+
+//** Pagination
+@pagination-text            :@brand-minor;
+@pagination-border          :@gray-lighter;
+@pagination-bg              :@base-white;
+@pagination-hover-text      :@brand-minor;
+@pagination-hover-border    :@gray-lighter;
+@pagination-hover-bg        :lighten(@gray-lighter,5%);
+@pagination-active-text     :@base-white;
+@pagination-active-border   :@brand-minor;
+@pagination-active-bg       :@brand-minor;
+@pagination-disabled-text   :darken(@gray-lighter,5%);
+@pagination-disabled-border :@gray-lighter;
+@pagination-disabled-bg     :lighten(@gray-lighter,5%);
+@pagination-border-radius   :0;
+
+@pager-text                 :@brand-minor;
+@pager-border               :@gray-lighter;
+@pager-bg                   :@base-white;
+@pager-hover-text           :@brand-minor;
+@pager-hover-border         :@gray-lighter;
+@pager-hover-bg             :lighten(@gray-lighter,5%);
+@pager-active-text          :@base-white;
+@pager-active-border        :@brand-minor;
+@pager-active-bg            :@brand-minor;
+@pager-disabled-text        :darken(@gray-lighter,5%);
+@pager-disabled-border      :@gray-lighter;
+@pager-disabled-bg          :lighten(@gray-lighter,5%);
+
+
+// --------------------------------------------------
+
+
+//** Form
+@form-comp-border                :lighten(@base-grey-lighter,5%);
+@input-group-addon-bg            :lighten(@base-grey-lighter,25%);
+@input-group-addon-color         :@base-grey-light;
+@form-control-color              :@base-grey;
+@form-control-bg                 :@base-white;
+@form-control-placeholader-color :lighten(@base-grey-light,10%);
+@form-control-border-radius      :0;
+
+
+// --------------------------------------------------
+
+
+//** List Group
+@list-group-item-active-bg     :mix(@brand-minor, #eee, 88%);
+@list-group-item-active-color  :@base-white;
+@list-group-item-active-border :mix(@brand-minor, #eee, 90%);
+@list-group-border-radius      :0;
+
+
+
+// --------------------------------------------------
+
+
+//** Thumbnail
+@thumb-border       :@gray-lighter;
+@thumb-hover-border :darken(@gray-lighter,5%);
+@thumb-title        :@base-grey;
+@thumb-text         :@base-grey-light;
+
+
+// --------------------------------------------------
+
+
+//** Panel
+@panel-border-radius:0;
+@panel-group-border-radius         :0;
+
+
+// --------------------------------------------------
+
+
+//** Alert
+@alert-border-radius               :0;
+
+// --------------------------------------------------
+
+//** Carousel
+@carousel-indicators-border-radius :50%;
+
+// --------------------------------------------------
+
+//** Date Picker & Datetime Picker & Date Range Picker
+@datepicker-border-radius :0;
+@datepicker-border-color  :#dfdfdf;
+@datepicker-bg            :#fff;
+@datepicker-day-hover-bg  :@gray-lighter;
+@datepicker-today-color   :@datepicker-bg;
+@datepicker-today-bg      :lighten(@brand-minor,20%);
+@datepicker-action-color  :@brand-minor;
+@datepicker-in-range-bg   :lighten(@datepicker-action-color,40%);
+
+
+// --------------------------------------------------
+
+
+//** Select2
+@select2-border-radius:0;
+
+
+// --------------------------------------------------
+
+
+//** Multi Select
+@multiselect-border-radius     :0;
+@multiselect-color             :@text-color;
+@multiselect-hover-color       :@text-color;
+@multiselect-hover-bg          :@gray-lighter;
+@multiselect-list-border-color :#ddd;
+@multiselect-disabled-color    :lighten(@text-color,20%);
+@multiselect-disabled-bg       :lighten(@gray-lighter,5%);
+
+
+// --------------------------------------------------
+
+
+//** Bootstrap switch
+@bs-switch-border-radius :0;
+@bs-switch-label-bg      :darken(@gray-lighter, 5%);
+
+// --------------------------------------------------
+
+//** Jumbotron
+@jumbotron-color         :@gray-dark;
+@jumbotron-border-radius :0;
+
+
+// --------------------------------------------------
+
+//** Labels
+@label-border-radius         :0;
+
+
+// --------------------------------------------------
+
+//** Modal
+@modal-border-radius         :0;
+
+
+// --------------------------------------------------
+
+//** Popovers
+@popover-border-radius       :0;
+
+
+// --------------------------------------------------
+
+//** Scroll to top
+@scroll-to-top-border-radius :0;
+
+
+// --------------------------------------------------
+
+//** jQuery UI Sliders
+@jqui-slider-horizontal-border-size    :1px;
+@jqui-slider-horizontal-size           :10px;
+@jqui-slider-handle-border-size        :5px;
+@jqui-slider-handle-width              :20px;
+@jqui-slider-handle-height             :20px;
+@jqui-slider-handle-border-radius      :50%;
+
+@jqui-slider-horizontal-border-color   :transparent;
+@jqui-slider-horizontal-bg             :#f5f5f5;
+@jqui-slider-handle-border-color       :#fff;
+@jqui-slider-handle-bg                 :@brand-minor;
+@jqui-slider-handle-hover-border-color :#fff;
+@jqui-slider-handle-hover-bg           :lighten(@brand-minor,20%);
+@jqui-slider-range-bg                  :@brand-minor;
+
+
+// --------------------------------------------------
+
+
+//** NoUI Sliders
+@noui-slider-connect-bg            :@brand-minor;
+@noui-slider-border-radius         :0;
+
+@noui-slider-tooltip-border-color  :#d9d9d9;
+@noui-slider-tooltip-bg            :#fff;
+@noui-slider-tooltip-border-radius :0;
+
+
+// --------------------------------------------------
+
+
+//** Tab
+@tab-border-radius        :0;
+
+
+// --------------------------------------------------
+
+
+// ** Progress Bar
+@progressbar-border-radius:0;
+
+
+// --------------------------------------------------
+
+
+//** Thumbnails
+@thumbnails-border-radius :0;
+
+
+// --------------------------------------------------
+
+
+//** Tooltip
+@tooltip-border-radius    :0;
+
+
+// --------------------------------------------------
+
+
+//** JsTree
+@jstree-border-radius  :0;
+@jstree-color          :@text-color;
+@jstree-hover-bg       :lighten(@brand-minor,15%);
+@jstree-hover-color    :#fff;
+@jstree-cur-color      :#fff;
+@jstree-cur-bg         :@brand-minor;
+@jstree-disabled-color :#d0d0d0;
+
+
+// --------------------------------------------------
+
+
+//** Bootstrap Tree
+@bstree-border-radius :0;
+
+
+// --------------------------------------------------
+
+
+//** Well
+@well-border-radius:0;
+
+
+// --------------------------------------------------
+
+
+//** Blog Post
+@blog-post-title-color                      :@gray-dark;
+@blog-post-title-hover-color                :@brand-minor;
+
+@blog-post-meta-bg                          :lighten(@gray-lighter,3%);
+@blog-post-meta-border-color                :darken(@blog-post-meta-bg,7%);
+@blog-post-meta-color                       :@gray-light;
+@blog-post-meta-link-color                  :@blog-post-title-hover-color;
+@blog-post-meta-link-hover-color            :@blog-post-title-color;
+@blog-post-meta-border-radius               :0;
+@blog-post-meta-entrance-bg                 :@blog-post-title-hover-color;
+@blog-post-meta-entrance-color              :#fff;
+@blog-post-meta-entrance-hover-bg           :@blog-post-title-color;
+@blog-post-meta-entrance-border-color       :@blog-post-meta-entrance-bg;
+@blog-post-meta-entrance-hover-border-color :@blog-post-meta-entrance-hover-bg;
+
+@blog-post-linkblk-bg                       :mix(@blog-post-title-hover-color, #eee, 90%);
+@blog-post-linkblk-hover-bg                 :mix(@blog-post-linkblk-bg, #eee, 95%);
+@blog-post-linkblk-color                    :#fff;
+
+//** Blog Comments
+@blog-comments-date-color                   :lighten(@gray-light,13%);
+
+//** Blog Widgets
+//**** Widgets heading
+@blog-widget-heading-color                  :@blog-post-title-color;
+//**** Widgets link
+@blog-widget-link-color                     :@blog-widget-heading-color;
+@blog-widget-link-hover-color               :@blog-post-title-hover-color;
+//**** Widgets border radius
+@blog-widget-border-radius                  :0;
+//**** Tag
+@blog-widget-tag-bg                         :#fafafa;
+@blog-widget-tag-border                     :darken(@blog-widget-tag-bg,15%);
+@blog-widget-tag-color                      :darken(@blog-widget-tag-bg,40%);
+@blog-widget-tag-hover-bg                   :mix(@blog-post-title-hover-color, #eee, 90%);
+@blog-widget-tag-hover-border               :@blog-widget-tag-hover-bg;
+@blog-widget-tag-hover-color                :#fff;
+
+
+// --------------------------------------------------
+
+
+//** Sign Page
+@signin-box-bg                     :rgba(255,255,255,.95);
+@signin-title-color                :@brand-main-base;
+@signin-sub-title-color            :@gray-light;
+@signin-sub-title-link-color       :@color-danger;
+@signin-sub-title-link-hover-color :@brand-minor;
+@signin-options-color              :@signin-sub-title-color;
+@signin-options-link-color         :@signin-sub-title-color;
+@signin-options-link-hover-color   :@signin-sub-title-link-hover-color;
+
+@signin-social-color               :#fff;
+@signin-social-link-color          :#fff;
+
+@signin-box-userhead-border-color  :@signin-box-bg;
+
+
+// --------------------------------------------------
+
+
+//** Error Page
+@error-page-bg      :#f1f1f1;
+@error-code-color   : @brand-main-base;
+@error-title-color  :@error-code-color;
+@error-info-color   :@text-color;
+@error-footer-color :lighten(@error-info-color,20%);
+
+
+// --------------------------------------------------
+
+
+//** Pricing Tables
+@pricing-s1-bg:#fff;
+@pricing-s1-color:@text-color;
+@pricing-s1-heading-color:@pricing-s1-color;
+@pricing-s1-heading-sub-color:lighten(@pricing-s1-color,5%);
+@pricing-s1-cost-color:@brand-minor;
+
+
+// --------------------------------------------------
+
+
+//** Timeline
+@timeline-border-radius:0;

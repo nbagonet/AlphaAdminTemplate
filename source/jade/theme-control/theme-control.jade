@@ -1,0 +1,25 @@
+//- Theme Control
+//- --------------------------------------------------
+include ../common/variables
+//- --------------------------------------------------
+
+
+div.tc-btn
+  i.fa.fa-cog.fa-lg
+
+div.tc-panel
+
+  //Theme List
+  div.tc-theme
+    h4 Choose Theme
+    ul.list-unstyled.clearfix
+      each val,name in themes
+        li
+          if val[3] == "squared"
+            a(href="javascript:void(0)" data-css="#{val[4]}" data-toggle="tooltip" title="#{val[0]}" data-placement="left")
+              span.tc-colors-c1(style="background:"+val[1])
+              span.tc-colors-c2(style="background:"+val[2])
+          else if val[3] == "rounded"
+            a.tc-theme-rounded(href="javascript:void(0)" data-css="#{val[4]}" data-toggle="tooltip" title="#{val[0]}" data-placement="left")
+              span.tc-colors-c1(style="background:"+val[1])
+              span.tc-colors-c2(style="background:"+val[2])

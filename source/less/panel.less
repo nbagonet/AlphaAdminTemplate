@@ -6,7 +6,6 @@
 /* Panel */
 .panel
 {
-    border-radius: @border-radius-base;
     > .panel-heading
     {
         font-size: @font-size-h4;
@@ -74,4 +73,12 @@
 .panel-grey
 {
     .panel-theme(@panel-grey-border-color;@panel-grey-bg;@panel-grey-head-color;@panel-grey-head-bg);
+}
+
+.panel-group
+{
+    .panel
+    {
+        overflow: hidden;
+    }
 }

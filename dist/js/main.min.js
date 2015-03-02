@@ -80,11 +80,11 @@ $(function() {
       });
 
       // Scroll to active item position
-      var _actItem = $(".sidebar-inner .side-menu li a.active").last();
-      var _actItemPosY = _actItem.offset().top;
-      $(".sidebar-inner").slimScroll({
-        scrollTo: _actItemPosY - $(".topheader").height() - 100
-      });
+      // var _actItem = $(".sidebar-inner .side-menu li a.active").last();
+      // var _actItemPosY = _actItem.offset().top;
+      // $(".sidebar-inner").slimScroll({
+      //   scrollTo: _actItemPosY - $(".topheader").height() - 100
+      // });
     };
     SMInit();
     var SMDestroy = function() {

@@ -1,5 +1,6 @@
 - var css = {};
 - var js = {};
+- var themes = {};
 
 //- ================= -//
 //- Core CSS&JS Files -//
@@ -8,8 +9,11 @@
 //- ## Core Styles
 - css.core  = base_css + "main.css";
 
-//- ## Template Style - Blue&Orange
-- css.style = [base_css_style + "blue-orange.css"];
+//- ## Themes
+include themes
+
+//- ## Default Theme
+- css.style = [themes.wetasphalt[4]];
 
 //- ## jQuery 1.x
 //- ## ** Local

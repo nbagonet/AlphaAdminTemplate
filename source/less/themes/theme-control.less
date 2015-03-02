@@ -1,0 +1,97 @@
+//
+// Theme Control
+// --------------------------------------------------
+
+#theme-control
+{
+    position: fixed;
+    z-index: 11000;
+    top: 100px;
+    right: -200px;
+
+    opacity: .6;
+
+    .transition(right ease .5s);
+    &:hover,
+    &.active
+    {
+        opacity: .9;
+    }
+    &.active
+    {
+        right: 0;
+    }
+    .tc-btn
+    {
+        line-height: 42px;
+
+        position: absolute;
+        z-index: 10;
+        left: -41px;
+
+        width: 42px;
+
+        cursor: pointer;
+        text-align: center;
+
+        border: @base-grey-lighter 1px solid;
+        border-right-color: #fff;
+        background: #fff;
+
+        .box-shadow(-4px 0 8px rgba(0,0,0,.075));
+    }
+    .tc-panel
+    {
+        width: 200px;
+        padding: 15px;
+
+        color: @base-grey-light;
+        border: @base-grey-lighter 1px solid;
+        background: #fff;
+
+        .box-shadow(0 0 8px rgba(0,0,0,.075));
+    }
+    .tc-theme
+    {
+        h4
+        {
+            margin-top: 0;
+        }
+        > ul
+        {
+            > li
+            {
+                float: left;
+                overflow: hidden;
+
+                width: 30px;
+                margin: 5px;
+                > a
+                {
+                    display: block;
+                    overflow: hidden;
+
+                    height: 30px;
+
+                    opacity: .5;
+                    &:hover
+                    {
+                        opacity: 1;
+                    }
+                }
+                .tc-theme-rounded
+                {
+                    border-radius: 5px;
+                }
+                .tc-colors-c1,
+                .tc-colors-c2
+                {
+                    display: inline-block;
+
+                    width: 50%;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
